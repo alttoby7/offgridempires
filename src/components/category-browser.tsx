@@ -54,16 +54,16 @@ interface ComponentEntry {
 
 function parseWattage(name: string, specs: string): number {
   // Try to extract wattage like "100W", "200W", "350W", "400W"
-  const match = (name + " " + specs).match(/(\d+)\s*W\b/i);
-  return match ? parseInt(match[1], 10) : 0;
+  const match = (name + " " + specs).match(/([\d,]+)\s*W\b/i);
+  return match ? parseInt(match[1].replace(/,/g, ""), 10) : 0;
 }
 
 function parseCapacity(specs: string): number {
-  // Try "100Ah", "200Ah", "1280Wh"
-  const whMatch = specs.match(/(\d+)\s*Wh\b/i);
-  if (whMatch) return parseInt(whMatch[1], 10);
-  const ahMatch = specs.match(/(\d+)\s*Ah\b/i);
-  if (ahMatch) return parseInt(ahMatch[1], 10) * 12; // assume 12V
+  // Try "100Ah", "200Ah", "1280Wh", "2,764Wh" (with commas)
+  const whMatch = specs.match(/([\d,]+)\s*Wh\b/i);
+  if (whMatch) return parseInt(whMatch[1].replace(/,/g, ""), 10);
+  const ahMatch = specs.match(/([\d,]+)\s*Ah\b/i);
+  if (ahMatch) return parseInt(ahMatch[1].replace(/,/g, ""), 10) * 12; // assume 12V
   return 0;
 }
 
@@ -117,8 +117,8 @@ function getUnitInfo(category: string): { label: string; getter: (name: string, 
       return { label: "W", getter: parseWattage };
     case "charge-controllers":
       return { label: "A", getter: (name, specs) => {
-        const match = (name + " " + specs).match(/(\d+)\s*A\b/i);
-        return match ? parseInt(match[1], 10) : 0;
+        const match = (name + " " + specs).match(/([\d,]+)\s*A\b/i);
+        return match ? parseInt(match[1].replace(/,/g, ""), 10) : 0;
       }};
     default:
       return { label: "", getter: () => 0 };
