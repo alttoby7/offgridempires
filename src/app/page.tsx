@@ -58,7 +58,7 @@ export default function HomePage() {
   const smartPaths = [
     cheapest && {
       label: "Cheapest Setup",
-      command: "$ sort --price asc",
+      eyebrow: "Lowest upfront price",
       kit: cheapest,
       stat: `$${cheapest.listedPrice.toLocaleString()}`,
       detail: cheapest.missingCost > 0
@@ -67,28 +67,28 @@ export default function HomePage() {
     },
     cheapestComplete && {
       label: "Cheapest Complete",
-      command: "$ filter --complete | sort --cost asc",
+      eyebrow: "Lowest total cost, ready to use",
       kit: cheapestComplete,
       stat: `$${cheapestComplete.trueCost.toLocaleString()}`,
       detail: `${cheapestComplete.completeness}% complete`,
     },
     mostStorage && {
       label: "Most Storage",
-      command: "$ sort --storage desc",
+      eyebrow: "Largest battery capacity",
       kit: mostStorage,
       stat: `${mostStorage.storageWh.toLocaleString()} Wh`,
       detail: `$${mostStorage.trueCost.toLocaleString()} total`,
     },
     bestValue && {
       label: "Best Value",
-      command: "$ sort --cost-per-wh asc",
+      eyebrow: "Best storage for your money",
       kit: bestValue,
       stat: `${bestValue.costPerWh}/Wh`,
       detail: `${bestValue.storageWh.toLocaleString()} Wh storage`,
     },
   ].filter(Boolean) as {
     label: string;
-    command: string;
+    eyebrow: string;
     kit: (typeof kits)[0];
     stat: string;
     detail: string;
@@ -144,8 +144,8 @@ export default function HomePage() {
                 href={`/kits/${path.kit.slug}`}
                 className="group rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:border-[var(--border-accent)] hover:bg-[var(--bg-elevated)] transition-all"
               >
-                <p className="font-mono text-[10px] text-[var(--text-muted)] mb-2 truncate">
-                  {path.command}
+                <p className="text-xs text-[var(--text-muted)] mb-2 truncate">
+                  {path.eyebrow}
                 </p>
                 <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
                   {path.label}
