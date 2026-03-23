@@ -27,7 +27,7 @@ const useCases = [
         <rect x="1" y="3" width="15" height="13" rx="2" /><path d="M16 8h4l3 5v3h-7V8z" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
       </svg>
     ),
-    count: 34,
+    href: "/kits",
   },
   {
     id: "cabin",
@@ -37,7 +37,7 @@ const useCases = [
         <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /><polyline points="9 22 9 12 15 12 15 22" />
       </svg>
     ),
-    count: 28,
+    href: "/kits",
   },
   {
     id: "homestead",
@@ -47,7 +47,7 @@ const useCases = [
         <path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" />
       </svg>
     ),
-    count: 22,
+    href: "/kits",
   },
   {
     id: "emergency",
@@ -57,7 +57,7 @@ const useCases = [
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
       </svg>
     ),
-    count: 18,
+    href: "/kits",
   },
   {
     id: "shed",
@@ -67,7 +67,7 @@ const useCases = [
         <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
       </svg>
     ),
-    count: 12,
+    href: "/kits",
   },
   {
     id: "boat",
@@ -77,7 +77,7 @@ const useCases = [
         <path d="M2 20c2-1 4-2 6-2s4 1 6 2 4 2 6 2" /><path d="M4 18l-1-5h18l-1 5" /><path d="M12 2v11" /><path d="M8 7l4-5 4 5" />
       </svg>
     ),
-    count: 8,
+    href: "/kits",
   },
 ];
 
@@ -88,7 +88,7 @@ const steps = [
     step: "01",
     title: "Browse & Filter",
     description:
-      "Search 120+ kits by use case, budget, battery chemistry, wattage, and brand. Filter to exactly what you need.",
+      "Browse kits by budget, battery chemistry, wattage, and brand. Sort and filter to exactly what you need.",
   },
   {
     step: "02",
@@ -114,15 +114,15 @@ export default function HomePage() {
       {/* Decision Frames — quick paths */}
       <section className="border-b border-[var(--border)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-          <h2 className="font-mono text-xs uppercase tracking-wider text-[var(--text-muted)] mb-4">
+          <h2 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] mb-4">
             Jump to What Matters
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {[
-              { href: "/kits?sort=true_cost", label: "Best True Value", desc: "Lowest real cost per usable Wh", icon: "◈" },
-              { href: "/kits?filter=complete", label: "Most Complete", desc: "Nothing missing — plug and play", icon: "◉" },
-              { href: "/kits?sort=cheapest_to_finish", label: "Cheapest to Finish", desc: "Lowest missing-component cost", icon: "◆" },
-              { href: "/kits?sort=price_drop", label: "Biggest Price Drops", desc: "Recently dropped in price", icon: "▼" },
+              { href: "/kits?sort=cost_per_wh", label: "Best True Value", desc: "Lowest real cost per usable Wh", icon: "◈" },
+              { href: "/kits?complete=1", label: "Most Complete", desc: "Nothing missing — plug and play", icon: "◉" },
+              { href: "/kits?sort=true_cost_asc", label: "Cheapest to Build", desc: "Lowest real build cost first", icon: "◆" },
+              { href: "/kits?sort=completeness", label: "Most Complete First", desc: "Sorted by completeness score", icon: "▼" },
             ].map((frame) => (
               <Link
                 key={frame.href}
@@ -146,7 +146,7 @@ export default function HomePage() {
       <section className="border-b border-[var(--border)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="font-mono text-xs uppercase tracking-wider text-[var(--text-muted)]">
+            <h2 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)]">
               Browse by Use Case
             </h2>
             <Link
@@ -161,7 +161,7 @@ export default function HomePage() {
             {useCases.map((uc) => (
               <Link
                 key={uc.id}
-                href={`/kits?use_case=${uc.id}`}
+                href={uc.href}
                 className="group flex flex-col items-center gap-2.5 rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:border-[var(--border-accent)] hover:bg-[var(--bg-elevated)] transition-all duration-200"
               >
                 <div className="text-[var(--text-muted)] group-hover:text-[var(--accent)] transition-colors">
@@ -169,9 +169,6 @@ export default function HomePage() {
                 </div>
                 <span className="text-sm font-medium text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors text-center">
                   {uc.label}
-                </span>
-                <span className="font-mono text-[10px] text-[var(--text-muted)]">
-                  {uc.count} kits
                 </span>
               </Link>
             ))}
@@ -211,7 +208,7 @@ export default function HomePage() {
       {/* How It Works */}
       <section className="border-b border-[var(--border)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-          <h2 className="font-mono text-xs uppercase tracking-wider text-[var(--text-muted)] mb-8 text-center">
+          <h2 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] mb-8 text-center">
             How It Works
           </h2>
 

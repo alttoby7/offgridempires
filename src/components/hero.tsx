@@ -25,8 +25,8 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
               </span>
-              <span className="font-mono text-xs text-[var(--text-secondary)]">
-                Tracking 120+ kits across 15 brands
+              <span className="text-sm text-[var(--text-secondary)]">
+                Tracking 14 kits across 10 brands
               </span>
             </div>
 
@@ -47,14 +47,14 @@ export function Hero() {
             {/* Decision-first CTAs */}
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
-                href="/kits?sort=true_cost"
+                href="/kits?sort=cost_per_wh"
                 className="inline-flex items-center justify-center gap-2 rounded bg-[var(--accent)] px-6 py-3 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
               >
                 Find the best true value
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
               <Link
-                href="/kits?filter=complete"
+                href="/kits?complete=1"
                 className="inline-flex items-center justify-center gap-2 rounded border border-[var(--border)] bg-[var(--bg-surface)] px-6 py-3 text-sm font-medium text-[var(--text-secondary)] hover:border-[var(--border-accent)] hover:text-[var(--accent)] transition-colors"
               >
                 Only show complete kits
@@ -64,8 +64,8 @@ export function Hero() {
             {/* Quick stats */}
             <div className="mt-8 flex flex-wrap gap-6">
               {[
-                { value: "120+", label: "Kits Tracked" },
-                { value: "15", label: "Brands" },
+                { value: "14", label: "Kits Tracked" },
+                { value: "10", label: "Brands" },
                 { value: "6hr", label: "Price Updates" },
                 { value: "$0", label: "Always Free" },
               ].map((stat) => (
@@ -88,14 +88,14 @@ export function Hero() {
                   <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
                   <line x1="12" y1="9" x2="12" y2="13" /><line x1="12" y1="17" x2="12.01" y2="17" />
                 </svg>
-                <span className="font-mono text-[10px] font-bold text-[var(--danger)] uppercase tracking-wider">
+                <span className="text-xs font-bold text-[var(--danger)] uppercase tracking-wide">
                   Completion Gap Receipt
                 </span>
               </div>
 
               <div className="p-5 font-mono text-sm space-y-3">
                 <div className="flex justify-between">
-                  <span className="text-[var(--text-muted)] text-xs">Eco-Worthy 200W Starter Kit</span>
+                  <span className="text-[var(--text-muted)] text-sm">Eco-Worthy 200W Starter Kit</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-[var(--text-secondary)]">Advertised price</span>
@@ -104,7 +104,7 @@ export function Hero() {
 
                 <div className="border-t border-dashed border-[var(--border)]" />
 
-                <div className="text-[10px] uppercase tracking-wider text-[var(--danger)]">
+                <div className="text-xs uppercase tracking-wide font-medium text-[var(--danger)]">
                   Not included:
                 </div>
                 <div className="flex justify-between pl-2 text-xs">
@@ -134,13 +134,13 @@ export function Hero() {
                   <span className="text-[var(--accent)] font-bold text-lg">$814</span>
                 </div>
 
-                <div className="rounded bg-[var(--danger)]/10 border border-[var(--danger)]/20 px-3 py-2 text-center text-[10px] text-[var(--danger)]">
+                <div className="rounded bg-[var(--danger)]/10 border border-[var(--danger)]/20 px-3 py-2 text-center text-xs text-[var(--danger)]">
                   <strong>65% more</strong> than the sticker price
                 </div>
               </div>
 
               <div className="bg-[var(--bg-primary)] border-t border-[var(--border)] px-5 py-2 text-center">
-                <span className="font-mono text-[10px] text-[var(--text-muted)]">
+                <span className="text-xs text-[var(--text-muted)]">
                   offgridempire.com
                 </span>
               </div>
