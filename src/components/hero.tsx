@@ -1,6 +1,15 @@
 import Link from "next/link";
+import type { Kit } from "@/lib/demo-data";
 
-export function Hero() {
+interface HeroProps {
+  trapKit: Kit;
+}
+
+export function Hero({ trapKit }: HeroProps) {
+  const pctMore = trapKit.listedPrice > 0
+    ? Math.round(((trapKit.trueCost - trapKit.listedPrice) / trapKit.listedPrice) * 100)
+    : 0;
+
   return (
     <section className="relative overflow-hidden border-b border-[var(--border)]">
       {/* Background grid pattern */}
@@ -30,10 +39,12 @@ export function Hero() {
               </span>
             </div>
 
-            {/* Headline — lead with the truth-telling */}
+            {/* Headline — live data from worst-trap kit */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1]">
-              That $289 solar kit{" "}
-              <span className="text-[var(--danger)] line-through decoration-2">costs $1,039</span>{" "}
+              That ${trapKit.listedPrice.toLocaleString()} solar kit{" "}
+              <span className="text-[var(--danger)] line-through decoration-2">
+                costs ${trapKit.trueCost.toLocaleString()}
+              </span>{" "}
               <span className="text-[var(--accent)]">to actually use.</span>
             </h1>
 
@@ -79,9 +90,12 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right: Mini Gap Receipt Demo */}
-          <div className="hidden lg:block">
-            <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] overflow-hidden shadow-2xl shadow-black/20 rotate-1 hover:rotate-0 transition-transform duration-500">
+          {/* Right: Compact Receipt Preview */}
+          <div>
+            <Link
+              href={`/kits/${trapKit.slug}`}
+              className="group block rounded border border-[var(--border)] bg-[var(--bg-surface)] overflow-hidden shadow-2xl shadow-black/20 lg:rotate-1 lg:hover:rotate-0 transition-transform duration-500"
+            >
               {/* Receipt header */}
               <div className="bg-[var(--danger)]/10 border-b border-[var(--danger)]/20 px-5 py-2.5 flex items-center gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--danger)]">
@@ -94,57 +108,49 @@ export function Hero() {
               </div>
 
               <div className="p-5 font-mono text-sm space-y-3">
-                <div className="flex justify-between">
-                  <span className="text-[var(--text-muted)] text-sm">Eco-Worthy 200W Starter Kit</span>
+                <div className="text-[var(--text-muted)] text-sm truncate">
+                  {trapKit.name}
                 </div>
+
                 <div className="flex justify-between">
                   <span className="text-[var(--text-secondary)]">Advertised price</span>
-                  <span className="text-[var(--text-primary)] font-semibold">$289</span>
+                  <span className="text-[var(--text-primary)] font-semibold">
+                    ${trapKit.listedPrice.toLocaleString()}
+                  </span>
                 </div>
-
-                <div className="border-t border-dashed border-[var(--border)]" />
-
-                <div className="text-xs uppercase tracking-wide font-medium text-[var(--danger)]">
-                  Not included:
-                </div>
-                <div className="flex justify-between pl-2 text-xs">
-                  <span className="text-[var(--text-muted)]">+ Battery (12V 100Ah+)</span>
-                  <span className="text-[var(--danger)]">~$300</span>
-                </div>
-                <div className="flex justify-between pl-2 text-xs">
-                  <span className="text-[var(--text-muted)]">+ Inverter (1000W+ pure sine)</span>
-                  <span className="text-[var(--danger)]">~$200</span>
-                </div>
-                <div className="flex justify-between pl-2 text-xs">
-                  <span className="text-[var(--text-muted)]">+ Monitoring module</span>
-                  <span className="text-[var(--danger)]">~$25</span>
-                </div>
-
-                <div className="border-t border-dashed border-[var(--border)]" />
 
                 <div className="flex justify-between">
-                  <span className="text-[var(--danger)] font-semibold">Hidden cost</span>
-                  <span className="text-[var(--danger)] font-bold">+$525</span>
+                  <span className="text-[var(--danger)]">Hidden cost</span>
+                  <span className="text-[var(--danger)] font-bold">
+                    +${trapKit.missingCost.toLocaleString()}
+                  </span>
                 </div>
 
                 <div className="border-t-2 border-[var(--border)]" />
 
-                <div className="flex justify-between">
+                <div className="flex justify-between items-baseline">
                   <span className="text-[var(--text-primary)] font-bold">Real build cost</span>
-                  <span className="text-[var(--accent)] font-bold text-lg">$814</span>
+                  <span className="text-[var(--accent)] font-bold text-lg">
+                    ${trapKit.trueCost.toLocaleString()}
+                  </span>
                 </div>
 
-                <div className="rounded bg-[var(--danger)]/10 border border-[var(--danger)]/20 px-3 py-2 text-center text-xs text-[var(--danger)]">
-                  <strong>65% more</strong> than the sticker price
-                </div>
+                {pctMore > 0 && (
+                  <div className="rounded bg-[var(--danger)]/10 border border-[var(--danger)]/20 px-3 py-2 text-center text-xs text-[var(--danger)]">
+                    <strong>{pctMore}% more</strong> than the sticker price
+                  </div>
+                )}
               </div>
 
-              <div className="bg-[var(--bg-primary)] border-t border-[var(--border)] px-5 py-2 text-center">
+              <div className="bg-[var(--bg-primary)] border-t border-[var(--border)] px-5 py-2 flex items-center justify-between">
                 <span className="text-xs text-[var(--text-muted)]">
                   offgridempire.com
                 </span>
+                <span className="text-xs text-[var(--accent)] group-hover:underline">
+                  See full breakdown &rarr;
+                </span>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

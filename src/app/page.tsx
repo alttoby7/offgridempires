@@ -18,165 +18,166 @@ export const metadata: Metadata = {
   },
 };
 
-const useCases = [
-  {
-    id: "rv",
-    label: "RV & Van Life",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="1" y="3" width="15" height="13" rx="2" /><path d="M16 8h4l3 5v3h-7V8z" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
-      </svg>
-    ),
-    href: "/kits",
-  },
-  {
-    id: "cabin",
-    label: "Weekend Cabin",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /><polyline points="9 22 9 12 15 12 15 22" />
-      </svg>
-    ),
-    href: "/kits",
-  },
-  {
-    id: "homestead",
-    label: "Homestead",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" />
-      </svg>
-    ),
-    href: "/kits",
-  },
-  {
-    id: "emergency",
-    label: "Emergency",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-      </svg>
-    ),
-    href: "/kits",
-  },
-  {
-    id: "shed",
-    label: "Shed & Workshop",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
-      </svg>
-    ),
-    href: "/kits",
-  },
-  {
-    id: "boat",
-    label: "Boat & Marine",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M2 20c2-1 4-2 6-2s4 1 6 2 4 2 6 2" /><path d="M4 18l-1-5h18l-1 5" /><path d="M12 2v11" /><path d="M8 7l4-5 4 5" />
-      </svg>
-    ),
-    href: "/kits",
-  },
-];
-
-const featuredKits = getKits().slice(0, 4);
-
-const steps = [
-  {
-    step: "01",
-    title: "Browse & Filter",
-    description:
-      "Browse kits by budget, battery chemistry, wattage, and brand. Sort and filter to exactly what you need.",
-  },
-  {
-    step: "02",
-    title: "See What's Inside",
-    description:
-      "Every kit broken into normalized components. See what's included, what's missing, and the true total cost.",
-  },
-  {
-    step: "03",
-    title: "Compare & Buy",
-    description:
-      "Side-by-side comparison with cost per Wh, price history, and direct links to the best current price.",
-  },
+// Use case chips for Browse by Use Case row
+const useCaseChips = [
+  { id: "rv", label: "RV & Van Life", href: "/kits" },
+  { id: "cabin", label: "Cabin", href: "/kits" },
+  { id: "homestead", label: "Homestead", href: "/kits" },
+  { id: "emergency", label: "Emergency", href: "/kits" },
+  { id: "shed", label: "Shed", href: "/kits" },
+  { id: "boat", label: "Boat", href: "/kits" },
 ];
 
 export default function HomePage() {
+  const kits = getKits();
+
+  // --- Trap Kit: worst completion gap (highest missingCost/listedPrice ratio) ---
+  const trapKit = kits
+    .filter((k) => k.missingCost > 0 && k.listedPrice > 0)
+    .sort((a, b) => b.missingCost / b.listedPrice - a.missingCost / a.listedPrice)[0];
+
+  // --- Smart Path picks (data-driven) ---
+  const cheapest = [...kits].sort((a, b) => a.listedPrice - b.listedPrice)[0];
+
+  const cheapestComplete = [...kits]
+    .filter((k) => k.completeness >= 90)
+    .sort((a, b) => a.trueCost - b.trueCost)[0];
+
+  const mostStorage = [...kits].sort((a, b) => b.storageWh - a.storageWh)[0];
+
+  const bestValue = [...kits]
+    .filter((k) => k.costPerWh !== "N/A")
+    .sort(
+      (a, b) =>
+        parseFloat(a.costPerWh.replace("$", "")) -
+        parseFloat(b.costPerWh.replace("$", ""))
+    )[0];
+
+  const smartPaths = [
+    cheapest && {
+      label: "Cheapest Setup",
+      command: "$ sort --price asc",
+      kit: cheapest,
+      stat: `$${cheapest.listedPrice.toLocaleString()}`,
+      detail: cheapest.missingCost > 0
+        ? `+$${cheapest.missingCost.toLocaleString()} missing`
+        : "Nothing missing",
+    },
+    cheapestComplete && {
+      label: "Cheapest Complete",
+      command: "$ filter --complete | sort --cost asc",
+      kit: cheapestComplete,
+      stat: `$${cheapestComplete.trueCost.toLocaleString()}`,
+      detail: `${cheapestComplete.completeness}% complete`,
+    },
+    mostStorage && {
+      label: "Most Storage",
+      command: "$ sort --storage desc",
+      kit: mostStorage,
+      stat: `${mostStorage.storageWh.toLocaleString()} Wh`,
+      detail: `$${mostStorage.trueCost.toLocaleString()} total`,
+    },
+    bestValue && {
+      label: "Best Value",
+      command: "$ sort --cost-per-wh asc",
+      kit: bestValue,
+      stat: `${bestValue.costPerWh}/Wh`,
+      detail: `${bestValue.storageWh.toLocaleString()} Wh storage`,
+    },
+  ].filter(Boolean) as {
+    label: string;
+    command: string;
+    kit: (typeof kits)[0];
+    stat: string;
+    detail: string;
+  }[];
+
+  // --- Featured Kits: 4 intentionally curated, deduplicated ---
+  const pathSlugs = new Set(smartPaths.map((p) => p.kit.slug));
+  const bestComplete = [...kits]
+    .filter((k) => k.completeness >= 80)
+    .sort((a, b) => b.completeness - a.completeness || a.trueCost - b.trueCost)[0];
+  const bigStorage = [...kits].sort((a, b) => b.storageWh - a.storageWh)[0];
+  const budgetPick = [...kits].sort((a, b) => a.listedPrice - b.listedPrice)[0];
+
+  const featuredCandidates = [trapKit, bestComplete, bigStorage, budgetPick].filter(Boolean);
+  const featured: (typeof kits)[0][] = [];
+  const usedSlugs = new Set<string>();
+
+  for (const kit of featuredCandidates) {
+    if (!usedSlugs.has(kit.slug) && featured.length < 4) {
+      featured.push(kit);
+      usedSlugs.add(kit.slug);
+    }
+  }
+  // Fill remaining slots if deduplication removed some
+  if (featured.length < 4) {
+    for (const kit of kits) {
+      if (!usedSlugs.has(kit.slug) && featured.length < 4) {
+        featured.push(kit);
+        usedSlugs.add(kit.slug);
+      }
+    }
+  }
+
   return (
     <>
       <WebSiteJsonLd />
       <BreadcrumbJsonLd items={[{ name: "Home", url: "/" }]} />
-      <Hero />
 
-      {/* Decision Frames — quick paths */}
+      {/* Section 1: Hero — Live Reality Check */}
+      {trapKit && <Hero trapKit={trapKit} />}
+
+      {/* Section 2: Smart Paths */}
       <section className="border-b border-[var(--border)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
           <h2 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] mb-4">
-            Jump to What Matters
+            Find Your Kit
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {[
-              { href: "/kits?sort=cost_per_wh", label: "Best True Value", desc: "Lowest real cost per usable Wh", icon: "◈" },
-              { href: "/kits?complete=1", label: "Most Complete", desc: "Nothing missing — plug and play", icon: "◉" },
-              { href: "/kits?sort=true_cost_asc", label: "Cheapest to Build", desc: "Lowest real build cost first", icon: "◆" },
-              { href: "/kits?sort=completeness", label: "Most Complete First", desc: "Sorted by completeness score", icon: "▼" },
-            ].map((frame) => (
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+            {smartPaths.map((path) => (
               <Link
-                key={frame.href}
-                href={frame.href}
-                className="group flex items-start gap-3 rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:border-[var(--border-accent)] hover:bg-[var(--bg-elevated)] transition-all"
+                key={path.label}
+                href={`/kits/${path.kit.slug}`}
+                className="group rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:border-[var(--border-accent)] hover:bg-[var(--bg-elevated)] transition-all"
               >
-                <span className="text-xl text-[var(--accent)] mt-0.5">{frame.icon}</span>
-                <div>
-                  <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
-                    {frame.label}
-                  </p>
-                  <p className="text-xs text-[var(--text-muted)] mt-0.5">{frame.desc}</p>
-                </div>
+                <p className="font-mono text-[10px] text-[var(--text-muted)] mb-2 truncate">
+                  {path.command}
+                </p>
+                <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+                  {path.label}
+                </p>
+                <p className="font-mono text-lg font-bold text-[var(--accent)] mt-1">
+                  {path.stat}
+                </p>
+                <p className="text-xs text-[var(--text-muted)] mt-1">
+                  {path.detail}
+                </p>
+                <p className="text-xs text-[var(--text-muted)] mt-2 truncate">
+                  {path.kit.brand} {path.kit.name.length > 30 ? path.kit.name.slice(0, 30) + "…" : path.kit.name}
+                </p>
               </Link>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Use Case Tiles */}
-      <section className="border-b border-[var(--border)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)]">
-              Browse by Use Case
-            </h2>
-            <Link
-              href="/kits"
-              className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
-            >
-              View all kits &rarr;
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-            {useCases.map((uc) => (
+          {/* Use case chips */}
+          <div className="mt-6 flex flex-wrap items-center gap-2">
+            <span className="text-xs text-[var(--text-muted)] mr-1">Browse by use case:</span>
+            {useCaseChips.map((uc) => (
               <Link
                 key={uc.id}
                 href={uc.href}
-                className="group flex flex-col items-center gap-2.5 rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:border-[var(--border-accent)] hover:bg-[var(--bg-elevated)] transition-all duration-200"
+                className="rounded-sm border border-[var(--border)] bg-[var(--bg-surface)] px-3 py-1 text-xs text-[var(--text-secondary)] hover:border-[var(--border-accent)] hover:text-[var(--accent)] transition-colors"
               >
-                <div className="text-[var(--text-muted)] group-hover:text-[var(--accent)] transition-colors">
-                  {uc.icon}
-                </div>
-                <span className="text-sm font-medium text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors text-center">
-                  {uc.label}
-                </span>
+                {uc.label}
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Featured Kits */}
+      {/* Section 3: Featured Kits */}
       <section className="border-b border-[var(--border)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex items-center justify-between mb-6">
@@ -185,7 +186,7 @@ export default function HomePage() {
                 Featured Kits
               </h2>
               <p className="text-sm text-[var(--text-muted)] mt-1">
-                Popular kits with recent price changes
+                Curated picks across price, completeness, and storage
               </p>
             </div>
             <Link
@@ -198,45 +199,20 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {featuredKits.map((kit) => (
+            {featured.map((kit) => (
               <KitCard key={kit.slug} kit={kit} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="border-b border-[var(--border)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-          <h2 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] mb-8 text-center">
-            How It Works
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {steps.map((s) => (
-              <div
-                key={s.step}
-                className="relative rounded border border-[var(--border)] bg-[var(--bg-surface)] p-6"
-              >
-                <span className="font-mono text-3xl font-bold text-[var(--accent)]/20">
-                  {s.step}
-                </span>
-                <h3 className="text-lg font-semibold text-[var(--text-primary)] mt-2">
-                  {s.title}
-                </h3>
-                <p className="text-sm text-[var(--text-secondary)] mt-2 leading-relaxed">
-                  {s.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Trust / Transparency */}
+      {/* Section 4: Trust / Transparency */}
       <section className="bg-[var(--bg-secondary)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-2xl mx-auto text-center">
+            <p className="text-xs font-mono uppercase tracking-widest text-[var(--text-muted)] mb-2">
+              Built like PCPartPicker, not a listicle
+            </p>
             <h2 className="text-xl font-bold text-[var(--text-primary)] mb-3">
               No hidden agendas. Just data.
             </h2>
@@ -266,6 +242,16 @@ export default function HomePage() {
                   </p>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-8">
+              <Link
+                href="/kits"
+                className="inline-flex items-center gap-2 rounded bg-[var(--accent)] px-6 py-3 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
+              >
+                Browse all 14 kits
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </Link>
             </div>
           </div>
         </div>
