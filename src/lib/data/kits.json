@@ -14,7 +14,14 @@
     "chemistry": "None",
     "costPerWh": "N/A",
     "useCases": [],
-    "useCaseRatings": {},
+    "useCaseRatings": {
+      "rv": "poor",
+      "cabin": "poor",
+      "shed": "poor",
+      "emergency": "poor",
+      "homestead": "poor",
+      "boat": "poor"
+    },
     "included": {
       "panels": true,
       "battery": false,
@@ -820,7 +827,14 @@
     "chemistry": "None",
     "costPerWh": "N/A",
     "useCases": [],
-    "useCaseRatings": {},
+    "useCaseRatings": {
+      "rv": "poor",
+      "cabin": "poor",
+      "shed": "poor",
+      "emergency": "poor",
+      "homestead": "poor",
+      "boat": "poor"
+    },
     "included": {
       "panels": true,
       "battery": false,
@@ -1625,7 +1639,14 @@
     "chemistry": "None",
     "costPerWh": "N/A",
     "useCases": [],
-    "useCaseRatings": {},
+    "useCaseRatings": {
+      "rv": "poor",
+      "cabin": "poor",
+      "shed": "poor",
+      "emergency": "poor",
+      "homestead": "poor",
+      "boat": "poor"
+    },
     "included": {
       "panels": true,
       "battery": false,
@@ -2430,7 +2451,14 @@
     "chemistry": "None",
     "costPerWh": "N/A",
     "useCases": [],
-    "useCaseRatings": {},
+    "useCaseRatings": {
+      "rv": "poor",
+      "cabin": "poor",
+      "shed": "poor",
+      "emergency": "poor",
+      "homestead": "poor",
+      "boat": "poor"
+    },
     "included": {
       "panels": true,
       "battery": false,
@@ -3236,7 +3264,14 @@
     "chemistry": "None",
     "costPerWh": "N/A",
     "useCases": [],
-    "useCaseRatings": {},
+    "useCaseRatings": {
+      "rv": "fair",
+      "cabin": "poor",
+      "shed": "fair",
+      "emergency": "fair",
+      "homestead": "poor",
+      "boat": "fair"
+    },
     "included": {
       "panels": true,
       "battery": false,
@@ -4040,8 +4075,19 @@
     "voltage": 12,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.53",
-    "useCases": [],
-    "useCaseRatings": {},
+    "useCases": [
+      "rv",
+      "shed",
+      "boat"
+    ],
+    "useCaseRatings": {
+      "rv": "good",
+      "cabin": "poor",
+      "shed": "excellent",
+      "emergency": "poor",
+      "homestead": "poor",
+      "boat": "excellent"
+    },
     "included": {
       "panels": true,
       "battery": true,
@@ -4844,8 +4890,19 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.65",
-    "useCases": [],
-    "useCaseRatings": {},
+    "useCases": [
+      "rv",
+      "shed",
+      "boat"
+    ],
+    "useCaseRatings": {
+      "rv": "good",
+      "cabin": "poor",
+      "shed": "excellent",
+      "emergency": "fair",
+      "homestead": "poor",
+      "boat": "excellent"
+    },
     "included": {
       "panels": true,
       "battery": true,
@@ -5648,7 +5705,14 @@
     "chemistry": "None",
     "costPerWh": "N/A",
     "useCases": [],
-    "useCaseRatings": {},
+    "useCaseRatings": {
+      "rv": "poor",
+      "cabin": "poor",
+      "shed": "poor",
+      "emergency": "poor",
+      "homestead": "poor",
+      "boat": "poor"
+    },
     "included": {
       "panels": true,
       "battery": false,
@@ -6452,8 +6516,19 @@
     "voltage": 12,
     "chemistry": "AGM",
     "costPerWh": "$1.05",
-    "useCases": [],
-    "useCaseRatings": {},
+    "useCases": [
+      "rv",
+      "shed",
+      "boat"
+    ],
+    "useCaseRatings": {
+      "rv": "good",
+      "cabin": "poor",
+      "shed": "excellent",
+      "emergency": "poor",
+      "homestead": "poor",
+      "boat": "excellent"
+    },
     "included": {
       "panels": true,
       "battery": true,
@@ -7257,8 +7332,19 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.95",
-    "useCases": [],
-    "useCaseRatings": {},
+    "useCases": [
+      "rv",
+      "shed",
+      "boat"
+    ],
+    "useCaseRatings": {
+      "rv": "good",
+      "cabin": "fair",
+      "shed": "excellent",
+      "emergency": "fair",
+      "homestead": "poor",
+      "boat": "excellent"
+    },
     "included": {
       "panels": true,
       "battery": true,
@@ -8060,8 +8146,21 @@
     "voltage": 12,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.74",
-    "useCases": [],
-    "useCaseRatings": {},
+    "useCases": [
+      "rv",
+      "cabin",
+      "shed",
+      "emergency",
+      "boat"
+    ],
+    "useCaseRatings": {
+      "rv": "excellent",
+      "cabin": "good",
+      "shed": "excellent",
+      "emergency": "good",
+      "homestead": "poor",
+      "boat": "excellent"
+    },
     "included": {
       "panels": true,
       "battery": true,
@@ -8863,8 +8962,21 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.58",
-    "useCases": [],
-    "useCaseRatings": {},
+    "useCases": [
+      "rv",
+      "cabin",
+      "shed",
+      "emergency",
+      "boat"
+    ],
+    "useCaseRatings": {
+      "rv": "excellent",
+      "cabin": "good",
+      "shed": "excellent",
+      "emergency": "excellent",
+      "homestead": "poor",
+      "boat": "excellent"
+    },
     "included": {
       "panels": true,
       "battery": true,
@@ -9666,8 +9778,21 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$1.05",
-    "useCases": [],
-    "useCaseRatings": {},
+    "useCases": [
+      "rv",
+      "cabin",
+      "shed",
+      "emergency",
+      "boat"
+    ],
+    "useCaseRatings": {
+      "rv": "excellent",
+      "cabin": "good",
+      "shed": "excellent",
+      "emergency": "good",
+      "homestead": "poor",
+      "boat": "excellent"
+    },
     "included": {
       "panels": true,
       "battery": true,
@@ -10469,8 +10594,21 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$1.24",
-    "useCases": [],
-    "useCaseRatings": {},
+    "useCases": [
+      "rv",
+      "cabin",
+      "shed",
+      "emergency",
+      "boat"
+    ],
+    "useCaseRatings": {
+      "rv": "excellent",
+      "cabin": "good",
+      "shed": "excellent",
+      "emergency": "good",
+      "homestead": "poor",
+      "boat": "excellent"
+    },
     "included": {
       "panels": true,
       "battery": true,

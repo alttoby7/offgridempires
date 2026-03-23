@@ -38,6 +38,83 @@ const ROLE_TO_INCLUDED_KEY: Record<string, string> = {
 };
 
 /**
+ * Compute use case suitability ratings from kit specs.
+ * Based on use case power requirements defined in seed.ts.
+ */
+function computeUseCaseRatings(kit: {
+  storageWh: number;
+  panelWatts: number;
+  inverterWatts: number;
+  completeness: number;
+  chemistry: string;
+}): Record<string, "excellent" | "good" | "fair" | "poor"> {
+  const { storageWh, panelWatts, inverterWatts, completeness, chemistry } = kit;
+
+  // Use case requirements: { dailyLoadWh, peakW, autonomyHours }
+  const useCases: Record<string, { daily: number; peak: number; autonomy: number }> = {
+    rv:        { daily: 1500, peak: 1000, autonomy: 24 },
+    cabin:     { daily: 3000, peak: 2000, autonomy: 48 },
+    shed:      { daily: 500,  peak: 500,  autonomy: 12 },
+    emergency: { daily: 2000, peak: 3000, autonomy: 72 },
+    homestead: { daily: 8000, peak: 5000, autonomy: 72 },
+    boat:      { daily: 1000, peak: 800,  autonomy: 24 },
+  };
+
+  const ratings: Record<string, "excellent" | "good" | "fair" | "poor"> = {};
+
+  for (const [uc, req] of Object.entries(useCases)) {
+    let score = 0;
+
+    // Storage coverage (0-3 points)
+    const storageNeeded = req.daily * (req.autonomy / 24);
+    if (storageWh <= 0) {
+      score += 0; // no battery = can't store anything
+    } else if (storageWh >= storageNeeded) {
+      score += 3;
+    } else if (storageWh >= storageNeeded * 0.5) {
+      score += 2;
+    } else if (storageWh >= storageNeeded * 0.25) {
+      score += 1;
+    }
+
+    // Panel production coverage (0-2 points) — assume ~5 peak sun hours
+    const dailyProduction = panelWatts * 5;
+    if (panelWatts <= 0) {
+      score += 0;
+    } else if (dailyProduction >= req.daily) {
+      score += 2;
+    } else if (dailyProduction >= req.daily * 0.5) {
+      score += 1;
+    }
+
+    // Inverter coverage (0-2 points)
+    if (inverterWatts <= 0) {
+      score += 0;
+    } else if (inverterWatts >= req.peak) {
+      score += 2;
+    } else if (inverterWatts >= req.peak * 0.5) {
+      score += 1;
+    }
+
+    // Completeness bonus (0-1 point)
+    if (completeness >= 80) score += 1;
+
+    // Chemistry penalty for AGM in demanding use cases
+    if (chemistry === "AGM" && (uc === "homestead" || uc === "emergency")) {
+      score = Math.max(0, score - 1);
+    }
+
+    // Map score to rating (max 8)
+    if (score >= 7) ratings[uc] = "excellent";
+    else if (score >= 5) ratings[uc] = "good";
+    else if (score >= 3) ratings[uc] = "fair";
+    else ratings[uc] = "poor";
+  }
+
+  return ratings;
+}
+
+/**
  * Fetch all active kits with current prices and coverage data.
  * Returns Kit[] matching the demo-data interface shape.
  */
@@ -199,8 +276,10 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       voltage: Number(row.nominal_system_voltage_v ?? 12),
       chemistry: (row.chemistry as string) ?? "Unknown",
       costPerWh,
-      useCases: [], // TODO: populate from kit_role_coverage across use cases
-      useCaseRatings: {}, // TODO: compute from coverage scores
+      useCases: Object.entries(
+        computeUseCaseRatings({ storageWh, panelWatts, inverterWatts: Number(row.inverter_continuous_w ?? 0), completeness: Number(row.completeness_score ?? 0), chemistry: (row.chemistry as string) ?? "Unknown" })
+      ).filter(([, r]) => r === "excellent" || r === "good").map(([uc]) => uc),
+      useCaseRatings: computeUseCaseRatings({ storageWh, panelWatts, inverterWatts: Number(row.inverter_continuous_w ?? 0), completeness: Number(row.completeness_score ?? 0), chemistry: (row.chemistry as string) ?? "Unknown" }),
       included,
       priceObservedAt: row.price_observed_at
         ? new Date(row.price_observed_at as string).toISOString()
