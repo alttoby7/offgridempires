@@ -15,12 +15,12 @@ import * as fs from "fs";
 // Load env BEFORE importing DB modules
 dotenv.config({ path: path.resolve(__dirname, "../../../google-drive/0-AI/.env") });
 
-import { getKitsForListing } from "../src/lib/db/queries";
+import { getKitsForListingWithHistory } from "../src/lib/db/queries";
 
 async function main() {
   console.log("Exporting kit data from database...");
 
-  const kits = await getKitsForListing("rv-weekend");
+  const kits = await getKitsForListingWithHistory("rv-weekend");
   console.log(`  Found ${kits.length} kits`);
 
   const outDir = path.join(__dirname, "../src/lib/data");

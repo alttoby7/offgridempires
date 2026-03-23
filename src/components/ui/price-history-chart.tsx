@@ -72,8 +72,9 @@ function filterByRange(history: PricePoint[], range: TimeRange): PricePoint[] {
   if (!days) return history;
   const cutoff = new Date();
   cutoff.setDate(cutoff.getDate() - days);
-  const cutoffStr = cutoff.toISOString();
-  return history.filter((p) => p.date >= cutoffStr);
+  // Normalize to YYYY-MM-DD for consistent comparison with date-only strings
+  const cutoffStr = cutoff.toISOString().split("T")[0];
+  return history.filter((p) => p.date.slice(0, 10) >= cutoffStr);
 }
 
 // ── Canvas Drawing ──────────────────────────────────────────────────────────
@@ -403,7 +404,6 @@ export function PriceHistoryChart({
   const handleTouchMove = useCallback(
     (e: React.TouchEvent) => {
       if (e.touches.length > 0) {
-        e.preventDefault();
         handlePointer(e.touches[0].clientX);
       }
     },
@@ -508,6 +508,7 @@ export function PriceHistoryChart({
                 setRange(r);
                 setHoverIndex(null);
               }}
+              aria-pressed={range === r}
               className={`rounded px-2 py-1 font-mono text-[10px] font-medium uppercase transition-all ${
                 range === r
                   ? "bg-[var(--accent)]/15 text-[var(--accent)] border border-[var(--accent)]/30 shadow-[inset_0_1px_2px_rgba(0,0,0,0.3)]"
@@ -524,7 +525,7 @@ export function PriceHistoryChart({
       <div
         ref={containerRef}
         className="relative px-2 sm:px-4"
-        style={{ touchAction: "none" }}
+        style={{ touchAction: "pan-y" }}
       >
         <span className="sr-only">{srSummary}</span>
         <canvas

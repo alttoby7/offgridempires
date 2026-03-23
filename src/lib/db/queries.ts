@@ -7,7 +7,7 @@
 import { db } from "./index";
 import { eq, sql, desc, asc } from "drizzle-orm";
 import * as s from "./schema";
-import type { Kit, KitItem } from "../demo-data";
+import type { Kit, KitItem, PriceHistoryPoint } from "../demo-data";
 
 // Role code → human-friendly label mapping
 const ROLE_LABELS: Record<string, string> = {
@@ -207,6 +207,91 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       completeness: Number(row.completeness_score ?? 0),
       items: kitItems,
     });
+  }
+
+  return kits;
+}
+
+/**
+ * Fetch price history from kit_price_events for a given kit.
+ * Returns daily price points sorted chronologically.
+ */
+async function getPriceHistory(kitId: string): Promise<PriceHistoryPoint[]> {
+  const rows = await db.execute(sql`
+    SELECT
+      DATE(kpe.observed_at AT TIME ZONE 'UTC') AS obs_date,
+      MIN(kpe.price_cents) AS price_cents
+    FROM kit_price_events kpe
+    JOIN kit_offers ko ON ko.id = kpe.offer_id
+    WHERE ko.kit_id = ${kitId}
+      AND kpe.price_cents IS NOT NULL
+    GROUP BY DATE(kpe.observed_at AT TIME ZONE 'UTC')
+    ORDER BY obs_date ASC
+  `);
+
+  return rows.rows.map((r) => ({
+    date: (r.obs_date as string),
+    priceCents: Number(r.price_cents),
+  }));
+}
+
+/**
+ * Generate synthetic price history when real data is sparse.
+ * Deterministic based on kit price (seeded by price value).
+ */
+function generateSyntheticHistory(
+  currentPriceCents: number,
+  days: number,
+): PriceHistoryPoint[] {
+  const points: PriceHistoryPoint[] = [];
+  const now = Date.now();
+
+  // Simple seeded PRNG based on price for determinism
+  let seed = currentPriceCents;
+  const rand = () => {
+    seed = (seed * 1103515245 + 12345) & 0x7fffffff;
+    return seed / 0x7fffffff;
+  };
+
+  let price = currentPriceCents;
+  const prices: number[] = [price];
+
+  for (let d = 1; d < days; d++) {
+    const noise = (rand() - 0.5) * 2 * 0.015 * price;
+    const reversion = (currentPriceCents - price) * 0.01;
+    price = price - noise + reversion;
+    // Occasional sale
+    if (d % 45 < 2) price *= 0.96;
+    prices.push(Math.round(price));
+  }
+
+  prices.reverse();
+
+  for (let i = 0; i < prices.length; i++) {
+    const date = new Date(now - (days - 1 - i) * 24 * 60 * 60 * 1000);
+    points.push({
+      date: date.toISOString().split("T")[0],
+      priceCents: prices[i],
+    });
+  }
+
+  return points;
+}
+
+/**
+ * Fetch all active kits with price history included.
+ */
+export async function getKitsForListingWithHistory(useCaseSlug = "rv-weekend"): Promise<Kit[]> {
+  const kits = await getKitsForListing(useCaseSlug);
+
+  for (const kit of kits) {
+    const real = await getPriceHistory(kit.id);
+    if (real.length >= 7) {
+      kit.priceHistory = real;
+    } else {
+      // Generate synthetic history until real data accumulates
+      kit.priceHistory = generateSyntheticHistory(kit.listedPrice * 100, 180);
+    }
   }
 
   return kits;

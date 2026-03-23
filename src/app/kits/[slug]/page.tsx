@@ -6,6 +6,7 @@ import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
 import { SpecBlock } from "@/components/ui/spec-block";
 import { GapReceipt } from "@/components/ui/gap-receipt";
+import { PriceHistorySection } from "@/components/ui/price-history-section";
 import { KitProductJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 
 export function generateStaticParams() {
@@ -353,45 +354,9 @@ export default async function KitDetailPage({
         </div>
       </section>
 
-      {/* Price History placeholder */}
+      {/* Price History */}
       <section className="mb-10">
-        <h2 className="text-lg font-bold text-[var(--text-primary)] mb-4">
-          Price History
-        </h2>
-        <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-6">
-          {/* Chart placeholder */}
-          <div className="relative h-48 flex items-end gap-1">
-            {Array.from({ length: 30 }).map((_, i) => {
-              const height = 30 + Math.sin(i * 0.5) * 20 + Math.random() * 30;
-              return (
-                <div
-                  key={i}
-                  className="flex-1 bg-[var(--accent)]/20 hover:bg-[var(--accent)]/40 rounded-t-sm transition-colors"
-                  style={{ height: `${height}%` }}
-                />
-              );
-            })}
-            {/* Current price line */}
-            <div className="absolute inset-x-0 bottom-[60%] border-t border-dashed border-[var(--accent)]/30" />
-          </div>
-          <div className="flex items-center justify-between mt-3 pt-3 border-t border-[var(--border)]">
-            <div className="flex gap-4 font-mono text-[10px] text-[var(--text-muted)]">
-              <span>All-time low: <span className="text-[var(--success)]">${(kit.listedPrice - 150).toLocaleString()}</span></span>
-              <span>Average: <span className="text-[var(--text-secondary)]">${(kit.listedPrice + 50).toLocaleString()}</span></span>
-              <span>Current: <span className="text-[var(--accent)]">${kit.listedPrice.toLocaleString()}</span></span>
-            </div>
-            <div className="flex gap-2">
-              {["30d", "90d", "6mo", "1yr"].map((range) => (
-                <button
-                  key={range}
-                  className="rounded border border-[var(--border)] bg-[var(--bg-primary)] px-2 py-0.5 font-mono text-[10px] text-[var(--text-muted)] hover:border-[var(--border-accent)] hover:text-[var(--accent)] transition-colors"
-                >
-                  {range}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
+        <PriceHistorySection kit={kit} />
       </section>
 
       {/* Similar kits */}
