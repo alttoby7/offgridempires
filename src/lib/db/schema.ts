@@ -399,6 +399,8 @@ export const kitOffers = pgTable(
       .references(() => retailers.id),
     retailerSku: text("retailer_sku"),
     asin: text("asin"),
+    externalProductId: text("external_product_id"),
+    externalVariantId: text("external_variant_id"),
     sourceUrl: text("source_url").notNull(),
     canonicalUrl: text("canonical_url").notNull(),
     affiliateUrl: text("affiliate_url"),

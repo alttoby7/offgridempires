@@ -289,6 +289,28 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
     const costPerW =
       panelWatts > 0 ? `$${(finalTrueCost / panelWatts).toFixed(2)}` : "N/A";
 
+    // Fetch all retailer offers for this kit
+    const allOffersResult = await db.execute(sql`
+      SELECT kcp.total_known_cents, kcp.in_stock, kcp.observed_at,
+             r.name AS retailer_name, r.slug AS retailer_slug,
+             ko.source_url
+      FROM kit_current_prices kcp
+      JOIN retailers r ON r.id = kcp.retailer_id
+      JOIN kit_offers ko ON ko.id = kcp.offer_id
+      WHERE kcp.kit_id = ${kitId} AND kcp.in_stock IS TRUE
+      ORDER BY kcp.total_known_cents ASC
+    `);
+    const offers = allOffersResult.rows.map((o) => ({
+      retailer: o.retailer_name as string,
+      retailerSlug: o.retailer_slug as string,
+      price: Math.round(Number(o.total_known_cents ?? 0) / 100),
+      sourceUrl: o.source_url as string | undefined,
+      inStock: o.in_stock as boolean,
+      observedAt: o.observed_at
+        ? new Date(o.observed_at as string).toISOString()
+        : new Date().toISOString(),
+    }));
+
     kits.push({
       id: kitId,
       slug: row.slug as string,
@@ -316,6 +338,7 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       sourceUrl: row.source_url as string | undefined,
       completeness: Number(row.completeness_score ?? 0),
       items: kitItems,
+      offers: offers.length > 1 ? offers : undefined,
     });
   }
 

@@ -89,7 +89,17 @@ export function KitCard({ kit, compact = false }: KitCardProps) {
 
         {/* Quiet metadata row */}
         <div className="mt-auto pt-3 border-t border-[var(--border)] flex items-center justify-between">
-          <PriceTimestamp observedAt={kit.priceObservedAt} />
+          <div className="flex items-center gap-2">
+            <PriceTimestamp observedAt={kit.priceObservedAt} />
+            {kit.offers && kit.offers.length > 1 && (() => {
+              const retailerCount = new Set(kit.offers.map(o => o.retailer)).size;
+              return retailerCount > 1 ? (
+                <span className="font-mono text-[10px] px-1.5 py-0.5 rounded border border-[var(--accent)]/30 text-[var(--accent)]">
+                  {retailerCount} retailers
+                </span>
+              ) : null;
+            })()}
+          </div>
           {kit.priceChange !== undefined && kit.priceChange !== 0 && (
             <span
               className={`font-mono text-xs font-semibold ${

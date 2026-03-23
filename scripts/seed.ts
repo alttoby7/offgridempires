@@ -41,6 +41,7 @@ const RETAILERS = [
   { name: "EcoFlow Direct", slug: "ecoflow-direct", retailerType: "direct" as const },
   { name: "Bluetti Direct", slug: "bluetti-direct", retailerType: "direct" as const },
   { name: "Signature Solar", slug: "signature-solar", retailerType: "direct" as const },
+  { name: "Shop Solar Kits", slug: "shop-solar-kits", retailerType: "direct" as const },
 ];
 
 const COMPONENT_ROLES: { code: (typeof schema.componentRoleCodeEnum.enumValues)[number]; label: string; description: string }[] = [

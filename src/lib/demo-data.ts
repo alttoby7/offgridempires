@@ -28,6 +28,16 @@ export interface Kit {
   completeness: number; // 0-100%
   items: KitItem[];
   priceHistory?: PriceHistoryPoint[];
+  offers?: KitOffer[];
+}
+
+export interface KitOffer {
+  retailer: string;
+  retailerSlug: string;
+  price: number;
+  sourceUrl?: string;
+  inStock: boolean;
+  observedAt: string;
 }
 
 export interface KitItem {

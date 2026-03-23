@@ -10,8 +10,11 @@ import { BomTable } from "@/components/ui/bom-table";
 import { PriceHistorySection } from "@/components/ui/price-history-section";
 import { KitProductJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 
-// Centralized affiliate tag — swap when OffGridEmpire Associates account is approved
+// Affiliate config per retailer
 const AMAZON_AFFILIATE_TAG = "fidohikes-20";
+// TODO: Replace with real Awin IDs after Shop Solar approval
+const AWIN_ADVERTISER_ID = "";
+const AWIN_PUBLISHER_ID = "";
 
 export function generateStaticParams() {
   return getKitSlugs().map((slug) => ({ slug }));
@@ -57,10 +60,17 @@ const useCaseLabels: Record<string, string> = {
   boat: "Boat",
 };
 
-function buildAffiliateUrl(sourceUrl: string | undefined): string | null {
+function buildAffiliateUrl(sourceUrl: string | undefined, retailerSlug = "amazon"): string | null {
   if (!sourceUrl) return null;
-  const separator = sourceUrl.includes("?") ? "&" : "?";
-  return `${sourceUrl}${separator}tag=${AMAZON_AFFILIATE_TAG}`;
+  if (retailerSlug === "amazon") {
+    const sep = sourceUrl.includes("?") ? "&" : "?";
+    return `${sourceUrl}${sep}tag=${AMAZON_AFFILIATE_TAG}`;
+  }
+  if (retailerSlug === "shop-solar-kits" && AWIN_ADVERTISER_ID && AWIN_PUBLISHER_ID) {
+    const encoded = encodeURIComponent(sourceUrl);
+    return `https://www.awin1.com/cread.php?awinmid=${AWIN_ADVERTISER_ID}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encoded}`;
+  }
+  return sourceUrl;
 }
 
 export default async function KitDetailPage({
@@ -84,7 +94,8 @@ export default async function KitDetailPage({
 
   const missingItems = kit.items.filter((item) => !item.isIncluded);
   const includedItems = kit.items.filter((item) => item.isIncluded);
-  const affiliateUrl = buildAffiliateUrl(kit.sourceUrl);
+  const affiliateUrl = buildAffiliateUrl(kit.sourceUrl, "amazon");
+  const hasMultipleRetailers = (kit.offers?.length ?? 0) > 1;
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
@@ -233,6 +244,73 @@ export default async function KitDetailPage({
               </div>
             </div>
           </div>
+
+          {/* Multi-retailer price comparison */}
+          {hasMultipleRetailers && kit.offers && (
+            <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 space-y-3">
+              <p className="text-xs font-medium text-[var(--text-muted)] uppercase">
+                Available from {new Set(kit.offers.map((o) => o.retailer)).size} retailers
+              </p>
+              <div className="space-y-2">
+                {/* Deduplicate: show cheapest offer per retailer */}
+                {Array.from(
+                  kit.offers.reduce((map, o) => {
+                    if (!map.has(o.retailer) || o.price < map.get(o.retailer)!.price) {
+                      map.set(o.retailer, o);
+                    }
+                    return map;
+                  }, new Map<string, (typeof kit.offers)[0]>())
+                  .values()
+                ).map((offer, i) => {
+                  const offerUrl = buildAffiliateUrl(offer.sourceUrl, offer.retailerSlug);
+                  const isCheapest = i === 0;
+                  return (
+                    <div
+                      key={`${offer.retailer}-${offer.price}`}
+                      className={`flex items-center justify-between rounded border px-3 py-2 ${
+                        isCheapest
+                          ? "border-[var(--accent)]/30 bg-[var(--accent)]/5"
+                          : "border-[var(--border)] bg-[var(--bg-primary)]"
+                      }`}
+                    >
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm font-medium text-[var(--text-primary)]">
+                          {offer.retailer}
+                        </span>
+                        {isCheapest && (
+                          <span className="text-[10px] font-semibold uppercase tracking-wide text-[var(--accent)] bg-[var(--accent)]/10 px-1.5 py-0.5 rounded">
+                            Best
+                          </span>
+                        )}
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className={`font-mono text-sm font-bold ${
+                          isCheapest ? "text-[var(--accent)]" : "text-[var(--text-secondary)]"
+                        }`}>
+                          ${offer.price.toLocaleString()}
+                        </span>
+                        {offerUrl ? (
+                          <a
+                            href={offerUrl}
+                            target="_blank"
+                            rel="noopener noreferrer sponsored"
+                            className="text-xs font-medium text-[var(--accent)] hover:underline"
+                          >
+                            View
+                          </a>
+                        ) : (
+                          <span className="text-xs text-[var(--text-muted)]">Link</span>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <p className="text-[10px] text-[var(--text-muted)] text-center">
+                Affiliate links — same price for you
+              </p>
+            </div>
+          )}
 
           {/* Compare CTA */}
           <Link
