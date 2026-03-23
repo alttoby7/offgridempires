@@ -20,6 +20,8 @@ export type ApplianceCategory =
   | "Kitchen"
   | "Climate"
   | "Water"
+  | "Laundry"
+  | "Personal"
   | "Entertainment"
   | "Tools"
   | "Medical";

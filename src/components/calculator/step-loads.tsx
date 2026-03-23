@@ -20,6 +20,8 @@ const CATEGORY_ICONS: Record<ApplianceCategory, string> = {
   Kitchen: "🍳",
   Climate: "🌡️",
   Water: "💧",
+  Laundry: "👕",
+  Personal: "🪥",
   Entertainment: "📺",
   Tools: "🔧",
   Medical: "🏥",
