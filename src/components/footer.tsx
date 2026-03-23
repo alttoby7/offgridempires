@@ -2,22 +2,37 @@ import Link from "next/link";
 
 const footerLinks = {
   Tool: [
-    { href: "/kits", label: "Browse Kits" },
-    { href: "/compare", label: "Compare" },
+    { href: "/kits", label: "Browse All Kits" },
+    { href: "/compare", label: "Compare Kits" },
     { href: "/products", label: "Components" },
     { href: "/categories/batteries", label: "Batteries" },
     { href: "/categories/panels", label: "Solar Panels" },
+    { href: "/categories/inverters", label: "Inverters" },
   ],
-  "Use Cases": [
-    { href: "/kits?use_case=rv", label: "RV & Van Life" },
-    { href: "/kits?use_case=cabin", label: "Cabin" },
-    { href: "/kits?use_case=homestead", label: "Homestead" },
-    { href: "/kits?use_case=emergency", label: "Emergency Backup" },
-    { href: "/kits?use_case=shed", label: "Shed & Workshop" },
+  "Best For": [
+    { href: "/best-for/rv", label: "RV & Van Life" },
+    { href: "/best-for/cabin", label: "Weekend Cabin" },
+    { href: "/best-for/shed", label: "Shed & Workshop" },
+    { href: "/best-for/emergency", label: "Emergency Backup" },
+    { href: "/best-for/homestead", label: "Homestead" },
+    { href: "/best-for/boat", label: "Boat & Marine" },
+  ],
+  Brands: [
+    { href: "/brands/renogy", label: "Renogy" },
+    { href: "/brands/eco-worthy", label: "Eco-Worthy" },
+    { href: "/brands/ecoflow", label: "EcoFlow" },
+    { href: "/brands/jackery", label: "Jackery" },
+    { href: "/brands/bluetti", label: "Bluetti" },
+    { href: "/brands/windynation", label: "WindyNation" },
+  ],
+  Budget: [
+    { href: "/solar-kits/under-500", label: "Under $500" },
+    { href: "/solar-kits/under-1000", label: "Under $1,000" },
+    { href: "/solar-kits/under-2000", label: "Under $2,000" },
+    { href: "/solar-kits/under-3000", label: "Under $3,000" },
   ],
   Resources: [
     { href: "/methodology", label: "How We Score" },
-    { href: "/methodology#data-sources", label: "Data Sources" },
     { href: "/affiliate-disclosure", label: "Affiliate Disclosure" },
     { href: "/contact", label: "Contact" },
   ],
@@ -33,7 +48,7 @@ export function Footer() {
   return (
     <footer className="border-t border-[var(--border)] bg-[var(--bg-secondary)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">

@@ -20,12 +20,12 @@ export const metadata: Metadata = {
 
 // Use case chips for Browse by Use Case row
 const useCaseChips = [
-  { id: "rv", label: "RV & Van Life", href: "/kits" },
-  { id: "cabin", label: "Cabin", href: "/kits" },
-  { id: "homestead", label: "Homestead", href: "/kits" },
-  { id: "emergency", label: "Emergency", href: "/kits" },
-  { id: "shed", label: "Shed", href: "/kits" },
-  { id: "boat", label: "Boat", href: "/kits" },
+  { id: "rv", label: "RV & Van Life", href: "/best-for/rv" },
+  { id: "cabin", label: "Cabin", href: "/best-for/cabin" },
+  { id: "homestead", label: "Homestead", href: "/best-for/homestead" },
+  { id: "emergency", label: "Emergency", href: "/best-for/emergency" },
+  { id: "shed", label: "Shed", href: "/best-for/shed" },
+  { id: "boat", label: "Boat", href: "/best-for/boat" },
 ];
 
 export default function HomePage() {
