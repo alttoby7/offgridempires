@@ -60,9 +60,11 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
         kcp.total_known_cents,
         kcp.price_cents,
         kcp.observed_at,
-        r.name AS retailer_name
+        r.name AS retailer_name,
+        ko.source_url
       FROM kit_current_prices kcp
       JOIN retailers r ON r.id = kcp.retailer_id
+      JOIN kit_offers ko ON ko.id = kcp.offer_id
       WHERE kcp.in_stock IS TRUE
       ORDER BY kcp.kit_id, kcp.total_known_cents ASC NULLS LAST, kcp.observed_at DESC
     )
@@ -86,6 +88,7 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       co.price_cents,
       co.observed_at AS price_observed_at,
       co.retailer_name,
+      co.source_url,
       ktc.base_offer_price_cents,
       ktc.missing_components_cents,
       ktc.total_before_tax_cents,
@@ -204,6 +207,7 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
         ? new Date(row.price_observed_at as string).toISOString()
         : new Date().toISOString(),
       retailer: (row.retailer_name as string) ?? "Unknown",
+      sourceUrl: row.source_url as string | undefined,
       completeness: Number(row.completeness_score ?? 0),
       items: kitItems,
     });

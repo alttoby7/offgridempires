@@ -23,6 +23,7 @@ export interface Kit {
   priceChange?: number;
   priceObservedAt: string;
   retailer: string;
+  sourceUrl?: string;
   completeness: number; // 0-100%
   items: KitItem[];
   priceHistory?: PriceHistoryPoint[];

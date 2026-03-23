@@ -74,6 +74,9 @@ export default async function KitDetailPage({
 
   const missingItems = kit.items.filter((item) => !item.isIncluded);
   const includedItems = kit.items.filter((item) => item.isIncluded);
+  const affiliateUrl = kit.sourceUrl
+    ? `${kit.sourceUrl}${kit.sourceUrl.includes("?") ? "&" : "?"}tag=fidohikes-20`
+    : undefined;
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
@@ -84,7 +87,7 @@ export default async function KitDetailPage({
         { name: kit.name, url: `/kits/${kit.slug}` },
       ]} />
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-6">
+      <nav className="flex items-center gap-2 text-sm text-[var(--text-muted)] mb-6">
         <Link href="/" className="hover:text-[var(--accent)] transition-colors">Home</Link>
         <span>/</span>
         <Link href="/kits" className="hover:text-[var(--accent)] transition-colors">Kits</Link>
@@ -98,10 +101,10 @@ export default async function KitDetailPage({
         <div className="lg:col-span-2 space-y-5">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <span className="font-mono text-xs uppercase tracking-wider text-[var(--text-muted)]">
+              <span className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)]">
                 {kit.brand}
               </span>
-              <span className="font-mono text-[10px] text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-1.5 py-0.5">
+              <span className="text-xs text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-2 py-0.5">
                 via {kit.retailer}
               </span>
               <PriceTimestamp observedAt={kit.priceObservedAt} />
@@ -122,10 +125,10 @@ export default async function KitDetailPage({
           {/* Completeness */}
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <span className="font-mono text-xs uppercase tracking-wider text-[var(--text-muted)]">
+              <span className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)]">
                 Kit Completeness
               </span>
-              <span className={`font-mono text-xs font-semibold ${
+              <span className={`font-mono text-sm font-semibold ${
                 kit.completeness === 100 ? "text-[var(--success)]" : "text-[var(--warning)]"
               }`}>
                 {kit.completeness}%
@@ -136,17 +139,17 @@ export default async function KitDetailPage({
 
           {/* Use case ratings */}
           <div>
-            <span className="font-mono text-xs uppercase tracking-wider text-[var(--text-muted)] block mb-2">
+            <span className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] block mb-2">
               Use Case Suitability
             </span>
             <div className="flex flex-wrap gap-2">
               {Object.entries(kit.useCaseRatings).map(([uc, rating]) => (
                 <span
                   key={uc}
-                  className={`inline-flex items-center gap-1.5 rounded border px-2.5 py-1 text-xs font-medium ${ratingColors[rating]}`}
+                  className={`inline-flex items-center gap-1.5 rounded border px-2.5 py-1.5 text-sm font-medium ${ratingColors[rating]}`}
                 >
                   {useCaseLabels[uc] ?? uc}
-                  <span className="font-mono text-[10px] opacity-70">{rating}</span>
+                  <span className="font-mono text-xs opacity-70">{rating}</span>
                 </span>
               ))}
             </div>
@@ -160,7 +163,7 @@ export default async function KitDetailPage({
             <div className="space-y-3">
               <div className="flex items-baseline justify-between">
                 <div>
-                  <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase">Advertised Price</p>
+                  <p className="text-xs font-medium text-[var(--text-muted)] uppercase">Advertised Price</p>
                   <p className={`font-mono text-2xl font-bold ${kit.missingCost > 0 ? "text-[var(--text-secondary)] line-through decoration-1" : "text-[var(--text-primary)]"}`}>
                     ${kit.listedPrice.toLocaleString()}
                   </p>
@@ -181,7 +184,9 @@ export default async function KitDetailPage({
 
             {/* CTA */}
             <a
-              href="#"
+              href={affiliateUrl ?? "#"}
+              target={affiliateUrl ? "_blank" : undefined}
+              rel={affiliateUrl ? "noopener noreferrer sponsored" : undefined}
               className="flex items-center justify-center gap-2 w-full rounded bg-[var(--accent)] py-3 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
             >
               View on {kit.retailer}
@@ -190,13 +195,13 @@ export default async function KitDetailPage({
               </svg>
             </a>
 
-            <p className="text-[10px] text-[var(--text-muted)] text-center">
+            <p className="text-xs text-[var(--text-muted)] text-center">
               Affiliate link — same price for you, supports this tool
             </p>
 
             {/* Price alert */}
             <div className="border-t border-[var(--border)] pt-4">
-              <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase mb-2">
+              <p className="text-xs font-medium text-[var(--text-muted)] uppercase mb-2">
                 Price Drop Alert
               </p>
               <div className="flex gap-2">
@@ -233,10 +238,10 @@ export default async function KitDetailPage({
       {/* Component Decomposition Table */}
       <section className="mb-10">
         <div className="flex items-center gap-3 mb-4">
-          <h2 className="text-lg font-bold text-[var(--text-primary)]">
+          <h2 className="text-xl font-bold text-[var(--text-primary)]">
             Component Breakdown
           </h2>
-          <span className="font-mono text-[10px] text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-1.5 py-0.5">
+          <span className="text-xs text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-2 py-0.5">
             {includedItems.length} included / {missingItems.length} missing
           </span>
         </div>
@@ -244,7 +249,7 @@ export default async function KitDetailPage({
         {/* Desktop table */}
         <div className="hidden lg:block rounded border border-[var(--border)] bg-[var(--bg-surface)] overflow-hidden">
           {/* Table header */}
-          <div className="grid grid-cols-12 gap-2 px-4 py-2.5 bg-[var(--bg-secondary)] border-b border-[var(--border)] font-mono text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
+          <div className="grid grid-cols-12 gap-2 px-4 py-3 bg-[var(--bg-secondary)] border-b border-[var(--border)] text-xs font-medium uppercase tracking-wide text-[var(--text-muted)]">
             <div className="col-span-1">Status</div>
             <div className="col-span-2">Role</div>
             <div className="col-span-3">Component</div>
@@ -256,7 +261,7 @@ export default async function KitDetailPage({
           {kit.items.map((item, i) => (
             <div
               key={i}
-              className={`grid grid-cols-12 gap-2 px-4 py-3 items-center border-b border-[var(--border)] last:border-b-0 ${
+              className={`grid grid-cols-12 gap-2 px-4 py-3.5 items-center border-b border-[var(--border)] last:border-b-0 ${
                 !item.isIncluded ? "bg-[var(--danger)]/[0.03]" : ""
               }`}
             >
@@ -271,11 +276,11 @@ export default async function KitDetailPage({
                   </span>
                 )}
               </div>
-              <div className="col-span-2"><span className="font-mono text-xs font-medium text-[var(--text-secondary)]">{item.role}</span></div>
+              <div className="col-span-2"><span className="text-sm font-medium text-[var(--text-secondary)]">{item.role}</span></div>
               <div className="col-span-3"><span className={`text-sm ${item.isIncluded ? "text-[var(--text-primary)]" : "text-[var(--danger)]/70 italic"}`}>{item.name}</span></div>
               <div className="col-span-3">
                 <span className="text-xs text-[var(--text-muted)]">{item.specs}</span>
-                {item.notes && <span className="block text-[10px] text-[var(--warning)] mt-0.5">&#9888; {item.notes}</span>}
+                {item.notes && <span className="block text-xs text-[var(--warning)] mt-0.5">&#9888; {item.notes}</span>}
               </div>
               <div className="col-span-1 text-center"><span className="font-mono text-xs text-[var(--text-secondary)]">{item.quantity > 0 ? `${item.quantity}×` : "—"}</span></div>
               <div className="col-span-2 text-right">
@@ -321,7 +326,7 @@ export default async function KitDetailPage({
                     </span>
                   )}
                   <div>
-                    <span className="font-mono text-[10px] uppercase tracking-wider text-[var(--text-muted)]">{item.role}</span>
+                    <span className="text-xs font-medium uppercase tracking-wide text-[var(--text-muted)]">{item.role}</span>
                     <p className={`text-sm font-medium ${item.isIncluded ? "text-[var(--text-primary)]" : "text-[var(--danger)]/70 italic"}`}>
                       {item.name}
                     </p>
@@ -336,12 +341,12 @@ export default async function KitDetailPage({
                     <span className="font-mono text-xs text-[var(--text-muted)]">—</span>
                   )}
                   {item.quantity > 0 && (
-                    <p className="font-mono text-[10px] text-[var(--text-muted)]">{item.quantity}×</p>
+                    <p className="font-mono text-xs text-[var(--text-muted)]">{item.quantity}×</p>
                   )}
                 </div>
               </div>
               <p className="text-xs text-[var(--text-muted)] mt-1 ml-7">{item.specs}</p>
-              {item.notes && <p className="text-[10px] text-[var(--warning)] mt-1 ml-7">&#9888; {item.notes}</p>}
+              {item.notes && <p className="text-xs text-[var(--warning)] mt-1 ml-7">&#9888; {item.notes}</p>}
             </div>
           ))}
 
@@ -361,7 +366,7 @@ export default async function KitDetailPage({
 
       {/* Similar kits */}
       <section>
-        <h2 className="text-lg font-bold text-[var(--text-primary)] mb-4">
+        <h2 className="text-xl font-bold text-[var(--text-primary)] mb-4">
           Compare With Similar Kits
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -374,13 +379,13 @@ export default async function KitDetailPage({
                 href={`/kits/${k.slug}`}
                 className="group rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:border-[var(--border-accent)] transition-colors"
               >
-                <p className="font-mono text-[10px] text-[var(--text-muted)]">{k.brand}</p>
+                <p className="text-xs font-medium text-[var(--text-muted)]">{k.brand}</p>
                 <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-1 mt-0.5">
                   {k.name}
                 </p>
                 <div className="flex items-center gap-3 mt-2">
                   <span className="font-mono text-xs text-[var(--accent)]">${k.trueCost.toLocaleString()}</span>
-                  <span className="font-mono text-[10px] text-[var(--text-muted)]">{k.panelWatts}W / {k.storageWh > 0 ? `${(k.storageWh / 1000).toFixed(1)}kWh` : "No storage"}</span>
+                  <span className="font-mono text-xs text-[var(--text-muted)]">{k.panelWatts}W / {k.storageWh > 0 ? `${(k.storageWh / 1000).toFixed(1)}kWh` : "No storage"}</span>
                 </div>
               </Link>
             ))}
