@@ -331,18 +331,20 @@ export default async function KitDetailPage({
       </section>
 
       {/* Component Decomposition Table */}
-      <section className="mb-10">
-        <div className="flex items-center gap-3 mb-4">
-          <h2 className="text-xl font-bold text-[var(--text-primary)]">
-            Component Breakdown
-          </h2>
-          <span className="text-xs text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-2 py-0.5">
-            {includedItems.length} included / {missingItems.length} missing
-          </span>
-        </div>
+      {kit.items.length > 0 && (
+        <section className="mb-10">
+          <div className="flex items-center gap-3 mb-4">
+            <h2 className="text-xl font-bold text-[var(--text-primary)]">
+              Component Breakdown
+            </h2>
+            <span className="text-xs text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-2 py-0.5">
+              {includedItems.length} included / {missingItems.length} missing
+            </span>
+          </div>
 
-        <BomTable items={kit.items} missingCost={kit.missingCost} />
-      </section>
+          <BomTable items={kit.items} missingCost={kit.missingCost} />
+        </section>
+      )}
 
       {/* Price History */}
       <section className="mb-10">

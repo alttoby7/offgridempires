@@ -80,6 +80,7 @@ export function BomTable({
   items: KitItem[];
   missingCost: number;
 }) {
+  if (items.length === 0) return null;
   const missingItems = items.filter((item) => !item.isIncluded);
   const includedItems = items.filter((item) => item.isIncluded);
   const [showIncluded, setShowIncluded] = useState(includedItems.length <= 4);
