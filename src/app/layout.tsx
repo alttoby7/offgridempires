@@ -18,8 +18,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "OffGridEmpires — Compare Every Off-Grid Solar Kit",
-    template: "%s | OffGridEmpires",
+    default: "OffGridEmpire — Compare Every Off-Grid Solar Kit",
+    template: "%s | OffGridEmpire",
   },
   description:
     "The solar kit comparison engine. Break down components, see true total costs, track prices, and find the right off-grid system for your build.",

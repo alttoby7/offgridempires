@@ -45,7 +45,7 @@ export function Footer() {
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
               </svg>
               <span className="font-mono text-sm font-bold tracking-tight">
-                OFFGRID<span className="text-[var(--accent)]">EMPIRES</span>
+                OFFGRID<span className="text-[var(--accent)]">EMPIRE</span>
               </span>
             </Link>
             <p className="text-sm text-[var(--text-muted)] leading-relaxed">
@@ -77,7 +77,7 @@ export function Footer() {
 
         <div className="mt-10 pt-6 border-t border-[var(--border)] flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-[var(--text-muted)]">
-            &copy; {new Date().getFullYear()} OffGridEmpires. Prices are approximate and should be verified before purchase.
+            &copy; {new Date().getFullYear()} OffGridEmpire. Prices are approximate and should be verified before purchase.
           </p>
           <p className="text-xs text-[var(--text-muted)]">
             Affiliate disclosure: We earn commissions from qualifying purchases.

@@ -31,7 +31,7 @@ export function Header() {
               </svg>
             </div>
             <span className="font-mono text-sm font-bold tracking-tight text-[var(--text-primary)]">
-              OFFGRID<span className="text-[var(--accent)]">EMPIRES</span>
+              OFFGRID<span className="text-[var(--accent)]">EMPIRE</span>
             </span>
           </Link>
 
