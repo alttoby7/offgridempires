@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { demoKits } from "@/lib/demo-data";
+import { getKits } from "@/lib/get-kits";
 import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
@@ -37,7 +37,9 @@ function FilterPill({ label, active = false }: { label: string; active?: boolean
   );
 }
 
-function KitListCard({ kit }: { kit: (typeof demoKits)[0] }) {
+import type { Kit } from "@/lib/demo-data";
+
+function KitListCard({ kit }: { kit: Kit }) {
   const hasMissing = kit.missingCost > 0;
 
   return (
@@ -194,7 +196,7 @@ export default function KitsPage() {
         <div>
           <h1 className="text-2xl font-bold text-[var(--text-primary)]">Solar Kits</h1>
           <p className="text-sm text-[var(--text-muted)] mt-1">
-            {demoKits.length} kits compared with true total cost
+            {getKits().length} kits compared with true total cost
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -228,7 +230,7 @@ export default function KitsPage() {
       {/* Results count + compare bar */}
       <div className="flex items-center justify-between mb-4">
         <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase tracking-wider">
-          Showing {demoKits.length} kits
+          Showing {getKits().length} kits
         </p>
         <Link
           href="/compare"
@@ -243,7 +245,7 @@ export default function KitsPage() {
 
       {/* Kit grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {demoKits.map((kit) => (
+        {getKits().map((kit) => (
           <KitListCard key={kit.id} kit={kit} />
         ))}
       </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { demoKits } from "@/lib/demo-data";
+import { getKits, getKitBySlug, getKitSlugs } from "@/lib/get-kits";
 import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
@@ -8,7 +8,7 @@ import { SpecBlock } from "@/components/ui/spec-block";
 import { GapReceipt } from "@/components/ui/gap-receipt";
 
 export function generateStaticParams() {
-  return demoKits.map((kit) => ({ slug: kit.slug }));
+  return getKitSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -17,7 +17,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const kit = demoKits.find((k) => k.slug === slug);
+  const kit = getKitBySlug(slug);
   return {
     title: kit ? `${kit.name} — Real Build Cost Breakdown` : "Kit Not Found",
     description: kit
@@ -48,7 +48,7 @@ export default async function KitDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const kit = demoKits.find((k) => k.slug === slug);
+  const kit = getKitBySlug(slug);
 
   if (!kit) {
     return (
@@ -384,7 +384,7 @@ export default async function KitDetailPage({
           Compare With Similar Kits
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          {demoKits
+          {getKits()
             .filter((k) => k.slug !== kit.slug)
             .slice(0, 3)
             .map((k) => (

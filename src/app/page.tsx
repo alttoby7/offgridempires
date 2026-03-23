@@ -1,6 +1,6 @@
 import { Hero } from "@/components/hero";
 import { KitCard } from "@/components/kit-card";
-import { demoKits } from "@/lib/demo-data";
+import { getKits } from "@/lib/get-kits";
 import Link from "next/link";
 
 const useCases = [
@@ -66,7 +66,7 @@ const useCases = [
   },
 ];
 
-const featuredKits = demoKits.slice(0, 4);
+const featuredKits = getKits().slice(0, 4);
 
 const steps = [
   {

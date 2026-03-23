@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { demoKits, type Kit } from "@/lib/demo-data";
+import type { Kit } from "@/lib/demo-data";
+import { getKits } from "@/lib/get-kits";
 import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
@@ -12,7 +13,8 @@ export const metadata: Metadata = {
 };
 
 // Demo: 3 pre-selected kits
-const compareKits = [demoKits[0], demoKits[2], demoKits[4]];
+const allKits = getKits();
+const compareKits = [allKits[0], allKits[2], allKits[4]];
 
 // --- Verdict system ---
 interface Verdict {

@@ -1,0 +1,489 @@
+[
+  {
+    "id": "4d8828c7-c597-4180-ad23-92be9638589d",
+    "slug": "eco-worthy-200w-starter",
+    "name": "Eco-Worthy 200W 12V Solar Starter Kit",
+    "brand": "Eco-Worthy",
+    "listedPrice": 289,
+    "missingCost": 525,
+    "trueCost": 814,
+    "panelWatts": 200,
+    "storageWh": 0,
+    "inverterWatts": 0,
+    "voltage": 12,
+    "chemistry": "None",
+    "costPerWh": "N/A",
+    "useCases": [],
+    "useCaseRatings": {},
+    "included": {
+      "inverter": false,
+      "controller": true,
+      "wiring": true,
+      "mounting": true,
+      "panels": true,
+      "monitoring": false,
+      "battery": false
+    },
+    "priceObservedAt": "2026-03-23T06:18:29.650Z",
+    "retailer": "Amazon",
+    "completeness": 57,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Eco-Worthy 100W Mono",
+        "specs": "Eco-Worthy 100W Mono — 2x 100W = 200W total",
+        "quantity": 2
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Eco-Worthy 30A PWM",
+        "specs": "PWM — less efficient than MPPT",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "MC4 cables",
+        "specs": "MC4 cables — 10ft MC4",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Z-brackets",
+        "specs": "Z-brackets — Roof mount",
+        "quantity": 2
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 200
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 25
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 300
+      }
+    ]
+  },
+  {
+    "id": "45242f71-182a-4f40-a277-dc797fe4af76",
+    "slug": "windynation-400w-complete",
+    "name": "WindyNation 400W Complete Off-Grid Kit",
+    "brand": "WindyNation",
+    "listedPrice": 1149,
+    "missingCost": 110,
+    "trueCost": 1259,
+    "panelWatts": 400,
+    "storageWh": 1200,
+    "inverterWatts": 1500,
+    "voltage": 12,
+    "chemistry": "AGM",
+    "costPerWh": "$1.05",
+    "useCases": [],
+    "useCaseRatings": {},
+    "included": {
+      "inverter": true,
+      "controller": true,
+      "wiring": true,
+      "mounting": false,
+      "panels": true,
+      "monitoring": false,
+      "battery": true
+    },
+    "priceObservedAt": "2026-03-23T06:18:29.650Z",
+    "retailer": "Amazon",
+    "completeness": 71,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "WindyNation 100W Poly",
+        "specs": "WindyNation 100W Poly — 4x 100W = 400W total",
+        "quantity": 4
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "WindyNation P30L PWM",
+        "specs": "PWM — less efficient",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "WindyNation 100Ah AGM",
+        "specs": "AGM — 50% DoD, shorter cycle life",
+        "quantity": 2
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "VertaMax 1500W",
+        "specs": "Modified sine — not safe for sensitive electronics",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "MC4 + battery cables",
+        "specs": "MC4 + battery cables — Included",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 80
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 30
+      }
+    ]
+  },
+  {
+    "id": "f4b74b17-3bad-46e5-8939-d07a00350ee5",
+    "slug": "renogy-800w-cabin-kit",
+    "name": "Renogy 800W 12V Solar Cabin Kit",
+    "brand": "Renogy",
+    "listedPrice": 1599,
+    "missingCost": 900,
+    "trueCost": 2499,
+    "panelWatts": 800,
+    "storageWh": 0,
+    "inverterWatts": 0,
+    "voltage": 12,
+    "chemistry": "None",
+    "costPerWh": "N/A",
+    "useCases": [],
+    "useCaseRatings": {},
+    "included": {
+      "inverter": false,
+      "controller": true,
+      "wiring": true,
+      "mounting": true,
+      "panels": true,
+      "monitoring": true,
+      "battery": false
+    },
+    "priceObservedAt": "2026-03-23T06:18:29.650Z",
+    "retailer": "Renogy Direct",
+    "completeness": 71,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Renogy 200W 12V Mono",
+        "specs": "Renogy 200W 12V Mono — 4x 200W = 800W total",
+        "quantity": 4
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Renogy Rover 60A MPPT",
+        "specs": "Renogy Rover 60A MPPT — 60A MPPT, BT",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Full cable kit",
+        "specs": "Full cable kit — MC4, battery, tray cables",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Z-bracket kit",
+        "specs": "Z-bracket kit — 8x Z-brackets for roof",
+        "quantity": 8
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": true,
+        "name": "BT-2 Bluetooth Module",
+        "specs": "BT-2 Bluetooth Module — App monitoring",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 300
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 600
+      }
+    ]
+  },
+  {
+    "id": "1e647254-31b5-4f7d-844d-8d2e8ee46610",
+    "slug": "renogy-400w-complete-lifepo4",
+    "name": "Renogy 400W 12V Complete Solar Kit with 200Ah LiFePO4",
+    "brand": "Renogy",
+    "listedPrice": 1899,
+    "missingCost": 0,
+    "trueCost": 1899,
+    "panelWatts": 400,
+    "storageWh": 2560,
+    "inverterWatts": 2000,
+    "voltage": 12,
+    "chemistry": "LiFePO4",
+    "costPerWh": "$0.74",
+    "useCases": [],
+    "useCaseRatings": {},
+    "included": {
+      "inverter": true,
+      "controller": true,
+      "wiring": true,
+      "mounting": true,
+      "panels": true,
+      "monitoring": true,
+      "battery": true
+    },
+    "priceObservedAt": "2026-03-23T06:18:29.650Z",
+    "retailer": "Amazon",
+    "completeness": 100,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Renogy 100W 12V Mono",
+        "specs": "Renogy 100W 12V Mono — 4x 100W = 400W total",
+        "quantity": 4
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Renogy Rover 40A MPPT",
+        "specs": "Renogy Rover 40A MPPT — 40A, 12/24V auto",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "Renogy 200Ah 12V LiFePO4",
+        "specs": "Renogy 200Ah 12V LiFePO4 — 2,560Wh, 4000 cycles",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "Renogy 2000W Pure Sine",
+        "specs": "Renogy 2000W Pure Sine — 2000W cont / 4000W peak",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "MC4 cables + battery cables",
+        "specs": "MC4 cables + battery cables — 20ft MC4, 6AWG battery",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Z-bracket mounts",
+        "specs": "Z-bracket mounts — Roof mount, aluminum",
+        "quantity": 4
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": true,
+        "name": "BT-2 Bluetooth Module",
+        "specs": "BT-2 Bluetooth Module — App monitoring",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "19a6c4b9-0f85-49bc-85d7-1096805676b5",
+    "slug": "bluetti-ac300-b300-pv350",
+    "name": "Bluetti AC300 + B300 + PV350 Solar Panel",
+    "brand": "Bluetti",
+    "listedPrice": 3799,
+    "missingCost": 0,
+    "trueCost": 3799,
+    "panelWatts": 350,
+    "storageWh": 3072,
+    "inverterWatts": 3000,
+    "voltage": 48,
+    "chemistry": "LiFePO4",
+    "costPerWh": "$1.24",
+    "useCases": [],
+    "useCaseRatings": {},
+    "included": {
+      "inverter": true,
+      "controller": true,
+      "wiring": true,
+      "mounting": false,
+      "panels": true,
+      "monitoring": true,
+      "battery": true
+    },
+    "priceObservedAt": "2026-03-23T06:18:29.650Z",
+    "retailer": "Amazon",
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Bluetti PV350",
+        "specs": "Bluetti PV350 — 350W portable, 23.4% eff",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in MPPT",
+        "specs": "Built-in MPPT — Integrated in AC300",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "Bluetti B300 LiFePO4",
+        "specs": "Bluetti B300 LiFePO4 — 3,072Wh, 3500+ cycles",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "Built-in Pure Sine",
+        "specs": "Built-in Pure Sine — 3000W / 6000W peak, split-phase 240V",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar + battery cables",
+        "specs": "Solar + battery cables — Included",
+        "quantity": 1
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": true,
+        "name": "Bluetti App",
+        "specs": "Bluetti App — WiFi + BT",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "0c548fe3-b3a7-45d4-879c-7df2c8c8eadb",
+    "slug": "ecoflow-delta-pro-400w",
+    "name": "EcoFlow DELTA Pro + 400W Solar Panel",
+    "brand": "EcoFlow",
+    "listedPrice": 4299,
+    "missingCost": 0,
+    "trueCost": 4299,
+    "panelWatts": 400,
+    "storageWh": 3600,
+    "inverterWatts": 3600,
+    "voltage": 48,
+    "chemistry": "LiFePO4",
+    "costPerWh": "$1.19",
+    "useCases": [],
+    "useCaseRatings": {},
+    "included": {
+      "inverter": true,
+      "controller": true,
+      "wiring": true,
+      "mounting": false,
+      "panels": true,
+      "monitoring": true,
+      "battery": true
+    },
+    "priceObservedAt": "2026-03-23T06:18:29.650Z",
+    "retailer": "EcoFlow Direct",
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "EcoFlow 400W Portable Panel",
+        "specs": "EcoFlow 400W Portable Panel — 400W folding, 22.6% eff",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in MPPT",
+        "specs": "Built-in MPPT — Integrated in DELTA Pro",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "DELTA Pro LiFePO4",
+        "specs": "DELTA Pro LiFePO4 — 3,600Wh, expandable to 25kWh",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "Built-in Pure Sine",
+        "specs": "Built-in Pure Sine — 3600W / 7200W peak",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "XT60 solar cable",
+        "specs": "XT60 solar cable — Included",
+        "quantity": 1
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": true,
+        "name": "EcoFlow App",
+        "specs": "EcoFlow App — WiFi + BT monitoring",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "Portable panel — no mounting needed",
+        "quantity": 1
+      }
+    ]
+  }
+]
