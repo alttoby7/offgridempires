@@ -8,6 +8,15 @@ import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
 
+// Centralized affiliate tag — swap when OffGridEmpire Associates account is approved
+const AMAZON_AFFILIATE_TAG = "fidohikes-20";
+
+function getAffiliateUrl(kit: Kit): string | null {
+  if (!kit.sourceUrl) return null;
+  const sep = kit.sourceUrl.includes("?") ? "&" : "?";
+  return `${kit.sourceUrl}${sep}tag=${AMAZON_AFFILIATE_TAG}`;
+}
+
 // ── Verdict system ──────────────────────────────────────────────────────────
 
 interface Verdict {
@@ -264,10 +273,16 @@ export function CompareView({ allKits }: { allKits: Kit[] }) {
                   <PriceTimestamp observedAt={kit.priceObservedAt} />
                 </div>
                 <CompletenessBadges included={kit.included} size="sm" />
-                <a href="#" className="flex items-center justify-center gap-1.5 w-full rounded bg-[var(--accent)] py-2 text-xs font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors">
-                  View on {kit.retailer}
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" /></svg>
-                </a>
+                {getAffiliateUrl(kit) ? (
+                  <a href={getAffiliateUrl(kit)!} target="_blank" rel="noopener noreferrer sponsored" className="flex items-center justify-center gap-1.5 w-full rounded bg-[var(--accent)] py-2 text-xs font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors">
+                    View on {kit.retailer}
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" /></svg>
+                  </a>
+                ) : (
+                  <div className="flex items-center justify-center w-full rounded bg-[var(--bg-elevated)] py-2 text-xs font-medium text-[var(--text-muted)] cursor-not-allowed">
+                    Link unavailable
+                  </div>
+                )}
               </div>
             );
           })}
@@ -376,10 +391,16 @@ export function CompareView({ allKits }: { allKits: Kit[] }) {
                   </span>
                 </div>
               )}
-              <a href="#" className="flex items-center justify-center gap-1.5 w-full rounded border border-[var(--border)] py-2 text-xs font-medium text-[var(--text-secondary)] hover:border-[var(--border-accent)] hover:text-[var(--accent)] transition-colors">
-                View on {kit.retailer}
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" /></svg>
-              </a>
+              {getAffiliateUrl(kit) ? (
+                <a href={getAffiliateUrl(kit)!} target="_blank" rel="noopener noreferrer sponsored" className="flex items-center justify-center gap-1.5 w-full rounded border border-[var(--border)] py-2 text-xs font-medium text-[var(--text-secondary)] hover:border-[var(--border-accent)] hover:text-[var(--accent)] transition-colors">
+                  View on {kit.retailer}
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" /></svg>
+                </a>
+              ) : (
+                <div className="flex items-center justify-center w-full rounded border border-[var(--border)] py-2 text-xs font-medium text-[var(--text-muted)] cursor-not-allowed">
+                  Link unavailable
+                </div>
+              )}
             </div>
           );
         })}

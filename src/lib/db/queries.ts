@@ -189,21 +189,36 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
     const storageWh = Number(row.battery_usable_wh ?? 0);
     const panelWatts = Number(row.panel_array_w ?? 0);
 
-    // Fetch coverage rows
-    const coverage = await db
-      .select({
-        status: s.kitRoleCoverage.status,
-        roleCode: s.componentRoles.code,
-        includedQuantity: s.kitRoleCoverage.includedQuantity,
-        missingQuantity: s.kitRoleCoverage.missingQuantity,
-        recommendedCostCents: s.kitRoleCoverage.recommendedCostCents,
-        notes: s.kitRoleCoverage.notes,
-      })
-      .from(s.kitRoleCoverage)
-      .innerJoin(s.componentRoles, eq(s.componentRoles.id, s.kitRoleCoverage.componentRoleId))
-      .where(
-        sql`${s.kitRoleCoverage.kitId} = ${kitId} AND ${s.kitRoleCoverage.useCaseId} = ${useCase.id}`
-      );
+    // Fetch coverage rows with recommended product info
+    const coverageResult = await db.execute(sql`
+      SELECT
+        krc.status,
+        cr.code AS role_code,
+        krc.included_quantity,
+        krc.missing_quantity,
+        krc.recommended_cost_cents,
+        krc.notes,
+        p.title AS rec_product_title,
+        b.name AS rec_brand_name,
+        po.asin AS rec_asin
+      FROM kit_role_coverage krc
+      INNER JOIN component_roles cr ON cr.id = krc.component_role_id
+      LEFT JOIN products p ON p.id = krc.recommended_product_id
+      LEFT JOIN brands b ON b.id = p.brand_id
+      LEFT JOIN product_offers po ON po.id = krc.recommended_offer_id
+      WHERE krc.kit_id = ${kitId} AND krc.use_case_id = ${useCase.id}
+    `);
+    const coverage = coverageResult.rows.map((r) => ({
+      status: r.status as string,
+      roleCode: r.role_code as string,
+      includedQuantity: r.included_quantity as number | null,
+      missingQuantity: r.missing_quantity as number | null,
+      recommendedCostCents: r.recommended_cost_cents as number | null,
+      notes: r.notes as string | null,
+      recProductTitle: r.rec_product_title as string | null,
+      recBrandName: r.rec_brand_name as string | null,
+      recAsin: r.rec_asin as string | null,
+    }));
 
     // Fetch kit items (included components with detail)
     const items = await db
@@ -242,18 +257,20 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       });
     }
 
-    // Add missing items from coverage
+    // Add missing items from coverage (with recommended product if available)
     for (const cov of coverage) {
       if (cov.status === "missing") {
         kitItems.push({
           role: ROLE_LABELS[cov.roleCode] ?? cov.roleCode,
           isIncluded: false,
-          name: "Not included",
+          name: cov.recProductTitle ?? "Not included",
           specs: cov.notes ?? "",
           quantity: Number(cov.missingQuantity ?? 1),
           estimatedCost: cov.recommendedCostCents
             ? Math.round(cov.recommendedCostCents / 100)
             : undefined,
+          recommendedAsin: cov.recAsin ?? undefined,
+          recommendedBrand: cov.recBrandName ?? undefined,
         });
       }
     }

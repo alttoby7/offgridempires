@@ -4,7 +4,6 @@ import { useState, useMemo, useCallback } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Kit, KitItem } from "@/lib/demo-data";
-import { PriceTimestamp } from "@/components/ui/price-timestamp";
 
 // ── Category → Role mapping ─────────────────────────────────────────────────
 
@@ -13,41 +12,139 @@ const CATEGORY_ROLES: Record<string, string[]> = {
   panels: ["Solar Panels"],
   "charge-controllers": ["Charge Controller"],
   inverters: ["Inverter"],
-  "power-stations": ["Battery", "Inverter", "Charge Controller"], // all-in-ones
-  generators: ["Inverter"], // fallback
+  "power-stations": ["Battery", "Inverter", "Charge Controller"],
+  generators: ["Inverter"],
 };
+
+const AFFILIATE_TAG = "fidohikes-20";
+
+// ── Types ────────────────────────────────────────────────────────────────────
+
+interface ComponentEntry {
+  /** Normalized component name (dedupe key) */
+  name: string;
+  /** Raw specs string */
+  specs: string;
+  /** Brand of the component */
+  brand: string;
+  /** Per-unit wattage (panels), capacity (batteries), or power (inverters) */
+  unitValue: number;
+  /** Unit label like "W", "Wh", "A" */
+  unitLabel: string;
+  /** Type tag: "Mono", "Poly", "Portable", "LiFePO4", "MPPT", "PWM", etc. */
+  type: string;
+  /** Is this included in any kit, or always missing? */
+  isIncluded: boolean;
+  /** Recommended ASIN for missing components */
+  recommendedAsin?: string;
+  /** Kits that use this component */
+  kits: {
+    slug: string;
+    name: string;
+    brand: string;
+    quantity: number;
+    totalValue: number; // total panel watts, storage Wh, etc.
+    trueCost: number;
+    isIncluded: boolean;
+    estimatedCost?: number;
+  }[];
+}
+
+// ── Extraction helpers ──────────────────────────────────────────────────────
+
+function parseWattage(name: string, specs: string): number {
+  // Try to extract wattage like "100W", "200W", "350W", "400W"
+  const match = (name + " " + specs).match(/(\d+)\s*W\b/i);
+  return match ? parseInt(match[1], 10) : 0;
+}
+
+function parseCapacity(specs: string): number {
+  // Try "100Ah", "200Ah", "1280Wh"
+  const whMatch = specs.match(/(\d+)\s*Wh\b/i);
+  if (whMatch) return parseInt(whMatch[1], 10);
+  const ahMatch = specs.match(/(\d+)\s*Ah\b/i);
+  if (ahMatch) return parseInt(ahMatch[1], 10) * 12; // assume 12V
+  return 0;
+}
+
+function parseType(name: string, specs: string, category: string): string {
+  const combined = (name + " " + specs).toLowerCase();
+  if (category === "panels") {
+    if (combined.includes("portable") || combined.includes("folding")) return "Portable";
+    if (combined.includes("mono")) return "Monocrystalline";
+    if (combined.includes("poly")) return "Polycrystalline";
+    return "Panel";
+  }
+  if (category === "batteries") {
+    if (combined.includes("lifepo4") || combined.includes("lithium")) return "LiFePO4";
+    if (combined.includes("agm")) return "AGM";
+    return "Battery";
+  }
+  if (category === "charge-controllers") {
+    if (combined.includes("mppt")) return "MPPT";
+    if (combined.includes("pwm")) return "PWM";
+    return "Controller";
+  }
+  if (category === "inverters") {
+    if (combined.includes("pure sine")) return "Pure Sine Wave";
+    if (combined.includes("modified")) return "Modified Sine";
+    if (combined.includes("charger")) return "Inverter/Charger";
+    return "Inverter";
+  }
+  return "";
+}
+
+function extractBrand(itemName: string, kitBrand: string): string {
+  // Try to get brand from component name
+  const brands = ["Renogy", "Eco-Worthy", "ECO-WORTHY", "WindyNation", "Jackery", "EcoFlow", "Bluetti", "BLUETTI", "BougeRV", "Victron", "BESTEK", "AIMS", "SOK", "Battle Born", "EG4", "Giandel"];
+  for (const b of brands) {
+    if (itemName.toLowerCase().startsWith(b.toLowerCase())) return b;
+  }
+  return kitBrand;
+}
+
+function normalizeComponentName(name: string): string {
+  return name.trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+function getUnitInfo(category: string): { label: string; getter: (name: string, specs: string) => number } {
+  switch (category) {
+    case "panels":
+      return { label: "W", getter: parseWattage };
+    case "batteries":
+      return { label: "Wh", getter: (_, specs) => parseCapacity(specs) };
+    case "inverters":
+      return { label: "W", getter: parseWattage };
+    case "charge-controllers":
+      return { label: "A", getter: (name, specs) => {
+        const match = (name + " " + specs).match(/(\d+)\s*A\b/i);
+        return match ? parseInt(match[1], 10) : 0;
+      }};
+    default:
+      return { label: "", getter: () => 0 };
+  }
+}
+
+function getKitTotalValue(kit: Kit, category: string): number {
+  switch (category) {
+    case "panels": return kit.panelWatts;
+    case "batteries": return kit.storageWh;
+    case "inverters": return kit.inverterWatts;
+    default: return 0;
+  }
+}
 
 // ── Sort ────────────────────────────────────────────────────────────────────
 
-type SortKey = "true_cost_asc" | "true_cost_desc" | "component_cost" | "panel_watts" | "storage" | "completeness";
+type SortKey = "value_desc" | "value_asc" | "kits_desc" | "brand" | "type";
 
 const SORT_OPTIONS: { value: SortKey; label: string }[] = [
-  { value: "true_cost_asc", label: "Real Build Cost: Low → High" },
-  { value: "true_cost_desc", label: "Real Build Cost: High → Low" },
-  { value: "component_cost", label: "Component Cost" },
-  { value: "panel_watts", label: "Panel Watts" },
-  { value: "storage", label: "Storage Capacity" },
-  { value: "completeness", label: "Completeness" },
+  { value: "value_desc", label: "Highest Rated First" },
+  { value: "value_asc", label: "Most Affordable First" },
+  { value: "kits_desc", label: "Most Popular" },
+  { value: "brand", label: "Brand A-Z" },
+  { value: "type", label: "Type" },
 ];
-
-// ── Component info extraction ───────────────────────────────────────────────
-
-interface ComponentInfo {
-  item: KitItem;
-  isIncluded: boolean;
-  cost: number | null; // estimated cost if missing, null if included
-}
-
-function getComponentInfo(kit: Kit, roles: string[]): ComponentInfo | null {
-  // Find the first matching item
-  const item = kit.items.find((i) => roles.includes(i.role));
-  if (!item) return null;
-  return {
-    item,
-    isIncluded: item.isIncluded,
-    cost: item.isIncluded ? null : item.estimatedCost ?? null,
-  };
-}
 
 // ── Main Component ──────────────────────────────────────────────────────────
 
@@ -61,17 +158,11 @@ export function CategoryBrowser({ allKits, category, categoryTitle }: CategoryBr
   const searchParams = useSearchParams();
   const router = useRouter();
   const roles = CATEGORY_ROLES[category] ?? [];
+  const unitInfo = getUnitInfo(category);
 
-  // Filters from URL
-  const sortKey = (searchParams.get("sort") as SortKey) || "true_cost_asc";
-  const showFilter = searchParams.get("show") || "all"; // all | included | missing
+  const sortKey = (searchParams.get("sort") as SortKey) || "value_desc";
   const brandFilter = searchParams.get("brand") || "all";
-
-  // Derive brands from data
-  const brands = useMemo(
-    () => [...new Set(allKits.map((k) => k.brand))].sort(),
-    [allKits]
-  );
+  const typeFilter = searchParams.get("type") || "all";
 
   const setParam = useCallback(
     (key: string, value: string, defaultValue: string) => {
@@ -87,89 +178,114 @@ export function CategoryBrowser({ allKits, category, categoryTitle }: CategoryBr
     [searchParams, router, category]
   );
 
-  // Build kit + component info pairs
-  const kitsWithComponents = useMemo(() => {
-    return allKits.map((kit) => ({
-      kit,
-      component: getComponentInfo(kit, roles),
-    }));
-  }, [allKits, roles]);
+  // ── Build component entries ─────────────────────────────────────────────
+  const components = useMemo(() => {
+    const map = new Map<string, ComponentEntry>();
+
+    for (const kit of allKits) {
+      const matchingItems = kit.items.filter((i) => roles.includes(i.role));
+
+      for (const item of matchingItems) {
+        const normName = normalizeComponentName(item.name);
+        const brand = extractBrand(item.name, kit.brand);
+        const unitValue = unitInfo.getter(item.name, item.specs);
+        const type = parseType(item.name, item.specs, category);
+
+        const existing = map.get(normName);
+        const kitEntry = {
+          slug: kit.slug,
+          name: kit.name,
+          brand: kit.brand,
+          quantity: item.quantity,
+          totalValue: getKitTotalValue(kit, category),
+          trueCost: kit.trueCost,
+          isIncluded: item.isIncluded,
+          estimatedCost: item.estimatedCost,
+        };
+
+        if (existing) {
+          existing.kits.push(kitEntry);
+          // Update isIncluded if any kit includes it
+          if (item.isIncluded) existing.isIncluded = true;
+        } else {
+          map.set(normName, {
+            name: item.name,
+            specs: item.specs,
+            brand,
+            unitValue,
+            unitLabel: unitInfo.label,
+            type,
+            isIncluded: item.isIncluded,
+            recommendedAsin: item.recommendedAsin,
+            kits: [kitEntry],
+          });
+        }
+      }
+    }
+
+    return Array.from(map.values());
+  }, [allKits, roles, category, unitInfo]);
+
+  // Derive filter options
+  const brands = useMemo(() => [...new Set(components.map((c) => c.brand))].sort(), [components]);
+  const types = useMemo(() => [...new Set(components.map((c) => c.type).filter(Boolean))].sort(), [components]);
 
   // Filter
   const filtered = useMemo(() => {
-    let result = kitsWithComponents;
-
-    // Brand filter
-    if (brandFilter !== "all") {
-      result = result.filter((k) => k.kit.brand === brandFilter);
-    }
-
-    // Show filter: included/missing
-    if (showFilter === "included") {
-      result = result.filter((k) => k.component?.isIncluded);
-    } else if (showFilter === "missing") {
-      result = result.filter((k) => k.component && !k.component.isIncluded);
-    }
-
+    let result = components;
+    if (brandFilter !== "all") result = result.filter((c) => c.brand === brandFilter);
+    if (typeFilter !== "all") result = result.filter((c) => c.type === typeFilter);
     return result;
-  }, [kitsWithComponents, brandFilter, showFilter]);
+  }, [components, brandFilter, typeFilter]);
 
   // Sort
   const sorted = useMemo(() => {
     const arr = [...filtered];
     switch (sortKey) {
-      case "true_cost_asc":
-        return arr.sort((a, b) => a.kit.trueCost - b.kit.trueCost);
-      case "true_cost_desc":
-        return arr.sort((a, b) => b.kit.trueCost - a.kit.trueCost);
-      case "component_cost": {
-        const getCost = (k: typeof arr[0]) => {
-          if (!k.component) return Infinity;
-          if (k.component.isIncluded) return 0;
-          return k.component.cost ?? Infinity;
-        };
-        return arr.sort((a, b) => getCost(a) - getCost(b));
-      }
-      case "panel_watts":
-        return arr.sort((a, b) => b.kit.panelWatts - a.kit.panelWatts);
-      case "storage":
-        return arr.sort((a, b) => b.kit.storageWh - a.kit.storageWh);
-      case "completeness":
-        return arr.sort((a, b) => b.kit.completeness - a.kit.completeness);
+      case "value_desc": return arr.sort((a, b) => b.unitValue - a.unitValue);
+      case "value_asc": return arr.sort((a, b) => a.unitValue - b.unitValue);
+      case "kits_desc": return arr.sort((a, b) => b.kits.length - a.kits.length);
+      case "brand": return arr.sort((a, b) => a.brand.localeCompare(b.brand));
+      case "type": return arr.sort((a, b) => a.type.localeCompare(b.type));
     }
   }, [filtered, sortKey]);
 
-  // Stats
-  const includedCount = kitsWithComponents.filter((k) => k.component?.isIncluded).length;
-  const missingCount = kitsWithComponents.filter((k) => k.component && !k.component.isIncluded).length;
+  const includedCount = components.filter((c) => c.isIncluded).length;
+  const missingCount = components.filter((c) => !c.isIncluded).length;
 
-  // Active filter count
   const activeFilters = [
-    sortKey !== "true_cost_asc",
-    showFilter !== "all",
+    sortKey !== "value_desc",
     brandFilter !== "all",
+    typeFilter !== "all",
   ].filter(Boolean).length;
 
   return (
     <div>
-      {/* Summary stats */}
+      {/* Summary */}
       <div className="flex flex-wrap items-center gap-4 mb-6">
-        <div className="flex items-center gap-2 rounded border border-[var(--success)]/30 bg-[var(--success)]/5 px-3 py-1.5">
-          <span className="font-mono text-sm font-bold text-[var(--success)]">{includedCount}</span>
-          <span className="text-xs text-[var(--text-secondary)]">kits include {categoryTitle.toLowerCase()}</span>
+        <div className="flex items-center gap-2 rounded border border-[var(--border)] bg-[var(--bg-surface)] px-3 py-1.5">
+          <span className="font-mono text-sm font-bold text-[var(--accent)]">{components.length}</span>
+          <span className="text-xs text-[var(--text-secondary)]">unique {categoryTitle.toLowerCase()}</span>
         </div>
-        <div className="flex items-center gap-2 rounded border border-[var(--danger)]/30 bg-[var(--danger)]/5 px-3 py-1.5">
-          <span className="font-mono text-sm font-bold text-[var(--danger)]">{missingCount}</span>
-          <span className="text-xs text-[var(--text-secondary)]">kits need {categoryTitle.toLowerCase()}</span>
-        </div>
+        {includedCount > 0 && (
+          <div className="flex items-center gap-2 rounded border border-[var(--success)]/30 bg-[var(--success)]/5 px-3 py-1.5">
+            <span className="font-mono text-sm font-bold text-[var(--success)]">{includedCount}</span>
+            <span className="text-xs text-[var(--text-secondary)]">included in kits</span>
+          </div>
+        )}
+        {missingCount > 0 && (
+          <div className="flex items-center gap-2 rounded border border-[var(--danger)]/30 bg-[var(--danger)]/5 px-3 py-1.5">
+            <span className="font-mono text-sm font-bold text-[var(--danger)]">{missingCount}</span>
+            <span className="text-xs text-[var(--text-secondary)]">recommended add-ons</span>
+          </div>
+        )}
       </div>
 
       {/* Controls */}
       <div className="flex flex-wrap items-center gap-3 mb-6">
-        {/* Sort */}
         <select
           value={sortKey}
-          onChange={(e) => setParam("sort", e.target.value, "true_cost_asc")}
+          onChange={(e) => setParam("sort", e.target.value, "value_desc")}
           className="rounded border border-[var(--border)] bg-[var(--bg-surface)] px-3 py-2 text-sm text-[var(--text-primary)] focus:border-[var(--accent)] focus:outline-none"
         >
           {SORT_OPTIONS.map((opt) => (
@@ -177,29 +293,6 @@ export function CategoryBrowser({ allKits, category, categoryTitle }: CategoryBr
           ))}
         </select>
 
-        {/* Show filter */}
-        <div className="flex rounded border border-[var(--border)] overflow-hidden">
-          {[
-            { value: "all", label: "All" },
-            { value: "included", label: "Included" },
-            { value: "missing", label: "Missing" },
-          ].map((opt) => (
-            <button
-              key={opt.value}
-              onClick={() => setParam("show", opt.value, "all")}
-              aria-pressed={showFilter === opt.value}
-              className={`px-3 py-2 text-xs font-medium transition-colors ${
-                showFilter === opt.value
-                  ? "bg-[var(--accent)] text-[var(--bg-primary)]"
-                  : "bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
-              }`}
-            >
-              {opt.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Brand filter */}
         <select
           value={brandFilter}
           onChange={(e) => setParam("brand", e.target.value, "all")}
@@ -215,7 +308,23 @@ export function CategoryBrowser({ allKits, category, categoryTitle }: CategoryBr
           ))}
         </select>
 
-        {/* Clear */}
+        {types.length > 1 && (
+          <select
+            value={typeFilter}
+            onChange={(e) => setParam("type", e.target.value, "all")}
+            className={`rounded border px-3 py-2 text-sm focus:border-[var(--accent)] focus:outline-none ${
+              typeFilter !== "all"
+                ? "border-[var(--accent)]/50 bg-[var(--accent)]/5 text-[var(--accent)]"
+                : "border-[var(--border)] bg-[var(--bg-surface)] text-[var(--text-primary)]"
+            }`}
+          >
+            <option value="all">All Types</option>
+            {types.map((t) => (
+              <option key={t} value={t}>{t}</option>
+            ))}
+          </select>
+        )}
+
         {activeFilters > 0 && (
           <button
             onClick={() => router.replace(`/categories/${category}`, { scroll: false })}
@@ -229,7 +338,7 @@ export function CategoryBrowser({ allKits, category, categoryTitle }: CategoryBr
       {/* Results */}
       {sorted.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-16 rounded border border-dashed border-[var(--border)] bg-[var(--bg-surface)]">
-          <p className="text-sm text-[var(--text-muted)] mb-2">No kits match your filters</p>
+          <p className="text-sm text-[var(--text-muted)] mb-2">No components match your filters</p>
           <button
             onClick={() => router.replace(`/categories/${category}`, { scroll: false })}
             className="text-xs text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
@@ -238,91 +347,154 @@ export function CategoryBrowser({ allKits, category, categoryTitle }: CategoryBr
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {sorted.map(({ kit, component }) => (
+        <div className="space-y-4">
+          {sorted.map((comp, i) => (
+            <ComponentCard key={comp.name + i} component={comp} category={category} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Component Card ──────────────────────────────────────────────────────────
+
+function ComponentCard({ component: comp, category }: { component: ComponentEntry; category: string }) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div className={`rounded border overflow-hidden ${
+      comp.isIncluded
+        ? "border-[var(--border)] bg-[var(--bg-surface)]"
+        : "border-[var(--danger)]/20 bg-[var(--danger)]/[0.02]"
+    }`}>
+      {/* Header */}
+      <div className="p-5">
+        <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+          {/* Left: component info */}
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2 mb-1.5">
+              <span className="text-xs font-medium uppercase tracking-wide text-[var(--text-muted)]">
+                {comp.brand}
+              </span>
+              <span className={`text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded ${
+                comp.isIncluded
+                  ? "bg-[var(--success)]/10 text-[var(--success)]"
+                  : "bg-[var(--danger)]/10 text-[var(--danger)]"
+              }`}>
+                {comp.isIncluded ? "Kit Component" : "Recommended Add-on"}
+              </span>
+            </div>
+            <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-1">
+              {comp.name}
+            </h3>
+            {comp.specs && comp.specs !== comp.name && (
+              <p className="text-sm text-[var(--text-muted)] line-clamp-2">
+                {comp.specs}
+              </p>
+            )}
+          </div>
+
+          {/* Right: key metrics */}
+          <div className="flex items-center gap-4 sm:gap-6 shrink-0">
+            {comp.unitValue > 0 && (
+              <div className="text-center">
+                <p className="font-mono text-xl font-bold text-[var(--accent)]">
+                  {comp.unitValue.toLocaleString()}
+                  <span className="text-sm font-medium text-[var(--text-muted)] ml-0.5">{comp.unitLabel}</span>
+                </p>
+                <p className="text-[10px] font-medium uppercase tracking-wide text-[var(--text-muted)]">
+                  {category === "panels" ? "Per Panel" : category === "batteries" ? "Capacity" : category === "inverters" ? "Output" : "Rating"}
+                </p>
+              </div>
+            )}
+            {comp.type && (
+              <div className="text-center">
+                <p className="text-sm font-semibold text-[var(--text-secondary)]">{comp.type}</p>
+                <p className="text-[10px] font-medium uppercase tracking-wide text-[var(--text-muted)]">Type</p>
+              </div>
+            )}
+            <div className="text-center">
+              <p className="font-mono text-lg font-bold text-[var(--text-primary)]">{comp.kits.length}</p>
+              <p className="text-[10px] font-medium uppercase tracking-wide text-[var(--text-muted)]">
+                {comp.kits.length === 1 ? "Kit" : "Kits"}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Affiliate link for missing components */}
+        {!comp.isIncluded && comp.recommendedAsin && (
+          <a
+            href={`https://www.amazon.com/dp/${comp.recommendedAsin}?tag=${AFFILIATE_TAG}`}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1.5 mt-3 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-3 py-1.5 text-xs font-medium text-[var(--accent)] hover:bg-[var(--accent)]/20 transition-colors"
+          >
+            View on Amazon
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+            </svg>
+          </a>
+        )}
+      </div>
+
+      {/* Kit list toggle */}
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="w-full flex items-center gap-2 px-5 py-2.5 border-t border-[var(--border)] bg-[var(--bg-primary)] hover:bg-[var(--bg-elevated)] transition-colors cursor-pointer"
+      >
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className={`transition-transform duration-200 text-[var(--text-muted)] ${expanded ? "rotate-180" : ""}`}
+        >
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+        <span className="text-xs font-medium text-[var(--text-muted)]">
+          {expanded ? "Hide" : "Show"} {comp.kits.length} kit{comp.kits.length !== 1 ? "s" : ""} {comp.isIncluded ? "using" : "needing"} this component
+        </span>
+      </button>
+
+      {/* Expanded kit list */}
+      {expanded && (
+        <div className="border-t border-[var(--border)]">
+          {comp.kits.map((kit) => (
             <Link
               key={kit.slug}
               href={`/kits/${kit.slug}`}
-              className="group relative flex flex-col border border-[var(--border)] rounded bg-[var(--bg-surface)] hover:border-[var(--border-accent)] transition-all duration-200 overflow-hidden"
+              className="group flex items-center justify-between gap-4 px-5 py-3 border-b border-[var(--border)] last:border-b-0 hover:bg-[var(--bg-elevated)] transition-colors"
             >
-              {/* Component status bar */}
-              <div className={`h-1 ${component?.isIncluded ? "bg-[var(--success)]" : "bg-[var(--danger)]/60"}`} />
-
-              <div className="p-5 flex-1 flex flex-col gap-3">
-                {/* Brand + name */}
-                <div>
-                  <p className="text-xs font-medium uppercase tracking-wide text-[var(--text-muted)]">
-                    {kit.brand}
-                  </p>
-                  <h3 className="text-base font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-2 mt-1">
-                    {kit.name}
-                  </h3>
-                </div>
-
-                {/* Component detail */}
-                {component && (
-                  <div className={`rounded px-3 py-2.5 ${
-                    component.isIncluded
-                      ? "bg-[var(--success)]/5 border border-[var(--success)]/20"
-                      : "bg-[var(--danger)]/5 border border-[var(--danger)]/20"
-                  }`}>
-                    <div className="flex items-center gap-2 mb-1">
-                      {component.isIncluded ? (
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--success)]"><path d="M20 6L9 17l-5-5" /></svg>
-                      ) : (
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--danger)]"><path d="M18 6L6 18M6 6l12 12" /></svg>
-                      )}
-                      <span className={`text-xs font-semibold ${
-                        component.isIncluded ? "text-[var(--success)]" : "text-[var(--danger)]"
-                      }`}>
-                        {component.isIncluded ? "Included" : "Not Included"}
-                      </span>
-                    </div>
-                    <p className="text-sm text-[var(--text-primary)]">
-                      {component.item.name}
-                    </p>
-                    {component.item.specs && (
-                      <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                        {component.item.specs}
-                      </p>
-                    )}
-                    {!component.isIncluded && component.cost && (
-                      <p className="font-mono text-xs text-[var(--danger)] mt-1">
-                        ~${component.cost.toLocaleString()} estimated
-                      </p>
-                    )}
-                  </div>
+              <div className="min-w-0">
+                <p className="text-xs font-medium text-[var(--text-muted)]">{kit.brand}</p>
+                <p className="text-sm font-medium text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors truncate">
+                  {kit.name}
+                </p>
+              </div>
+              <div className="flex items-center gap-4 shrink-0">
+                {kit.quantity > 1 && (
+                  <span className="font-mono text-xs text-[var(--text-muted)]">{kit.quantity}&times;</span>
                 )}
-
-                {/* Kit cost */}
-                <div className="flex items-baseline gap-3">
-                  {kit.missingCost > 0 && (
-                    <span className="font-mono text-sm text-[var(--text-muted)] line-through decoration-1">
-                      ${kit.listedPrice.toLocaleString()}
-                    </span>
-                  )}
-                  <span className="font-mono text-lg font-bold text-[var(--accent)]">
-                    ${kit.trueCost.toLocaleString()}
+                {kit.totalValue > 0 && (
+                  <span className="font-mono text-xs text-[var(--text-secondary)]">
+                    {kit.totalValue.toLocaleString()}{category === "panels" ? "W" : category === "batteries" ? "Wh" : "W"} total
                   </span>
-                  <span className="text-xs text-[var(--text-muted)]">real build cost</span>
-                </div>
-
-                {/* Quick specs */}
-                <div className="flex items-center gap-3 text-sm">
-                  <span className="font-mono text-[var(--text-secondary)]">{kit.panelWatts}W</span>
-                  <span className="font-mono text-[var(--text-secondary)]">
-                    {kit.storageWh > 0 ? `${(kit.storageWh / 1000).toFixed(1)}kWh` : "—"}
-                  </span>
-                  <span className="font-mono text-[var(--text-secondary)]">{kit.completeness}%</span>
-                </div>
-
-                {/* Footer */}
-                <div className="mt-auto pt-3 border-t border-[var(--border)] flex items-center justify-between">
-                  <PriceTimestamp observedAt={kit.priceObservedAt} />
-                  <span className="text-xs text-[var(--accent)] group-hover:underline">
-                    View details &rarr;
-                  </span>
-                </div>
+                )}
+                {!kit.isIncluded && kit.estimatedCost && (
+                  <span className="font-mono text-xs text-[var(--danger)]">~${kit.estimatedCost.toLocaleString()}</span>
+                )}
+                <span className="font-mono text-sm font-bold text-[var(--accent)]">
+                  ${kit.trueCost.toLocaleString()}
+                </span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--text-muted)] group-hover:text-[var(--accent)] transition-colors">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
               </div>
             </Link>
           ))}

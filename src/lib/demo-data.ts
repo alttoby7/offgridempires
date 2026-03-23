@@ -37,6 +37,8 @@ export interface KitItem {
   quantity: number;
   estimatedCost?: number;
   notes?: string;
+  recommendedAsin?: string;
+  recommendedBrand?: string;
 }
 
 const now = new Date();

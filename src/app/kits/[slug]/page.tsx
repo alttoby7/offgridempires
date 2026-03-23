@@ -6,8 +6,12 @@ import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
 import { SpecBlock } from "@/components/ui/spec-block";
 import { GapReceipt } from "@/components/ui/gap-receipt";
+import { BomTable } from "@/components/ui/bom-table";
 import { PriceHistorySection } from "@/components/ui/price-history-section";
 import { KitProductJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
+
+// Centralized affiliate tag — swap when OffGridEmpire Associates account is approved
+const AMAZON_AFFILIATE_TAG = "fidohikes-20";
 
 export function generateStaticParams() {
   return getKitSlugs().map((slug) => ({ slug }));
@@ -53,6 +57,12 @@ const useCaseLabels: Record<string, string> = {
   boat: "Boat",
 };
 
+function buildAffiliateUrl(sourceUrl: string | undefined): string | null {
+  if (!sourceUrl) return null;
+  const separator = sourceUrl.includes("?") ? "&" : "?";
+  return `${sourceUrl}${separator}tag=${AMAZON_AFFILIATE_TAG}`;
+}
+
 export default async function KitDetailPage({
   params,
 }: {
@@ -74,9 +84,7 @@ export default async function KitDetailPage({
 
   const missingItems = kit.items.filter((item) => !item.isIncluded);
   const includedItems = kit.items.filter((item) => item.isIncluded);
-  const affiliateUrl = kit.sourceUrl
-    ? `${kit.sourceUrl}${kit.sourceUrl.includes("?") ? "&" : "?"}tag=fidohikes-20`
-    : undefined;
+  const affiliateUrl = buildAffiliateUrl(kit.sourceUrl);
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
@@ -182,22 +190,30 @@ export default async function KitDetailPage({
               />
             </div>
 
-            {/* CTA */}
-            <a
-              href={affiliateUrl ?? "#"}
-              target={affiliateUrl ? "_blank" : undefined}
-              rel={affiliateUrl ? "noopener noreferrer sponsored" : undefined}
-              className="flex items-center justify-center gap-2 w-full rounded bg-[var(--accent)] py-3 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
-            >
-              View on {kit.retailer}
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-              </svg>
-            </a>
+            {/* CTA — only render as link when affiliate URL exists */}
+            {affiliateUrl ? (
+              <a
+                href={affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="flex items-center justify-center gap-2 w-full rounded bg-[var(--accent)] py-3 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
+              >
+                View on {kit.retailer}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+              </a>
+            ) : (
+              <div className="flex items-center justify-center gap-2 w-full rounded bg-[var(--bg-elevated)] py-3 text-sm font-medium text-[var(--text-muted)] cursor-not-allowed">
+                Retailer link unavailable
+              </div>
+            )}
 
-            <p className="text-xs text-[var(--text-muted)] text-center">
-              Affiliate link — same price for you, supports this tool
-            </p>
+            {affiliateUrl && (
+              <p className="text-xs text-[var(--text-muted)] text-center">
+                Affiliate link &mdash; same price for you
+              </p>
+            )}
 
             {/* Price alert */}
             <div className="border-t border-[var(--border)] pt-4">
@@ -246,117 +262,7 @@ export default async function KitDetailPage({
           </span>
         </div>
 
-        {/* Desktop table */}
-        <div className="hidden lg:block rounded border border-[var(--border)] bg-[var(--bg-surface)] overflow-hidden">
-          {/* Table header */}
-          <div className="grid grid-cols-12 gap-2 px-4 py-3 bg-[var(--bg-secondary)] border-b border-[var(--border)] text-xs font-medium uppercase tracking-wide text-[var(--text-muted)]">
-            <div className="col-span-1">Status</div>
-            <div className="col-span-2">Role</div>
-            <div className="col-span-3">Component</div>
-            <div className="col-span-3">Specs</div>
-            <div className="col-span-1 text-center">Qty</div>
-            <div className="col-span-2 text-right">Est. Cost</div>
-          </div>
-
-          {kit.items.map((item, i) => (
-            <div
-              key={i}
-              className={`grid grid-cols-12 gap-2 px-4 py-3.5 items-center border-b border-[var(--border)] last:border-b-0 ${
-                !item.isIncluded ? "bg-[var(--danger)]/[0.03]" : ""
-              }`}
-            >
-              <div className="col-span-1">
-                {item.isIncluded ? (
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[var(--success)]/15">
-                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--success)]"><path d="M20 6L9 17l-5-5" /></svg>
-                  </span>
-                ) : (
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[var(--danger)]/15">
-                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--danger)]"><path d="M18 6L6 18M6 6l12 12" /></svg>
-                  </span>
-                )}
-              </div>
-              <div className="col-span-2"><span className="text-sm font-medium text-[var(--text-secondary)]">{item.role}</span></div>
-              <div className="col-span-3"><span className={`text-sm ${item.isIncluded ? "text-[var(--text-primary)]" : "text-[var(--danger)]/70 italic"}`}>{item.name}</span></div>
-              <div className="col-span-3">
-                <span className="text-xs text-[var(--text-muted)]">{item.specs}</span>
-                {item.notes && <span className="block text-xs text-[var(--warning)] mt-0.5">&#9888; {item.notes}</span>}
-              </div>
-              <div className="col-span-1 text-center"><span className="font-mono text-xs text-[var(--text-secondary)]">{item.quantity > 0 ? `${item.quantity}×` : "—"}</span></div>
-              <div className="col-span-2 text-right">
-                {item.isIncluded ? (
-                  <span className="font-mono text-xs text-[var(--success)]/70">Included</span>
-                ) : item.estimatedCost && item.estimatedCost > 0 ? (
-                  <span className="font-mono text-xs font-semibold text-[var(--danger)]">~${item.estimatedCost.toLocaleString()}</span>
-                ) : (
-                  <span className="font-mono text-xs text-[var(--text-muted)]">—</span>
-                )}
-              </div>
-            </div>
-          ))}
-
-          {kit.missingCost > 0 && (
-            <div className="grid grid-cols-12 gap-2 px-4 py-3 bg-[var(--bg-secondary)] border-t-2 border-[var(--danger)]/20">
-              <div className="col-span-10"><span className="font-mono text-xs font-bold text-[var(--danger)]">Total estimated cost to complete this kit</span></div>
-              <div className="col-span-2 text-right"><span className="font-mono text-sm font-bold text-[var(--danger)]">~${kit.missingCost.toLocaleString()}</span></div>
-            </div>
-          )}
-        </div>
-
-        {/* Mobile card layout */}
-        <div className="lg:hidden space-y-2">
-          {kit.items.map((item, i) => (
-            <div
-              key={i}
-              className={`rounded border p-3 ${
-                item.isIncluded
-                  ? "border-[var(--border)] bg-[var(--bg-surface)]"
-                  : "border-[var(--danger)]/20 bg-[var(--danger)]/[0.03]"
-              }`}
-            >
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex items-center gap-2">
-                  {item.isIncluded ? (
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--success)]/15">
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--success)]"><path d="M20 6L9 17l-5-5" /></svg>
-                    </span>
-                  ) : (
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--danger)]/15">
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--danger)]"><path d="M18 6L6 18M6 6l12 12" /></svg>
-                    </span>
-                  )}
-                  <div>
-                    <span className="text-xs font-medium uppercase tracking-wide text-[var(--text-muted)]">{item.role}</span>
-                    <p className={`text-sm font-medium ${item.isIncluded ? "text-[var(--text-primary)]" : "text-[var(--danger)]/70 italic"}`}>
-                      {item.name}
-                    </p>
-                  </div>
-                </div>
-                <div className="text-right shrink-0">
-                  {item.isIncluded ? (
-                    <span className="font-mono text-xs text-[var(--success)]/70">Included</span>
-                  ) : item.estimatedCost && item.estimatedCost > 0 ? (
-                    <span className="font-mono text-xs font-semibold text-[var(--danger)]">~${item.estimatedCost.toLocaleString()}</span>
-                  ) : (
-                    <span className="font-mono text-xs text-[var(--text-muted)]">—</span>
-                  )}
-                  {item.quantity > 0 && (
-                    <p className="font-mono text-xs text-[var(--text-muted)]">{item.quantity}×</p>
-                  )}
-                </div>
-              </div>
-              <p className="text-xs text-[var(--text-muted)] mt-1 ml-7">{item.specs}</p>
-              {item.notes && <p className="text-xs text-[var(--warning)] mt-1 ml-7">&#9888; {item.notes}</p>}
-            </div>
-          ))}
-
-          {kit.missingCost > 0 && (
-            <div className="rounded bg-[var(--bg-secondary)] border border-[var(--danger)]/20 p-3 flex items-center justify-between">
-              <span className="font-mono text-xs font-bold text-[var(--danger)]">Total to complete</span>
-              <span className="font-mono text-sm font-bold text-[var(--danger)]">~${kit.missingCost.toLocaleString()}</span>
-            </div>
-          )}
-        </div>
+        <BomTable items={kit.items} missingCost={kit.missingCost} />
       </section>
 
       {/* Price History */}
