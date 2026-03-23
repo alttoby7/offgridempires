@@ -55,6 +55,14 @@ export default function HomePage() {
         parseFloat(b.costPerWh.replace("$", ""))
     )[0];
 
+  const bestSolarValue = [...kits]
+    .filter((k) => k.costPerW !== "N/A")
+    .sort(
+      (a, b) =>
+        parseFloat(a.costPerW.replace("$", "")) -
+        parseFloat(b.costPerW.replace("$", ""))
+    )[0];
+
   const smartPaths = [
     cheapest && {
       label: "Cheapest Setup",
@@ -79,8 +87,15 @@ export default function HomePage() {
       stat: `${mostStorage.storageWh.toLocaleString()} Wh`,
       detail: `$${mostStorage.trueCost.toLocaleString()} total`,
     },
+    bestSolarValue && {
+      label: "Best Solar Value",
+      eyebrow: "Most watts for your money",
+      kit: bestSolarValue,
+      stat: `${bestSolarValue.costPerW}/W`,
+      detail: `${bestSolarValue.panelWatts}W solar`,
+    },
     bestValue && {
-      label: "Best Value",
+      label: "Best Storage Value",
       eyebrow: "Best storage for your money",
       kit: bestValue,
       stat: `${bestValue.costPerWh}/Wh`,
@@ -137,7 +152,7 @@ export default function HomePage() {
             Find Your Kit
           </h2>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
             {smartPaths.map((path) => (
               <Link
                 key={path.label}

@@ -123,10 +123,11 @@ export default async function KitDetailPage({
           </div>
 
           {/* Specs row */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
             <SpecBlock label="Solar" value={`${kit.panelWatts}W`} />
             <SpecBlock label="Storage" value={kit.storageWh > 0 ? `${(kit.storageWh / 1000).toFixed(1)}kWh` : "None"} />
             <SpecBlock label="Inverter" value={kit.inverterWatts > 0 ? `${kit.inverterWatts}W` : "None"} />
+            <SpecBlock label="Cost/W" value={kit.costPerW} highlight />
             <SpecBlock label="Cost/Wh" value={kit.costPerWh} highlight />
           </div>
 

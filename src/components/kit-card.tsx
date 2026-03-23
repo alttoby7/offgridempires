@@ -56,9 +56,16 @@ export function KitCard({ kit, compact = false }: KitCardProps) {
           <span className="font-mono text-[var(--text-secondary)]">
             {kit.storageWh > 0 ? `${(kit.storageWh / 1000).toFixed(1)}kWh` : "No storage"}
           </span>
-          <span className="font-mono text-[var(--accent)]">
-            {kit.costPerWh}/Wh
-          </span>
+          {kit.costPerW !== "N/A" && (
+            <span className="font-mono text-[var(--accent)]">
+              {kit.costPerW}/W
+            </span>
+          )}
+          {kit.costPerWh !== "N/A" && (
+            <span className="font-mono text-[var(--accent)]">
+              {kit.costPerWh}/Wh
+            </span>
+          )}
         </div>
 
         {/* Completeness summary (not full badge grid) */}

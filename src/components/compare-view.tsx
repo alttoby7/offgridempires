@@ -141,6 +141,7 @@ function buildSections(kits: Kit[]) {
         { label: "Advertised Price", values: kits.map((k) => k.listedPrice), type: "cost" as const, higherIsBetter: false },
         { label: "Hidden Cost to Finish", values: kits.map((k) => k.missingCost), type: "cost" as const, higherIsBetter: false },
         { label: "Real Build Cost", values: kits.map((k) => k.trueCost), type: "cost" as const, higherIsBetter: false },
+        { label: "Cost / W", values: kits.map((k) => k.costPerW), type: "text" as const },
         { label: "Cost / Wh", values: kits.map((k) => k.costPerWh), type: "text" as const },
       ],
     },

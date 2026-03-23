@@ -13,6 +13,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$3.38",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -23,13 +24,13 @@
       "boat": "poor"
     },
     "included": {
+      "panels": true,
       "battery": false,
       "inverter": false,
-      "monitoring": false,
-      "panels": true,
       "controller": true,
+      "mounting": true,
       "wiring": true,
-      "mounting": true
+      "monitoring": false
     },
     "priceObservedAt": "2026-03-23T18:42:07.877Z",
     "retailer": "Amazon",
@@ -832,6 +833,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$3.15",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -843,11 +845,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
     "priceObservedAt": "2026-03-23T18:42:07.857Z",
@@ -1644,6 +1646,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$2.01",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -1655,11 +1658,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
     "priceObservedAt": "2026-03-23T18:42:07.865Z",
@@ -2456,6 +2459,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$1.88",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -2467,11 +2471,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
     "priceObservedAt": "2026-03-23T18:42:07.883Z",
@@ -3268,6 +3272,7 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.57",
+    "costPerW": "$2.74",
     "useCases": [
       "rv",
       "shed",
@@ -3283,12 +3288,12 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
+      "controller": true,
+      "mounting": false,
       "wiring": true,
-      "monitoring": true,
-      "mounting": false
+      "monitoring": true
     },
     "priceObservedAt": "2026-03-23T18:42:07.907Z",
     "retailer": "Amazon",
@@ -4082,6 +4087,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$2.15",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -4092,12 +4098,12 @@
       "boat": "poor"
     },
     "included": {
+      "panels": true,
       "battery": false,
       "inverter": false,
-      "panels": true,
       "controller": true,
-      "wiring": true,
       "mounting": true,
+      "wiring": true,
       "monitoring": true
     },
     "priceObservedAt": "2026-03-23T06:45:02.072Z",
@@ -4898,6 +4904,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$2.32",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -4908,12 +4915,12 @@
       "boat": "poor"
     },
     "included": {
+      "panels": true,
       "battery": false,
       "inverter": false,
-      "panels": true,
       "controller": true,
-      "wiring": true,
       "mounting": true,
+      "wiring": true,
       "monitoring": true
     },
     "priceObservedAt": "2026-03-23T18:42:07.837Z",
@@ -5714,6 +5721,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$2.40",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -5724,13 +5732,13 @@
       "boat": "poor"
     },
     "included": {
-      "inverter": false,
-      "battery": false,
-      "monitoring": false,
       "panels": true,
+      "battery": false,
+      "inverter": false,
       "controller": true,
+      "mounting": true,
       "wiring": true,
-      "mounting": true
+      "monitoring": false
     },
     "priceObservedAt": "2026-03-23T18:42:07.893Z",
     "retailer": "Amazon",
@@ -5766,16 +5774,6 @@
         "quantity": 4
       },
       {
-        "role": "Inverter",
-        "isIncluded": false,
-        "name": "WindyNation VertaMax 1500W 12V Pure Sine Wave Inverter 3000W Surge",
-        "specs": "1500W pure sine wave, 3000W surge, 12V, 3 AC outlets, remote",
-        "quantity": 1,
-        "estimatedCost": 159,
-        "recommendedAsin": "B01KUASPS8",
-        "recommendedBrand": "WindyNation"
-      },
-      {
         "role": "Battery",
         "isIncluded": false,
         "name": "BougeRV 12V 100Ah Group 24 LiFePO4 Battery with Low-Temp Protection",
@@ -5784,6 +5782,16 @@
         "estimatedCost": 249,
         "recommendedAsin": "B0B5WTZZRP",
         "recommendedBrand": "BougeRV"
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": false,
+        "name": "WindyNation VertaMax 1500W 12V Pure Sine Wave Inverter 3000W Surge",
+        "specs": "1500W pure sine wave, 3000W surge, 12V, 3 AC outlets, remote",
+        "quantity": 1,
+        "estimatedCost": 159,
+        "recommendedAsin": "B01KUASPS8",
+        "recommendedBrand": "WindyNation"
       },
       {
         "role": "Monitoring",
@@ -6533,6 +6541,7 @@
     "voltage": 12,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.45",
+    "costPerW": "$2.88",
     "useCases": [
       "rv",
       "shed",
@@ -6547,13 +6556,13 @@
       "boat": "excellent"
     },
     "included": {
-      "monitoring": false,
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
+      "controller": true,
+      "mounting": false,
       "wiring": true,
-      "mounting": false
+      "monitoring": false
     },
     "priceObservedAt": "2026-03-23T18:42:07.880Z",
     "retailer": "Amazon",
@@ -6596,6 +6605,14 @@
         "quantity": 1
       },
       {
+        "role": "Mounting",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 35
+      },
+      {
         "role": "Monitoring",
         "isIncluded": false,
         "name": "Victron Energy SmartShunt 500A Battery Monitor Bluetooth",
@@ -6603,14 +6620,6 @@
         "quantity": 1,
         "recommendedAsin": "B0856PHNLX",
         "recommendedBrand": "Victron Energy"
-      },
-      {
-        "role": "Mounting",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1,
-        "estimatedCost": 35
       }
     ],
     "priceHistory": [
@@ -7350,6 +7359,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$2.19",
     "useCases": [],
     "useCaseRatings": {
       "rv": "fair",
@@ -7360,13 +7370,13 @@
       "boat": "fair"
     },
     "included": {
-      "battery": false,
-      "monitoring": false,
       "panels": true,
-      "controller": true,
+      "battery": false,
       "inverter": true,
+      "controller": true,
+      "mounting": true,
       "wiring": true,
-      "mounting": true
+      "monitoring": false
     },
     "priceObservedAt": "2026-03-23T06:45:02.072Z",
     "retailer": "Amazon",
@@ -8166,6 +8176,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$2.65",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -8176,12 +8187,12 @@
       "boat": "poor"
     },
     "included": {
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "panels": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
     "priceObservedAt": "2026-03-23T18:42:07.924Z",
@@ -8978,6 +8989,7 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.65",
+    "costPerW": "$3.50",
     "useCases": [
       "rv",
       "shed",
@@ -8993,11 +9005,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
-      "wiring": true,
+      "controller": true,
       "mounting": false,
+      "wiring": true,
       "monitoring": true
     },
     "priceObservedAt": "2026-03-23T18:42:07.916Z",
@@ -9792,6 +9804,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$2.25",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -9802,12 +9815,12 @@
       "boat": "poor"
     },
     "included": {
+      "panels": true,
       "battery": false,
       "inverter": false,
-      "panels": true,
       "controller": true,
-      "wiring": true,
       "mounting": true,
+      "wiring": true,
       "monitoring": true
     },
     "priceObservedAt": "2026-03-23T06:45:02.072Z",
@@ -10608,6 +10621,7 @@
     "voltage": 12,
     "chemistry": "AGM",
     "costPerWh": "$1.05",
+    "costPerW": "$3.15",
     "useCases": [
       "rv",
       "shed",
@@ -10622,13 +10636,13 @@
       "boat": "excellent"
     },
     "included": {
-      "monitoring": false,
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
+      "controller": true,
+      "mounting": false,
       "wiring": true,
-      "mounting": false
+      "monitoring": false
     },
     "priceObservedAt": "2026-03-23T06:18:29.650Z",
     "retailer": "Amazon",
@@ -10671,6 +10685,14 @@
         "quantity": 1
       },
       {
+        "role": "Mounting",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 80
+      },
+      {
         "role": "Monitoring",
         "isIncluded": false,
         "name": "Victron Energy SmartShunt 500A Battery Monitor Bluetooth",
@@ -10679,14 +10701,6 @@
         "estimatedCost": 30,
         "recommendedAsin": "B0856PHNLX",
         "recommendedBrand": "Victron Energy"
-      },
-      {
-        "role": "Mounting",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1,
-        "estimatedCost": 80
       }
     ],
     "priceHistory": [
@@ -11426,6 +11440,7 @@
     "voltage": 12,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.33",
+    "costPerW": "$2.92",
     "useCases": [
       "rv",
       "cabin",
@@ -11443,11 +11458,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
-      "wiring": true,
+      "controller": true,
       "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
     "priceObservedAt": "2026-03-23T18:42:07.887Z",
@@ -12242,6 +12257,7 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.95",
+    "costPerW": "$6.00",
     "useCases": [
       "rv",
       "shed",
@@ -12257,11 +12273,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
-      "wiring": true,
+      "controller": true,
       "mounting": true,
+      "wiring": true,
       "monitoring": true
     },
     "priceObservedAt": "2026-03-23T06:45:02.072Z",
@@ -13056,6 +13072,7 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.63",
+    "costPerW": "$3.25",
     "useCases": [
       "rv",
       "cabin",
@@ -13073,12 +13090,12 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
+      "controller": true,
+      "mounting": false,
       "wiring": true,
-      "monitoring": true,
-      "mounting": false
+      "monitoring": true
     },
     "priceObservedAt": "2026-03-23T18:42:07.910Z",
     "retailer": "Amazon",
@@ -13872,6 +13889,7 @@
     "voltage": 24,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$3.19",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -13883,11 +13901,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
     "priceObservedAt": "2026-03-23T18:42:07.927Z",
@@ -14684,6 +14702,7 @@
     "voltage": 12,
     "chemistry": "AGM",
     "costPerWh": "$0.91",
+    "costPerW": "$4.09",
     "useCases": [
       "rv",
       "shed",
@@ -14699,11 +14718,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
-      "wiring": true,
+      "controller": true,
       "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
     "priceObservedAt": "2026-03-23T18:42:07.898Z",
@@ -15498,6 +15517,7 @@
     "voltage": 12,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.74",
+    "costPerW": "$4.75",
     "useCases": [
       "rv",
       "cabin",
@@ -15515,11 +15535,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
-      "wiring": true,
+      "controller": true,
       "mounting": true,
+      "wiring": true,
       "monitoring": true
     },
     "priceObservedAt": "2026-03-23T06:18:29.650Z",
@@ -16314,6 +16334,7 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.58",
+    "costPerW": "$5.25",
     "useCases": [
       "rv",
       "cabin",
@@ -16331,11 +16352,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
-      "wiring": true,
+      "controller": true,
       "mounting": false,
+      "wiring": true,
       "monitoring": true
     },
     "priceObservedAt": "2026-03-23T18:42:07.902Z",
@@ -17130,6 +17151,7 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.58",
+    "costPerW": "$5.87",
     "useCases": [
       "rv",
       "cabin",
@@ -17147,12 +17169,12 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
+      "controller": true,
+      "mounting": false,
       "wiring": true,
-      "monitoring": true,
-      "mounting": false
+      "monitoring": true
     },
     "priceObservedAt": "2026-03-23T18:42:07.919Z",
     "retailer": "Amazon",
@@ -17946,6 +17968,7 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$1.05",
+    "costPerW": "$8.28",
     "useCases": [
       "rv",
       "cabin",
@@ -17963,11 +17986,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
-      "wiring": true,
+      "controller": true,
       "mounting": false,
+      "wiring": true,
       "monitoring": true
     },
     "priceObservedAt": "2026-03-23T06:45:02.072Z",
@@ -18762,6 +18785,7 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$1.24",
+    "costPerW": "$10.85",
     "useCases": [
       "rv",
       "cabin",
@@ -18779,11 +18803,11 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
-      "wiring": true,
+      "controller": true,
       "mounting": false,
+      "wiring": true,
       "monitoring": true
     },
     "priceObservedAt": "2026-03-23T06:18:29.650Z",
@@ -19578,6 +19602,7 @@
     "voltage": 24,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -19589,14 +19614,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:51.345Z",
+    "priceObservedAt": "2026-03-23T19:21:12.781Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -20390,6 +20415,7 @@
     "voltage": 24,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -20401,14 +20427,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:51.486Z",
+    "priceObservedAt": "2026-03-23T19:21:12.898Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -21202,6 +21228,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -21213,14 +21240,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:51.689Z",
+    "priceObservedAt": "2026-03-23T19:21:13.035Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -22014,6 +22041,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -22025,14 +22053,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
-      "monitoring": true,
       "battery": false,
-      "inverter": false
+      "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
+      "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T19:00:51.814Z",
+    "priceObservedAt": "2026-03-23T19:21:13.172Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -22826,6 +22854,7 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.00",
+    "costPerW": "$0.00",
     "useCases": [
       "rv",
       "shed",
@@ -22841,14 +22870,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
+      "controller": true,
+      "mounting": false,
       "wiring": true,
-      "monitoring": true,
-      "mounting": false
+      "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T19:00:51.934Z",
+    "priceObservedAt": "2026-03-23T19:21:13.286Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -23640,6 +23669,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -23651,14 +23681,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:52.053Z",
+    "priceObservedAt": "2026-03-23T19:21:13.432Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -24452,6 +24482,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -24463,14 +24494,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:52.174Z",
+    "priceObservedAt": "2026-03-23T19:21:13.590Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -25264,6 +25295,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -25275,14 +25307,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:52.329Z",
+    "priceObservedAt": "2026-03-23T19:21:13.731Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -26076,6 +26108,7 @@
     "voltage": 48,
     "chemistry": "Li-ion",
     "costPerWh": "$0.00",
+    "costPerW": "$0.00",
     "useCases": [
       "rv",
       "shed",
@@ -26091,14 +26124,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
+      "controller": true,
+      "mounting": false,
       "wiring": true,
-      "monitoring": true,
-      "mounting": false
+      "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T19:00:52.453Z",
+    "priceObservedAt": "2026-03-23T19:21:13.885Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -26890,6 +26923,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -26901,14 +26935,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:52.574Z",
+    "priceObservedAt": "2026-03-23T19:21:14.007Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -27702,6 +27736,7 @@
     "voltage": 12,
     "chemistry": "AGM",
     "costPerWh": "$0.00",
+    "costPerW": "$0.00",
     "useCases": [
       "shed"
     ],
@@ -27715,14 +27750,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
-      "wiring": true,
-      "mounting": true,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:52.695Z",
+    "priceObservedAt": "2026-03-23T19:21:14.125Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -28515,6 +28550,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -28526,14 +28562,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:52.849Z",
+    "priceObservedAt": "2026-03-23T19:21:14.307Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -29327,6 +29363,7 @@
     "voltage": 48,
     "chemistry": "LiFePO4",
     "costPerWh": "$0.00",
+    "costPerW": "$0.00",
     "useCases": [
       "rv",
       "shed",
@@ -29342,14 +29379,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
       "battery": true,
       "inverter": true,
+      "controller": true,
+      "mounting": false,
       "wiring": true,
-      "monitoring": true,
-      "mounting": false
+      "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T19:00:52.974Z",
+    "priceObservedAt": "2026-03-23T19:21:14.433Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -30141,6 +30178,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -30152,14 +30190,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:53.109Z",
+    "priceObservedAt": "2026-03-23T19:21:14.554Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -30953,6 +30991,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -30964,14 +31003,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:53.241Z",
+    "priceObservedAt": "2026-03-23T19:21:14.685Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -31765,6 +31804,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -31776,14 +31816,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:53.354Z",
+    "priceObservedAt": "2026-03-23T19:21:14.865Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -32577,6 +32617,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -32588,14 +32629,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:53.475Z",
+    "priceObservedAt": "2026-03-23T19:21:15.000Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -33389,6 +33430,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -33400,14 +33442,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:53.604Z",
+    "priceObservedAt": "2026-03-23T19:21:15.135Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -34201,6 +34243,7 @@
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
+    "costPerW": "$0.00",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -34212,14 +34255,14 @@
     },
     "included": {
       "panels": true,
-      "controller": true,
-      "wiring": true,
-      "mounting": true,
       "battery": false,
       "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T19:00:53.734Z",
+    "priceObservedAt": "2026-03-23T19:21:15.286Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,

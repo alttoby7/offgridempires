@@ -275,9 +275,11 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       }
     }
 
-    // Cost per Wh
+    // Cost per Wh and cost per W
     const costPerWh =
       storageWh > 0 ? `$${(trueCost / storageWh).toFixed(2)}` : "N/A";
+    const costPerW =
+      panelWatts > 0 ? `$${(trueCost / panelWatts).toFixed(2)}` : "N/A";
 
     kits.push({
       id: kitId,
@@ -293,6 +295,7 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       voltage: Number(row.nominal_system_voltage_v ?? 12),
       chemistry: (row.chemistry as string) ?? "Unknown",
       costPerWh,
+      costPerW,
       useCases: Object.entries(
         computeUseCaseRatings({ storageWh, panelWatts, inverterWatts: Number(row.inverter_continuous_w ?? 0), completeness: Number(row.completeness_score ?? 0), chemistry: (row.chemistry as string) ?? "Unknown" })
       ).filter(([, r]) => r === "excellent" || r === "good").map(([uc]) => uc),

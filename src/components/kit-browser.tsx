@@ -13,6 +13,7 @@ import { TrueCostBar } from "@/components/ui/true-cost-bar";
 type SortKey =
   | "true_cost_asc"
   | "true_cost_desc"
+  | "cost_per_w"
   | "cost_per_wh"
   | "panel_watts"
   | "storage"
@@ -21,7 +22,8 @@ type SortKey =
 const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: "true_cost_asc", label: "Real Build Cost: Low → High" },
   { value: "true_cost_desc", label: "Real Build Cost: High → Low" },
-  { value: "cost_per_wh", label: "Cost per Wh" },
+  { value: "cost_per_w", label: "Cost per Watt (solar)" },
+  { value: "cost_per_wh", label: "Cost per Wh (storage)" },
   { value: "panel_watts", label: "Panel Watts" },
   { value: "storage", label: "Storage Capacity" },
   { value: "completeness", label: "Completeness" },
@@ -34,6 +36,13 @@ function sortKits(kits: Kit[], key: SortKey): Kit[] {
       return sorted.sort((a, b) => a.trueCost - b.trueCost);
     case "true_cost_desc":
       return sorted.sort((a, b) => b.trueCost - a.trueCost);
+    case "cost_per_w": {
+      const parseW = (k: Kit) => {
+        const n = parseFloat(k.costPerW.replace("$", ""));
+        return isNaN(n) ? Infinity : n;
+      };
+      return sorted.sort((a, b) => parseW(a) - parseW(b));
+    }
     case "cost_per_wh": {
       const parse = (k: Kit) => {
         const n = parseFloat(k.costPerWh.replace("$", ""));
@@ -185,7 +194,7 @@ function KitListCard({
         </div>
 
         {/* Specs grid */}
-        <div className="grid grid-cols-4 gap-1.5">
+        <div className="grid grid-cols-5 gap-1.5">
           <div className="rounded bg-[var(--bg-primary)] px-2 py-1.5 text-center">
             <p className="text-xs text-[var(--text-muted)] uppercase">Panels</p>
             <p className="font-mono text-xs font-semibold text-[var(--text-primary)]">{kit.panelWatts}W</p>
@@ -201,6 +210,10 @@ function KitListCard({
             <p className="font-mono text-xs font-semibold text-[var(--text-primary)]">
               {kit.inverterWatts > 0 ? `${kit.inverterWatts}W` : "—"}
             </p>
+          </div>
+          <div className="rounded bg-[var(--bg-primary)] px-2 py-1.5 text-center">
+            <p className="text-xs text-[var(--text-muted)] uppercase">$/W</p>
+            <p className="font-mono text-xs font-semibold text-[var(--accent)]">{kit.costPerW}</p>
           </div>
           <div className="rounded bg-[var(--bg-primary)] px-2 py-1.5 text-center">
             <p className="text-xs text-[var(--text-muted)] uppercase">$/Wh</p>

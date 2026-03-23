@@ -17,6 +17,7 @@ export interface Kit {
   voltage: number;
   chemistry: string;
   costPerWh: string;
+  costPerW: string;
   useCases: string[];
   useCaseRatings: Record<string, "excellent" | "good" | "fair" | "poor">;
   included: Record<string, boolean>;
@@ -103,6 +104,7 @@ export const demoKits: Kit[] = [
     voltage: 12,
     chemistry: "LiFePO4",
     costPerWh: "$0.74",
+    costPerW: "$4.75",
     useCases: ["rv", "cabin", "shed"],
     useCaseRatings: { rv: "excellent", cabin: "excellent", shed: "good", emergency: "good", homestead: "poor", boat: "fair" },
     included: { panels: true, controller: true, battery: true, inverter: true, wiring: true, mounting: true, monitoring: true },
@@ -135,6 +137,7 @@ export const demoKits: Kit[] = [
     voltage: 12,
     chemistry: "None",
     costPerWh: "N/A",
+    costPerW: "$5.20",
     useCases: ["shed"],
     useCaseRatings: { rv: "poor", cabin: "poor", shed: "fair", emergency: "poor", homestead: "poor", boat: "poor" },
     included: { panels: true, controller: true, battery: false, inverter: false, wiring: true, mounting: true, monitoring: false },
@@ -167,6 +170,7 @@ export const demoKits: Kit[] = [
     voltage: 48,
     chemistry: "LiFePO4",
     costPerWh: "$1.19",
+    costPerW: "$10.75",
     useCases: ["rv", "cabin", "homestead", "emergency"],
     useCaseRatings: { rv: "excellent", cabin: "excellent", shed: "good", emergency: "excellent", homestead: "good", boat: "fair" },
     included: { panels: true, controller: true, battery: true, inverter: true, wiring: true, mounting: false, monitoring: true },
@@ -198,6 +202,7 @@ export const demoKits: Kit[] = [
     voltage: 48,
     chemistry: "LiFePO4",
     costPerWh: "$1.24",
+    costPerW: "$10.85",
     useCases: ["rv", "cabin", "homestead", "emergency"],
     useCaseRatings: { rv: "excellent", cabin: "excellent", shed: "fair", emergency: "excellent", homestead: "good", boat: "poor" },
     included: { panels: true, controller: true, battery: true, inverter: true, wiring: true, mounting: false, monitoring: true },
@@ -230,6 +235,7 @@ export const demoKits: Kit[] = [
     voltage: 12,
     chemistry: "AGM",
     costPerWh: "$1.25",
+    costPerW: "$3.75",
     useCases: ["rv", "cabin", "shed"],
     useCaseRatings: { rv: "good", cabin: "good", shed: "excellent", emergency: "fair", homestead: "poor", boat: "good" },
     included: { panels: true, controller: true, battery: true, inverter: true, wiring: true, mounting: false, monitoring: false },
@@ -261,6 +267,7 @@ export const demoKits: Kit[] = [
     voltage: 12,
     chemistry: "None",
     costPerWh: "N/A",
+    costPerW: "$3.12",
     useCases: ["cabin", "homestead"],
     useCaseRatings: { rv: "poor", cabin: "good", shed: "fair", emergency: "poor", homestead: "fair", boat: "poor" },
     included: { panels: true, controller: true, battery: false, inverter: false, wiring: true, mounting: true, monitoring: true },
