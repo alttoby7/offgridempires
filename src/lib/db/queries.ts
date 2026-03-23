@@ -189,14 +189,14 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
     const storageWh = Number(row.battery_usable_wh ?? 0);
     const panelWatts = Number(row.panel_array_w ?? 0);
 
-    // Fetch coverage rows with recommended product info
+    // Fetch coverage rows with recommended product info + live prices
     const coverageResult = await db.execute(sql`
       SELECT
         krc.status,
         cr.code AS role_code,
         krc.included_quantity,
         krc.missing_quantity,
-        krc.recommended_cost_cents,
+        COALESCE(pcp.total_known_cents, krc.recommended_cost_cents) AS recommended_cost_cents,
         krc.notes,
         p.title AS rec_product_title,
         b.name AS rec_brand_name,
@@ -206,6 +206,7 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       LEFT JOIN products p ON p.id = krc.recommended_product_id
       LEFT JOIN brands b ON b.id = p.brand_id
       LEFT JOIN product_offers po ON po.id = krc.recommended_offer_id
+      LEFT JOIN product_current_prices pcp ON pcp.offer_id = krc.recommended_offer_id
       WHERE krc.kit_id = ${kitId} AND krc.use_case_id = ${useCase.id}
     `);
     const coverage = coverageResult.rows.map((r) => ({
@@ -275,11 +276,18 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       }
     }
 
+    // Recompute missing cost from live prices (overrides stale DB value)
+    const liveMissingCost = kitItems
+      .filter((i) => !i.isIncluded && i.estimatedCost)
+      .reduce((sum, i) => sum + (i.estimatedCost ?? 0), 0);
+    const finalMissingCost = liveMissingCost > 0 ? liveMissingCost : missingCost;
+    const finalTrueCost = listedPrice + finalMissingCost;
+
     // Cost per Wh and cost per W
     const costPerWh =
-      storageWh > 0 ? `$${(trueCost / storageWh).toFixed(2)}` : "N/A";
+      storageWh > 0 ? `$${(finalTrueCost / storageWh).toFixed(2)}` : "N/A";
     const costPerW =
-      panelWatts > 0 ? `$${(trueCost / panelWatts).toFixed(2)}` : "N/A";
+      panelWatts > 0 ? `$${(finalTrueCost / panelWatts).toFixed(2)}` : "N/A";
 
     kits.push({
       id: kitId,
@@ -287,8 +295,8 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       name: row.title as string,
       brand: (row.brand_name as string) ?? "Unknown",
       listedPrice,
-      missingCost,
-      trueCost,
+      missingCost: finalMissingCost,
+      trueCost: finalTrueCost,
       panelWatts,
       storageWh,
       inverterWatts: Number(row.inverter_continuous_w ?? 0),
