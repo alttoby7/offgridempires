@@ -1,7 +1,22 @@
+import type { Metadata } from "next";
 import { Hero } from "@/components/hero";
 import { KitCard } from "@/components/kit-card";
+import { WebSiteJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { getKits } from "@/lib/get-kits";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "OffGridEmpire — Compare Every Off-Grid Solar Kit",
+  description:
+    "Stop comparing sticker prices. Compare true total costs. The solar kit comparison engine with real build costs, component breakdowns, and price tracking.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "OffGridEmpire — Compare Every Off-Grid Solar Kit",
+    description:
+      "Stop comparing sticker prices. Compare true total costs. The solar kit comparison engine with real build costs and component breakdowns.",
+    url: "/",
+  },
+};
 
 const useCases = [
   {
@@ -92,6 +107,8 @@ const steps = [
 export default function HomePage() {
   return (
     <>
+      <WebSiteJsonLd />
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "/" }]} />
       <Hero />
 
       {/* Decision Frames — quick paths */}

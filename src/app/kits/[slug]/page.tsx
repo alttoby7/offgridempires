@@ -6,6 +6,7 @@ import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
 import { SpecBlock } from "@/components/ui/spec-block";
 import { GapReceipt } from "@/components/ui/gap-receipt";
+import { KitProductJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 
 export function generateStaticParams() {
   return getKitSlugs().map((slug) => ({ slug }));
@@ -18,11 +19,20 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const kit = getKitBySlug(slug);
+  const title = kit ? `${kit.name} — Real Build Cost Breakdown` : "Kit Not Found";
+  const description = kit
+    ? `Full component breakdown and true total cost for the ${kit.name}. See what's included, what's missing, and the real price.`
+    : undefined;
+
   return {
-    title: kit ? `${kit.name} — Real Build Cost Breakdown` : "Kit Not Found",
-    description: kit
-      ? `Full component breakdown and true total cost for the ${kit.name}. See what's included, what's missing, and the real price.`
-      : undefined,
+    title,
+    description,
+    alternates: { canonical: `/kits/${slug}` },
+    openGraph: {
+      title: kit ? `${kit.name} | OffGridEmpire` : title,
+      description,
+      url: `/kits/${slug}`,
+    },
   };
 }
 
@@ -66,6 +76,12 @@ export default async function KitDetailPage({
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <KitProductJsonLd kit={kit} />
+      <BreadcrumbJsonLd items={[
+        { name: "Home", url: "/" },
+        { name: "Kits", url: "/kits" },
+        { name: kit.name, url: `/kits/${kit.slug}` },
+      ]} />
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-6">
         <Link href="/" className="hover:text-[var(--accent)] transition-colors">Home</Link>

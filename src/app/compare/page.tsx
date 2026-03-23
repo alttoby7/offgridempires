@@ -10,6 +10,13 @@ export const metadata: Metadata = {
   title: "Compare Solar Kits",
   description:
     "Side-by-side comparison of off-grid solar kits with normalized specs and true total cost.",
+  alternates: { canonical: "/compare" },
+  openGraph: {
+    title: "Compare Solar Kits | OffGridEmpire",
+    description:
+      "Side-by-side comparison of off-grid solar kits with normalized specs and true total cost.",
+    url: "/compare",
+  },
 };
 
 // Demo: 3 pre-selected kits
@@ -438,7 +445,7 @@ export default function ComparePage() {
         <p className="text-xs text-[var(--text-muted)]">
           Green = best in category for decisive metrics. Missing component costs are estimates of required parts only.
         </p>
-        <Link href="#" className="inline-flex items-center gap-1 text-xs text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors">
+        <Link href="/methodology" className="inline-flex items-center gap-1 text-xs text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors">
           How we calculate and compare
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" /></svg>
         </Link>

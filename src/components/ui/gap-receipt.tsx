@@ -38,7 +38,7 @@ export function GapReceipt({ kit }: GapReceiptProps) {
           <span className="font-mono text-[10px] text-[var(--text-muted)]">
             Verified {priceDate.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
           </span>
-          <a href="#" className="inline-flex items-center gap-1 text-[10px] text-[var(--accent)] hover:text-[var(--accent-hover)]">
+          <a href="/methodology" className="inline-flex items-center gap-1 text-[10px] text-[var(--accent)] hover:text-[var(--accent-hover)]">
             Methodology
             <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" /></svg>
           </a>
@@ -160,7 +160,7 @@ export function GapReceipt({ kit }: GapReceiptProps) {
           </span>
         </div>
         <a
-          href="#"
+          href="/methodology"
           className="inline-flex items-center gap-1 text-[10px] text-[var(--accent)] hover:text-[var(--accent-hover)]"
         >
           Methodology

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getKits } from "@/lib/get-kits";
+import { KitListJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
@@ -9,6 +10,13 @@ export const metadata: Metadata = {
   title: "Browse Solar Kits",
   description:
     "Compare off-grid solar kits with normalized specs, true total cost, and live pricing across brands.",
+  alternates: { canonical: "/kits" },
+  openGraph: {
+    title: "Browse Solar Kits | OffGridEmpire",
+    description:
+      "Compare off-grid solar kits with normalized specs, true total cost, and live pricing across brands.",
+    url: "/kits",
+  },
 };
 
 function FilterPill({ label, active = false }: { label: string; active?: boolean }) {
@@ -182,6 +190,8 @@ function KitListCard({ kit }: { kit: Kit }) {
 export default function KitsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <KitListJsonLd kits={getKits()} />
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "/" }, { name: "Kits", url: "/kits" }]} />
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-6">
         <Link href="/" className="hover:text-[var(--accent)] transition-colors">
@@ -256,7 +266,7 @@ export default function KitsPage() {
           True total cost includes estimated prices for missing components based on average market prices.
         </p>
         <Link
-          href="#"
+          href="/methodology"
           className="inline-flex items-center gap-1 text-xs text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
         >
           How we calculate true total cost

@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: "Components & Products",
   description:
     "Browse individual solar components — batteries, panels, charge controllers, inverters — with price tracking.",
+  alternates: { canonical: "/products" },
+  openGraph: {
+    title: "Components & Products | OffGridEmpire",
+    description:
+      "Browse individual solar components — batteries, panels, charge controllers, inverters — with price tracking.",
+    url: "/products",
+  },
 };
 
 const categories = [

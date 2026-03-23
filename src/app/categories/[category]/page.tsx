@@ -39,9 +39,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { category } = await params;
   const meta = categoryMeta[category];
+  const title = meta?.title ?? "Category";
+  const description = meta?.description ?? "Browse off-grid components.";
   return {
-    title: meta?.title ?? "Category",
-    description: meta?.description ?? "Browse off-grid components.",
+    title,
+    description,
+    alternates: { canonical: `/categories/${category}` },
+    openGraph: {
+      title: `${title} | OffGridEmpire`,
+      description,
+      url: `/categories/${category}`,
+    },
   };
 }
 

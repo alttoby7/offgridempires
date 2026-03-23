@@ -16,13 +16,45 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "500", "600", "700"],
 });
 
+const SITE_URL = "https://offgridempire.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "OffGridEmpire — Compare Every Off-Grid Solar Kit",
     template: "%s | OffGridEmpire",
   },
   description:
     "The solar kit comparison engine. Break down components, see true total costs, track prices, and find the right off-grid system for your build.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "OffGridEmpire",
+    title: "OffGridEmpire — Compare Every Off-Grid Solar Kit",
+    description:
+      "The solar kit comparison engine. Break down components, see true total costs, track prices, and find the right off-grid system for your build.",
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OffGridEmpire — Compare Every Off-Grid Solar Kit",
+    description:
+      "The solar kit comparison engine. Break down components, see true total costs, and find the right off-grid system.",
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
