@@ -1,30 +1,34 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
+import { getKits } from "@/lib/get-kits";
+import { BreadcrumbJsonLd } from "@/components/json-ld";
+import { CategoryBrowser } from "@/components/category-browser";
 
 const categoryMeta: Record<string, { title: string; description: string }> = {
   batteries: {
     title: "Best LiFePO4 Batteries",
-    description: "Compare LiFePO4 batteries by capacity, brand, and price with live pricing data.",
+    description: "Compare which solar kits include batteries vs. which ones need them — with estimated costs for missing components.",
   },
   panels: {
     title: "Best Solar Panels",
-    description: "Compare solar panels by wattage, cell type, and price across retailers.",
+    description: "Compare solar panel specs across kits — wattage, cell type, and whether panels are included or need purchasing separately.",
   },
   "charge-controllers": {
     title: "Best Charge Controllers",
-    description: "Compare MPPT and PWM charge controllers by amperage and price.",
+    description: "See which kits include MPPT or PWM charge controllers and which require you to buy one separately.",
   },
   inverters: {
     title: "Best Inverters",
-    description: "Compare pure sine and modified sine inverters by wattage and price.",
+    description: "Compare inverter specs across solar kits — pure sine vs. modified sine, wattage, and included vs. missing.",
   },
   "power-stations": {
     title: "Best Portable Power Stations",
-    description: "Compare portable power stations by capacity, output, and price.",
+    description: "Compare all-in-one portable power stations with built-in batteries, inverters, and charge controllers.",
   },
   generators: {
     title: "Best Generators",
-    description: "Compare solar and fuel generators for off-grid use.",
+    description: "Compare generator options for off-grid solar backup power.",
   },
 };
 
@@ -61,10 +65,20 @@ export default async function CategoryPage({
   const { category } = await params;
   const meta = categoryMeta[category];
   const title = meta?.title ?? category.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  const allKits = getKits();
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-      <nav className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-6">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Components", url: "/products" },
+          { name: title, url: `/categories/${category}` },
+        ]}
+      />
+
+      {/* Breadcrumb */}
+      <nav className="flex items-center gap-2 text-sm text-[var(--text-muted)] mb-6">
         <Link href="/" className="hover:text-[var(--accent)] transition-colors">Home</Link>
         <span>/</span>
         <Link href="/products" className="hover:text-[var(--accent)] transition-colors">Components</Link>
@@ -79,27 +93,29 @@ export default async function CategoryPage({
         {meta?.description ?? "Browse and compare products in this category."}
       </p>
 
-      {/* Placeholder product grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <div
-            key={i}
-            className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-5 flex flex-col gap-3"
-          >
-            <div className="h-4 w-2/3 rounded bg-[var(--bg-elevated)] animate-pulse" />
-            <div className="h-3 w-1/3 rounded bg-[var(--bg-elevated)] animate-pulse" />
-            <div className="h-20 rounded bg-[var(--bg-primary)] animate-pulse mt-2" />
-            <div className="flex justify-between mt-auto pt-3 border-t border-[var(--border)]">
-              <div className="h-5 w-16 rounded bg-[var(--bg-elevated)] animate-pulse" />
-              <div className="h-5 w-20 rounded bg-[var(--bg-elevated)] animate-pulse" />
-            </div>
-          </div>
-        ))}
-      </div>
+      <Suspense fallback={<div className="h-96 animate-pulse rounded bg-[var(--bg-surface)]" />}>
+        <CategoryBrowser allKits={allKits} category={category} categoryTitle={title} />
+      </Suspense>
 
-      <p className="text-center text-sm text-[var(--text-muted)] mt-12 font-mono">
-        Product data loading soon — data pipeline in progress
-      </p>
+      {/* Cross-links */}
+      <div className="mt-12 pt-6 border-t border-[var(--border)]">
+        <p className="text-xs font-medium uppercase tracking-wide text-[var(--text-muted)] mb-3">
+          Other Components
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {Object.entries(categoryMeta)
+            .filter(([key]) => key !== category)
+            .map(([key, val]) => (
+              <Link
+                key={key}
+                href={`/categories/${key}`}
+                className="rounded border border-[var(--border)] bg-[var(--bg-surface)] px-3 py-1.5 text-xs text-[var(--text-secondary)] hover:border-[var(--border-accent)] hover:text-[var(--accent)] transition-colors"
+              >
+                {val.title}
+              </Link>
+            ))}
+        </div>
+      </div>
     </div>
   );
 }
