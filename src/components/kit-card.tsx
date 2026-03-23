@@ -1,127 +1,95 @@
 import Link from "next/link";
+import type { Kit } from "@/lib/demo-data";
+import { PriceTimestamp } from "@/components/ui/price-timestamp";
 
 interface KitCardProps {
-  name: string;
-  brand: string;
-  slug: string;
-  listedPrice: number;
-  trueCost: number;
-  watts: number;
-  storage: string;
-  useCase: string;
-  includesBattery: boolean;
-  includesInverter: boolean;
-  costPerWh: string;
-  priceChange?: number;
+  kit: Kit;
+  /** Compact mode for homepage featured cards */
+  compact?: boolean;
 }
 
-export function KitCard({
-  name,
-  brand,
-  slug,
-  listedPrice,
-  trueCost,
-  watts,
-  storage,
-  useCase,
-  includesBattery,
-  includesInverter,
-  costPerWh,
-  priceChange,
-}: KitCardProps) {
+export function KitCard({ kit, compact = false }: KitCardProps) {
+  const hasMissing = kit.missingCost > 0;
+  const includedCount = Object.values(kit.included).filter(Boolean).length;
+  const totalRoles = Object.keys(kit.included).length;
+
   return (
     <Link
-      href={`/kits/${slug}`}
+      href={`/kits/${kit.slug}`}
       className="group relative flex flex-col border border-[var(--border)] rounded bg-[var(--bg-surface)] hover:border-[var(--border-accent)] transition-all duration-200 overflow-hidden"
     >
-      {/* Top accent bar */}
-      <div className="h-0.5 bg-gradient-to-r from-[var(--accent)] via-[var(--accent)]/50 to-transparent" />
+      {/* Completeness indicator bar */}
+      <div className="h-1 flex">
+        <div className="bg-[var(--accent)]" style={{ width: `${kit.completeness}%` }} />
+        <div className="bg-[var(--danger)]/30" style={{ width: `${100 - kit.completeness}%` }} />
+      </div>
 
       <div className="p-4 flex-1 flex flex-col gap-3">
-        {/* Header */}
-        <div className="flex items-start justify-between gap-2">
-          <div>
-            <p className="font-mono text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
-              {brand}
-            </p>
-            <h3 className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-2 mt-0.5">
-              {name}
-            </h3>
-          </div>
-          <span className="shrink-0 inline-flex items-center rounded-sm bg-[var(--bg-elevated)] px-2 py-0.5 font-mono text-[10px] text-[var(--text-muted)]">
-            {useCase}
+        {/* Header: brand + name */}
+        <div className="pr-12">
+          <p className="font-mono text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
+            {kit.brand}
+          </p>
+          <h3 className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-2 mt-0.5">
+            {kit.name}
+          </h3>
+        </div>
+
+        {/* The ONE dominant metric: real build cost */}
+        <div className="flex items-baseline gap-3">
+          {hasMissing && (
+            <span className="font-mono text-sm text-[var(--text-muted)] line-through decoration-1">
+              ${kit.listedPrice.toLocaleString()}
+            </span>
+          )}
+          <span className="font-mono text-xl font-bold text-[var(--accent)]">
+            ${kit.trueCost.toLocaleString()}
+          </span>
+          <span className="font-mono text-[10px] text-[var(--text-muted)]">real build cost</span>
+        </div>
+
+        {/* Two supporting facts */}
+        <div className="flex items-center gap-4 text-xs">
+          <span className="font-mono text-[var(--text-secondary)]">
+            {kit.panelWatts}W solar
+          </span>
+          <span className="font-mono text-[var(--text-secondary)]">
+            {kit.storageWh > 0 ? `${(kit.storageWh / 1000).toFixed(1)}kWh` : "No storage"}
+          </span>
+          <span className="font-mono text-[var(--accent)]">
+            {kit.costPerWh}/Wh
           </span>
         </div>
 
-        {/* Specs grid */}
-        <div className="grid grid-cols-3 gap-2">
-          <div className="rounded bg-[var(--bg-primary)] px-2 py-1.5">
-            <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase">Watts</p>
-            <p className="font-mono text-sm font-semibold text-[var(--text-primary)]">{watts}W</p>
-          </div>
-          <div className="rounded bg-[var(--bg-primary)] px-2 py-1.5">
-            <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase">Storage</p>
-            <p className="font-mono text-sm font-semibold text-[var(--text-primary)]">{storage}</p>
-          </div>
-          <div className="rounded bg-[var(--bg-primary)] px-2 py-1.5">
-            <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase">$/Wh</p>
-            <p className="font-mono text-sm font-semibold text-[var(--accent)]">{costPerWh}</p>
-          </div>
+        {/* Completeness summary (not full badge grid) */}
+        <div className="flex items-center gap-2">
+          <span className={`font-mono text-xs font-semibold ${
+            kit.completeness === 100 ? "text-[var(--success)]" : hasMissing ? "text-[var(--warning)]" : "text-[var(--text-secondary)]"
+          }`}>
+            {includedCount}/{totalRoles}
+          </span>
+          <span className="text-[10px] text-[var(--text-muted)]">
+            {kit.completeness === 100
+              ? "Complete — ready to use"
+              : `${totalRoles - includedCount} missing component${totalRoles - includedCount > 1 ? "s" : ""}`}
+          </span>
+          {hasMissing && (
+            <span className="font-mono text-[10px] text-[var(--danger)]">
+              +${kit.missingCost.toLocaleString()} to finish
+            </span>
+          )}
         </div>
 
-        {/* Included badges */}
-        <div className="flex flex-wrap gap-1.5">
-          <span
-            className={`inline-flex items-center gap-1 rounded-sm px-2 py-0.5 text-[11px] font-medium ${
-              includesBattery
-                ? "bg-[var(--success)]/10 text-[var(--success)]"
-                : "bg-[var(--danger)]/10 text-[var(--danger)]"
-            }`}
-          >
-            {includesBattery ? (
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            ) : (
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
-            )}
-            Battery
-          </span>
-          <span
-            className={`inline-flex items-center gap-1 rounded-sm px-2 py-0.5 text-[11px] font-medium ${
-              includesInverter
-                ? "bg-[var(--success)]/10 text-[var(--success)]"
-                : "bg-[var(--danger)]/10 text-[var(--danger)]"
-            }`}
-          >
-            {includesInverter ? (
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            ) : (
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
-            )}
-            Inverter
-          </span>
-        </div>
-
-        {/* Price */}
-        <div className="mt-auto pt-3 border-t border-[var(--border)] flex items-end justify-between">
-          <div>
-            <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase">Listed</p>
-            <p className="font-mono text-lg font-bold text-[var(--text-primary)]">
-              ${listedPrice.toLocaleString()}
-            </p>
-          </div>
-          <div className="text-right">
-            <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase">True Cost</p>
-            <p className="font-mono text-lg font-bold text-[var(--accent)]">
-              ${trueCost.toLocaleString()}
-            </p>
-          </div>
-          {priceChange !== undefined && priceChange !== 0 && (
+        {/* Quiet metadata row */}
+        <div className="mt-auto pt-2 border-t border-[var(--border)] flex items-center justify-between">
+          <PriceTimestamp observedAt={kit.priceObservedAt} />
+          {kit.priceChange !== undefined && kit.priceChange !== 0 && (
             <span
-              className={`absolute top-3 right-3 font-mono text-[11px] font-semibold ${
-                priceChange < 0 ? "text-[var(--success)]" : "text-[var(--danger)]"
+              className={`font-mono text-[11px] font-semibold ${
+                kit.priceChange < 0 ? "text-[var(--success)]" : "text-[var(--danger)]"
               }`}
             >
-              {priceChange < 0 ? "▼" : "▲"} ${Math.abs(priceChange)}
+              {kit.priceChange < 0 ? "▼" : "▲"} ${Math.abs(kit.priceChange)}
             </span>
           )}
         </div>

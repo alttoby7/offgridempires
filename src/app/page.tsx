@@ -1,5 +1,6 @@
 import { Hero } from "@/components/hero";
 import { KitCard } from "@/components/kit-card";
+import { demoKits } from "@/lib/demo-data";
 import Link from "next/link";
 
 const useCases = [
@@ -65,62 +66,7 @@ const useCases = [
   },
 ];
 
-const featuredKits = [
-  {
-    name: "Renogy 400W Complete Solar Kit",
-    brand: "Renogy",
-    slug: "renogy-400w-complete",
-    listedPrice: 1299,
-    trueCost: 1299,
-    watts: 400,
-    storage: "2.4kWh",
-    useCase: "Cabin",
-    includesBattery: true,
-    includesInverter: true,
-    costPerWh: "$0.54",
-    priceChange: -47,
-  },
-  {
-    name: "EcoFlow DELTA Pro Ultra Kit",
-    brand: "EcoFlow",
-    slug: "ecoflow-delta-pro-ultra",
-    listedPrice: 4599,
-    trueCost: 4599,
-    watts: 800,
-    storage: "6.1kWh",
-    useCase: "Homestead",
-    includesBattery: true,
-    includesInverter: true,
-    costPerWh: "$0.75",
-  },
-  {
-    name: "Eco-Worthy 200W Starter Kit",
-    brand: "Eco-Worthy",
-    slug: "eco-worthy-200w-starter",
-    listedPrice: 389,
-    trueCost: 989,
-    watts: 200,
-    storage: "None",
-    useCase: "Shed",
-    includesBattery: false,
-    includesInverter: false,
-    costPerWh: "N/A",
-    priceChange: -12,
-  },
-  {
-    name: "Bluetti AC200MAX + 3x PV200",
-    brand: "Bluetti",
-    slug: "bluetti-ac200max-3x-pv200",
-    listedPrice: 2899,
-    trueCost: 2899,
-    watts: 600,
-    storage: "2.0kWh",
-    useCase: "RV",
-    includesBattery: true,
-    includesInverter: true,
-    costPerWh: "$1.45",
-  },
-];
+const featuredKits = demoKits.slice(0, 4);
 
 const steps = [
   {
@@ -147,6 +93,37 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+
+      {/* Decision Frames — quick paths */}
+      <section className="border-b border-[var(--border)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+          <h2 className="font-mono text-xs uppercase tracking-wider text-[var(--text-muted)] mb-4">
+            Jump to What Matters
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {[
+              { href: "/kits?sort=true_cost", label: "Best True Value", desc: "Lowest real cost per usable Wh", icon: "◈" },
+              { href: "/kits?filter=complete", label: "Most Complete", desc: "Nothing missing — plug and play", icon: "◉" },
+              { href: "/kits?sort=cheapest_to_finish", label: "Cheapest to Finish", desc: "Lowest missing-component cost", icon: "◆" },
+              { href: "/kits?sort=price_drop", label: "Biggest Price Drops", desc: "Recently dropped in price", icon: "▼" },
+            ].map((frame) => (
+              <Link
+                key={frame.href}
+                href={frame.href}
+                className="group flex items-start gap-3 rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:border-[var(--border-accent)] hover:bg-[var(--bg-elevated)] transition-all"
+              >
+                <span className="text-xl text-[var(--accent)] mt-0.5">{frame.icon}</span>
+                <div>
+                  <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+                    {frame.label}
+                  </p>
+                  <p className="text-xs text-[var(--text-muted)] mt-0.5">{frame.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Use Case Tiles */}
       <section className="border-b border-[var(--border)]">
@@ -208,7 +185,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {featuredKits.map((kit) => (
-              <KitCard key={kit.slug} {...kit} />
+              <KitCard key={kit.slug} kit={kit} />
             ))}
           </div>
         </div>

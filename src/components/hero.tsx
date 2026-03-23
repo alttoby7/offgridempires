@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-[var(--border)]">
@@ -13,89 +15,136 @@ export function Hero() {
       {/* Amber glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[var(--accent)] opacity-[0.04] blur-[120px] rounded-full" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <div className="max-w-3xl">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-sm border border-[var(--border)] bg-[var(--bg-surface)] px-3 py-1.5 mb-6">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
-            </span>
-            <span className="font-mono text-xs text-[var(--text-secondary)]">
-              Tracking 120+ kits across 15 brands
-            </span>
-          </div>
-
-          {/* Headline */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1]">
-            Compare every off-grid solar kit.{" "}
-            <span className="text-[var(--accent)]">
-              See what&apos;s really inside.
-            </span>
-          </h1>
-
-          {/* Subheadline */}
-          <p className="mt-5 text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl">
-            The only tool that breaks down solar kits into normalized components,
-            calculates true total cost including what&apos;s missing, and tracks
-            prices across retailers. Stop comparing apples to oranges.
-          </p>
-
-          {/* Search bar */}
-          <div className="mt-8 flex flex-col sm:flex-row gap-3">
-            <div className="relative flex-1 max-w-lg">
-              <svg
-                className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <circle cx="11" cy="11" r="8" />
-                <path d="M21 21l-4.35-4.35" />
-              </svg>
-              <input
-                type="text"
-                placeholder='Search kits, brands, or components...'
-                className="w-full rounded border border-[var(--border)] bg-[var(--bg-surface)] py-3 pl-10 pr-4 text-sm text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]/50 transition-colors"
-              />
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left: Message */}
+          <div>
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 rounded-sm border border-[var(--border)] bg-[var(--bg-surface)] px-3 py-1.5 mb-6">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
+              </span>
+              <span className="font-mono text-xs text-[var(--text-secondary)]">
+                Tracking 120+ kits across 15 brands
+              </span>
             </div>
-            <button className="inline-flex items-center justify-center gap-2 rounded bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors">
-              Search
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+
+            {/* Headline — lead with the truth-telling */}
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1]">
+              That $289 solar kit{" "}
+              <span className="text-[var(--danger)] line-through decoration-2">costs $1,039</span>{" "}
+              <span className="text-[var(--accent)]">to actually use.</span>
+            </h1>
+
+            {/* Subheadline */}
+            <p className="mt-5 text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-xl">
+              We break down every off-grid solar kit into components, expose
+              what&apos;s missing, and calculate the real cost to build a working
+              system. Stop comparing sticker prices.
+            </p>
+
+            {/* Decision-first CTAs */}
+            <div className="mt-8 flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/kits?sort=true_cost"
+                className="inline-flex items-center justify-center gap-2 rounded bg-[var(--accent)] px-6 py-3 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
               >
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </button>
+                Find the best true value
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </Link>
+              <Link
+                href="/kits?filter=complete"
+                className="inline-flex items-center justify-center gap-2 rounded border border-[var(--border)] bg-[var(--bg-surface)] px-6 py-3 text-sm font-medium text-[var(--text-secondary)] hover:border-[var(--border-accent)] hover:text-[var(--accent)] transition-colors"
+              >
+                Only show complete kits
+              </Link>
+            </div>
+
+            {/* Quick stats */}
+            <div className="mt-8 flex flex-wrap gap-6">
+              {[
+                { value: "120+", label: "Kits Tracked" },
+                { value: "15", label: "Brands" },
+                { value: "6hr", label: "Price Updates" },
+                { value: "$0", label: "Always Free" },
+              ].map((stat) => (
+                <div key={stat.label} className="flex items-baseline gap-1.5">
+                  <span className="font-mono text-lg font-bold text-[var(--accent)]">
+                    {stat.value}
+                  </span>
+                  <span className="text-xs text-[var(--text-muted)]">{stat.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Quick stats */}
-          <div className="mt-8 flex flex-wrap gap-6">
-            {[
-              { value: "120+", label: "Kits Tracked" },
-              { value: "15", label: "Brands" },
-              { value: "6hr", label: "Price Updates" },
-              { value: "$0", label: "Always Free" },
-            ].map((stat) => (
-              <div key={stat.label} className="flex items-baseline gap-1.5">
-                <span className="font-mono text-lg font-bold text-[var(--accent)]">
-                  {stat.value}
+          {/* Right: Mini Gap Receipt Demo */}
+          <div className="hidden lg:block">
+            <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] overflow-hidden shadow-2xl shadow-black/20 rotate-1 hover:rotate-0 transition-transform duration-500">
+              {/* Receipt header */}
+              <div className="bg-[var(--danger)]/10 border-b border-[var(--danger)]/20 px-5 py-2.5 flex items-center gap-2">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--danger)]">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                  <line x1="12" y1="9" x2="12" y2="13" /><line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+                <span className="font-mono text-[10px] font-bold text-[var(--danger)] uppercase tracking-wider">
+                  Completion Gap Receipt
                 </span>
-                <span className="text-xs text-[var(--text-muted)]">{stat.label}</span>
               </div>
-            ))}
+
+              <div className="p-5 font-mono text-sm space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-[var(--text-muted)] text-xs">Eco-Worthy 200W Starter Kit</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-[var(--text-secondary)]">Advertised price</span>
+                  <span className="text-[var(--text-primary)] font-semibold">$289</span>
+                </div>
+
+                <div className="border-t border-dashed border-[var(--border)]" />
+
+                <div className="text-[10px] uppercase tracking-wider text-[var(--danger)]">
+                  Not included:
+                </div>
+                <div className="flex justify-between pl-2 text-xs">
+                  <span className="text-[var(--text-muted)]">+ Battery (12V 100Ah+)</span>
+                  <span className="text-[var(--danger)]">~$300</span>
+                </div>
+                <div className="flex justify-between pl-2 text-xs">
+                  <span className="text-[var(--text-muted)]">+ Inverter (1000W+ pure sine)</span>
+                  <span className="text-[var(--danger)]">~$200</span>
+                </div>
+                <div className="flex justify-between pl-2 text-xs">
+                  <span className="text-[var(--text-muted)]">+ Monitoring module</span>
+                  <span className="text-[var(--danger)]">~$25</span>
+                </div>
+
+                <div className="border-t border-dashed border-[var(--border)]" />
+
+                <div className="flex justify-between">
+                  <span className="text-[var(--danger)] font-semibold">Hidden cost</span>
+                  <span className="text-[var(--danger)] font-bold">+$525</span>
+                </div>
+
+                <div className="border-t-2 border-[var(--border)]" />
+
+                <div className="flex justify-between">
+                  <span className="text-[var(--text-primary)] font-bold">Real build cost</span>
+                  <span className="text-[var(--accent)] font-bold text-lg">$814</span>
+                </div>
+
+                <div className="rounded bg-[var(--danger)]/10 border border-[var(--danger)]/20 px-3 py-2 text-center text-[10px] text-[var(--danger)]">
+                  <strong>65% more</strong> than the sticker price
+                </div>
+              </div>
+
+              <div className="bg-[var(--bg-primary)] border-t border-[var(--border)] px-5 py-2 text-center">
+                <span className="font-mono text-[10px] text-[var(--text-muted)]">
+                  offgridempire.com
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
