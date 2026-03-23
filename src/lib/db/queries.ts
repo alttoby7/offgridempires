@@ -89,9 +89,8 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       co.observed_at AS price_observed_at,
       co.retailer_name,
       co.source_url,
-      ktc.base_offer_price_cents,
       ktc.missing_components_cents,
-      ktc.total_before_tax_cents,
+      COALESCE(co.total_known_cents, ktc.base_offer_price_cents, 0) + COALESCE(ktc.missing_components_cents, 0) AS total_before_tax_cents,
       ktc.completeness_score
     FROM kits k
     LEFT JOIN brands b ON b.id = k.brand_id
