@@ -132,11 +132,11 @@ export default function CalculatorPage() {
               <tbody className="text-[var(--text-secondary)]">
                 {[
                   { name: "LED Light (×4)", w: 9, h: 5, wh: 180 },
-                  { name: "Phone Charger", w: 18, h: 2, wh: 36 },
-                  { name: "Laptop", w: 65, h: 4, wh: 260 },
-                  { name: "Starlink", w: 50, h: 12, wh: 600 },
-                  { name: "Mini Fridge", w: 60, h: 24, wh: 475 },
-                  { name: "CPAP Machine", w: 40, h: 8, wh: 320 },
+                  { name: "Phone Charger", w: 10, h: 2, wh: 20 },
+                  { name: "Laptop", w: 50, h: 4, wh: 200 },
+                  { name: "Starlink", w: 75, h: 24, wh: 1800 },
+                  { name: "Mini Fridge", w: 65, h: 24, wh: 546 },
+                  { name: "CPAP Machine", w: 60, h: 8, wh: 480 },
                   { name: "Coffee Maker", w: 800, h: 0.25, wh: 200 },
                   { name: "Window AC", w: 500, h: 8, wh: 2000 },
                 ].map((row) => (

@@ -3277,20 +3277,20 @@
     ]
   },
   {
-    "id": "17d85ee8-31c9-4a0f-aa5e-9fddec54ecb3",
-    "slug": "windynation-400w-mono-kit",
-    "name": "WindyNation 400W Monocrystalline Off-Grid Kit with PWM Controller",
-    "brand": "WindyNation",
+    "id": "5eabcfa2-95b1-42bc-9b3d-d45f20f70db6",
+    "slug": "eco-worthy-400w-premium-mppt",
+    "name": "ECO-WORTHY 400W 12V Premium Solar Panel Kit with 40A MPPT",
+    "brand": "Eco-Worthy",
     "listedPrice": 400,
-    "missingCost": 364,
-    "trueCost": 764,
+    "missingCost": 351,
+    "trueCost": 751,
     "panelWatts": 400,
     "storageWh": 0,
     "inverterWatts": 0,
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
-    "costPerW": "$1.91",
+    "costPerW": "$1.88",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -3309,68 +3309,61 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:09:02.558Z",
+    "priceObservedAt": "2026-03-23T20:31:32.396Z",
     "retailer": "Amazon",
-    "sourceUrl": "https://www.amazon.com/dp/B09KZ1MH7Z",
+    "sourceUrl": "https://www.amazon.com/dp/B0BPY72B9R",
     "completeness": 57,
     "items": [
       {
         "role": "Solar Panels",
         "isIncluded": true,
-        "name": "WindyNation 100W Mono",
-        "specs": "WindyNation 100W Mono — 4x 100W = 400W total",
+        "name": "ECO-WORTHY 100W Mono",
+        "specs": "ECO-WORTHY 100W Mono — 4x 100W = 400W total",
         "quantity": 4
       },
       {
         "role": "Charge Controller",
         "isIncluded": true,
-        "name": "WindyNation P30L PWM",
-        "specs": "PWM — less efficient than MPPT",
+        "name": "ECO-WORTHY 40A MPPT",
+        "specs": "ECO-WORTHY 40A MPPT — 40A MPPT",
         "quantity": 1
       },
       {
         "role": "Wiring",
         "isIncluded": true,
-        "name": "Solar cable + MC4 connectors",
-        "specs": "Solar cable + MC4 connectors — Included",
+        "name": "MC4 + Z-brackets + cables",
+        "specs": "MC4 + Z-brackets + cables — Included cables + mounting",
         "quantity": 1
       },
       {
         "role": "Mounting",
         "isIncluded": true,
-        "name": "Mounting brackets",
-        "specs": "Mounting brackets — Included",
+        "name": "Z-bracket mounts",
+        "specs": "Z-bracket mounts — 4 sets Z-brackets",
         "quantity": 4
       },
       {
         "role": "Battery",
         "isIncluded": false,
-        "name": "BougeRV 12V 100Ah Group 24 LiFePO4 Battery with Low-Temp Protection",
-        "specs": "12V 100Ah LiFePO4, low-temp protection, Group 24, 1280Wh",
+        "name": "Not included",
+        "specs": "",
         "quantity": 1,
-        "estimatedCost": 180,
-        "recommendedAsin": "B0B5WTZZRP",
-        "recommendedBrand": "BougeRV"
+        "estimatedCost": 192
       },
       {
         "role": "Inverter",
         "isIncluded": false,
-        "name": "WindyNation VertaMax 1500W 12V Pure Sine Wave Inverter 3000W Surge",
-        "specs": "1500W pure sine wave, 3000W surge, 12V, 3 AC outlets, remote",
+        "name": "Not included",
+        "specs": "",
         "quantity": 1,
-        "estimatedCost": 159,
-        "recommendedAsin": "B01KUASPS8",
-        "recommendedBrand": "WindyNation"
+        "estimatedCost": 159
       },
       {
         "role": "Monitoring",
         "isIncluded": false,
-        "name": "Victron Energy SmartShunt 500A Battery Monitor Bluetooth",
-        "specs": "500A shunt, Bluetooth, VictronConnect app, SOC/voltage/current",
-        "quantity": 1,
-        "estimatedCost": 25,
-        "recommendedAsin": "B0856PHNLX",
-        "recommendedBrand": "Victron Energy"
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1
       }
     ],
     "priceHistory": [
@@ -4097,20 +4090,20 @@
     ]
   },
   {
-    "id": "5eabcfa2-95b1-42bc-9b3d-d45f20f70db6",
-    "slug": "eco-worthy-400w-premium-mppt",
-    "name": "ECO-WORTHY 400W 12V Premium Solar Panel Kit with 40A MPPT",
-    "brand": "Eco-Worthy",
+    "id": "17d85ee8-31c9-4a0f-aa5e-9fddec54ecb3",
+    "slug": "windynation-400w-mono-kit",
+    "name": "WindyNation 400W Monocrystalline Off-Grid Kit with PWM Controller",
+    "brand": "WindyNation",
     "listedPrice": 400,
-    "missingCost": 351,
-    "trueCost": 751,
+    "missingCost": 364,
+    "trueCost": 764,
     "panelWatts": 400,
     "storageWh": 0,
     "inverterWatts": 0,
     "voltage": 12,
     "chemistry": "None",
     "costPerWh": "N/A",
-    "costPerW": "$1.88",
+    "costPerW": "$1.91",
     "useCases": [],
     "useCaseRatings": {
       "rv": "poor",
@@ -4129,61 +4122,68 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T20:31:32.396Z",
+    "priceObservedAt": "2026-03-23T21:09:02.558Z",
     "retailer": "Amazon",
-    "sourceUrl": "https://www.amazon.com/dp/B0BPY72B9R",
+    "sourceUrl": "https://www.amazon.com/dp/B09KZ1MH7Z",
     "completeness": 57,
     "items": [
       {
         "role": "Solar Panels",
         "isIncluded": true,
-        "name": "ECO-WORTHY 100W Mono",
-        "specs": "ECO-WORTHY 100W Mono — 4x 100W = 400W total",
+        "name": "WindyNation 100W Mono",
+        "specs": "WindyNation 100W Mono — 4x 100W = 400W total",
         "quantity": 4
       },
       {
         "role": "Charge Controller",
         "isIncluded": true,
-        "name": "ECO-WORTHY 40A MPPT",
-        "specs": "ECO-WORTHY 40A MPPT — 40A MPPT",
+        "name": "WindyNation P30L PWM",
+        "specs": "PWM — less efficient than MPPT",
         "quantity": 1
       },
       {
         "role": "Wiring",
         "isIncluded": true,
-        "name": "MC4 + Z-brackets + cables",
-        "specs": "MC4 + Z-brackets + cables — Included cables + mounting",
+        "name": "Solar cable + MC4 connectors",
+        "specs": "Solar cable + MC4 connectors — Included",
         "quantity": 1
       },
       {
         "role": "Mounting",
         "isIncluded": true,
-        "name": "Z-bracket mounts",
-        "specs": "Z-bracket mounts — 4 sets Z-brackets",
+        "name": "Mounting brackets",
+        "specs": "Mounting brackets — Included",
         "quantity": 4
       },
       {
         "role": "Battery",
         "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
+        "name": "BougeRV 12V 100Ah Group 24 LiFePO4 Battery with Low-Temp Protection",
+        "specs": "12V 100Ah LiFePO4, low-temp protection, Group 24, 1280Wh",
         "quantity": 1,
-        "estimatedCost": 192
+        "estimatedCost": 180,
+        "recommendedAsin": "B0B5WTZZRP",
+        "recommendedBrand": "BougeRV"
       },
       {
         "role": "Inverter",
         "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
+        "name": "WindyNation VertaMax 1500W 12V Pure Sine Wave Inverter 3000W Surge",
+        "specs": "1500W pure sine wave, 3000W surge, 12V, 3 AC outlets, remote",
         "quantity": 1,
-        "estimatedCost": 159
+        "estimatedCost": 159,
+        "recommendedAsin": "B01KUASPS8",
+        "recommendedBrand": "WindyNation"
       },
       {
         "role": "Monitoring",
         "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1
+        "name": "Victron Energy SmartShunt 500A Battery Monitor Bluetooth",
+        "specs": "500A shunt, Bluetooth, VictronConnect app, SOC/voltage/current",
+        "quantity": 1,
+        "estimatedCost": 25,
+        "recommendedAsin": "B0856PHNLX",
+        "recommendedBrand": "Victron Energy"
       }
     ],
     "priceHistory": [
@@ -8216,8 +8216,51 @@
     "priceObservedAt": "2026-03-23T20:59:19.792Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c1000-gen2?variant=44475398815884",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "100W Solar Array",
+        "specs": "100W Solar Array — 100W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "1024Wh LiFePO4 Battery",
+        "specs": "1024Wh LiFePO4 Battery — 1024Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "2000W Inverter",
+        "specs": "2000W Inverter — 2000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in Charge Controller",
+        "specs": "Built-in Charge Controller — Integrated into power station",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar Input Cable",
+        "specs": "Solar Input Cable — MC4 panel input cable included",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Portable (No Mounting Required)",
+        "specs": "Portable (No Mounting Required) — Portable unit, no mounting needed",
+        "quantity": 0
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -9798,8 +9841,51 @@
     "priceObservedAt": "2026-03-23T20:59:24.027Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac70p?variant=42446049476748",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "500W Solar Array",
+        "specs": "500W Solar Array — 500W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "864Wh LiFePO4 Battery",
+        "specs": "864Wh LiFePO4 Battery — 864Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "1000W Inverter",
+        "specs": "1000W Inverter — 1000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in Charge Controller",
+        "specs": "Built-in Charge Controller — Integrated into power station",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar Input Cable",
+        "specs": "Solar Input Cable — MC4 panel input cable included",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Portable (No Mounting Required)",
+        "specs": "Portable (No Mounting Required) — Portable unit, no mounting needed",
+        "quantity": 0
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -11374,8 +11460,51 @@
     "priceObservedAt": "2026-03-23T20:59:18.652Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c300x?variant=43420172386444",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "100W Solar Array",
+        "specs": "100W Solar Array — 100W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "288Wh LiFePO4 Battery",
+        "specs": "288Wh LiFePO4 Battery — 288Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "360W Inverter",
+        "specs": "360W Inverter — 360W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in Charge Controller",
+        "specs": "Built-in Charge Controller — Integrated into power station",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar Input Cable",
+        "specs": "Solar Input Cable — MC4 panel input cable included",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Portable (No Mounting Required)",
+        "specs": "Portable (No Mounting Required) — Portable unit, no mounting needed",
+        "quantity": 0
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -13833,8 +13962,51 @@
     "priceObservedAt": "2026-03-23T20:59:23.437Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac180p-portable-power-station?variant=41904212836492",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "500W Solar Array",
+        "specs": "500W Solar Array — 500W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "1440Wh LiFePO4 Battery",
+        "specs": "1440Wh LiFePO4 Battery — 1440Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "1800W Inverter",
+        "specs": "1800W Inverter — 1800W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in Charge Controller",
+        "specs": "Built-in Charge Controller — Integrated into power station",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar Input Cable",
+        "specs": "Solar Input Cable — MC4 panel input cable included",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Portable (No Mounting Required)",
+        "specs": "Portable (No Mounting Required) — Portable unit, no mounting needed",
+        "quantity": 0
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -15413,8 +15585,51 @@
     "priceObservedAt": "2026-03-23T20:59:22.252Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c2000-gen-2-portable-power-station?variant=44718471610508",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "200W Solar Array",
+        "specs": "200W Solar Array — 200W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "2048Wh None Battery",
+        "specs": "2048Wh None Battery — 2048Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "2400W Inverter",
+        "specs": "2400W Inverter — 2400W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in Charge Controller",
+        "specs": "Built-in Charge Controller — Integrated into power station",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar Input Cable",
+        "specs": "Solar Input Cable — MC4 panel input cable included",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Portable (No Mounting Required)",
+        "specs": "Portable (No Mounting Required) — Portable unit, no mounting needed",
+        "quantity": 0
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -16177,8 +16392,51 @@
     "priceObservedAt": "2026-03-23T20:59:30.143Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-605-portable-power-station?variant=44340671283340",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "400W Solar Array",
+        "specs": "400W Solar Array — 400W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "540Wh LiFePO4 Battery",
+        "specs": "540Wh LiFePO4 Battery — 540Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "400W Inverter",
+        "specs": "400W Inverter — 400W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in Charge Controller",
+        "specs": "Built-in Charge Controller — Integrated into power station",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar Input Cable",
+        "specs": "Solar Input Cable — MC4 panel input cable included",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Portable (No Mounting Required)",
+        "specs": "Portable (No Mounting Required) — Portable unit, no mounting needed",
+        "quantity": 0
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -20208,8 +20466,51 @@
     "priceObservedAt": "2026-03-23T20:59:26.887Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-apex-300?variant=44408365842572",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "30000W Solar Array",
+        "specs": "30000W Solar Array — 30000W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "2765Wh None Battery",
+        "specs": "2765Wh None Battery — 2765Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "3840W Inverter",
+        "specs": "3840W Inverter — 3840W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -23490,8 +23791,51 @@
     "priceObservedAt": "2026-03-23T20:59:20.374Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-portable-power-station?variant=44235939741836",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "2400W Solar Array",
+        "specs": "2400W Solar Array — 2400W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "3072Wh LiFePO4 Battery",
+        "specs": "3072Wh LiFePO4 Battery — 3072Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "3600W Inverter",
+        "specs": "3600W Inverter — 3600W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -25075,8 +25419,51 @@
     "priceObservedAt": "2026-03-23T20:59:27.712Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-rv5-power-hub-modular-rv-solar-system?variant=44734427365516",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "1800W Solar Array",
+        "specs": "1800W Solar Array — 1800W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "5120Wh LiFePO4 Battery",
+        "specs": "5120Wh LiFePO4 Battery — 5120Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "5000W Inverter",
+        "specs": "5000W Inverter — 5000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -25843,8 +26230,51 @@
     "priceObservedAt": "2026-03-23T20:59:19.213Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800-plus?variant=43918027391116",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "3200W Solar Array",
+        "specs": "3200W Solar Array — 3200W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "3840Wh None Battery",
+        "specs": "3840Wh None Battery — 3840Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "6000W Inverter",
+        "specs": "6000W Inverter — 6000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -28244,8 +28674,51 @@
     "priceObservedAt": "2026-03-23T20:59:22.792Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/hysolis-mps-4500-solar-generator?variant=41674279616652",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "3000W Solar Array",
+        "specs": "3000W Solar Array — 3000W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "4500Wh LiFePO4 Battery",
+        "specs": "4500Wh LiFePO4 Battery — 4500Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "4500W Inverter",
+        "specs": "4500W Inverter — 4500W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -29013,6 +29486,48 @@
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-dual-kits?variant=44447369560204",
     "completeness": 86,
     "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "200W Solar Array",
+        "specs": "200W Solar Array — 200W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "4096Wh LiFePO4 Battery",
+        "specs": "4096Wh LiFePO4 Battery — 4096Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "2000W Inverter",
+        "specs": "2000W Inverter — 2000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in Charge Controller",
+        "specs": "Built-in Charge Controller — Integrated into power station",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar Input Cable",
+        "specs": "Solar Input Cable — MC4 panel input cable included",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Portable (No Mounting Required)",
+        "specs": "Portable (No Mounting Required) — Portable unit, no mounting needed",
+        "quantity": 0
+      },
       {
         "role": "Charge Controller",
         "isIncluded": false,
@@ -29787,8 +30302,51 @@
     "priceObservedAt": "2026-03-23T20:59:21.573Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/hysolis-apollo-5k?variant=41674292756620",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "3000W Solar Array",
+        "specs": "3000W Solar Array — 3000W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "5376Wh LiFePO4 Battery",
+        "specs": "5376Wh LiFePO4 Battery — 5376Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "5000W Inverter",
+        "specs": "5000W Inverter — 5000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -30555,8 +31113,51 @@
     "priceObservedAt": "2026-03-23T20:59:15.692Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/core-pro?variant=41540924637324",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "3200W Solar Array",
+        "specs": "3200W Solar Array — 3200W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "10000Wh LiFePO4 Battery",
+        "specs": "10000Wh LiFePO4 Battery — 10000Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "7500W Inverter",
+        "specs": "7500W Inverter — 7500W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -31323,8 +31924,51 @@
     "priceObservedAt": "2026-03-23T20:59:12.447Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=43332721016972",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "4400W Solar Array",
+        "specs": "4400W Solar Array — 4400W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "10200Wh LiFePO4 Battery",
+        "specs": "10200Wh LiFePO4 Battery — 10200Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "6000W Inverter",
+        "specs": "6000W Inverter — 6000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -32092,6 +32736,48 @@
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3800-plus-dual-kits?variant=44005102944396",
     "completeness": 86,
     "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "200W Solar Array",
+        "specs": "200W Solar Array — 200W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "7680Wh None Battery",
+        "specs": "7680Wh None Battery — 7680Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "6000W Inverter",
+        "specs": "6000W Inverter — 6000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in Charge Controller",
+        "specs": "Built-in Charge Controller — Integrated into power station",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar Input Cable",
+        "specs": "Solar Input Cable — MC4 panel input cable included",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Portable (No Mounting Required)",
+        "specs": "Portable (No Mounting Required) — Portable unit, no mounting needed",
+        "quantity": 0
+      },
       {
         "role": "Charge Controller",
         "isIncluded": false,
@@ -32866,8 +33552,51 @@
     "priceObservedAt": "2026-03-23T20:59:25.332Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/hysolis-apollo-5k-240v-solar-kits?variant=41708757614732",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "6000W Solar Array",
+        "specs": "6000W Solar Array — 6000W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "5376Wh LiFePO4 Battery",
+        "specs": "5376Wh LiFePO4 Battery — 5376Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "5000W Inverter",
+        "specs": "5000W Inverter — 5000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -33634,8 +34363,51 @@
     "priceObservedAt": "2026-03-23T20:59:12.982Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/prime-max?variant=41172390674572",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "7920W Solar Array",
+        "specs": "7920W Solar Array — 7920W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "15300Wh LiFePO4 Battery",
+        "specs": "15300Wh LiFePO4 Battery — 15300Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "12000W Inverter",
+        "specs": "12000W Inverter — 12000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -34402,8 +35174,51 @@
     "priceObservedAt": "2026-03-23T20:59:17.198Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/select-max?variant=43878347473036",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "10560W Solar Array",
+        "specs": "10560W Solar Array — 10560W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "28600Wh LiFePO4 Battery",
+        "specs": "28600Wh LiFePO4 Battery — 28600Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "16000W Inverter",
+        "specs": "16000W Inverter — 16000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -35170,8 +35985,51 @@
     "priceObservedAt": "2026-03-23T20:59:14.907Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=40630283042956",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "7920W Solar Array",
+        "specs": "7920W Solar Array — 7920W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "20480Wh LiFePO4 Battery",
+        "specs": "20480Wh LiFePO4 Battery — 20480Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "19500W Inverter",
+        "specs": "19500W Inverter — 19500W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -35938,8 +36796,51 @@
     "priceObservedAt": "2026-03-23T20:59:13.553Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/prime-pro?variant=41720333369484",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "10560W Solar Array",
+        "specs": "10560W Solar Array — 10560W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "30700Wh LiFePO4 Battery",
+        "specs": "30700Wh LiFePO4 Battery — 30700Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "21000W Inverter",
+        "specs": "21000W Inverter — 21000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -36706,8 +37607,51 @@
     "priceObservedAt": "2026-03-23T20:59:16.433Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/select-pro?variant=43878567411852",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "15840W Solar Array",
+        "specs": "15840W Solar Array — 15840W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "28600Wh LiFePO4 Battery",
+        "specs": "28600Wh LiFePO4 Battery — 28600Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "16000W Inverter",
+        "specs": "16000W Inverter — 16000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -37474,8 +38418,51 @@
     "priceObservedAt": "2026-03-23T20:59:14.207Z",
     "retailer": "Shop Solar Kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=42004714684556",
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "15840W Solar Array",
+        "specs": "15840W Solar Array — 15840W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "30720Wh LiFePO4 Battery",
+        "specs": "30720Wh LiFePO4 Battery — 30720Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "12000W Inverter",
+        "specs": "12000W Inverter — 12000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -38239,11 +39226,53 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T21:43:56.194Z",
+    "priceObservedAt": "2026-03-23T22:13:24.110Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
     "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "2600W Solar Array",
+        "specs": "2600W Solar Array — 2600W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "8192Wh LiFePO4 Battery",
+        "specs": "8192Wh LiFePO4 Battery — 8192Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "4000W Inverter",
+        "specs": "4000W Inverter — 4000W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      },
       {
         "role": "Charge Controller",
         "isIncluded": false,
@@ -39014,11 +40043,54 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T21:43:56.530Z",
+    "priceObservedAt": "2026-03-23T22:13:24.314Z",
     "retailer": "Unknown",
     "sourceUrl": null,
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "2400W Solar Array",
+        "specs": "2400W Solar Array — 2400W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "2016Wh None Battery",
+        "specs": "2016Wh None Battery — 2016Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "2400W Inverter",
+        "specs": "2400W Inverter — 2400W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -39779,11 +40851,54 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T21:43:56.762Z",
+    "priceObservedAt": "2026-03-23T22:13:24.539Z",
     "retailer": "Unknown",
     "sourceUrl": null,
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "2000W Solar Array",
+        "specs": "2000W Solar Array — 2000W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "2048Wh LiFePO4 Battery",
+        "specs": "2048Wh LiFePO4 Battery — 2048Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "400W Inverter",
+        "specs": "400W Inverter — 400W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -40540,7 +41655,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:43:56.980Z",
+    "priceObservedAt": "2026-03-23T22:13:24.804Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 50,
@@ -41359,11 +42474,54 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T21:43:57.175Z",
+    "priceObservedAt": "2026-03-23T22:13:24.991Z",
     "retailer": "Unknown",
     "sourceUrl": null,
-    "completeness": 100,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "1200W Solar Array",
+        "specs": "1200W Solar Array — 1200W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "1843Wh LiFePO4 Battery",
+        "specs": "1843Wh LiFePO4 Battery — 1843Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "2400W Inverter",
+        "specs": "2400W Inverter — 2400W continuous output",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "MPPT Charge Controller",
+        "specs": "MPPT Charge Controller — Included with system",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Wiring Kit",
+        "specs": "Wiring Kit — Included cables and connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting Hardware",
+        "specs": "Mounting Hardware — Included mounting brackets",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -42120,7 +43278,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:43:57.398Z",
+    "priceObservedAt": "2026-03-23T22:13:25.210Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 50,
@@ -42901,819 +44059,6 @@
     ]
   },
   {
-    "id": "e8d98c45-9e57-4b8a-b17e-cc76b146356a",
-    "slug": "hqst-600w-kit-mppt",
-    "name": "HQST 600W Solar Panel Kit with 6x100W 9BB + 40A MPPT",
-    "brand": "HQST",
-    "listedPrice": 0,
-    "missingCost": 798,
-    "trueCost": 798,
-    "panelWatts": 600,
-    "storageWh": 0,
-    "inverterWatts": 0,
-    "voltage": 12,
-    "chemistry": "None",
-    "costPerWh": "N/A",
-    "costPerW": "$1.33",
-    "useCases": [],
-    "useCaseRatings": {
-      "rv": "poor",
-      "cabin": "poor",
-      "shed": "poor",
-      "emergency": "poor",
-      "homestead": "poor",
-      "boat": "poor"
-    },
-    "included": {
-      "panels": true,
-      "battery": false,
-      "inverter": false,
-      "controller": true,
-      "mounting": true,
-      "wiring": true,
-      "monitoring": false
-    },
-    "priceObservedAt": "2026-03-23T21:43:57.790Z",
-    "retailer": "Unknown",
-    "sourceUrl": null,
-    "completeness": 0,
-    "items": [
-      {
-        "role": "Solar Panels",
-        "isIncluded": true,
-        "name": "HQST 100W 9BB Mono",
-        "specs": "HQST 100W 9BB Mono — 6x 100W = 600W total",
-        "quantity": 6
-      },
-      {
-        "role": "Charge Controller",
-        "isIncluded": true,
-        "name": "HQST 40A MPPT",
-        "specs": "HQST 40A MPPT — 40A MPPT",
-        "quantity": 1
-      },
-      {
-        "role": "Wiring",
-        "isIncluded": true,
-        "name": "MC4 + cables + combiner",
-        "specs": "MC4 + cables + combiner — Included cables",
-        "quantity": 1
-      },
-      {
-        "role": "Mounting",
-        "isIncluded": true,
-        "name": "Z-bracket mounts",
-        "specs": "Z-bracket mounts — 6 sets Z-brackets",
-        "quantity": 6
-      },
-      {
-        "role": "Battery",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1,
-        "estimatedCost": 499
-      },
-      {
-        "role": "Inverter",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1,
-        "estimatedCost": 299
-      },
-      {
-        "role": "Monitoring",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1
-      }
-    ],
-    "priceHistory": [
-      {
-        "date": "2025-09-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-23",
-        "priceCents": 0
-      }
-    ]
-  },
-  {
     "id": "8387d6fd-3c07-4852-92d2-0109be595860",
     "slug": "renogy-600w-premium-kit",
     "name": "Renogy 600W 12V Monocrystalline Solar Premium Kit with 60A MPPT Rover + Bluetooth",
@@ -43746,7 +44091,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T21:43:58.016Z",
+    "priceObservedAt": "2026-03-23T22:13:25.390Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -44527,6 +44872,819 @@
     ]
   },
   {
+    "id": "e8d98c45-9e57-4b8a-b17e-cc76b146356a",
+    "slug": "hqst-600w-kit-mppt",
+    "name": "HQST 600W Solar Panel Kit with 6x100W 9BB + 40A MPPT",
+    "brand": "HQST",
+    "listedPrice": 0,
+    "missingCost": 798,
+    "trueCost": 798,
+    "panelWatts": 600,
+    "storageWh": 0,
+    "inverterWatts": 0,
+    "voltage": 12,
+    "chemistry": "None",
+    "costPerWh": "N/A",
+    "costPerW": "$1.33",
+    "useCases": [],
+    "useCaseRatings": {
+      "rv": "poor",
+      "cabin": "poor",
+      "shed": "poor",
+      "emergency": "poor",
+      "homestead": "poor",
+      "boat": "poor"
+    },
+    "included": {
+      "panels": true,
+      "battery": false,
+      "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
+      "monitoring": false
+    },
+    "priceObservedAt": "2026-03-23T22:13:25.630Z",
+    "retailer": "Unknown",
+    "sourceUrl": null,
+    "completeness": 0,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "HQST 100W 9BB Mono",
+        "specs": "HQST 100W 9BB Mono — 6x 100W = 600W total",
+        "quantity": 6
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "HQST 40A MPPT",
+        "specs": "HQST 40A MPPT — 40A MPPT",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "MC4 + cables + combiner",
+        "specs": "MC4 + cables + combiner — Included cables",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Z-bracket mounts",
+        "specs": "Z-bracket mounts — 6 sets Z-brackets",
+        "quantity": 6
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 499
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 299
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1
+      }
+    ],
+    "priceHistory": [
+      {
+        "date": "2025-09-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-23",
+        "priceCents": 0
+      }
+    ]
+  },
+  {
     "id": "c89a19f7-12f9-4514-a0b1-df33943d6d77",
     "slug": "ecoflow-delta2-2x220w",
     "name": "EcoFlow DELTA 2 1024Wh + 2x 220W Solar Panels",
@@ -44563,7 +45721,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T21:43:58.254Z",
+    "priceObservedAt": "2026-03-23T22:13:25.829Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -45342,821 +46500,6 @@
     ]
   },
   {
-    "id": "76e317b3-ce35-4bc2-93e4-7c34df777dce",
-    "slug": "jackery-1500-4x100w",
-    "name": "Jackery Explorer 1500 + 4x SolarSaga 100W Panels",
-    "brand": "Jackery",
-    "listedPrice": 0,
-    "missingCost": 0,
-    "trueCost": 0,
-    "panelWatts": 400,
-    "storageWh": 1534,
-    "inverterWatts": 1800,
-    "voltage": 48,
-    "chemistry": "Li-ion",
-    "costPerWh": "$0.00",
-    "costPerW": "$0.00",
-    "useCases": [
-      "rv",
-      "shed",
-      "boat"
-    ],
-    "useCaseRatings": {
-      "rv": "excellent",
-      "cabin": "fair",
-      "shed": "excellent",
-      "emergency": "fair",
-      "homestead": "poor",
-      "boat": "excellent"
-    },
-    "included": {
-      "panels": true,
-      "battery": true,
-      "inverter": true,
-      "controller": true,
-      "mounting": false,
-      "wiring": true,
-      "monitoring": true
-    },
-    "priceObservedAt": "2026-03-23T21:43:58.515Z",
-    "retailer": "Unknown",
-    "sourceUrl": null,
-    "completeness": 0,
-    "items": [
-      {
-        "role": "Solar Panels",
-        "isIncluded": true,
-        "name": "Jackery SolarSaga 100W",
-        "specs": "Jackery SolarSaga 100W — 4x 100W = 400W total",
-        "quantity": 4
-      },
-      {
-        "role": "Charge Controller",
-        "isIncluded": true,
-        "name": "Built-in MPPT",
-        "specs": "Built-in MPPT — Integrated in Explorer 1500",
-        "quantity": 1
-      },
-      {
-        "role": "Battery",
-        "isIncluded": true,
-        "name": "Explorer 1500 Li-ion",
-        "specs": "Explorer 1500 Li-ion — 1,534Wh Li-ion",
-        "quantity": 1
-      },
-      {
-        "role": "Inverter",
-        "isIncluded": true,
-        "name": "Built-in Pure Sine",
-        "specs": "Built-in Pure Sine — 1800W / 3600W surge, 3 AC outlets",
-        "quantity": 1
-      },
-      {
-        "role": "Wiring",
-        "isIncluded": true,
-        "name": "Charging cables",
-        "specs": "Charging cables — AC + DC + solar cables",
-        "quantity": 1
-      },
-      {
-        "role": "Monitoring",
-        "isIncluded": true,
-        "name": "Jackery App",
-        "specs": "Jackery App — Bluetooth + built-in display",
-        "quantity": 1
-      },
-      {
-        "role": "Mounting",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1
-      }
-    ],
-    "priceHistory": [
-      {
-        "date": "2025-09-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-23",
-        "priceCents": 0
-      }
-    ]
-  },
-  {
     "id": "ee09b946-459f-405f-8bfb-8909ab0ffa65",
     "slug": "eco-worthy-400w-premium-zbrackets",
     "name": "ECO-WORTHY 400W 12V Premium Panel Kit with 40A MPPT + Z Brackets",
@@ -46189,7 +46532,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:43:58.755Z",
+    "priceObservedAt": "2026-03-23T22:13:26.071Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -46970,39 +47313,41 @@
     ]
   },
   {
-    "id": "7016ac8e-35c0-4900-af96-72f13abb901d",
-    "slug": "renogy-400w-starter-pwm",
-    "name": "Renogy 400W 12V Solar Panel Starter Kit with 30A Wanderer PWM Controller",
-    "brand": "Renogy",
+    "id": "78023bb3-d4f0-4a38-8b78-d2011e606b60",
+    "slug": "windynation-400w-kit-agm",
+    "name": "WindyNation 400W Solar Kit with P30L Controller + AGM Battery",
+    "brand": "WindyNation",
     "listedPrice": 0,
-    "missingCost": 408,
-    "trueCost": 408,
+    "missingCost": 159,
+    "trueCost": 159,
     "panelWatts": 400,
-    "storageWh": 0,
+    "storageWh": 600,
     "inverterWatts": 0,
     "voltage": 12,
-    "chemistry": "None",
-    "costPerWh": "N/A",
-    "costPerW": "$1.02",
-    "useCases": [],
+    "chemistry": "AGM",
+    "costPerWh": "$0.27",
+    "costPerW": "$0.40",
+    "useCases": [
+      "shed"
+    ],
     "useCaseRatings": {
-      "rv": "poor",
+      "rv": "fair",
       "cabin": "poor",
-      "shed": "poor",
+      "shed": "good",
       "emergency": "poor",
       "homestead": "poor",
-      "boat": "poor"
+      "boat": "fair"
     },
     "included": {
       "panels": true,
-      "battery": false,
+      "battery": true,
       "inverter": false,
       "controller": true,
       "mounting": true,
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:43:58.995Z",
+    "priceObservedAt": "2026-03-23T22:13:26.370Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -47010,38 +47355,37 @@
       {
         "role": "Solar Panels",
         "isIncluded": true,
-        "name": "Renogy 100W 12V Mono",
-        "specs": "Renogy 100W 12V Mono — 4x 100W = 400W total",
+        "name": "WindyNation 100W Poly",
+        "specs": "WindyNation 100W Poly — 4x 100W = 400W total",
         "quantity": 4
       },
       {
         "role": "Charge Controller",
         "isIncluded": true,
-        "name": "Renogy Wanderer 30A PWM",
-        "specs": "Renogy Wanderer 30A PWM — 30A PWM",
+        "name": "WindyNation P30L PWM",
+        "specs": "WindyNation P30L PWM — 30A PWM, LCD",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "AGM Deep Cycle Battery",
+        "specs": "AGM Deep Cycle Battery — ~1200Wh AGM (50% usable)",
         "quantity": 1
       },
       {
         "role": "Wiring",
         "isIncluded": true,
-        "name": "MC4 + tray cables",
-        "specs": "MC4 + tray cables — Included cables",
+        "name": "Solar + battery cables",
+        "specs": "Solar + battery cables — Included cables + MC4",
         "quantity": 1
       },
       {
         "role": "Mounting",
         "isIncluded": true,
-        "name": "Z-bracket mounts",
-        "specs": "Z-bracket mounts — 4 sets Z-brackets",
+        "name": "Mounting hardware",
+        "specs": "Mounting hardware — Included",
         "quantity": 4
-      },
-      {
-        "role": "Battery",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1,
-        "estimatedCost": 249
       },
       {
         "role": "Inverter",
@@ -47815,7 +48159,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:43:59.255Z",
+    "priceObservedAt": "2026-03-23T22:13:26.610Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -48628,7 +48972,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:43:59.515Z",
+    "priceObservedAt": "2026-03-23T22:13:26.929Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -49409,41 +49753,39 @@
     ]
   },
   {
-    "id": "78023bb3-d4f0-4a38-8b78-d2011e606b60",
-    "slug": "windynation-400w-kit-agm",
-    "name": "WindyNation 400W Solar Kit with P30L Controller + AGM Battery",
-    "brand": "WindyNation",
+    "id": "7016ac8e-35c0-4900-af96-72f13abb901d",
+    "slug": "renogy-400w-starter-pwm",
+    "name": "Renogy 400W 12V Solar Panel Starter Kit with 30A Wanderer PWM Controller",
+    "brand": "Renogy",
     "listedPrice": 0,
-    "missingCost": 159,
-    "trueCost": 159,
+    "missingCost": 408,
+    "trueCost": 408,
     "panelWatts": 400,
-    "storageWh": 600,
+    "storageWh": 0,
     "inverterWatts": 0,
     "voltage": 12,
-    "chemistry": "AGM",
-    "costPerWh": "$0.27",
-    "costPerW": "$0.40",
-    "useCases": [
-      "shed"
-    ],
+    "chemistry": "None",
+    "costPerWh": "N/A",
+    "costPerW": "$1.02",
+    "useCases": [],
     "useCaseRatings": {
-      "rv": "fair",
+      "rv": "poor",
       "cabin": "poor",
-      "shed": "good",
+      "shed": "poor",
       "emergency": "poor",
       "homestead": "poor",
-      "boat": "fair"
+      "boat": "poor"
     },
     "included": {
       "panels": true,
-      "battery": true,
+      "battery": false,
       "inverter": false,
       "controller": true,
       "mounting": true,
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:43:59.755Z",
+    "priceObservedAt": "2026-03-23T22:13:27.104Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -49451,37 +49793,38 @@
       {
         "role": "Solar Panels",
         "isIncluded": true,
-        "name": "WindyNation 100W Poly",
-        "specs": "WindyNation 100W Poly — 4x 100W = 400W total",
+        "name": "Renogy 100W 12V Mono",
+        "specs": "Renogy 100W 12V Mono — 4x 100W = 400W total",
         "quantity": 4
       },
       {
         "role": "Charge Controller",
         "isIncluded": true,
-        "name": "WindyNation P30L PWM",
-        "specs": "WindyNation P30L PWM — 30A PWM, LCD",
-        "quantity": 1
-      },
-      {
-        "role": "Battery",
-        "isIncluded": true,
-        "name": "AGM Deep Cycle Battery",
-        "specs": "AGM Deep Cycle Battery — ~1200Wh AGM (50% usable)",
+        "name": "Renogy Wanderer 30A PWM",
+        "specs": "Renogy Wanderer 30A PWM — 30A PWM",
         "quantity": 1
       },
       {
         "role": "Wiring",
         "isIncluded": true,
-        "name": "Solar + battery cables",
-        "specs": "Solar + battery cables — Included cables + MC4",
+        "name": "MC4 + tray cables",
+        "specs": "MC4 + tray cables — Included cables",
         "quantity": 1
       },
       {
         "role": "Mounting",
         "isIncluded": true,
-        "name": "Mounting hardware",
-        "specs": "Mounting hardware — Included",
+        "name": "Z-bracket mounts",
+        "specs": "Z-bracket mounts — 4 sets Z-brackets",
         "quantity": 4
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 249
       },
       {
         "role": "Inverter",
@@ -49493,6 +49836,821 @@
       },
       {
         "role": "Monitoring",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1
+      }
+    ],
+    "priceHistory": [
+      {
+        "date": "2025-09-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-23",
+        "priceCents": 0
+      }
+    ]
+  },
+  {
+    "id": "76e317b3-ce35-4bc2-93e4-7c34df777dce",
+    "slug": "jackery-1500-4x100w",
+    "name": "Jackery Explorer 1500 + 4x SolarSaga 100W Panels",
+    "brand": "Jackery",
+    "listedPrice": 0,
+    "missingCost": 0,
+    "trueCost": 0,
+    "panelWatts": 400,
+    "storageWh": 1534,
+    "inverterWatts": 1800,
+    "voltage": 48,
+    "chemistry": "Li-ion",
+    "costPerWh": "$0.00",
+    "costPerW": "$0.00",
+    "useCases": [
+      "rv",
+      "shed",
+      "boat"
+    ],
+    "useCaseRatings": {
+      "rv": "excellent",
+      "cabin": "fair",
+      "shed": "excellent",
+      "emergency": "fair",
+      "homestead": "poor",
+      "boat": "excellent"
+    },
+    "included": {
+      "panels": true,
+      "battery": true,
+      "inverter": true,
+      "controller": true,
+      "mounting": false,
+      "wiring": true,
+      "monitoring": true
+    },
+    "priceObservedAt": "2026-03-23T22:13:27.394Z",
+    "retailer": "Unknown",
+    "sourceUrl": null,
+    "completeness": 0,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Jackery SolarSaga 100W",
+        "specs": "Jackery SolarSaga 100W — 4x 100W = 400W total",
+        "quantity": 4
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in MPPT",
+        "specs": "Built-in MPPT — Integrated in Explorer 1500",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "Explorer 1500 Li-ion",
+        "specs": "Explorer 1500 Li-ion — 1,534Wh Li-ion",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "Built-in Pure Sine",
+        "specs": "Built-in Pure Sine — 1800W / 3600W surge, 3 AC outlets",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Charging cables",
+        "specs": "Charging cables — AC + DC + solar cables",
+        "quantity": 1
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": true,
+        "name": "Jackery App",
+        "specs": "Jackery App — Bluetooth + built-in display",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
         "isIncluded": false,
         "name": "Not included",
         "specs": "",
@@ -50255,7 +51413,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:43:59.982Z",
+    "priceObservedAt": "2026-03-23T22:13:27.585Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -51072,7 +52230,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T21:44:00.176Z",
+    "priceObservedAt": "2026-03-23T22:13:27.804Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -51851,9 +53009,9 @@
     ]
   },
   {
-    "id": "b1fc75b8-8102-4cd2-b808-4a2414a2467d",
-    "slug": "renogy-200w-starter-mppt-20a",
-    "name": "Renogy 200W 12V Monocrystalline Solar Starter Kit with 20A MPPT Rover Controller",
+    "id": "88e296cf-2dbb-4701-bec1-a5cc1759c91f",
+    "slug": "renogy-200w-starter-pwm",
+    "name": "Renogy 200W 12V Monocrystalline Solar Starter Kit with 30A PWM Controller",
     "brand": "Renogy",
     "listedPrice": 0,
     "missingCost": 408,
@@ -51883,7 +53041,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:44:00.415Z",
+    "priceObservedAt": "2026-03-23T22:13:28.037Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -51898,8 +53056,8 @@
       {
         "role": "Charge Controller",
         "isIncluded": true,
-        "name": "Renogy Rover 20A MPPT",
-        "specs": "Renogy Rover 20A MPPT — 20A MPPT",
+        "name": "Renogy Wanderer 30A PWM",
+        "specs": "Renogy Wanderer 30A PWM — 30A PWM",
         "quantity": 1
       },
       {
@@ -51907,819 +53065,6 @@
         "isIncluded": true,
         "name": "MC4 + tray cables",
         "specs": "MC4 + tray cables — Included cables",
-        "quantity": 1
-      },
-      {
-        "role": "Mounting",
-        "isIncluded": true,
-        "name": "Z-bracket mounts",
-        "specs": "Z-bracket mounts — 2 sets Z-brackets",
-        "quantity": 2
-      },
-      {
-        "role": "Battery",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1,
-        "estimatedCost": 249
-      },
-      {
-        "role": "Inverter",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1,
-        "estimatedCost": 159
-      },
-      {
-        "role": "Monitoring",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1
-      }
-    ],
-    "priceHistory": [
-      {
-        "date": "2025-09-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-23",
-        "priceCents": 0
-      }
-    ]
-  },
-  {
-    "id": "dae20cef-2ce7-4ed7-b898-95b844e26d6d",
-    "slug": "renogy-200w-premium-mppt-40a",
-    "name": "Renogy 200W 12V Monocrystalline Solar Kit with 40A MPPT Rover Controller + Z Brackets",
-    "brand": "Renogy",
-    "listedPrice": 0,
-    "missingCost": 408,
-    "trueCost": 408,
-    "panelWatts": 200,
-    "storageWh": 0,
-    "inverterWatts": 0,
-    "voltage": 12,
-    "chemistry": "None",
-    "costPerWh": "N/A",
-    "costPerW": "$2.04",
-    "useCases": [],
-    "useCaseRatings": {
-      "rv": "poor",
-      "cabin": "poor",
-      "shed": "poor",
-      "emergency": "poor",
-      "homestead": "poor",
-      "boat": "poor"
-    },
-    "included": {
-      "panels": true,
-      "battery": false,
-      "inverter": false,
-      "controller": true,
-      "mounting": true,
-      "wiring": true,
-      "monitoring": false
-    },
-    "priceObservedAt": "2026-03-23T21:44:00.714Z",
-    "retailer": "Unknown",
-    "sourceUrl": null,
-    "completeness": 0,
-    "items": [
-      {
-        "role": "Solar Panels",
-        "isIncluded": true,
-        "name": "Renogy 100W 12V Mono",
-        "specs": "Renogy 100W 12V Mono — 2x 100W = 200W total",
-        "quantity": 2
-      },
-      {
-        "role": "Charge Controller",
-        "isIncluded": true,
-        "name": "Renogy Rover 40A MPPT",
-        "specs": "Renogy Rover 40A MPPT — 40A MPPT",
-        "quantity": 1
-      },
-      {
-        "role": "Wiring",
-        "isIncluded": true,
-        "name": "MC4 + tray cables + Z-brackets",
-        "specs": "MC4 + tray cables + Z-brackets — Included cables + mounting",
         "quantity": 1
       },
       {
@@ -53513,822 +53858,52 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-03-23T21:44:00.990Z",
+    "priceObservedAt": "2026-03-23T22:13:28.236Z",
     "retailer": "Unknown",
     "sourceUrl": null,
-    "completeness": 100,
-    "items": [],
-    "priceHistory": [
-      {
-        "date": "2025-09-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-09-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-10-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-11-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2025-12-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-29",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-30",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-01-31",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-23",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-24",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-25",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-26",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-27",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-02-28",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-01",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-02",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-03",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-04",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-05",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-06",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-07",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-08",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-09",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-10",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-11",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-12",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-13",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-14",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-15",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-16",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-17",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-18",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-19",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-20",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-21",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-22",
-        "priceCents": 0
-      },
-      {
-        "date": "2026-03-23",
-        "priceCents": 0
-      }
-    ]
-  },
-  {
-    "id": "88e296cf-2dbb-4701-bec1-a5cc1759c91f",
-    "slug": "renogy-200w-starter-pwm",
-    "name": "Renogy 200W 12V Monocrystalline Solar Starter Kit with 30A PWM Controller",
-    "brand": "Renogy",
-    "listedPrice": 0,
-    "missingCost": 408,
-    "trueCost": 408,
-    "panelWatts": 200,
-    "storageWh": 0,
-    "inverterWatts": 0,
-    "voltage": 12,
-    "chemistry": "None",
-    "costPerWh": "N/A",
-    "costPerW": "$2.04",
-    "useCases": [],
-    "useCaseRatings": {
-      "rv": "poor",
-      "cabin": "poor",
-      "shed": "poor",
-      "emergency": "poor",
-      "homestead": "poor",
-      "boat": "poor"
-    },
-    "included": {
-      "panels": true,
-      "battery": false,
-      "inverter": false,
-      "controller": true,
-      "mounting": true,
-      "wiring": true,
-      "monitoring": false
-    },
-    "priceObservedAt": "2026-03-23T21:44:01.261Z",
-    "retailer": "Unknown",
-    "sourceUrl": null,
-    "completeness": 0,
+    "completeness": 86,
     "items": [
       {
         "role": "Solar Panels",
         "isIncluded": true,
-        "name": "Renogy 100W 12V Mono",
-        "specs": "Renogy 100W 12V Mono — 2x 100W = 200W total",
-        "quantity": 2
+        "name": "200W Solar Array",
+        "specs": "200W Solar Array — 200W total capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "768Wh LiFePO4 Battery",
+        "specs": "768Wh LiFePO4 Battery — 768Wh usable capacity",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "600W Inverter",
+        "specs": "600W Inverter — 600W continuous output",
+        "quantity": 1
       },
       {
         "role": "Charge Controller",
         "isIncluded": true,
-        "name": "Renogy Wanderer 30A PWM",
-        "specs": "Renogy Wanderer 30A PWM — 30A PWM",
+        "name": "Built-in Charge Controller",
+        "specs": "Built-in Charge Controller — Integrated into power station",
         "quantity": 1
       },
       {
         "role": "Wiring",
         "isIncluded": true,
-        "name": "MC4 + tray cables",
-        "specs": "MC4 + tray cables — Included cables",
+        "name": "Solar Input Cable",
+        "specs": "Solar Input Cable — MC4 panel input cable included",
         "quantity": 1
       },
       {
         "role": "Mounting",
         "isIncluded": true,
-        "name": "Z-bracket mounts",
-        "specs": "Z-bracket mounts — 2 sets Z-brackets",
-        "quantity": 2
-      },
-      {
-        "role": "Battery",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1,
-        "estimatedCost": 249
-      },
-      {
-        "role": "Inverter",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1,
-        "estimatedCost": 159
-      },
-      {
-        "role": "Monitoring",
-        "isIncluded": false,
-        "name": "Not included",
-        "specs": "",
-        "quantity": 1
+        "name": "Portable (No Mounting Required)",
+        "specs": "Portable (No Mounting Required) — Portable unit, no mounting needed",
+        "quantity": 0
       }
     ],
     "priceHistory": [
@@ -55087,7 +54662,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:44:01.474Z",
+    "priceObservedAt": "2026-03-23T22:13:28.511Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -55118,6 +54693,1632 @@
         "isIncluded": true,
         "name": "Mounting hardware",
         "specs": "Mounting hardware — Included",
+        "quantity": 2
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 249
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 159
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1
+      }
+    ],
+    "priceHistory": [
+      {
+        "date": "2025-09-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-23",
+        "priceCents": 0
+      }
+    ]
+  },
+  {
+    "id": "dae20cef-2ce7-4ed7-b898-95b844e26d6d",
+    "slug": "renogy-200w-premium-mppt-40a",
+    "name": "Renogy 200W 12V Monocrystalline Solar Kit with 40A MPPT Rover Controller + Z Brackets",
+    "brand": "Renogy",
+    "listedPrice": 0,
+    "missingCost": 408,
+    "trueCost": 408,
+    "panelWatts": 200,
+    "storageWh": 0,
+    "inverterWatts": 0,
+    "voltage": 12,
+    "chemistry": "None",
+    "costPerWh": "N/A",
+    "costPerW": "$2.04",
+    "useCases": [],
+    "useCaseRatings": {
+      "rv": "poor",
+      "cabin": "poor",
+      "shed": "poor",
+      "emergency": "poor",
+      "homestead": "poor",
+      "boat": "poor"
+    },
+    "included": {
+      "panels": true,
+      "battery": false,
+      "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
+      "monitoring": false
+    },
+    "priceObservedAt": "2026-03-23T22:13:28.724Z",
+    "retailer": "Unknown",
+    "sourceUrl": null,
+    "completeness": 0,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Renogy 100W 12V Mono",
+        "specs": "Renogy 100W 12V Mono — 2x 100W = 200W total",
+        "quantity": 2
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Renogy Rover 40A MPPT",
+        "specs": "Renogy Rover 40A MPPT — 40A MPPT",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "MC4 + tray cables + Z-brackets",
+        "specs": "MC4 + tray cables + Z-brackets — Included cables + mounting",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Z-bracket mounts",
+        "specs": "Z-bracket mounts — 2 sets Z-brackets",
+        "quantity": 2
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 249
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 159
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1
+      }
+    ],
+    "priceHistory": [
+      {
+        "date": "2025-09-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-09-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-10-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-11-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2025-12-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-29",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-30",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-01-31",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-23",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-24",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-25",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-26",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-27",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-02-28",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-01",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-02",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-03",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-04",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-05",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-06",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-07",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-08",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-09",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-10",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-11",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-12",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-13",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-14",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-15",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-16",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-17",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-18",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-19",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-20",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-21",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-22",
+        "priceCents": 0
+      },
+      {
+        "date": "2026-03-23",
+        "priceCents": 0
+      }
+    ]
+  },
+  {
+    "id": "b1fc75b8-8102-4cd2-b808-4a2414a2467d",
+    "slug": "renogy-200w-starter-mppt-20a",
+    "name": "Renogy 200W 12V Monocrystalline Solar Starter Kit with 20A MPPT Rover Controller",
+    "brand": "Renogy",
+    "listedPrice": 0,
+    "missingCost": 408,
+    "trueCost": 408,
+    "panelWatts": 200,
+    "storageWh": 0,
+    "inverterWatts": 0,
+    "voltage": 12,
+    "chemistry": "None",
+    "costPerWh": "N/A",
+    "costPerW": "$2.04",
+    "useCases": [],
+    "useCaseRatings": {
+      "rv": "poor",
+      "cabin": "poor",
+      "shed": "poor",
+      "emergency": "poor",
+      "homestead": "poor",
+      "boat": "poor"
+    },
+    "included": {
+      "panels": true,
+      "battery": false,
+      "inverter": false,
+      "controller": true,
+      "mounting": true,
+      "wiring": true,
+      "monitoring": false
+    },
+    "priceObservedAt": "2026-03-23T22:13:28.904Z",
+    "retailer": "Unknown",
+    "sourceUrl": null,
+    "completeness": 0,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Renogy 100W 12V Mono",
+        "specs": "Renogy 100W 12V Mono — 2x 100W = 200W total",
+        "quantity": 2
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Renogy Rover 20A MPPT",
+        "specs": "Renogy Rover 20A MPPT — 20A MPPT",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "MC4 + tray cables",
+        "specs": "MC4 + tray cables — Included cables",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Z-bracket mounts",
+        "specs": "Z-bracket mounts — 2 sets Z-brackets",
         "quantity": 2
       },
       {
@@ -55900,7 +57101,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-03-23T21:44:01.883Z",
+    "priceObservedAt": "2026-03-23T22:13:29.091Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
