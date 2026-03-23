@@ -810,22 +810,322 @@
     "name": "Renogy 400W 12V Solar Kit with 30A Controller + Bluetooth",
     "brand": "Renogy",
     "listedPrice": 450,
-    "missingCost": 0,
-    "trueCost": 0,
-    "panelWatts": 0,
+    "missingCost": 408,
+    "trueCost": 858,
+    "panelWatts": 400,
     "storageWh": 0,
     "inverterWatts": 0,
     "voltage": 12,
-    "chemistry": "Unknown",
+    "chemistry": "None",
     "costPerWh": "N/A",
     "useCases": [],
     "useCaseRatings": {},
-    "included": {},
+    "included": {
+      "inverter": false,
+      "controller": true,
+      "wiring": true,
+      "mounting": true,
+      "panels": true,
+      "monitoring": true,
+      "battery": false
+    },
     "priceObservedAt": "2026-03-23T06:45:02.072Z",
     "retailer": "Amazon",
-    "completeness": 0,
-    "items": [],
+    "completeness": 71,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Renogy 100W 12V Mono",
+        "specs": "Renogy 100W 12V Mono — 4x 100W = 400W total",
+        "quantity": 4
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Renogy Wanderer 30A PWM",
+        "specs": "PWM — less efficient than MPPT",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "MC4 + tray cables + connectors",
+        "specs": "MC4 + tray cables + connectors — 20ft 10AWG MC4, 8ft 10AWG tray, 3 branch connectors",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Z-bracket mounts",
+        "specs": "Z-bracket mounts — 4 sets Z-brackets",
+        "quantity": 4
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": true,
+        "name": "BT-1 Bluetooth Module",
+        "specs": "BT-1 Bluetooth Module — Renogy DC Home app",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 159
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 249
+      }
+    ],
     "priceHistory": [
+      {
+        "date": "2025-09-25",
+        "priceCents": 39979
+      },
+      {
+        "date": "2025-09-26",
+        "priceCents": 40076
+      },
+      {
+        "date": "2025-09-27",
+        "priceCents": 40635
+      },
+      {
+        "date": "2025-09-28",
+        "priceCents": 40698
+      },
+      {
+        "date": "2025-09-29",
+        "priceCents": 40667
+      },
+      {
+        "date": "2025-09-30",
+        "priceCents": 40619
+      },
+      {
+        "date": "2025-10-01",
+        "priceCents": 40248
+      },
+      {
+        "date": "2025-10-02",
+        "priceCents": 40243
+      },
+      {
+        "date": "2025-10-03",
+        "priceCents": 40787
+      },
+      {
+        "date": "2025-10-04",
+        "priceCents": 41140
+      },
+      {
+        "date": "2025-10-05",
+        "priceCents": 40997
+      },
+      {
+        "date": "2025-10-06",
+        "priceCents": 40995
+      },
+      {
+        "date": "2025-10-07",
+        "priceCents": 41445
+      },
+      {
+        "date": "2025-10-08",
+        "priceCents": 41602
+      },
+      {
+        "date": "2025-10-09",
+        "priceCents": 41882
+      },
+      {
+        "date": "2025-10-10",
+        "priceCents": 41806
+      },
+      {
+        "date": "2025-10-11",
+        "priceCents": 41656
+      },
+      {
+        "date": "2025-10-12",
+        "priceCents": 41543
+      },
+      {
+        "date": "2025-10-13",
+        "priceCents": 41283
+      },
+      {
+        "date": "2025-10-14",
+        "priceCents": 41251
+      },
+      {
+        "date": "2025-10-15",
+        "priceCents": 41239
+      },
+      {
+        "date": "2025-10-16",
+        "priceCents": 40685
+      },
+      {
+        "date": "2025-10-17",
+        "priceCents": 40037
+      },
+      {
+        "date": "2025-10-18",
+        "priceCents": 40570
+      },
+      {
+        "date": "2025-10-19",
+        "priceCents": 40323
+      },
+      {
+        "date": "2025-10-20",
+        "priceCents": 40060
+      },
+      {
+        "date": "2025-10-21",
+        "priceCents": 39609
+      },
+      {
+        "date": "2025-10-22",
+        "priceCents": 39546
+      },
+      {
+        "date": "2025-10-23",
+        "priceCents": 39696
+      },
+      {
+        "date": "2025-10-24",
+        "priceCents": 39496
+      },
+      {
+        "date": "2025-10-25",
+        "priceCents": 40039
+      },
+      {
+        "date": "2025-10-26",
+        "priceCents": 40565
+      },
+      {
+        "date": "2025-10-27",
+        "priceCents": 41063
+      },
+      {
+        "date": "2025-10-28",
+        "priceCents": 40751
+      },
+      {
+        "date": "2025-10-29",
+        "priceCents": 41036
+      },
+      {
+        "date": "2025-10-30",
+        "priceCents": 40399
+      },
+      {
+        "date": "2025-10-31",
+        "priceCents": 40208
+      },
+      {
+        "date": "2025-11-01",
+        "priceCents": 40548
+      },
+      {
+        "date": "2025-11-02",
+        "priceCents": 40447
+      },
+      {
+        "date": "2025-11-03",
+        "priceCents": 39932
+      },
+      {
+        "date": "2025-11-04",
+        "priceCents": 39652
+      },
+      {
+        "date": "2025-11-05",
+        "priceCents": 39897
+      },
+      {
+        "date": "2025-11-06",
+        "priceCents": 39462
+      },
+      {
+        "date": "2025-11-07",
+        "priceCents": 39162
+      },
+      {
+        "date": "2025-11-08",
+        "priceCents": 41352
+      },
+      {
+        "date": "2025-11-09",
+        "priceCents": 43107
+      },
+      {
+        "date": "2025-11-10",
+        "priceCents": 42774
+      },
+      {
+        "date": "2025-11-11",
+        "priceCents": 42140
+      },
+      {
+        "date": "2025-11-12",
+        "priceCents": 42186
+      },
+      {
+        "date": "2025-11-13",
+        "priceCents": 42714
+      },
+      {
+        "date": "2025-11-14",
+        "priceCents": 43050
+      },
+      {
+        "date": "2025-11-15",
+        "priceCents": 42419
+      },
+      {
+        "date": "2025-11-16",
+        "priceCents": 42758
+      },
+      {
+        "date": "2025-11-17",
+        "priceCents": 42678
+      },
+      {
+        "date": "2025-11-18",
+        "priceCents": 43121
+      },
+      {
+        "date": "2025-11-19",
+        "priceCents": 43278
+      },
+      {
+        "date": "2025-11-20",
+        "priceCents": 43370
+      },
+      {
+        "date": "2025-11-21",
+        "priceCents": 43805
+      },
+      {
+        "date": "2025-11-22",
+        "priceCents": 43215
+      },
+      {
+        "date": "2025-11-23",
+        "priceCents": 42668
+      },
       {
         "date": "2025-11-24",
         "priceCents": 43285
@@ -1314,382 +1614,81 @@
     "name": "ECO-WORTHY 200W 12V Complete Kit with 100Ah Battery + 1100W Inverter",
     "brand": "Eco-Worthy",
     "listedPrice": 510,
-    "missingCost": 0,
-    "trueCost": 0,
-    "panelWatts": 0,
-    "storageWh": 0,
-    "inverterWatts": 0,
+    "missingCost": 35,
+    "trueCost": 545,
+    "panelWatts": 200,
+    "storageWh": 1280,
+    "inverterWatts": 1100,
     "voltage": 12,
-    "chemistry": "Unknown",
-    "costPerWh": "N/A",
+    "chemistry": "LiFePO4",
+    "costPerWh": "$0.43",
     "useCases": [],
     "useCaseRatings": {},
-    "included": {},
+    "included": {
+      "inverter": true,
+      "controller": true,
+      "wiring": true,
+      "mounting": false,
+      "panels": true,
+      "monitoring": false,
+      "battery": true
+    },
     "priceObservedAt": "2026-03-23T06:52:45.648Z",
     "retailer": "Amazon",
-    "completeness": 0,
-    "items": [],
+    "completeness": 71,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "ECO-WORTHY 100W Mono",
+        "specs": "ECO-WORTHY 100W Mono — 2x 100W = 200W total",
+        "quantity": 2
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "ECO-WORTHY 30A PWM",
+        "specs": "PWM — less efficient than MPPT",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "ECO-WORTHY 100Ah 12V LiFePO4",
+        "specs": "ECO-WORTHY 100Ah 12V LiFePO4 — 1,280Wh, 4000 cycles",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "ECO-WORTHY 1100W Pure Sine",
+        "specs": "ECO-WORTHY 1100W Pure Sine — 1100W cont / 2200W surge",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "MC4 cables + battery cables",
+        "specs": "May need extra battery-to-inverter cables",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 35
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
-      {
-        "date": "2025-06-27",
-        "priceCents": 47761
-      },
-      {
-        "date": "2025-06-28",
-        "priceCents": 47535
-      },
-      {
-        "date": "2025-06-29",
-        "priceCents": 47524
-      },
-      {
-        "date": "2025-06-30",
-        "priceCents": 47189
-      },
-      {
-        "date": "2025-07-01",
-        "priceCents": 46584
-      },
-      {
-        "date": "2025-07-02",
-        "priceCents": 47072
-      },
-      {
-        "date": "2025-07-03",
-        "priceCents": 47106
-      },
-      {
-        "date": "2025-07-04",
-        "priceCents": 46504
-      },
-      {
-        "date": "2025-07-05",
-        "priceCents": 46304
-      },
-      {
-        "date": "2025-07-06",
-        "priceCents": 46032
-      },
-      {
-        "date": "2025-07-07",
-        "priceCents": 46417
-      },
-      {
-        "date": "2025-07-08",
-        "priceCents": 46725
-      },
-      {
-        "date": "2025-07-09",
-        "priceCents": 46138
-      },
-      {
-        "date": "2025-07-10",
-        "priceCents": 46467
-      },
-      {
-        "date": "2025-07-11",
-        "priceCents": 46957
-      },
-      {
-        "date": "2025-07-12",
-        "priceCents": 46221
-      },
-      {
-        "date": "2025-07-13",
-        "priceCents": 45530
-      },
-      {
-        "date": "2025-07-14",
-        "priceCents": 45661
-      },
-      {
-        "date": "2025-07-15",
-        "priceCents": 46121
-      },
-      {
-        "date": "2025-07-16",
-        "priceCents": 45759
-      },
-      {
-        "date": "2025-07-17",
-        "priceCents": 45423
-      },
-      {
-        "date": "2025-07-18",
-        "priceCents": 45720
-      },
-      {
-        "date": "2025-07-19",
-        "priceCents": 46030
-      },
-      {
-        "date": "2025-07-20",
-        "priceCents": 46571
-      },
-      {
-        "date": "2025-07-21",
-        "priceCents": 46954
-      },
-      {
-        "date": "2025-07-22",
-        "priceCents": 47254
-      },
-      {
-        "date": "2025-07-23",
-        "priceCents": 46821
-      },
-      {
-        "date": "2025-07-24",
-        "priceCents": 47362
-      },
-      {
-        "date": "2025-07-25",
-        "priceCents": 46900
-      },
-      {
-        "date": "2025-07-26",
-        "priceCents": 47158
-      },
-      {
-        "date": "2025-07-27",
-        "priceCents": 46536
-      },
-      {
-        "date": "2025-07-28",
-        "priceCents": 45933
-      },
-      {
-        "date": "2025-07-29",
-        "priceCents": 45301
-      },
-      {
-        "date": "2025-07-30",
-        "priceCents": 45422
-      },
-      {
-        "date": "2025-07-31",
-        "priceCents": 45828
-      },
-      {
-        "date": "2025-08-01",
-        "priceCents": 46259
-      },
-      {
-        "date": "2025-08-02",
-        "priceCents": 46318
-      },
-      {
-        "date": "2025-08-03",
-        "priceCents": 45854
-      },
-      {
-        "date": "2025-08-04",
-        "priceCents": 45977
-      },
-      {
-        "date": "2025-08-05",
-        "priceCents": 46145
-      },
-      {
-        "date": "2025-08-06",
-        "priceCents": 46406
-      },
-      {
-        "date": "2025-08-07",
-        "priceCents": 46393
-      },
-      {
-        "date": "2025-08-08",
-        "priceCents": 45663
-      },
-      {
-        "date": "2025-08-09",
-        "priceCents": 46077
-      },
-      {
-        "date": "2025-08-10",
-        "priceCents": 47680
-      },
-      {
-        "date": "2025-08-11",
-        "priceCents": 49511
-      },
-      {
-        "date": "2025-08-12",
-        "priceCents": 49370
-      },
-      {
-        "date": "2025-08-13",
-        "priceCents": 48631
-      },
-      {
-        "date": "2025-08-14",
-        "priceCents": 48708
-      },
-      {
-        "date": "2025-08-15",
-        "priceCents": 49410
-      },
-      {
-        "date": "2025-08-16",
-        "priceCents": 49437
-      },
-      {
-        "date": "2025-08-17",
-        "priceCents": 49231
-      },
-      {
-        "date": "2025-08-18",
-        "priceCents": 48508
-      },
-      {
-        "date": "2025-08-19",
-        "priceCents": 48404
-      },
-      {
-        "date": "2025-08-20",
-        "priceCents": 48791
-      },
-      {
-        "date": "2025-08-21",
-        "priceCents": 48842
-      },
-      {
-        "date": "2025-08-22",
-        "priceCents": 48373
-      },
-      {
-        "date": "2025-08-23",
-        "priceCents": 47787
-      },
-      {
-        "date": "2025-08-24",
-        "priceCents": 47070
-      },
-      {
-        "date": "2025-08-25",
-        "priceCents": 46503
-      },
-      {
-        "date": "2025-08-26",
-        "priceCents": 46284
-      },
-      {
-        "date": "2025-08-27",
-        "priceCents": 46460
-      },
-      {
-        "date": "2025-08-28",
-        "priceCents": 46820
-      },
-      {
-        "date": "2025-08-29",
-        "priceCents": 46496
-      },
-      {
-        "date": "2025-08-30",
-        "priceCents": 45915
-      },
-      {
-        "date": "2025-08-31",
-        "priceCents": 45284
-      },
-      {
-        "date": "2025-09-01",
-        "priceCents": 45150
-      },
-      {
-        "date": "2025-09-02",
-        "priceCents": 44528
-      },
-      {
-        "date": "2025-09-03",
-        "priceCents": 45001
-      },
-      {
-        "date": "2025-09-04",
-        "priceCents": 44296
-      },
-      {
-        "date": "2025-09-05",
-        "priceCents": 44429
-      },
-      {
-        "date": "2025-09-06",
-        "priceCents": 44010
-      },
-      {
-        "date": "2025-09-07",
-        "priceCents": 44408
-      },
-      {
-        "date": "2025-09-08",
-        "priceCents": 44094
-      },
-      {
-        "date": "2025-09-09",
-        "priceCents": 44568
-      },
-      {
-        "date": "2025-09-10",
-        "priceCents": 45003
-      },
-      {
-        "date": "2025-09-11",
-        "priceCents": 44437
-      },
-      {
-        "date": "2025-09-12",
-        "priceCents": 44161
-      },
-      {
-        "date": "2025-09-13",
-        "priceCents": 43545
-      },
-      {
-        "date": "2025-09-14",
-        "priceCents": 43878
-      },
-      {
-        "date": "2025-09-15",
-        "priceCents": 43377
-      },
-      {
-        "date": "2025-09-16",
-        "priceCents": 42991
-      },
-      {
-        "date": "2025-09-17",
-        "priceCents": 42632
-      },
-      {
-        "date": "2025-09-18",
-        "priceCents": 43185
-      },
-      {
-        "date": "2025-09-19",
-        "priceCents": 43216
-      },
-      {
-        "date": "2025-09-20",
-        "priceCents": 43105
-      },
-      {
-        "date": "2025-09-21",
-        "priceCents": 43083
-      },
-      {
-        "date": "2025-09-22",
-        "priceCents": 43600
-      },
-      {
-        "date": "2025-09-23",
-        "priceCents": 43736
-      },
-      {
-        "date": "2025-09-24",
-        "priceCents": 45529
-      },
       {
         "date": "2025-09-25",
         "priceCents": 47304
@@ -2418,762 +2417,82 @@
     "name": "Renogy 400W 12V Premium Solar Kit with 40A MPPT",
     "brand": "Renogy",
     "listedPrice": 521,
-    "missingCost": 0,
-    "trueCost": 0,
-    "panelWatts": 0,
+    "missingCost": 408,
+    "trueCost": 929,
+    "panelWatts": 400,
     "storageWh": 0,
     "inverterWatts": 0,
     "voltage": 12,
-    "chemistry": "Unknown",
+    "chemistry": "None",
     "costPerWh": "N/A",
     "useCases": [],
     "useCaseRatings": {},
-    "included": {},
+    "included": {
+      "inverter": false,
+      "controller": true,
+      "wiring": true,
+      "mounting": true,
+      "panels": true,
+      "monitoring": true,
+      "battery": false
+    },
     "priceObservedAt": "2026-03-23T06:52:44.449Z",
     "retailer": "Amazon",
-    "completeness": 0,
-    "items": [],
+    "completeness": 71,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Renogy 100W 12V Mono",
+        "specs": "Renogy 100W 12V Mono — 4x 100W = 400W total",
+        "quantity": 4
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Renogy Rover 40A MPPT",
+        "specs": "Renogy Rover 40A MPPT — 40A MPPT + BT-1 Bluetooth",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "MC4 + tray cables + fuses",
+        "specs": "MC4 + tray cables + fuses — 20ft 10AWG MC4, 8ft 8AWG tray",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Z-bracket mounts",
+        "specs": "Z-bracket mounts — 4 sets Z-brackets",
+        "quantity": 4
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": true,
+        "name": "BT-1 Bluetooth Module",
+        "specs": "BT-1 Bluetooth Module — Renogy DC Home app",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 159
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 249
+      }
+    ],
     "priceHistory": [
-      {
-        "date": "2025-03-24",
-        "priceCents": 44451
-      },
-      {
-        "date": "2025-03-25",
-        "priceCents": 44122
-      },
-      {
-        "date": "2025-03-26",
-        "priceCents": 43973
-      },
-      {
-        "date": "2025-03-27",
-        "priceCents": 44111
-      },
-      {
-        "date": "2025-03-28",
-        "priceCents": 46100
-      },
-      {
-        "date": "2025-03-29",
-        "priceCents": 47848
-      },
-      {
-        "date": "2025-03-30",
-        "priceCents": 47669
-      },
-      {
-        "date": "2025-03-31",
-        "priceCents": 47349
-      },
-      {
-        "date": "2025-04-01",
-        "priceCents": 47954
-      },
-      {
-        "date": "2025-04-02",
-        "priceCents": 48458
-      },
-      {
-        "date": "2025-04-03",
-        "priceCents": 48667
-      },
-      {
-        "date": "2025-04-04",
-        "priceCents": 48039
-      },
-      {
-        "date": "2025-04-05",
-        "priceCents": 48321
-      },
-      {
-        "date": "2025-04-06",
-        "priceCents": 48490
-      },
-      {
-        "date": "2025-04-07",
-        "priceCents": 48223
-      },
-      {
-        "date": "2025-04-08",
-        "priceCents": 48020
-      },
-      {
-        "date": "2025-04-09",
-        "priceCents": 47500
-      },
-      {
-        "date": "2025-04-10",
-        "priceCents": 47075
-      },
-      {
-        "date": "2025-04-11",
-        "priceCents": 46959
-      },
-      {
-        "date": "2025-04-12",
-        "priceCents": 46272
-      },
-      {
-        "date": "2025-04-13",
-        "priceCents": 46887
-      },
-      {
-        "date": "2025-04-14",
-        "priceCents": 47037
-      },
-      {
-        "date": "2025-04-15",
-        "priceCents": 47377
-      },
-      {
-        "date": "2025-04-16",
-        "priceCents": 47989
-      },
-      {
-        "date": "2025-04-17",
-        "priceCents": 47453
-      },
-      {
-        "date": "2025-04-18",
-        "priceCents": 46975
-      },
-      {
-        "date": "2025-04-19",
-        "priceCents": 46594
-      },
-      {
-        "date": "2025-04-20",
-        "priceCents": 46059
-      },
-      {
-        "date": "2025-04-21",
-        "priceCents": 46579
-      },
-      {
-        "date": "2025-04-22",
-        "priceCents": 46591
-      },
-      {
-        "date": "2025-04-23",
-        "priceCents": 46076
-      },
-      {
-        "date": "2025-04-24",
-        "priceCents": 46167
-      },
-      {
-        "date": "2025-04-25",
-        "priceCents": 46430
-      },
-      {
-        "date": "2025-04-26",
-        "priceCents": 45921
-      },
-      {
-        "date": "2025-04-27",
-        "priceCents": 46309
-      },
-      {
-        "date": "2025-04-28",
-        "priceCents": 46632
-      },
-      {
-        "date": "2025-04-29",
-        "priceCents": 46488
-      },
-      {
-        "date": "2025-04-30",
-        "priceCents": 46875
-      },
-      {
-        "date": "2025-05-01",
-        "priceCents": 46218
-      },
-      {
-        "date": "2025-05-02",
-        "priceCents": 45648
-      },
-      {
-        "date": "2025-05-03",
-        "priceCents": 46098
-      },
-      {
-        "date": "2025-05-04",
-        "priceCents": 45848
-      },
-      {
-        "date": "2025-05-05",
-        "priceCents": 45624
-      },
-      {
-        "date": "2025-05-06",
-        "priceCents": 45563
-      },
-      {
-        "date": "2025-05-07",
-        "priceCents": 45066
-      },
-      {
-        "date": "2025-05-08",
-        "priceCents": 45079
-      },
-      {
-        "date": "2025-05-09",
-        "priceCents": 44906
-      },
-      {
-        "date": "2025-05-10",
-        "priceCents": 44833
-      },
-      {
-        "date": "2025-05-11",
-        "priceCents": 44362
-      },
-      {
-        "date": "2025-05-12",
-        "priceCents": 45904
-      },
-      {
-        "date": "2025-05-13",
-        "priceCents": 47983
-      },
-      {
-        "date": "2025-05-14",
-        "priceCents": 48331
-      },
-      {
-        "date": "2025-05-15",
-        "priceCents": 49023
-      },
-      {
-        "date": "2025-05-16",
-        "priceCents": 48633
-      },
-      {
-        "date": "2025-05-17",
-        "priceCents": 48608
-      },
-      {
-        "date": "2025-05-18",
-        "priceCents": 48337
-      },
-      {
-        "date": "2025-05-19",
-        "priceCents": 47612
-      },
-      {
-        "date": "2025-05-20",
-        "priceCents": 47942
-      },
-      {
-        "date": "2025-05-21",
-        "priceCents": 48257
-      },
-      {
-        "date": "2025-05-22",
-        "priceCents": 48765
-      },
-      {
-        "date": "2025-05-23",
-        "priceCents": 48718
-      },
-      {
-        "date": "2025-05-24",
-        "priceCents": 49236
-      },
-      {
-        "date": "2025-05-25",
-        "priceCents": 49929
-      },
-      {
-        "date": "2025-05-26",
-        "priceCents": 50210
-      },
-      {
-        "date": "2025-05-27",
-        "priceCents": 50300
-      },
-      {
-        "date": "2025-05-28",
-        "priceCents": 49947
-      },
-      {
-        "date": "2025-05-29",
-        "priceCents": 49681
-      },
-      {
-        "date": "2025-05-30",
-        "priceCents": 49229
-      },
-      {
-        "date": "2025-05-31",
-        "priceCents": 48861
-      },
-      {
-        "date": "2025-06-01",
-        "priceCents": 48364
-      },
-      {
-        "date": "2025-06-02",
-        "priceCents": 48047
-      },
-      {
-        "date": "2025-06-03",
-        "priceCents": 47560
-      },
-      {
-        "date": "2025-06-04",
-        "priceCents": 47512
-      },
-      {
-        "date": "2025-06-05",
-        "priceCents": 47158
-      },
-      {
-        "date": "2025-06-06",
-        "priceCents": 46872
-      },
-      {
-        "date": "2025-06-07",
-        "priceCents": 47256
-      },
-      {
-        "date": "2025-06-08",
-        "priceCents": 47027
-      },
-      {
-        "date": "2025-06-09",
-        "priceCents": 46631
-      },
-      {
-        "date": "2025-06-10",
-        "priceCents": 46526
-      },
-      {
-        "date": "2025-06-11",
-        "priceCents": 46498
-      },
-      {
-        "date": "2025-06-12",
-        "priceCents": 46581
-      },
-      {
-        "date": "2025-06-13",
-        "priceCents": 46399
-      },
-      {
-        "date": "2025-06-14",
-        "priceCents": 45788
-      },
-      {
-        "date": "2025-06-15",
-        "priceCents": 45427
-      },
-      {
-        "date": "2025-06-16",
-        "priceCents": 46052
-      },
-      {
-        "date": "2025-06-17",
-        "priceCents": 45349
-      },
-      {
-        "date": "2025-06-18",
-        "priceCents": 44773
-      },
-      {
-        "date": "2025-06-19",
-        "priceCents": 44379
-      },
-      {
-        "date": "2025-06-20",
-        "priceCents": 44240
-      },
-      {
-        "date": "2025-06-21",
-        "priceCents": 44399
-      },
-      {
-        "date": "2025-06-22",
-        "priceCents": 43994
-      },
-      {
-        "date": "2025-06-23",
-        "priceCents": 44326
-      },
-      {
-        "date": "2025-06-24",
-        "priceCents": 44017
-      },
-      {
-        "date": "2025-06-25",
-        "priceCents": 43539
-      },
-      {
-        "date": "2025-06-26",
-        "priceCents": 45469
-      },
-      {
-        "date": "2025-06-27",
-        "priceCents": 47224
-      },
-      {
-        "date": "2025-06-28",
-        "priceCents": 47294
-      },
-      {
-        "date": "2025-06-29",
-        "priceCents": 46958
-      },
-      {
-        "date": "2025-06-30",
-        "priceCents": 47251
-      },
-      {
-        "date": "2025-07-01",
-        "priceCents": 47648
-      },
-      {
-        "date": "2025-07-02",
-        "priceCents": 47538
-      },
-      {
-        "date": "2025-07-03",
-        "priceCents": 47449
-      },
-      {
-        "date": "2025-07-04",
-        "priceCents": 47948
-      },
-      {
-        "date": "2025-07-05",
-        "priceCents": 48056
-      },
-      {
-        "date": "2025-07-06",
-        "priceCents": 47350
-      },
-      {
-        "date": "2025-07-07",
-        "priceCents": 47292
-      },
-      {
-        "date": "2025-07-08",
-        "priceCents": 47417
-      },
-      {
-        "date": "2025-07-09",
-        "priceCents": 48085
-      },
-      {
-        "date": "2025-07-10",
-        "priceCents": 47919
-      },
-      {
-        "date": "2025-07-11",
-        "priceCents": 47416
-      },
-      {
-        "date": "2025-07-12",
-        "priceCents": 46877
-      },
-      {
-        "date": "2025-07-13",
-        "priceCents": 46349
-      },
-      {
-        "date": "2025-07-14",
-        "priceCents": 46061
-      },
-      {
-        "date": "2025-07-15",
-        "priceCents": 45943
-      },
-      {
-        "date": "2025-07-16",
-        "priceCents": 45771
-      },
-      {
-        "date": "2025-07-17",
-        "priceCents": 45152
-      },
-      {
-        "date": "2025-07-18",
-        "priceCents": 45725
-      },
-      {
-        "date": "2025-07-19",
-        "priceCents": 45735
-      },
-      {
-        "date": "2025-07-20",
-        "priceCents": 45718
-      },
-      {
-        "date": "2025-07-21",
-        "priceCents": 45016
-      },
-      {
-        "date": "2025-07-22",
-        "priceCents": 45513
-      },
-      {
-        "date": "2025-07-23",
-        "priceCents": 45755
-      },
-      {
-        "date": "2025-07-24",
-        "priceCents": 45103
-      },
-      {
-        "date": "2025-07-25",
-        "priceCents": 44861
-      },
-      {
-        "date": "2025-07-26",
-        "priceCents": 45177
-      },
-      {
-        "date": "2025-07-27",
-        "priceCents": 44641
-      },
-      {
-        "date": "2025-07-28",
-        "priceCents": 45114
-      },
-      {
-        "date": "2025-07-29",
-        "priceCents": 44601
-      },
-      {
-        "date": "2025-07-30",
-        "priceCents": 43934
-      },
-      {
-        "date": "2025-07-31",
-        "priceCents": 43227
-      },
-      {
-        "date": "2025-08-01",
-        "priceCents": 42666
-      },
-      {
-        "date": "2025-08-02",
-        "priceCents": 43224
-      },
-      {
-        "date": "2025-08-03",
-        "priceCents": 43671
-      },
-      {
-        "date": "2025-08-04",
-        "priceCents": 43599
-      },
-      {
-        "date": "2025-08-05",
-        "priceCents": 43050
-      },
-      {
-        "date": "2025-08-06",
-        "priceCents": 42716
-      },
-      {
-        "date": "2025-08-07",
-        "priceCents": 43197
-      },
-      {
-        "date": "2025-08-08",
-        "priceCents": 42469
-      },
-      {
-        "date": "2025-08-09",
-        "priceCents": 42266
-      },
-      {
-        "date": "2025-08-10",
-        "priceCents": 43830
-      },
-      {
-        "date": "2025-08-11",
-        "priceCents": 46195
-      },
-      {
-        "date": "2025-08-12",
-        "priceCents": 45721
-      },
-      {
-        "date": "2025-08-13",
-        "priceCents": 46348
-      },
-      {
-        "date": "2025-08-14",
-        "priceCents": 46969
-      },
-      {
-        "date": "2025-08-15",
-        "priceCents": 46449
-      },
-      {
-        "date": "2025-08-16",
-        "priceCents": 46184
-      },
-      {
-        "date": "2025-08-17",
-        "priceCents": 46588
-      },
-      {
-        "date": "2025-08-18",
-        "priceCents": 47132
-      },
-      {
-        "date": "2025-08-19",
-        "priceCents": 46485
-      },
-      {
-        "date": "2025-08-20",
-        "priceCents": 46123
-      },
-      {
-        "date": "2025-08-21",
-        "priceCents": 46609
-      },
-      {
-        "date": "2025-08-22",
-        "priceCents": 46554
-      },
-      {
-        "date": "2025-08-23",
-        "priceCents": 47144
-      },
-      {
-        "date": "2025-08-24",
-        "priceCents": 46989
-      },
-      {
-        "date": "2025-08-25",
-        "priceCents": 46908
-      },
-      {
-        "date": "2025-08-26",
-        "priceCents": 47360
-      },
-      {
-        "date": "2025-08-27",
-        "priceCents": 47867
-      },
-      {
-        "date": "2025-08-28",
-        "priceCents": 47837
-      },
-      {
-        "date": "2025-08-29",
-        "priceCents": 48149
-      },
-      {
-        "date": "2025-08-30",
-        "priceCents": 47495
-      },
-      {
-        "date": "2025-08-31",
-        "priceCents": 47139
-      },
-      {
-        "date": "2025-09-01",
-        "priceCents": 46762
-      },
-      {
-        "date": "2025-09-02",
-        "priceCents": 47323
-      },
-      {
-        "date": "2025-09-03",
-        "priceCents": 47757
-      },
-      {
-        "date": "2025-09-04",
-        "priceCents": 47375
-      },
-      {
-        "date": "2025-09-05",
-        "priceCents": 46858
-      },
-      {
-        "date": "2025-09-06",
-        "priceCents": 46239
-      },
-      {
-        "date": "2025-09-07",
-        "priceCents": 45575
-      },
-      {
-        "date": "2025-09-08",
-        "priceCents": 44923
-      },
-      {
-        "date": "2025-09-09",
-        "priceCents": 44358
-      },
-      {
-        "date": "2025-09-10",
-        "priceCents": 44448
-      },
-      {
-        "date": "2025-09-11",
-        "priceCents": 44955
-      },
-      {
-        "date": "2025-09-12",
-        "priceCents": 44721
-      },
-      {
-        "date": "2025-09-13",
-        "priceCents": 44792
-      },
-      {
-        "date": "2025-09-14",
-        "priceCents": 44334
-      },
-      {
-        "date": "2025-09-15",
-        "priceCents": 44761
-      },
-      {
-        "date": "2025-09-16",
-        "priceCents": 45243
-      },
-      {
-        "date": "2025-09-17",
-        "priceCents": 45281
-      },
-      {
-        "date": "2025-09-18",
-        "priceCents": 44737
-      },
-      {
-        "date": "2025-09-19",
-        "priceCents": 44405
-      },
-      {
-        "date": "2025-09-20",
-        "priceCents": 44495
-      },
-      {
-        "date": "2025-09-21",
-        "priceCents": 43877
-      },
-      {
-        "date": "2025-09-22",
-        "priceCents": 43392
-      },
-      {
-        "date": "2025-09-23",
-        "priceCents": 43691
-      },
-      {
-        "date": "2025-09-24",
-        "priceCents": 46007
-      },
       {
         "date": "2025-09-25",
         "priceCents": 47313
@@ -3902,22 +3221,443 @@
     "name": "WindyNation 400W Monocrystalline Off-Grid Kit with PWM Controller",
     "brand": "WindyNation",
     "listedPrice": 527,
-    "missingCost": 0,
-    "trueCost": 0,
-    "panelWatts": 0,
+    "missingCost": 433,
+    "trueCost": 960,
+    "panelWatts": 400,
     "storageWh": 0,
     "inverterWatts": 0,
     "voltage": 12,
-    "chemistry": "Unknown",
+    "chemistry": "None",
     "costPerWh": "N/A",
     "useCases": [],
     "useCaseRatings": {},
-    "included": {},
+    "included": {
+      "inverter": false,
+      "controller": true,
+      "wiring": true,
+      "mounting": true,
+      "panels": true,
+      "monitoring": false,
+      "battery": false
+    },
     "priceObservedAt": "2026-03-23T06:52:47.228Z",
     "retailer": "Amazon",
-    "completeness": 0,
-    "items": [],
+    "completeness": 57,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "WindyNation 100W Mono",
+        "specs": "WindyNation 100W Mono — 4x 100W = 400W total",
+        "quantity": 4
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "WindyNation P30L PWM",
+        "specs": "PWM — less efficient than MPPT",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar cable + MC4 connectors",
+        "specs": "Solar cable + MC4 connectors — Included",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Mounting brackets",
+        "specs": "Mounting brackets — Included",
+        "quantity": 4
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 159
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 25
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 249
+      }
+    ],
     "priceHistory": [
+      {
+        "date": "2025-09-25",
+        "priceCents": 47199
+      },
+      {
+        "date": "2025-09-26",
+        "priceCents": 46759
+      },
+      {
+        "date": "2025-09-27",
+        "priceCents": 46831
+      },
+      {
+        "date": "2025-09-28",
+        "priceCents": 46623
+      },
+      {
+        "date": "2025-09-29",
+        "priceCents": 46824
+      },
+      {
+        "date": "2025-09-30",
+        "priceCents": 47408
+      },
+      {
+        "date": "2025-10-01",
+        "priceCents": 46934
+      },
+      {
+        "date": "2025-10-02",
+        "priceCents": 46993
+      },
+      {
+        "date": "2025-10-03",
+        "priceCents": 47614
+      },
+      {
+        "date": "2025-10-04",
+        "priceCents": 48254
+      },
+      {
+        "date": "2025-10-05",
+        "priceCents": 48174
+      },
+      {
+        "date": "2025-10-06",
+        "priceCents": 48588
+      },
+      {
+        "date": "2025-10-07",
+        "priceCents": 48804
+      },
+      {
+        "date": "2025-10-08",
+        "priceCents": 48842
+      },
+      {
+        "date": "2025-10-09",
+        "priceCents": 48092
+      },
+      {
+        "date": "2025-10-10",
+        "priceCents": 47672
+      },
+      {
+        "date": "2025-10-11",
+        "priceCents": 47418
+      },
+      {
+        "date": "2025-10-12",
+        "priceCents": 46926
+      },
+      {
+        "date": "2025-10-13",
+        "priceCents": 46508
+      },
+      {
+        "date": "2025-10-14",
+        "priceCents": 46406
+      },
+      {
+        "date": "2025-10-15",
+        "priceCents": 46509
+      },
+      {
+        "date": "2025-10-16",
+        "priceCents": 45979
+      },
+      {
+        "date": "2025-10-17",
+        "priceCents": 46502
+      },
+      {
+        "date": "2025-10-18",
+        "priceCents": 46362
+      },
+      {
+        "date": "2025-10-19",
+        "priceCents": 46615
+      },
+      {
+        "date": "2025-10-20",
+        "priceCents": 47184
+      },
+      {
+        "date": "2025-10-21",
+        "priceCents": 47180
+      },
+      {
+        "date": "2025-10-22",
+        "priceCents": 46806
+      },
+      {
+        "date": "2025-10-23",
+        "priceCents": 46759
+      },
+      {
+        "date": "2025-10-24",
+        "priceCents": 47354
+      },
+      {
+        "date": "2025-10-25",
+        "priceCents": 47486
+      },
+      {
+        "date": "2025-10-26",
+        "priceCents": 46898
+      },
+      {
+        "date": "2025-10-27",
+        "priceCents": 46443
+      },
+      {
+        "date": "2025-10-28",
+        "priceCents": 46574
+      },
+      {
+        "date": "2025-10-29",
+        "priceCents": 46822
+      },
+      {
+        "date": "2025-10-30",
+        "priceCents": 46513
+      },
+      {
+        "date": "2025-10-31",
+        "priceCents": 46276
+      },
+      {
+        "date": "2025-11-01",
+        "priceCents": 46348
+      },
+      {
+        "date": "2025-11-02",
+        "priceCents": 45837
+      },
+      {
+        "date": "2025-11-03",
+        "priceCents": 46374
+      },
+      {
+        "date": "2025-11-04",
+        "priceCents": 45851
+      },
+      {
+        "date": "2025-11-05",
+        "priceCents": 45564
+      },
+      {
+        "date": "2025-11-06",
+        "priceCents": 46004
+      },
+      {
+        "date": "2025-11-07",
+        "priceCents": 45622
+      },
+      {
+        "date": "2025-11-08",
+        "priceCents": 48116
+      },
+      {
+        "date": "2025-11-09",
+        "priceCents": 49512
+      },
+      {
+        "date": "2025-11-10",
+        "priceCents": 48780
+      },
+      {
+        "date": "2025-11-11",
+        "priceCents": 48258
+      },
+      {
+        "date": "2025-11-12",
+        "priceCents": 48577
+      },
+      {
+        "date": "2025-11-13",
+        "priceCents": 48745
+      },
+      {
+        "date": "2025-11-14",
+        "priceCents": 48129
+      },
+      {
+        "date": "2025-11-15",
+        "priceCents": 47371
+      },
+      {
+        "date": "2025-11-16",
+        "priceCents": 47452
+      },
+      {
+        "date": "2025-11-17",
+        "priceCents": 47017
+      },
+      {
+        "date": "2025-11-18",
+        "priceCents": 47378
+      },
+      {
+        "date": "2025-11-19",
+        "priceCents": 47842
+      },
+      {
+        "date": "2025-11-20",
+        "priceCents": 47246
+      },
+      {
+        "date": "2025-11-21",
+        "priceCents": 47711
+      },
+      {
+        "date": "2025-11-22",
+        "priceCents": 47084
+      },
+      {
+        "date": "2025-11-23",
+        "priceCents": 47377
+      },
+      {
+        "date": "2025-11-24",
+        "priceCents": 47094
+      },
+      {
+        "date": "2025-11-25",
+        "priceCents": 46788
+      },
+      {
+        "date": "2025-11-26",
+        "priceCents": 46887
+      },
+      {
+        "date": "2025-11-27",
+        "priceCents": 47343
+      },
+      {
+        "date": "2025-11-28",
+        "priceCents": 47426
+      },
+      {
+        "date": "2025-11-29",
+        "priceCents": 47533
+      },
+      {
+        "date": "2025-11-30",
+        "priceCents": 48127
+      },
+      {
+        "date": "2025-12-01",
+        "priceCents": 47666
+      },
+      {
+        "date": "2025-12-02",
+        "priceCents": 46984
+      },
+      {
+        "date": "2025-12-03",
+        "priceCents": 47600
+      },
+      {
+        "date": "2025-12-04",
+        "priceCents": 47219
+      },
+      {
+        "date": "2025-12-05",
+        "priceCents": 47036
+      },
+      {
+        "date": "2025-12-06",
+        "priceCents": 46666
+      },
+      {
+        "date": "2025-12-07",
+        "priceCents": 46370
+      },
+      {
+        "date": "2025-12-08",
+        "priceCents": 46859
+      },
+      {
+        "date": "2025-12-09",
+        "priceCents": 46376
+      },
+      {
+        "date": "2025-12-10",
+        "priceCents": 46618
+      },
+      {
+        "date": "2025-12-11",
+        "priceCents": 47103
+      },
+      {
+        "date": "2025-12-12",
+        "priceCents": 47584
+      },
+      {
+        "date": "2025-12-13",
+        "priceCents": 47185
+      },
+      {
+        "date": "2025-12-14",
+        "priceCents": 47408
+      },
+      {
+        "date": "2025-12-15",
+        "priceCents": 48060
+      },
+      {
+        "date": "2025-12-16",
+        "priceCents": 47367
+      },
+      {
+        "date": "2025-12-17",
+        "priceCents": 47250
+      },
+      {
+        "date": "2025-12-18",
+        "priceCents": 47001
+      },
+      {
+        "date": "2025-12-19",
+        "priceCents": 47457
+      },
+      {
+        "date": "2025-12-20",
+        "priceCents": 47010
+      },
+      {
+        "date": "2025-12-21",
+        "priceCents": 46962
+      },
+      {
+        "date": "2025-12-22",
+        "priceCents": 47205
+      },
+      {
+        "date": "2025-12-23",
+        "priceCents": 49588
+      },
       {
         "date": "2025-12-24",
         "priceCents": 52028
@@ -4286,102 +4026,82 @@
     "name": "WindyNation 400W Complete Kit with 1500W VertaMax Inverter",
     "brand": "WindyNation",
     "listedPrice": 600,
-    "missingCost": 0,
-    "trueCost": 0,
-    "panelWatts": 0,
+    "missingCost": 274,
+    "trueCost": 874,
+    "panelWatts": 400,
     "storageWh": 0,
-    "inverterWatts": 0,
+    "inverterWatts": 1500,
     "voltage": 12,
-    "chemistry": "Unknown",
+    "chemistry": "None",
     "costPerWh": "N/A",
     "useCases": [],
     "useCaseRatings": {},
-    "included": {},
+    "included": {
+      "inverter": true,
+      "controller": true,
+      "wiring": true,
+      "mounting": true,
+      "panels": true,
+      "monitoring": false,
+      "battery": false
+    },
     "priceObservedAt": "2026-03-23T06:45:02.072Z",
     "retailer": "Amazon",
-    "completeness": 0,
-    "items": [],
+    "completeness": 71,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "WindyNation 100W Poly",
+        "specs": "WindyNation 100W Poly — 4x 100W = 400W total",
+        "quantity": 4
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "WindyNation P30L PWM",
+        "specs": "PWM — less efficient than MPPT",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "VertaMax 1500W Modified Sine",
+        "specs": "Modified sine — not safe for sensitive electronics",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Solar + inverter cables",
+        "specs": "Solar + inverter cables — 40ft 12AWG solar cable, MC4 connectors, 2AWG inverter cables",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Solar mounting hardware",
+        "specs": "Solar mounting hardware — Included",
+        "quantity": 4
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 25
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "",
+        "quantity": 1,
+        "estimatedCost": 249
+      }
+    ],
     "priceHistory": [
-      {
-        "date": "2025-09-05",
-        "priceCents": 50071
-      },
-      {
-        "date": "2025-09-06",
-        "priceCents": 50619
-      },
-      {
-        "date": "2025-09-07",
-        "priceCents": 50325
-      },
-      {
-        "date": "2025-09-08",
-        "priceCents": 50234
-      },
-      {
-        "date": "2025-09-09",
-        "priceCents": 50424
-      },
-      {
-        "date": "2025-09-10",
-        "priceCents": 51054
-      },
-      {
-        "date": "2025-09-11",
-        "priceCents": 50730
-      },
-      {
-        "date": "2025-09-12",
-        "priceCents": 49967
-      },
-      {
-        "date": "2025-09-13",
-        "priceCents": 49311
-      },
-      {
-        "date": "2025-09-14",
-        "priceCents": 49019
-      },
-      {
-        "date": "2025-09-15",
-        "priceCents": 48986
-      },
-      {
-        "date": "2025-09-16",
-        "priceCents": 48744
-      },
-      {
-        "date": "2025-09-17",
-        "priceCents": 49028
-      },
-      {
-        "date": "2025-09-18",
-        "priceCents": 48688
-      },
-      {
-        "date": "2025-09-19",
-        "priceCents": 48651
-      },
-      {
-        "date": "2025-09-20",
-        "priceCents": 47902
-      },
-      {
-        "date": "2025-09-21",
-        "priceCents": 47151
-      },
-      {
-        "date": "2025-09-22",
-        "priceCents": 47262
-      },
-      {
-        "date": "2025-09-23",
-        "priceCents": 47033
-      },
-      {
-        "date": "2025-09-24",
-        "priceCents": 48980
-      },
       {
         "date": "2025-09-25",
         "priceCents": 50886
@@ -5111,20 +4831,78 @@
     "brand": "Jackery",
     "listedPrice": 699,
     "missingCost": 0,
-    "trueCost": 0,
-    "panelWatts": 0,
-    "storageWh": 0,
-    "inverterWatts": 0,
-    "voltage": 12,
-    "chemistry": "Unknown",
-    "costPerWh": "N/A",
+    "trueCost": 699,
+    "panelWatts": 200,
+    "storageWh": 1070,
+    "inverterWatts": 1500,
+    "voltage": 48,
+    "chemistry": "LiFePO4",
+    "costPerWh": "$0.65",
     "useCases": [],
     "useCaseRatings": {},
-    "included": {},
+    "included": {
+      "inverter": true,
+      "controller": true,
+      "wiring": true,
+      "mounting": false,
+      "panels": true,
+      "monitoring": true,
+      "battery": true
+    },
     "priceObservedAt": "2026-03-23T06:52:48.003Z",
     "retailer": "Amazon",
-    "completeness": 0,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Jackery SolarSaga 200W",
+        "specs": "Jackery SolarSaga 200W — 200W portable panel",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in MPPT",
+        "specs": "Built-in MPPT — Integrated in Explorer 1000 v2",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "Explorer 1000 v2 LiFePO4",
+        "specs": "Explorer 1000 v2 LiFePO4 — 1,070Wh, 4000 cycles",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "Built-in Pure Sine",
+        "specs": "Built-in Pure Sine — 1500W / 3000W surge, 3 AC outlets",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "AC charging cable + solar cable",
+        "specs": "AC charging cable + solar cable — Proprietary connector",
+        "quantity": 1
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": true,
+        "name": "Jackery App",
+        "specs": "Jackery App — Bluetooth + Wi-Fi, built-in display",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "Portable panel — no mounting needed",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -5931,6 +5709,246 @@
     ],
     "priceHistory": [
       {
+        "date": "2025-09-25",
+        "priceCents": 82222
+      },
+      {
+        "date": "2025-09-26",
+        "priceCents": 82915
+      },
+      {
+        "date": "2025-09-27",
+        "priceCents": 83251
+      },
+      {
+        "date": "2025-09-28",
+        "priceCents": 83364
+      },
+      {
+        "date": "2025-09-29",
+        "priceCents": 83712
+      },
+      {
+        "date": "2025-09-30",
+        "priceCents": 83920
+      },
+      {
+        "date": "2025-10-01",
+        "priceCents": 83191
+      },
+      {
+        "date": "2025-10-02",
+        "priceCents": 83466
+      },
+      {
+        "date": "2025-10-03",
+        "priceCents": 82792
+      },
+      {
+        "date": "2025-10-04",
+        "priceCents": 81508
+      },
+      {
+        "date": "2025-10-05",
+        "priceCents": 82247
+      },
+      {
+        "date": "2025-10-06",
+        "priceCents": 81916
+      },
+      {
+        "date": "2025-10-07",
+        "priceCents": 80687
+      },
+      {
+        "date": "2025-10-08",
+        "priceCents": 80689
+      },
+      {
+        "date": "2025-10-09",
+        "priceCents": 79476
+      },
+      {
+        "date": "2025-10-10",
+        "priceCents": 78330
+      },
+      {
+        "date": "2025-10-11",
+        "priceCents": 77456
+      },
+      {
+        "date": "2025-10-12",
+        "priceCents": 77686
+      },
+      {
+        "date": "2025-10-13",
+        "priceCents": 77441
+      },
+      {
+        "date": "2025-10-14",
+        "priceCents": 77084
+      },
+      {
+        "date": "2025-10-15",
+        "priceCents": 76314
+      },
+      {
+        "date": "2025-10-16",
+        "priceCents": 75858
+      },
+      {
+        "date": "2025-10-17",
+        "priceCents": 76490
+      },
+      {
+        "date": "2025-10-18",
+        "priceCents": 76670
+      },
+      {
+        "date": "2025-10-19",
+        "priceCents": 76697
+      },
+      {
+        "date": "2025-10-20",
+        "priceCents": 75495
+      },
+      {
+        "date": "2025-10-21",
+        "priceCents": 76126
+      },
+      {
+        "date": "2025-10-22",
+        "priceCents": 75387
+      },
+      {
+        "date": "2025-10-23",
+        "priceCents": 75525
+      },
+      {
+        "date": "2025-10-24",
+        "priceCents": 76150
+      },
+      {
+        "date": "2025-10-25",
+        "priceCents": 75604
+      },
+      {
+        "date": "2025-10-26",
+        "priceCents": 76042
+      },
+      {
+        "date": "2025-10-27",
+        "priceCents": 76867
+      },
+      {
+        "date": "2025-10-28",
+        "priceCents": 76320
+      },
+      {
+        "date": "2025-10-29",
+        "priceCents": 75278
+      },
+      {
+        "date": "2025-10-30",
+        "priceCents": 75960
+      },
+      {
+        "date": "2025-10-31",
+        "priceCents": 76493
+      },
+      {
+        "date": "2025-11-01",
+        "priceCents": 76006
+      },
+      {
+        "date": "2025-11-02",
+        "priceCents": 76352
+      },
+      {
+        "date": "2025-11-03",
+        "priceCents": 75721
+      },
+      {
+        "date": "2025-11-04",
+        "priceCents": 74810
+      },
+      {
+        "date": "2025-11-05",
+        "priceCents": 74114
+      },
+      {
+        "date": "2025-11-06",
+        "priceCents": 72946
+      },
+      {
+        "date": "2025-11-07",
+        "priceCents": 71980
+      },
+      {
+        "date": "2025-11-08",
+        "priceCents": 74934
+      },
+      {
+        "date": "2025-11-09",
+        "priceCents": 77135
+      },
+      {
+        "date": "2025-11-10",
+        "priceCents": 76950
+      },
+      {
+        "date": "2025-11-11",
+        "priceCents": 76171
+      },
+      {
+        "date": "2025-11-12",
+        "priceCents": 76264
+      },
+      {
+        "date": "2025-11-13",
+        "priceCents": 76376
+      },
+      {
+        "date": "2025-11-14",
+        "priceCents": 76694
+      },
+      {
+        "date": "2025-11-15",
+        "priceCents": 77633
+      },
+      {
+        "date": "2025-11-16",
+        "priceCents": 77147
+      },
+      {
+        "date": "2025-11-17",
+        "priceCents": 76415
+      },
+      {
+        "date": "2025-11-18",
+        "priceCents": 77085
+      },
+      {
+        "date": "2025-11-19",
+        "priceCents": 76674
+      },
+      {
+        "date": "2025-11-20",
+        "priceCents": 76890
+      },
+      {
+        "date": "2025-11-21",
+        "priceCents": 76915
+      },
+      {
+        "date": "2025-11-22",
+        "priceCents": 77583
+      },
+      {
+        "date": "2025-11-23",
+        "priceCents": 77367
+      },
+      {
         "date": "2025-11-24",
         "priceCents": 76869
       },
@@ -6494,366 +6512,6 @@
       }
     ],
     "priceHistory": [
-      {
-        "date": "2025-06-27",
-        "priceCents": 98585
-      },
-      {
-        "date": "2025-06-28",
-        "priceCents": 97440
-      },
-      {
-        "date": "2025-06-29",
-        "priceCents": 96856
-      },
-      {
-        "date": "2025-06-30",
-        "priceCents": 97945
-      },
-      {
-        "date": "2025-07-01",
-        "priceCents": 98833
-      },
-      {
-        "date": "2025-07-02",
-        "priceCents": 98403
-      },
-      {
-        "date": "2025-07-03",
-        "priceCents": 96949
-      },
-      {
-        "date": "2025-07-04",
-        "priceCents": 97151
-      },
-      {
-        "date": "2025-07-05",
-        "priceCents": 96787
-      },
-      {
-        "date": "2025-07-06",
-        "priceCents": 95529
-      },
-      {
-        "date": "2025-07-07",
-        "priceCents": 95682
-      },
-      {
-        "date": "2025-07-08",
-        "priceCents": 96107
-      },
-      {
-        "date": "2025-07-09",
-        "priceCents": 95539
-      },
-      {
-        "date": "2025-07-10",
-        "priceCents": 95005
-      },
-      {
-        "date": "2025-07-11",
-        "priceCents": 95988
-      },
-      {
-        "date": "2025-07-12",
-        "priceCents": 95672
-      },
-      {
-        "date": "2025-07-13",
-        "priceCents": 95271
-      },
-      {
-        "date": "2025-07-14",
-        "priceCents": 95838
-      },
-      {
-        "date": "2025-07-15",
-        "priceCents": 95326
-      },
-      {
-        "date": "2025-07-16",
-        "priceCents": 94968
-      },
-      {
-        "date": "2025-07-17",
-        "priceCents": 94431
-      },
-      {
-        "date": "2025-07-18",
-        "priceCents": 94861
-      },
-      {
-        "date": "2025-07-19",
-        "priceCents": 95709
-      },
-      {
-        "date": "2025-07-20",
-        "priceCents": 96650
-      },
-      {
-        "date": "2025-07-21",
-        "priceCents": 97830
-      },
-      {
-        "date": "2025-07-22",
-        "priceCents": 98435
-      },
-      {
-        "date": "2025-07-23",
-        "priceCents": 98703
-      },
-      {
-        "date": "2025-07-24",
-        "priceCents": 99638
-      },
-      {
-        "date": "2025-07-25",
-        "priceCents": 99414
-      },
-      {
-        "date": "2025-07-26",
-        "priceCents": 100563
-      },
-      {
-        "date": "2025-07-27",
-        "priceCents": 99079
-      },
-      {
-        "date": "2025-07-28",
-        "priceCents": 98437
-      },
-      {
-        "date": "2025-07-29",
-        "priceCents": 99037
-      },
-      {
-        "date": "2025-07-30",
-        "priceCents": 99209
-      },
-      {
-        "date": "2025-07-31",
-        "priceCents": 98803
-      },
-      {
-        "date": "2025-08-01",
-        "priceCents": 97208
-      },
-      {
-        "date": "2025-08-02",
-        "priceCents": 96767
-      },
-      {
-        "date": "2025-08-03",
-        "priceCents": 97648
-      },
-      {
-        "date": "2025-08-04",
-        "priceCents": 96812
-      },
-      {
-        "date": "2025-08-05",
-        "priceCents": 97526
-      },
-      {
-        "date": "2025-08-06",
-        "priceCents": 97882
-      },
-      {
-        "date": "2025-08-07",
-        "priceCents": 97063
-      },
-      {
-        "date": "2025-08-08",
-        "priceCents": 97447
-      },
-      {
-        "date": "2025-08-09",
-        "priceCents": 97484
-      },
-      {
-        "date": "2025-08-10",
-        "priceCents": 102939
-      },
-      {
-        "date": "2025-08-11",
-        "priceCents": 106511
-      },
-      {
-        "date": "2025-08-12",
-        "priceCents": 104871
-      },
-      {
-        "date": "2025-08-13",
-        "priceCents": 104873
-      },
-      {
-        "date": "2025-08-14",
-        "priceCents": 104210
-      },
-      {
-        "date": "2025-08-15",
-        "priceCents": 105594
-      },
-      {
-        "date": "2025-08-16",
-        "priceCents": 103944
-      },
-      {
-        "date": "2025-08-17",
-        "priceCents": 104468
-      },
-      {
-        "date": "2025-08-18",
-        "priceCents": 105670
-      },
-      {
-        "date": "2025-08-19",
-        "priceCents": 105498
-      },
-      {
-        "date": "2025-08-20",
-        "priceCents": 104929
-      },
-      {
-        "date": "2025-08-21",
-        "priceCents": 105075
-      },
-      {
-        "date": "2025-08-22",
-        "priceCents": 104206
-      },
-      {
-        "date": "2025-08-23",
-        "priceCents": 105681
-      },
-      {
-        "date": "2025-08-24",
-        "priceCents": 104795
-      },
-      {
-        "date": "2025-08-25",
-        "priceCents": 105423
-      },
-      {
-        "date": "2025-08-26",
-        "priceCents": 106340
-      },
-      {
-        "date": "2025-08-27",
-        "priceCents": 106796
-      },
-      {
-        "date": "2025-08-28",
-        "priceCents": 106337
-      },
-      {
-        "date": "2025-08-29",
-        "priceCents": 105230
-      },
-      {
-        "date": "2025-08-30",
-        "priceCents": 103691
-      },
-      {
-        "date": "2025-08-31",
-        "priceCents": 102162
-      },
-      {
-        "date": "2025-09-01",
-        "priceCents": 101308
-      },
-      {
-        "date": "2025-09-02",
-        "priceCents": 102564
-      },
-      {
-        "date": "2025-09-03",
-        "priceCents": 101436
-      },
-      {
-        "date": "2025-09-04",
-        "priceCents": 101486
-      },
-      {
-        "date": "2025-09-05",
-        "priceCents": 100950
-      },
-      {
-        "date": "2025-09-06",
-        "priceCents": 100672
-      },
-      {
-        "date": "2025-09-07",
-        "priceCents": 101244
-      },
-      {
-        "date": "2025-09-08",
-        "priceCents": 101862
-      },
-      {
-        "date": "2025-09-09",
-        "priceCents": 103171
-      },
-      {
-        "date": "2025-09-10",
-        "priceCents": 103436
-      },
-      {
-        "date": "2025-09-11",
-        "priceCents": 104621
-      },
-      {
-        "date": "2025-09-12",
-        "priceCents": 105442
-      },
-      {
-        "date": "2025-09-13",
-        "priceCents": 104272
-      },
-      {
-        "date": "2025-09-14",
-        "priceCents": 105588
-      },
-      {
-        "date": "2025-09-15",
-        "priceCents": 105449
-      },
-      {
-        "date": "2025-09-16",
-        "priceCents": 105155
-      },
-      {
-        "date": "2025-09-17",
-        "priceCents": 105048
-      },
-      {
-        "date": "2025-09-18",
-        "priceCents": 104980
-      },
-      {
-        "date": "2025-09-19",
-        "priceCents": 104377
-      },
-      {
-        "date": "2025-09-20",
-        "priceCents": 102791
-      },
-      {
-        "date": "2025-09-21",
-        "priceCents": 102650
-      },
-      {
-        "date": "2025-09-22",
-        "priceCents": 103981
-      },
-      {
-        "date": "2025-09-23",
-        "priceCents": 103680
-      },
-      {
-        "date": "2025-09-24",
-        "priceCents": 106647
-      },
       {
         "date": "2025-09-25",
         "priceCents": 109733
@@ -7583,761 +7241,79 @@
     "brand": "Jackery",
     "listedPrice": 1199,
     "missingCost": 0,
-    "trueCost": 0,
-    "panelWatts": 0,
-    "storageWh": 0,
-    "inverterWatts": 0,
-    "voltage": 12,
-    "chemistry": "Unknown",
-    "costPerWh": "N/A",
+    "trueCost": 1199,
+    "panelWatts": 200,
+    "storageWh": 1264,
+    "inverterWatts": 2000,
+    "voltage": 48,
+    "chemistry": "LiFePO4",
+    "costPerWh": "$0.95",
     "useCases": [],
     "useCaseRatings": {},
-    "included": {},
+    "included": {
+      "inverter": true,
+      "controller": true,
+      "wiring": true,
+      "mounting": true,
+      "panels": true,
+      "monitoring": true,
+      "battery": true
+    },
     "priceObservedAt": "2026-03-23T06:45:02.072Z",
     "retailer": "Amazon",
-    "completeness": 0,
-    "items": [],
+    "completeness": 100,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "Jackery SolarSaga 100W Prime",
+        "specs": "Jackery SolarSaga 100W Prime — 2x 100W = 200W total + Z-bracket kits",
+        "quantity": 2
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in MPPT",
+        "specs": "Built-in MPPT — Integrated in Explorer 1000 Plus",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "Explorer 1000 Plus LiFePO4",
+        "specs": "Explorer 1000 Plus LiFePO4 — 1,264Wh, expandable to 5kWh",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "Built-in Pure Sine",
+        "specs": "Built-in Pure Sine — 2000W / 4000W surge, 2 AC outlets",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Charging + extension cables",
+        "specs": "Charging + extension cables — 2x charging, 1x extension, Anderson adapter",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": true,
+        "name": "Z-bracket kits",
+        "specs": "Z-bracket kits — 2 sets for panel mounting",
+        "quantity": 2
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": true,
+        "name": "Jackery App",
+        "specs": "Jackery App — Bluetooth + Wi-Fi, built-in display",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
-      {
-        "date": "2025-03-24",
-        "priceCents": 101787
-      },
-      {
-        "date": "2025-03-25",
-        "priceCents": 102330
-      },
-      {
-        "date": "2025-03-26",
-        "priceCents": 101720
-      },
-      {
-        "date": "2025-03-27",
-        "priceCents": 102769
-      },
-      {
-        "date": "2025-03-28",
-        "priceCents": 105641
-      },
-      {
-        "date": "2025-03-29",
-        "priceCents": 109938
-      },
-      {
-        "date": "2025-03-30",
-        "priceCents": 111435
-      },
-      {
-        "date": "2025-03-31",
-        "priceCents": 110289
-      },
-      {
-        "date": "2025-04-01",
-        "priceCents": 111651
-      },
-      {
-        "date": "2025-04-02",
-        "priceCents": 112900
-      },
-      {
-        "date": "2025-04-03",
-        "priceCents": 112028
-      },
-      {
-        "date": "2025-04-04",
-        "priceCents": 113562
-      },
-      {
-        "date": "2025-04-05",
-        "priceCents": 112324
-      },
-      {
-        "date": "2025-04-06",
-        "priceCents": 110881
-      },
-      {
-        "date": "2025-04-07",
-        "priceCents": 111620
-      },
-      {
-        "date": "2025-04-08",
-        "priceCents": 111604
-      },
-      {
-        "date": "2025-04-09",
-        "priceCents": 112361
-      },
-      {
-        "date": "2025-04-10",
-        "priceCents": 112080
-      },
-      {
-        "date": "2025-04-11",
-        "priceCents": 110363
-      },
-      {
-        "date": "2025-04-12",
-        "priceCents": 110945
-      },
-      {
-        "date": "2025-04-13",
-        "priceCents": 111083
-      },
-      {
-        "date": "2025-04-14",
-        "priceCents": 110052
-      },
-      {
-        "date": "2025-04-15",
-        "priceCents": 108906
-      },
-      {
-        "date": "2025-04-16",
-        "priceCents": 107685
-      },
-      {
-        "date": "2025-04-17",
-        "priceCents": 109167
-      },
-      {
-        "date": "2025-04-18",
-        "priceCents": 110085
-      },
-      {
-        "date": "2025-04-19",
-        "priceCents": 108391
-      },
-      {
-        "date": "2025-04-20",
-        "priceCents": 106792
-      },
-      {
-        "date": "2025-04-21",
-        "priceCents": 105097
-      },
-      {
-        "date": "2025-04-22",
-        "priceCents": 103790
-      },
-      {
-        "date": "2025-04-23",
-        "priceCents": 102497
-      },
-      {
-        "date": "2025-04-24",
-        "priceCents": 102327
-      },
-      {
-        "date": "2025-04-25",
-        "priceCents": 102372
-      },
-      {
-        "date": "2025-04-26",
-        "priceCents": 101411
-      },
-      {
-        "date": "2025-04-27",
-        "priceCents": 100787
-      },
-      {
-        "date": "2025-04-28",
-        "priceCents": 99220
-      },
-      {
-        "date": "2025-04-29",
-        "priceCents": 100352
-      },
-      {
-        "date": "2025-04-30",
-        "priceCents": 100124
-      },
-      {
-        "date": "2025-05-01",
-        "priceCents": 99834
-      },
-      {
-        "date": "2025-05-02",
-        "priceCents": 99922
-      },
-      {
-        "date": "2025-05-03",
-        "priceCents": 101202
-      },
-      {
-        "date": "2025-05-04",
-        "priceCents": 99873
-      },
-      {
-        "date": "2025-05-05",
-        "priceCents": 100238
-      },
-      {
-        "date": "2025-05-06",
-        "priceCents": 100536
-      },
-      {
-        "date": "2025-05-07",
-        "priceCents": 99711
-      },
-      {
-        "date": "2025-05-08",
-        "priceCents": 98254
-      },
-      {
-        "date": "2025-05-09",
-        "priceCents": 99523
-      },
-      {
-        "date": "2025-05-10",
-        "priceCents": 99438
-      },
-      {
-        "date": "2025-05-11",
-        "priceCents": 99013
-      },
-      {
-        "date": "2025-05-12",
-        "priceCents": 103928
-      },
-      {
-        "date": "2025-05-13",
-        "priceCents": 106916
-      },
-      {
-        "date": "2025-05-14",
-        "priceCents": 106028
-      },
-      {
-        "date": "2025-05-15",
-        "priceCents": 104928
-      },
-      {
-        "date": "2025-05-16",
-        "priceCents": 103259
-      },
-      {
-        "date": "2025-05-17",
-        "priceCents": 101759
-      },
-      {
-        "date": "2025-05-18",
-        "priceCents": 100899
-      },
-      {
-        "date": "2025-05-19",
-        "priceCents": 99936
-      },
-      {
-        "date": "2025-05-20",
-        "priceCents": 99390
-      },
-      {
-        "date": "2025-05-21",
-        "priceCents": 98766
-      },
-      {
-        "date": "2025-05-22",
-        "priceCents": 97427
-      },
-      {
-        "date": "2025-05-23",
-        "priceCents": 97681
-      },
-      {
-        "date": "2025-05-24",
-        "priceCents": 98105
-      },
-      {
-        "date": "2025-05-25",
-        "priceCents": 96614
-      },
-      {
-        "date": "2025-05-26",
-        "priceCents": 96064
-      },
-      {
-        "date": "2025-05-27",
-        "priceCents": 96991
-      },
-      {
-        "date": "2025-05-28",
-        "priceCents": 95868
-      },
-      {
-        "date": "2025-05-29",
-        "priceCents": 96412
-      },
-      {
-        "date": "2025-05-30",
-        "priceCents": 96481
-      },
-      {
-        "date": "2025-05-31",
-        "priceCents": 96771
-      },
-      {
-        "date": "2025-06-01",
-        "priceCents": 97518
-      },
-      {
-        "date": "2025-06-02",
-        "priceCents": 97745
-      },
-      {
-        "date": "2025-06-03",
-        "priceCents": 98729
-      },
-      {
-        "date": "2025-06-04",
-        "priceCents": 99042
-      },
-      {
-        "date": "2025-06-05",
-        "priceCents": 98778
-      },
-      {
-        "date": "2025-06-06",
-        "priceCents": 98639
-      },
-      {
-        "date": "2025-06-07",
-        "priceCents": 97701
-      },
-      {
-        "date": "2025-06-08",
-        "priceCents": 96518
-      },
-      {
-        "date": "2025-06-09",
-        "priceCents": 96720
-      },
-      {
-        "date": "2025-06-10",
-        "priceCents": 96053
-      },
-      {
-        "date": "2025-06-11",
-        "priceCents": 97126
-      },
-      {
-        "date": "2025-06-12",
-        "priceCents": 98363
-      },
-      {
-        "date": "2025-06-13",
-        "priceCents": 98020
-      },
-      {
-        "date": "2025-06-14",
-        "priceCents": 96723
-      },
-      {
-        "date": "2025-06-15",
-        "priceCents": 97969
-      },
-      {
-        "date": "2025-06-16",
-        "priceCents": 98673
-      },
-      {
-        "date": "2025-06-17",
-        "priceCents": 99331
-      },
-      {
-        "date": "2025-06-18",
-        "priceCents": 98677
-      },
-      {
-        "date": "2025-06-19",
-        "priceCents": 97043
-      },
-      {
-        "date": "2025-06-20",
-        "priceCents": 98267
-      },
-      {
-        "date": "2025-06-21",
-        "priceCents": 97222
-      },
-      {
-        "date": "2025-06-22",
-        "priceCents": 97471
-      },
-      {
-        "date": "2025-06-23",
-        "priceCents": 96698
-      },
-      {
-        "date": "2025-06-24",
-        "priceCents": 96801
-      },
-      {
-        "date": "2025-06-25",
-        "priceCents": 97500
-      },
-      {
-        "date": "2025-06-26",
-        "priceCents": 101918
-      },
-      {
-        "date": "2025-06-27",
-        "priceCents": 106798
-      },
-      {
-        "date": "2025-06-28",
-        "priceCents": 108115
-      },
-      {
-        "date": "2025-06-29",
-        "priceCents": 106879
-      },
-      {
-        "date": "2025-06-30",
-        "priceCents": 105463
-      },
-      {
-        "date": "2025-07-01",
-        "priceCents": 105529
-      },
-      {
-        "date": "2025-07-02",
-        "priceCents": 106391
-      },
-      {
-        "date": "2025-07-03",
-        "priceCents": 107456
-      },
-      {
-        "date": "2025-07-04",
-        "priceCents": 105804
-      },
-      {
-        "date": "2025-07-05",
-        "priceCents": 105001
-      },
-      {
-        "date": "2025-07-06",
-        "priceCents": 106398
-      },
-      {
-        "date": "2025-07-07",
-        "priceCents": 106976
-      },
-      {
-        "date": "2025-07-08",
-        "priceCents": 106147
-      },
-      {
-        "date": "2025-07-09",
-        "priceCents": 106902
-      },
-      {
-        "date": "2025-07-10",
-        "priceCents": 106086
-      },
-      {
-        "date": "2025-07-11",
-        "priceCents": 107229
-      },
-      {
-        "date": "2025-07-12",
-        "priceCents": 105901
-      },
-      {
-        "date": "2025-07-13",
-        "priceCents": 104601
-      },
-      {
-        "date": "2025-07-14",
-        "priceCents": 102997
-      },
-      {
-        "date": "2025-07-15",
-        "priceCents": 103208
-      },
-      {
-        "date": "2025-07-16",
-        "priceCents": 102415
-      },
-      {
-        "date": "2025-07-17",
-        "priceCents": 102278
-      },
-      {
-        "date": "2025-07-18",
-        "priceCents": 101857
-      },
-      {
-        "date": "2025-07-19",
-        "priceCents": 100622
-      },
-      {
-        "date": "2025-07-20",
-        "priceCents": 99189
-      },
-      {
-        "date": "2025-07-21",
-        "priceCents": 100451
-      },
-      {
-        "date": "2025-07-22",
-        "priceCents": 98882
-      },
-      {
-        "date": "2025-07-23",
-        "priceCents": 99102
-      },
-      {
-        "date": "2025-07-24",
-        "priceCents": 98544
-      },
-      {
-        "date": "2025-07-25",
-        "priceCents": 99452
-      },
-      {
-        "date": "2025-07-26",
-        "priceCents": 98569
-      },
-      {
-        "date": "2025-07-27",
-        "priceCents": 98805
-      },
-      {
-        "date": "2025-07-28",
-        "priceCents": 97178
-      },
-      {
-        "date": "2025-07-29",
-        "priceCents": 96350
-      },
-      {
-        "date": "2025-07-30",
-        "priceCents": 95855
-      },
-      {
-        "date": "2025-07-31",
-        "priceCents": 95543
-      },
-      {
-        "date": "2025-08-01",
-        "priceCents": 95346
-      },
-      {
-        "date": "2025-08-02",
-        "priceCents": 95636
-      },
-      {
-        "date": "2025-08-03",
-        "priceCents": 95748
-      },
-      {
-        "date": "2025-08-04",
-        "priceCents": 96967
-      },
-      {
-        "date": "2025-08-05",
-        "priceCents": 97627
-      },
-      {
-        "date": "2025-08-06",
-        "priceCents": 98256
-      },
-      {
-        "date": "2025-08-07",
-        "priceCents": 98046
-      },
-      {
-        "date": "2025-08-08",
-        "priceCents": 98411
-      },
-      {
-        "date": "2025-08-09",
-        "priceCents": 98716
-      },
-      {
-        "date": "2025-08-10",
-        "priceCents": 102455
-      },
-      {
-        "date": "2025-08-11",
-        "priceCents": 105861
-      },
-      {
-        "date": "2025-08-12",
-        "priceCents": 104754
-      },
-      {
-        "date": "2025-08-13",
-        "priceCents": 103193
-      },
-      {
-        "date": "2025-08-14",
-        "priceCents": 103876
-      },
-      {
-        "date": "2025-08-15",
-        "priceCents": 102500
-      },
-      {
-        "date": "2025-08-16",
-        "priceCents": 102707
-      },
-      {
-        "date": "2025-08-17",
-        "priceCents": 103188
-      },
-      {
-        "date": "2025-08-18",
-        "priceCents": 102979
-      },
-      {
-        "date": "2025-08-19",
-        "priceCents": 101520
-      },
-      {
-        "date": "2025-08-20",
-        "priceCents": 101779
-      },
-      {
-        "date": "2025-08-21",
-        "priceCents": 101401
-      },
-      {
-        "date": "2025-08-22",
-        "priceCents": 100385
-      },
-      {
-        "date": "2025-08-23",
-        "priceCents": 101201
-      },
-      {
-        "date": "2025-08-24",
-        "priceCents": 100178
-      },
-      {
-        "date": "2025-08-25",
-        "priceCents": 99538
-      },
-      {
-        "date": "2025-08-26",
-        "priceCents": 98335
-      },
-      {
-        "date": "2025-08-27",
-        "priceCents": 98339
-      },
-      {
-        "date": "2025-08-28",
-        "priceCents": 97133
-      },
-      {
-        "date": "2025-08-29",
-        "priceCents": 96217
-      },
-      {
-        "date": "2025-08-30",
-        "priceCents": 94584
-      },
-      {
-        "date": "2025-08-31",
-        "priceCents": 94280
-      },
-      {
-        "date": "2025-09-01",
-        "priceCents": 94554
-      },
-      {
-        "date": "2025-09-02",
-        "priceCents": 95633
-      },
-      {
-        "date": "2025-09-03",
-        "priceCents": 93993
-      },
-      {
-        "date": "2025-09-04",
-        "priceCents": 93128
-      },
-      {
-        "date": "2025-09-05",
-        "priceCents": 93799
-      },
-      {
-        "date": "2025-09-06",
-        "priceCents": 93932
-      },
-      {
-        "date": "2025-09-07",
-        "priceCents": 94868
-      },
-      {
-        "date": "2025-09-08",
-        "priceCents": 94271
-      },
-      {
-        "date": "2025-09-09",
-        "priceCents": 93127
-      },
-      {
-        "date": "2025-09-10",
-        "priceCents": 92072
-      },
-      {
-        "date": "2025-09-11",
-        "priceCents": 92217
-      },
-      {
-        "date": "2025-09-12",
-        "priceCents": 92327
-      },
-      {
-        "date": "2025-09-13",
-        "priceCents": 93211
-      },
-      {
-        "date": "2025-09-14",
-        "priceCents": 94140
-      },
-      {
-        "date": "2025-09-15",
-        "priceCents": 93503
-      },
-      {
-        "date": "2025-09-16",
-        "priceCents": 93758
-      },
-      {
-        "date": "2025-09-17",
-        "priceCents": 94602
-      },
-      {
-        "date": "2025-09-18",
-        "priceCents": 95221
-      },
-      {
-        "date": "2025-09-19",
-        "priceCents": 94354
-      },
-      {
-        "date": "2025-09-20",
-        "priceCents": 93604
-      },
-      {
-        "date": "2025-09-21",
-        "priceCents": 93140
-      },
-      {
-        "date": "2025-09-22",
-        "priceCents": 94225
-      },
-      {
-        "date": "2025-09-23",
-        "priceCents": 94927
-      },
-      {
-        "date": "2025-09-24",
-        "priceCents": 99692
-      },
       {
         "date": "2025-09-25",
         "priceCents": 102830
@@ -9141,6 +8117,366 @@
     ],
     "priceHistory": [
       {
+        "date": "2025-09-25",
+        "priceCents": 181725
+      },
+      {
+        "date": "2025-09-26",
+        "priceCents": 181615
+      },
+      {
+        "date": "2025-09-27",
+        "priceCents": 179393
+      },
+      {
+        "date": "2025-09-28",
+        "priceCents": 181789
+      },
+      {
+        "date": "2025-09-29",
+        "priceCents": 181817
+      },
+      {
+        "date": "2025-09-30",
+        "priceCents": 182300
+      },
+      {
+        "date": "2025-10-01",
+        "priceCents": 182668
+      },
+      {
+        "date": "2025-10-02",
+        "priceCents": 182606
+      },
+      {
+        "date": "2025-10-03",
+        "priceCents": 180493
+      },
+      {
+        "date": "2025-10-04",
+        "priceCents": 178896
+      },
+      {
+        "date": "2025-10-05",
+        "priceCents": 178199
+      },
+      {
+        "date": "2025-10-06",
+        "priceCents": 175574
+      },
+      {
+        "date": "2025-10-07",
+        "priceCents": 173859
+      },
+      {
+        "date": "2025-10-08",
+        "priceCents": 173889
+      },
+      {
+        "date": "2025-10-09",
+        "priceCents": 175849
+      },
+      {
+        "date": "2025-10-10",
+        "priceCents": 177413
+      },
+      {
+        "date": "2025-10-11",
+        "priceCents": 175636
+      },
+      {
+        "date": "2025-10-12",
+        "priceCents": 172995
+      },
+      {
+        "date": "2025-10-13",
+        "priceCents": 173059
+      },
+      {
+        "date": "2025-10-14",
+        "priceCents": 175491
+      },
+      {
+        "date": "2025-10-15",
+        "priceCents": 175084
+      },
+      {
+        "date": "2025-10-16",
+        "priceCents": 172744
+      },
+      {
+        "date": "2025-10-17",
+        "priceCents": 170655
+      },
+      {
+        "date": "2025-10-18",
+        "priceCents": 168543
+      },
+      {
+        "date": "2025-10-19",
+        "priceCents": 166292
+      },
+      {
+        "date": "2025-10-20",
+        "priceCents": 168196
+      },
+      {
+        "date": "2025-10-21",
+        "priceCents": 169089
+      },
+      {
+        "date": "2025-10-22",
+        "priceCents": 170817
+      },
+      {
+        "date": "2025-10-23",
+        "priceCents": 169362
+      },
+      {
+        "date": "2025-10-24",
+        "priceCents": 167828
+      },
+      {
+        "date": "2025-10-25",
+        "priceCents": 169989
+      },
+      {
+        "date": "2025-10-26",
+        "priceCents": 169842
+      },
+      {
+        "date": "2025-10-27",
+        "priceCents": 171440
+      },
+      {
+        "date": "2025-10-28",
+        "priceCents": 168899
+      },
+      {
+        "date": "2025-10-29",
+        "priceCents": 169210
+      },
+      {
+        "date": "2025-10-30",
+        "priceCents": 169080
+      },
+      {
+        "date": "2025-10-31",
+        "priceCents": 167905
+      },
+      {
+        "date": "2025-11-01",
+        "priceCents": 166237
+      },
+      {
+        "date": "2025-11-02",
+        "priceCents": 168137
+      },
+      {
+        "date": "2025-11-03",
+        "priceCents": 166029
+      },
+      {
+        "date": "2025-11-04",
+        "priceCents": 164337
+      },
+      {
+        "date": "2025-11-05",
+        "priceCents": 162907
+      },
+      {
+        "date": "2025-11-06",
+        "priceCents": 162030
+      },
+      {
+        "date": "2025-11-07",
+        "priceCents": 164149
+      },
+      {
+        "date": "2025-11-08",
+        "priceCents": 168398
+      },
+      {
+        "date": "2025-11-09",
+        "priceCents": 173006
+      },
+      {
+        "date": "2025-11-10",
+        "priceCents": 171503
+      },
+      {
+        "date": "2025-11-11",
+        "priceCents": 168840
+      },
+      {
+        "date": "2025-11-12",
+        "priceCents": 169121
+      },
+      {
+        "date": "2025-11-13",
+        "priceCents": 170782
+      },
+      {
+        "date": "2025-11-14",
+        "priceCents": 168934
+      },
+      {
+        "date": "2025-11-15",
+        "priceCents": 166645
+      },
+      {
+        "date": "2025-11-16",
+        "priceCents": 166535
+      },
+      {
+        "date": "2025-11-17",
+        "priceCents": 167249
+      },
+      {
+        "date": "2025-11-18",
+        "priceCents": 167495
+      },
+      {
+        "date": "2025-11-19",
+        "priceCents": 169107
+      },
+      {
+        "date": "2025-11-20",
+        "priceCents": 168929
+      },
+      {
+        "date": "2025-11-21",
+        "priceCents": 169049
+      },
+      {
+        "date": "2025-11-22",
+        "priceCents": 168777
+      },
+      {
+        "date": "2025-11-23",
+        "priceCents": 168306
+      },
+      {
+        "date": "2025-11-24",
+        "priceCents": 168263
+      },
+      {
+        "date": "2025-11-25",
+        "priceCents": 168898
+      },
+      {
+        "date": "2025-11-26",
+        "priceCents": 167208
+      },
+      {
+        "date": "2025-11-27",
+        "priceCents": 168667
+      },
+      {
+        "date": "2025-11-28",
+        "priceCents": 169350
+      },
+      {
+        "date": "2025-11-29",
+        "priceCents": 170116
+      },
+      {
+        "date": "2025-11-30",
+        "priceCents": 170963
+      },
+      {
+        "date": "2025-12-01",
+        "priceCents": 170539
+      },
+      {
+        "date": "2025-12-02",
+        "priceCents": 171112
+      },
+      {
+        "date": "2025-12-03",
+        "priceCents": 170970
+      },
+      {
+        "date": "2025-12-04",
+        "priceCents": 170007
+      },
+      {
+        "date": "2025-12-05",
+        "priceCents": 167610
+      },
+      {
+        "date": "2025-12-06",
+        "priceCents": 166972
+      },
+      {
+        "date": "2025-12-07",
+        "priceCents": 164702
+      },
+      {
+        "date": "2025-12-08",
+        "priceCents": 165703
+      },
+      {
+        "date": "2025-12-09",
+        "priceCents": 164347
+      },
+      {
+        "date": "2025-12-10",
+        "priceCents": 165601
+      },
+      {
+        "date": "2025-12-11",
+        "priceCents": 167232
+      },
+      {
+        "date": "2025-12-12",
+        "priceCents": 167170
+      },
+      {
+        "date": "2025-12-13",
+        "priceCents": 166743
+      },
+      {
+        "date": "2025-12-14",
+        "priceCents": 165845
+      },
+      {
+        "date": "2025-12-15",
+        "priceCents": 164364
+      },
+      {
+        "date": "2025-12-16",
+        "priceCents": 161977
+      },
+      {
+        "date": "2025-12-17",
+        "priceCents": 159811
+      },
+      {
+        "date": "2025-12-18",
+        "priceCents": 159191
+      },
+      {
+        "date": "2025-12-19",
+        "priceCents": 159588
+      },
+      {
+        "date": "2025-12-20",
+        "priceCents": 160961
+      },
+      {
+        "date": "2025-12-21",
+        "priceCents": 162140
+      },
+      {
+        "date": "2025-12-22",
+        "priceCents": 163955
+      },
+      {
+        "date": "2025-12-23",
+        "priceCents": 172329
+      },
+      {
         "date": "2025-12-24",
         "priceCents": 178798
       },
@@ -9582,86 +8918,6 @@
       }
     ],
     "priceHistory": [
-      {
-        "date": "2025-09-05",
-        "priceCents": 171307
-      },
-      {
-        "date": "2025-09-06",
-        "priceCents": 168785
-      },
-      {
-        "date": "2025-09-07",
-        "priceCents": 166990
-      },
-      {
-        "date": "2025-09-08",
-        "priceCents": 165789
-      },
-      {
-        "date": "2025-09-09",
-        "priceCents": 163463
-      },
-      {
-        "date": "2025-09-10",
-        "priceCents": 164698
-      },
-      {
-        "date": "2025-09-11",
-        "priceCents": 163189
-      },
-      {
-        "date": "2025-09-12",
-        "priceCents": 161863
-      },
-      {
-        "date": "2025-09-13",
-        "priceCents": 160520
-      },
-      {
-        "date": "2025-09-14",
-        "priceCents": 161855
-      },
-      {
-        "date": "2025-09-15",
-        "priceCents": 163237
-      },
-      {
-        "date": "2025-09-16",
-        "priceCents": 162728
-      },
-      {
-        "date": "2025-09-17",
-        "priceCents": 160051
-      },
-      {
-        "date": "2025-09-18",
-        "priceCents": 159003
-      },
-      {
-        "date": "2025-09-19",
-        "priceCents": 159609
-      },
-      {
-        "date": "2025-09-20",
-        "priceCents": 157421
-      },
-      {
-        "date": "2025-09-21",
-        "priceCents": 156396
-      },
-      {
-        "date": "2025-09-22",
-        "priceCents": 155308
-      },
-      {
-        "date": "2025-09-23",
-        "priceCents": 154004
-      },
-      {
-        "date": "2025-09-24",
-        "priceCents": 161217
-      },
       {
         "date": "2025-09-25",
         "priceCents": 167444
@@ -10391,20 +9647,78 @@
     "brand": "Bluetti",
     "listedPrice": 2899,
     "missingCost": 0,
-    "trueCost": 0,
-    "panelWatts": 0,
-    "storageWh": 0,
-    "inverterWatts": 0,
-    "voltage": 12,
-    "chemistry": "Unknown",
-    "costPerWh": "N/A",
+    "trueCost": 2899,
+    "panelWatts": 350,
+    "storageWh": 2764,
+    "inverterWatts": 3000,
+    "voltage": 48,
+    "chemistry": "LiFePO4",
+    "costPerWh": "$1.05",
     "useCases": [],
     "useCaseRatings": {},
-    "included": {},
+    "included": {
+      "inverter": true,
+      "controller": true,
+      "wiring": true,
+      "mounting": false,
+      "panels": true,
+      "monitoring": true,
+      "battery": true
+    },
     "priceObservedAt": "2026-03-23T06:45:02.072Z",
     "retailer": "Amazon",
-    "completeness": 0,
-    "items": [],
+    "completeness": 86,
+    "items": [
+      {
+        "role": "Solar Panels",
+        "isIncluded": true,
+        "name": "BLUETTI PV350",
+        "specs": "BLUETTI PV350 — 350W portable panel",
+        "quantity": 1
+      },
+      {
+        "role": "Charge Controller",
+        "isIncluded": true,
+        "name": "Built-in MPPT",
+        "specs": "Built-in MPPT — Integrated in AC300",
+        "quantity": 1
+      },
+      {
+        "role": "Battery",
+        "isIncluded": true,
+        "name": "BLUETTI B300K LiFePO4",
+        "specs": "BLUETTI B300K LiFePO4 — 2,764Wh, 4000+ cycles",
+        "quantity": 1
+      },
+      {
+        "role": "Inverter",
+        "isIncluded": true,
+        "name": "Built-in Pure Sine",
+        "specs": "Built-in Pure Sine — 3000W / 6000W surge, 7 AC outlets",
+        "quantity": 1
+      },
+      {
+        "role": "Wiring",
+        "isIncluded": true,
+        "name": "Charging cables",
+        "specs": "Charging cables — AC + DC + car charging cables",
+        "quantity": 1
+      },
+      {
+        "role": "Monitoring",
+        "isIncluded": true,
+        "name": "BLUETTI App",
+        "specs": "BLUETTI App — Bluetooth + built-in display, AI-BMS",
+        "quantity": 1
+      },
+      {
+        "role": "Mounting",
+        "isIncluded": false,
+        "name": "Not included",
+        "specs": "Portable panel — no mounting needed",
+        "quantity": 1
+      }
+    ],
     "priceHistory": [
       {
         "date": "2025-09-25",
@@ -11208,6 +10522,246 @@
       }
     ],
     "priceHistory": [
+      {
+        "date": "2025-09-25",
+        "priceCents": 361317
+      },
+      {
+        "date": "2025-09-26",
+        "priceCents": 365937
+      },
+      {
+        "date": "2025-09-27",
+        "priceCents": 368031
+      },
+      {
+        "date": "2025-09-28",
+        "priceCents": 366594
+      },
+      {
+        "date": "2025-09-29",
+        "priceCents": 370903
+      },
+      {
+        "date": "2025-09-30",
+        "priceCents": 372205
+      },
+      {
+        "date": "2025-10-01",
+        "priceCents": 368042
+      },
+      {
+        "date": "2025-10-02",
+        "priceCents": 372864
+      },
+      {
+        "date": "2025-10-03",
+        "priceCents": 369187
+      },
+      {
+        "date": "2025-10-04",
+        "priceCents": 365538
+      },
+      {
+        "date": "2025-10-05",
+        "priceCents": 367734
+      },
+      {
+        "date": "2025-10-06",
+        "priceCents": 365201
+      },
+      {
+        "date": "2025-10-07",
+        "priceCents": 361678
+      },
+      {
+        "date": "2025-10-08",
+        "priceCents": 360375
+      },
+      {
+        "date": "2025-10-09",
+        "priceCents": 358125
+      },
+      {
+        "date": "2025-10-10",
+        "priceCents": 354652
+      },
+      {
+        "date": "2025-10-11",
+        "priceCents": 352485
+      },
+      {
+        "date": "2025-10-12",
+        "priceCents": 350216
+      },
+      {
+        "date": "2025-10-13",
+        "priceCents": 350439
+      },
+      {
+        "date": "2025-10-14",
+        "priceCents": 351427
+      },
+      {
+        "date": "2025-10-15",
+        "priceCents": 347910
+      },
+      {
+        "date": "2025-10-16",
+        "priceCents": 352551
+      },
+      {
+        "date": "2025-10-17",
+        "priceCents": 348284
+      },
+      {
+        "date": "2025-10-18",
+        "priceCents": 347880
+      },
+      {
+        "date": "2025-10-19",
+        "priceCents": 344608
+      },
+      {
+        "date": "2025-10-20",
+        "priceCents": 342126
+      },
+      {
+        "date": "2025-10-21",
+        "priceCents": 341175
+      },
+      {
+        "date": "2025-10-22",
+        "priceCents": 340344
+      },
+      {
+        "date": "2025-10-23",
+        "priceCents": 341884
+      },
+      {
+        "date": "2025-10-24",
+        "priceCents": 343090
+      },
+      {
+        "date": "2025-10-25",
+        "priceCents": 342378
+      },
+      {
+        "date": "2025-10-26",
+        "priceCents": 342810
+      },
+      {
+        "date": "2025-10-27",
+        "priceCents": 343618
+      },
+      {
+        "date": "2025-10-28",
+        "priceCents": 339481
+      },
+      {
+        "date": "2025-10-29",
+        "priceCents": 342959
+      },
+      {
+        "date": "2025-10-30",
+        "priceCents": 342860
+      },
+      {
+        "date": "2025-10-31",
+        "priceCents": 344504
+      },
+      {
+        "date": "2025-11-01",
+        "priceCents": 344484
+      },
+      {
+        "date": "2025-11-02",
+        "priceCents": 344971
+      },
+      {
+        "date": "2025-11-03",
+        "priceCents": 347660
+      },
+      {
+        "date": "2025-11-04",
+        "priceCents": 343577
+      },
+      {
+        "date": "2025-11-05",
+        "priceCents": 347374
+      },
+      {
+        "date": "2025-11-06",
+        "priceCents": 343915
+      },
+      {
+        "date": "2025-11-07",
+        "priceCents": 346853
+      },
+      {
+        "date": "2025-11-08",
+        "priceCents": 366392
+      },
+      {
+        "date": "2025-11-09",
+        "priceCents": 384092
+      },
+      {
+        "date": "2025-11-10",
+        "priceCents": 383885
+      },
+      {
+        "date": "2025-11-11",
+        "priceCents": 382434
+      },
+      {
+        "date": "2025-11-12",
+        "priceCents": 384102
+      },
+      {
+        "date": "2025-11-13",
+        "priceCents": 379160
+      },
+      {
+        "date": "2025-11-14",
+        "priceCents": 377116
+      },
+      {
+        "date": "2025-11-15",
+        "priceCents": 376195
+      },
+      {
+        "date": "2025-11-16",
+        "priceCents": 381532
+      },
+      {
+        "date": "2025-11-17",
+        "priceCents": 381166
+      },
+      {
+        "date": "2025-11-18",
+        "priceCents": 383388
+      },
+      {
+        "date": "2025-11-19",
+        "priceCents": 388282
+      },
+      {
+        "date": "2025-11-20",
+        "priceCents": 384152
+      },
+      {
+        "date": "2025-11-21",
+        "priceCents": 382422
+      },
+      {
+        "date": "2025-11-22",
+        "priceCents": 387326
+      },
+      {
+        "date": "2025-11-23",
+        "priceCents": 390105
+      },
       {
         "date": "2025-11-24",
         "priceCents": 385412
