@@ -346,6 +346,71 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
 }
 
 /**
+ * Fetch per-retailer price history series for a kit.
+ * Returns one series per offer, each with daily price points.
+ * Used for multi-series chart rendering and public/data/history/ files.
+ */
+export async function getPriceHistoryBySeries(kitId: string): Promise<import("../demo-data").KitPriceHistory | null> {
+  const rows = await db.execute(sql`
+    SELECT
+      ko.id AS offer_id,
+      r.name AS retailer_name,
+      r.slug AS retailer_slug,
+      DATE(kpe.observed_at AT TIME ZONE 'UTC') AS obs_date,
+      MIN(kpe.price_cents) AS price_cents,
+      BOOL_OR(kpe.in_stock) AS in_stock
+    FROM kit_price_events kpe
+    JOIN kit_offers ko ON ko.id = kpe.offer_id
+    JOIN retailers r ON r.id = ko.retailer_id
+    WHERE ko.kit_id = ${kitId}
+      AND kpe.price_cents IS NOT NULL
+    GROUP BY ko.id, r.name, r.slug, DATE(kpe.observed_at AT TIME ZONE 'UTC')
+    ORDER BY ko.id, obs_date ASC
+  `);
+
+  if (rows.rows.length === 0) return null;
+
+  // Group rows into per-offer series
+  const seriesMap = new Map<string, import("../demo-data").PriceHistorySeries>();
+  for (const r of rows.rows) {
+    const offerId = r.offer_id as string;
+    if (!seriesMap.has(offerId)) {
+      seriesMap.set(offerId, {
+        offerId,
+        retailerName: r.retailer_name as string,
+        retailerSlug: r.retailer_slug as string,
+        points: [],
+      });
+    }
+    seriesMap.get(offerId)!.points.push({
+      date: r.obs_date as string,
+      priceCents: r.price_cents != null ? Number(r.price_cents) : null,
+      inStock: Boolean(r.in_stock),
+    });
+  }
+
+  const series = Array.from(seriesMap.values());
+
+  // Compute lowestAvailable: daily MIN across in-stock offers
+  const dateMap = new Map<string, number>();
+  for (const s of series) {
+    for (const pt of s.points) {
+      if (pt.inStock && pt.priceCents != null) {
+        const existing = dateMap.get(pt.date);
+        if (existing == null || pt.priceCents < existing) {
+          dateMap.set(pt.date, pt.priceCents);
+        }
+      }
+    }
+  }
+  const lowestAvailable = Array.from(dateMap.entries())
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([date, priceCents]) => ({ date, priceCents }));
+
+  return { slug: kitId, series, lowestAvailable };
+}
+
+/**
  * Fetch price history from kit_price_events for a given kit.
  * Returns daily price points sorted chronologically.
  */

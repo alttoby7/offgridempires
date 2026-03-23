@@ -8,6 +8,7 @@ import { SpecBlock } from "@/components/ui/spec-block";
 import { GapReceipt } from "@/components/ui/gap-receipt";
 import { BomTable } from "@/components/ui/bom-table";
 import { PriceHistorySection } from "@/components/ui/price-history-section";
+import { RetailerListings } from "@/components/ui/retailer-listings";
 import { KitProductJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { getSimilarKits } from "@/lib/similar-kits";
 
@@ -96,7 +97,11 @@ export default async function KitDetailPage({
   const missingItems = kit.items.filter((item) => !item.isIncluded);
   const includedItems = kit.items.filter((item) => item.isIncluded);
   const affiliateUrl = buildAffiliateUrl(kit.sourceUrl, "amazon");
-  const hasMultipleRetailers = (kit.offers?.length ?? 0) > 1;
+
+  // Build offers array for RetailerListings — always at least one entry
+  const allOffers = kit.offers && kit.offers.length > 0
+    ? kit.offers.map((o) => ({ ...o, sourceUrl: buildAffiliateUrl(o.sourceUrl, o.retailerSlug) ?? o.sourceUrl }))
+    : [{ retailer: kit.retailer, retailerSlug: "amazon", price: kit.listedPrice, sourceUrl: affiliateUrl ?? undefined, inStock: true, observedAt: kit.priceObservedAt }];
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
@@ -246,72 +251,8 @@ export default async function KitDetailPage({
             </div>
           </div>
 
-          {/* Multi-retailer price comparison */}
-          {hasMultipleRetailers && kit.offers && (
-            <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 space-y-3">
-              <p className="text-xs font-medium text-[var(--text-muted)] uppercase">
-                Available from {new Set(kit.offers.map((o) => o.retailer)).size} retailers
-              </p>
-              <div className="space-y-2">
-                {/* Deduplicate: show cheapest offer per retailer */}
-                {Array.from(
-                  kit.offers.reduce((map, o) => {
-                    if (!map.has(o.retailer) || o.price < map.get(o.retailer)!.price) {
-                      map.set(o.retailer, o);
-                    }
-                    return map;
-                  }, new Map<string, (typeof kit.offers)[0]>())
-                  .values()
-                ).map((offer, i) => {
-                  const offerUrl = buildAffiliateUrl(offer.sourceUrl, offer.retailerSlug);
-                  const isCheapest = i === 0;
-                  return (
-                    <div
-                      key={`${offer.retailer}-${offer.price}`}
-                      className={`flex items-center justify-between rounded border px-3 py-2 ${
-                        isCheapest
-                          ? "border-[var(--accent)]/30 bg-[var(--accent)]/5"
-                          : "border-[var(--border)] bg-[var(--bg-primary)]"
-                      }`}
-                    >
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm font-medium text-[var(--text-primary)]">
-                          {offer.retailer}
-                        </span>
-                        {isCheapest && (
-                          <span className="text-[10px] font-semibold uppercase tracking-wide text-[var(--accent)] bg-[var(--accent)]/10 px-1.5 py-0.5 rounded">
-                            Best
-                          </span>
-                        )}
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className={`font-mono text-sm font-bold ${
-                          isCheapest ? "text-[var(--accent)]" : "text-[var(--text-secondary)]"
-                        }`}>
-                          ${offer.price.toLocaleString()}
-                        </span>
-                        {offerUrl ? (
-                          <a
-                            href={offerUrl}
-                            target="_blank"
-                            rel="noopener noreferrer sponsored"
-                            className="text-xs font-medium text-[var(--accent)] hover:underline"
-                          >
-                            View
-                          </a>
-                        ) : (
-                          <span className="text-xs text-[var(--text-muted)]">Link</span>
-                        )}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-              <p className="text-[10px] text-[var(--text-muted)] text-center">
-                Affiliate links — same price for you
-              </p>
-            </div>
-          )}
+          {/* Retailer listings — always visible */}
+          <RetailerListings offers={allOffers} kitName={kit.name} />
 
           {/* Compare CTA */}
           <Link

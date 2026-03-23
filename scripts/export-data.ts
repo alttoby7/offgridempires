@@ -15,7 +15,7 @@ import * as fs from "fs";
 // Load env BEFORE importing DB modules
 dotenv.config({ path: path.resolve(__dirname, "../../../google-drive/0-AI/.env") });
 
-import { getKitsForListingWithHistory } from "../src/lib/db/queries";
+import { getKitsForListingWithHistory, getPriceHistoryBySeries } from "../src/lib/db/queries";
 
 async function main() {
   console.log("Exporting kit data from database...");
@@ -29,6 +29,27 @@ async function main() {
   const outPath = path.join(outDir, "kits.json");
   fs.writeFileSync(outPath, JSON.stringify(kits, null, 2));
   console.log(`  Written to ${outPath}`);
+
+  // Export per-kit price history series for multi-retailer chart
+  const historyDir = path.join(__dirname, "../public/data/history");
+  fs.mkdirSync(historyDir, { recursive: true });
+
+  let historyWritten = 0;
+  for (const kit of kits) {
+    const history = await getPriceHistoryBySeries(kit.id);
+    if (!history) continue;
+
+    // Need at least 2 total data points to be worth showing
+    const totalPoints = history.series.reduce((sum, s) => sum + s.points.length, 0);
+    if (totalPoints < 2) continue;
+
+    // Store slug in history file (not kitId UUID)
+    history.slug = kit.slug;
+    const histPath = path.join(historyDir, `${kit.slug}.json`);
+    fs.writeFileSync(histPath, JSON.stringify(history));
+    historyWritten++;
+  }
+  console.log(`  Written ${historyWritten} history files to public/data/history/`);
 
   console.log("Export complete!");
   process.exit(0);

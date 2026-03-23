@@ -3,6 +3,26 @@ export interface PriceHistoryPoint {
   priceCents: number;
 }
 
+export interface PriceHistorySeriesPoint {
+  date: string;
+  priceCents: number | null;
+  inStock: boolean;
+}
+
+export interface PriceHistorySeries {
+  offerId: string;
+  retailerName: string;
+  retailerSlug: string;
+  points: PriceHistorySeriesPoint[];
+}
+
+export interface KitPriceHistory {
+  slug: string;
+  series: PriceHistorySeries[];
+  /** Pre-computed: daily MIN price across in-stock offers */
+  lowestAvailable: Array<{ date: string; priceCents: number | null }>;
+}
+
 export interface Kit {
   id: string;
   slug: string;
