@@ -26,13 +26,13 @@ export const APPLIANCE_CATALOG: ApplianceDef[] = [
   { id: "blender", name: "Blender", category: "Kitchen", defaultWatts: 400, defaultQty: 1, defaultHours: 0.1, dutyCycle: 1, surgeWatts: 600 },
   { id: "instant-pot", name: "Instant Pot", category: "Kitchen", defaultWatts: 700, defaultQty: 1, defaultHours: 0.5, dutyCycle: 1, surgeWatts: 0, notes: "Average over cook cycle" },
   { id: "rice-cooker", name: "Rice Cooker", category: "Kitchen", defaultWatts: 400, defaultQty: 1, defaultHours: 0.5, dutyCycle: 1, surgeWatts: 0 },
-  { id: "dishwasher", name: "Dishwasher", category: "Kitchen", defaultWatts: 1200, defaultQty: 1, defaultHours: 1, dutyCycle: 1, surgeWatts: 0, notes: "Energy-efficient model; 1 cycle/day" },
+  { id: "dishwasher", name: "Dishwasher", category: "Kitchen", defaultWatts: 1200, defaultQty: 1, defaultHours: 1, dutyCycle: 1, surgeWatts: 1800, notes: "Energy-efficient model; pump motor surge on startup" },
   { id: "electric-oven", name: "Electric Oven", category: "Kitchen", defaultWatts: 2500, defaultQty: 1, defaultHours: 1, dutyCycle: 0.5, surgeWatts: 0, notes: "Average over cook cycle; propane preferred off-grid" },
 
   // ── Climate ───────────────────────────────────────────────────────────────
   { id: "12v-fan", name: "12V Fan", category: "Climate", defaultWatts: 25, defaultQty: 1, defaultHours: 8, dutyCycle: 1, surgeWatts: 0 },
-  { id: "box-fan", name: "Box Fan", category: "Climate", defaultWatts: 75, defaultQty: 1, defaultHours: 6, dutyCycle: 1, surgeWatts: 0 },
-  { id: "ceiling-fan", name: "Ceiling Fan", category: "Climate", defaultWatts: 60, defaultQty: 1, defaultHours: 8, dutyCycle: 1, surgeWatts: 0 },
+  { id: "box-fan", name: "Box Fan", category: "Climate", defaultWatts: 75, defaultQty: 1, defaultHours: 6, dutyCycle: 1, surgeWatts: 225, notes: "Motor startup surge ~3x" },
+  { id: "ceiling-fan", name: "Ceiling Fan", category: "Climate", defaultWatts: 60, defaultQty: 1, defaultHours: 8, dutyCycle: 1, surgeWatts: 180, notes: "Motor startup surge ~3x" },
   { id: "window-ac", name: "Window AC (Small)", category: "Climate", defaultWatts: 500, defaultQty: 1, defaultHours: 8, dutyCycle: 0.5, surgeWatts: 1500, notes: "5000 BTU; compressor cycles ~50%" },
   { id: "space-heater", name: "Space Heater", category: "Climate", defaultWatts: 1500, defaultQty: 1, defaultHours: 4, dutyCycle: 1, surgeWatts: 0, notes: "Standard 1500W; low setting = 750W" },
   { id: "dehumidifier", name: "Dehumidifier", category: "Climate", defaultWatts: 300, defaultQty: 1, defaultHours: 8, dutyCycle: 0.5, surgeWatts: 600, notes: "Compressor cycles ~50%" },
@@ -42,18 +42,18 @@ export const APPLIANCE_CATALOG: ApplianceDef[] = [
 
   // ── Water ─────────────────────────────────────────────────────────────────
   { id: "well-pump", name: "Well Pump (½ HP)", category: "Water", defaultWatts: 750, defaultQty: 1, defaultHours: 2, dutyCycle: 1, surgeWatts: 1500, notes: "Typical submersible; 1-6h/day based on household size" },
-  { id: "rv-water-pump", name: "RV Water Pump", category: "Water", defaultWatts: 60, defaultQty: 1, defaultHours: 1, dutyCycle: 1, surgeWatts: 0, notes: "12V demand pump" },
+  { id: "rv-water-pump", name: "RV Water Pump", category: "Water", defaultWatts: 60, defaultQty: 1, defaultHours: 1, dutyCycle: 1, surgeWatts: 180, notes: "12V demand pump; motor surge ~3x" },
   { id: "tankless-water-heater", name: "Tankless Water Heater", category: "Water", defaultWatts: 3500, defaultQty: 1, defaultHours: 0.5, dutyCycle: 1, surgeWatts: 0, notes: "Point-of-use, small sink only. Whole-house requires 7000W+ (not solar-viable)" },
   { id: "sump-pump", name: "Sump Pump", category: "Water", defaultWatts: 800, defaultQty: 1, defaultHours: 1, dutyCycle: 0.5, surgeWatts: 1600, notes: "Intermittent, seasonal; size varies" },
   { id: "uv-water-purifier", name: "UV Water Purifier", category: "Water", defaultWatts: 40, defaultQty: 1, defaultHours: 24, dutyCycle: 1, surgeWatts: 0, notes: "UV sterilizer, always-on" },
-  { id: "ro-water-filter", name: "RO Water Filter", category: "Water", defaultWatts: 100, defaultQty: 1, defaultHours: 2, dutyCycle: 1, surgeWatts: 0, notes: "Reverse osmosis with booster pump" },
+  { id: "ro-water-filter", name: "RO Water Filter", category: "Water", defaultWatts: 100, defaultQty: 1, defaultHours: 2, dutyCycle: 1, surgeWatts: 300, notes: "Reverse osmosis with booster pump; pump motor surge" },
 
   // ── Laundry ───────────────────────────────────────────────────────────────
   { id: "washing-machine", name: "Washing Machine (HE)", category: "Laundry", defaultWatts: 500, defaultQty: 1, defaultHours: 1, dutyCycle: 1, surgeWatts: 1200, notes: "Front-load HE; top-load similar wattage" },
   { id: "iron", name: "Iron", category: "Laundry", defaultWatts: 1200, defaultQty: 1, defaultHours: 0.25, dutyCycle: 1, surgeWatts: 0, notes: "~15 min/day" },
 
   // ── Personal ──────────────────────────────────────────────────────────────
-  { id: "hair-dryer", name: "Hair Dryer", category: "Personal", defaultWatts: 1500, defaultQty: 1, defaultHours: 0.25, dutyCycle: 1, surgeWatts: 0, notes: "~15 min/day; low setting = 750W" },
+  { id: "hair-dryer", name: "Hair Dryer", category: "Personal", defaultWatts: 1500, defaultQty: 1, defaultHours: 0.25, dutyCycle: 1, surgeWatts: 2000, notes: "~15 min/day; motor surge on startup; low setting = 750W" },
   { id: "vacuum-cleaner", name: "Vacuum Cleaner", category: "Personal", defaultWatts: 1000, defaultQty: 1, defaultHours: 0.25, dutyCycle: 1, surgeWatts: 1400, notes: "~15 min/day; cordless alternative: 200W" },
 
   // ── Entertainment ─────────────────────────────────────────────────────────
@@ -75,7 +75,7 @@ export const APPLIANCE_CATALOG: ApplianceDef[] = [
 
   // ── Medical ───────────────────────────────────────────────────────────────
   { id: "cpap", name: "CPAP Machine", category: "Medical", defaultWatts: 60, defaultQty: 1, defaultHours: 8, dutyCycle: 1, surgeWatts: 0, notes: "With heated humidifier; without humidifier: ~30W" },
-  { id: "oxygen-concentrator", name: "Oxygen Concentrator", category: "Medical", defaultWatts: 300, defaultQty: 1, defaultHours: 12, dutyCycle: 1, surgeWatts: 0 },
+  { id: "oxygen-concentrator", name: "Oxygen Concentrator", category: "Medical", defaultWatts: 300, defaultQty: 1, defaultHours: 12, dutyCycle: 1, surgeWatts: 600, notes: "Compressor startup surge ~2x" },
   { id: "nebulizer", name: "Nebulizer", category: "Medical", defaultWatts: 50, defaultQty: 1, defaultHours: 0.5, dutyCycle: 1, surgeWatts: 0 },
 ];
 
