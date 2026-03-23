@@ -31,6 +31,8 @@ const useCaseChips = [
 export default function HomePage() {
   const kits = getKits();
 
+  const brandCount = new Set(kits.map((k) => k.brand)).size;
+
   // --- Trap Kit: worst completion gap (highest missingCost/listedPrice ratio) ---
   const trapKit = kits
     .filter((k) => k.missingCost > 0 && k.listedPrice > 0)
@@ -126,7 +128,7 @@ export default function HomePage() {
       <BreadcrumbJsonLd items={[{ name: "Home", url: "/" }]} />
 
       {/* Section 1: Hero — Live Reality Check */}
-      {trapKit && <Hero trapKit={trapKit} />}
+      {trapKit && <Hero trapKit={trapKit} kitCount={kits.length} brandCount={brandCount} />}
 
       {/* Section 2: Smart Paths */}
       <section className="border-b border-[var(--border)]">
@@ -249,7 +251,7 @@ export default function HomePage() {
                 href="/kits"
                 className="inline-flex items-center gap-2 rounded bg-[var(--accent)] px-6 py-3 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
               >
-                Browse all 14 kits
+                Browse all {kits.length} kits
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
             </div>

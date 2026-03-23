@@ -3,9 +3,11 @@ import type { Kit } from "@/lib/demo-data";
 
 interface HeroProps {
   trapKit: Kit;
+  kitCount: number;
+  brandCount: number;
 }
 
-export function Hero({ trapKit }: HeroProps) {
+export function Hero({ trapKit, kitCount, brandCount }: HeroProps) {
   const pctMore = trapKit.listedPrice > 0
     ? Math.round(((trapKit.trueCost - trapKit.listedPrice) / trapKit.listedPrice) * 100)
     : 0;
@@ -35,7 +37,7 @@ export function Hero({ trapKit }: HeroProps) {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
               </span>
               <span className="text-sm text-[var(--text-secondary)]">
-                Tracking 14 kits across 10 brands
+                Tracking {kitCount} kits across {brandCount} brands
               </span>
             </div>
 
@@ -75,8 +77,8 @@ export function Hero({ trapKit }: HeroProps) {
             {/* Quick stats */}
             <div className="mt-8 flex flex-wrap gap-6">
               {[
-                { value: "14", label: "Kits Tracked" },
-                { value: "10", label: "Brands" },
+                { value: String(kitCount), label: "Kits Tracked" },
+                { value: String(brandCount), label: "Brands" },
                 { value: "6hr", label: "Price Updates" },
                 { value: "$0", label: "Always Free" },
               ].map((stat) => (
