@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const navLinks = [
   { href: "/kits", label: "Kits" },
+  { href: "/calculator", label: "Calculator" },
   { href: "/products", label: "Components" },
   { href: "/compare", label: "Compare" },
   { href: "/categories/batteries", label: "Categories" },
