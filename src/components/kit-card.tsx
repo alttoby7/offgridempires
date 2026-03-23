@@ -10,6 +10,9 @@ interface KitCardProps {
 
 export function KitCard({ kit, compact = false }: KitCardProps) {
   const hasMissing = kit.missingCost > 0;
+  const displayName = kit.name.startsWith(kit.brand)
+    ? kit.name.slice(kit.brand.length).trim().replace(/^[-–—,\s]+/, "")
+    : kit.name;
   const includedCount = Object.values(kit.included).filter(Boolean).length;
   const totalRoles = Object.keys(kit.included).length;
 
@@ -31,7 +34,7 @@ export function KitCard({ kit, compact = false }: KitCardProps) {
             {kit.brand}
           </p>
           <h3 className="text-base font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-2 mt-1">
-            {kit.name}
+            {displayName}
           </h3>
         </div>
 

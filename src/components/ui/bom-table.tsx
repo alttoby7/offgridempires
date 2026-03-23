@@ -199,7 +199,7 @@ function DesktopRow({ item }: { item: KitItem }) {
         <span className="text-sm font-medium text-[var(--text-secondary)]">{item.role}</span>
       </div>
       <div className="col-span-3">
-        <span className={`text-sm ${item.isIncluded ? "text-[var(--text-primary)]" : "text-[var(--danger)]/70 italic"}`}>
+        <span className={`text-sm ${item.isIncluded ? "text-[var(--success)]" : "text-[var(--danger)]/70 italic"}`}>
           {item.name}
         </span>
         {!item.isIncluded && item.recommendedAsin && (
@@ -240,7 +240,7 @@ function MobileCard({ item }: { item: KitItem }) {
             <span className="text-xs font-medium uppercase tracking-wide text-[var(--text-muted)]">
               {item.role}
             </span>
-            <p className={`text-sm font-medium ${item.isIncluded ? "text-[var(--text-primary)]" : "text-[var(--danger)]/70 italic"}`}>
+            <p className={`text-sm font-medium ${item.isIncluded ? "text-[var(--success)]" : "text-[var(--danger)]/70 italic"}`}>
               {item.name}
             </p>
             {!item.isIncluded && item.recommendedAsin && (
