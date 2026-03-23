@@ -18,7 +18,7 @@ export function PriceTimestamp({ observedAt, className = "" }: PriceTimestampPro
 
   return (
     <span
-      className={`inline-flex items-center gap-1 font-mono text-[10px] ${
+      className={`inline-flex items-center gap-1 text-xs ${
         isStale
           ? "text-[var(--warning)]"
           : "text-[var(--text-muted)]"

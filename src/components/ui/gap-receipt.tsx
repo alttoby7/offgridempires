@@ -319,7 +319,7 @@ export function GapReceipt({ kit }: GapReceiptProps) {
               <path d="M20 6L9 17l-5-5" />
             </svg>
           </span>
-          <span className="font-mono text-sm font-bold text-[var(--success)]">
+          <span className="text-sm font-bold text-[var(--success)]">
             Complete Kit — Advertised Price Is the Real Price
           </span>
         </div>
@@ -328,10 +328,10 @@ export function GapReceipt({ kit }: GapReceiptProps) {
           No additional purchases needed.
         </p>
         <div className="mt-3 ml-8 flex items-center gap-3">
-          <span className="font-mono text-[10px] text-[var(--text-muted)]">
+          <span className="text-xs text-[var(--text-muted)]">
             Verified {priceDate.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
           </span>
-          <a href="/methodology" className="inline-flex items-center gap-1 text-[10px] text-[var(--accent)] hover:text-[var(--accent-hover)]">
+          <a href="/methodology" className="inline-flex items-center gap-1 text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]">
             Methodology
             <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" /></svg>
           </a>
@@ -365,7 +365,7 @@ export function GapReceipt({ kit }: GapReceiptProps) {
             <line x1="12" y1="9" x2="12" y2="13" />
             <line x1="12" y1="17" x2="12.01" y2="17" />
           </svg>
-          <span className="font-mono text-xs font-bold text-[var(--danger)] uppercase tracking-wider">
+          <span className="text-xs font-bold text-[var(--danger)] uppercase tracking-wide">
             Completion Gap Receipt
           </span>
         </div>
@@ -373,7 +373,7 @@ export function GapReceipt({ kit }: GapReceiptProps) {
         {/* Share actions */}
         <div className="flex items-center gap-1.5">
           {shareState !== "idle" ? (
-            <span className="inline-flex items-center gap-1 rounded border border-[var(--success)]/40 bg-[var(--success)]/10 px-2 py-1 text-[10px] font-mono text-[var(--success)] transition-all">
+            <span className="inline-flex items-center gap-1 rounded border border-[var(--success)]/40 bg-[var(--success)]/10 px-2 py-1 text-xs text-[var(--success)] transition-all">
               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M20 6L9 17l-5-5" />
               </svg>
@@ -408,7 +408,7 @@ export function GapReceipt({ kit }: GapReceiptProps) {
               <button
                 onClick={handleShare}
                 title="Share"
-                className="inline-flex items-center gap-1 rounded border border-[var(--border)] bg-[var(--bg-primary)] px-2 py-1 text-[10px] font-mono text-[var(--text-muted)] hover:text-[var(--accent)] hover:border-[var(--border-accent)] transition-colors"
+                className="inline-flex items-center gap-1 rounded border border-[var(--border)] bg-[var(--bg-primary)] px-2.5 py-1 text-xs text-[var(--text-muted)] hover:text-[var(--accent)] hover:border-[var(--border-accent)] transition-colors"
               >
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13" />
@@ -434,7 +434,7 @@ export function GapReceipt({ kit }: GapReceiptProps) {
 
         {/* Required missing items */}
         <div className="space-y-2">
-          <span className="text-[10px] uppercase tracking-wider text-[var(--danger)]">
+          <span className="text-xs uppercase tracking-wide font-medium text-[var(--danger)]">
             Required missing parts
           </span>
           {visibleItems.map((item, i) => (
@@ -491,7 +491,7 @@ export function GapReceipt({ kit }: GapReceiptProps) {
         </div>
 
         {/* Scope note */}
-        <p className="text-[10px] text-[var(--text-muted)] leading-relaxed">
+        <p className="text-xs text-[var(--text-muted)] leading-relaxed">
           Real build cost = advertised kit + required missing parts only.
           Optional accessories and tools are not included in this total.
         </p>
@@ -500,16 +500,16 @@ export function GapReceipt({ kit }: GapReceiptProps) {
       {/* Footer — defensible when screenshotted */}
       <div className="bg-[var(--bg-primary)] border-t border-[var(--border)] px-5 py-2.5 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <span className="text-[10px] text-[var(--text-muted)]">
+          <span className="text-xs text-[var(--text-muted)]">
             offgridempire.com
           </span>
-          <span className="text-[10px] text-[var(--text-muted)]">
+          <span className="text-xs text-[var(--text-muted)]">
             Price checked {priceDate.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
           </span>
         </div>
         <a
           href="/methodology"
-          className="inline-flex items-center gap-1 text-[10px] text-[var(--accent)] hover:text-[var(--accent-hover)]"
+          className="inline-flex items-center gap-1 text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]"
         >
           Methodology
           <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

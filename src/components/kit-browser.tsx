@@ -158,7 +158,7 @@ function KitListCard({
             <path d="M20 6L9 17l-5-5" />
           </svg>
         </span>
-        <span className="font-mono text-[9px] uppercase tracking-wider text-[var(--text-muted)]">
+        <span className="text-xs uppercase tracking-wide text-[var(--text-muted)]">
           Compare
         </span>
       </label>
@@ -169,17 +169,17 @@ function KitListCard({
         <div className="bg-[var(--danger)]/30" style={{ width: `${100 - kit.completeness}%` }} />
       </div>
 
-      <Link href={`/kits/${kit.slug}`} className="p-4 flex-1 flex flex-col gap-3">
+      <Link href={`/kits/${kit.slug}`} className="p-5 flex-1 flex flex-col gap-3">
         <div className="pr-20">
           <div className="flex items-center gap-2 mb-1">
-            <span className="font-mono text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
+            <span className="text-xs font-medium uppercase tracking-wide text-[var(--text-muted)]">
               {kit.brand}
             </span>
-            <span className="font-mono text-[10px] text-[var(--text-muted)]">
+            <span className="text-xs text-[var(--text-muted)]">
               via {kit.retailer}
             </span>
           </div>
-          <h3 className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-2">
+          <h3 className="text-base font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-2">
             {kit.name}
           </h3>
         </div>
@@ -187,23 +187,23 @@ function KitListCard({
         {/* Specs grid */}
         <div className="grid grid-cols-4 gap-1.5">
           <div className="rounded bg-[var(--bg-primary)] px-2 py-1.5 text-center">
-            <p className="font-mono text-[9px] text-[var(--text-muted)] uppercase">Panels</p>
+            <p className="text-xs text-[var(--text-muted)] uppercase">Panels</p>
             <p className="font-mono text-xs font-semibold text-[var(--text-primary)]">{kit.panelWatts}W</p>
           </div>
           <div className="rounded bg-[var(--bg-primary)] px-2 py-1.5 text-center">
-            <p className="font-mono text-[9px] text-[var(--text-muted)] uppercase">Storage</p>
+            <p className="text-xs text-[var(--text-muted)] uppercase">Storage</p>
             <p className="font-mono text-xs font-semibold text-[var(--text-primary)]">
               {kit.storageWh > 0 ? `${(kit.storageWh / 1000).toFixed(1)}kWh` : "—"}
             </p>
           </div>
           <div className="rounded bg-[var(--bg-primary)] px-2 py-1.5 text-center">
-            <p className="font-mono text-[9px] text-[var(--text-muted)] uppercase">Inverter</p>
+            <p className="text-xs text-[var(--text-muted)] uppercase">Inverter</p>
             <p className="font-mono text-xs font-semibold text-[var(--text-primary)]">
               {kit.inverterWatts > 0 ? `${kit.inverterWatts}W` : "—"}
             </p>
           </div>
           <div className="rounded bg-[var(--bg-primary)] px-2 py-1.5 text-center">
-            <p className="font-mono text-[9px] text-[var(--text-muted)] uppercase">$/Wh</p>
+            <p className="text-xs text-[var(--text-muted)] uppercase">$/Wh</p>
             <p className="font-mono text-xs font-semibold text-[var(--accent)]">{kit.costPerWh}</p>
           </div>
         </div>
@@ -220,7 +220,7 @@ function KitListCard({
         {/* Price row */}
         <div className="mt-auto pt-3 border-t border-[var(--border)] flex items-end justify-between">
           <div>
-            <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase">
+            <p className="text-xs font-medium text-[var(--text-muted)] uppercase">
               {hasMissing ? "Advertised" : "Price"}
             </p>
             <p
@@ -236,7 +236,7 @@ function KitListCard({
 
           {hasMissing && (
             <div className="text-center">
-              <p className="font-mono text-[10px] text-[var(--danger)]/70 uppercase">+ Missing</p>
+              <p className="text-xs font-medium text-[var(--danger)]/70 uppercase">+ Missing</p>
               <p className="font-mono text-sm font-semibold text-[var(--danger)]/70">
                 ~${kit.missingCost.toLocaleString()}
               </p>
@@ -244,7 +244,7 @@ function KitListCard({
           )}
 
           <div className="text-right">
-            <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase">Real Build Cost</p>
+            <p className="text-xs font-medium text-[var(--text-muted)] uppercase">Real Build Cost</p>
             <p className="font-mono text-lg font-bold text-[var(--accent)]">
               ${kit.trueCost.toLocaleString()}
             </p>
@@ -256,7 +256,7 @@ function KitListCard({
           <PriceTimestamp observedAt={kit.priceObservedAt} />
           {kit.priceChange !== undefined && kit.priceChange !== 0 && (
             <span
-              className={`font-mono text-[11px] font-semibold ${
+              className={`font-mono text-xs font-semibold ${
                 kit.priceChange < 0 ? "text-[var(--success)]" : "text-[var(--danger)]"
               }`}
             >
@@ -372,7 +372,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
           </p>
         </div>
         <div className="flex items-center gap-2">
-          <span className="font-mono text-[10px] text-[var(--text-muted)] uppercase">Sort:</span>
+          <span className="text-xs font-medium text-[var(--text-muted)] uppercase">Sort:</span>
           <select
             value={sortKey}
             onChange={(e) => setParam("sort", e.target.value, "true_cost_asc")}
@@ -429,7 +429,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
         {activeFilterCount > 0 && (
           <button
             onClick={() => router.replace("/kits", { scroll: false })}
-            className="font-mono text-[10px] uppercase tracking-wider text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
+            className="text-xs uppercase tracking-wide text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
           >
             Clear {activeFilterCount} filter{activeFilterCount > 1 ? "s" : ""}
           </button>
@@ -450,13 +450,13 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
               </svg>
             )}
           </span>
-          <span className="font-mono text-[10px] uppercase tracking-wider">Complete kits only</span>
+          <span className="text-xs uppercase tracking-wide">Complete kits only</span>
         </label>
       </div>
 
       {/* Results count + compare bar */}
       <div className="flex items-center justify-between mb-4">
-        <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase tracking-wider">
+        <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">
           Showing {filteredKits.length} of {allKits.length} kits
         </p>
         <Link
@@ -488,7 +488,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
           </svg>
           Compare Selected ({compareSet.size})
           {compareSet.size >= 3 && (
-            <span className="font-mono text-[9px] text-[var(--text-muted)]">max</span>
+            <span className="text-xs text-[var(--text-muted)]">max</span>
           )}
         </Link>
       </div>

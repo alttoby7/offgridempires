@@ -243,13 +243,13 @@ export function CompareView({ allKits }: { allKits: Kit[] }) {
             return (
               <div key={kit.id} className={`rounded-t border border-b-0 bg-[var(--bg-surface)] p-4 space-y-3 ${verdict ? verdict.borderColor : "border-[var(--border)]"}`}>
                 {verdict && (
-                  <div className={`inline-flex items-center gap-1.5 rounded-sm border px-2 py-1 font-mono text-[10px] font-bold uppercase tracking-wider ${verdict.color} ${verdict.borderColor} bg-[var(--bg-primary)]`}>
+                  <div className={`inline-flex items-center gap-1.5 rounded-sm border px-2 py-1 text-xs font-bold uppercase tracking-wider ${verdict.color} ${verdict.borderColor} bg-[var(--bg-primary)]`}>
                     {verdict.label}
                   </div>
                 )}
                 <div className="flex items-start justify-between">
                   <div>
-                    <span className="font-mono text-[10px] text-[var(--text-muted)] uppercase">{kit.brand}</span>
+                    <span className="text-xs text-[var(--text-muted)] uppercase">{kit.brand}</span>
                     <Link href={`/kits/${kit.slug}`} className="block text-sm font-semibold text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors line-clamp-2 mt-0.5">
                       {kit.name}
                     </Link>
@@ -258,7 +258,7 @@ export function CompareView({ allKits }: { allKits: Kit[] }) {
                 <TrueCostBar listedPrice={kit.listedPrice} missingCost={kit.missingCost} trueCost={kit.trueCost} compact />
                 <div className="flex items-baseline justify-between">
                   <div>
-                    <p className="font-mono text-[9px] text-[var(--text-muted)] uppercase">Real Build Cost</p>
+                    <p className="text-xs text-[var(--text-muted)] uppercase">Real Build Cost</p>
                     <p className="font-mono text-lg font-bold text-[var(--accent)]">${kit.trueCost.toLocaleString()}</p>
                   </div>
                   <PriceTimestamp observedAt={kit.priceObservedAt} />
@@ -278,7 +278,7 @@ export function CompareView({ allKits }: { allKits: Kit[] }) {
             <div key={section.title}>
               <div className="bg-[var(--bg-secondary)] border-b border-[var(--border)] px-4 py-2.5">
                 <div className="flex items-center justify-between">
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-[var(--text-muted)]">{section.title}</span>
+                  <span className="text-xs uppercase tracking-wider text-[var(--text-muted)]">{section.title}</span>
                   <span className="text-xs text-[var(--text-secondary)] italic">{section.summary}</span>
                 </div>
               </div>
@@ -302,7 +302,7 @@ export function CompareView({ allKits }: { allKits: Kit[] }) {
       {/* ============ MOBILE LAYOUT ============ */}
       <div className="lg:hidden space-y-6">
         <div className="rounded border border-[var(--accent)]/30 bg-[var(--bg-surface)] p-4">
-          <p className="font-mono text-[10px] uppercase tracking-wider text-[var(--accent)] mb-2">Baseline Kit</p>
+          <p className="text-xs uppercase tracking-wider text-[var(--accent)] mb-2">Baseline Kit</p>
           <p className="text-sm font-semibold text-[var(--text-primary)]">{compareKits[0].name}</p>
           <div className="flex items-baseline gap-3 mt-2">
             <span className="font-mono text-lg font-bold text-[var(--accent)]">${compareKits[0].trueCost.toLocaleString()}</span>
@@ -337,34 +337,34 @@ export function CompareView({ allKits }: { allKits: Kit[] }) {
           return (
             <div key={kit.id} className={`rounded border bg-[var(--bg-surface)] p-4 space-y-3 ${verdict ? verdict.borderColor : "border-[var(--border)]"}`}>
               {verdict && (
-                <span className={`inline-flex items-center rounded-sm border px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider ${verdict.color} ${verdict.borderColor} bg-[var(--bg-primary)]`}>
+                <span className={`inline-flex items-center rounded-sm border px-2 py-0.5 text-xs font-bold uppercase tracking-wider ${verdict.color} ${verdict.borderColor} bg-[var(--bg-primary)]`}>
                   {verdict.label}
                 </span>
               )}
               <div>
-                <span className="font-mono text-[10px] text-[var(--text-muted)] uppercase">{kit.brand}</span>
+                <span className="text-xs text-[var(--text-muted)] uppercase">{kit.brand}</span>
                 <Link href={`/kits/${kit.slug}`} className="block text-sm font-semibold text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors mt-0.5">
                   {kit.name}
                 </Link>
               </div>
               <div className="grid grid-cols-2 gap-2">
                 <div className="rounded bg-[var(--bg-primary)] px-3 py-2">
-                  <p className="font-mono text-[9px] text-[var(--text-muted)] uppercase">Real Build Cost</p>
+                  <p className="text-xs text-[var(--text-muted)] uppercase">Real Build Cost</p>
                   <p className="font-mono text-sm font-bold text-[var(--accent)]">${kit.trueCost.toLocaleString()}</p>
                   <DeltaValue diff={costDiff} unit="" lowerBetter />
                 </div>
                 <div className="rounded bg-[var(--bg-primary)] px-3 py-2">
-                  <p className="font-mono text-[9px] text-[var(--text-muted)] uppercase">Completeness</p>
+                  <p className="text-xs text-[var(--text-muted)] uppercase">Completeness</p>
                   <p className="font-mono text-sm font-semibold text-[var(--text-primary)]">{kit.completeness}%</p>
                   <DeltaValue diff={completeDiff} unit="%" />
                 </div>
                 <div className="rounded bg-[var(--bg-primary)] px-3 py-2">
-                  <p className="font-mono text-[9px] text-[var(--text-muted)] uppercase">Storage</p>
+                  <p className="text-xs text-[var(--text-muted)] uppercase">Storage</p>
                   <p className="font-mono text-sm font-semibold text-[var(--text-primary)]">{kit.storageWh > 0 ? `${(kit.storageWh / 1000).toFixed(1)}kWh` : "—"}</p>
                   <DeltaValue diff={storageDiff} unit="Wh" />
                 </div>
                 <div className="rounded bg-[var(--bg-primary)] px-3 py-2">
-                  <p className="font-mono text-[9px] text-[var(--text-muted)] uppercase">Solar</p>
+                  <p className="text-xs text-[var(--text-muted)] uppercase">Solar</p>
                   <p className="font-mono text-sm font-semibold text-[var(--text-primary)]">{kit.panelWatts}W</p>
                   <DeltaValue diff={wattDiff} unit="W" />
                 </div>

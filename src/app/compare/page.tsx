@@ -26,7 +26,7 @@ export default function ComparePage() {
       <BreadcrumbJsonLd items={[{ name: "Home", url: "/" }, { name: "Compare", url: "/compare" }]} />
 
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-6">
+      <nav className="flex items-center gap-2 text-sm text-[var(--text-muted)] mb-6">
         <Link href="/" className="hover:text-[var(--accent)] transition-colors">Home</Link>
         <span>/</span>
         <span className="text-[var(--text-secondary)]">Compare</span>

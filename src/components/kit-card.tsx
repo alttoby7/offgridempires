@@ -24,13 +24,13 @@ export function KitCard({ kit, compact = false }: KitCardProps) {
         <div className="bg-[var(--danger)]/30" style={{ width: `${100 - kit.completeness}%` }} />
       </div>
 
-      <div className="p-4 flex-1 flex flex-col gap-3">
+      <div className="p-5 flex-1 flex flex-col gap-4">
         {/* Header: brand + name */}
         <div className="pr-12">
-          <p className="font-mono text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
+          <p className="text-xs font-medium uppercase tracking-wide text-[var(--text-muted)]">
             {kit.brand}
           </p>
-          <h3 className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-2 mt-0.5">
+          <h3 className="text-base font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-2 mt-1">
             {kit.name}
           </h3>
         </div>
@@ -45,11 +45,11 @@ export function KitCard({ kit, compact = false }: KitCardProps) {
           <span className="font-mono text-xl font-bold text-[var(--accent)]">
             ${kit.trueCost.toLocaleString()}
           </span>
-          <span className="font-mono text-[10px] text-[var(--text-muted)]">real build cost</span>
+          <span className="text-xs text-[var(--text-muted)]">real build cost</span>
         </div>
 
         {/* Two supporting facts */}
-        <div className="flex items-center gap-4 text-xs">
+        <div className="flex items-center gap-4 text-sm">
           <span className="font-mono text-[var(--text-secondary)]">
             {kit.panelWatts}W solar
           </span>
@@ -63,29 +63,29 @@ export function KitCard({ kit, compact = false }: KitCardProps) {
 
         {/* Completeness summary (not full badge grid) */}
         <div className="flex items-center gap-2">
-          <span className={`font-mono text-xs font-semibold ${
+          <span className={`font-mono text-sm font-semibold ${
             kit.completeness === 100 ? "text-[var(--success)]" : hasMissing ? "text-[var(--warning)]" : "text-[var(--text-secondary)]"
           }`}>
             {includedCount}/{totalRoles}
           </span>
-          <span className="text-[10px] text-[var(--text-muted)]">
+          <span className="text-xs text-[var(--text-muted)]">
             {kit.completeness === 100
               ? "Complete — ready to use"
               : `${totalRoles - includedCount} missing component${totalRoles - includedCount > 1 ? "s" : ""}`}
           </span>
           {hasMissing && (
-            <span className="font-mono text-[10px] text-[var(--danger)]">
+            <span className="font-mono text-xs text-[var(--danger)]">
               +${kit.missingCost.toLocaleString()} to finish
             </span>
           )}
         </div>
 
         {/* Quiet metadata row */}
-        <div className="mt-auto pt-2 border-t border-[var(--border)] flex items-center justify-between">
+        <div className="mt-auto pt-3 border-t border-[var(--border)] flex items-center justify-between">
           <PriceTimestamp observedAt={kit.priceObservedAt} />
           {kit.priceChange !== undefined && kit.priceChange !== 0 && (
             <span
-              className={`font-mono text-[11px] font-semibold ${
+              className={`font-mono text-xs font-semibold ${
                 kit.priceChange < 0 ? "text-[var(--success)]" : "text-[var(--danger)]"
               }`}
             >

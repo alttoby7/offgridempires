@@ -13,15 +13,15 @@ export function SpecBlock({ label, value, highlight, winner, loser }: SpecBlockP
 
   return (
     <div
-      className={`rounded border bg-[var(--bg-primary)] px-2.5 py-2 ${
+      className={`rounded border bg-[var(--bg-primary)] px-3 py-2.5 ${
         borderClass || "border-transparent"
       }`}
     >
-      <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase tracking-wider">
+      <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide">
         {label}
       </p>
       <p
-        className={`font-mono text-sm font-semibold mt-0.5 ${
+        className={`font-mono text-sm font-semibold mt-1 ${
           highlight
             ? "text-[var(--accent)]"
             : winner

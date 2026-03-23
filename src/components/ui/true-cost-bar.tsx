@@ -19,7 +19,7 @@ export function TrueCostBar({
     <div className={compact ? "" : "space-y-2"}>
       {!compact && (
         <div className="flex items-center justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
+          <span className="text-xs font-medium uppercase tracking-wide text-[var(--text-muted)]">
             Real Build Cost Breakdown
           </span>
           <span className="font-mono text-sm font-bold text-[var(--accent)]">
@@ -45,7 +45,7 @@ export function TrueCostBar({
       </div>
 
       {!compact && (
-        <div className="flex items-center gap-4 text-[10px] font-mono">
+        <div className="flex items-center gap-4 text-xs">
           <span className="flex items-center gap-1.5">
             <span className="inline-block w-2.5 h-2.5 rounded-sm bg-[var(--accent)]/60" />
             <span className="text-[var(--text-secondary)]">

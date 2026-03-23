@@ -19,9 +19,9 @@ export function CompletenessBadges({
   included,
   size = "sm",
 }: CompletenessBadgesProps) {
-  const textSize = size === "sm" ? "text-[10px]" : "text-xs";
-  const padding = size === "sm" ? "px-1.5 py-0.5" : "px-2 py-1";
-  const iconSize = size === "sm" ? 8 : 10;
+  const textSize = size === "sm" ? "text-xs" : "text-sm";
+  const padding = size === "sm" ? "px-2 py-1" : "px-2.5 py-1";
+  const iconSize = size === "sm" ? 10 : 12;
 
   return (
     <div className="flex flex-wrap gap-1">
@@ -30,7 +30,7 @@ export function CompletenessBadges({
         return (
           <span
             key={role.key}
-            className={`inline-flex items-center gap-0.5 rounded-sm font-mono font-medium ${padding} ${textSize} ${
+            className={`inline-flex items-center gap-1 rounded-sm font-medium ${padding} ${textSize} ${
               isIncluded
                 ? "bg-[var(--success)]/10 text-[var(--success)] border border-[var(--success)]/20"
                 : "bg-[var(--danger)]/8 text-[var(--danger)]/70 border border-[var(--danger)]/15"

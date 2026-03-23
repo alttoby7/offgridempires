@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/json-ld";
+import {
+  SectionHeading,
+  Paragraph,
+  Breadcrumb,
+  PageTitle,
+  ProseContainer,
+  ContentCard,
+} from "@/components/ui/prose";
 
 export const metadata: Metadata = {
   title: "How We Calculate Real Build Cost",
@@ -48,25 +56,9 @@ const faqs = [
   },
 ];
 
-function SectionHeading({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 className="font-mono text-sm uppercase tracking-wider text-[var(--accent)] mt-10 mb-4">
-      {children}
-    </h2>
-  );
-}
-
-function Paragraph({ children }: { children: React.ReactNode }) {
-  return (
-    <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-4">
-      {children}
-    </p>
-  );
-}
-
 export default function MethodologyPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-8">
+    <ProseContainer>
       <BreadcrumbJsonLd
         items={[
           { name: "Home", url: "/" },
@@ -75,24 +67,17 @@ export default function MethodologyPage() {
       />
       <FaqJsonLd questions={faqs} />
 
-      {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-6">
-        <Link href="/" className="hover:text-[var(--accent)] transition-colors">
-          Home
-        </Link>
-        <span>/</span>
-        <span className="text-[var(--text-secondary)]">Methodology</span>
-      </nav>
+      <Breadcrumb
+        items={[{ href: "/", label: "Home" }, { label: "Methodology" }]}
+      />
 
-      <h1 className="text-2xl font-bold text-[var(--text-primary)] mb-2">
-        How We Calculate Real Build Cost
-      </h1>
-      <p className="text-sm text-[var(--text-muted)] mb-8">
-        Transparency is the point. Here&apos;s exactly how we arrive at every number on this site.
-      </p>
+      <PageTitle
+        title="How We Calculate Real Build Cost"
+        subtitle="Transparency is the point. Here's exactly how we arrive at every number on this site."
+      />
 
-      <div className="border border-[var(--border)] rounded bg-[var(--bg-surface)] p-6">
-        <SectionHeading>The Problem</SectionHeading>
+      <ContentCard>
+        <SectionHeading id="the-problem">The Problem</SectionHeading>
         <Paragraph>
           Solar kit prices are misleading. A kit advertised at $289 might not include a battery
           or inverter — components that could cost another $750. The advertised price tells you
@@ -104,7 +89,7 @@ export default function MethodologyPage() {
           build a working system.
         </Paragraph>
 
-        <SectionHeading>Kit Decomposition</SectionHeading>
+        <SectionHeading id="kit-decomposition">Kit Decomposition</SectionHeading>
         <Paragraph>
           Every solar kit is decomposed into <strong className="text-[var(--text-primary)]">7 standard component roles</strong>:
         </Paragraph>
@@ -122,7 +107,7 @@ export default function MethodologyPage() {
               key={role}
               className="rounded bg-[var(--bg-primary)] border border-[var(--border)] px-3 py-2 text-center"
             >
-              <span className="font-mono text-[10px] text-[var(--text-secondary)]">
+              <span className="text-xs text-[var(--text-secondary)]">
                 {role}
               </span>
             </div>
@@ -134,7 +119,7 @@ export default function MethodologyPage() {
           of how many required roles are covered.
         </Paragraph>
 
-        <SectionHeading>Real Build Cost Formula</SectionHeading>
+        <SectionHeading id="real-build-cost-formula">Real Build Cost Formula</SectionHeading>
         <div className="rounded bg-[var(--bg-primary)] border border-[var(--border)] p-4 mb-4 font-mono text-sm">
           <div className="flex items-center gap-2 text-[var(--text-secondary)]">
             <span className="text-[var(--text-primary)] font-semibold">Real Build Cost</span>
@@ -162,7 +147,7 @@ export default function MethodologyPage() {
           the total.
         </Paragraph>
 
-        <SectionHeading>Missing Component Pricing</SectionHeading>
+        <SectionHeading id="missing-component-pricing">Missing Component Pricing</SectionHeading>
         <Paragraph>
           When a kit is missing a required component, we estimate the cost to add it based on:
         </Paragraph>
@@ -181,7 +166,7 @@ export default function MethodologyPage() {
           </li>
         </ol>
 
-        <SectionHeading>Price Data Sources</SectionHeading>
+        <SectionHeading id="data-sources">Price Data Sources</SectionHeading>
         <Paragraph>
           All pricing data comes from legitimate sources:
         </Paragraph>
@@ -195,7 +180,7 @@ export default function MethodologyPage() {
           or affiliate program data feeds.
         </Paragraph>
 
-        <SectionHeading>Update Frequency</SectionHeading>
+        <SectionHeading id="update-frequency">Update Frequency</SectionHeading>
         <Paragraph>
           Prices are pulled every 6-12 hours depending on the source. Every price on the site
           displays a <strong className="text-[var(--text-primary)]">last updated</strong> timestamp.
@@ -203,7 +188,7 @@ export default function MethodologyPage() {
           warning. Always verify the current price at the retailer before purchasing.
         </Paragraph>
 
-        <SectionHeading>Cost Per Watt-Hour</SectionHeading>
+        <SectionHeading id="cost-per-wh">Cost Per Watt-Hour</SectionHeading>
         <Paragraph>
           For kits that include battery storage, we calculate cost per usable watt-hour
           as the universal comparison metric:
@@ -221,7 +206,7 @@ export default function MethodologyPage() {
           We use manufacturer-recommended DoD for each chemistry.
         </Paragraph>
 
-        <SectionHeading>Use Case Ratings</SectionHeading>
+        <SectionHeading id="use-case-ratings">Use Case Ratings</SectionHeading>
         <Paragraph>
           Each kit is rated for suitability across common off-grid use cases (RV, cabin, shed,
           emergency, homestead, marine). Ratings consider panel output, storage capacity,
@@ -229,7 +214,7 @@ export default function MethodologyPage() {
           each scenario.
         </Paragraph>
 
-        <SectionHeading>Limitations & Disclaimers</SectionHeading>
+        <SectionHeading id="limitations">Limitations & Disclaimers</SectionHeading>
         <div className="rounded bg-[var(--danger)]/5 border border-[var(--danger)]/20 p-4 mb-4">
           <ul className="list-disc list-inside text-sm text-[var(--text-secondary)] space-y-2">
             <li>
@@ -255,7 +240,7 @@ export default function MethodologyPage() {
         </div>
 
         {/* FAQ section */}
-        <SectionHeading>Frequently Asked Questions</SectionHeading>
+        <SectionHeading id="faq">Frequently Asked Questions</SectionHeading>
         <div className="space-y-4">
           {faqs.map((faq) => (
             <div key={faq.question}>
@@ -268,7 +253,7 @@ export default function MethodologyPage() {
             </div>
           ))}
         </div>
-      </div>
+      </ContentCard>
 
       {/* CTA back to kits */}
       <div className="mt-8 text-center">
@@ -279,6 +264,6 @@ export default function MethodologyPage() {
           &larr; Browse kits with real build costs
         </Link>
       </div>
-    </div>
+    </ProseContainer>
   );
 }

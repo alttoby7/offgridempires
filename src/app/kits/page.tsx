@@ -27,7 +27,7 @@ export default function KitsPage() {
       <BreadcrumbJsonLd items={[{ name: "Home", url: "/" }, { name: "Kits", url: "/kits" }]} />
 
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-6">
+      <nav className="flex items-center gap-2 text-sm text-[var(--text-muted)] mb-6">
         <Link href="/" className="hover:text-[var(--accent)] transition-colors">
           Home
         </Link>
@@ -42,12 +42,12 @@ export default function KitsPage() {
 
       {/* Methodology link */}
       <div className="mt-12 text-center space-y-2">
-        <p className="text-xs text-[var(--text-muted)]">
+        <p className="text-sm text-[var(--text-muted)]">
           True total cost includes estimated prices for missing components based on average market prices.
         </p>
         <Link
           href="/methodology"
-          className="inline-flex items-center gap-1 text-xs text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
+          className="inline-flex items-center gap-1 text-sm text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
         >
           How we calculate true total cost
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

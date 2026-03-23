@@ -463,10 +463,10 @@ export function PriceHistoryChart({
           >
             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
           </svg>
-          <p className="font-mono text-xs text-[var(--text-muted)]">
+          <p className="text-sm text-[var(--text-muted)]">
             Price tracking starts when we first see this kit
           </p>
-          <p className="font-mono text-[10px] text-[var(--text-muted)] mt-1">
+          <p className="text-xs text-[var(--text-muted)] mt-1">
             Check back for historical data
           </p>
         </div>
@@ -487,7 +487,7 @@ export function PriceHistoryChart({
           <h2 className="text-lg font-bold text-[var(--text-primary)]">Price History</h2>
           {dealIndicator && (
             <span
-              className="font-mono text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded border"
+              className="font-mono text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded border"
               style={{
                 color: dealIndicator.color,
                 borderColor: `${dealIndicator.color}33`,
@@ -509,7 +509,7 @@ export function PriceHistoryChart({
                 setHoverIndex(null);
               }}
               aria-pressed={range === r}
-              className={`rounded px-2 py-1 font-mono text-[10px] font-medium uppercase transition-all ${
+              className={`rounded px-2.5 py-1 font-mono text-xs font-medium uppercase transition-all ${
                 range === r
                   ? "bg-[var(--accent)]/15 text-[var(--accent)] border border-[var(--accent)]/30 shadow-[inset_0_1px_2px_rgba(0,0,0,0.3)]"
                   : "border border-[var(--border)] text-[var(--text-muted)] hover:border-[var(--border-accent)] hover:text-[var(--accent)]"
@@ -542,31 +542,31 @@ export function PriceHistoryChart({
 
       {/* Stats footer */}
       <div className="flex flex-wrap items-center gap-x-5 gap-y-1 px-4 sm:px-6 py-3 border-t border-[var(--border)] bg-[var(--bg-primary)]/30">
-        <span className="font-mono text-[10px] text-[var(--text-muted)]">
+        <span className="text-xs text-[var(--text-muted)]">
           All-time low:{" "}
-          <span className="text-[var(--success)] font-semibold">
+          <span className="font-mono text-[var(--success)] font-semibold">
             {formatPrice(data.allTimeLowCents)}
           </span>
         </span>
-        <span className="font-mono text-[10px] text-[var(--text-muted)]">
+        <span className="text-xs text-[var(--text-muted)]">
           Average:{" "}
-          <span className="text-[var(--text-secondary)] font-semibold">
+          <span className="font-mono text-[var(--text-secondary)] font-semibold">
             {formatPrice(data.averageCents)}
           </span>
         </span>
-        <span className="font-mono text-[10px] text-[var(--text-muted)]">
+        <span className="text-xs text-[var(--text-muted)]">
           Current:{" "}
-          <span className="text-[var(--accent)] font-semibold">
+          <span className="font-mono text-[var(--accent)] font-semibold">
             {formatPrice(data.currentPriceCents)}
           </span>
         </span>
-        <span className="font-mono text-[10px] text-[var(--text-muted)]">
+        <span className="text-xs text-[var(--text-muted)]">
           High:{" "}
-          <span className="text-[var(--text-secondary)]">
+          <span className="font-mono text-[var(--text-secondary)]">
             {formatPrice(data.allTimeHighCents)}
           </span>
         </span>
-        <span className="ml-auto font-mono text-[9px] text-[var(--text-muted)]">
+        <span className="ml-auto text-xs text-[var(--text-muted)]">
           {data.history.length} data points
         </span>
       </div>

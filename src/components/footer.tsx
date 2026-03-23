@@ -16,12 +16,18 @@ const footerLinks = {
     { href: "/kits?use_case=shed", label: "Shed & Workshop" },
   ],
   Resources: [
-    { href: "#", label: "How We Score" },
-    { href: "#", label: "Data Sources" },
-    { href: "#", label: "Affiliate Disclosure" },
-    { href: "#", label: "Contact" },
+    { href: "/methodology", label: "How We Score" },
+    { href: "/methodology#data-sources", label: "Data Sources" },
+    { href: "/affiliate-disclosure", label: "Affiliate Disclosure" },
+    { href: "/contact", label: "Contact" },
   ],
 };
+
+const legalLinks = [
+  { href: "/about", label: "About" },
+  { href: "/privacy", label: "Privacy" },
+  { href: "/terms", label: "Terms" },
+];
 
 export function Footer() {
   return (
@@ -56,7 +62,7 @@ export function Footer() {
           {/* Link columns */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-3">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-[var(--text-muted)] mb-3">
                 {title}
               </h3>
               <ul className="space-y-2">
@@ -79,9 +85,17 @@ export function Footer() {
           <p className="text-xs text-[var(--text-muted)]">
             &copy; {new Date().getFullYear()} OffGridEmpire. Prices are approximate and should be verified before purchase.
           </p>
-          <p className="text-xs text-[var(--text-muted)]">
-            Affiliate disclosure: We earn commissions from qualifying purchases.
-          </p>
+          <div className="flex items-center gap-4">
+            {legalLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-xs text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
