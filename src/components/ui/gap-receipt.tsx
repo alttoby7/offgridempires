@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef, useState, useCallback } from "react";
 import type { Kit } from "@/lib/demo-data";
 
 interface GapReceiptProps {
@@ -6,7 +9,231 @@ interface GapReceiptProps {
 
 const MAX_VISIBLE_ITEMS = 3;
 
+function buildShareText(kit: Kit): string {
+  const missing = kit.items.filter(
+    (item) => !item.isIncluded && item.estimatedCost && item.estimatedCost > 0
+  );
+  const multiplier =
+    kit.listedPrice > 0 ? (kit.trueCost / kit.listedPrice).toFixed(1) : null;
+
+  let text = `🧾 Completion Gap Receipt: ${kit.name}\n\n`;
+  text += `Advertised price: $${kit.listedPrice.toLocaleString()}\n`;
+  text += `─────────────────\n`;
+  text += `Required missing parts:\n`;
+  missing.forEach((item) => {
+    text += `  + ${item.role}: ~$${item.estimatedCost?.toLocaleString()}\n`;
+  });
+  text += `─────────────────\n`;
+  text += `Hidden cost to finish: +$${kit.missingCost.toLocaleString()}\n`;
+  text += `═════════════════\n`;
+  text += `Real build cost: $${kit.trueCost.toLocaleString()}`;
+  if (multiplier) text += ` (${multiplier}x advertised)`;
+  text += `\n\nvia offgridempire.com/kits/${kit.slug}`;
+  return text;
+}
+
+function drawReceiptToCanvas(
+  kit: Kit,
+  canvas: HTMLCanvasElement
+): void {
+  const missing = kit.items.filter(
+    (item) => !item.isIncluded && item.estimatedCost && item.estimatedCost > 0
+  );
+  const multiplier =
+    kit.listedPrice > 0 ? (kit.trueCost / kit.listedPrice).toFixed(1) : null;
+
+  const W = 600;
+  const PAD = 32;
+  const ctx = canvas.getContext("2d")!;
+
+  // Measure height dynamically
+  const lineH = 28;
+  const sectionGap = 16;
+  const headerH = 60;
+  const footerH = 48;
+  const itemsH = missing.length * lineH;
+  const contentH =
+    headerH +
+    sectionGap +
+    lineH + // advertised price
+    sectionGap +
+    20 + // "Required missing parts" label
+    itemsH +
+    sectionGap +
+    lineH + // hidden cost
+    sectionGap +
+    lineH + // real build cost
+    sectionGap +
+    (multiplier ? lineH + sectionGap : 0) +
+    lineH + // scope note
+    footerH;
+
+  const H = contentH + PAD * 2;
+  canvas.width = W * 2;
+  canvas.height = H * 2;
+  canvas.style.width = `${W}px`;
+  canvas.style.height = `${H}px`;
+  ctx.scale(2, 2);
+
+  // Background
+  ctx.fillStyle = "#0f1419";
+  ctx.fillRect(0, 0, W, H);
+
+  // Header bar
+  ctx.fillStyle = "#1a0505";
+  ctx.fillRect(0, 0, W, headerH);
+  ctx.fillStyle = "#ef4444";
+  ctx.font = "bold 11px monospace";
+  ctx.textBaseline = "middle";
+  ctx.fillText("⚠  COMPLETION GAP RECEIPT", PAD, headerH / 2);
+
+  let y = headerH + PAD;
+
+  // Kit name
+  ctx.fillStyle = "#e5e5e5";
+  ctx.font = "bold 16px sans-serif";
+  ctx.fillText(kit.name, PAD, y);
+  y += lineH + sectionGap;
+
+  // Advertised price
+  ctx.fillStyle = "#a3a3a3";
+  ctx.font = "14px monospace";
+  ctx.fillText("Advertised price", PAD, y);
+  ctx.fillStyle = "#e5e5e5";
+  ctx.font = "bold 14px monospace";
+  ctx.textAlign = "right";
+  ctx.fillText(`$${kit.listedPrice.toLocaleString()}`, W - PAD, y);
+  ctx.textAlign = "left";
+  y += lineH;
+
+  // Dashed line
+  ctx.strokeStyle = "#333";
+  ctx.setLineDash([4, 4]);
+  ctx.beginPath();
+  ctx.moveTo(PAD, y);
+  ctx.lineTo(W - PAD, y);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  y += sectionGap;
+
+  // Missing parts label
+  ctx.fillStyle = "#ef4444";
+  ctx.font = "bold 10px monospace";
+  ctx.fillText("REQUIRED MISSING PARTS", PAD, y);
+  y += 20;
+
+  // Missing items
+  missing.forEach((item) => {
+    ctx.fillStyle = "#a3a3a3";
+    ctx.font = "13px monospace";
+    ctx.textAlign = "left";
+    ctx.fillText(`+ ${item.role}`, PAD + 12, y);
+    ctx.fillStyle = "#ef4444";
+    ctx.font = "13px monospace";
+    ctx.textAlign = "right";
+    ctx.fillText(`~$${item.estimatedCost?.toLocaleString()}`, W - PAD, y);
+    ctx.textAlign = "left";
+    y += lineH;
+  });
+
+  // Dashed line
+  ctx.strokeStyle = "#333";
+  ctx.setLineDash([4, 4]);
+  ctx.beginPath();
+  ctx.moveTo(PAD, y);
+  ctx.lineTo(W - PAD, y);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  y += sectionGap;
+
+  // Hidden cost
+  ctx.fillStyle = "#ef4444";
+  ctx.font = "bold 14px monospace";
+  ctx.fillText("Hidden cost to finish", PAD, y);
+  ctx.textAlign = "right";
+  ctx.fillText(`+$${kit.missingCost.toLocaleString()}`, W - PAD, y);
+  ctx.textAlign = "left";
+  y += lineH;
+
+  // Solid line
+  ctx.strokeStyle = "#555";
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(PAD, y);
+  ctx.lineTo(W - PAD, y);
+  ctx.stroke();
+  ctx.lineWidth = 1;
+  y += sectionGap;
+
+  // Real build cost
+  ctx.fillStyle = "#e5e5e5";
+  ctx.font = "bold 16px monospace";
+  ctx.fillText("Real build cost", PAD, y);
+  ctx.fillStyle = "#f59e0b";
+  ctx.font = "bold 22px monospace";
+  ctx.textAlign = "right";
+  ctx.fillText(`$${kit.trueCost.toLocaleString()}`, W - PAD, y);
+  ctx.textAlign = "left";
+  y += lineH + sectionGap;
+
+  // Multiplier callout
+  if (multiplier) {
+    const calloutText = `+$${kit.missingCost.toLocaleString()} hidden cost · ${multiplier}x the advertised price`;
+    const calloutW = W - PAD * 2;
+    ctx.fillStyle = "#1a0505";
+    ctx.strokeStyle = "#ef444440";
+    ctx.lineWidth = 1;
+    const calloutH = 32;
+    const calloutX = PAD;
+    const calloutY = y - 10;
+    ctx.beginPath();
+    ctx.roundRect(calloutX, calloutY, calloutW, calloutH, 4);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = "#ef4444";
+    ctx.font = "bold 12px monospace";
+    ctx.textAlign = "center";
+    ctx.fillText(calloutText, W / 2, y + 6);
+    ctx.textAlign = "left";
+    y += lineH + sectionGap;
+  }
+
+  // Scope note
+  ctx.fillStyle = "#666";
+  ctx.font = "10px monospace";
+  ctx.fillText(
+    "Real build cost = advertised kit + required missing parts only.",
+    PAD,
+    y
+  );
+  y += 16;
+  ctx.fillText("Optional accessories and tools are not included.", PAD, y);
+  y += sectionGap;
+
+  // Footer
+  const footerY = H - footerH;
+  ctx.fillStyle = "#0a0f14";
+  ctx.fillRect(0, footerY, W, footerH);
+  ctx.fillStyle = "#666";
+  ctx.font = "10px monospace";
+  ctx.fillText("offgridempire.com", PAD, footerY + footerH / 2);
+  const priceDate = new Date(kit.priceObservedAt);
+  const dateStr = priceDate.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+  ctx.textAlign = "right";
+  ctx.fillText(`Price checked ${dateStr}`, W - PAD, footerY + footerH / 2);
+  ctx.textAlign = "left";
+}
+
 export function GapReceipt({ kit }: GapReceiptProps) {
+  const receiptRef = useRef<HTMLDivElement>(null);
+  const [shareState, setShareState] = useState<
+    "idle" | "copied" | "downloaded" | "shared"
+  >("idle");
+
   const hasMissing = kit.missingCost > 0;
   const requiredMissing = kit.items.filter(
     (item) => !item.isIncluded && item.estimatedCost && item.estimatedCost > 0
@@ -16,6 +243,72 @@ export function GapReceipt({ kit }: GapReceiptProps) {
       ? (kit.trueCost / kit.listedPrice).toFixed(1)
       : null;
   const priceDate = new Date(kit.priceObservedAt);
+
+  const flashState = useCallback(
+    (state: "copied" | "downloaded" | "shared") => {
+      setShareState(state);
+      setTimeout(() => setShareState("idle"), 2000);
+    },
+    []
+  );
+
+  const handleCopy = useCallback(async () => {
+    const text = buildShareText(kit);
+    await navigator.clipboard.writeText(text);
+    flashState("copied");
+  }, [kit, flashState]);
+
+  const handleDownload = useCallback(() => {
+    const canvas = document.createElement("canvas");
+    drawReceiptToCanvas(kit, canvas);
+    const link = document.createElement("a");
+    link.download = `gap-receipt-${kit.slug}.png`;
+    link.href = canvas.toDataURL("image/png");
+    link.click();
+    flashState("downloaded");
+  }, [kit, flashState]);
+
+  const handleShare = useCallback(async () => {
+    const text = buildShareText(kit);
+    const url = `https://offgridempire.com/kits/${kit.slug}`;
+
+    if (navigator.share) {
+      // Try sharing image if supported
+      try {
+        const canvas = document.createElement("canvas");
+        drawReceiptToCanvas(kit, canvas);
+        const blob = await new Promise<Blob | null>((resolve) =>
+          canvas.toBlob(resolve, "image/png")
+        );
+        if (blob) {
+          const file = new File([blob], `gap-receipt-${kit.slug}.png`, {
+            type: "image/png",
+          });
+          await navigator.share({
+            title: `${kit.name} — Real Cost Breakdown`,
+            text,
+            url,
+            files: [file],
+          });
+          flashState("shared");
+          return;
+        }
+      } catch {
+        // files not supported, fall through to text share
+      }
+
+      try {
+        await navigator.share({ title: `${kit.name} — Real Cost Breakdown`, text, url });
+        flashState("shared");
+        return;
+      } catch {
+        // user cancelled or error
+      }
+    }
+
+    // Fallback: copy to clipboard
+    await handleCopy();
+  }, [kit, flashState, handleCopy]);
 
   if (!hasMissing) {
     return (
@@ -50,8 +343,20 @@ export function GapReceipt({ kit }: GapReceiptProps) {
   const visibleItems = requiredMissing.slice(0, MAX_VISIBLE_ITEMS);
   const hiddenCount = requiredMissing.length - MAX_VISIBLE_ITEMS;
 
+  const shareLabel =
+    shareState === "copied"
+      ? "Copied!"
+      : shareState === "downloaded"
+        ? "Saved!"
+        : shareState === "shared"
+          ? "Shared!"
+          : null;
+
   return (
-    <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] overflow-hidden">
+    <div
+      ref={receiptRef}
+      className="rounded border border-[var(--border)] bg-[var(--bg-surface)] overflow-hidden"
+    >
       {/* Header */}
       <div className="bg-[var(--danger)]/10 border-b border-[var(--danger)]/20 px-5 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -64,12 +369,55 @@ export function GapReceipt({ kit }: GapReceiptProps) {
             Completion Gap Receipt
           </span>
         </div>
-        <button className="inline-flex items-center gap-1 rounded border border-[var(--border)] bg-[var(--bg-primary)] px-2 py-1 text-[10px] font-mono text-[var(--text-muted)] hover:text-[var(--accent)] hover:border-[var(--border-accent)] transition-colors">
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13" />
-          </svg>
-          Share
-        </button>
+
+        {/* Share actions */}
+        <div className="flex items-center gap-1.5">
+          {shareState !== "idle" ? (
+            <span className="inline-flex items-center gap-1 rounded border border-[var(--success)]/40 bg-[var(--success)]/10 px-2 py-1 text-[10px] font-mono text-[var(--success)] transition-all">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              {shareLabel}
+            </span>
+          ) : (
+            <>
+              {/* Copy text */}
+              <button
+                onClick={handleCopy}
+                title="Copy as text"
+                className="inline-flex items-center justify-center rounded border border-[var(--border)] bg-[var(--bg-primary)] w-7 h-7 text-[var(--text-muted)] hover:text-[var(--accent)] hover:border-[var(--border-accent)] transition-colors"
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                  <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+                </svg>
+              </button>
+
+              {/* Download image */}
+              <button
+                onClick={handleDownload}
+                title="Download as image"
+                className="inline-flex items-center justify-center rounded border border-[var(--border)] bg-[var(--bg-primary)] w-7 h-7 text-[var(--text-muted)] hover:text-[var(--accent)] hover:border-[var(--border-accent)] transition-colors"
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                </svg>
+              </button>
+
+              {/* Share (native or fallback) */}
+              <button
+                onClick={handleShare}
+                title="Share"
+                className="inline-flex items-center gap-1 rounded border border-[var(--border)] bg-[var(--bg-primary)] px-2 py-1 text-[10px] font-mono text-[var(--text-muted)] hover:text-[var(--accent)] hover:border-[var(--border-accent)] transition-colors"
+              >
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13" />
+                </svg>
+                Share
+              </button>
+            </>
+          )}
+        </div>
       </div>
 
       {/* Receipt body */}
