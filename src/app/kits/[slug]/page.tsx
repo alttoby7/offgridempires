@@ -9,6 +9,7 @@ import { GapReceipt } from "@/components/ui/gap-receipt";
 import { BomTable } from "@/components/ui/bom-table";
 import { PriceHistorySection } from "@/components/ui/price-history-section";
 import { KitProductJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
+import { getSimilarKits } from "@/lib/similar-kits";
 
 // Affiliate config per retailer
 const AMAZON_AFFILIATE_TAG = "fidohikes-20";
@@ -378,10 +379,7 @@ export default async function KitDetailPage({
           Compare With Similar Kits
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          {getKits()
-            .filter((k) => k.slug !== kit.slug)
-            .slice(0, 3)
-            .map((k) => (
+          {getSimilarKits(kit, getKits(), 3).map((k) => (
               <Link
                 key={k.slug}
                 href={`/kits/${k.slug}`}
