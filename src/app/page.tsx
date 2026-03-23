@@ -176,6 +176,25 @@ export default function HomePage() {
                 </p>
               </Link>
             ))}
+
+            {/* Calculator CTA */}
+            <Link
+              href="/calculator"
+              className="group rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-4 hover:border-[var(--accent)]/60 hover:bg-[var(--accent)]/10 transition-all"
+            >
+              <p className="text-xs text-[var(--accent)]/70 mb-2">
+                Power Calculator
+              </p>
+              <p className="text-sm font-semibold text-[var(--accent)] group-hover:text-[var(--accent)] transition-colors">
+                Size My System
+              </p>
+              <p className="font-mono text-lg font-bold text-[var(--accent)] mt-1">
+                ⚡
+              </p>
+              <p className="text-xs text-[var(--text-muted)] mt-1">
+                Calculate exactly how much solar you need
+              </p>
+            </Link>
           </div>
 
           {/* Use case chips */}

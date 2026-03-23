@@ -271,6 +271,27 @@ export default async function KitDetailPage({
         <PriceHistorySection kit={kit} />
       </section>
 
+      {/* Calculator CTA */}
+      <section className="mb-10">
+        <Link
+          href="/calculator"
+          className="flex items-center gap-3 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-4 hover:border-[var(--accent)]/50 hover:bg-[var(--accent)]/10 transition-colors group"
+        >
+          <span className="text-2xl">⚡</span>
+          <div>
+            <p className="text-sm font-semibold text-[var(--accent)] group-hover:underline">
+              Does this kit fit your needs?
+            </p>
+            <p className="text-xs text-[var(--text-muted)] mt-0.5">
+              Enter your appliances and location to see if {kit.name} covers your power requirements.
+            </p>
+          </div>
+          <svg className="ml-auto shrink-0 text-[var(--accent)]" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </Link>
+      </section>
+
       {/* Similar kits */}
       <section>
         <h2 className="text-xl font-bold text-[var(--text-primary)] mb-4">

@@ -2,12 +2,14 @@ import { useState } from "react";
 import Link from "next/link";
 import type { LoadEntry, SystemAssumptions, SizingResult, KitMatch, FitBucket } from "@/lib/calculator/types";
 import { EFFICIENCY, BUCKET_LABELS, computeLoadWh } from "@/lib/calculator/engine";
+import { PowerProfile } from "./power-profile";
 
 interface StepResultsProps {
   loads: LoadEntry[];
   assumptions: SystemAssumptions;
   sizing: SizingResult;
   kitMatches: KitMatch[];
+  shareUrl: string;
 }
 
 function fmt(n: number): string {
@@ -38,7 +40,7 @@ function CoverageBar({ pct, label }: { pct: number; label: string }) {
   );
 }
 
-export function StepResults({ loads, assumptions, sizing, kitMatches }: StepResultsProps) {
+export function StepResults({ loads, assumptions, sizing, kitMatches, shareUrl }: StepResultsProps) {
   const [showMath, setShowMath] = useState(false);
 
   const meetsCount = kitMatches.filter((m) => m.bucket === "meets").length;
@@ -88,6 +90,14 @@ export function StepResults({ loads, assumptions, sizing, kitMatches }: StepResu
           </div>
         ))}
       </div>
+
+      {/* Share power profile */}
+      <PowerProfile
+        sizing={sizing}
+        assumptions={assumptions}
+        topMatch={kitMatches.length > 0 ? kitMatches[0] : null}
+        shareUrl={shareUrl}
+      />
 
       {/* Show math */}
       <div className="mb-8">

@@ -52,6 +52,7 @@ function buildEntries(): SitemapEntry[] {
   entries.push({ loc: "/kits", changefreq: "daily", priority: 0.9, lastmod: today });
   entries.push({ loc: "/compare", changefreq: "weekly", priority: 0.8, lastmod: today });
   entries.push({ loc: "/products", changefreq: "weekly", priority: 0.7, lastmod: today });
+  entries.push({ loc: "/calculator", changefreq: "weekly", priority: 0.8, lastmod: today });
   entries.push({ loc: "/methodology", changefreq: "monthly", priority: 0.5, lastmod: today });
 
   // Kit detail pages

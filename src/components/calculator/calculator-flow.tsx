@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import type { Kit } from "@/lib/demo-data";
 import type { LoadEntry, SystemAssumptions, SunTier } from "@/lib/calculator/types";
 import { APPLIANCE_CATALOG, LOAD_PRESETS } from "@/lib/calculator/appliances";
 import { lookupSunHours, getSunTier, SUN_TIERS } from "@/lib/calculator/sun-hours";
 import { computeSizing, matchKits } from "@/lib/calculator/engine";
+import { encodeState, decodeState } from "@/lib/calculator/url-codec";
 import { StepLoads } from "./step-loads";
 import { StepLocation } from "./step-location";
 import { StepResults } from "./step-results";
@@ -49,9 +50,21 @@ export function CalculatorFlow({ allKits }: CalculatorFlowProps) {
   const searchParams = useSearchParams();
   const router = useRouter();
 
-  const [step, setStep] = useState<1 | 2 | 3>(1);
-  const [loads, setLoads] = useState<LoadEntry[]>([]);
-  const [assumptions, setAssumptions] = useState<SystemAssumptions>(DEFAULT_ASSUMPTIONS);
+  // ── URL hydration on mount ─────────────────────────────────────────────
+  const hydrated = useRef(false);
+  const initialState = useMemo(() => {
+    if (hydrated.current) return null;
+    return decodeState(searchParams);
+  }, [searchParams]);
+
+  const [step, setStep] = useState<1 | 2 | 3>(initialState?.step ?? 1);
+  const [loads, setLoads] = useState<LoadEntry[]>(initialState?.loads ?? []);
+  const [assumptions, setAssumptions] = useState<SystemAssumptions>(
+    initialState?.assumptions ?? DEFAULT_ASSUMPTIONS
+  );
+
+  // Mark hydrated after first render
+  useEffect(() => { hydrated.current = true; }, []);
 
   // ── Load management ─────────────────────────────────────────────────────
 
@@ -117,10 +130,26 @@ export function CalculatorFlow({ allKits }: CalculatorFlowProps) {
     });
   }, []);
 
+  // ── URL sync on state changes ──────────────────────────────────────────
+
+  useEffect(() => {
+    if (!hydrated.current) return;
+    if (loads.length === 0 && step === 1) return; // don't encode empty state
+    const params = encodeState(step, loads, assumptions);
+    router.replace(`?${params.toString()}`, { scroll: false });
+  }, [step, loads, assumptions, router]);
+
   // ── Computed results ────────────────────────────────────────────────────
 
   const sizing = useMemo(() => computeSizing(loads, assumptions), [loads, assumptions]);
   const kitMatches = useMemo(() => matchKits(sizing, allKits), [sizing, allKits]);
+
+  // ── Share URL ──────────────────────────────────────────────────────────
+
+  const shareUrl = useMemo(() => {
+    const params = encodeState(3, loads, assumptions);
+    return `https://offgridempire.com/calculator?${params.toString()}`;
+  }, [loads, assumptions]);
 
   // ── Daily Wh running total ──────────────────────────────────────────────
 
@@ -202,6 +231,7 @@ export function CalculatorFlow({ allKits }: CalculatorFlowProps) {
           assumptions={assumptions}
           sizing={sizing}
           kitMatches={kitMatches}
+          shareUrl={shareUrl}
         />
       )}
 
