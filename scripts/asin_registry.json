@@ -1,0 +1,139 @@
+{
+  "kits": [
+    {
+      "asin": "B07CTKT56Y",
+      "slug": "renogy-400w-premium-mppt",
+      "title": "Renogy 400W 12V Premium Solar Kit with 40A MPPT",
+      "brand": "Renogy",
+      "retailer": "Amazon"
+    },
+    {
+      "asin": "B0CDLQVYSS",
+      "slug": "renogy-400w-bluetooth-kit",
+      "title": "Renogy 400W 12V Solar Kit with 30A Controller + Bluetooth",
+      "brand": "Renogy",
+      "retailer": "Amazon"
+    },
+    {
+      "asin": "B09RZZHHHM",
+      "slug": "eco-worthy-200w-starter",
+      "title": "ECO-WORTHY 200W 12V Solar Panel Kit with 30A PWM Controller",
+      "brand": "Eco-Worthy",
+      "retailer": "Amazon"
+    },
+    {
+      "asin": "B0FWRK8JN6",
+      "slug": "eco-worthy-200w-complete",
+      "title": "ECO-WORTHY 200W 12V Complete Kit with 100Ah Battery + 1100W Inverter",
+      "brand": "Eco-Worthy",
+      "retailer": "Amazon"
+    },
+    {
+      "asin": "B0B1TCMZHZ",
+      "slug": "ecoflow-delta-pro-400w",
+      "title": "EcoFlow DELTA Pro 3600Wh + 400W Portable Solar Panel",
+      "brand": "EcoFlow",
+      "retailer": "Amazon"
+    },
+    {
+      "asin": "B0CFQ9NNQJ",
+      "slug": "bluetti-ac300-b300k-pv350",
+      "title": "BLUETTI AC300 + B300K + 350W Solar Panel Bundle",
+      "brand": "Bluetti",
+      "retailer": "Amazon"
+    },
+    {
+      "asin": "B00HKK5VXY",
+      "slug": "windynation-400w-complete-inverter",
+      "title": "WindyNation 400W Complete Kit with 1500W VertaMax Inverter",
+      "brand": "WindyNation",
+      "retailer": "Amazon"
+    },
+    {
+      "asin": "B09KZ1MH7Z",
+      "slug": "windynation-400w-mono-kit",
+      "title": "WindyNation 400W Monocrystalline Off-Grid Kit with PWM Controller",
+      "brand": "WindyNation",
+      "retailer": "Amazon"
+    },
+    {
+      "asin": "B08CKHPWHC",
+      "slug": "renogy-800w-cabin-kit",
+      "title": "Renogy 800W 12V Premium Kit with 60A MPPT + Bluetooth",
+      "brand": "Renogy",
+      "retailer": "Amazon"
+    },
+    {
+      "asin": "B0D2L1G66J",
+      "slug": "jackery-1000v2-200w-panel",
+      "title": "Jackery Solar Generator 1000 v2 + 200W Panel, 1070Wh LiFePO4",
+      "brand": "Jackery",
+      "retailer": "Amazon"
+    },
+    {
+      "asin": "B0CFVDCTRM",
+      "slug": "jackery-1000plus-2x100w",
+      "title": "Jackery 1000 Plus + 2x SolarSaga 100W, 1264Wh Expandable",
+      "brand": "Jackery",
+      "retailer": "Amazon"
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0DTK3ZRXR",
+      "slug": "eg4-lifepower4-24v-200ah",
+      "title": "EG4 LiFePower4 25.6V 200Ah Server Rack Battery",
+      "brand": "EG4",
+      "category": "battery"
+    },
+    {
+      "asin": "B09GK8DWQY",
+      "slug": "renogy-200ah-12v-lifepo4",
+      "title": "Renogy 12V 200Ah LiFePO4 Deep Cycle Battery with Bluetooth",
+      "brand": "Renogy",
+      "category": "battery"
+    },
+    {
+      "asin": "B0CX1B177X",
+      "slug": "renogy-200ah-12v-pro-self-heating",
+      "title": "Renogy 12V 200Ah Pro Self-Heating LiFePO4 Battery IP67",
+      "brand": "Renogy",
+      "category": "battery"
+    },
+    {
+      "asin": "B07GF5JY35",
+      "slug": "renogy-100w-12v-mono-panel",
+      "title": "Renogy 100W 12V High-Efficiency Monocrystalline Solar Panel",
+      "brand": "Renogy",
+      "category": "solar_panel"
+    },
+    {
+      "asin": "B07FCSTM43",
+      "slug": "victron-smartsolar-100v-20a",
+      "title": "Victron SmartSolar MPPT 100V 20A Charge Controller",
+      "brand": "Victron Energy",
+      "category": "charge_controller"
+    },
+    {
+      "asin": "B07B36X8LP",
+      "slug": "victron-smartsolar-150v-45a",
+      "title": "Victron SmartSolar MPPT Tr 150V 45A Charge Controller",
+      "brand": "Victron Energy",
+      "category": "charge_controller"
+    },
+    {
+      "asin": "B07GDBVLN1",
+      "slug": "aims-3000w-pure-sine-12v",
+      "title": "AIMS Power 3000W Pure Sine Inverter 12V DC to 120V AC, UL Listed",
+      "brand": "AIMS Power",
+      "category": "inverter"
+    },
+    {
+      "asin": "B00IQHT8UM",
+      "slug": "aims-3000w-pure-sine-12v-surge",
+      "title": "AIMS Power 3000W Pure Sine Inverter, 6000W Surge, 12V",
+      "brand": "AIMS Power",
+      "category": "inverter"
+    }
+  ]
+}

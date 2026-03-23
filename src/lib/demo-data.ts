@@ -1,3 +1,8 @@
+export interface PriceHistoryPoint {
+  date: string;
+  priceCents: number;
+}
+
 export interface Kit {
   id: string;
   slug: string;
@@ -20,6 +25,7 @@ export interface Kit {
   retailer: string;
   completeness: number; // 0-100%
   items: KitItem[];
+  priceHistory?: PriceHistoryPoint[];
 }
 
 export interface KitItem {
@@ -34,6 +40,50 @@ export interface KitItem {
 
 const now = new Date();
 const hoursAgo = (h: number) => new Date(now.getTime() - h * 60 * 60 * 1000).toISOString();
+
+/**
+ * Generate synthetic price history for demo kits.
+ * Creates realistic daily price data with trends, seasonal variation, and occasional sales.
+ */
+function generatePriceHistory(
+  currentPriceCents: number,
+  days: number,
+  opts: { volatility?: number; trend?: "up" | "down" | "flat"; saleDrop?: number } = {}
+): PriceHistoryPoint[] {
+  const { volatility = 0.02, trend = "flat", saleDrop = 0 } = opts;
+  const points: PriceHistoryPoint[] = [];
+  const trendFactor = trend === "up" ? 0.0003 : trend === "down" ? -0.0003 : 0;
+
+  // Work backwards from current price
+  let price = currentPriceCents;
+  const prices: number[] = [price];
+
+  for (let d = 1; d < days; d++) {
+    // Random walk with mean reversion
+    const noise = (Math.random() - 0.5) * 2 * volatility * price;
+    const reversion = (currentPriceCents - price) * 0.01;
+    price = price - noise - trendFactor * price + reversion;
+
+    // Occasional sale events (every ~45 days, lasting 3-5 days)
+    if (saleDrop > 0 && d % 45 < 3) {
+      price = price * (1 - saleDrop);
+    }
+
+    prices.push(Math.round(Math.max(price * 0.7, price)));
+  }
+
+  prices.reverse();
+
+  for (let i = 0; i < prices.length; i++) {
+    const date = new Date(now.getTime() - (days - 1 - i) * 24 * 60 * 60 * 1000);
+    points.push({
+      date: date.toISOString().split("T")[0],
+      priceCents: prices[i],
+    });
+  }
+
+  return points;
+}
 
 export const demoKits: Kit[] = [
   {
@@ -66,6 +116,7 @@ export const demoKits: Kit[] = [
       { role: "Mounting", isIncluded: true, name: "Z-bracket mounts", specs: "Roof mount, aluminum", quantity: 4 },
       { role: "Monitoring", isIncluded: true, name: "BT-2 Bluetooth Module", specs: "App monitoring", quantity: 1 },
     ],
+    priceHistory: generatePriceHistory(189900, 180, { volatility: 0.015, trend: "down", saleDrop: 0.04 }),
   },
   {
     id: "2",
@@ -97,6 +148,7 @@ export const demoKits: Kit[] = [
       { role: "Mounting", isIncluded: true, name: "Z-brackets", specs: "Roof mount", quantity: 2 },
       { role: "Monitoring", isIncluded: false, name: "Not included", specs: "Optional BT module", quantity: 0, estimatedCost: 25 },
     ],
+    priceHistory: generatePriceHistory(28900, 120, { volatility: 0.025, trend: "flat", saleDrop: 0.05 }),
   },
   {
     id: "3",
@@ -127,6 +179,7 @@ export const demoKits: Kit[] = [
       { role: "Mounting", isIncluded: false, name: "Not included", specs: "Panel is portable/folding", quantity: 0, estimatedCost: 0, notes: "Portable panel — no mounting needed" },
       { role: "Monitoring", isIncluded: true, name: "EcoFlow App", specs: "WiFi + BT monitoring", quantity: 1 },
     ],
+    priceHistory: generatePriceHistory(429900, 270, { volatility: 0.01, trend: "down", saleDrop: 0.03 }),
   },
   {
     id: "4",
@@ -158,6 +211,7 @@ export const demoKits: Kit[] = [
       { role: "Mounting", isIncluded: false, name: "Not included", specs: "Portable panel", quantity: 0, estimatedCost: 0 },
       { role: "Monitoring", isIncluded: true, name: "Bluetti App", specs: "WiFi + BT", quantity: 1 },
     ],
+    priceHistory: generatePriceHistory(379900, 365, { volatility: 0.012, trend: "down", saleDrop: 0.06 }),
   },
   {
     id: "5",
@@ -188,6 +242,7 @@ export const demoKits: Kit[] = [
       { role: "Mounting", isIncluded: false, name: "Not included", specs: "Need roof or ground mount", quantity: 1, estimatedCost: 80 },
       { role: "Monitoring", isIncluded: false, name: "Not included", specs: "Basic LCD on controller only", quantity: 0, estimatedCost: 30 },
     ],
+    priceHistory: generatePriceHistory(114900, 90, { volatility: 0.02, trend: "flat" }),
   },
   {
     id: "6",
@@ -219,6 +274,7 @@ export const demoKits: Kit[] = [
       { role: "Mounting", isIncluded: true, name: "Z-bracket kit", specs: "8× Z-brackets for roof", quantity: 8 },
       { role: "Monitoring", isIncluded: true, name: "BT-2 Bluetooth Module", specs: "App monitoring", quantity: 1 },
     ],
+    priceHistory: generatePriceHistory(159900, 200, { volatility: 0.018, trend: "up", saleDrop: 0.05 }),
   },
 ];
 
