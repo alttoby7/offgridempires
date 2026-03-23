@@ -28,6 +28,10 @@ const categoryMeta: Record<string, { title: string; description: string }> = {
   },
 };
 
+export function generateStaticParams() {
+  return Object.keys(categoryMeta).map((category) => ({ category }));
+}
+
 export async function generateMetadata({
   params,
 }: {
