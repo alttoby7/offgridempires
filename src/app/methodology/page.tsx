@@ -166,20 +166,6 @@ export default function MethodologyPage() {
           </li>
         </ol>
 
-        <SectionHeading id="data-sources">Price Data Sources</SectionHeading>
-        <Paragraph>
-          All pricing data comes from legitimate sources:
-        </Paragraph>
-        <ul className="list-disc list-inside text-sm text-[var(--text-secondary)] space-y-2 mb-4 ml-2">
-          <li>Amazon Product Advertising API (affiliate program)</li>
-          <li>Manufacturer affiliate data feeds (ShareASale, Impact)</li>
-          <li>Direct manufacturer partnerships</li>
-        </ul>
-        <Paragraph>
-          We do not scrape retailer websites. All data is obtained through official API access
-          or affiliate program data feeds.
-        </Paragraph>
-
         <SectionHeading id="update-frequency">Update Frequency</SectionHeading>
         <Paragraph>
           Prices are pulled every 6-12 hours depending on the source. Every price on the site

@@ -246,9 +246,6 @@ export default function HomePage() {
       <section className="bg-[var(--bg-secondary)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-2xl mx-auto text-center">
-            <p className="text-xs font-mono uppercase tracking-widest text-[var(--text-muted)] mb-2">
-              Built like PCPartPicker, not a listicle
-            </p>
             <h2 className="text-xl font-bold text-[var(--text-primary)] mb-3">
               No hidden agendas. Just data.
             </h2>
