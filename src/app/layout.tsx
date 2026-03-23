@@ -69,6 +69,8 @@ export default function RootLayout({
       className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <head>
+        {/* Impact affiliate site verification */}
+        <meta name="impact-site-verification" {...{ value: "26ccb1d9-e2c5-436e-84de-eac1b435dd35" } as object} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PGP7GKZ3ZT"
           strategy="afterInteractive"
