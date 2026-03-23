@@ -28,14 +28,18 @@ function loadKits(): Kit[] {
   return _kits!;
 }
 
+function kitsWithPrices(kits: Kit[]): Kit[] {
+  return kits.filter((k) => k.listedPrice && k.listedPrice > 0);
+}
+
 export function getKits(): Kit[] {
-  return loadKits();
+  return kitsWithPrices(loadKits());
 }
 
 export function getKitBySlug(slug: string): Kit | undefined {
-  return loadKits().find((k) => k.slug === slug);
+  return kitsWithPrices(loadKits()).find((k) => k.slug === slug);
 }
 
 export function getKitSlugs(): string[] {
-  return loadKits().map((k) => k.slug);
+  return kitsWithPrices(loadKits()).map((k) => k.slug);
 }
