@@ -108,31 +108,19 @@ export default async function KitDetailPage({
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
         {/* Left: Kit info */}
         <div className="lg:col-span-2 space-y-6">
-          {/* Hero: image + title side by side */}
-          <div className="flex gap-6">
-            {kit.imageUrl && (
-              <div className="hidden sm:block shrink-0 w-40 h-40 rounded border border-[var(--border)] bg-[var(--bg-elevated)] overflow-hidden">
-                <img
-                  src={kit.imageUrl}
-                  alt={`${kit.brand} ${(kit.displayName ?? kit.name)}`}
-                  className="w-full h-full object-contain p-2"
-                />
-              </div>
-            )}
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-3 mb-2">
-                <span className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)]">
-                  {kit.brand}
-                </span>
-                <span className="text-xs text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-2 py-0.5">
-                  via {kit.retailer}
-                </span>
-                <PriceTimestamp observedAt={kit.priceObservedAt} />
-              </div>
-              <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)] leading-tight">
-                {(kit.displayName ?? kit.name)}
-              </h1>
+          <div>
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)]">
+                {kit.brand}
+              </span>
+              <span className="text-xs text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-2 py-0.5">
+                via {kit.retailer}
+              </span>
+              <PriceTimestamp observedAt={kit.priceObservedAt} />
             </div>
+            <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)] leading-tight">
+              {(kit.displayName ?? kit.name)}
+            </h1>
           </div>
 
           {/* Specs row */}
@@ -327,11 +315,6 @@ export default async function KitDetailPage({
                 href={`/kits/${k.slug}`}
                 className="group rounded border border-[var(--border)] bg-[var(--bg-primary)] p-4 hover:border-[var(--border-accent)] hover:-translate-y-0.5 transition-all duration-200"
               >
-                {k.imageUrl && (
-                  <div className="aspect-[16/10] rounded bg-[var(--bg-elevated)] overflow-hidden mb-3">
-                    <img src={k.imageUrl} alt={(k.displayName ?? k.name)} className="w-full h-full object-contain p-2" />
-                  </div>
-                )}
                 <p className="text-[11px] font-medium uppercase tracking-wider text-[var(--text-muted)]">{k.brand}</p>
                 <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-1 mt-0.5">
                   {(k.displayName ?? k.name)}

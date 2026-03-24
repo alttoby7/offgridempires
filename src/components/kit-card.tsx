@@ -17,29 +17,10 @@ export function KitCard({ kit, compact = false }: KitCardProps) {
       href={`/kits/${kit.slug}`}
       className="group relative flex flex-col border border-[var(--border)] rounded bg-[var(--bg-surface)] hover:border-[var(--border-accent)] hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/20 transition-all duration-200 overflow-hidden"
     >
-      {/* Product image */}
-      <div className="relative aspect-[16/10] bg-[var(--bg-elevated)] overflow-hidden">
-        {kit.imageUrl ? (
-          <img
-            src={kit.imageUrl}
-            alt={`${kit.brand} ${(kit.displayName ?? kit.name)}`}
-            className="absolute inset-0 w-full h-full object-contain p-3 group-hover:scale-[1.03] transition-transform duration-300"
-            loading="lazy"
-          />
-        ) : (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <svg className="w-12 h-12 text-[var(--text-muted)]/30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="2" y="7" width="20" height="10" rx="1" />
-              <path d="M6 7V5a2 2 0 012-2h8a2 2 0 012 2v2" />
-              <circle cx="12" cy="12" r="2" />
-            </svg>
-          </div>
-        )}
-        {/* Completeness bar overlaid at bottom of image */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 flex">
-          <div className="bg-[var(--accent)]" style={{ width: `${kit.completeness}%` }} />
-          <div className="bg-[var(--danger)]/30" style={{ width: `${100 - kit.completeness}%` }} />
-        </div>
+      {/* Completeness indicator bar */}
+      <div className="h-1 flex">
+        <div className="bg-[var(--accent)]" style={{ width: `${kit.completeness}%` }} />
+        <div className="bg-[var(--danger)]/30" style={{ width: `${100 - kit.completeness}%` }} />
       </div>
 
       <div className="p-4 flex-1 flex flex-col gap-3">
