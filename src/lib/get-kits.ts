@@ -304,7 +304,10 @@ function loadKits(): Kit[] {
   } catch {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const { demoKits } = require("./demo-data");
-    _kits = demoKits;
+    _kits = (demoKits as Kit[]).map((k) => ({
+      ...k,
+      displayName: k.displayName ?? k.name,
+    }));
   }
 
   return _kits!;

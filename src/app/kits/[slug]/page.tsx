@@ -114,7 +114,7 @@ export default async function KitDetailPage({
               <div className="hidden sm:block shrink-0 w-40 h-40 rounded border border-[var(--border)] bg-[var(--bg-elevated)] overflow-hidden">
                 <img
                   src={kit.imageUrl}
-                  alt={`${kit.brand} ${kit.displayName}`}
+                  alt={`${kit.brand} ${(kit.displayName ?? kit.name)}`}
                   className="w-full h-full object-contain p-2"
                 />
               </div>
@@ -130,7 +130,7 @@ export default async function KitDetailPage({
                 <PriceTimestamp observedAt={kit.priceObservedAt} />
               </div>
               <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)] leading-tight">
-                {kit.displayName}
+                {(kit.displayName ?? kit.name)}
               </h1>
             </div>
           </div>
@@ -304,7 +304,7 @@ export default async function KitDetailPage({
               Does this kit fit your needs?
             </p>
             <p className="text-xs text-[var(--text-muted)] mt-0.5">
-              Enter your appliances and location to see if {kit.displayName} covers your power requirements.
+              Enter your appliances and location to see if {(kit.displayName ?? kit.name)} covers your power requirements.
             </p>
           </div>
           <svg className="ml-auto shrink-0 text-[var(--accent)]" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -329,12 +329,12 @@ export default async function KitDetailPage({
               >
                 {k.imageUrl && (
                   <div className="aspect-[16/10] rounded bg-[var(--bg-elevated)] overflow-hidden mb-3">
-                    <img src={k.imageUrl} alt={k.displayName} className="w-full h-full object-contain p-2" />
+                    <img src={k.imageUrl} alt={(k.displayName ?? k.name)} className="w-full h-full object-contain p-2" />
                   </div>
                 )}
                 <p className="text-[11px] font-medium uppercase tracking-wider text-[var(--text-muted)]">{k.brand}</p>
                 <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-1 mt-0.5">
-                  {k.displayName}
+                  {(k.displayName ?? k.name)}
                 </p>
                 <div className="flex items-center gap-3 mt-2">
                   <span className="font-mono text-xs text-[var(--accent)]">${k.trueCost.toLocaleString()}</span>

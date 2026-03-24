@@ -27,7 +27,7 @@ export interface Kit {
   id: string;
   slug: string;
   name: string;
-  displayName: string;
+  displayName?: string;
   imageUrl?: string;
   brand: string;
   listedPrice: number;

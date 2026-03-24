@@ -22,7 +22,7 @@ export function KitCard({ kit, compact = false }: KitCardProps) {
         {kit.imageUrl ? (
           <img
             src={kit.imageUrl}
-            alt={`${kit.brand} ${kit.displayName}`}
+            alt={`${kit.brand} ${(kit.displayName ?? kit.name)}`}
             className="absolute inset-0 w-full h-full object-contain p-3 group-hover:scale-[1.03] transition-transform duration-300"
             loading="lazy"
           />
@@ -49,7 +49,7 @@ export function KitCard({ kit, compact = false }: KitCardProps) {
             {kit.brand}
           </p>
           <h3 className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-2 mt-0.5 leading-snug">
-            {kit.displayName}
+            {(kit.displayName ?? kit.name)}
           </h3>
         </div>
 
