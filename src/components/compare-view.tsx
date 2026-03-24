@@ -7,14 +7,11 @@ import type { Kit } from "@/lib/demo-data";
 import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
-
-// Centralized affiliate tag — swap when OffGridEmpire Associates account is approved
-const AMAZON_AFFILIATE_TAG = "fidohikes-20";
+import { buildAffiliateUrl, deriveRetailerSlug } from "@/lib/affiliate";
 
 function getAffiliateUrl(kit: Kit): string | null {
-  if (!kit.sourceUrl) return null;
-  const sep = kit.sourceUrl.includes("?") ? "&" : "?";
-  return `${kit.sourceUrl}${sep}tag=${AMAZON_AFFILIATE_TAG}`;
+  const slug = kit.retailerSlug ?? deriveRetailerSlug(kit.retailer, kit.sourceUrl);
+  return buildAffiliateUrl(kit.sourceUrl, slug);
 }
 
 // ── Verdict system ──────────────────────────────────────────────────────────

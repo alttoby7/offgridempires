@@ -16,7 +16,7 @@ function buildShareText(kit: Kit): string {
   const multiplier =
     kit.listedPrice > 0 ? (kit.trueCost / kit.listedPrice).toFixed(1) : null;
 
-  let text = `🧾 Completion Gap Receipt: ${kit.name}\n\n`;
+  let text = `🧾 Completion Gap Receipt: ${kit.brand} ${kit.name}\n\n`;
   text += `Advertised price: $${kit.listedPrice.toLocaleString()}\n`;
   text += `─────────────────\n`;
   text += `Required missing parts:\n`;
@@ -92,7 +92,7 @@ function drawReceiptToCanvas(
   // Kit name
   ctx.fillStyle = "#e5e5e5";
   ctx.font = "bold 16px sans-serif";
-  ctx.fillText(kit.name, PAD, y);
+  ctx.fillText(`${kit.brand} ${kit.name}`, PAD, y);
   y += lineH + sectionGap;
 
   // Advertised price
@@ -285,7 +285,7 @@ export function GapReceipt({ kit }: GapReceiptProps) {
             type: "image/png",
           });
           await navigator.share({
-            title: `${kit.name} — Real Cost Breakdown`,
+            title: `${kit.brand} ${kit.name} — Real Cost Breakdown`,
             text,
             url,
             files: [file],

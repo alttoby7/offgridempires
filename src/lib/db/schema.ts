@@ -348,6 +348,7 @@ export const kits = pgTable(
     includesInverter: boolean("includes_inverter").notNull().default(false),
     includesController: boolean("includes_controller").notNull().default(false),
     isActive: boolean("is_active").notNull().default(true),
+    imageUrl: text("image_url"),
     rawMetadata: jsonb("raw_metadata").notNull().default({}),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),

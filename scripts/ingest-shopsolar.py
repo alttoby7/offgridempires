@@ -152,12 +152,15 @@ def ensure_brand(cur, brand_name: str) -> str:
     return row[0] if row else brand_id
 
 
-def ensure_kit(cur, entry: dict, brand_id: str) -> str:
+def ensure_kit(cur, entry: dict, brand_id: str, image_url: str | None = None) -> str:
     """Get or create kit record, return ID."""
     slug = entry.get("kit_slug") or entry.get("proposed_slug")
     cur.execute("SELECT id FROM kits WHERE slug = %s", (slug,))
     row = cur.fetchone()
     if row:
+        # Update image_url if we have one and it's missing
+        if image_url:
+            cur.execute("UPDATE kits SET image_url = %s WHERE id = %s AND image_url IS NULL", (image_url, row[0]))
         return row[0]
 
     # New kit — create as inactive draft
@@ -167,16 +170,16 @@ def ensure_kit(cur, entry: dict, brand_id: str) -> str:
 
     cur.execute(
         """
-        INSERT INTO kits (id, brand_id, title, slug, is_active,
+        INSERT INTO kits (id, brand_id, title, slug, is_active, image_url,
                          nominal_system_voltage_v, panel_array_w,
                          battery_total_wh, battery_usable_wh,
                          inverter_continuous_w, chemistry)
-        VALUES (%s, %s, %s, %s, false, %s, %s, %s, %s, %s, %s)
+        VALUES (%s, %s, %s, %s, false, %s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (slug) DO NOTHING
         RETURNING id
         """,
         (
-            kit_id, brand_id, title, slug,
+            kit_id, brand_id, title, slug, image_url,
             specs.get("voltage"),
             specs.get("panelW"),
             specs.get("batteryTotalWh"),
@@ -426,10 +429,14 @@ def main():
         vendor = entry.get("vendor") or product.get("vendor", "Unknown")
         brand_id = ensure_brand(cur, vendor)
 
+        # Extract first product image
+        product_images = product.get("images", [])
+        image_url = product_images[0].get("src") if product_images else None
+
         try:
             cur.execute("SAVEPOINT item_sp")
 
-            kit_id = ensure_kit(cur, entry, brand_id)
+            kit_id = ensure_kit(cur, entry, brand_id, image_url=image_url)
             offer_id = upsert_kit_offer(cur, kit_id, retailer_id, entry, price_data, run_id)
 
             p_hash = payload_hash(price_data)

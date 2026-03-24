@@ -138,6 +138,7 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
         kcp.price_cents,
         kcp.observed_at,
         r.name AS retailer_name,
+        r.slug AS retailer_slug,
         ko.source_url
       FROM kit_current_prices kcp
       JOIN retailers r ON r.id = kcp.retailer_id
@@ -156,6 +157,7 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       k.inverter_continuous_w,
       k.inverter_surge_w,
       k.chemistry,
+      k.image_url,
       k.includes_panels,
       k.includes_batteries,
       k.includes_inverter,
@@ -165,6 +167,7 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       co.price_cents,
       co.observed_at AS price_observed_at,
       co.retailer_name,
+      co.retailer_slug,
       co.source_url,
       ktc.missing_components_cents,
       COALESCE(co.total_known_cents, ktc.base_offer_price_cents, 0) + COALESCE(ktc.missing_components_cents, 0) AS total_before_tax_cents,
@@ -315,6 +318,8 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       id: kitId,
       slug: row.slug as string,
       name: row.title as string,
+      displayName: row.title as string,
+      imageUrl: (row.image_url as string) ?? undefined,
       brand: (row.brand_name as string) ?? "Unknown",
       listedPrice,
       missingCost: finalMissingCost,
@@ -335,6 +340,7 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
         ? new Date(row.price_observed_at as string).toISOString()
         : new Date().toISOString(),
       retailer: (row.retailer_name as string) ?? "Unknown",
+      retailerSlug: (row.retailer_slug as string) ?? undefined,
       sourceUrl: row.source_url as string | undefined,
       completeness: Number(row.completeness_score ?? 0),
       items: kitItems,

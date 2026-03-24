@@ -27,6 +27,8 @@ export interface Kit {
   id: string;
   slug: string;
   name: string;
+  displayName: string;
+  imageUrl?: string;
   brand: string;
   listedPrice: number;
   missingCost: number;
@@ -44,6 +46,7 @@ export interface Kit {
   priceChange?: number;
   priceObservedAt: string;
   retailer: string;
+  retailerSlug?: string;
   sourceUrl?: string;
   completeness: number; // 0-100%
   items: KitItem[];

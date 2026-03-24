@@ -66,8 +66,8 @@ export function KitProductJsonLd({ kit }: { kit: Kit }) {
   const data: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: kit.name,
-    description: `${kit.name} — ${kit.panelWatts}W solar, ${kit.storageWh > 0 ? `${(kit.storageWh / 1000).toFixed(1)}kWh storage` : "no battery"}, ${kit.inverterWatts > 0 ? `${kit.inverterWatts}W inverter` : "no inverter"}. Real build cost: $${kit.trueCost.toLocaleString()}.`,
+    name: `${kit.brand} ${kit.name}`,
+    description: `${kit.brand} ${kit.name} — ${kit.panelWatts}W solar, ${kit.storageWh > 0 ? `${(kit.storageWh / 1000).toFixed(1)}kWh storage` : "no battery"}, ${kit.inverterWatts > 0 ? `${kit.inverterWatts}W inverter` : "no inverter"}. Real build cost: $${kit.trueCost.toLocaleString()}.`,
     brand: {
       "@type": "Brand",
       name: kit.brand,
@@ -142,7 +142,7 @@ export function KitListJsonLd({ kits }: { kits: Kit[] }) {
     itemListElement: kits.map((kit, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      name: kit.name,
+      name: `${kit.brand} ${kit.name}`,
       url: `${SITE_URL}/kits/${kit.slug}`,
     })),
   };

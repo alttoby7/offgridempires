@@ -7,6 +7,11 @@ and writes kit_items + kit_role_coverage + kit_total_cost_current to DB.
 Run: python3 scripts/seed-bom-shopsolar.py
 Run dry-run: python3 scripts/seed-bom-shopsolar.py --dry-run
 
+--all-with-prices: Seed ALL in-DB kits that have prices but no BOM items.
+  Reads spec fields directly from DB (panel_array_w, battery_usable_wh, etc.).
+  Skips kits with no spec data at all (nothing to generate BOM from).
+  Usage: python3 scripts/seed-bom-shopsolar.py --all-with-prices [--dry-run]
+
 Requires SSH tunnel: ssh -fN -L 15433:localhost:5433 n8n-basecamp
 """
 
@@ -26,6 +31,7 @@ else:
 
 DATABASE_URL = os.environ.get("OFFGRID_DATABASE_URL", "")
 DRY_RUN = "--dry-run" in sys.argv
+ALL_WITH_PRICES = "--all-with-prices" in sys.argv
 
 REGISTRY_PATH = Path(__file__).parent / "shopsolar_registry.json"
 
@@ -376,5 +382,209 @@ def main():
     print(f"\nDone! {succeeded} kits seeded, {skipped} skipped")
 
 
+def main_all_with_prices():
+    """Seed BOM for all in-DB kits that have prices but no BOM items.
+    Reads spec data directly from the kits table.
+    """
+    if not DATABASE_URL:
+        print("ERROR: OFFGRID_DATABASE_URL not set")
+        sys.exit(1)
+
+    conn = psycopg2.connect(DATABASE_URL)
+    cur = conn.cursor()
+
+    # Load role map
+    cur.execute("SELECT id, code FROM component_roles")
+    role_map = {row[1]: row[0] for row in cur.fetchall()}
+
+    # Load use case map
+    cur.execute("SELECT id, slug FROM use_cases")
+    uc_map = {row[1]: row[0] for row in cur.fetchall()}
+    default_uc_id = uc_map.get("rv-weekend")
+
+    if not default_uc_id:
+        print("ERROR: rv-weekend use case not found")
+        sys.exit(1)
+
+    # Find all active kits with at least one current price but no kit_items
+    cur.execute("""
+        SELECT DISTINCT k.id, k.slug,
+            k.panel_array_w, k.battery_usable_wh, k.battery_total_wh,
+            k.inverter_continuous_w, k.nominal_system_voltage_v, k.chemistry
+        FROM kits k
+        JOIN kit_current_prices kcp ON kcp.kit_id = k.id
+        WHERE k.is_active = TRUE
+          AND NOT EXISTS (SELECT 1 FROM kit_items WHERE kit_id = k.id)
+        ORDER BY k.slug
+    """)
+    candidates = cur.fetchall()
+
+    print(f"Found {len(candidates)} active kits with prices but no BOM")
+
+    if DRY_RUN:
+        print("\n[DRY RUN — no DB writes]\n")
+        no_specs = 0
+        for row in candidates:
+            _, slug, panel_w, bat_usable, bat_total, inv_w, voltage, chem = row
+            panel_w = panel_w or 0
+            bat_usable = bat_usable or 0
+            bat_total = bat_total or 0
+            inv_w = inv_w or 0
+            if panel_w == 0 and bat_usable == 0 and inv_w == 0:
+                print(f"  SKIP {slug} — no spec data")
+                no_specs += 1
+                continue
+            specs = {
+                "panelW": panel_w,
+                "batteryTotalWh": bat_total,
+                "batteryUsableWh": bat_usable,
+                "inverterW": inv_w,
+                "voltage": voltage or 48,
+                "chemistry": chem or "LiFePO4",
+            }
+            bom = build_bom(slug, specs)
+            included = sum(1 for i in bom["items"] if i["included"])
+            missing_cents = sum(i.get("cost", 0) for i in bom["items"] if not i["included"])
+            print(f"  {slug}")
+            print(f"    {bom['panelW']}W / {bom['batteryUsableWh']}Wh / {bom['inverterW']}W — {included}/{len(bom['items'])} included, ~${missing_cents/100:.0f} missing")
+        print(f"\n{len(candidates) - no_specs} would be seeded, {no_specs} skipped (no specs)")
+        conn.close()
+        return
+
+    succeeded = 0
+    skipped = 0
+
+    for row in candidates:
+        kit_id, slug, panel_w, bat_usable, bat_total, inv_w, voltage, chem = row
+        panel_w = panel_w or 0
+        bat_usable = bat_usable or 0
+        bat_total = bat_total or 0
+        inv_w = inv_w or 0
+
+        if panel_w == 0 and bat_usable == 0 and inv_w == 0:
+            print(f"  SKIP {slug} — no spec data in DB")
+            skipped += 1
+            continue
+
+        specs = {
+            "panelW": panel_w,
+            "batteryTotalWh": bat_total,
+            "batteryUsableWh": bat_usable,
+            "inverterW": inv_w,
+            "voltage": voltage or 48,
+            "chemistry": chem or "LiFePO4",
+        }
+        bom = build_bom(slug, specs)
+
+        # Update kit spec columns (may already be set, but ensure consistency)
+        cur.execute(
+            """
+            UPDATE kits SET
+                nominal_system_voltage_v = %s,
+                panel_array_w = %s,
+                battery_total_wh = %s,
+                battery_usable_wh = %s,
+                inverter_continuous_w = %s,
+                chemistry = %s,
+                includes_panels = %s,
+                includes_batteries = %s,
+                includes_inverter = %s,
+                includes_controller = %s
+            WHERE id = %s
+            """,
+            (
+                bom["voltage"], bom["panelW"], bom["batteryTotalWh"], bom["batteryUsableWh"],
+                bom["inverterW"], bom["chemistry"],
+                bom["includesPanels"], bom["includesBatteries"], bom["includesInverter"], bom["includesController"],
+                kit_id,
+            ),
+        )
+
+        # Insert kit items
+        for i, item in enumerate(bom["items"]):
+            role_id = role_map.get(item["role"])
+            if not role_id:
+                continue
+            if item["included"]:
+                cur.execute(
+                    """
+                    INSERT INTO kit_items (kit_id, component_role_id, quantity, unit_label, sort_order, notes)
+                    VALUES (%s, %s, %s, %s, %s, %s)
+                    ON CONFLICT DO NOTHING
+                    """,
+                    (kit_id, role_id, item["qty"], item["name"], (i + 1) * 10,
+                     f"{item['name']} — {item['specs']}"),
+                )
+
+        # Insert role coverage
+        missing_cents = 0
+        included_count = 0
+        total_roles = len(bom["items"])
+
+        for item in bom["items"]:
+            role_id = role_map.get(item["role"])
+            if not role_id:
+                continue
+            if item["included"]:
+                included_count += 1
+                cur.execute(
+                    """
+                    INSERT INTO kit_role_coverage (kit_id, use_case_id, component_role_id, status, included_quantity, calculator_version)
+                    VALUES (%s, %s, %s, 'included', %s, 'bom-shopsolar-v1')
+                    ON CONFLICT DO NOTHING
+                    """,
+                    (kit_id, default_uc_id, role_id, item["qty"]),
+                )
+            else:
+                cost = item.get("cost", 0)
+                missing_cents += cost
+                cur.execute(
+                    """
+                    INSERT INTO kit_role_coverage (kit_id, use_case_id, component_role_id, status, missing_quantity, recommended_cost_cents, notes, calculator_version)
+                    VALUES (%s, %s, %s, 'missing', %s, %s, %s, 'bom-shopsolar-v1')
+                    ON CONFLICT DO NOTHING
+                    """,
+                    (kit_id, default_uc_id, role_id, max(item["qty"], 1), cost, item.get("notes")),
+                )
+
+        # Get current price for total cost
+        cur.execute(
+            "SELECT offer_id, price_cents FROM kit_current_prices WHERE kit_id = %s ORDER BY price_cents ASC LIMIT 1",
+            (kit_id,),
+        )
+        price_row = cur.fetchone()
+        if price_row:
+            offer_id, base_price = price_row
+            completeness = round((included_count / total_roles) * 100) if total_roles > 0 else 0
+            total_before_tax = base_price + missing_cents
+            cur.execute(
+                """
+                INSERT INTO kit_total_cost_current (kit_id, use_case_id, primary_kit_offer_id, base_offer_price_cents, missing_components_cents, total_before_tax_cents, completeness_score, last_priced_at, calculator_version)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, now(), 'bom-shopsolar-v1')
+                ON CONFLICT (kit_id, use_case_id) DO UPDATE SET
+                    base_offer_price_cents = EXCLUDED.base_offer_price_cents,
+                    missing_components_cents = EXCLUDED.missing_components_cents,
+                    total_before_tax_cents = EXCLUDED.total_before_tax_cents,
+                    completeness_score = EXCLUDED.completeness_score,
+                    last_priced_at = EXCLUDED.last_priced_at
+                """,
+                (kit_id, default_uc_id, offer_id, base_price, missing_cents, total_before_tax, completeness),
+            )
+            print(f"  ✓ {slug} — ${base_price/100:.0f} + ${missing_cents/100:.0f} missing = ${total_before_tax/100:.0f}, {completeness}%")
+        else:
+            print(f"  ✓ {slug} — BOM added (no price data)")
+
+        succeeded += 1
+
+    conn.commit()
+    cur.close()
+    conn.close()
+
+    print(f"\nDone! {succeeded} kits seeded, {skipped} skipped")
+
+
 if __name__ == "__main__":
-    main()
+    if ALL_WITH_PRICES:
+        main_all_with_prices()
+    else:
+        main()

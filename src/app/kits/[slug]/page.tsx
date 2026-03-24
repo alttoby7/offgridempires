@@ -11,12 +11,7 @@ import { PriceHistorySection } from "@/components/ui/price-history-section";
 import { RetailerListings } from "@/components/ui/retailer-listings";
 import { KitProductJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { getSimilarKits } from "@/lib/similar-kits";
-
-// Affiliate config per retailer
-const AMAZON_AFFILIATE_TAG = "fidohikes-20";
-// TODO: Replace with real Awin IDs after Shop Solar approval
-const AWIN_ADVERTISER_ID = "";
-const AWIN_PUBLISHER_ID = "";
+import { buildAffiliateUrl, deriveRetailerSlug } from "@/lib/affiliate";
 
 export function generateStaticParams() {
   return getKitSlugs().map((slug) => ({ slug }));
@@ -29,9 +24,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const kit = getKitBySlug(slug);
-  const title = kit ? `${kit.name} — Real Build Cost Breakdown` : "Kit Not Found";
+  const fullName = kit ? `${kit.brand} ${kit.name}` : "";
+  const title = kit ? `${fullName} — Real Build Cost Breakdown` : "Kit Not Found";
   const description = kit
-    ? `Full component breakdown and true total cost for the ${kit.name}. See what's included, what's missing, and the real price.`
+    ? `Full component breakdown and true total cost for the ${fullName}. See what's included, what's missing, and the real price.`
     : undefined;
 
   return {
@@ -39,7 +35,7 @@ export async function generateMetadata({
     description,
     alternates: { canonical: `/kits/${slug}` },
     openGraph: {
-      title: kit ? `${kit.name} | OffGridEmpire` : title,
+      title: kit ? `${fullName} | OffGridEmpire` : title,
       description,
       url: `/kits/${slug}`,
     },
@@ -62,19 +58,6 @@ const useCaseLabels: Record<string, string> = {
   boat: "Boat",
 };
 
-function buildAffiliateUrl(sourceUrl: string | undefined, retailerSlug = "amazon"): string | null {
-  if (!sourceUrl) return null;
-  if (retailerSlug === "amazon") {
-    const sep = sourceUrl.includes("?") ? "&" : "?";
-    return `${sourceUrl}${sep}tag=${AMAZON_AFFILIATE_TAG}`;
-  }
-  if (retailerSlug === "shop-solar-kits" && AWIN_ADVERTISER_ID && AWIN_PUBLISHER_ID) {
-    const encoded = encodeURIComponent(sourceUrl);
-    return `https://www.awin1.com/cread.php?awinmid=${AWIN_ADVERTISER_ID}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encoded}`;
-  }
-  return sourceUrl;
-}
-
 export default async function KitDetailPage({
   params,
 }: {
@@ -96,12 +79,13 @@ export default async function KitDetailPage({
 
   const missingItems = kit.items.filter((item) => !item.isIncluded);
   const includedItems = kit.items.filter((item) => item.isIncluded);
-  const affiliateUrl = buildAffiliateUrl(kit.sourceUrl, "amazon");
+  const primarySlug = kit.retailerSlug ?? deriveRetailerSlug(kit.retailer, kit.sourceUrl);
+  const affiliateUrl = buildAffiliateUrl(kit.sourceUrl, primarySlug);
 
   // Build offers array for RetailerListings — always at least one entry
   const allOffers = kit.offers && kit.offers.length > 0
     ? kit.offers.map((o) => ({ ...o, sourceUrl: buildAffiliateUrl(o.sourceUrl, o.retailerSlug) ?? o.sourceUrl }))
-    : [{ retailer: kit.retailer, retailerSlug: "amazon", price: kit.listedPrice, sourceUrl: affiliateUrl ?? undefined, inStock: true, observedAt: kit.priceObservedAt }];
+    : [{ retailer: kit.retailer, retailerSlug: primarySlug, price: kit.listedPrice, sourceUrl: affiliateUrl ?? undefined, inStock: true, observedAt: kit.priceObservedAt }];
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
@@ -109,7 +93,7 @@ export default async function KitDetailPage({
       <BreadcrumbJsonLd items={[
         { name: "Home", url: "/" },
         { name: "Kits", url: "/kits" },
-        { name: kit.name, url: `/kits/${kit.slug}` },
+        { name: `${kit.brand} ${kit.name}`, url: `/kits/${kit.slug}` },
       ]} />
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-[var(--text-muted)] mb-6">
@@ -123,20 +107,32 @@ export default async function KitDetailPage({
       {/* Header section */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
         {/* Left: Kit info */}
-        <div className="lg:col-span-2 space-y-5">
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <span className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)]">
-                {kit.brand}
-              </span>
-              <span className="text-xs text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-2 py-0.5">
-                via {kit.retailer}
-              </span>
-              <PriceTimestamp observedAt={kit.priceObservedAt} />
+        <div className="lg:col-span-2 space-y-6">
+          {/* Hero: image + title side by side */}
+          <div className="flex gap-6">
+            {kit.imageUrl && (
+              <div className="hidden sm:block shrink-0 w-40 h-40 rounded border border-[var(--border)] bg-[var(--bg-elevated)] overflow-hidden">
+                <img
+                  src={kit.imageUrl}
+                  alt={`${kit.brand} ${kit.displayName}`}
+                  className="w-full h-full object-contain p-2"
+                />
+              </div>
+            )}
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)]">
+                  {kit.brand}
+                </span>
+                <span className="text-xs text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-2 py-0.5">
+                  via {kit.retailer}
+                </span>
+                <PriceTimestamp observedAt={kit.priceObservedAt} />
+              </div>
+              <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)] leading-tight">
+                {kit.displayName}
+              </h1>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)] leading-tight">
-              {kit.name}
-            </h1>
           </div>
 
           {/* Specs row */}
@@ -252,7 +248,7 @@ export default async function KitDetailPage({
           </div>
 
           {/* Retailer listings — always visible */}
-          <RetailerListings offers={allOffers} kitName={kit.name} />
+          <RetailerListings offers={allOffers} kitName={`${kit.brand} ${kit.name}`} />
 
           {/* Compare CTA */}
           <Link
@@ -268,17 +264,16 @@ export default async function KitDetailPage({
       </div>
 
       {/* Gap Receipt — the viral feature */}
-      <section className="mb-10">
+      <section className="mb-12">
         <GapReceipt kit={kit} />
       </section>
 
       {/* Component Decomposition Table */}
       {kit.items.length > 0 && (
-        <section className="mb-10">
+        <section className="mb-12">
           <div className="flex items-center gap-3 mb-4">
-            <h2 className="text-xl font-bold text-[var(--text-primary)]">
-              Component Breakdown
-            </h2>
+            <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-[var(--accent)]">Component Breakdown</span>
+            <div className="flex-1 h-px bg-[var(--border)]" />
             <span className="text-xs text-[var(--text-muted)] border border-[var(--border)] rounded-sm px-2 py-0.5">
               {includedItems.length} included / {missingItems.length} missing
             </span>
@@ -289,15 +284,19 @@ export default async function KitDetailPage({
       )}
 
       {/* Price History */}
-      <section className="mb-10">
+      <section className="mb-12">
+        <div className="flex items-center gap-3 mb-4">
+          <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-[var(--accent)]">Price History</span>
+          <div className="flex-1 h-px bg-[var(--border)]" />
+        </div>
         <PriceHistorySection kit={kit} />
       </section>
 
       {/* Calculator CTA */}
-      <section className="mb-10">
+      <section className="mb-12">
         <Link
           href="/calculator"
-          className="flex items-center gap-3 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-4 hover:border-[var(--accent)]/50 hover:bg-[var(--accent)]/10 transition-colors group"
+          className="flex items-center gap-3 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-5 hover:border-[var(--accent)]/50 hover:bg-[var(--accent)]/10 transition-colors group"
         >
           <span className="text-2xl">⚡</span>
           <div>
@@ -305,7 +304,7 @@ export default async function KitDetailPage({
               Does this kit fit your needs?
             </p>
             <p className="text-xs text-[var(--text-muted)] mt-0.5">
-              Enter your appliances and location to see if {kit.name} covers your power requirements.
+              Enter your appliances and location to see if {kit.displayName} covers your power requirements.
             </p>
           </div>
           <svg className="ml-auto shrink-0 text-[var(--accent)]" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -315,20 +314,27 @@ export default async function KitDetailPage({
       </section>
 
       {/* Similar kits */}
-      <section>
-        <h2 className="text-xl font-bold text-[var(--text-primary)] mb-4">
-          Compare With Similar Kits
-        </h2>
+      <section className="rounded border border-[var(--accent)]/20 bg-[var(--bg-surface)] p-6">
+        <div className="flex items-center gap-3 mb-5">
+          <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-[var(--accent)]">Similar Kits</span>
+          <div className="flex-1 h-px bg-[var(--border)]" />
+          <Link href={`/compare?kits=${kit.slug}`} className="text-xs text-[var(--accent)] hover:underline">Compare all</Link>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {getSimilarKits(kit, getKits(), 3).map((k) => (
               <Link
                 key={k.slug}
                 href={`/kits/${k.slug}`}
-                className="group rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:border-[var(--border-accent)] transition-colors"
+                className="group rounded border border-[var(--border)] bg-[var(--bg-primary)] p-4 hover:border-[var(--border-accent)] hover:-translate-y-0.5 transition-all duration-200"
               >
-                <p className="text-xs font-medium text-[var(--text-muted)]">{k.brand}</p>
+                {k.imageUrl && (
+                  <div className="aspect-[16/10] rounded bg-[var(--bg-elevated)] overflow-hidden mb-3">
+                    <img src={k.imageUrl} alt={k.displayName} className="w-full h-full object-contain p-2" />
+                  </div>
+                )}
+                <p className="text-[11px] font-medium uppercase tracking-wider text-[var(--text-muted)]">{k.brand}</p>
                 <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors line-clamp-1 mt-0.5">
-                  {k.name}
+                  {k.displayName}
                 </p>
                 <div className="flex items-center gap-3 mt-2">
                   <span className="font-mono text-xs text-[var(--accent)]">${k.trueCost.toLocaleString()}</span>

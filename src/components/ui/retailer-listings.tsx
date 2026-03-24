@@ -149,6 +149,10 @@ export function RetailerListings({ offers, kitName }: RetailerListingsProps) {
                       <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
                     </svg>
                   </a>
+                ) : offer.inStock ? (
+                  <span className="inline-flex items-center px-3 py-1.5 text-[10px] font-medium text-[var(--text-muted)] border border-[var(--border)] rounded-sm">
+                    Link unavailable
+                  </span>
                 ) : null}
               </div>
             </div>
@@ -210,7 +214,7 @@ export function RetailerListings({ offers, kitName }: RetailerListingsProps) {
                   >
                     ${offer.price.toLocaleString()}
                   </div>
-                  {offer.inStock && offer.sourceUrl && (
+                  {offer.inStock && offer.sourceUrl ? (
                     <a
                       href={offer.sourceUrl}
                       target="_blank"
@@ -229,7 +233,11 @@ export function RetailerListings({ offers, kitName }: RetailerListingsProps) {
                         <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
                       </svg>
                     </a>
-                  )}
+                  ) : offer.inStock ? (
+                    <span className="mt-1 inline-flex items-center px-2.5 py-1 text-[10px] font-medium text-[var(--text-muted)] border border-[var(--border)] rounded-sm">
+                      Link unavailable
+                    </span>
+                  ) : null}
                 </div>
               </div>
             </div>
