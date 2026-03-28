@@ -28,11 +28,39 @@ export function trackCalcStep(step: number) {
 }
 
 /** User completes the calculator and sees results */
-export function trackCalcComplete(dailyWh: number, matchCount: number) {
+export function trackCalcComplete(params: {
+  dailyWh: number;
+  panelWatts: number;
+  storageWh: number;
+  inverterWatts: number;
+  matchCount: number;
+  topBucket: string | null;
+  sunHours: number;
+  sunSource: string;
+  batteryChem: string;
+  controller: string;
+  autonomyDays: number;
+  zipProvided: boolean;
+}) {
   gtag("event", "calc_complete", {
-    daily_wh: dailyWh,
-    match_count: matchCount,
+    daily_wh: Math.round(params.dailyWh),
+    panel_watts: Math.round(params.panelWatts),
+    storage_wh: Math.round(params.storageWh),
+    inverter_watts: Math.round(params.inverterWatts),
+    match_count: params.matchCount,
+    top_bucket: params.topBucket,
+    sun_hours: params.sunHours,
+    sun_source: params.sunSource,
+    battery_chem: params.batteryChem,
+    controller: params.controller,
+    autonomy_days: params.autonomyDays,
+    zip_provided: params.zipProvided ? "yes" : "no",
   });
+}
+
+/** User transitions between calculator steps */
+export function trackCalcFunnel(fromStep: number, toStep: number) {
+  gtag("event", "calc_funnel", { from_step: fromStep, to_step: toStep });
 }
 
 /** User clicks a kit card (from any listing page) */

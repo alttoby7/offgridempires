@@ -9,6 +9,8 @@ import { lookupSunHours, getSunTier, SUN_TIERS } from "@/lib/calculator/sun-hour
 import { computeSizing, matchKits } from "@/lib/calculator/engine";
 import { encodeState, decodeState } from "@/lib/calculator/url-codec";
 import { saveSizing } from "@/lib/calculator/calc-storage";
+import { recordStepTransition, recordSubmission } from "@/lib/calculator/calc-recording";
+import { trackCalcComplete, trackCalcFunnel } from "@/lib/analytics";
 import { StepLoads } from "./step-loads";
 import { StepLocation } from "./step-location";
 import { StepResults } from "./step-results";
@@ -64,8 +66,11 @@ export function CalculatorFlow({ allKits }: CalculatorFlowProps) {
     initialState?.assumptions ?? DEFAULT_ASSUMPTIONS
   );
 
-  // Mark hydrated after first render
-  useEffect(() => { hydrated.current = true; }, []);
+  // Mark hydrated after first render + record initial step
+  useEffect(() => {
+    hydrated.current = true;
+    recordStepTransition(initialState?.step ?? 1);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Load management ─────────────────────────────────────────────────────
 
@@ -145,18 +150,43 @@ export function CalculatorFlow({ allKits }: CalculatorFlowProps) {
   const sizing = useMemo(() => computeSizing(loads, assumptions), [loads, assumptions]);
   const kitMatches = useMemo(() => matchKits(sizing, allKits), [sizing, allKits]);
 
-  // Persist sizing to localStorage when user reaches results step
-  useEffect(() => {
-    if (step === 3 && sizing.totalDailyWh > 0) {
-      saveSizing(sizing);
-    }
-  }, [step, sizing]);
-
   // ── Share URL ──────────────────────────────────────────────────────────
 
   const shareUrl = useMemo(() => {
     const params = encodeState(3, loads, assumptions);
     return `https://offgridempire.com/calculator?${params.toString()}`;
+  }, [loads, assumptions]);
+
+  // Persist sizing + record submission when user reaches results step
+  const hasRecorded = useRef(false);
+
+  useEffect(() => {
+    if (step === 3 && sizing.totalDailyWh > 0) {
+      saveSizing(sizing);
+      if (!hasRecorded.current) {
+        hasRecorded.current = true;
+        recordSubmission(loads, assumptions, sizing, kitMatches, shareUrl);
+        trackCalcComplete({
+          dailyWh: sizing.totalDailyWh,
+          panelWatts: sizing.requiredPanelWatts,
+          storageWh: sizing.requiredStorageWh,
+          inverterWatts: sizing.requiredInverterWatts,
+          matchCount: kitMatches.length,
+          topBucket: kitMatches[0]?.bucket ?? null,
+          sunHours: assumptions.sunHoursPerDay,
+          sunSource: assumptions.sunSource,
+          batteryChem: assumptions.batteryChemistry,
+          controller: assumptions.controllerType,
+          autonomyDays: assumptions.autonomyDays,
+          zipProvided: !!assumptions.zipCode,
+        });
+      }
+    }
+  }, [step, sizing, loads, assumptions, kitMatches, shareUrl]);
+
+  // Reset recording guard when inputs change (so re-runs get recorded)
+  useEffect(() => {
+    hasRecorded.current = false;
   }, [loads, assumptions]);
 
   // ── Daily Wh running total ──────────────────────────────────────────────
@@ -168,11 +198,19 @@ export function CalculatorFlow({ allKits }: CalculatorFlowProps) {
   const canAdvance = step === 1 ? loads.length > 0 : true;
 
   const goNext = useCallback(() => {
-    if (step < 3) setStep((s) => (s + 1) as 1 | 2 | 3);
+    if (step < 3) {
+      const next = (step + 1) as 1 | 2 | 3;
+      setStep(next);
+      recordStepTransition(next);
+      trackCalcFunnel(step, next);
+    }
   }, [step]);
 
   const goBack = useCallback(() => {
-    if (step > 1) setStep((s) => (s - 1) as 1 | 2 | 3);
+    if (step > 1) {
+      const prev = (step - 1) as 1 | 2 | 3;
+      setStep(prev);
+    }
   }, [step]);
 
   return (
