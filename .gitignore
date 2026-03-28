@@ -33,6 +33,10 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# discovery outputs (local-only, not committed)
+scripts/asin_candidates.json
+scripts/.bestsellers_cache.json
+
 # vercel
 .vercel
 
