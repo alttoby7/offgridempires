@@ -7,6 +7,7 @@ import type { Kit } from "@/lib/demo-data";
 import type { SizingResult, KitMatch, FitBucket } from "@/lib/calculator/types";
 import { matchKits, BUCKET_LABELS } from "@/lib/calculator/engine";
 import { loadSizing, clearSizing } from "@/lib/calculator/calc-storage";
+import type { PriceHistoryPoint } from "@/lib/demo-data";
 import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
@@ -135,6 +136,16 @@ function FilterDropdown({
 
 // ── Kit Card ────────────────────────────────────────────────────────────────
 
+/** Check if current price is within 5% of historical low */
+function isNearAllTimeLow(kit: Kit): boolean {
+  const history = (kit as Kit & { priceHistory?: PriceHistoryPoint[] }).priceHistory;
+  if (!history || history.length < 5) return false;
+  const currentCents = kit.listedPrice * 100;
+  const allTimeLow = Math.min(...history.map((p) => p.priceCents));
+  if (allTimeLow <= 0) return false;
+  return currentCents <= allTimeLow * 1.05;
+}
+
 function MatchBadge({ match }: { match: KitMatch }) {
   const { label, color } = BUCKET_LABELS[match.bucket];
   const pct = Math.round(match.score);
@@ -175,10 +186,15 @@ function KitListCard({
           : "border border-[var(--border)] hover:border-[var(--border-accent)]"
       }`}
     >
-      {/* Match badge */}
-      {match && (
-        <div className="px-5 pt-3 pb-0">
-          <MatchBadge match={match} />
+      {/* Match badge + price badge */}
+      {(match || isNearAllTimeLow(kit)) && (
+        <div className="px-5 pt-3 pb-0 flex flex-wrap gap-1.5">
+          {match && <MatchBadge match={match} />}
+          {isNearAllTimeLow(kit) && (
+            <span className="inline-flex items-center gap-1 px-2 py-1 rounded text-[10px] font-semibold uppercase tracking-wide text-[var(--success)] bg-[var(--success)]/10 border-l-2 border-[var(--success)]">
+              Near All-Time Low
+            </span>
+          )}
         </div>
       )}
 
