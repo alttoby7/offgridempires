@@ -1,13 +1,26 @@
 import Link from "next/link";
 import type { Kit } from "@/lib/demo-data";
+import type { FitBucket } from "@/lib/calculator/types";
 
 interface KitCardProps {
   kit: Kit;
   /** Compact mode for homepage featured cards */
   compact?: boolean;
+  /** Match score from calculator (0-300 scale, avg of 3 coverage %) */
+  matchScore?: number;
+  /** Fit bucket from calculator */
+  matchBucket?: FitBucket;
 }
 
-export function KitCard({ kit, compact = false }: KitCardProps) {
+const BUCKET_COLORS: Record<FitBucket, string> = {
+  meets: "var(--success)",
+  near: "var(--accent)",
+  lighter: "var(--warning)",
+  "solar-only": "var(--text-muted)",
+  undersized: "var(--danger)",
+};
+
+export function KitCard({ kit, compact = false, matchScore, matchBucket }: KitCardProps) {
   const hasMissing = kit.missingCost > 0;
   const includedCount = Object.values(kit.included).filter(Boolean).length;
   const totalRoles = Object.keys(kit.included).length;
@@ -24,6 +37,19 @@ export function KitCard({ kit, compact = false }: KitCardProps) {
       </div>
 
       <div className="p-4 flex-1 flex flex-col gap-3">
+        {/* Match badge */}
+        {matchScore !== undefined && matchBucket && (
+          <span
+            className="self-start font-mono text-[10px] font-semibold px-1.5 py-0.5 rounded"
+            style={{
+              color: BUCKET_COLORS[matchBucket],
+              backgroundColor: `color-mix(in srgb, ${BUCKET_COLORS[matchBucket]} 12%, transparent)`,
+            }}
+          >
+            {Math.round(matchScore)}% match
+          </span>
+        )}
+
         {/* Tier 1: Brand + Name + Price (instant scan) */}
         <div>
           <p className="text-[11px] font-medium uppercase tracking-wider text-[var(--text-muted)]">

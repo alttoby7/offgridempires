@@ -1,9 +1,12 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useState, useMemo, useCallback, useEffect } from "react";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import type { Kit } from "@/lib/demo-data";
+import type { SizingResult, KitMatch, FitBucket } from "@/lib/calculator/types";
+import { matchKits, BUCKET_LABELS } from "@/lib/calculator/engine";
+import { loadSizing, clearSizing } from "@/lib/calculator/calc-storage";
 import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
@@ -11,6 +14,7 @@ import { TrueCostBar } from "@/components/ui/true-cost-bar";
 // ── Sort ────────────────────────────────────────────────────────────────────
 
 type SortKey =
+  | "best_match"
   | "true_cost_asc"
   | "true_cost_desc"
   | "cost_per_w"
@@ -19,7 +23,7 @@ type SortKey =
   | "storage"
   | "completeness";
 
-const SORT_OPTIONS: { value: SortKey; label: string }[] = [
+const SORT_OPTIONS_BASE: { value: SortKey; label: string }[] = [
   { value: "true_cost_asc", label: "Real Build Cost: Low → High" },
   { value: "true_cost_desc", label: "Real Build Cost: High → Low" },
   { value: "cost_per_w", label: "Cost per Watt (solar)" },
@@ -29,9 +33,21 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: "completeness", label: "Completeness" },
 ];
 
-function sortKits(kits: Kit[], key: SortKey): Kit[] {
+const BEST_MATCH_OPTION = { value: "best_match" as SortKey, label: "Best Match for You" };
+
+function sortKits(
+  kits: Kit[],
+  key: SortKey,
+  matchMap?: Map<string, KitMatch>
+): Kit[] {
   const sorted = [...kits];
   switch (key) {
+    case "best_match":
+      return sorted.sort((a, b) => {
+        const ma = matchMap?.get(a.slug);
+        const mb = matchMap?.get(b.slug);
+        return (mb?.score ?? -1) - (ma?.score ?? -1);
+      });
     case "true_cost_asc":
       return sorted.sort((a, b) => a.trueCost - b.trueCost);
     case "true_cost_desc":
@@ -119,14 +135,35 @@ function FilterDropdown({
 
 // ── Kit Card ────────────────────────────────────────────────────────────────
 
+function MatchBadge({ match }: { match: KitMatch }) {
+  const { label, color } = BUCKET_LABELS[match.bucket];
+  const pct = Math.round(match.score);
+  return (
+    <div
+      className="flex items-center gap-1.5 px-2 py-1 rounded text-[10px] font-semibold uppercase tracking-wide"
+      style={{
+        color: `${color}`,
+        backgroundColor: `color-mix(in srgb, ${color} 12%, transparent)`,
+        borderLeft: `2px solid ${color}`,
+      }}
+    >
+      <span>{pct}% match</span>
+      <span className="opacity-60">&middot;</span>
+      <span className="opacity-80">{label}</span>
+    </div>
+  );
+}
+
 function KitListCard({
   kit,
   isComparing,
   onToggleCompare,
+  match,
 }: {
   kit: Kit;
   isComparing: boolean;
   onToggleCompare: () => void;
+  match?: KitMatch;
 }) {
   const hasMissing = kit.missingCost > 0;
 
@@ -138,6 +175,13 @@ function KitListCard({
           : "border border-[var(--border)] hover:border-[var(--border-accent)]"
       }`}
     >
+      {/* Match badge */}
+      {match && (
+        <div className="px-5 pt-3 pb-0">
+          <MatchBadge match={match} />
+        </div>
+      )}
+
       {/* Compare checkbox */}
       <label className="absolute top-3 right-3 z-10 flex items-center gap-1.5 cursor-pointer">
         <input
@@ -287,6 +331,28 @@ function KitListCard({
 export function KitBrowser({ allKits }: { allKits: Kit[] }) {
   const searchParams = useSearchParams();
   const router = useRouter();
+  const pathname = usePathname();
+
+  // ── Calculator sizing from localStorage ──────────────────────────────────
+  const [sizing, setSizing] = useState<SizingResult | null>(null);
+
+  useEffect(() => {
+    const stored = loadSizing();
+    if (stored) setSizing(stored.sizing);
+  }, []);
+
+  const matchMap = useMemo(() => {
+    if (!sizing || sizing.totalDailyWh === 0) return new Map<string, KitMatch>();
+    const matches = matchKits(sizing, allKits);
+    const map = new Map<string, KitMatch>();
+    for (const m of matches) map.set(m.kit.slug, m);
+    return map;
+  }, [sizing, allKits]);
+
+  const handleClearSizing = useCallback(() => {
+    clearSizing();
+    setSizing(null);
+  }, []);
 
   // Derive filter options from data
   const brands = useMemo(
@@ -302,8 +368,15 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
     [allKits]
   );
 
+  // Sort options: include "Best Match" when sizing exists
+  const sortOptions = useMemo(
+    () => (sizing ? [BEST_MATCH_OPTION, ...SORT_OPTIONS_BASE] : SORT_OPTIONS_BASE),
+    [sizing]
+  );
+
   // Read state from URL params (with defaults)
-  const sortKey = (searchParams.get("sort") as SortKey) || "true_cost_asc";
+  const defaultSort = sizing ? "best_match" : "true_cost_asc";
+  const sortKey = (searchParams.get("sort") as SortKey) || defaultSort;
   const brandFilter = searchParams.get("brand") || "all";
   const chemFilter = searchParams.get("chemistry") || "all";
   const voltageFilter = searchParams.get("voltage") || "all";
@@ -335,7 +408,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
         params.set(key, value);
       }
       const qs = params.toString();
-      router.replace(`/kits${qs ? `?${qs}` : ""}`, { scroll: false });
+      router.replace(`${pathname}${qs ? `?${qs}` : ""}`, { scroll: false });
     },
     [searchParams, router]
   );
@@ -363,8 +436,8 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
       kits = kits.filter((k) => k.completeness === 100);
     }
 
-    return sortKits(kits, sortKey);
-  }, [allKits, sortKey, brandFilter, chemFilter, voltageFilter, priceFilter, completeOnly]);
+    return sortKits(kits, sortKey, matchMap);
+  }, [allKits, sortKey, brandFilter, chemFilter, voltageFilter, priceFilter, completeOnly, matchMap]);
 
   const activeFilterCount = [
     brandFilter !== "all",
@@ -376,6 +449,31 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
 
   return (
     <>
+      {/* Sizing banner (when calculator results exist) */}
+      {sizing && sizing.totalDailyWh > 0 && (
+        <div className="mb-6 flex flex-wrap items-center gap-x-4 gap-y-2 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5 px-4 py-3">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--accent)] shrink-0">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg>
+          <span className="text-sm text-[var(--text-secondary)]">
+            Based on your power profile:
+          </span>
+          <span className="font-mono text-sm font-semibold text-[var(--accent)]">
+            {sizing.totalDailyWh.toLocaleString()} Wh/day
+          </span>
+          <span className="text-[var(--text-muted)]">&middot;</span>
+          <span className="font-mono text-xs text-[var(--text-secondary)]">
+            {sizing.requiredPanelWatts}W solar &middot; {(sizing.requiredStorageWh / 1000).toFixed(1)}kWh storage &middot; {sizing.requiredInverterWatts}W inverter
+          </span>
+          <button
+            onClick={handleClearSizing}
+            className="ml-auto text-xs text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors"
+          >
+            Clear
+          </button>
+        </div>
+      )}
+
       {/* Page header */}
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
         <div>
@@ -388,10 +486,10 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
           <span className="text-xs font-medium text-[var(--text-muted)] uppercase">Sort:</span>
           <select
             value={sortKey}
-            onChange={(e) => setParam("sort", e.target.value, "true_cost_asc")}
+            onChange={(e) => setParam("sort", e.target.value, defaultSort)}
             className="rounded border border-[var(--border)] bg-[var(--bg-surface)] px-3 py-1.5 text-xs text-[var(--text-secondary)] focus:border-[var(--accent)] focus:outline-none"
           >
-            {SORT_OPTIONS.map((o) => (
+            {sortOptions.map((o) => (
               <option key={o.value} value={o.value}>
                 {o.label}
               </option>
@@ -441,7 +539,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
         {/* Clear filters */}
         {activeFilterCount > 0 && (
           <button
-            onClick={() => router.replace("/kits", { scroll: false })}
+            onClick={() => router.replace(pathname, { scroll: false })}
             className="text-xs uppercase tracking-wide text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
           >
             Clear {activeFilterCount} filter{activeFilterCount > 1 ? "s" : ""}
@@ -515,6 +613,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
               kit={kit}
               isComparing={compareSet.has(kit.slug)}
               onToggleCompare={() => toggleCompare(kit.slug)}
+              match={matchMap.get(kit.slug)}
             />
           ))}
         </div>
@@ -536,7 +635,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
           </svg>
           <p className="text-sm text-[var(--text-muted)]">No kits match your filters</p>
           <button
-            onClick={() => router.replace("/kits", { scroll: false })}
+            onClick={() => router.replace(pathname, { scroll: false })}
             className="mt-2 text-xs text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
           >
             Clear all filters

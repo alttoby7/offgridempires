@@ -8,6 +8,7 @@ import { APPLIANCE_CATALOG, LOAD_PRESETS } from "@/lib/calculator/appliances";
 import { lookupSunHours, getSunTier, SUN_TIERS } from "@/lib/calculator/sun-hours";
 import { computeSizing, matchKits } from "@/lib/calculator/engine";
 import { encodeState, decodeState } from "@/lib/calculator/url-codec";
+import { saveSizing } from "@/lib/calculator/calc-storage";
 import { StepLoads } from "./step-loads";
 import { StepLocation } from "./step-location";
 import { StepResults } from "./step-results";
@@ -143,6 +144,13 @@ export function CalculatorFlow({ allKits }: CalculatorFlowProps) {
 
   const sizing = useMemo(() => computeSizing(loads, assumptions), [loads, assumptions]);
   const kitMatches = useMemo(() => matchKits(sizing, allKits), [sizing, allKits]);
+
+  // Persist sizing to localStorage when user reaches results step
+  useEffect(() => {
+    if (step === 3 && sizing.totalDailyWh > 0) {
+      saveSizing(sizing);
+    }
+  }, [step, sizing]);
 
   // ── Share URL ──────────────────────────────────────────────────────────
 
