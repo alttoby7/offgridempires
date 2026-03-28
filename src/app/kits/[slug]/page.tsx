@@ -12,6 +12,7 @@ import { RetailerListings } from "@/components/ui/retailer-listings";
 import { KitProductJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { getSimilarKits } from "@/lib/similar-kits";
 import { buildAffiliateUrl, deriveRetailerSlug } from "@/lib/affiliate";
+import { AffiliateLink } from "@/components/ui/affiliate-link";
 
 export function generateStaticParams() {
   return getKitSlugs().map((slug) => ({ slug }));
@@ -194,17 +195,18 @@ export default async function KitDetailPage({
 
             {/* CTA — only render as link when affiliate URL exists */}
             {affiliateUrl ? (
-              <a
+              <AffiliateLink
                 href={affiliateUrl}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
+                kitSlug={kit.slug}
+                retailer={kit.retailer ?? "unknown"}
+                price={kit.listedPrice}
                 className="flex items-center justify-center gap-2 w-full rounded bg-[var(--accent)] py-3 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
               >
                 View on {kit.retailer}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
                 </svg>
-              </a>
+              </AffiliateLink>
             ) : (
               <div className="flex items-center justify-center gap-2 w-full rounded bg-[var(--bg-elevated)] py-3 text-sm font-medium text-[var(--text-muted)] cursor-not-allowed">
                 Retailer link unavailable

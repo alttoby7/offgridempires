@@ -79,7 +79,7 @@ export function Hero({ trapKit, kitCount, brandCount }: HeroProps) {
               {[
                 { value: String(kitCount), label: "Kits Tracked" },
                 { value: String(brandCount), label: "Brands" },
-                { value: "6hr", label: "Price Updates" },
+                { value: "6hr", label: "Price Tracking" },
                 { value: "$0", label: "Always Free" },
               ].map((stat) => (
                 <div key={stat.label} className="flex items-baseline gap-1.5">
