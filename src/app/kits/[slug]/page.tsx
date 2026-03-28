@@ -13,6 +13,7 @@ import { KitProductJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { getSimilarKits } from "@/lib/similar-kits";
 import { buildAffiliateUrl, deriveRetailerSlug } from "@/lib/affiliate";
 import { AffiliateLink } from "@/components/ui/affiliate-link";
+import { StickyBuyBar } from "@/components/ui/sticky-buy-bar";
 
 export function generateStaticParams() {
   return getKitSlugs().map((slug) => ({ slug }));
@@ -383,6 +384,17 @@ export default async function KitDetailPage({
             ))}
         </div>
       </section>
+
+      {/* Sticky mobile buy bar */}
+      {affiliateUrl && (
+        <StickyBuyBar
+          trueCost={kit.trueCost}
+          retailer={kit.retailer ?? "Retailer"}
+          affiliateUrl={affiliateUrl}
+          kitSlug={kit.slug}
+          listedPrice={kit.listedPrice}
+        />
+      )}
     </div>
   );
 }
