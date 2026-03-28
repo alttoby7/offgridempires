@@ -13,7 +13,10 @@ import * as path from "path";
 import * as fs from "fs";
 
 // Load env BEFORE importing DB modules
-dotenv.config({ path: path.resolve(__dirname, "../../../google-drive/0-AI/.env") });
+// On the droplet, OFFGRID_DATABASE_URL is already set; locally, load from central .env
+if (!process.env.OFFGRID_DATABASE_URL) {
+  dotenv.config({ path: path.resolve(__dirname, "../../../google-drive/0-AI/.env") });
+}
 
 import { getKitsForListingWithHistory, getPriceHistoryBySeries } from "../src/lib/db/queries";
 
