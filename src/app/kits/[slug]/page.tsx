@@ -133,6 +133,46 @@ export default async function KitDetailPage({
             <SpecBlock label="Cost/Wh" value={kit.costPerWh} highlight />
           </div>
 
+          {/* Voltage + Chemistry row */}
+          <div className="grid grid-cols-2 gap-2">
+            <div className="rounded bg-[var(--bg-surface)] border border-[var(--border)] p-3">
+              <p className="text-[10px] font-medium uppercase tracking-wide text-[var(--text-muted)] mb-0.5">System Voltage</p>
+              <p className="font-mono text-sm font-semibold text-[var(--text-primary)]">{kit.voltage > 0 ? `${kit.voltage}V` : "N/A"}</p>
+              <details className="mt-1.5 group">
+                <summary className="text-[10px] text-[var(--text-muted)] cursor-pointer hover:text-[var(--accent)] transition-colors select-none list-none flex items-center gap-1">
+                  <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0 transition-transform group-open:rotate-90"><path d="M9 18l6-6-6-6" /></svg>
+                  Why this matters
+                </summary>
+                <p className="mt-1 text-[10px] text-[var(--text-secondary)] leading-relaxed">
+                  {kit.voltage <= 12
+                    ? "12V systems are simplest but limited to ~2,000W. Good for small RV/cabin builds with short wire runs."
+                    : kit.voltage <= 24
+                    ? "24V halves current vs 12V, allowing thinner wires and less loss. Sweet spot for mid-size off-grid systems."
+                    : "48V is standard for large systems (5kW+). Lower current means less copper, less heat, and better efficiency over long runs."}
+                </p>
+              </details>
+            </div>
+            <div className="rounded bg-[var(--bg-surface)] border border-[var(--border)] p-3">
+              <p className="text-[10px] font-medium uppercase tracking-wide text-[var(--text-muted)] mb-0.5">Battery Chemistry</p>
+              <p className="font-mono text-sm font-semibold text-[var(--text-primary)]">{kit.chemistry !== "None" ? kit.chemistry : "N/A"}</p>
+              <details className="mt-1.5 group">
+                <summary className="text-[10px] text-[var(--text-muted)] cursor-pointer hover:text-[var(--accent)] transition-colors select-none list-none flex items-center gap-1">
+                  <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0 transition-transform group-open:rotate-90"><path d="M9 18l6-6-6-6" /></svg>
+                  Why this matters
+                </summary>
+                <p className="mt-1 text-[10px] text-[var(--text-secondary)] leading-relaxed">
+                  {kit.chemistry === "LiFePO4"
+                    ? "LiFePO4 (lithium iron phosphate) lasts 3,000-5,000 cycles, handles 90% depth of discharge, and won\u2019t catch fire. The gold standard for off-grid."
+                    : kit.chemistry === "Li-ion"
+                    ? "Li-ion packs more energy per pound but is rated for fewer cycles than LiFePO4. Common in portable stations where weight matters most."
+                    : kit.chemistry === "AGM" || kit.chemistry === "Lead-Acid"
+                    ? "Lead-acid/AGM batteries cost less upfront but only handle 50% depth of discharge, weigh 3-4x more, and last 300-500 cycles. Budget option for stationary installs."
+                    : "Battery chemistry determines lifespan, usable capacity, weight, and safety. LiFePO4 is the most common choice for off-grid solar."}
+                </p>
+              </details>
+            </div>
+          </div>
+
           {/* Completeness */}
           <div>
             <div className="flex items-center gap-3 mb-2">
@@ -270,6 +310,20 @@ export default async function KitDetailPage({
           </div>
 
           <BomTable items={kit.items} missingCost={kit.missingCost} />
+
+          {missingItems.length > 0 && (
+            <details className="mt-3 group">
+              <summary className="text-xs text-[var(--text-muted)] cursor-pointer hover:text-[var(--accent)] transition-colors select-none list-none flex items-center gap-1.5">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0 transition-transform group-open:rotate-90"><path d="M9 18l6-6-6-6" /></svg>
+                Why are some components missing?
+              </summary>
+              <p className="mt-2 pl-4 text-xs text-[var(--text-secondary)] leading-relaxed border-l border-[var(--border)]">
+                Many kits advertise a low price by leaving out essential parts like batteries, inverters, or wiring.
+                Our &ldquo;Real Build Cost&rdquo; adds back everything you&rsquo;d need to buy separately to get a working system.
+                That&rsquo;s why the number at the top may be higher than what the retailer shows.
+              </p>
+            </details>
+          )}
         </section>
       )}
 

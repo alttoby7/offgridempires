@@ -209,6 +209,25 @@ export default async function UseCasePage({
         </div>
       </div>
 
+      {/* Calculator CTA */}
+      <Link
+        href="/calculator"
+        className="flex items-center gap-3 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-4 mb-6 hover:border-[var(--accent)]/50 hover:bg-[var(--accent)]/10 transition-colors group"
+      >
+        <span className="text-xl">⚡</span>
+        <div className="flex-1">
+          <p className="text-sm font-semibold text-[var(--accent)] group-hover:underline">
+            Size your system for {uc.h1.replace("Best Solar Kits for ", "")}
+          </p>
+          <p className="text-xs text-[var(--text-muted)] mt-0.5">
+            Enter your exact appliances to find kits that fit your power needs.
+          </p>
+        </div>
+        <svg className="shrink-0 text-[var(--accent)]" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </Link>
+
       {/* Tips */}
       <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-5 mb-8">
         <h2 className="text-sm font-semibold text-[var(--text-primary)] mb-3">
