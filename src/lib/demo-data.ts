@@ -23,6 +23,8 @@ export interface KitPriceHistory {
   lowestAvailable: Array<{ date: string; priceCents: number | null }>;
 }
 
+export type SystemType = "portable" | "diy-kit" | "whole-home" | "panels-only";
+
 export interface Kit {
   id: string;
   slug: string;
@@ -52,6 +54,7 @@ export interface Kit {
   items: KitItem[];
   priceHistory?: PriceHistoryPoint[];
   offers?: KitOffer[];
+  systemType?: SystemType;
 }
 
 export interface KitOffer {

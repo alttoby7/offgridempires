@@ -5,26 +5,28 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "/kits", label: "Kits" },
+  { href: "/portable-power", label: "Portable" },
+  { href: "/solar-kits", label: "DIY Kits" },
+  { href: "/whole-home", label: "Large Systems" },
   { href: "/calculator", label: "Calculator" },
-  { href: "/products", label: "Components" },
   { href: "/compare", label: "Compare" },
-  { href: "/categories/batteries", label: "Categories" },
 ];
 
 const mobileMenuSections = [
   {
-    title: "Browse",
+    title: "Shop by Type",
     links: [
+      { href: "/portable-power", label: "Portable Power Stations" },
+      { href: "/solar-kits", label: "DIY Solar Kits" },
+      { href: "/whole-home", label: "Whole-Home Systems" },
       { href: "/kits", label: "All Kits" },
-      { href: "/products", label: "Components" },
-      { href: "/compare", label: "Compare" },
     ],
   },
   {
     title: "Tools",
     links: [
       { href: "/calculator", label: "Size My System" },
+      { href: "/compare", label: "Compare Kits" },
       { href: "/methodology", label: "How We Score" },
     ],
   },
@@ -47,15 +49,6 @@ const mobileMenuSections = [
       { href: "/brands/bluetti", label: "Bluetti" },
       { href: "/brands/jackery", label: "Jackery" },
       { href: "/brands/eco-worthy", label: "Eco-Worthy" },
-    ],
-  },
-  {
-    title: "Categories",
-    links: [
-      { href: "/categories/batteries", label: "Batteries" },
-      { href: "/categories/panels", label: "Panels" },
-      { href: "/categories/inverters", label: "Inverters" },
-      { href: "/categories/charge-controllers", label: "Charge Controllers" },
     ],
   },
 ];
@@ -129,10 +122,10 @@ export function Header() {
             {/* CTA + Mobile toggle */}
             <div className="flex items-center gap-3">
               <Link
-                href="/kits"
+                href="/calculator"
                 className="hidden sm:inline-flex items-center gap-2 rounded bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
               >
-                Browse Kits
+                Size My System
                 <svg
                   width="14"
                   height="14"

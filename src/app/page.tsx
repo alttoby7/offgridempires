@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/hero";
 import { KitCard } from "@/components/kit-card";
 import { WebSiteJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
-import { getKits } from "@/lib/get-kits";
+import { getKits, getKitsByType, getKitCounts } from "@/lib/get-kits";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   },
 };
 
-// Use case chips for Browse by Use Case row
 const useCaseChips = [
   { id: "rv", label: "RV & Van Life", href: "/best-for/rv" },
   { id: "cabin", label: "Cabin", href: "/best-for/cabin" },
@@ -28,33 +27,40 @@ const useCaseChips = [
   { id: "boat", label: "Boat", href: "/best-for/boat" },
 ];
 
-export default function HomePage() {
-  const kits = getKits();
-
-  const brandCount = new Set(kits.map((k) => k.brand)).size;
-
-  // --- Trap Kit: worst completion gap (highest missingCost/listedPrice ratio) ---
-  const trapKit = kits
-    .filter((k) => k.missingCost > 0 && k.listedPrice > 0)
-    .sort((a, b) => b.missingCost / b.listedPrice - a.missingCost / a.listedPrice)[0];
-
-  // --- Smart Path picks (data-driven) ---
-  const cheapest = [...kits].sort((a, b) => a.listedPrice - b.listedPrice)[0];
-
-  const cheapestComplete = [...kits]
-    .filter((k) => k.completeness >= 90)
-    .sort((a, b) => a.trueCost - b.trueCost)[0];
-
-  const mostStorage = [...kits].sort((a, b) => b.storageWh - a.storageWh)[0];
-
-  const bestValue = [...kits]
-    .filter((k) => k.costPerWh !== "N/A")
+function getBestByValue(kits: ReturnType<typeof getKits>) {
+  return [...kits]
+    .filter((k) => k.costPerWh !== "N/A" && k.listedPrice > 0)
     .sort(
       (a, b) =>
         parseFloat(a.costPerWh.replace("$", "")) -
         parseFloat(b.costPerWh.replace("$", ""))
     )[0];
+}
 
+export default function HomePage() {
+  const kits = getKits();
+  const counts = getKitCounts();
+  const brandCount = new Set(kits.map((k) => k.brand)).size;
+
+  // Trap Kit: worst completion gap
+  const trapKit = kits
+    .filter((k) => k.missingCost > 0 && k.listedPrice > 0)
+    .sort(
+      (a, b) =>
+        b.missingCost / b.listedPrice - a.missingCost / a.listedPrice
+    )[0];
+
+  // Smart Path picks
+  const cheapest = [...kits].sort(
+    (a, b) => a.listedPrice - b.listedPrice
+  )[0];
+  const cheapestComplete = [...kits]
+    .filter((k) => k.completeness >= 90)
+    .sort((a, b) => a.trueCost - b.trueCost)[0];
+  const mostStorage = [...kits].sort(
+    (a, b) => b.storageWh - a.storageWh
+  )[0];
+  const bestValue = getBestByValue(kits);
   const bestSolarValue = [...kits]
     .filter((k) => k.costPerW !== "N/A")
     .sort(
@@ -69,9 +75,10 @@ export default function HomePage() {
       eyebrow: "Lowest upfront price",
       kit: cheapest,
       stat: `$${cheapest.listedPrice.toLocaleString()}`,
-      detail: cheapest.missingCost > 0
-        ? `+$${cheapest.missingCost.toLocaleString()} missing`
-        : "Nothing missing",
+      detail:
+        cheapest.missingCost > 0
+          ? `+$${cheapest.missingCost.toLocaleString()} missing`
+          : "Nothing missing",
     },
     cheapestComplete && {
       label: "Cheapest Complete",
@@ -109,50 +116,176 @@ export default function HomePage() {
     detail: string;
   }[];
 
-  // --- Featured Kits: 4 intentionally curated, deduplicated ---
-  const pathSlugs = new Set(smartPaths.map((p) => p.kit.slug));
-  const bestComplete = [...kits]
-    .filter((k) => k.completeness >= 80)
-    .sort((a, b) => b.completeness - a.completeness || a.trueCost - b.trueCost)[0];
-  const bigStorage = [...kits].sort((a, b) => b.storageWh - a.storageWh)[0];
-  const budgetPick = [...kits].sort((a, b) => a.listedPrice - b.listedPrice)[0];
+  // Featured kits by type — best value from each category
+  const portableKits = getKitsByType("portable");
+  const diyKits = getKitsByType("diy-kit");
+  const wholeHomeKits = getKitsByType("whole-home");
 
-  const featuredCandidates = [trapKit, bestComplete, bigStorage, budgetPick].filter(Boolean);
-  const featured: (typeof kits)[0][] = [];
-  const usedSlugs = new Set<string>();
-
-  for (const kit of featuredCandidates) {
-    if (!usedSlugs.has(kit.slug) && featured.length < 4) {
-      featured.push(kit);
-      usedSlugs.add(kit.slug);
-    }
-  }
-  // Fill remaining slots if deduplication removed some
-  if (featured.length < 4) {
-    for (const kit of kits) {
-      if (!usedSlugs.has(kit.slug) && featured.length < 4) {
-        featured.push(kit);
-        usedSlugs.add(kit.slug);
-      }
-    }
-  }
+  const topPortable = [...portableKits]
+    .sort((a, b) => a.trueCost - b.trueCost)
+    .slice(0, 4);
+  const topDiy = [...diyKits, ...getKitsByType("panels-only")]
+    .sort((a, b) => a.trueCost - b.trueCost)
+    .slice(0, 4);
+  const topWholeHome = [...wholeHomeKits]
+    .sort((a, b) => a.trueCost - b.trueCost)
+    .slice(0, 4);
 
   return (
     <>
       <WebSiteJsonLd />
       <BreadcrumbJsonLd items={[{ name: "Home", url: "/" }]} />
 
-      {/* Section 1: Hero — Live Reality Check */}
-      {trapKit && <Hero trapKit={trapKit} kitCount={kits.length} brandCount={brandCount} />}
+      {/* Section 1: Hero */}
+      {trapKit && (
+        <Hero
+          trapKit={trapKit}
+          kitCount={kits.length}
+          brandCount={brandCount}
+        />
+      )}
 
-      {/* Section 2: Smart Paths */}
+      {/* Section 2: Persona Router — "What are you looking for?" */}
       <section className="border-b border-[var(--border)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
           <h2 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] mb-4">
-            Find Your Kit
+            What are you looking for?
           </h2>
 
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {/* Portable Power */}
+            <Link
+              href="/portable-power"
+              className="group relative rounded border border-[var(--border)] bg-[var(--bg-surface)] p-6 hover:border-[var(--accent)]/50 hover:bg-[var(--bg-elevated)] transition-all"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded bg-[var(--accent)]/10">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-[var(--accent)]"
+                  >
+                    <rect x="1" y="6" width="18" height="12" rx="2" ry="2" />
+                    <line x1="23" y1="13" x2="23" y2="11" />
+                  </svg>
+                </div>
+                <span className="font-mono text-xs text-[var(--text-muted)]">
+                  {counts.portable}
+                </span>
+              </div>
+              <h3 className="text-lg font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+                Portable Power
+              </h3>
+              <p className="text-sm text-[var(--text-secondary)] mt-1 leading-relaxed">
+                All-in-one battery stations. No wiring, no installation. Plug in
+                and go.
+              </p>
+              <p className="text-xs text-[var(--text-muted)] mt-3">
+                EcoFlow, Bluetti, Jackery, Anker
+              </p>
+              <div className="mt-4 text-sm font-medium text-[var(--accent)] group-hover:underline">
+                Browse stations &rarr;
+              </div>
+            </Link>
+
+            {/* Build My System (→ Calculator) */}
+            <Link
+              href="/calculator"
+              className="group relative rounded border-2 border-[var(--accent)]/30 bg-[var(--accent)]/5 p-6 hover:border-[var(--accent)]/60 hover:bg-[var(--accent)]/10 transition-all"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded bg-[var(--accent)]/20">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-[var(--accent)]"
+                  >
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                  </svg>
+                </div>
+                <span className="font-mono text-xs text-[var(--text-muted)]">
+                  {counts["diy-kit"] + counts["panels-only"]}
+                </span>
+              </div>
+              <h3 className="text-lg font-bold text-[var(--accent)]">
+                Build My System
+              </h3>
+              <p className="text-sm text-[var(--text-secondary)] mt-1 leading-relaxed">
+                DIY solar for your RV, cabin, or shed. Start by sizing what you
+                need.
+              </p>
+              <p className="text-xs text-[var(--text-muted)] mt-3">
+                Renogy, Eco-Worthy, WindyNation
+              </p>
+              <div className="mt-4 text-sm font-bold text-[var(--accent)] group-hover:underline">
+                Size my system &rarr;
+              </div>
+            </Link>
+
+            {/* Whole-Home / Off-Grid */}
+            <Link
+              href="/whole-home"
+              className="group relative rounded border border-[var(--border)] bg-[var(--bg-surface)] p-6 hover:border-[var(--accent)]/50 hover:bg-[var(--bg-elevated)] transition-all"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded bg-[var(--accent)]/10">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-[var(--accent)]"
+                  >
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                  </svg>
+                </div>
+                <span className="font-mono text-xs text-[var(--text-muted)]">
+                  {counts["whole-home"]}
+                </span>
+              </div>
+              <h3 className="text-lg font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+                Whole-Home / Off-Grid
+              </h3>
+              <p className="text-sm text-[var(--text-secondary)] mt-1 leading-relaxed">
+                5kW+ complete systems. Buy the equipment yourself, skip
+                contractor markup.
+              </p>
+              <p className="text-xs text-[var(--text-muted)] mt-3">
+                Shop Solar, EG4, Sol-Ark
+              </p>
+              <div className="mt-4 text-sm font-medium text-[var(--accent)] group-hover:underline">
+                Browse systems &rarr;
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: Smart Paths */}
+      <section className="border-b border-[var(--border)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+          <h2 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] mb-4">
+            Quick Finds
+          </h2>
+
+          <div className="grid grid-cols-2 lg:grid-cols-6 gap-3">
             {smartPaths.map((path) => (
               <Link
                 key={path.label}
@@ -171,9 +304,6 @@ export default function HomePage() {
                 <p className="text-xs text-[var(--text-muted)] mt-1">
                   {path.detail}
                 </p>
-                <p className="text-xs text-[var(--text-muted)] mt-2 truncate">
-                  {path.kit.brand} {path.kit.name.length > 30 ? path.kit.name.slice(0, 30) + "…" : path.kit.name}
-                </p>
               </Link>
             ))}
 
@@ -185,21 +315,23 @@ export default function HomePage() {
               <p className="text-xs text-[var(--accent)]/70 mb-2">
                 Power Calculator
               </p>
-              <p className="text-sm font-semibold text-[var(--accent)] group-hover:text-[var(--accent)] transition-colors">
+              <p className="text-sm font-semibold text-[var(--accent)]">
                 Size My System
               </p>
               <p className="font-mono text-lg font-bold text-[var(--accent)] mt-1">
                 ⚡
               </p>
               <p className="text-xs text-[var(--text-muted)] mt-1">
-                Calculate exactly how much solar you need
+                Calculate your solar needs
               </p>
             </Link>
           </div>
 
           {/* Use case chips */}
           <div className="mt-6 flex flex-wrap items-center gap-2">
-            <span className="text-xs text-[var(--text-muted)] mr-1">Browse by use case:</span>
+            <span className="text-xs text-[var(--text-muted)] mr-1">
+              Browse by use case:
+            </span>
             {useCaseChips.map((uc) => (
               <Link
                 key={uc.id}
@@ -213,36 +345,79 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 3: Featured Kits */}
+      {/* Section 4: Featured by Type */}
       <section className="border-b border-[var(--border)]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-          <div className="flex items-center justify-between mb-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 space-y-10">
+          {/* Portable Stations */}
+          {topPortable.length > 0 && (
             <div>
-              <h2 className="text-xl font-bold text-[var(--text-primary)]">
-                Featured Kits
-              </h2>
-              <p className="text-sm text-[var(--text-muted)] mt-1">
-                Curated picks across price, completeness, and storage
-              </p>
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-lg font-bold text-[var(--text-primary)]">
+                  Top Portable Stations
+                </h2>
+                <Link
+                  href="/portable-power"
+                  className="text-sm text-[var(--accent)] hover:underline"
+                >
+                  See all {portableKits.length} &rarr;
+                </Link>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {topPortable.map((kit) => (
+                  <KitCard key={kit.slug} kit={kit} />
+                ))}
+              </div>
             </div>
-            <Link
-              href="/kits"
-              className="hidden sm:inline-flex items-center gap-1.5 text-sm text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
-            >
-              All kits
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </Link>
-          </div>
+          )}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {featured.map((kit) => (
-              <KitCard key={kit.slug} kit={kit} />
-            ))}
-          </div>
+          {/* DIY Kits */}
+          {topDiy.length > 0 && (
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-lg font-bold text-[var(--text-primary)]">
+                  Top DIY Kits
+                </h2>
+                <Link
+                  href="/solar-kits"
+                  className="text-sm text-[var(--accent)] hover:underline"
+                >
+                  See all {diyKits.length + getKitsByType("panels-only").length}{" "}
+                  &rarr;
+                </Link>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {topDiy.map((kit) => (
+                  <KitCard key={kit.slug} kit={kit} />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Whole-Home Systems */}
+          {topWholeHome.length > 0 && (
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-lg font-bold text-[var(--text-primary)]">
+                  Top Complete Systems
+                </h2>
+                <Link
+                  href="/whole-home"
+                  className="text-sm text-[var(--accent)] hover:underline"
+                >
+                  See all {wholeHomeKits.length} &rarr;
+                </Link>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {topWholeHome.map((kit) => (
+                  <KitCard key={kit.slug} kit={kit} />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
-      {/* Section 4: Trust / Transparency */}
+      {/* Section 5: Trust / Transparency */}
       <section className="bg-[var(--bg-secondary)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-2xl mx-auto text-center">
@@ -250,23 +425,41 @@ export default function HomePage() {
               No hidden agendas. Just data.
             </h2>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-8">
-              We earn affiliate commissions when you buy through our links — same
-              price for you. Every recommendation is data-driven. No sponsored
-              rankings, no pay-to-play. Period.
+              We earn affiliate commissions when you buy through our links —
+              same price for you. Every recommendation is data-driven. No
+              sponsored rankings, no pay-to-play. Period.
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {[
-                { icon: "◈", label: "Normalized specs", detail: "Apples-to-apples" },
-                { icon: "◉", label: "True total cost", detail: "Including what's missing" },
-                { icon: "◆", label: "Live pricing", detail: "Updated every 6 hours" },
-                { icon: "◇", label: "Price history", detail: "Know if it's a deal" },
+                {
+                  icon: "◈",
+                  label: "Normalized specs",
+                  detail: "Apples-to-apples",
+                },
+                {
+                  icon: "◉",
+                  label: "True total cost",
+                  detail: "Including what's missing",
+                },
+                {
+                  icon: "◆",
+                  label: "Live pricing",
+                  detail: "Tracked every 6 hours",
+                },
+                {
+                  icon: "◇",
+                  label: "Price history",
+                  detail: "Know if it's a deal",
+                },
               ].map((item) => (
                 <div
                   key={item.label}
                   className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4"
                 >
-                  <span className="text-xl text-[var(--accent)]">{item.icon}</span>
+                  <span className="text-xl text-[var(--accent)]">
+                    {item.icon}
+                  </span>
                   <p className="text-sm font-medium text-[var(--text-primary)] mt-2">
                     {item.label}
                   </p>
@@ -283,7 +476,18 @@ export default function HomePage() {
                 className="inline-flex items-center gap-2 rounded bg-[var(--accent)] px-6 py-3 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
               >
                 Browse all {kits.length} kits
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
               </Link>
             </div>
           </div>

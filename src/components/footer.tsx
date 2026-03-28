@@ -1,15 +1,15 @@
 import Link from "next/link";
 
 const footerLinks = {
-  Tool: [
-    { href: "/kits", label: "Browse All Kits" },
-    { href: "/compare", label: "Compare Kits" },
+  Products: [
+    { href: "/portable-power", label: "Portable Power" },
+    { href: "/solar-kits", label: "DIY Solar Kits" },
+    { href: "/whole-home", label: "Whole-Home Systems" },
+    { href: "/kits", label: "All Kits" },
     { href: "/products", label: "Components" },
-    { href: "/categories/batteries", label: "Batteries" },
-    { href: "/categories/panels", label: "Solar Panels" },
-    { href: "/categories/inverters", label: "Inverters" },
+    { href: "/compare", label: "Compare" },
   ],
-  "Best For": [
+  "Use Cases": [
     { href: "/best-for/rv", label: "RV & Van Life" },
     { href: "/best-for/cabin", label: "Weekend Cabin" },
     { href: "/best-for/shed", label: "Shed & Workshop" },
@@ -32,6 +32,7 @@ const footerLinks = {
     { href: "/solar-kits/under-3000", label: "Under $3,000" },
   ],
   Resources: [
+    { href: "/calculator", label: "Size My System" },
     { href: "/methodology", label: "How We Score" },
     { href: "/affiliate-disclosure", label: "Affiliate Disclosure" },
     { href: "/contact", label: "Contact" },

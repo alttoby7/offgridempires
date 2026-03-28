@@ -1,13 +1,77 @@
-import type { Kit } from "./demo-data";
+import type { Kit, SystemType } from "./demo-data";
 
-type SystemType = "panel-only" | "power-station" | "complete-system";
+type LegacySystemType = "panel-only" | "power-station" | "complete-system";
 type Rating = "excellent" | "good" | "fair" | "poor";
 
 const USE_CASES = ["rv", "cabin", "shed", "emergency", "homestead", "boat"] as const;
 const RATING_VALUE: Record<Rating, number> = { excellent: 1, good: 0.7, fair: 0.35, poor: 0 };
 const clamp01 = (n: number) => Math.max(0, Math.min(1, n));
 
-function getSystemType(k: Kit): SystemType {
+/** Brands that make all-in-one portable power stations */
+const PORTABLE_BRANDS = new Set([
+  "Anker", "EcoFlow", "Bluetti", "Jackery", "Goal Zero",
+  "Lion Energy", "BougeRV",
+]);
+
+/** Brands that sell component-level DIY kits (panels + controllers, sometimes batteries) */
+const DIY_BRANDS = new Set([
+  "Renogy", "Eco-Worthy", "WindyNation", "HQST", "Rich Solar",
+  "BougeRV",
+]);
+
+/** Shop Solar tier brands — large complete systems for professional install */
+const WHOLE_HOME_TIERS = new Set([
+  "SELECT", "SUMMIT", "PRIME", "VECTOR", "EDGE", "ELITE", "CORE",
+]);
+
+/**
+ * Enhanced 4-way classification for buyer persona routing.
+ * Uses brand, component analysis, and size to determine system type.
+ */
+export function classifyKit(k: Kit): SystemType {
+  // If already classified (from export), use that
+  if (k.systemType) return k.systemType;
+
+  const brand = k.brand;
+
+  // Shop Solar tiers are always whole-home (except VECTOR which is grid-tied/panels-only)
+  if (WHOLE_HOME_TIERS.has(brand)) {
+    if (brand === "VECTOR" || (k.storageWh === 0 && k.inverterWatts === 0)) {
+      return "panels-only";
+    }
+    return "whole-home";
+  }
+
+  // Hysolis and New Use Energy are complete system brands
+  if (brand === "Hysolis" || brand === "New Use Energy") {
+    return k.storageWh > 0 ? "whole-home" : "panels-only";
+  }
+
+  // DIY brands are always diy-kit (even panel+controller bundles without battery)
+  if (DIY_BRANDS.has(brand)) {
+    return "diy-kit";
+  }
+
+  // No storage and no inverter = panels-only (for non-DIY brands)
+  if (k.storageWh === 0 && k.inverterWatts === 0) {
+    return "panels-only";
+  }
+
+  // Portable brands with built-in battery
+  if (PORTABLE_BRANDS.has(brand) && k.storageWh > 0) {
+    return "portable";
+  }
+
+  // Fallback: small systems with storage are portable, large are whole-home
+  if (k.panelWatts <= 800 && k.storageWh <= 10000) {
+    return k.storageWh > 0 ? "portable" : "panels-only";
+  }
+
+  return "whole-home";
+}
+
+/** Legacy 3-way classification for similarity scoring */
+function getSystemType(k: Kit): LegacySystemType {
   if (k.storageWh === 0) return "panel-only";
   if (k.panelWatts <= 600 && k.storageWh <= 8192 && k.inverterWatts <= 4000) return "power-station";
   return "complete-system";

@@ -6,7 +6,8 @@
  * Run `npx tsx scripts/export-data.ts` to refresh from DB.
  */
 
-import type { Kit } from "./demo-data";
+import type { Kit, SystemType } from "./demo-data";
+import { classifyKit } from "./similar-kits";
 
 let _kits: Kit[] | null = null;
 
@@ -294,12 +295,14 @@ function loadKits(): Kit[] {
     _kits = (data as Kit[]).map((k) => {
       const brand = normalizeBrand(k.brand);
       const cleaned = cleanTitle(k.name, brand);
-      return {
+      const kit: Kit = {
         ...k,
         brand,
         name: cleaned,
         displayName: cleaned,
       };
+      kit.systemType = classifyKit(kit);
+      return kit;
     });
   } catch {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -327,4 +330,18 @@ export function getKitBySlug(slug: string): Kit | undefined {
 
 export function getKitSlugs(): string[] {
   return kitsWithPrices(loadKits()).map((k) => k.slug);
+}
+
+export function getKitsByType(type: SystemType): Kit[] {
+  return getKits().filter((k) => k.systemType === type);
+}
+
+export function getKitCounts(): Record<SystemType, number> {
+  const kits = getKits();
+  return {
+    portable: kits.filter((k) => k.systemType === "portable").length,
+    "diy-kit": kits.filter((k) => k.systemType === "diy-kit").length,
+    "whole-home": kits.filter((k) => k.systemType === "whole-home").length,
+    "panels-only": kits.filter((k) => k.systemType === "panels-only").length,
+  };
 }
