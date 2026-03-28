@@ -38,6 +38,9 @@ python3 scripts/ingest-amazon.py || echo "${LOG_PREFIX} WARNING: Amazon ingestio
 echo "${LOG_PREFIX} Running Shop Solar ingestion..."
 python3 scripts/ingest-shopsolar.py || echo "${LOG_PREFIX} WARNING: Shop Solar ingestion had errors"
 
+echo "${LOG_PREFIX} Running Brand Direct ingestion..."
+python3 scripts/ingest-brand-direct.py --all || echo "${LOG_PREFIX} WARNING: Brand Direct ingestion had errors"
+
 # Export DB → JSON files
 echo "${LOG_PREFIX} Exporting data from DB..."
 npx tsx scripts/export-data.ts || {

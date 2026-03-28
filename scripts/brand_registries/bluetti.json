@@ -1,0 +1,20 @@
+{
+  "retailer": "Bluetti",
+  "retailer_slug": "bluetti",
+  "base_url": "https://www.bluettipower.com",
+  "mappings": [
+    {
+      "shopify_handle": "bluetti-ac300-b300k-pv350-home-battery-backup",
+      "shopify_product_id": "8662161473755",
+      "shopify_variant_id": "45969587470555",
+      "variant_title": "AC300+B300K+350W Solar | 3000W, 2764.8Wh, 350W Solar Kit",
+      "price_cents": 229900,
+      "available": false,
+      "sku": "AC300+B300K+350W-SPFUS-00",
+      "kit_slug": "bluetti-ac300-b300k-pv350",
+      "kit_asin": "B0CFQ9NNQJ",
+      "match_confidence": "high",
+      "status": "approved"
+    }
+  ]
+}

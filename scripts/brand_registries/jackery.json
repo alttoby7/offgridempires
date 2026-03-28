@@ -1,0 +1,73 @@
+{
+  "retailer": "Jackery",
+  "retailer_slug": "jackery",
+  "base_url": "https://www.jackery.com",
+  "mappings": [
+    {
+      "shopify_handle": "jackery-solar-generator-1000-v2",
+      "shopify_product_id": "7551627362391",
+      "shopify_variant_id": "40910606205015",
+      "variant_title": "Black / Explorer 1000 v2 + SolarSaga 200W",
+      "price_cents": 129900,
+      "available": false,
+      "sku": "60-0820-USB1D1",
+      "kit_slug": "jackery-1000v2-200w-panel",
+      "kit_asin": "B0D67B3DYV",
+      "match_confidence": "high",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "jackery-solar-generator-1000-plus",
+      "shopify_product_id": "7285361262679",
+      "shopify_variant_id": "40233094873175",
+      "variant_title": "Explorer 1000 Plus + SolarSaga 100 Air x 2",
+      "price_cents": 89900,
+      "available": false,
+      "sku": "60-1010-USC1B2",
+      "kit_slug": "jackery-1000plus-2x100w",
+      "kit_asin": "B0CLHQ66SR",
+      "match_confidence": "high",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "jackery-solar-generator-1000-plus",
+      "shopify_product_id": "7285361262679",
+      "shopify_variant_id": "40233094774871",
+      "variant_title": "Solar Generator 1000 Plus Kit (2.5kWh + SolarSaga 100 Air x 2)",
+      "price_cents": 149900,
+      "available": false,
+      "sku": "40-1010-USC112",
+      "kit_slug": "jackery-1000plus-2528wh-2x100w",
+      "kit_asin": "B0D67D57FP",
+      "match_confidence": "high",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "solar-generator-2000-plus",
+      "shopify_product_id": "7270483337303",
+      "shopify_variant_id": "40442282639447",
+      "variant_title": "Explorer 2000 Plus Kit (4kWh) + SolarSaga 200W x 2",
+      "price_cents": 229900,
+      "available": false,
+      "sku": "21-0009-000093",
+      "kit_slug": "jackery-2000plus-4085wh-2x200w",
+      "kit_asin": "B0D5YZG7D6",
+      "match_confidence": "high",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "jackery-explorer-1500-ultra-portable-power-station",
+      "shopify_product_id": "7551646498903",
+      "shopify_variant_id": "42447145435223",
+      "variant_title": "Explorer 1500 Ultra Portable Power Station",
+      "price_cents": 89900,
+      "available": false,
+      "sku": "21-0001-000301",
+      "kit_slug": "jackery-1500-4x100w",
+      "kit_asin": "B08Z3FRXW4",
+      "match_confidence": "medium",
+      "status": "approved",
+      "note": "Station only - no exact 4x100W panel bundle on Jackery.com"
+    }
+  ]
+}

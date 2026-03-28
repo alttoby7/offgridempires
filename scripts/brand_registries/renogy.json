@@ -1,0 +1,188 @@
+{
+  "retailer": "Renogy",
+  "retailer_slug": "renogy",
+  "base_url": "https://www.renogy.com",
+  "notes": "Renogy restructured their Shopify catalog in 2025-2026. Many legacy Amazon kits (Wanderer/Adventurer/Rover combos) have been replaced with N-Type panel kits. Matches below use current Shopify products. Kits with no Shopify match: renogy-200w-starter-mppt-20a, renogy-300w-rv-kit, renogy-400w-bluetooth-kit.",
+  "mappings": [
+    {
+      "shopify_handle": "renogy-100w-12vstarter-kit",
+      "shopify_product_id": "8031719784563",
+      "shopify_variant_id": "43178671243379",
+      "variant_title": "Default Title",
+      "price_cents": 15999,
+      "available": true,
+      "sku": "RNG-KIT-STARTER100D-WND30-US",
+      "kit_slug": "renogy-100w-starter-kit",
+      "kit_asin": "B0FT25XJFP",
+      "match_confidence": "high",
+      "match_notes": "100W 12V Solar Panel Kit with Wanderer 30A PWM. Exact product match.",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "200-watt-12-volt-solar-starter-kit",
+      "shopify_product_id": "8031725027443",
+      "shopify_variant_id": "43178678714483",
+      "variant_title": "Default Title",
+      "price_cents": 22999,
+      "available": true,
+      "sku": "RNG-KIT-STARTER200D-WND30-US",
+      "kit_slug": "renogy-200w-starter-pwm",
+      "kit_asin": "B00BCRG22A",
+      "match_confidence": "high",
+      "match_notes": "200W 12V Starter Kit with Wanderer 30A PWM. Exact product match.",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "200-watt-12-volt-monocrystalline-solar-panel-with-40-amp-mppt-charge-controller",
+      "shopify_product_id": "8031715786867",
+      "shopify_variant_id": "43178665574515",
+      "variant_title": "Default Title",
+      "price_cents": 46999,
+      "available": true,
+      "sku": "RSKI200SP-R40D1",
+      "kit_slug": "renogy-200w-premium-mppt-40a",
+      "kit_asin": "B06VY9DVY9",
+      "match_confidence": "medium",
+      "match_notes": "200W panel + 40A MPPT controller bundle. Shopify title is '200W Solar Panel with 40 Amp MPPT Charge Controller' vs Amazon 'Solar Kit with 40A MPPT Rover Controller + Z Brackets'. Same core components but Shopify may not include Z brackets.",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "200-watt-12-volt-solar-rv-kit",
+      "shopify_product_id": "8031729483891",
+      "shopify_variant_id": "43178684186739",
+      "variant_title": "Default Title",
+      "price_cents": 28999,
+      "available": true,
+      "sku": "RNG-KIT-RV200D-ADV30-US",
+      "kit_slug": "renogy-200w-rv-kit",
+      "kit_asin": "B015DEY2TM",
+      "match_confidence": "high",
+      "match_notes": "200W 12V Essential RV Kit with Adventurer 30A PWM, Z brackets, cable entry housing, BT-1 module. Exact product match.",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "new-400-watt-12-volt-solar-premium-kit",
+      "shopify_product_id": "8031736135795",
+      "shopify_variant_id": "43178692247667",
+      "variant_title": "With Rover 40A MPPT Charge Controller",
+      "price_cents": 63999,
+      "available": true,
+      "sku": "RNG-KIT-PREMIUM400D-RVR40-US",
+      "kit_slug": "renogy-400w-premium-mppt",
+      "kit_asin": "B07CTKT56Y",
+      "match_confidence": "high",
+      "match_notes": "400W 12V Premium Kit with Rover 40A MPPT. 4x100W mono panels. Exact product match.",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "renogy-400w-12v-general-off-grid-solar-kit",
+      "shopify_product_id": "8041400991859",
+      "shopify_variant_id": "44229726994547",
+      "variant_title": "4*100W 16BB N-Type Solar Panel",
+      "price_cents": 39499,
+      "available": true,
+      "sku": "RNG-KIT-RV400D-ADV30-US",
+      "kit_slug": "renogy-400w-starter-pwm",
+      "kit_asin": "B00BSZUHRC",
+      "match_confidence": "medium",
+      "match_notes": "400W Starter Kit with 30A PWM controller. Amazon kit uses Wanderer PWM; Shopify uses Adventurer PWM (ADV30 in SKU). Both are 30A PWM but different controller models. N-Type panels vs original mono. Likely successor product.",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "renogy-400w-12v-general-off-grid-solar-kit",
+      "shopify_product_id": "8041400991859",
+      "shopify_variant_id": "43212833194099",
+      "variant_title": "2*200W 16BB N-Type Solar Panel",
+      "price_cents": 76999,
+      "available": true,
+      "sku": "RKIT400PM-R40D2-AK1010",
+      "kit_slug": "renogy-400w-starter-mppt",
+      "kit_asin": "B06X1FV5N2",
+      "match_confidence": "medium",
+      "match_notes": "400W Kit with Rover 40A MPPT (R40 in SKU). Amazon kit used 4x100W mono panels; Shopify variant uses 2x200W N-Type. Same wattage and controller class. Likely successor product.",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "renogy-600w-12v-general-off-grid-solar-kit",
+      "shopify_product_id": "8041399681139",
+      "shopify_variant_id": "43212820283507",
+      "variant_title": "3*200W Solar Panel & 60A MPPT Controller",
+      "price_cents": 113999,
+      "available": true,
+      "sku": "RKIT600PB-R60D3",
+      "kit_slug": "renogy-600w-premium-kit",
+      "kit_asin": "B08BYBWST9",
+      "match_confidence": "high",
+      "match_notes": "600W 12V Kit with Rover 60A MPPT + Bluetooth. 3x200W panels. SKU R60 = Rover 60A, PB = Premium Bluetooth. Matches Amazon 600W Premium Kit with 60A MPPT Rover + Bluetooth.",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "800w-12v-24v-monocrystalline-solar-premium-kit-w-rover-60a-charger-controller",
+      "shopify_product_id": "8031740559475",
+      "shopify_variant_id": "43178697752691",
+      "variant_title": "Default Title",
+      "price_cents": 129999,
+      "available": true,
+      "sku": "RKIT800DPM-RVR60-US",
+      "kit_slug": "renogy-800w-cabin-kit",
+      "kit_asin": "B08CKHPWHC",
+      "match_confidence": "high",
+      "match_notes": "800W 12V Starter Kit with Rover 60A MPPT + BT-1 Bluetooth module. 8x100W N-Type panels. Matches Amazon 800W 12V Premium Kit with 60A MPPT + Bluetooth.",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "renogy-1-2kw-essential-kit",
+      "shopify_product_id": "8031758221427",
+      "shopify_variant_id": "43178724556915",
+      "variant_title": "Default Title",
+      "price_cents": 439999,
+      "available": true,
+      "sku": "RKIT1200CB-C43D4-A24-US",
+      "kit_slug": "renogy-1000w-cabin-kit",
+      "kit_asin": "B0145QZYDC",
+      "match_confidence": "medium",
+      "match_notes": "Cabin Solution 1280W (4x320W panels + 9.6kWh battery + inverter). Amazon kit was 1000W Monocrystalline Solar Cabin Kit. Shopify product is 1280W with newer N-Type 320W panels - likely the successor/evolution of the 1000W cabin kit. Higher wattage but same product line.",
+      "status": "approved"
+    },
+    {
+      "shopify_handle": "renogy-2-5kw-essential-plus-kit",
+      "shopify_product_id": "8031758254195",
+      "shopify_variant_id": "43178724589683",
+      "variant_title": "Default Title",
+      "price_cents": 769999,
+      "available": true,
+      "sku": "RKIT2500CB-C43D8-A28-US",
+      "kit_slug": "renogy-1800w-cabin-kit",
+      "kit_asin": "B0145TN06W",
+      "match_confidence": "medium",
+      "match_notes": "Cabin Solution 2560W (8x320W panels + 19.2kWh battery). Amazon kit was 1800W Cabin Kit with 6x300W panels + Midnite MPPT. Shopify is 2560W with 8x320W N-Type panels - likely successor. Different wattage but same cabin-scale product tier.",
+      "status": "approved"
+    }
+  ],
+  "unmatched_kits": [
+    {
+      "kit_slug": "renogy-200w-starter-mppt-20a",
+      "kit_asin": "B06VYJ8JXH",
+      "kit_title": "Renogy 200W 12V Monocrystalline Solar Starter Kit with 20A MPPT Rover Controller",
+      "reason": "No Shopify product matches. The 200W starter on Shopify only includes Wanderer 30A PWM. No 20A MPPT Rover variant available."
+    },
+    {
+      "kit_slug": "renogy-300w-rv-kit",
+      "kit_asin": "B015DFMTS2",
+      "kit_title": "Renogy 300W 12V Monocrystalline RV Kit with 30A PWM Controller + Cable Entry Housing",
+      "reason": "No 300W kit exists in Renogy Shopify store. Product likely discontinued."
+    },
+    {
+      "kit_slug": "renogy-400w-bluetooth-kit",
+      "kit_asin": "B0CDLQVYSS",
+      "kit_title": "Renogy 400W 12V Solar Kit with 30A Controller + Bluetooth",
+      "reason": "No direct match. Renogy restructured 400W kits into Starter (PWM) and Premium (MPPT) tiers. No standalone '400W + 30A + Bluetooth' variant exists."
+    },
+    {
+      "kit_slug": "renogy-400w-rv-kit",
+      "kit_asin": "B015DFS7X8",
+      "kit_title": "Renogy 400W 12V Monocrystalline RV Kit with Adventurer 30A PWM + Cable Entry Housing",
+      "reason": "Shopify '400W 12V Essential Solar Panel Kit with DC-DC Assembly' (renogy-400w-12v-solar-rv-kit) uses a 50A DC-DC On-Board Battery Charger with MPPT instead of Adventurer 30A PWM. Fundamentally different product despite similar wattage."
+    }
+  ]
+}

@@ -1,0 +1,2010 @@
+{
+  "retailer": "BougeRV",
+  "retailer_slug": "bougerv",
+  "base_url": "https://www.bougerv.com",
+  "discovery_stats": {
+    "total_products": 321,
+    "total_variants": 927,
+    "matched": 0,
+    "unmatched": 321
+  },
+  "mappings": [],
+  "unmatched_products": [
+    {
+      "handle": "bougerv-12v-200-watt-arch-pro-solar-system-kit",
+      "title": "BougeRV 200W 12V Arch Pro Solar System Kit",
+      "variant_count": 1,
+      "price_range": "$820-$820"
+    },
+    {
+      "handle": "200-watt-cigs-flexible-solar-system-kit",
+      "title": "BougeRV 200W 12V CIGS Flexible Solar System Kit (Pre-Punched Holes)",
+      "variant_count": 1,
+      "price_range": "$970-$970"
+    },
+    {
+      "handle": "200-watt-rigid-solar-kit",
+      "title": "BougeRV 200W 12V Rigid Solar System Kit",
+      "variant_count": 1,
+      "price_range": "$720-$720"
+    },
+    {
+      "handle": "200-watt-flexible-solar-kit",
+      "title": "BougeRV 200W 12V Flexible Solar System Kit",
+      "variant_count": 1,
+      "price_range": "$750-$750"
+    },
+    {
+      "handle": "200-watt-cigs-flexible-solar-kit",
+      "title": "BougeRV 200W 12V CIGS Flexible Solar System Kit(Adhesive)",
+      "variant_count": 1,
+      "price_range": "$990-$990"
+    },
+    {
+      "handle": "bougerv-12v-400-watt-arch-pro-flexible-solar-system-kit",
+      "title": "BougeRV 400W 12V Arch Pro Solar System Kit",
+      "variant_count": 2,
+      "price_range": "$1340-$1470"
+    },
+    {
+      "handle": "400-watt-cigs-flexible-solar-kit",
+      "title": "BougeRV 400 Watt 12V CIGS Flexible Solar System Kit(Adhesive)",
+      "variant_count": 1,
+      "price_range": "$1670-$1670"
+    },
+    {
+      "handle": "400-watt-rigid-solar-kit",
+      "title": "BougeRV 400 Watt 12V Rigid Solar System Kit",
+      "variant_count": 1,
+      "price_range": "$1130-$1130"
+    },
+    {
+      "handle": "400-watt-flexible-solar-kit",
+      "title": "BougeRV 12V 400 Watt Flexible Solar System Kit",
+      "variant_count": 1,
+      "price_range": "$1190-$1190"
+    },
+    {
+      "handle": "400-watt-cigs-flexible-solar-system-kit",
+      "title": "BougeRV 400W 12V CIGS Flexible Solar System Kit (Pre-Punched Holes)",
+      "variant_count": 1,
+      "price_range": "$1610-$1610"
+    },
+    {
+      "handle": "600-watt-high-watt-rigid-kit",
+      "title": "BougeRV 600W 12V Rigid Solar System Kit",
+      "variant_count": 1,
+      "price_range": "$1670-$1670"
+    },
+    {
+      "handle": "bougerv-12v-600-watt-cigs-flexible-solar-system-kit-adhesive",
+      "title": "BougeRV 600W 12V CIGS Flexible Solar System Kit (Adhesive)",
+      "variant_count": 1,
+      "price_range": "$2250-$2250"
+    },
+    {
+      "handle": "bougerv-12v-600-watt-arch-pro-solar-system-kit",
+      "title": "BougeRV 600W 12V Arch Pro Solar System Kit",
+      "variant_count": 1,
+      "price_range": "$1740-$1740"
+    },
+    {
+      "handle": "bougerv-12v-800-watt-arch-pro-solar-system-kit",
+      "title": "BougeRV 800W 12V Arch Pro Solar System Kit",
+      "variant_count": 1,
+      "price_range": "$2260-$2260"
+    },
+    {
+      "handle": "800-watt-high-watt-rigid-kit",
+      "title": "BougeRV 800W 12V Rigid Solar System Kit",
+      "variant_count": 1,
+      "price_range": "$2200-$2200"
+    },
+    {
+      "handle": "n-type-800w-12v-rigid-solar-kit",
+      "title": "BougeRV 800W 12V Premium Rigid Solar Kit",
+      "variant_count": 1,
+      "price_range": "$2200-$2200"
+    },
+    {
+      "handle": "mc4-male-female-solar-panel",
+      "title": "(10AWG) 12PCS Solar Connector with Spanners IP67 Waterproof Male/Female",
+      "variant_count": 1,
+      "price_range": "$16-$16"
+    },
+    {
+      "handle": "44pcs-solar-panel-connectors",
+      "title": "(10AWG) 44PCS Solar Connector with Spanners IP67 Waterproof Male/Female",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "12pcs-solar-connectors-with-spanners-10awg",
+      "title": "(8AWG) 12PCS Solar Connector with Spanners IP67 Waterproof Male/Female",
+      "variant_count": 1,
+      "price_range": "$22-$22"
+    },
+    {
+      "handle": "mc4-disconnect-tool",
+      "title": "1 Pair Solar Connector Tool Assembly Spanners",
+      "variant_count": 1,
+      "price_range": "$7-$7"
+    },
+    {
+      "handle": "110-240v-ac-power-cord",
+      "title": "110~240V AC Power Cord for Portable Fridge Car Freezer",
+      "variant_count": 1,
+      "price_range": "$27-$27"
+    },
+    {
+      "handle": "12oz-stainless-steel-insulated-coffee-mug",
+      "title": "12oz Stainless Steel Insulated Coffee Mug with Handle",
+      "variant_count": 3,
+      "price_range": "$13-$13"
+    },
+    {
+      "handle": "12v-lifepo4-lithium-battery",
+      "title": "12V 1280Wh/100Ah LiFePO4 Battery",
+      "variant_count": 3,
+      "price_range": "$260-$1175"
+    },
+    {
+      "handle": "12v-100ah-lifepo4-battery",
+      "title": "12V 1280Wh/100Ah Self-Heating LiFePO4 Battery",
+      "variant_count": 3,
+      "price_range": "$440-$2140"
+    },
+    {
+      "handle": "12v-23-quart-portable-fridge-black-refurbished",
+      "title": "12V 23 Quart Portable Fridge Black",
+      "variant_count": 1,
+      "price_range": "$210-$210"
+    },
+    {
+      "handle": "12v-23-quart-portable-fridge-refurbished",
+      "title": "12V 23 Quart Portable Fridge(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$210-$210"
+    },
+    {
+      "handle": "12v-30-quart-fridge-and-cover",
+      "title": "12V 30 Quart (28L) Portable Fridge & 30 Quart Insulated Protective Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$340-$340"
+    },
+    {
+      "handle": "12v-30-quart-28l-portable-fridge-black-refurbished",
+      "title": "12V 30 Quart (28L) Portable Fridge Black",
+      "variant_count": 1,
+      "price_range": "$280-$280"
+    },
+    {
+      "handle": "12v-30-quart-portable-fridge-refurbished",
+      "title": "12V 30 Quart Portable Fridge(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$280-$280"
+    },
+    {
+      "handle": "portable-fridge-cooler",
+      "title": "12V 34 Quart (32L) Portable Fridge(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$160-$160"
+    },
+    {
+      "handle": "e35-37-quart-dual-zone-portable-fridge-without-wheels-refurbished",
+      "title": "12V 37/48/59 QT Dual Zone Portable Fridge(Refurbished)",
+      "variant_count": 3,
+      "skip_reason": "accessory/promo",
+      "price_range": "$226-$275"
+    },
+    {
+      "handle": "42-quart-fridge-42-quart-protective-cover",
+      "title": "12V 42 Quart (40L) Portable Fridge & 42 Quart Insulated Protective Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$250-$250"
+    },
+    {
+      "handle": "12v-42-quart-40l-portable-fridge-freezer-refurbished",
+      "title": "12V 42 Quart (40L) Portable Fridge/Freezer(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$208-$208"
+    },
+    {
+      "handle": "53-quart-fridge-53-quart-protective-cover",
+      "title": "12V 53 Quart (50L) Portable Fridge & 53 Quart Insulated Protective Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$290-$290"
+    },
+    {
+      "handle": "12v-53-quart-portable-fridge-refurbished",
+      "title": "12V 53 Quart Portable Fridge Car Freezer",
+      "variant_count": 1,
+      "price_range": "$350-$350"
+    },
+    {
+      "handle": "12v-24v-dc-power-cord",
+      "title": "12V/24V DC Power Cord for Car Freezer Portable Fridge",
+      "variant_count": 1,
+      "price_range": "$23-$23"
+    },
+    {
+      "handle": "li-20a-pwm-solar-charge-controller",
+      "title": "12V/24V Li 20A PWM Solar Charge Controller (Built-in Bluetooth)",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "li-30a-pwm-solar-charge-controller",
+      "title": "12V/24V Li 30A PWM Solar Charge Controller (Built-in Bluetooth)",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "4pcs-topcon-16bb-100-watt-solar-panel",
+      "title": "12V/24V N-Type 200 Watt 16BB Bifacial Solar Panel (2x100W)",
+      "variant_count": 10,
+      "price_range": "$160-$560"
+    },
+    {
+      "handle": "15a-solar-fuse-holder",
+      "title": "15A Solar Fuse Holder",
+      "variant_count": 2,
+      "price_range": "$12-$30"
+    },
+    {
+      "handle": "water-bottle-with-chug-cap",
+      "title": "26 oz Water Bottle with Chug Cap",
+      "variant_count": 3,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "solar-panel-tilt-mount-brackets",
+      "title": "28 in Adjustable Solar Panel Tilt Mount Brackets",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "3000w-12v-pure-sine-wave-inverter",
+      "title": "3000W 12V Pure Sine Wave Inverter",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$360-$360"
+    },
+    {
+      "handle": "30a-solar-fuse-holder",
+      "title": "30A Solar Fuse Holder",
+      "variant_count": 2,
+      "price_range": "$16-$35"
+    },
+    {
+      "handle": "8-solar-panel-mounting-z-bracket-mount-kits-copy",
+      "title": "4 Solar Panel Mounting Z Bracket Mount Kits",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$16-$16"
+    },
+    {
+      "handle": "fiberglass-400-watt-solar-panel",
+      "title": "400 Watt Fiberglass Curved Solar Panel (4x100W)",
+      "variant_count": 1,
+      "price_range": "$360-$360"
+    },
+    {
+      "handle": "400w-cigs-flexible-thin-film-solar-panel",
+      "title": "400W CIGS Flexible Solar Panel with Adhesive(2X200W)",
+      "variant_count": 2,
+      "price_range": "$820-$1596"
+    },
+    {
+      "handle": "4pcs-100w-cigs-solar-panel",
+      "title": "400W CIGS Solar Panel (Long with Adhesive) (100W*4pcs)",
+      "variant_count": 4,
+      "price_range": "$877-$2000"
+    },
+    {
+      "handle": "yuma-400w-cigs-flexible-solar-panel-with-adhesive",
+      "title": "400W CIGS Solar Panel (Square with Adhesive) (100W*4pcs)",
+      "variant_count": 4,
+      "price_range": "$877-$2000"
+    },
+    {
+      "handle": "yuma-400w-cigs-flexible-solar-panel-square-with-holes",
+      "title": "400W CIGS Solar Panel (Square with Holes) (100W*4pcs)",
+      "variant_count": 4,
+      "price_range": "$840-$1900"
+    },
+    {
+      "handle": "40a-mppt-solar-charge-controller",
+      "title": "40A MPPT Solar Charge Controller 12V/24V/36V/48V",
+      "variant_count": 1,
+      "price_range": "$140-$140"
+    },
+    {
+      "handle": "adjustable-solar-panel-tilt-mount-brackets",
+      "title": "41 in Adjustable Solar Panel Tilt Mount Brackets",
+      "variant_count": 4,
+      "skip_reason": "accessory/promo",
+      "price_range": "$90-$320"
+    },
+    {
+      "handle": "41in-solar-panel-tilt-mount-brackets",
+      "title": "41in Solar Panel Tilt Mount Brackets\uff08Upgraded Version\uff09",
+      "variant_count": 4,
+      "skip_reason": "accessory/promo",
+      "price_range": "$100-$360"
+    },
+    {
+      "handle": "5-pcs-15a-solar-fuse",
+      "title": "5 PCS 15A Solar Fuse Holder",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "30a-solar-fuse-holder-5pcs",
+      "title": "5 PCS 30A Solar Fuse Holder",
+      "variant_count": 1,
+      "price_range": "$35-$35"
+    },
+    {
+      "handle": "5-5-6-7ft-extended-truck-bed",
+      "title": "5.5-6.7ft Extended Truck Bed Air Mattress for Full-Size Beds",
+      "variant_count": 3,
+      "price_range": "$130-$140"
+    },
+    {
+      "handle": "5-5-6-7ft-truck-bed-air-mattress",
+      "title": "5.5\u20136.7ft Truck Bed Air Mattress, Inflatable Camping Mattress",
+      "variant_count": 2,
+      "price_range": "$100-$130"
+    },
+    {
+      "handle": "solar-dc-connectors",
+      "title": "6Feet 14AWG Solar Connector to DC Adapter",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$23-$23"
+    },
+    {
+      "handle": "8th-anniversary-gift-card",
+      "title": "8th Anniversary Gift Card",
+      "variant_count": 1,
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "fiberglass-200-watt-solar-panel",
+      "title": "Arch 200 Watt Fiberglass Curved Solar Panel (2x100W)",
+      "variant_count": 1,
+      "price_range": "$220-$220"
+    },
+    {
+      "handle": "aspen-dual-system-12v-portable-fridge-refurbished",
+      "title": "ASPEN Dual System 12V Portable Fridge(Refurbished)",
+      "variant_count": 6,
+      "skip_reason": "accessory/promo",
+      "price_range": "$200-$260"
+    },
+    {
+      "handle": "automatic-truck-bed-tent-with-rainfly",
+      "title": "Automatic Truck Bed Tent with Rainfly \u2013 Quick Setup 2-Person Camping Tent",
+      "variant_count": 2,
+      "price_range": "$170-$200"
+    },
+    {
+      "handle": "100w-9bb-cells-mono-solar-panel",
+      "title": "BougeRV 100W 12V 9BB Mono Solar Panel",
+      "variant_count": 1,
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "100w-fiberglass-foldable-solar-panel",
+      "title": "BougeRV 100W N-Type Fiberglass Foldable Portable Solar Panel",
+      "variant_count": 4,
+      "price_range": "$140-$300"
+    },
+    {
+      "handle": "100ah-lifepo4-battery",
+      "title": "BougeRV 12V 100Ah Group 24 Solar LiFePO4 Battery",
+      "variant_count": 4,
+      "price_range": "$230-$840"
+    },
+    {
+      "handle": "12v-mint-green-mini-fridge",
+      "title": "BougeRV 12V 23 Quart Colorful Mint Green Portable Fridge",
+      "variant_count": 2,
+      "price_range": "$176-$320"
+    },
+    {
+      "handle": "12v-pink-mini-fridge",
+      "title": "BougeRV 12V 23 Quart Colorful Pink Portable Fridge",
+      "variant_count": 2,
+      "price_range": "$176-$320"
+    },
+    {
+      "handle": "12v-purple-mini-fridge",
+      "title": "BougeRV 12V 23 Quart Colorful Purple Portable Fridge",
+      "variant_count": 2,
+      "price_range": "$176-$320"
+    },
+    {
+      "handle": "12v-23-quart-portable-car-fridge-cover",
+      "title": "BougeRV 12V 23 Quart Portable Car Refrigerator Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "12v-23-quart-portable-fridge-black-for-travel",
+      "title": "BougeRV 12V 23 Quart Portable Fridge Black For Travel",
+      "variant_count": 3,
+      "price_range": "$166-$320"
+    },
+    {
+      "handle": "12v-23-quart-portable-refrigerator-for-travel",
+      "title": "BougeRV 12V 23 Quart Portable Fridge For Travel",
+      "variant_count": 3,
+      "price_range": "$160-$320"
+    },
+    {
+      "handle": "12v-23qt-mint-green-car-fridge-refurbished",
+      "title": "BougeRV 12V 23QT Colorful Mint Green Car Fridge (Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$220-$220"
+    },
+    {
+      "handle": "12v-23qt-pink-car-fridge-refurbished",
+      "title": "BougeRV 12V 23QT Colorful Pink Car Fridge (Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$220-$220"
+    },
+    {
+      "handle": "12v-23qt-purple-car-fridge-refurbished",
+      "title": "BougeRV 12V 23QT Colorful Purple Car Fridge (Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$220-$220"
+    },
+    {
+      "handle": "12v-car-fridge",
+      "title": "BougeRV 12V 30 Quart (28L) Portable Car Fridge",
+      "variant_count": 3,
+      "price_range": "$210-$360"
+    },
+    {
+      "handle": "12v-30-quart-28l-portable-refrigerator-black",
+      "title": "BougeRV 12V 30 Quart (28L) Portable Car Fridge Black",
+      "variant_count": 3,
+      "price_range": "$210-$370"
+    },
+    {
+      "handle": "42-quart-refrigerator-cover",
+      "title": "BougeRV 12V 42 Quart (40L) Portable Car Fridge Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "low-wattage-fridge",
+      "title": "BougeRV 12V 42 Quart (40L) Portable Fridge/Freezer",
+      "variant_count": 3,
+      "price_range": "$210-$380"
+    },
+    {
+      "handle": "53-quart-portable-cover",
+      "title": "BougeRV 12V 53 Quart (50L) Portable Car Refrigerator Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "12v-portable-car-freezer",
+      "title": "BougeRV 12V 53 Quart (50L) Portable Fridge/Freezer",
+      "variant_count": 3,
+      "price_range": "$240-$400"
+    },
+    {
+      "handle": "portable-fridge-with-juicego-power-station",
+      "title": "BougeRV 12V Portable Fridge With JuiceGo 240Wh Power Station",
+      "variant_count": 4,
+      "price_range": "$300-$360"
+    },
+    {
+      "handle": "16bb-topcon-200-solar-panel-40a-solar-controller",
+      "title": "BougeRV 16BB 24V N-Type 200 Watt Bifacial Solar Panel+40A MPPT Solar Controller Kit",
+      "variant_count": 1,
+      "price_range": "$280-$280"
+    },
+    {
+      "handle": "topcon-16bb-100-watt-solar-panel",
+      "title": "BougeRV 16BB N-Type 12V/24V 100 Watt Bifacial Solar Panel",
+      "variant_count": 8,
+      "price_range": "$100-$320"
+    },
+    {
+      "handle": "bougerv-16bb-n-type-12v-24v-100-watt-bifacial-solar-panel-\u526f\u672c",
+      "title": "BougeRV 16BB N-Type 12V/24V 100 Watt Bifacial Solar Panel(Refurbished)",
+      "variant_count": 2,
+      "skip_reason": "accessory/promo",
+      "price_range": "$80-$80"
+    },
+    {
+      "handle": "bougerv-18-oz-kids-water-bottle",
+      "title": "BougeRV 18 oz Kids Water Bottle",
+      "variant_count": 3,
+      "price_range": "$16-$16"
+    },
+    {
+      "handle": "2000w-12v-pure-sine-wave-inverter-with-bluetooth",
+      "title": "BougeRV 2000W 12V Pure Sine Wave Inverter with Bluetooth",
+      "variant_count": 2,
+      "skip_reason": "accessory/promo",
+      "price_range": "$260-$290"
+    },
+    {
+      "handle": "220wh-portable-power-station-for-refrigerator",
+      "title": "BougeRV 277WH Portable Power Station for Fridge",
+      "variant_count": 2,
+      "price_range": "$170-$300"
+    },
+    {
+      "handle": "28inch-ski-snowboard-racks",
+      "title": "BougeRV 28'' Ski & Snowboard Racks with Anti-Theft Lock",
+      "variant_count": 1,
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "28-ski-snowboard-racks-with-anti-theft-lock-sliver",
+      "title": "BougeRV 28'' Ski & Snowboard Racks with Anti-Theft Lock Sliver",
+      "variant_count": 1,
+      "price_range": "$110-$110"
+    },
+    {
+      "handle": "2899btu-portable-air-conditioner",
+      "title": "BougeRV 2899BTU Portable Air Conditioner",
+      "variant_count": 2,
+      "price_range": "$400-$800"
+    },
+    {
+      "handle": "2899btu-portable-air-conditioner-refurbished",
+      "title": "BougeRV 2899BTU Portable Air Conditioner(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$400-$400"
+    },
+    {
+      "handle": "300w-12bb-mono-bifaical-solar-panel",
+      "title": "BougeRV 300 Watt 12V/24V Rigid Bifacial 12BB Mono Solar Panel",
+      "variant_count": 2,
+      "price_range": "$580-$1149"
+    },
+    {
+      "handle": "300-watt-solar-panel",
+      "title": "BougeRV 300 Watt N-Type Rigid Bifacial 16BB Mono Solar Panel",
+      "variant_count": 4,
+      "price_range": "$346-$1360"
+    },
+    {
+      "handle": "3000w-12v-pure-sine-wave-inverter-with-bluetooth",
+      "title": "BougeRV 3000W 12V Pure Sine Wave Inverter with Bluetooth",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$260-$260"
+    },
+    {
+      "handle": "bougerv-400-watt-12v-24v-rigid-bifacial-10bb-mono-solar-panel",
+      "title": "BougeRV 400 Watt 12V/24V Rigid Bifacial 10BB Mono Solar Panel",
+      "variant_count": 2,
+      "price_range": "$820-$1600"
+    },
+    {
+      "handle": "bougerv-400-watt-16bb-mono-solar-panel",
+      "title": "BougeRV 400 Watt N-Type Rigid Bifacial 16BB Mono Solar Panel",
+      "variant_count": 4,
+      "price_range": "$420-$1600"
+    },
+    {
+      "handle": "50w-fiberglass-solar-panel",
+      "title": "BougeRV 50W Fiberglass Flexible Portable Solar Panel",
+      "variant_count": 3,
+      "price_range": "$66-$210"
+    },
+    {
+      "handle": "58-in-adjustable-solar-panel-tilt-mount-brackets",
+      "title": "BougeRV 58in Adjustable Solar Panel Tilt Mount Brackets with Foldable Tilt Legs",
+      "variant_count": 4,
+      "skip_reason": "accessory/promo",
+      "price_range": "$130-$480"
+    },
+    {
+      "handle": "6-pack-2-inch-hitch-receiver-silencer-pad",
+      "title": "BougeRV 6 Pack 2 Inch Hitch Receiver Silencer Pad",
+      "variant_count": 1,
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "63w-ac-power-cord",
+      "title": "BougeRV 63W AC Power Cord for JuiceGo and 277Wh Power Supply",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "8ft-10-awg-wire-copper-tray-cable",
+      "title": "BougeRV 8Feet 10AWG Solar Extension Cable, Controller to Battery Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$26-$26"
+    },
+    {
+      "handle": "al05-multifunctional-area-light-outdoor-headlamp",
+      "title": "BougeRV AL05 Multifunctional Area Light Rechargeable Outdoor Headlamp",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "al05-pro-kit-waterproof-camping-light-bulb",
+      "title": "BougeRV AL05 PRO Kit Area Light Waterproof Camping Light Bulb",
+      "variant_count": 1,
+      "price_range": "$43-$43"
+    },
+    {
+      "handle": "al05-pro-waterproof-camping-light",
+      "title": "BougeRV AL05 PRO Multifunctional Area Light Waterproof Camping Light",
+      "variant_count": 1,
+      "price_range": "$33-$33"
+    },
+    {
+      "handle": "al06-camping-lantern-rechargeable-emergency-flashlight",
+      "title": "BougeRV AL06 Portable Camping Lantern Rechargeable Emergency Flashlight",
+      "variant_count": 1,
+      "price_range": "$26-$26"
+    },
+    {
+      "handle": "al07-rechargeable-camping-light-ambient-lantern",
+      "title": "BougeRV AL07 Rechargeable Camping Light Ambient Lantern",
+      "variant_count": 1,
+      "price_range": "$29-$29"
+    },
+    {
+      "handle": "fiberglass-100-watt-solar-panel",
+      "title": "BougeRV Arch 100 Watt Fiberglass Flexible Curved Solar Panel",
+      "variant_count": 4,
+      "price_range": "$100-$320"
+    },
+    {
+      "handle": "curved-200-watt-solar-panel",
+      "title": "BougeRV Arch 200 Watt Fiberglass Flexible Curved Solar Panel",
+      "variant_count": 5,
+      "price_range": "$200-$1360"
+    },
+    {
+      "handle": "fiberglass-300-watt-solar-panel",
+      "title": "BougeRV Arch 300 Watt (3x100W) Fiberglass Curved Solar Panel",
+      "variant_count": 1,
+      "price_range": "$279-$279"
+    },
+    {
+      "handle": "arch-600-watt-fiberglass-curved-solar-panel",
+      "title": "BougeRV Arch 600 Watt(3x200W) Fiberglass Curved Solar Panel",
+      "variant_count": 1,
+      "price_range": "$825-$825"
+    },
+    {
+      "handle": "arch-800-watt-fiberglass-curved-solar-panel",
+      "title": "BougeRV Arch 800 Watt(4x200W) Fiberglass Curved Solar Panel",
+      "variant_count": 1,
+      "price_range": "$1090-$1090"
+    },
+    {
+      "handle": "arch-pro-12v-24v-100w-flexible-solar-panel",
+      "title": "BougeRV Arch Pro 100W N-Type TOPCon Flexible Solar Panel (12V/24V Compatible)",
+      "variant_count": 4,
+      "price_range": "$150-$560"
+    },
+    {
+      "handle": "arch-pro-12v-24v-200w-flexible-solar-panel",
+      "title": "BougeRV Arch Pro 200W N-Type TOPCon Flexible Solar Panel (12V/24V Compatible)",
+      "variant_count": 5,
+      "price_range": "$280-$2080"
+    },
+    {
+      "handle": "bougerv-aspen",
+      "title": "BougeRV ASPEN  12V Portable Refrigerator",
+      "variant_count": 1,
+      "price_range": "$500-$500"
+    },
+    {
+      "handle": "battery-cable-with-silicone-and-copper-wire-set",
+      "title": "BougeRV Battery Cable with Flexible Silicone and Pure Copper Wire Set",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "600-watt-rigid-bifacial-12bb-solar-panel",
+      "title": "BougeRV Bifacial 600 Watts 12BB 12V/24V Rigid Solar Panel",
+      "variant_count": 4,
+      "price_range": "$580-$2000"
+    },
+    {
+      "handle": "800-watt-rigid-bifacial-10bb-solar-panel",
+      "title": "BougeRV Bifacial 800 Watts 10BB 12V/24V Rigid Solar Panel",
+      "variant_count": 4,
+      "price_range": "$820-$2880"
+    },
+    {
+      "handle": "car-shower-tent-with-roof",
+      "title": "BougeRV Car Shower Tent with Roof",
+      "variant_count": 1,
+      "price_range": "$160-$160"
+    },
+    {
+      "handle": "copy-of-free-giftbougerv-casual-hat",
+      "title": "BougeRV Casual Hat",
+      "variant_count": 1,
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "bougerv-coffee-pot",
+      "title": "BougeRV Coffee Pot",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "outdoor-portable-electric-barbecue-grill",
+      "title": "BougeRV Compact Outdoor Portable Electric Barbecue Grill",
+      "variant_count": 1,
+      "price_range": "$180-$180"
+    },
+    {
+      "handle": "cm02-portable-coffee-maker",
+      "title": "BougeRV Cordless Self-Heating Portable Coffee Maker \u2013 K-Cup Compatible",
+      "variant_count": 2,
+      "price_range": "$100-$170"
+    },
+    {
+      "handle": "bougerv-cr",
+      "title": "BougeRV CR 12V Portable Refrigerator",
+      "variant_count": 1,
+      "price_range": "$270-$270"
+    },
+    {
+      "handle": "12v-30-quart-portable-car-refrigerator-cover",
+      "title": "BougeRV CR 30 Quart Portable Car Fridge Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$55-$55"
+    },
+    {
+      "handle": "dual-zone-portable-fridge-freezer",
+      "title": "BougeRV CRD2 43QT Dual Zone 12V Portable Fridge Freezer",
+      "variant_count": 3,
+      "price_range": "$310-$630"
+    },
+    {
+      "handle": "12-volt-rv-refrigerator",
+      "title": "BougeRV CRD2 52QT Dual Zone 12V Portable Fridge Freezer",
+      "variant_count": 3,
+      "price_range": "$350-$640"
+    },
+    {
+      "handle": "12v-compressor-fridge-freezer",
+      "title": "BougeRV CRD2 61QT Dual Zone 12V Portable Fridge Freezer",
+      "variant_count": 3,
+      "price_range": "$390-$670"
+    },
+    {
+      "handle": "crd2-dual-zone-12v-portable-fridge-kit",
+      "title": "BougeRV CRD2 Dual Zone Solar Battery Portable Fridge Kit",
+      "variant_count": 3,
+      "price_range": "$600-$670"
+    },
+    {
+      "handle": "37-quart-refrigerator-cover",
+      "title": "BougeRV CRD35 37 Quart Dual Zone Fridge Insulated Protective Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "crd35-37qt-12-volt-dual-zone-car-refrigerator",
+      "title": "BougeRV CRD35 37QT 12 Volt Dual Zone Car Refrigerator",
+      "variant_count": 3,
+      "price_range": "$276-$310"
+    },
+    {
+      "handle": "48-quart-refrigerator-cover",
+      "title": "BougeRV CRD45 48 Quart Refrigerator Insulated Protective Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "crd45-48qt-12-volt-dual-zone-car-fridge",
+      "title": "BougeRV CRD45 48QT 12 Volt Dual Zone Car Refrigerator",
+      "variant_count": 2,
+      "price_range": "$325-$380"
+    },
+    {
+      "handle": "cr55-59-quart-fridge-insulated-protective-cover",
+      "title": "BougeRV CRD55 59 Quart Dual Zone Fridge Insulated Protective Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$75-$75"
+    },
+    {
+      "handle": "crd55-59qt-12-volt-dual-zone-car-refrigerator",
+      "title": "BougeRV CRD55 59QT 12 Volt Dual Zone Car Refrigerator",
+      "variant_count": 2,
+      "price_range": "$351-$420"
+    },
+    {
+      "handle": "12v-portable-fridge",
+      "title": "BougeRV CRH 19QT 12V Portable Car Fridge",
+      "variant_count": 1,
+      "price_range": "$187-$187"
+    },
+    {
+      "handle": "12v-portable-car-fridge-with-173wh-battery",
+      "title": "BougeRV CRH 19QT 12V Portable Car Fridge with 173Wh Battery",
+      "variant_count": 1,
+      "price_range": "$320-$320"
+    },
+    {
+      "handle": "12v-portable-mini-car-fridge",
+      "title": "BougeRV CRH 9QT 12V Portable Car Fridge",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "crh-9qt-12v-camp-fridge-with-battery",
+      "title": "BougeRV CRH 9QT 12V Portable Car Fridge with 173Wh Battery",
+      "variant_count": 1,
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "crpro21-12v-truck-fridge",
+      "title": "BougeRV CRPRO20 21 Quart 12V Portable Car Fridge Freezer",
+      "variant_count": 3,
+      "price_range": "$180-$340"
+    },
+    {
+      "handle": "crpro20-portable-fridge-for-car",
+      "title": "BougeRV CRPRO20 21 Quart 12V Portable Car Fridge Freezer White",
+      "variant_count": 3,
+      "price_range": "$180-$340"
+    },
+    {
+      "handle": "crpro20-21-quart-fridge-cover",
+      "title": "BougeRV CRPRO20 21 Quart Portable Fridge Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "crpro30-mini-fridge-for-car",
+      "title": "BougeRV CRPRO30 30 Quart 12V Portable Car Fridge Freezer",
+      "variant_count": 3,
+      "price_range": "$225-$380"
+    },
+    {
+      "handle": "crpro30-12v-marine-fridge",
+      "title": "BougeRV CRPRO30 30 Quart 12V Portable Car Fridge Freezer White",
+      "variant_count": 3,
+      "price_range": "$225-$380"
+    },
+    {
+      "handle": "crpro30-vip-30-quart-portable-fridge",
+      "title": "BougeRV CRPRO30 VIP Upgraded 30 Quart Portable Refrigerator",
+      "variant_count": 3,
+      "price_range": "$280-$430"
+    },
+    {
+      "handle": "12v-fridge-for-rv-van",
+      "title": "BougeRV CRS 42 Quart 12V Car Fridge",
+      "variant_count": 2,
+      "price_range": "$240-$400"
+    },
+    {
+      "handle": "12-volt-camp-fridge",
+      "title": "BougeRV CRS 42QT 12 Volt Portable Car Fridge",
+      "variant_count": 2,
+      "price_range": "$240-$400"
+    },
+    {
+      "handle": "12v-fridge-low-noise",
+      "title": "BougeRV CRS 53 Quart 12V Car Fridge",
+      "variant_count": 2,
+      "price_range": "$270-$330"
+    },
+    {
+      "handle": "12-volt-portable-rv-fridge",
+      "title": "BougeRV CRS 53QT 12 Volt Portable Car Fridge",
+      "variant_count": 2,
+      "price_range": "$270-$430"
+    },
+    {
+      "handle": "12-volt-portable-car-freezer",
+      "title": "BougeRV CRS 63QT 12 Volt Portable Car Fridge",
+      "variant_count": 2,
+      "price_range": "$310-$470"
+    },
+    {
+      "handle": "crx2-insulated-dual-zone-fridge",
+      "title": "BougeRV CRX2 31QT Battery Powered Insulated Dual-Zone Portable Fridge",
+      "variant_count": 1,
+      "price_range": "$320-$320"
+    },
+    {
+      "handle": "crx2-portable-fridge-with-277wh-power-station",
+      "title": "BougeRV CRX2 31QT Dual-Zone Portable Fridge with 277Wh Power Station",
+      "variant_count": 1,
+      "price_range": "$460-$460"
+    },
+    {
+      "handle": "battery-powered-dual-zone-portable-fridge",
+      "title": "BougeRV CRX2 31QT Insulated Dual-Zone Portable Fridge with 2 Batteries",
+      "variant_count": 1,
+      "price_range": "$590-$590"
+    },
+    {
+      "handle": "alternator-charger-for-power-station",
+      "title": "BougeRV DC600 Alternator Charger",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$200-$200"
+    },
+    {
+      "handle": "easy-carry-clip-on-light",
+      "title": "BougeRV Easy Carry Clip-On Light Outdoor Camping Lantern",
+      "variant_count": 3,
+      "price_range": "$24-$24"
+    },
+    {
+      "handle": "portable-outdoor-freezer",
+      "title": "BougeRV ED35 37 Quart 12 Volt Dual Zone Car Fridge Freezer",
+      "variant_count": 2,
+      "price_range": "$270-$320"
+    },
+    {
+      "handle": "ed45-48-quart-dual-zone-car-fridge-freezer",
+      "title": "BougeRV ED45 48 Quart 12 Volt Dual Zone Car Fridge Freezer",
+      "variant_count": 2,
+      "price_range": "$288-$360"
+    },
+    {
+      "handle": "ed55-59-quart-dual-zone-car-fridge-freezer",
+      "title": "BougeRV ED55 59 Quart 12 Volt Dual Zone Car Fridge Freezer",
+      "variant_count": 1,
+      "price_range": "$400-$400"
+    },
+    {
+      "handle": "electric-folding-wagon",
+      "title": "BougeRV Electric Foldable Utility Camping Wagon with Power Bank",
+      "variant_count": 4,
+      "price_range": "$350-$500"
+    },
+    {
+      "handle": "portable-fan",
+      "title": "BougeRV F01 Portable Outdoor Fan",
+      "variant_count": 2,
+      "price_range": "$70-$210"
+    },
+    {
+      "handle": "bougerv-f02-outdoor-fan",
+      "title": "BougeRV F02 Portable Cordless Jobsite Outdoor Fan With 144Wh Battery",
+      "variant_count": 1,
+      "price_range": "$160-$160"
+    },
+    {
+      "handle": "zoomable-camping-flashlight",
+      "title": "BougeRV FL01 Zoomable Camping Flashlight Outdoor Emergency Light",
+      "variant_count": 1,
+      "price_range": "$26-$26"
+    },
+    {
+      "handle": "flexible-solar-panel-rubber-tape",
+      "title": "BougeRV Flexible Solar Panel Waterproof Butyl Rubber Tape",
+      "variant_count": 2,
+      "price_range": "$30-$50"
+    },
+    {
+      "handle": "ford-f-150-center-console-refrigerator",
+      "title": "BougeRV Ford F-150 Center Console Refrigerator",
+      "variant_count": 1,
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "bougerv-fridge-stickers",
+      "title": "BougeRV Fridge Stickers",
+      "variant_count": 1,
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "bougerv-electric-utility-garden-cart",
+      "title": "BougeRV GC660 Electric Utility Garden Cart",
+      "variant_count": 2,
+      "price_range": "$990-$1100"
+    },
+    {
+      "handle": "bougerv-gift-card",
+      "title": "BougeRV Gift Card",
+      "variant_count": 3,
+      "price_range": "$100-$300"
+    },
+    {
+      "handle": "hitch-ski-snowboard-rack",
+      "title": "BougeRV Hitch Ski Snowboard Rack with Security Lock",
+      "variant_count": 1,
+      "price_range": "$240-$240"
+    },
+    {
+      "handle": "hitch-ski-snowboard-rack-with-security-lockfit",
+      "title": "BougeRV Hitch Ski Snowboard Rack with Security Lock(Fit for 2\" Receiver)",
+      "variant_count": 1,
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "juicego-240wh-portable-power-station-solar-kit",
+      "title": "BougeRV JuiceGo 240Wh Portable Power Station Solar Kit",
+      "variant_count": 2,
+      "price_range": "$190-$280"
+    },
+    {
+      "handle": "juicego-power-station",
+      "title": "BougeRV JuiceGo 240Wh Portable Power Station(Modified Sine Wave)",
+      "variant_count": 3,
+      "skip_reason": "accessory/promo",
+      "price_range": "$136-$200"
+    },
+    {
+      "handle": "juicego-240wh-portable-power-station",
+      "title": "BougeRV JuiceGo Upgraded 240Wh Portable Power Station (Pure Sine Wave)",
+      "variant_count": 5,
+      "skip_reason": "accessory/promo",
+      "price_range": "$150-$300"
+    },
+    {
+      "handle": "lightweight-portable-outdoor-electric-griddle",
+      "title": "BougeRV Lightweight Portable Outdoor Electric Griddle Smokeless",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "lockable-hitch-mount-bike-rack-platform",
+      "title": "BougeRV Lockable Hitch Mount Bike Rack Platform 2-Bike Carrier",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$340-$340"
+    },
+    {
+      "handle": "lockable-t-slot-ski-snowboard-racks",
+      "title": "BougeRV Lockable T Slot Ski & Snowboard Racks (Only Fits Crossbars with T-Track)",
+      "variant_count": 2,
+      "price_range": "$220-$220"
+    },
+    {
+      "handle": "magnetic-ski-holder",
+      "title": "BougeRV Magnetic Ski Holder, Snowboard Vehicle Mount",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$28-$28"
+    },
+    {
+      "handle": "bougerv-modular-roof-rack-platform",
+      "title": "BougeRV Modular Roof Rack Platform with Slidable Solar Panel Bracket",
+      "variant_count": 2,
+      "skip_reason": "accessory/promo",
+      "price_range": "$290-$370"
+    },
+    {
+      "handle": "sensor-camping-lantern",
+      "title": "BougeRV Multifunctional Sensor Camping Lantern Movable Area Light",
+      "variant_count": 4,
+      "price_range": "$25-$26"
+    },
+    {
+      "handle": "sensor-camping-lantern-area-light",
+      "title": "BougeRV Multifunctional Sensor Camping Lantern Movable Area Light Black",
+      "variant_count": 4,
+      "price_range": "$25-$26"
+    },
+    {
+      "handle": "mystery-solar-gift-box",
+      "title": "BougeRV Mystery Basic Solar Gift Box",
+      "variant_count": 1,
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "bougerv-mystery-plus-solar-gift-box",
+      "title": "BougeRV Mystery Plus Solar Gift Box",
+      "variant_count": 1,
+      "price_range": "$110-$110"
+    },
+    {
+      "handle": "bougerv-mystery-pro-solar-gift-box",
+      "title": "BougeRV Mystery Pro Solar Gift Box",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "bougerv-mystery-ultra-solar-gift-box-pro",
+      "title": "BougeRV Mystery Ultra Solar Gift Box",
+      "variant_count": 1,
+      "price_range": "$200-$200"
+    },
+    {
+      "handle": "n-type-1200-watt-solar-panel",
+      "title": "BougeRV N-Type 1200 Watts 16BB 12V/24V Bifacial Solar Panel",
+      "variant_count": 6,
+      "price_range": "$960-$1500"
+    },
+    {
+      "handle": "bougerv-n-type-12v-200-watt-bifacial-16bb-solar-panel-refurbished",
+      "title": "BougeRV N-Type 12V 200 Watt Bifacial 16BB Solar Panel(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "topcon-16bb-200-watt-solar-panel",
+      "title": "BougeRV N-Type 12V/24V 200 Watt Bifacial 16BB Solar Panel",
+      "variant_count": 10,
+      "price_range": "$170-$1200"
+    },
+    {
+      "handle": "100w-portable-solar-panel",
+      "title": "BougeRV New 100W Portable Solar Panel",
+      "variant_count": 1,
+      "price_range": "$110-$110"
+    },
+    {
+      "handle": "200w-portable-solar-panel",
+      "title": "BougeRV New 200W Portable Solar Panel",
+      "variant_count": 1,
+      "price_range": "$190-$190"
+    },
+    {
+      "handle": "3500btu-portable-air-conditioner",
+      "title": "BougeRV New 3500BTU Portable Air Conditioner",
+      "variant_count": 1,
+      "price_range": "$390-$390"
+    },
+    {
+      "handle": "portable-telescopic-camping-lantern-black",
+      "title": "BougeRV New Outdoor Portable Telescopic Camping Lantern (Black)",
+      "variant_count": 1,
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "portable-diesel-outdoor-heater",
+      "title": "BougeRV New Portable Diesel Outdoor Heater",
+      "variant_count": 3,
+      "price_range": "$300-$460"
+    },
+    {
+      "handle": "portable-propane-outdoor-water-heater",
+      "title": "BougeRV New Portable Propane Outdoor Camping Water Heater",
+      "variant_count": 1,
+      "price_range": "$340-$340"
+    },
+    {
+      "handle": "t1-portable-telescopic-camping-lantern",
+      "title": "BougeRV New T1 Portable Telescopic Camping Lantern",
+      "variant_count": 4,
+      "price_range": "$85-$130"
+    },
+    {
+      "handle": "outdoor-portable-camping-lantern",
+      "title": "BougeRV Outdoor Portable Camping Lantern",
+      "variant_count": 1,
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "outdoor-camping-lantern-portable-light",
+      "title": "BougeRV Outdoor Portable Telescopic Camping Lantern",
+      "variant_count": 4,
+      "price_range": "$60-$200"
+    },
+    {
+      "handle": "paso-100w-cigs-portable-solar-blanket",
+      "title": "BougeRV Paso 100W CIGS Portable Solar Blanket",
+      "variant_count": 1,
+      "price_range": "$500-$500"
+    },
+    {
+      "handle": "pet-bowl",
+      "title": "BougeRV Pet bowl",
+      "variant_count": 6,
+      "price_range": "$30-$40"
+    },
+    {
+      "handle": "portable-carrying-bag-for-juicego-power-station",
+      "title": "BougeRV Portable Carrying Bag for JuiceGo 240Wh Power Station",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$35-$35"
+    },
+    {
+      "handle": "bougerv-portable-coffee-maker",
+      "title": "BougeRV Portable Coffee Maker With 144Wh Battery",
+      "variant_count": 2,
+      "price_range": "$150-$210"
+    },
+    {
+      "handle": "multi-mode-small-camping-light",
+      "title": "BougeRV Portable Flashlight Rechargeable Camping Tent Lantern",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "bougerv-rocky",
+      "title": "BougeRV ROCKY 12V Portable Refrigerator",
+      "variant_count": 1,
+      "price_range": "$550-$550"
+    },
+    {
+      "handle": "rocky-12v-camp-fridge",
+      "title": "BougeRV Rocky 41QT Dual Zone 12V Portable Fridge",
+      "variant_count": 3,
+      "price_range": "$390-$690"
+    },
+    {
+      "handle": "rocky-dual-zone-metal-fridge",
+      "title": "BougeRV Rocky 55QT Dual Zone 12V Portable Fridge",
+      "variant_count": 3,
+      "price_range": "$440-$740"
+    },
+    {
+      "handle": "rocky-overland-fridge-freezer",
+      "title": "BougeRV Rocky 69QT Dual Zone 12V Portable Fridge",
+      "variant_count": 3,
+      "price_range": "$520-$800"
+    },
+    {
+      "handle": "rocky-heavy-duty-metal-12v-fridge",
+      "title": "BougeRV Rocky 81QT Dual Zone 12V Portable Fridge",
+      "variant_count": 3,
+      "price_range": "$600-$880"
+    },
+    {
+      "handle": "rocky-solar-battery-portable-fridge-kit",
+      "title": "BougeRV Rocky Solar Battery Portable Fridge Kit",
+      "variant_count": 4,
+      "price_range": "$690-$880"
+    },
+    {
+      "handle": "sensor-camping-lanterns-area-lights",
+      "title": "BougeRV Sensor Camping Lantern Movable Area Light (2 Pack)",
+      "variant_count": 6,
+      "price_range": "$47-$47"
+    },
+    {
+      "handle": "bougerv-shopping-bag",
+      "title": "BougeRV Shopping Bag + Keychain",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "mc4-crimping-tool",
+      "title": "BougeRV Solar Crimper",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "mc4-crimping-tool-kit",
+      "title": "BougeRV Solar Crimper Tool Kit",
+      "variant_count": 1,
+      "price_range": "$26-$26"
+    },
+    {
+      "handle": "solar-panel-crab-mounting-kit",
+      "title": "BougeRV Solar Panel Crab Mounting Kit for Cars with Cross Bars",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$90-$90"
+    },
+    {
+      "handle": "solar-y-branch-connectors",
+      "title": "BougeRV Solar Panel Parallel Connectors 1 to 2 Solar Cable Wire",
+      "variant_count": 3,
+      "skip_reason": "accessory/promo",
+      "price_range": "$20-$50"
+    },
+    {
+      "handle": "3-to-1-mc4-connector",
+      "title": "BougeRV Solar Panel Parallel Connectors 1 to 3 Solar Cable Wire",
+      "variant_count": 2,
+      "skip_reason": "accessory/promo",
+      "price_range": "$20-$30"
+    },
+    {
+      "handle": "4-to-1-mc4-connector",
+      "title": "BougeRV Solar Panel Parallel Connectors 1 to 4 Solar Cable Wire",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "5-to-1-mc4-connector",
+      "title": "BougeRV Solar Panel Parallel Connectors 1 to 5 Solar Cable Wire",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$35-$35"
+    },
+    {
+      "handle": "6-to-1-mc4-connector",
+      "title": "BougeRV Solar Panel Parallel Connectors 1 to 6 Solar Cable Wire",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "split-system-vehicle-outdoor-space-heater",
+      "title": "BougeRV Split-System Outdoor Camping Space Heater",
+      "variant_count": 1,
+      "price_range": "$1000-$1000"
+    },
+    {
+      "handle": "sunflow-30a-mppt-solar-charge-controller",
+      "title": "BougeRV Sunflow 30A MPPT Solar Charge Controller 12V/24V",
+      "variant_count": 1,
+      "price_range": "$90-$90"
+    },
+    {
+      "handle": "sunflow-40a-mppt-solar-charge-controller",
+      "title": "BougeRV Sunflow 40A MPPT Solar Charge Controller 12V/24V",
+      "variant_count": 1,
+      "price_range": "$130-$130"
+    },
+    {
+      "handle": "sunflow-60a-mppt-solar-charge-controller",
+      "title": "BougeRV Sunflow 60A MPPT Solar Charge Controller 12V/24V",
+      "variant_count": 1,
+      "price_range": "$160-$160"
+    },
+    {
+      "handle": "comfort-kit",
+      "title": "BougeRV Trail Lite Comfort Kit \u2013 Portable Coffee Maker & Outdoor Fan",
+      "variant_count": 1,
+      "price_range": "$170-$170"
+    },
+    {
+      "handle": "universal-soft-roof-rack-pads",
+      "title": "BougeRV Universal Soft Roof Rack Pads",
+      "variant_count": 2,
+      "price_range": "$110-$110"
+    },
+    {
+      "handle": "outdoor-camping-lantern-telescoping-area-light",
+      "title": "BougeRV Wide-Area Outdoor Camping Telescoping Light",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "wl01-lite-rechargeable-work-light",
+      "title": "BougeRV WL01 LITE Rechargeable Work Light 180\u00b0 Rotate Job Site Lighting",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "wl01-pro-rechargeable-work-light",
+      "title": "BougeRV WL01 PRO Rechargeable Work Light 180\u00b0 Rotate Job Site Lighting",
+      "variant_count": 1,
+      "price_range": "$33-$33"
+    },
+    {
+      "handle": "wl01-work-light",
+      "title": "BougeRV WL01 Rechargeable Work Light 180\u00b0 Rotate Job Site Lighting",
+      "variant_count": 1,
+      "price_range": "$25-$25"
+    },
+    {
+      "handle": "wl02-waterproof-work-light",
+      "title": "BougeRV WL02 Waterproof Work Light for Outdoor&Garage",
+      "variant_count": 1,
+      "price_range": "$19-$19"
+    },
+    {
+      "handle": "yuma-100w-cigs-flexible-solar-panel-with-holes",
+      "title": "BougeRV Yuma 100W CIGS Thin-film Flexible Solar Panel with Pre-Punched Holes (Compact Version)",
+      "variant_count": 4,
+      "price_range": "$220-$800"
+    },
+    {
+      "handle": "yuma-100w-cigs-flexible-solar-panel-with-adhesive",
+      "title": "BougeRV Yuma 100W CIGS Thin-film Flexible Solar Panel with Tape (Compact Version)",
+      "variant_count": 4,
+      "price_range": "$230-$840"
+    },
+    {
+      "handle": "100w-flexible-solar-panel",
+      "title": "BougeRV Yuma 100W CIGS Thin-film Flexible Solar Panel with Tape (Long Version)",
+      "variant_count": 4,
+      "price_range": "$250-$920"
+    },
+    {
+      "handle": "yuma-100w-cigs-flexible-solar-panel-with-adhesive-refurbished",
+      "title": "BougeRV Yuma 100W CIGS Thin-film Flexible Solar Panel with tape (Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$190-$190"
+    },
+    {
+      "handle": "yuma-200w-cigs-flexible-solar-panel-with-holes",
+      "title": "BougeRV Yuma 200W CIGS Thin-film Flexible Solar Panel with Pre-Punched Holes",
+      "variant_count": 5,
+      "price_range": "$430-$3120"
+    },
+    {
+      "handle": "yuma-200w-cigs-thin-film-flexible-solar-panel-with-pre-punched-holes-refurbished",
+      "title": "BougeRV Yuma 200W CIGS Thin-film Flexible Solar Panel with Pre-Punched Holes(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$330-$330"
+    },
+    {
+      "handle": "200w-flexible-solar-panel",
+      "title": "BougeRV Yuma 200W CIGS Thin-film Flexible Solar Panel with Tape",
+      "variant_count": 5,
+      "price_range": "$440-$3200"
+    },
+    {
+      "handle": "bougerv-yuma-200w-cigs-thin-film-flexible-solar-panel-with-tape-\u526f\u672c",
+      "title": "BougeRV Yuma 200W CIGS Thin-film Flexible Solar Panel with Tape(Refurbished)",
+      "variant_count": 2,
+      "skip_reason": "accessory/promo",
+      "price_range": "$390-$760"
+    },
+    {
+      "handle": "yuma-800w-cigs-flexible-solar-panel-with-holes",
+      "title": "BougeRV Yuma 800W (200W*4pcs) CIGS Thin-film Flexible Solar Panel with Holes",
+      "variant_count": 1,
+      "price_range": "$2260-$2260"
+    },
+    {
+      "handle": "800w-cigs-flexible-thin-film-solar-panel",
+      "title": "BougeRV Yuma 800W (200W*4pcs) Thin-Film Flexible Solar Panel with Adhesive",
+      "variant_count": 1,
+      "price_range": "$1596-$1596"
+    },
+    {
+      "handle": "carrying-bag-for-220wh-power-station",
+      "title": "Compatible Portable Carrying Bag for 277Wh Power Station",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$24-$24"
+    },
+    {
+      "handle": "cr35-37-quart-dual-zone-portable-fridge-refurbished",
+      "title": "CR35 37 Quart Dual Zone Portable Fridge(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$270-$270"
+    },
+    {
+      "handle": "cr45-48-quart-dual-zone-portable-fridge-refurbished",
+      "title": "CR45 48 Quart Dual Zone Portable Fridge(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$294-$294"
+    },
+    {
+      "handle": "cr55-59-quart-dual-zone-portable-fridge-refurbished",
+      "title": "CR55 59 Quart Dual Zone Portable Fridge(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$320-$320"
+    },
+    {
+      "handle": "12-volt-dual-zone-car-refrigerator-refurbished",
+      "title": "CRD35 37QT 12 Volt Dual Zone Car Refrigerator(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$276-$276"
+    },
+    {
+      "handle": "crd45-48qt-12-volt-dual-zone-car-refrigerator-refurbished",
+      "title": "CRD45 48QT 12 Volt Dual Zone Car Refrigerator(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$325-$325"
+    },
+    {
+      "handle": "crd55-59qt-12-volt-dual-zone-car-refrigerator-refurbished",
+      "title": "CRD55 59QT 12 Volt Dual Zone Car Refrigerator(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$351-$351"
+    },
+    {
+      "handle": "crpro20-12v-21-quart-portable-car-fridge-refurbished",
+      "title": "CRPRO20 12V 21QT Portable Car Fridge",
+      "variant_count": 2,
+      "price_range": "$250-$250"
+    },
+    {
+      "handle": "crpro20-21-quart-car-fridge-with-220wh-power-station",
+      "title": "CRPRO20 21 Quart Car Fridge With 220Wh Power Station",
+      "variant_count": 1,
+      "price_range": "$315-$315"
+    },
+    {
+      "handle": "crpro20-21-quart-portable-fridge-with-220wh-power-station",
+      "title": "CRPRO20 21 Quart Portable Refrigerator With 220Wh Power Station",
+      "variant_count": 1,
+      "price_range": "$315-$315"
+    },
+    {
+      "handle": "crpro20-21qt-12v-fridge-white-refurbished",
+      "title": "CRPRO20 21QT 12V Portable Fridge White",
+      "variant_count": 1,
+      "price_range": "$220-$220"
+    },
+    {
+      "handle": "crpro20-21qt-12v-portable-refrigerator-kit",
+      "title": "CRPRO20 21QT 12V Portable Refrigerator Kit",
+      "variant_count": 1,
+      "price_range": "$370-$370"
+    },
+    {
+      "handle": "crpro25-12v-26-quart-portable-car-fridge-refurbished",
+      "title": "CRPRO25 12V 26QT Portable Fridge(Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$270-$270"
+    },
+    {
+      "handle": "crpro30-12v-30-quart-portable-car-fridge-refurbished",
+      "title": "CRPRO30 12V 30QT Portable Fridge",
+      "variant_count": 1,
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "crpro30-30-quart-12v-portable-car-fridge-kit",
+      "title": "CRPRO30 30 Quart 12V Portable Car Fridge Kit",
+      "variant_count": 1,
+      "price_range": "$420-$420"
+    },
+    {
+      "handle": "crpro30-30-quart-portable-car-fridge-with-220wh-power-station",
+      "title": "CRPRO30 30 Quart Portable Car Fridge White With 220Wh Power Station",
+      "variant_count": 1,
+      "price_range": "$370-$370"
+    },
+    {
+      "handle": "crpro30-30-quart-portable-fridge-with-220wh-power-station",
+      "title": "CRPRO30 30 Quart Portable Fridge With 220Wh Power Station",
+      "variant_count": 1,
+      "price_range": "$370-$370"
+    },
+    {
+      "handle": "crpro30-30-quart-fridge-cover",
+      "title": "CRPRO30 30 Quart Refrigerator Insulated Protective Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$68-$68"
+    },
+    {
+      "handle": "crpro30-30qt-12v-portable-fridge-white-refurbished",
+      "title": "CRPRO30 30QT 12V Portable Fridge White",
+      "variant_count": 1,
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "crpro30-vip-upgraded-30-quart-12v-car-fridge-kit",
+      "title": "CRPRO30 VIP Upgraded 30 Quart 12V Car Fridge Kit",
+      "variant_count": 1,
+      "price_range": "$460-$460"
+    },
+    {
+      "handle": "crpro30-vip-upgraded-30qt-portable-refrigerator-refurbished",
+      "title": "CRPRO30 VIP Upgraded 30 Quart Portable Refrigerator (Refurbished)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$350-$350"
+    },
+    {
+      "handle": "deerfamy-ice-fishing-tent-double-rooms",
+      "title": "DEERFAMY 3-Layer Ice Fishing Shelter Portable Tent Double Rooms",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "deerfamy-double-layer-ice-fishing-hut-portable-tent",
+      "title": "DEERFAMY Double-Layer Ice Fishing Hut Portable Tent Double Rooms",
+      "variant_count": 1,
+      "price_range": "$160-$160"
+    },
+    {
+      "handle": "deerfamy-iceexplorer-pro-ice-fishing-tent",
+      "title": "DEERFAMY IceExplorer Pro Double-Layer Ice Fishing Tent(5-6 People)",
+      "variant_count": 1,
+      "price_range": "$130-$130"
+    },
+    {
+      "handle": "deerfamy-insulated-ice-fishing-shelter",
+      "title": "DEERFAMY Insulated Double-Layer Ice Fishing Shelter Portable Tent(3-4 People)",
+      "variant_count": 1,
+      "price_range": "$110-$110"
+    },
+    {
+      "handle": "portable-tripod-seat-with-shoulder-strap",
+      "title": "DEERFAMY Portable Tripod Seat with Shoulder Strap",
+      "variant_count": 2,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "ice-fishing-tent",
+      "title": "DEERFAMY Single-Layer Insulated Ice Fishing Shelter Portable Tent(3-4 People)",
+      "variant_count": 1,
+      "price_range": "$110-$110"
+    },
+    {
+      "handle": "detachable-battery",
+      "title": "Detachable Battery of CRH/CRD2/ROCKY Portable Fridge",
+      "variant_count": 1,
+      "price_range": "$170-$170"
+    },
+    {
+      "handle": "12v-dual-zone-car-fridge-refurbished",
+      "title": "ED Series 12V Dual Zone Car Fridge Freezer (Refurbished)",
+      "variant_count": 3,
+      "skip_reason": "accessory/promo",
+      "price_range": "$258-$312"
+    },
+    {
+      "handle": "warranty-product",
+      "title": "Extend Warranty",
+      "variant_count": 58,
+      "price_range": "$0-$236"
+    },
+    {
+      "handle": "warranty-product-1",
+      "title": "Extend Warranty",
+      "variant_count": 99,
+      "price_range": "$0-$145"
+    },
+    {
+      "handle": "warranty-product-2",
+      "title": "Extend Warranty",
+      "variant_count": 100,
+      "price_range": "$0-$240"
+    },
+    {
+      "handle": "warranty-product-4",
+      "title": "Extend Warranty",
+      "variant_count": 39,
+      "price_range": "$0-$120"
+    },
+    {
+      "handle": "286wh-flashcharge-power-station",
+      "title": "Flash300 286Wh Fast Charging Power Station",
+      "variant_count": 1,
+      "price_range": "$400-$400"
+    },
+    {
+      "handle": "folding-hand-truck",
+      "title": "Folding Hand Truck for Portable Power Sations",
+      "variant_count": 1,
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "gray-solar-weatherproof-double-cable-entry-gland",
+      "title": "Gray Solar Weatherproof Double Cable Entry Gland",
+      "variant_count": 2,
+      "skip_reason": "accessory/promo",
+      "price_range": "$13-$25"
+    },
+    {
+      "handle": "inflatable-truck-bed-tent-with-awning",
+      "title": "Inflatable Truck Bed Tent with Awning \u2013 2 Person Pickup Camping Tent",
+      "variant_count": 3,
+      "price_range": "$210-$240"
+    },
+    {
+      "handle": "waterproof-truck-bed-tent",
+      "title": "Inflatable Truck Bed Tent with Awning, 30s Quick Setup, Waterproof Roof Shade",
+      "variant_count": 3,
+      "price_range": "$210-$230"
+    },
+    {
+      "handle": "joytutus-overland-aluminum-hard-shell-rooftop-tent",
+      "title": "JOYTUTUS Overland Aluminum Hard Shell Rooftop Tent",
+      "variant_count": 1,
+      "price_range": "$1100-$1100"
+    },
+    {
+      "handle": "kemimoto-apexr-electric-golf-push-cart",
+      "title": "KEMIMOTO ApexR Electric Golf Push Cart",
+      "variant_count": 1,
+      "price_range": "$1900-$1900"
+    },
+    {
+      "handle": "large-suv-air-mattress-with-extender",
+      "title": "Large SUV Air Mattress with Extender \u2013 Car Camping Inflatable Bed",
+      "variant_count": 1,
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "li-10a-pwm-solar-charge-controller",
+      "title": "Li 10A PWM Solar Charge Controller 12V 24V",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "2x3-inch-photo-paper-color-ribbon-cartridge-refill",
+      "title": "MUNBYN 2\"x3\" Premium Instant Photo Paper Automatic Lamination",
+      "variant_count": 2,
+      "price_range": "$13-$25"
+    },
+    {
+      "handle": "munbyn-fm226-bluetooth-portable-label-maker-white",
+      "title": "MUNBYN FM226 Bluetooth Portable Label Maker - White",
+      "variant_count": 1,
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "pr3-high-color-reproduction-2x3-portable-photo-printer",
+      "title": "MUNBYN PR3 High Color Reproduction 2x3\" Portable Photo Printer",
+      "variant_count": 1,
+      "price_range": "$110-$110"
+    },
+    {
+      "handle": "outdoor-camping-lantern-atmosphere-string-lights",
+      "title": "Outdoor Camping Lantern Atmosphere String Lights",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "pickup-truck-bed-tent-with-rainfly",
+      "title": "Pickup Truck Bed Tent with Rainfly, Waterproof Double Layer, Fits 5.0\u20138.2 ft Beds, 2-Person",
+      "variant_count": 5,
+      "price_range": "$110-$160"
+    },
+    {
+      "handle": "pickup-truck-tent-2-0-pu2000mm-waterproof-double-layer",
+      "title": "Pickup Truck Tent 2.0 PU2000mm Waterproof, Double-Layer",
+      "variant_count": 7,
+      "price_range": "$140-$180"
+    },
+    {
+      "handle": "pickup-truck-tent-bed-tent",
+      "title": "Pickup Truck Tent Bed Tent with Removable Awning",
+      "variant_count": 3,
+      "price_range": "$170-$190"
+    },
+    {
+      "handle": "pop-up-suv-camping-tent-with-2-rooms",
+      "title": "Pop-Up SUV Camping Tent with 2 Rooms \u2013 10\u00d710.5 ft Tailgate Car Tent Canopy",
+      "variant_count": 1,
+      "price_range": "$270-$270"
+    },
+    {
+      "handle": "bougerv-portable-propane-outdoor-camping-water-heater",
+      "title": "Portable Propane Outdoor Camping Water Heater",
+      "variant_count": 1,
+      "price_range": "$360-$360"
+    },
+    {
+      "handle": "price-difference-for-exchange",
+      "title": "Price difference for exchange",
+      "variant_count": 1,
+      "price_range": "$5-$5"
+    },
+    {
+      "handle": "price-difference-for-exchange-for-outdoor-appliances",
+      "title": "Price difference for exchange- For outdoor appliances",
+      "variant_count": 1,
+      "price_range": "$5-$5"
+    },
+    {
+      "handle": "price-difference-for-exchange-amazon",
+      "title": "Price difference for exchange-Amazon",
+      "variant_count": 1,
+      "price_range": "$5-$5"
+    },
+    {
+      "handle": "rocky-fridge-magnet",
+      "title": "Rocky Fridge Magnet",
+      "variant_count": 1,
+      "price_range": "$16-$16"
+    },
+    {
+      "handle": "rocky-metal-12v-portable-fridge-freezer-refurbished",
+      "title": "Rocky Metal Dual Zone 12V Portable Fridge Freezer(Refurbished)",
+      "variant_count": 4,
+      "skip_reason": "accessory/promo",
+      "price_range": "$550-$800"
+    },
+    {
+      "handle": "roof-rack-side-awning-for-suv-truck",
+      "title": "Roof Rack Side Awning for SUV & Truck, UV50+ Waterproof Pull-Out Shade",
+      "variant_count": 3,
+      "price_range": "$120-$190"
+    },
+    {
+      "handle": "rover2000-extended-battery",
+      "title": "ROVER2000 Semi-Solid Extra Battery",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$800-$800"
+    },
+    {
+      "handle": "rover-2000-power-station",
+      "title": "ROVER2000 Semi-Solid State Portable Power Station",
+      "variant_count": 1,
+      "price_range": "$950-$950"
+    },
+    {
+      "handle": "semi-automatic-truck-bed-tent-with-awning",
+      "title": "Semi-Automatic Truck Bed Tent with Awning \u2013 Quick Setup 2-Person Pickup Tent",
+      "variant_count": 3,
+      "price_range": "$130-$150"
+    },
+    {
+      "handle": "solar-y-branch-connectors-mmf-ffm",
+      "title": "Solar Branch Connectors Y Connector in Pair MMF+FFM Parallel Connection",
+      "variant_count": 3,
+      "price_range": "$12-$26"
+    },
+    {
+      "handle": "solar-panel-connectors-ppo-2-pairs",
+      "title": "Solar Branch Connectors Y Connector in Pair MMF+FFM Parallel Connection (2 Pairs)",
+      "variant_count": 1,
+      "price_range": "$17-$17"
+    },
+    {
+      "handle": "mc4-solar-branch-connector",
+      "title": "Solar Branch Connectors Y Connector in Pair MMF+FFM Parallel Connection (5 Pairs)",
+      "variant_count": 1,
+      "price_range": "$26-$26"
+    },
+    {
+      "handle": "solar-y-branch-connectors-y-mmmf-fffm",
+      "title": "Solar Branch Connectors Y Connector in Pair MMMF+FFFM Parallel Connection",
+      "variant_count": 1,
+      "price_range": "$12-$12"
+    },
+    {
+      "handle": "mc4-solar-panel-extension-cable",
+      "title": "Solar Extension Cable with Extra Free Connectors(xx FT Red+xx FT Black)",
+      "variant_count": 25,
+      "skip_reason": "accessory/promo",
+      "price_range": "$26-$130"
+    },
+    {
+      "handle": "bougerv-mysterybox",
+      "title": "Solar Kit Gift Box (Cannot Be Purchased)",
+      "variant_count": 1,
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "solar-panel-mounting-z-bracket",
+      "title": "Solar Panel Mounting Z Bracket Mount Kits",
+      "variant_count": 3,
+      "skip_reason": "accessory/promo",
+      "price_range": "$20-$40"
+    },
+    {
+      "handle": "solar-panel-mounting-z-bracket-mount-kits-for-boats",
+      "title": "Solar Panel Mounting Z Bracket Mount Kits \uff084 set 16 Units\uff09",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$36-$36"
+    },
+    {
+      "handle": "2-to-8-branch-solar-parallel-connectors",
+      "title": "Solar Parallel Connectors for 2-4 Solar Panels, 2 to 8 Y Branch (MFFFF/FMMMM)",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "suv-air-mattress-camping-bed-with-electric-pump",
+      "title": "SUV Air Mattress Camping Bed with Electric Pump",
+      "variant_count": 3,
+      "price_range": "$60-$80"
+    },
+    {
+      "handle": "inflatable-sleeping-bed",
+      "title": "SUV Air Mattress for Car Camping \u2013 Inflatable Sleeping Bed",
+      "variant_count": 2,
+      "price_range": "$90-$100"
+    },
+    {
+      "handle": "suv-air-mattress-with-built-in-pump",
+      "title": "SUV Air Mattress with Built-In Pump \u2013 Quick Inflate Camping Bed",
+      "variant_count": 1,
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "anti-leak-camping-bed",
+      "title": "SUV Air Mattress with Built-In Pump, 2 Pillows, Anti-Leak Camping Bed",
+      "variant_count": 1,
+      "price_range": "$95-$95"
+    },
+    {
+      "handle": "suv-air-mattress-with-electric-pump",
+      "title": "SUV Air Mattress with Electric Pump for Car Camping & Road Trips",
+      "variant_count": 1,
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "test",
+      "title": "test",
+      "variant_count": 1,
+      "price_range": "$0-$0"
+    },
+    {
+      "handle": "test-gift-for-anniversary",
+      "title": "test gift for anniversary",
+      "variant_count": 1,
+      "price_range": "$0-$0"
+    },
+    {
+      "handle": "truck-bed-air-mattress",
+      "title": "Truck Bed Air Mattress for 5.5\u20136.7 ft Beds \u2013 Camping Air Bed",
+      "variant_count": 3,
+      "price_range": "$100-$130"
+    },
+    {
+      "handle": "camping-air-bed-built-in-pump",
+      "title": "Truck Bed Air Mattress with Built-in Pump for 5.5\u20136.7 ft Beds \u2013 Camping Air Bed",
+      "variant_count": 3,
+      "price_range": "$120-$140"
+    },
+    {
+      "handle": "truck-bed-air-mattress-with-tailgate-extension",
+      "title": "Truck Bed Air Mattress with Tailgate Extension \u2013 Compact Pickup Camping Bed",
+      "variant_count": 4,
+      "price_range": "$130-$140"
+    },
+    {
+      "handle": "universal-inflatable-air-mattress",
+      "title": "Universal Inflatable Air Mattress for Camping, Camel and Black",
+      "variant_count": 2,
+      "price_range": "$70-$90"
+    },
+    {
+      "handle": "warranty-product-3",
+      "title": "Warranty Product",
+      "variant_count": 8,
+      "price_range": "$0-$120"
+    },
+    {
+      "handle": "white-solar-double-cable-entry-gland-box",
+      "title": "White Solar Weatherproof Double Cable Entry Gland",
+      "variant_count": 2,
+      "skip_reason": "accessory/promo",
+      "price_range": "$13-$25"
+    },
+    {
+      "handle": "yuma-200w-cigs-flexible-solar-panel-square-with-holes",
+      "title": "Yuma 200W(100W*2pcs) CIGS Thin-film Flexible Solar Panel (Square with Holes)",
+      "variant_count": 1,
+      "price_range": "$440-$440"
+    },
+    {
+      "handle": "free-gift41-in-adjustable-solar-panel-tilt-mount-brackets-\u526f\u672c",
+      "title": "[Free Gift]Solar Power Gift (Not Sold)",
+      "variant_count": 1,
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "mystery-box",
+      "title": "[Not Sold Separately]Free Garden Cart Bag",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$10-$10"
+    }
+  ]
+}

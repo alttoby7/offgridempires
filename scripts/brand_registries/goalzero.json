@@ -1,0 +1,2457 @@
+{
+  "retailer": "Goal Zero",
+  "retailer_slug": "goalzero",
+  "base_url": "https://www.goalzero.com",
+  "discovery_stats": {
+    "total_products": 393,
+    "total_variants": 412,
+    "matched": 0,
+    "unmatched": 393
+  },
+  "mappings": [],
+  "unmatched_products": [
+    {
+      "handle": "skylight-portable-area-light",
+      "title": "Skylight",
+      "variant_count": 1,
+      "price_range": "$400-$400"
+    },
+    {
+      "handle": "goal-zero-yeti-6000x-2-boulder-200-briefcases-solar-kit",
+      "title": "Yeti 6000X + (2) Boulder 200 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$5235-$5235"
+    },
+    {
+      "handle": "goal-zero-yeti-6000x-4-nomad-200-solar-kit",
+      "title": "Yeti 6000X + (4) Nomad 200 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$6194-$6194"
+    },
+    {
+      "handle": "goal-zero-yeti-3000x-power-station-boulder-200-briefcase-solar-kit",
+      "title": "Yeti 3000X + Boulder 200 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$3600-$3600"
+    },
+    {
+      "handle": "goal-zero-yeti-1500x-power-station-boulder-100-briefcase-kit",
+      "title": "Yeti 1500X + Boulder 100 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1425-$1425"
+    },
+    {
+      "handle": "yeti-500x-power-station-nomad-50-solar-kit",
+      "title": "Yeti 500X + Nomad 50 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$725-$725"
+    },
+    {
+      "handle": "goal-zero-yeti-200x-power-station-nomad-50-lights",
+      "title": "Yeti 200X + Nomad 50 + Lights",
+      "variant_count": 1,
+      "price_range": "$635-$635"
+    },
+    {
+      "handle": "goal-zero-yeti-200x-portable-power-station",
+      "title": "Yeti 200X",
+      "variant_count": 1,
+      "price_range": "$220-$220"
+    },
+    {
+      "handle": "goal-zero-yeti-500x-portable-power-station",
+      "title": "Yeti 500X",
+      "variant_count": 1,
+      "price_range": "$500-$500"
+    },
+    {
+      "handle": "goal-zero-yeti-1000x-portable-power-station",
+      "title": "Yeti 1000X",
+      "variant_count": 1,
+      "price_range": "$1000-$1000"
+    },
+    {
+      "handle": "goal-zero-yeti-1500x-portable-power-station",
+      "title": "Yeti 1500X",
+      "variant_count": 1,
+      "price_range": "$1125-$1125"
+    },
+    {
+      "handle": "goal-zero-yeti-3000x-portable-power-station",
+      "title": "Yeti 3000X",
+      "variant_count": 1,
+      "price_range": "$3000-$3000"
+    },
+    {
+      "handle": "goal-zero-yeti-6000x-portable-power-station",
+      "title": "Yeti 6000X",
+      "variant_count": 1,
+      "price_range": "$4000-$4000"
+    },
+    {
+      "handle": "venture-jump",
+      "title": "Venture Jump",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "venture-35-lighthouse-600-nomad-10-kit",
+      "title": "Venture 35 + Lighthouse 600 + Nomad 10 Kit",
+      "variant_count": 1,
+      "price_range": "$230-$230"
+    },
+    {
+      "handle": "10-8-kwh-home-energy-storage-kit",
+      "title": "10800Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$7250-$7250"
+    },
+    {
+      "handle": "8-4-kwh-home-energy-storage-kit",
+      "title": "8400Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$6450-$6450"
+    },
+    {
+      "handle": "6-kwh-home-energy-storage-kit",
+      "title": "6000Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$5250-$5250"
+    },
+    {
+      "handle": "7-8-kwh-home-energy-storage-kit",
+      "title": "7800Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$5950-$5950"
+    },
+    {
+      "handle": "goal-zero-yeti-3000x-3-nomad-200-solar-kit",
+      "title": "Yeti 3000X + (3) Nomad 200 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$5185-$5185"
+    },
+    {
+      "handle": "5-4-kwh-home-energy-storage-kit",
+      "title": "5400Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$5150-$5150"
+    },
+    {
+      "handle": "6-3-kwh-home-energy-storage-kit",
+      "title": "6300Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$4250-$4250"
+    },
+    {
+      "handle": "3-kwh-home-energy-storage-kit",
+      "title": "3000Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$3950-$3950"
+    },
+    {
+      "handle": "3-9-kwh-home-energy-storage-kit",
+      "title": "3900Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$3450-$3450"
+    },
+    {
+      "handle": "goal-zero-yeti-1500x-4-boulder-100-kit",
+      "title": "Yeti 1500X + (4) Boulder 100 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$2629-$2629"
+    },
+    {
+      "handle": "1-5-kwh-home-energy-storage-kit",
+      "title": "1500Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$1750-$1750"
+    },
+    {
+      "handle": "4x-boulder-200-solar-panel-briefcase-bundle",
+      "title": "(4) Boulder 200 BC Solar Panel Bundle",
+      "variant_count": 1,
+      "price_range": "$2475-$2475"
+    },
+    {
+      "handle": "4-8-kwh-yeti-expansion-kit-with-hik",
+      "title": "4800Wh Yeti Expansion Kit with HIK",
+      "variant_count": 1,
+      "price_range": "$2450-$2450"
+    },
+    {
+      "handle": "yeti-1500x-portable-power-station-600w-power-supply",
+      "title": "Yeti 1500X + 600W Power Supply",
+      "variant_count": 1,
+      "price_range": "$1313-$1313"
+    },
+    {
+      "handle": "2-nomad-200-portal-solar-kit",
+      "title": "(3) Nomad 200 Solar Panel Bundle",
+      "variant_count": 1,
+      "price_range": "$1930-$1930"
+    },
+    {
+      "handle": "3x-boulder-200-solar-panel-briefcase-bundle",
+      "title": "(3) Boulder 200 BC Solar Panel  Bundle",
+      "variant_count": 1,
+      "price_range": "$1895-$1895"
+    },
+    {
+      "handle": "2-ranger-300-briefcase-solar-panel-kit",
+      "title": "(2) Ranger 300 BC Solar Panel Bundle",
+      "variant_count": 1,
+      "price_range": "$1695-$1695"
+    },
+    {
+      "handle": "1-kwh-home-energy-storage-kit",
+      "title": "1000Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$1650-$1650"
+    },
+    {
+      "handle": "2-4-kwh-yeti-expansion-kit-with-hik",
+      "title": "2400Wh Yeti Expansion System with HIK",
+      "variant_count": 1,
+      "price_range": "$1550-$1550"
+    },
+    {
+      "handle": "3-nomad-100-portable-solar-kit",
+      "title": "(3) Nomad 100 Solar Panel Bundle",
+      "variant_count": 1,
+      "price_range": "$1200-$1200"
+    },
+    {
+      "handle": "goal-zero-yeti-500x-nomad-100-solar-kit",
+      "title": "Yeti 500X + Nomad 100 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$860-$860"
+    },
+    {
+      "handle": "2x-boulder-200-solar-panel-briefcase-bundle",
+      "title": "(2) Boulder 200 BC Solar Panel Bundle",
+      "variant_count": 1,
+      "price_range": "$1295-$1295"
+    },
+    {
+      "handle": "goal-zero-yeti-500x-lighting-kit",
+      "title": "Yeti 500X + Lighting Kit",
+      "variant_count": 1,
+      "price_range": "$630-$630"
+    },
+    {
+      "handle": "ranger-300-briefcase",
+      "title": "Ranger 300 Briefcase",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$800-$800"
+    },
+    {
+      "handle": "goal-zero-yeti-500x-portable-power-station-boulder-50-solar-kit",
+      "title": "Yeti 500X + Boulder 50 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$600-$600"
+    },
+    {
+      "handle": "goal-zero-yeti-200x-nomad-50-solar-kit",
+      "title": "Yeti 200X + Nomad 50 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$530-$530"
+    },
+    {
+      "handle": "nomad-200-solar-panel",
+      "title": "Nomad 200",
+      "variant_count": 1,
+      "price_range": "$600-$600"
+    },
+    {
+      "handle": "boulder-200-solar-panel-briefcase",
+      "title": "Boulder 200 Briefcase",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$600-$600"
+    },
+    {
+      "handle": "goal-zero-yeti-400-portable-power-station",
+      "title": "Yeti 400",
+      "variant_count": 1,
+      "price_range": "$450-$450"
+    },
+    {
+      "handle": "goal-zero-yeti-200x-portable-power-station-nomad-20-solar-kit",
+      "title": "Yeti 200X + Nomad 20 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$350-$350"
+    },
+    {
+      "handle": "boulder-100-briefcase-solar-charging-kit",
+      "title": "Boulder 100 Briefcase Solar Charging Kit",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$425-$425"
+    },
+    {
+      "handle": "nomad-100-solar-panel",
+      "title": "Nomad 100",
+      "variant_count": 1,
+      "price_range": "$400-$400"
+    },
+    {
+      "handle": "goal-zero-yeti-1250-replacement-battery",
+      "title": "Yeti 1250 Replacement Battery",
+      "variant_count": 1,
+      "price_range": "$250-$250"
+    },
+    {
+      "handle": "boulder-100-solar-panel",
+      "title": "Boulder 100",
+      "variant_count": 1,
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "nomad-50-solar-panel",
+      "title": "Nomad 50",
+      "variant_count": 1,
+      "price_range": "$250-$250"
+    },
+    {
+      "handle": "venture-75-nomad-10-kit",
+      "title": "Venture 75 + Nomad 10 Kit",
+      "variant_count": 1,
+      "price_range": "$220-$220"
+    },
+    {
+      "handle": "yeti-x-600w-power-supply",
+      "title": "Yeti X 600W Power Supply",
+      "variant_count": 1,
+      "price_range": "$250-$250"
+    },
+    {
+      "handle": "goal-zero-yeti-150-portable-power-station",
+      "title": "Yeti 150",
+      "variant_count": 1,
+      "price_range": "$200-$200"
+    },
+    {
+      "handle": "venture-35-nomad-10-kit",
+      "title": "Venture 35 + Nomad 10 Kit",
+      "variant_count": 1,
+      "price_range": "$170-$170"
+    },
+    {
+      "handle": "nomad-20-solar-panel",
+      "title": "Nomad 20",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "boulder-50-solar-panel",
+      "title": "Boulder 50",
+      "variant_count": 1,
+      "price_range": "$250-$250"
+    },
+    {
+      "handle": "nomad-10-solar-panel-torch-500-multi-purpose-light",
+      "title": "Nomad 10 Solar Panel + Torch 500 Multi-Purpose Light",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "venture-75-power-bank",
+      "title": "Venture 75",
+      "variant_count": 1,
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "20a-charge-controller",
+      "title": "20-Amp Charge Controller",
+      "variant_count": 1,
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "yeti-x-230w-power-supply",
+      "title": "Yeti X 230W Power Supply",
+      "variant_count": 1,
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "yeti-roll-cart",
+      "title": "Yeti Roll Cart",
+      "variant_count": 1,
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "yeti-lithium-mppt-solar-charging-optimization-module",
+      "title": "Yeti Lithium MPPT Solar Charging Optimization Module",
+      "variant_count": 1,
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "nomad-10-solar-panel",
+      "title": "Nomad 10",
+      "variant_count": 1,
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "guide-12-nomad-5-kit",
+      "title": "Guide 12 + Nomad 5 Kit",
+      "variant_count": 1,
+      "price_range": "$90-$90"
+    },
+    {
+      "handle": "venture-35-power-bank",
+      "title": "Venture 35",
+      "variant_count": 1,
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "10a-charge-controller",
+      "title": "10-Amp Charge Controller",
+      "variant_count": 1,
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "lighthouse-600-lantern-usb-power-hub",
+      "title": "Lighthouse 600 Lantern & USB Power Hub",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$80-$80"
+    },
+    {
+      "handle": "high-power-port-30ft-extension-cable",
+      "title": "High Power Port 30 ft. Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "lighthouse-core-lantern-usb-power-hub",
+      "title": "Lighthouse Core Lantern & USB Power Hub",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "yeti-x-120w-power-supply",
+      "title": "Yeti X 120W Power Supply",
+      "variant_count": 1,
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "goal-zero-yeti-150-replacement-battery",
+      "title": "Yeti 150 Replacement Battery",
+      "variant_count": 1,
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "torch-500-multi-purpose-light",
+      "title": "Torch 500 Multi-Purpose Light",
+      "variant_count": 1,
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "spade-to-sae-cable",
+      "title": "Spade to SAE Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$45-$45"
+    },
+    {
+      "handle": "yeti-200x-protection-case",
+      "title": "Yeti 200X Protection Case",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$45-$45"
+    },
+    {
+      "handle": "sherpa-and-yeti-power-supply",
+      "title": "Sherpa and Yeti Power Supply",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "high-power-port-15ft-extension-cable",
+      "title": "High Power Port 15 ft. Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$45-$45"
+    },
+    {
+      "handle": "light-a-life-350-led-light",
+      "title": "Light-A-Life 350 LED Light",
+      "variant_count": 1,
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "4x-high-power-port-combiner-to-high-power-port-connector",
+      "title": "4X High Power Port Combiner to High Power Port Connector",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "yeti-150-sherpa-100-power-supply",
+      "title": "Yeti 150/Sherpa 100 Power Supply",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "4x-8mm-combiner-to-high-power-port-connector",
+      "title": "4X 8mm Combiner to High Power Port Connector",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "lighthouse-micro-charge-usb-rechargeable-lantern",
+      "title": "Lighthouse Micro Charge USB Rechargeable Lantern",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "lighthouse-micro-flash-usb-rechargeable-lantern",
+      "title": "Lighthouse Micro Flash USB Rechargeable Lantern",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "crush-light",
+      "title": "Crush Light",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "8mm-input-15ft-extension-cable",
+      "title": "8mm Input 15 ft. Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$25-$25"
+    },
+    {
+      "handle": "boulder-mounting-brackets-4-pack",
+      "title": "Boulder Mounting Brackets (4 Pack)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$25-$25"
+    },
+    {
+      "handle": "usb-to-lightning-connector-cable-39-inch",
+      "title": "USB to Lightning Connector Cable 39 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$17-$17"
+    },
+    {
+      "handle": "sae-to-alligator-clips",
+      "title": "SAE to Alligator Clip",
+      "variant_count": 1,
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "sae-to-ring-terminal",
+      "title": "SAE to Ring Terminal",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "aa-rechargeable-batteries-4-pack",
+      "title": "AA Rechargeable Batteries (4-Pack)",
+      "variant_count": 1,
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "usb-to-lightning-connector-cable-10-inch",
+      "title": "USB to Lightning Connector Cable 10 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$14-$14"
+    },
+    {
+      "handle": "usb-to-lightning-connector-cable-5-inch-11-95",
+      "title": "USB to Lightning Connector Cable 5 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$12-$12"
+    },
+    {
+      "handle": "6mm-output-6ft-extension-cable",
+      "title": "6mm Output 6ft Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "high-power-port-to-8mm-connector",
+      "title": "High Power Port To 8mm Connector",
+      "variant_count": 1,
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "sku-96017-light-a-life-mini-shade-4-pack",
+      "title": "Light-a-Life Mini Shade (4 Pack)",
+      "variant_count": 1,
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "6mm-output-12v-car-adapter",
+      "title": "6mm Output 12V Car Adapter",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "6mm-male-to-ring-terminal-adapter",
+      "title": "6mm Male to Ring Terminal Adapter",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$7-$7"
+    },
+    {
+      "handle": "usb-to-micro-connector-cable-39-inch",
+      "title": "USB to Micro Connector Cable 39 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$7-$7"
+    },
+    {
+      "handle": "usb-to-micro-connector-cable-10-inch",
+      "title": "USB to Micro Connector Cable 10 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$6-$6"
+    },
+    {
+      "handle": "6mm-output-female-cigarette-adapter",
+      "title": "6mm Output Female Cigarette Adapter",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$5-$5"
+    },
+    {
+      "handle": "usb-to-micro-connector-cable-5-inch",
+      "title": "USB to Micro Connector Cable 5 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$1-$1"
+    },
+    {
+      "handle": "crush-light-chroma",
+      "title": "Crush Light Chroma",
+      "variant_count": 1,
+      "price_range": "$35-$35"
+    },
+    {
+      "handle": "3000wh-home-backup-solar-generator",
+      "title": "3000Wh Home Backup Solar Generator",
+      "variant_count": 1,
+      "price_range": "$5530-$5530"
+    },
+    {
+      "handle": "5400wh-home-backup-solar-generator",
+      "title": "5400Wh Home Backup Solar Generator",
+      "variant_count": 1,
+      "price_range": "$6730-$6730"
+    },
+    {
+      "handle": "7800wh-home-backup-solar-genertator",
+      "title": "7800Wh Home Backup Solar Generator",
+      "variant_count": 1,
+      "price_range": "$7530-$7530"
+    },
+    {
+      "handle": "10800wh-home-backup-solar-generators",
+      "title": "10800Wh Home Backup Solar Generator",
+      "variant_count": 1,
+      "price_range": "$8830-$8830"
+    },
+    {
+      "handle": "light-a-life-350-led-light-open-box",
+      "title": "Light-A-Life 350 LED Light (Open Box)",
+      "variant_count": 1,
+      "price_range": "$26-$26"
+    },
+    {
+      "handle": "yeti-1000x-open-box",
+      "title": "Yeti 1000X (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$650-$650"
+    },
+    {
+      "handle": "yeti-1500x-open-box",
+      "title": "Yeti 1500X (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$975-$975"
+    },
+    {
+      "handle": "yeti-3000x-open-box",
+      "title": "Yeti 3000X (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$1950-$1950"
+    },
+    {
+      "handle": "yeti-6000x-open-box",
+      "title": "Yeti 6000X (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$3250-$3250"
+    },
+    {
+      "handle": "new-sherpa-100ac-wireless-power-bank",
+      "title": "New Sherpa 100AC",
+      "variant_count": 1,
+      "price_range": "$250-$250"
+    },
+    {
+      "handle": "new-sherpa-100pd-wireless-power-bank",
+      "title": "New Sherpa 100PD",
+      "variant_count": 1,
+      "price_range": "$200-$200"
+    },
+    {
+      "handle": "new-sherpa-100ac-wireless-power-bank-nomad-20-solar-panel-complete-kit",
+      "title": "New Sherpa 100AC + Nomad 20 Complete Kit",
+      "variant_count": 1,
+      "price_range": "$485-$485"
+    },
+    {
+      "handle": "new-sherpa-100ac-wireless-power-bank-nomad-50-solar-panel-complete-kit",
+      "title": "New Sherpa 100AC + Nomad 50 Complete Kit",
+      "variant_count": 1,
+      "price_range": "$600-$600"
+    },
+    {
+      "handle": "nomad-10-open-box",
+      "title": "Nomad 10 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$65-$65"
+    },
+    {
+      "handle": "sherpa-100pd-previous-model-open-box",
+      "title": "Sherpa 100PD (previous model) (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "venture-35-open-box",
+      "title": "Venture 35 (Open Box)",
+      "variant_count": 1,
+      "price_range": "$45-$45"
+    },
+    {
+      "handle": "nomad-20-open-box",
+      "title": "Nomad 20 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$97-$97"
+    },
+    {
+      "handle": "solar-panel-mounting-z-brackets",
+      "title": "Solar Panel Mounting Z-Brackets",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "yeti-300-protection-case",
+      "title": "Yeti 300 Protection Case",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "yeti-500-protection-case",
+      "title": "Yeti 500 Protection Case",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$75-$75"
+    },
+    {
+      "handle": "yeti-700-protection-case",
+      "title": "Yeti 700 Protection Case",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$80-$80"
+    },
+    {
+      "handle": "lighthouse-600-open-box",
+      "title": "Lighthouse 600 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$45-$45"
+    },
+    {
+      "handle": "new-sherpa-100pd-open-box",
+      "title": "New Sherpa 100PD (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$130-$130"
+    },
+    {
+      "handle": "6mm-output-15ft-extension-cable",
+      "title": "6mm Output 15ft Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$25-$25"
+    },
+    {
+      "handle": "ranger-300-briefcase-open-box",
+      "title": "Ranger 300 Briefcase (OPEN BOX)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$520-$520"
+    },
+    {
+      "handle": "10-pack-lighthouse-micro-flash-usb-rechargeable-lanterns",
+      "title": "(10-Pack) Lighthouse Micro Flash USB Rechargeable Lanterns",
+      "variant_count": 1,
+      "price_range": "$350-$350"
+    },
+    {
+      "handle": "40-pack-lighthouse-micro-flash-usb-rechargeable-lanterns",
+      "title": "(40-Pack) Lighthouse Micro Flash USB Rechargeable Lanterns",
+      "variant_count": 1,
+      "price_range": "$1398-$1398"
+    },
+    {
+      "handle": "2400wh-yeti-expansion-system-v3",
+      "title": "2400Wh Yeti Expansion System V3",
+      "variant_count": 1,
+      "price_range": "$850-$850"
+    },
+    {
+      "handle": "4800wh-yeti-expansion-system-v3",
+      "title": "4800Wh Yeti Expansion System V3",
+      "variant_count": 1,
+      "price_range": "$1300-$1300"
+    },
+    {
+      "handle": "6300wh-home-backup-system-v3",
+      "title": "6300Wh Home Backup System V3",
+      "variant_count": 1,
+      "price_range": "$3750-$3750"
+    },
+    {
+      "handle": "10800wh-home-backup-system-v3",
+      "title": "10800Wh Home Backup System V3",
+      "variant_count": 1,
+      "price_range": "$5249-$5249"
+    },
+    {
+      "handle": "outrider-charging-dock",
+      "title": "Outrider Charging Dock",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "basecamp-4-magsafe-wireless-charging-pad",
+      "title": "Basecamp 4",
+      "variant_count": 1,
+      "price_range": "$80-$80"
+    },
+    {
+      "handle": "alta-electric-cooler-power-supply",
+      "title": "Alta Electric Cooler Power Supply",
+      "variant_count": 1,
+      "price_range": "$45-$45"
+    },
+    {
+      "handle": "6mm-12v-alta-cable",
+      "title": "6mm 12V Alta Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "range-300-rechargeable-headlamp",
+      "title": "BioLite Range 300",
+      "variant_count": 3,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "headlamp-800-pro-rechargeable",
+      "title": "BioLite HeadLamp 800 Pro",
+      "variant_count": 1,
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "solarhome-wall-charger",
+      "title": "BioLite SolarHome Wall Charger",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$25-$25"
+    },
+    {
+      "handle": "yeti-1500x-2400wh-expansion-system",
+      "title": "Yeti 1500X + 2400Wh Expansion System",
+      "variant_count": 1,
+      "price_range": "$1890-$1890"
+    },
+    {
+      "handle": "yeti-1500x-4800wh-expansion-system",
+      "title": "Yeti 1500X + 4800Wh Expansion System",
+      "variant_count": 1,
+      "price_range": "$2450-$2450"
+    },
+    {
+      "handle": "3900wh-home-backup-system-v3",
+      "title": "3900Wh Home Backup System V3",
+      "variant_count": 1,
+      "price_range": "$3750-$3750"
+    },
+    {
+      "handle": "2-boulder-100-solar-panel-mountable-kit",
+      "title": "(2) Boulder 100 Solar Panel Mountable Bundle",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$630-$630"
+    },
+    {
+      "handle": "2-nomad-400-pro-solar-panel-bundle",
+      "title": "(2) Nomad 400 PRO Solar Bundle",
+      "variant_count": 1,
+      "price_range": "$1950-$1950"
+    },
+    {
+      "handle": "3-boulder-100-solar-panel-mountable-kit",
+      "title": "(3) Boulder 100 Solar Panel Mountable Bundle",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$900-$900"
+    },
+    {
+      "handle": "4-nomad-400-pro-solar-panel-bundle",
+      "title": "(4) Nomad 400 PRO Solar Bundle",
+      "variant_count": 1,
+      "price_range": "$4150-$4150"
+    },
+    {
+      "handle": "6x-boulder-100-solar-panel-mountable-kit",
+      "title": "(6) Boulder 100 Solar Panel Mountable Bundle",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$1774-$1774"
+    },
+    {
+      "handle": "8-nomad-400-pro-solar-panel-bundle",
+      "title": "(8) Nomad 400 PRO Solar Bundle",
+      "variant_count": 1,
+      "price_range": "$8499-$8499"
+    },
+    {
+      "handle": "12kwh-haven-home-battery-backup",
+      "title": "12 kWh Haven Home Backup",
+      "variant_count": 1,
+      "price_range": "$5635-$5635"
+    },
+    {
+      "handle": "car-charging-cable-12v-aux-to-8mm",
+      "title": "12V Car Charging Cable Yeti (6th Gen)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$25-$25"
+    },
+    {
+      "handle": "12v-max-current-cable",
+      "title": "12V Max Current Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "16kwh-haven-home-battery-backup",
+      "title": "16 kWh Haven Home Backup",
+      "variant_count": 1,
+      "price_range": "$7035-$7035"
+    },
+    {
+      "handle": "18650-goal-zero-battery",
+      "title": "18650 Goal Zero Battery",
+      "variant_count": 1,
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "20kwh-haven-home-battery-backup",
+      "title": "20 kWh Haven Home Backup",
+      "variant_count": 1,
+      "price_range": "$8435-$8435"
+    },
+    {
+      "handle": "30-amp-external-mppt-kit",
+      "title": "30-Amp External MPPT",
+      "variant_count": 1,
+      "price_range": "$350-$350"
+    },
+    {
+      "handle": "3-4-kwh-home-energy-storage-kit",
+      "title": "3400Wh Home Backup System",
+      "variant_count": 1,
+      "price_range": "$2850-$2850"
+    },
+    {
+      "handle": "3x-hpp-solar-parallel-combiner",
+      "title": "3x HPP+ Solar Parallel Combiner",
+      "variant_count": 1,
+      "price_range": "$200-$200"
+    },
+    {
+      "handle": "4-kwh-haven-home-battery-backup",
+      "title": "4 kWh Haven Home Backup",
+      "variant_count": 1,
+      "price_range": "$2835-$2835"
+    },
+    {
+      "handle": "45-watt-usb-c-charger",
+      "title": "45-Watt USB-C Charger",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$35-$35"
+    },
+    {
+      "handle": "mc4-branch-connectors",
+      "title": "4MM BRANCH CONNECTOR",
+      "variant_count": 3,
+      "price_range": "$15-$40"
+    },
+    {
+      "handle": "4x-hpp-to-1x-hpp-solar-series-combiner",
+      "title": "4x HPP to 1x HPP+ Solar Series Combiner",
+      "variant_count": 1,
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "65-watt-usb-c-fast-charger",
+      "title": "65-Watt USB-C Charger",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "6mm-9ft-extension-cable-with-carabiner-silicone-coated",
+      "title": "6mm 9ft Extension Cable with Carabiner (Silicone Coated)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "6mm-male-to-alligator-clamp",
+      "title": "6mm Male to Alligator Clamp",
+      "variant_count": 1,
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "6mm-output-to-high-power-port-adapter",
+      "title": "6mm Output to High Power Port Adapter",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$9-$9"
+    },
+    {
+      "handle": "8kwh-haven-home-battery-backup",
+      "title": "8 kWh Haven Home Backup",
+      "variant_count": 1,
+      "price_range": "$4235-$4235"
+    },
+    {
+      "handle": "8mm-input-30ft-extension-cable",
+      "title": "8mm Input 30 ft. Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "8mm-to-hpp-solar-adapter",
+      "title": "8mm to HPP Solar Adapter",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "8mm-to-sae-connector",
+      "title": "8mm to SAE Connector",
+      "variant_count": 1,
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "aaa-rechargeable-batteries-4-pack",
+      "title": "AAA Rechargeable Batteries (4 Pack) & Adapter",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "alta-50-portable-refrigerator-freezer-electric-cooler",
+      "title": "Alta 50",
+      "variant_count": 1,
+      "price_range": "$800-$800"
+    },
+    {
+      "handle": "alta-80-portable-fridge-freezer-electric-cooler",
+      "title": "Alta 80",
+      "variant_count": 1,
+      "price_range": "$1000-$1000"
+    },
+    {
+      "handle": "alta-80-open-box",
+      "title": "Alta 80 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$650-$650"
+    },
+    {
+      "handle": "alta-80-cover",
+      "title": "Alta 80 Cover",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "campstove-2-plus-wood-burning-camping-stove",
+      "title": "BioLite CampStove 2+",
+      "variant_count": 1,
+      "price_range": "$200-$200"
+    },
+    {
+      "handle": "campstove-complete-cook-kit-cook-stove",
+      "title": "BioLite CampStove Complete Cook Kit",
+      "variant_count": 1,
+      "price_range": "$345-$345"
+    },
+    {
+      "handle": "ecozoom-carry-bag",
+      "title": "BioLite EcoZoom Carry Bag",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "ecozoom-versa-wood-charcoal-outdoor-cooking-stove",
+      "title": "BioLite EcoZoom Versa",
+      "variant_count": 1,
+      "price_range": "$160-$160"
+    },
+    {
+      "handle": "firepit-essentials-kit-smokeless-stove",
+      "title": "BioLite FirePit Essentials Kit",
+      "variant_count": 1,
+      "price_range": "$640-$640"
+    },
+    {
+      "handle": "biolite-smokeless-portable-firepit",
+      "title": "BioLite FirePit+",
+      "variant_count": 1,
+      "price_range": "$600-$600"
+    },
+    {
+      "handle": "range-400-rechargeable-headlamp",
+      "title": "BioLite Range 400",
+      "variant_count": 3,
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "range-500-rechargeable-headlamp",
+      "title": "BioLite Range 500",
+      "variant_count": 3,
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "solarhome-625-solar-powered-light-radio",
+      "title": "BioLite SolarHome 625",
+      "variant_count": 1,
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "boulder-100-open-box",
+      "title": "Boulder 100 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$195-$195"
+    },
+    {
+      "handle": "boulder-100-solar-panel-briefcase",
+      "title": "Boulder 100 Briefcase",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$400-$400"
+    },
+    {
+      "handle": "boulder-100-briefcase-open-box",
+      "title": "Boulder 100 Briefcase (OPEN BOX)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$260-$260"
+    },
+    {
+      "handle": "boulder-100i-solar-panel",
+      "title": "Boulder 100i",
+      "variant_count": 1,
+      "price_range": "$200-$200"
+    },
+    {
+      "handle": "boulder-200-briefcase-open-box",
+      "title": "Boulder 200 Briefcase (OPEN BOX)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$390-$390"
+    },
+    {
+      "handle": "boulder-200-briefcase-solar-charging-kit",
+      "title": "Boulder 200 Briefcase Solar Charging Kit",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$650-$650"
+    },
+    {
+      "handle": "boulder-30-solar-panel",
+      "title": "Boulder 30 Solar Panel",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "boulder-50-open-box",
+      "title": "Boulder 50 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$163-$163"
+    },
+    {
+      "handle": "boulder-charge-controller-mounting-brackets",
+      "title": "Boulder Charge Controller Mounting Brackets",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "boulder-solar-tripod",
+      "title": "Boulder Solar Tripod",
+      "variant_count": 1,
+      "price_range": "$200-$200"
+    },
+    {
+      "handle": "crush-light-open-box",
+      "title": "Crush Light (Open Box)",
+      "variant_count": 1,
+      "price_range": "$13-$13"
+    },
+    {
+      "handle": "ec8-12ft-extension-cable",
+      "title": "EC8 12 ft. Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "escape-drivable-kit-off-grid-power",
+      "title": "Escape Drivable Kit",
+      "variant_count": 1,
+      "price_range": "$200-$200"
+    },
+    {
+      "handle": "escape-remote-display",
+      "title": "Escape Remote Display",
+      "variant_count": 1,
+      "price_range": "$90-$90"
+    },
+    {
+      "handle": "escape-towable-kit-off-grid-power",
+      "title": "Escape Towable Kit",
+      "variant_count": 1,
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "escape-wiring-kit",
+      "title": "Escape Wiring Kit",
+      "variant_count": 1,
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "fan-tool",
+      "title": "Fan Tool",
+      "variant_count": 1,
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "female-ec8-to-ring-terminal",
+      "title": "Female EC8 to Ring Terminal",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "female-mp120-to-ring-terminal",
+      "title": "Female MP120 to Ring Terminal",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "flex-100i-flexible-solar-panel",
+      "title": "Flex 100i",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "flip-10-dock-kit",
+      "title": "Flip 10 Dock Kit",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "flip-10-power-bank",
+      "title": "Flip 10 Power Bank",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "flip-10-power-bank-1",
+      "title": "Flip 10 Power Bank",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "flip-10-power-bank-2",
+      "title": "FLIP 10 POWER BANK",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "flip-12-power-bank",
+      "title": "Flip 12",
+      "variant_count": 3,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "flip-12-power-bank-open-box",
+      "title": "Flip 12 Power Bank (Open Box)",
+      "variant_count": 3,
+      "price_range": "$13-$13"
+    },
+    {
+      "handle": "flip-20-power-bank",
+      "title": "Flip 20 PLUM Power Bank",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "flip-24-power-bank",
+      "title": "Flip 24",
+      "variant_count": 3,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "flip-24-power-bank-open-box",
+      "title": "Flip 24 Power Bank (Open Box)",
+      "variant_count": 1,
+      "price_range": "$23-$23"
+    },
+    {
+      "handle": "flip-24-power-bank-open-box-1",
+      "title": "Flip 24 Power Bank (Open Box)",
+      "variant_count": 1,
+      "price_range": "$9-$9"
+    },
+    {
+      "handle": "flip-24-power-bank-open-box-2",
+      "title": "Flip 24 Power Bank (Open Box)",
+      "variant_count": 1,
+      "price_range": "$23-$23"
+    },
+    {
+      "handle": "flip-30-power-bank",
+      "title": "Flip 30 Power Bank",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "flip-36-power-bank",
+      "title": "Flip 36",
+      "variant_count": 3,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "flip-36-power-bank-green-open-box",
+      "title": "Flip 36 Power Bank - Green (Open Box)",
+      "variant_count": 1,
+      "price_range": "$26-$26"
+    },
+    {
+      "handle": "flip-charging-dock",
+      "title": "Flip Charging Dock",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "flying-leads-to-power-cable",
+      "title": "Flying Leads to Power+ Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "goal-zero-neck-gaiter",
+      "title": "Goal Zero Neck Gaiter",
+      "variant_count": 1,
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "goal-zero-switch-10-core\u00ae-power-bank",
+      "title": "Goal Zero Switch 10 Core\u00ae Power Bank",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "goal-zero-yeti-1250-battery-clamp-connector-cable",
+      "title": "Goal Zero Yeti 1250 Battery Clamp Connector Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "goal-zero-yeti-1250-chaining-cable",
+      "title": "Goal Zero Yeti 1250 Chaining Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$45-$45"
+    },
+    {
+      "handle": "goal-zero-yeti-1250-ring-terminal-connector-cable",
+      "title": "Goal Zero Yeti 1250 Ring Terminal Connector Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "guide-10-plus-power-bank",
+      "title": "Guide 10 Plus Power Bank",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "haven-10-manual-transfer-switch",
+      "title": "Haven 10",
+      "variant_count": 1,
+      "price_range": "$1000-$1000"
+    },
+    {
+      "handle": "hpp-15-ft-solar-extension-cable",
+      "title": "HPP+ 15 ft. Solar Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$80-$80"
+    },
+    {
+      "handle": "hpp-30-ft-solar-extension-cable",
+      "title": "HPP+ 30 ft. Solar Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "hpp-solar-bulkhead-inlet",
+      "title": "HPP+ Solar Bulkhead Inlet",
+      "variant_count": 1,
+      "price_range": "$45-$45"
+    },
+    {
+      "handle": "hpp-solar-wall-plate-kit",
+      "title": "HPP+ Solar Wall Plate Kit",
+      "variant_count": 1,
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "large-boulder-travel-case",
+      "title": "Large Boulder Travel Case",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "light-a-life-mini-4-pack-with-shades",
+      "title": "Light-a-Life Mini 4-Pack with Shades",
+      "variant_count": 1,
+      "price_range": "$80-$80"
+    },
+    {
+      "handle": "light-a-life-mini-quad-usb-light-set",
+      "title": "Light-a-Life Mini Quad USB Light Set",
+      "variant_count": 1,
+      "price_range": "$90-$90"
+    },
+    {
+      "handle": "light-a-life-mini-usb-light",
+      "title": "Light-a-Life Mini USB Light",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "lighthouse-400-lantern-usb-power-hub",
+      "title": "Lighthouse 400 Lantern & USB Power Hub",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "lighthouse-mini-core-lantern",
+      "title": "Lighthouse Mini Core Lantern",
+      "variant_count": 1,
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "lighthouse-mini-lantern",
+      "title": "LIGHTHOUSE MINI LANTERN",
+      "variant_count": 1,
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "luna-touch-led-light",
+      "title": "Luna Touch LED Light",
+      "variant_count": 1,
+      "price_range": "$8-$8"
+    },
+    {
+      "handle": "male-ec8-to-ring-terminal",
+      "title": "Male EC8 to Ring Terminal",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "male-mp120-to-ring-terminal",
+      "title": "Male MP120 to Ring Terminal",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "mc4-solar-to-8mm-adapter-cable",
+      "title": "MC4 Solar to 8mm Adapter Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "mc4-solar-to-hpp-adapter-cable",
+      "title": "MC4 Solar to HPP Adapter Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "mp120-12-ft-tank-extension-cable",
+      "title": "MP120 12 ft. Tank Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "new-sherpa-100ac-open-box",
+      "title": "New Sherpa 100AC (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$195-$195"
+    },
+    {
+      "handle": "new-sherpa-100pd-65w-usb-c-charger-tech-kit",
+      "title": "New Sherpa 100PD + 65W USB-C Charger Tech Kit",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$275-$275"
+    },
+    {
+      "handle": "new-yeti-1000-portable-power-station-lfp-battery",
+      "title": "NEW Yeti 1000",
+      "variant_count": 1,
+      "price_range": "$1200-$1200"
+    },
+    {
+      "handle": "yeti-1500-portable-power-station-lifepo4-battery",
+      "title": "NEW Yeti 1500",
+      "variant_count": 1,
+      "price_range": "$1500-$1500"
+    },
+    {
+      "handle": "nomad-10-venture-30-solar-kit",
+      "title": "Nomad 10 + Venture 30 Solar Kit",
+      "variant_count": 1,
+      "price_range": "$180-$180"
+    },
+    {
+      "handle": "nomad-100-open-box",
+      "title": "Nomad 100 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$260-$260"
+    },
+    {
+      "handle": "nomad-13-solar-panel",
+      "title": "Nomad 13 Solar Panel",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "nomad-14-plus-solar-panel",
+      "title": "Nomad 14 Plus Solar Panel",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "nomad-20-solar-panel-12004",
+      "title": "Nomad 20 Solar Panel (12004)",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "nomad-200-open-box",
+      "title": "Nomad 200 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$325-$325"
+    },
+    {
+      "handle": "nomad-28-plus-solar-panel",
+      "title": "Nomad 28 Plus Solar Panel",
+      "variant_count": 1,
+      "price_range": "$250-$250"
+    },
+    {
+      "handle": "nomad-400-portable-solar-panel",
+      "title": "Nomad 400",
+      "variant_count": 1,
+      "price_range": "$1000-$1000"
+    },
+    {
+      "handle": "nomad-5-solar-panel",
+      "title": "Nomad 5",
+      "variant_count": 1,
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "nomad-5-open-box",
+      "title": "Nomad 5 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$39-$39"
+    },
+    {
+      "handle": "nomad-5-flip-12-chroma-kit",
+      "title": "Nomad 5 + Flip 12 + Chroma Kit",
+      "variant_count": 1,
+      "price_range": "$99-$99"
+    },
+    {
+      "handle": "nomad-5-solar-kit",
+      "title": "Nomad 5 + Flip 12 Solar Kit",
+      "variant_count": 1,
+      "price_range": "$75-$75"
+    },
+    {
+      "handle": "nomad-5-guide-10-plus-solar-kit",
+      "title": "Nomad 5 + Guide 10 Plus Solar Kit",
+      "variant_count": 1,
+      "price_range": "$80-$80"
+    },
+    {
+      "handle": "nomad-50-open-box",
+      "title": "Nomad 50 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$163-$163"
+    },
+    {
+      "handle": "nomad-7-plus-solar-panel",
+      "title": "Nomad 7 Plus Solar Panel",
+      "variant_count": 1,
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "nomad-7-solar-panel",
+      "title": "Nomad 7 Solar Panel",
+      "variant_count": 1,
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "nomad-7-solar-panel-1",
+      "title": "Nomad 7 Solar Panel",
+      "variant_count": 1,
+      "price_range": "$80-$80"
+    },
+    {
+      "handle": "outrider-18-magnetic-magsafe-wireless-power-bank",
+      "title": "Outrider 18",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "outrider-charging-kit-magsafe",
+      "title": "Outrider Charging Kit",
+      "variant_count": 1,
+      "price_range": "$90-$90"
+    },
+    {
+      "handle": "repairs",
+      "title": "Repairs",
+      "variant_count": 1,
+      "price_range": "$0-$0"
+    },
+    {
+      "handle": "replacement-item-general",
+      "title": "Replacement Item - General",
+      "variant_count": 1,
+      "price_range": "$0-$0"
+    },
+    {
+      "handle": "sherpa-100-power-bank-with-inverter",
+      "title": "Sherpa 100 Power Bank with Inverter",
+      "variant_count": 1,
+      "price_range": "$350-$350"
+    },
+    {
+      "handle": "sherpa-100ac-power-bank",
+      "title": "Sherpa 100AC (previous model)",
+      "variant_count": 1,
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "copy-of-sherpa-100ac-previous-model",
+      "title": "Sherpa 100AC (previous model) (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "sherpa-100ac-nomad-20-complete-kit",
+      "title": "Sherpa 100AC + Nomad 20 Complete Kit (prev.)",
+      "variant_count": 1,
+      "price_range": "$507-$507"
+    },
+    {
+      "handle": "sherpa-100ac-nomad-20-solar-kit",
+      "title": "Sherpa 100AC + Nomad 20 Solar Kit (prev.)",
+      "variant_count": 1,
+      "price_range": "$450-$450"
+    },
+    {
+      "handle": "sherpa-100ac-sleeve",
+      "title": "Sherpa 100AC Sleeve",
+      "variant_count": 1,
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "sherpa-100pd-power-bank",
+      "title": "Sherpa 100PD (previous model)",
+      "variant_count": 1,
+      "price_range": "$200-$200"
+    },
+    {
+      "handle": "sherpa-100pd-45w-usb-c-charger-tech-kit",
+      "title": "Sherpa 100PD + 65W USB-C Charger Tech Kit (prev.)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$262-$262"
+    },
+    {
+      "handle": "sherpa-100pd-sleeve",
+      "title": "Sherpa 100PD Sleeve",
+      "variant_count": 1,
+      "price_range": "$25-$25"
+    },
+    {
+      "handle": "sherpa-15-power-bank-micro-lightning",
+      "title": "Sherpa 15 Power Bank Micro/Lightning",
+      "variant_count": 2,
+      "price_range": "$25-$25"
+    },
+    {
+      "handle": "sherpa-15-power-bank-micro-usb-c",
+      "title": "Sherpa 15 Power Bank Micro/USB-C",
+      "variant_count": 1,
+      "price_range": "$25-$25"
+    },
+    {
+      "handle": "sherpa-40-power-bank",
+      "title": "Sherpa 40 Power Bank",
+      "variant_count": 3,
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "sherpa-40-power-bank-open-box",
+      "title": "SHERPA 40 POWER BANK (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$32-$32"
+    },
+    {
+      "handle": "sherpa-50-power-bank-with-inverter",
+      "title": "Sherpa 50 Power Bank with Inverter",
+      "variant_count": 1,
+      "price_range": "$250-$250"
+    },
+    {
+      "handle": "sherpa-50-power-supply",
+      "title": "Sherpa 50 Power Supply",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "sherpa-inverter-110v",
+      "title": "Sherpa Inverter (110V)",
+      "variant_count": 1,
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "sherpa-laptop-charging-kit",
+      "title": "Sherpa Laptop Charging Kit",
+      "variant_count": 1,
+      "price_range": "$16-$16"
+    },
+    {
+      "handle": "small-boulder-travel-case",
+      "title": "Small Boulder Travel Case",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$45-$45"
+    },
+    {
+      "handle": "spot-usb-flashlight",
+      "title": "Spot USB Flashlight",
+      "variant_count": 1,
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "switch-10-core-solar-kit",
+      "title": "Switch 10 Core Solar Kit",
+      "variant_count": 1,
+      "price_range": "$120-$120"
+    },
+    {
+      "handle": "switch-10-lightning-cable",
+      "title": "Switch 10 Lightning Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$8-$8"
+    },
+    {
+      "handle": "tank-pro-4000-lifepo4-battery",
+      "title": "Tank Pro 4000",
+      "variant_count": 1,
+      "price_range": "$1400-$1400"
+    },
+    {
+      "handle": "tank-pro-6-ft-extension-cable",
+      "title": "Tank PRO 6 ft. Extension Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "three-pack-usb-to-lightning-4-inch-cable",
+      "title": "Three Pack USB to Lightning 4-Inch Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$18-$18"
+    },
+    {
+      "handle": "three-pack-usb-to-micro-4-inch-cable-1",
+      "title": "Three Pack USB to Micro 4-Inch Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "three-pack-usb-to-usb-c-4-inch-cable-1",
+      "title": "Three Pack USB to USB-C 4-Inch Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$15-$15"
+    },
+    {
+      "handle": "torch-250-flashlight",
+      "title": "TORCH 250 FLASHLIGHT",
+      "variant_count": 1,
+      "price_range": "$70-$70"
+    },
+    {
+      "handle": "usb-flashlight-tool",
+      "title": "USB Flashlight Tool",
+      "variant_count": 1,
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "usb-to-6mm-converter",
+      "title": "Usb To 6mm Converter",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "usb-to-lightning-connector-cable-4-inch",
+      "title": "USB To Lightning Connector Cable 4 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$12-$12"
+    },
+    {
+      "handle": "usb-to-micro-connector-cable-4-inch",
+      "title": "USB To Micro Connector Cable 4 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$5-$5"
+    },
+    {
+      "handle": "usb-to-usb-c-connector-cable-10-inch",
+      "title": "USB To USB-C Connector Cable 10 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$6-$6"
+    },
+    {
+      "handle": "usb-to-usb-c-connector-cable-39-inch",
+      "title": "USB To USB-C Connector Cable 39 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$7-$7"
+    },
+    {
+      "handle": "usb-to-usb-c-connector-cable-4-inch",
+      "title": "USB To USB-C Connector Cable 4 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$5-$5"
+    },
+    {
+      "handle": "usb-to-usb-c-connector-cable-5-inch",
+      "title": "USB To USB-C Connector Cable 5 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$5-$5"
+    },
+    {
+      "handle": "usb-c-to-usb-c-connector-cable-10-inch",
+      "title": "USB-C to USB-C Connector Cable 10 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$11-$11"
+    },
+    {
+      "handle": "usb-c-to-usb-c-connector-cable-39-inch",
+      "title": "USB-C to USB-C Connector Cable 39 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$12-$12"
+    },
+    {
+      "handle": "usb-c-to-usb-c-connector-cable-5-inch",
+      "title": "USB-C to USB-C Connector Cable 5 Inch",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$10-$10"
+    },
+    {
+      "handle": "venture-30-lighthouse-600-nomad-10-kit",
+      "title": "Venture 30 + Lighthouse 600 + Nomad 10 Kit",
+      "variant_count": 1,
+      "price_range": "$250-$250"
+    },
+    {
+      "handle": "venture-30-power-bank",
+      "title": "Venture 30 Power Bank",
+      "variant_count": 1,
+      "price_range": "$80-$80"
+    },
+    {
+      "handle": "venture-70-power-bank-micro-lightning-1",
+      "title": "Venture 70 Power Bank Micro/Lightning",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "venture-75-open-box",
+      "title": "Venture 75 (Open Box)",
+      "variant_count": 1,
+      "price_range": "$78-$78"
+    },
+    {
+      "handle": "wall-charging-cable-yeti-6th-gen",
+      "title": "Wall Charging Cable Yeti (6th Gen)",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$20-$20"
+    },
+    {
+      "handle": "goal-zero-yeti-1000-core",
+      "title": "Yeti 1000 Core",
+      "variant_count": 1,
+      "price_range": "$900-$900"
+    },
+    {
+      "handle": "yeti-1000core-boulder-100-briefcase-solar-generator",
+      "title": "Yeti 1000 Core + Boulder 100 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1200-$1200"
+    },
+    {
+      "handle": "yeti-1000-core-boulder-200-briefcase-solar-generator",
+      "title": "Yeti 1000 Core + Boulder 200 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1400-$1400"
+    },
+    {
+      "handle": "yeti-1000-core-ranger-300-briefcase-solar-generator",
+      "title": "Yeti 1000 Core + Ranger 300 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1600-$1600"
+    },
+    {
+      "handle": "goal-zero-yeti-1000-lithium-portable-power-station",
+      "title": "Yeti 1000 Lithium Portable Power Station",
+      "variant_count": 1,
+      "price_range": "$1200-$1200"
+    },
+    {
+      "handle": "yeti-1000-lithium-portable-power-station-open-box",
+      "title": "Yeti 1000 Lithium Portable Power Station (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$600-$600"
+    },
+    {
+      "handle": "goal-zero-yeti-1000x-power-station-boulder-100-briefcase-kit",
+      "title": "Yeti 1000X + Boulder 100 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1400-$1400"
+    },
+    {
+      "handle": "goal-zero-yeti-1000x-power-station-boulder-200-briefcase-kit",
+      "title": "Yeti 1000X + Boulder 200 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1600-$1600"
+    },
+    {
+      "handle": "yeti-1000x-nomad-100-solar-generator",
+      "title": "Yeti 1000X + Nomad 100 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1400-$1400"
+    },
+    {
+      "handle": "goal-zero-yeti-1000x-power-station-ranger-300-briefcase-kit",
+      "title": "Yeti 1000X + Ranger 300 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1800-$1800"
+    },
+    {
+      "handle": "goal-zero-yeti-1000x-4-boulder-100-4-8-kwh-yeti-tank-expansion-kit",
+      "title": "Yeti 1000X + Tank Expansion Solar Generator",
+      "variant_count": 1,
+      "price_range": "$4169-$4169"
+    },
+    {
+      "handle": "goal-zero-yeti-1250-portable-power-station",
+      "title": "Yeti 1250 Portable Power Station",
+      "variant_count": 1,
+      "price_range": "$1000-$1000"
+    },
+    {
+      "handle": "yeti-12v-car-charging-cable",
+      "title": "Yeti 12V Car Charging Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "goal-zero-yeti-1400-lithium-portable-power-station",
+      "title": "Yeti 1400 Lithium Portable Power Station",
+      "variant_count": 1,
+      "price_range": "$1800-$1800"
+    },
+    {
+      "handle": "goal-zero-yeti-1400-lithium-power-station-with-wifi",
+      "title": "Yeti 1400 Lithium Power Station with WiFi",
+      "variant_count": 1,
+      "price_range": "$1900-$1900"
+    },
+    {
+      "handle": "yeti-1400-lithium-power-station-with-wifi-openbox",
+      "title": "Yeti 1400 Lithium Power Station with WiFi (Open Box)",
+      "variant_count": 1,
+      "price_range": "$1000-$1000"
+    },
+    {
+      "handle": "yeti-150-open-box",
+      "title": "Yeti 150 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "yeti-1500-power-station-alta-50-electric-cooler",
+      "title": "Yeti 1500 + Alta 50",
+      "variant_count": 1,
+      "price_range": "$2070-$2070"
+    },
+    {
+      "handle": "yeti-1500-alta-80",
+      "title": "Yeti 1500 + Alta 80",
+      "variant_count": 1,
+      "price_range": "$2250-$2250"
+    },
+    {
+      "handle": "yeti-1500-boulder-100-bc-solar-generator",
+      "title": "Yeti 1500 + Boulder 100 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1710-$1710"
+    },
+    {
+      "handle": "yeti-1500-nomad-200-solar-generator",
+      "title": "Yeti 1500 + Nomad 200 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1900-$1900"
+    },
+    {
+      "handle": "yeti-1500-nomad-400-solar-generator",
+      "title": "Yeti 1500 + Nomad 400 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$2250-$2250"
+    },
+    {
+      "handle": "yeti-1500-power-station-skylight-telescoping-area-light",
+      "title": "Yeti 1500 + Skylight",
+      "variant_count": 1,
+      "price_range": "$1710-$1710"
+    },
+    {
+      "handle": "yeti-1500x-2-nomad-200-solar-generator",
+      "title": "Yeti 1500X + (2) Nomad 200 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$2097-$2097"
+    },
+    {
+      "handle": "goal-zero-yeti-1500x-4-boulder-100-briefcase-kit",
+      "title": "Yeti 1500X + (4) Boulder 100 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$2378-$2378"
+    },
+    {
+      "handle": "goal-zero-yeti-1500x-power-station-boulder-200-briefcase-kit",
+      "title": "Yeti 1500X + Boulder 200 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1575-$1575"
+    },
+    {
+      "handle": "goal-zero-yeti-1500x-power-station-ranger-300-briefcase",
+      "title": "Yeti 1500X + Ranger 300 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$1553-$1553"
+    },
+    {
+      "handle": "goal-zero-yeti-200x-portable-power-station-boulder-100-briefcase",
+      "title": "Yeti 200X + Boulder 100 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$600-$600"
+    },
+    {
+      "handle": "yeti-200x-boulder-50-solar-generator",
+      "title": "Yeti 200X + Boulder 50 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$355-$355"
+    },
+    {
+      "handle": "yeti-300-portable-power-station-lifepo4-battery",
+      "title": "Yeti 300",
+      "variant_count": 1,
+      "price_range": "$350-$350"
+    },
+    {
+      "handle": "yeti-300-open-box",
+      "title": "Yeti 300 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$228-$228"
+    },
+    {
+      "handle": "yeti-300-nomad-50-solar-generator",
+      "title": "Yeti 300 + Nomad 50 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$600-$600"
+    },
+    {
+      "handle": "yeti-300-power-station-skylight-work-camping-light",
+      "title": "Yeti 300 + Skylight",
+      "variant_count": 1,
+      "price_range": "$750-$750"
+    },
+    {
+      "handle": "goal-zero-yeti-3000-lithium-portable-power-station-with-wifi",
+      "title": "Yeti 3000 Lithium Portable Power Station with WiFi",
+      "variant_count": 1,
+      "price_range": "$3000-$3000"
+    },
+    {
+      "handle": "yeti-3000-lithium-portable-power-station-with-wifi-open-box",
+      "title": "Yeti 3000 Lithium Portable Power Station with WiFi (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$999-$999"
+    },
+    {
+      "handle": "goal-zero-yeti-3000x-power-station-4-boulder-200-briefcase-solar-kit",
+      "title": "Yeti 3000X + (4) Boulder 200 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$5495-$5495"
+    },
+    {
+      "handle": "goal-zero-yeti-3000x-power-station-ranger-300-briefcase-solar-kit",
+      "title": "Yeti 3000X + Ranger 300 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$3800-$3800"
+    },
+    {
+      "handle": "goal-zero-yeti-400-lithium-portable-power-station",
+      "title": "Yeti 400 Lithium Portable Power Station",
+      "variant_count": 1,
+      "price_range": "$600-$600"
+    },
+    {
+      "handle": "yeti-400-lithium-portable-power-station-open-box",
+      "title": "Yeti 400 Lithium Portable Power Station (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "goal-zero-yeti-400-replacement-battery",
+      "title": "Yeti 400 Replacement Battery",
+      "variant_count": 1,
+      "price_range": "$100-$100"
+    },
+    {
+      "handle": "yeti-500-portable-power-station-lfp-battery",
+      "title": "Yeti 500",
+      "variant_count": 1,
+      "price_range": "$500-$500"
+    },
+    {
+      "handle": "yeti-500-open-box",
+      "title": "Yeti 500 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$325-$325"
+    },
+    {
+      "handle": "yeti-500-power-station-alta-50-portable-fridge-freezer",
+      "title": "Yeti 500 + Alta 50",
+      "variant_count": 1,
+      "price_range": "$1170-$1170"
+    },
+    {
+      "handle": "yeti-500-boulder-100-bc-solar-generator",
+      "title": "Yeti 500 + Boulder 100 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$810-$810"
+    },
+    {
+      "handle": "yeti-500-nomad-50-solar-generator",
+      "title": "Yeti 500 + Nomad 50 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$675-$675"
+    },
+    {
+      "handle": "yeti-500-power-station-skylight-work-camping-light",
+      "title": "Yeti 500 + Skylight",
+      "variant_count": 1,
+      "price_range": "$810-$810"
+    },
+    {
+      "handle": "goal-zero-yeti-500x-portable-power-station-boulder-100-briefcase-kit",
+      "title": "Yeti 500X + Boulder 100 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$770-$770"
+    },
+    {
+      "handle": "yeti-400-lithium-500x-protection-case",
+      "title": "Yeti 500X Protection Case",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$60-$60"
+    },
+    {
+      "handle": "goal-zero-yeti-6000x-power-station-2-ranger-300-briefcase-solar-kit",
+      "title": "Yeti 6000X + (2) Ranger 300 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$5695-$5695"
+    },
+    {
+      "handle": "yeti-700-portable-power-station-lfp-batteries",
+      "title": "Yeti 700",
+      "variant_count": 1,
+      "price_range": "$700-$700"
+    },
+    {
+      "handle": "yeti-700-open-box",
+      "title": "Yeti 700 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$455-$455"
+    },
+    {
+      "handle": "yeti-700-power-station-alta-50-portable-fridge-freezer",
+      "title": "Yeti 700 + Alta 50",
+      "variant_count": 1,
+      "price_range": "$1350-$1350"
+    },
+    {
+      "handle": "yeti-700-power-station-alta-80-portable-fridge-freezer",
+      "title": "Yeti 700 + Alta 80",
+      "variant_count": 1,
+      "price_range": "$1530-$1530"
+    },
+    {
+      "handle": "yeti-700-boulder-100-bc-solar-generator",
+      "title": "Yeti 700 + Boulder 100 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$990-$990"
+    },
+    {
+      "handle": "yeti-700-nomad-100-solar-generator",
+      "title": "Yeti 700 + Nomad 100 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$990-$990"
+    },
+    {
+      "handle": "yeti-700-power-station-skylight-work-light",
+      "title": "Yeti 700 + Skylight",
+      "variant_count": 1,
+      "price_range": "$990-$990"
+    },
+    {
+      "handle": "yeti-faraday-case",
+      "title": "Yeti Faraday Case",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$300-$300"
+    },
+    {
+      "handle": "yeti-fast-charge-25-amp-power-supply",
+      "title": "Yeti Fast Charge 25-Amp Power Supply",
+      "variant_count": 1,
+      "price_range": "$150-$150"
+    },
+    {
+      "handle": "yeti-home-integration-kit",
+      "title": "Yeti Home Integration Kit",
+      "variant_count": 1,
+      "price_range": "$450-$450"
+    },
+    {
+      "handle": "yeti-link-expansion-module",
+      "title": "Yeti Link Expansion Module",
+      "variant_count": 1,
+      "price_range": "$400-$400"
+    },
+    {
+      "handle": "yeti-link-expansion-module-v3",
+      "title": "Yeti Link Expansion Module V3",
+      "variant_count": 1,
+      "price_range": "$400-$400"
+    },
+    {
+      "handle": "yeti-link-vehicle-integration-kit",
+      "title": "Yeti Link Vehicle Integration Kit",
+      "variant_count": 1,
+      "price_range": "$450-$450"
+    },
+    {
+      "handle": "yeti-link-vehicle-integration-kit-v3",
+      "title": "Yeti Link Vehicle Integration Kit V3",
+      "variant_count": 1,
+      "price_range": "$450-$450"
+    },
+    {
+      "handle": "yeti-lithium-12v-regulated-cable",
+      "title": "Yeti Lithium 12V Regulated Cable",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$40-$40"
+    },
+    {
+      "handle": "yeti-lithium-mppt-solar-charging-optimization-module-open-box",
+      "title": "Yeti Lithium MPPT Solar Charging Optimization Module (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$50-$50"
+    },
+    {
+      "handle": "yeti-pro-4000-power-station",
+      "title": "Yeti PRO 4000",
+      "variant_count": 1,
+      "price_range": "$2380-$2380"
+    },
+    {
+      "handle": "yeti-pro-4000-open-box",
+      "title": "Yeti PRO 4000 (OPEN BOX)",
+      "variant_count": 1,
+      "price_range": "$2040-$2040"
+    },
+    {
+      "handle": "yeti-pro-4000-2-boulder-200-solar-generator",
+      "title": "Yeti PRO 4000 + (2) Boulder 200 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$5170-$5170"
+    },
+    {
+      "handle": "yeti-pro-4000-2-nomad-400-solar-generator",
+      "title": "Yeti PRO 4000 + (2) Nomad 400 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$4750-$4750"
+    },
+    {
+      "handle": "yeti-pro-4000-4-boulder-200-solar-generator",
+      "title": "Yeti PRO 4000 + (4) Boulder 200 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$6170-$6170"
+    },
+    {
+      "handle": "yeti-pro-4000-4-nomad-400-solar-generator",
+      "title": "Yeti PRO 4000 + (4) Nomad 400 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$6400-$6400"
+    },
+    {
+      "handle": "yeti-pro-4000-4-ranger-300-solar-generator",
+      "title": "Yeti PRO 4000 + (4) Ranger 300 BC Solar Generator",
+      "variant_count": 1,
+      "price_range": "$6970-$6970"
+    },
+    {
+      "handle": "yeti-pro-4000-nomad-400-solar-generator",
+      "title": "Yeti PRO 4000 + Nomad 400 Solar Generator",
+      "variant_count": 1,
+      "price_range": "$3080-$3080"
+    },
+    {
+      "handle": "yeti-pro-4000-escape-drivable-kit",
+      "title": "Yeti PRO 4000 Escape Drivable Kit",
+      "variant_count": 1,
+      "price_range": "$2555-$2555"
+    },
+    {
+      "handle": "yeti-pro-4000-escape-towable-kit",
+      "title": "Yeti PRO 4000 Escape Towable Kit",
+      "variant_count": 1,
+      "price_range": "$2625-$2625"
+    },
+    {
+      "handle": "yeti-pro-4000-tank-pro-4000-lifepo4-battery",
+      "title": "Yeti PRO 8000",
+      "variant_count": 1,
+      "price_range": "$3780-$3780"
+    },
+    {
+      "handle": "yeti-protection-case-large",
+      "title": "Yeti Protection Case Large",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$90-$90"
+    },
+    {
+      "handle": "yeti-tank-expansion-battery",
+      "title": "Yeti Tank Expansion Battery",
+      "variant_count": 1,
+      "price_range": "$450-$450"
+    },
+    {
+      "handle": "yeti-tank-expansion-battery-v3",
+      "title": "Yeti Tank Expansion Battery V3",
+      "variant_count": 1,
+      "price_range": "$225-$225"
+    },
+    {
+      "handle": "yeti-x-60w-power-supply",
+      "title": "Yeti X 60W Power Supply",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "yeti-tank-pro-4000-locking-latch-kit",
+      "title": "Yeti/Tank PRO 4000 Locking Latch Kit",
+      "variant_count": 1,
+      "price_range": "$30-$30"
+    },
+    {
+      "handle": "yeti-tank-pro-4000-mounting-plate",
+      "title": "Yeti/Tank PRO 4000 Mounting Plate",
+      "variant_count": 1,
+      "skip_reason": "accessory/promo",
+      "price_range": "$70-$70"
+    }
+  ]
+}
