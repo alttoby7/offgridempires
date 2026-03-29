@@ -44,14 +44,22 @@ const COLORS = {
   textSecondary: "#8b949e",
   gridLine: "rgba(48, 54, 61, 0.6)",
   crosshair: "rgba(245, 158, 11, 0.3)",
+  yearBoundary: "rgba(101, 109, 118, 0.2)",
 };
 
 // Colors for secondary retailer series
 const SERIES_COLORS = ["#22d3ee", "#86efac", "#fb923c", "#94a3b8"];
 
-const PADDING = { top: 24, right: 16, bottom: 32, left: 56 };
+const PADDING = { top: 24, right: 16, bottom: 40, left: 56 };
 
-// ── Helpers ─────────────────────────────────────────────────────────────────
+// ── Date Helpers (UTC-safe) ────────────────────────────────────────────────
+
+/** Parse a YYYY-MM-DD string as UTC to avoid timezone shifts */
+function parseUTC(iso: string): Date {
+  return new Date(iso + "T00:00:00Z");
+}
+
+const utcFmt = { timeZone: "UTC" as const };
 
 function formatPrice(cents: number): string {
   return `$${(cents / 100).toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
@@ -61,21 +69,229 @@ function formatPriceExact(cents: number): string {
   return `$${(cents / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }
 
-function formatDateShort(iso: string): string {
-  const d = new Date(iso);
-  return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+function formatDateFull(iso: string): string {
+  const d = parseUTC(iso);
+  return d.toLocaleDateString("en-US", { ...utcFmt, month: "short", day: "numeric", year: "numeric" });
 }
 
-function formatDateFull(iso: string): string {
-  const d = new Date(iso);
-  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+// ── Calendar-Aware Tick Generation ─────────────────────────────────────────
+
+interface TickInfo {
+  index: number;
+  label: string;
+  isYearBoundary: boolean;
 }
+
+function generateTicks(
+  dates: string[],
+  chartWidth: number,
+  range: TimeRange,
+): TickInfo[] {
+  const n = dates.length;
+  if (n < 2) return [];
+
+  const minTickSpacing = 72;
+  const maxTicks = Math.max(3, Math.floor(chartWidth / minTickSpacing));
+
+  const firstDate = parseUTC(dates[0]);
+  const lastDate = parseUTC(dates[n - 1]);
+  const spanDays = (lastDate.getTime() - firstDate.getTime()) / (1000 * 60 * 60 * 24);
+
+  // Build a date→index map for snapping ticks to actual data points
+  const dateToIdx = new Map(dates.map((d, i) => [d, i]));
+
+  // Determine tick strategy based on time span
+  const ticks: TickInfo[] = [];
+
+  if (spanDays <= 45) {
+    // Short range: weekly ticks, format "Mar 28"
+    const step = Math.max(1, Math.ceil(n / maxTicks));
+    for (let i = 0; i < n; i += step) {
+      const d = parseUTC(dates[i]);
+      ticks.push({
+        index: i,
+        label: d.toLocaleDateString("en-US", { ...utcFmt, month: "short", day: "numeric" }),
+        isYearBoundary: false,
+      });
+    }
+  } else if (spanDays <= 200) {
+    // Medium range (6mo): monthly ticks, format "Mar" with year on first tick or January
+    generateMonthlyTicks(dates, dateToIdx, ticks, maxTicks, false);
+  } else if (spanDays <= 400) {
+    // 1yr range: every 1-2 months, format "Mar '25"
+    generateMonthlyTicks(dates, dateToIdx, ticks, maxTicks, true);
+  } else {
+    // Multi-year: yearly ticks at January boundaries
+    generateYearlyTicks(dates, dateToIdx, ticks, maxTicks);
+  }
+
+  // Always ensure first and last dates are represented
+  ensureEndpoints(ticks, dates, n, minTickSpacing, chartWidth);
+
+  return ticks;
+}
+
+function generateMonthlyTicks(
+  dates: string[],
+  dateToIdx: Map<string, number>,
+  ticks: TickInfo[],
+  maxTicks: number,
+  alwaysShowYear: boolean,
+): void {
+  const firstDate = parseUTC(dates[0]);
+  const lastDate = parseUTC(dates[dates.length - 1]);
+  const n = dates.length;
+
+  // Step through months
+  const monthStep = Math.max(1, Math.ceil(
+    ((lastDate.getFullYear() - firstDate.getFullYear()) * 12 +
+      lastDate.getUTCMonth() - firstDate.getUTCMonth()) / maxTicks
+  ));
+
+  let year = firstDate.getUTCFullYear();
+  let month = firstDate.getUTCMonth();
+  let isFirst = true;
+
+  while (true) {
+    const targetStr = `${year}-${String(month + 1).padStart(2, "0")}-01`;
+    // Find closest date in our data
+    const idx = findClosestDateIndex(dates, targetStr);
+    if (idx >= n) break;
+
+    const d = parseUTC(dates[idx]);
+    const isJan = d.getUTCMonth() === 0;
+
+    let label: string;
+    if (alwaysShowYear) {
+      label = d.toLocaleDateString("en-US", { ...utcFmt, month: "short" }) +
+        " \u2019" + String(d.getUTCFullYear()).slice(2);
+    } else if (isFirst || isJan) {
+      label = d.toLocaleDateString("en-US", { ...utcFmt, month: "short" }) +
+        " \u2019" + String(d.getUTCFullYear()).slice(2);
+    } else {
+      label = d.toLocaleDateString("en-US", { ...utcFmt, month: "short" });
+    }
+
+    // Avoid duplicate indexes
+    if (!ticks.some((t) => t.index === idx)) {
+      ticks.push({ index: idx, label, isYearBoundary: isJan && !isFirst });
+    }
+
+    isFirst = false;
+    month += monthStep;
+    while (month >= 12) { month -= 12; year++; }
+    if (year > lastDate.getUTCFullYear() + 1) break;
+  }
+}
+
+function generateYearlyTicks(
+  dates: string[],
+  dateToIdx: Map<string, number>,
+  ticks: TickInfo[],
+  maxTicks: number,
+): void {
+  const firstDate = parseUTC(dates[0]);
+  const lastDate = parseUTC(dates[dates.length - 1]);
+  const n = dates.length;
+
+  const yearSpan = lastDate.getUTCFullYear() - firstDate.getUTCFullYear() + 1;
+  const yearStep = Math.max(1, Math.ceil(yearSpan / maxTicks));
+
+  for (let y = firstDate.getUTCFullYear(); y <= lastDate.getUTCFullYear(); y += yearStep) {
+    const targetStr = `${y}-01-01`;
+    const idx = findClosestDateIndex(dates, targetStr);
+    if (idx < n && !ticks.some((t) => t.index === idx)) {
+      ticks.push({
+        index: idx,
+        label: String(y),
+        isYearBoundary: y > firstDate.getUTCFullYear(),
+      });
+    }
+  }
+}
+
+function findClosestDateIndex(dates: string[], target: string): number {
+  // Binary search for closest date
+  let lo = 0, hi = dates.length - 1;
+  while (lo < hi) {
+    const mid = (lo + hi) >> 1;
+    if (dates[mid] < target) lo = mid + 1;
+    else hi = mid;
+  }
+  // Check neighbors for closest
+  if (lo > 0 && lo < dates.length) {
+    const dLo = Math.abs(parseUTC(dates[lo]).getTime() - parseUTC(target).getTime());
+    const dPrev = Math.abs(parseUTC(dates[lo - 1]).getTime() - parseUTC(target).getTime());
+    if (dPrev < dLo) return lo - 1;
+  }
+  return Math.min(lo, dates.length - 1);
+}
+
+function ensureEndpoints(
+  ticks: TickInfo[],
+  dates: string[],
+  n: number,
+  minSpacing: number,
+  chartWidth: number,
+): void {
+  if (ticks.length === 0 || n < 2) return;
+
+  ticks.sort((a, b) => a.index - b.index);
+
+  // Pixel position of an index
+  const toPixel = (idx: number) => (idx / (n - 1)) * chartWidth;
+
+  // Ensure first point
+  if (ticks[0].index > 0) {
+    const firstPixel = toPixel(0);
+    const nearestPixel = toPixel(ticks[0].index);
+    if (nearestPixel - firstPixel > minSpacing * 0.6) {
+      const d = parseUTC(dates[0]);
+      ticks.unshift({
+        index: 0,
+        label: d.toLocaleDateString("en-US", { ...utcFmt, month: "short", day: "numeric" }),
+        isYearBoundary: false,
+      });
+    }
+  }
+
+  // Ensure last point
+  const lastTick = ticks[ticks.length - 1];
+  if (lastTick.index < n - 1) {
+    const lastPixel = toPixel(n - 1);
+    const nearestPixel = toPixel(lastTick.index);
+    if (lastPixel - nearestPixel > minSpacing * 0.6) {
+      const d = parseUTC(dates[n - 1]);
+      ticks.push({
+        index: n - 1,
+        label: d.toLocaleDateString("en-US", { ...utcFmt, month: "short", day: "numeric" }),
+        isYearBoundary: false,
+      });
+    }
+  }
+}
+
+/** Find all January 1st boundaries in a date range for drawing vertical markers */
+function findYearBoundaries(dates: string[]): number[] {
+  const boundaries: number[] = [];
+  for (let i = 1; i < dates.length; i++) {
+    const prevYear = dates[i - 1].slice(0, 4);
+    const curYear = dates[i].slice(0, 4);
+    if (curYear !== prevYear) {
+      boundaries.push(i);
+    }
+  }
+  return boundaries;
+}
+
+// ── Range Filtering (anchored to latest datapoint) ─────────────────────────
 
 function filterByRange(history: PricePoint[], range: TimeRange): PricePoint[] {
   const days = RANGE_DAYS[range];
-  if (!days) return history;
-  const cutoff = new Date();
-  cutoff.setDate(cutoff.getDate() - days);
+  if (!days || history.length === 0) return history;
+  const latest = history[history.length - 1].date;
+  const cutoff = parseUTC(latest);
+  cutoff.setUTCDate(cutoff.getUTCDate() - days);
   const cutoffStr = cutoff.toISOString().split("T")[0];
   return history.filter((p) => p.date.slice(0, 10) >= cutoffStr);
 }
@@ -85,11 +301,62 @@ function filterLowestByRange(
   range: TimeRange,
 ): Array<{ date: string; priceCents: number | null }> {
   const days = RANGE_DAYS[range];
-  if (!days) return points;
-  const cutoff = new Date();
-  cutoff.setDate(cutoff.getDate() - days);
+  if (!days || points.length === 0) return points;
+  const latest = points[points.length - 1].date;
+  const cutoff = parseUTC(latest);
+  cutoff.setUTCDate(cutoff.getUTCDate() - days);
   const cutoffStr = cutoff.toISOString().split("T")[0];
   return points.filter((p) => p.date.slice(0, 10) >= cutoffStr);
+}
+
+// ── Shared Axis Drawing ────────────────────────────────────────────────────
+
+function drawXAxis(
+  ctx: CanvasRenderingContext2D,
+  dates: string[],
+  chartLeft: number,
+  chartRight: number,
+  chartTop: number,
+  chartBottom: number,
+  range: TimeRange,
+) {
+  const n = dates.length;
+  if (n < 2) return;
+
+  const chartW = chartRight - chartLeft;
+  const toX = (i: number) => chartLeft + (i / (n - 1)) * chartW;
+
+  // Draw year boundary lines
+  const yearBounds = findYearBoundaries(dates);
+  if (yearBounds.length > 0) {
+    ctx.strokeStyle = COLORS.yearBoundary;
+    ctx.lineWidth = 1;
+    ctx.setLineDash([2, 4]);
+    for (const idx of yearBounds) {
+      const x = toX(idx);
+      ctx.beginPath();
+      ctx.moveTo(x, chartTop);
+      ctx.lineTo(x, chartBottom);
+      ctx.stroke();
+    }
+    ctx.setLineDash([]);
+  }
+
+  // Generate and draw tick labels
+  const ticks = generateTicks(dates, chartW, range);
+
+  ctx.fillStyle = COLORS.textMuted;
+  ctx.font = `9px "JetBrains Mono", monospace`;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "top";
+
+  for (const tick of ticks) {
+    const x = toX(tick.index);
+    // Clamp label position so it doesn't overflow
+    const textWidth = ctx.measureText(tick.label).width;
+    const clampedX = Math.max(chartLeft + textWidth / 2, Math.min(chartRight - textWidth / 2, x));
+    ctx.fillText(tick.label, clampedX, chartBottom + 6);
+  }
 }
 
 // ── Single-Series Canvas Drawing ────────────────────────────────────────────
@@ -101,7 +368,8 @@ function drawChart(
   dpr: number,
   points: PricePoint[],
   data: PriceHistoryData,
-  hoverIndex: number | null
+  hoverIndex: number | null,
+  range: TimeRange,
 ) {
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.clearRect(0, 0, width, height);
@@ -125,7 +393,7 @@ function drawChart(
   const toX = (i: number) => chartLeft + (i / (points.length - 1)) * chartW;
   const toY = (cents: number) => chartTop + (1 - (cents - yMin) / (yMax - yMin)) * chartH;
 
-  // Grid lines
+  // Y-axis grid lines
   ctx.strokeStyle = COLORS.gridLine;
   ctx.lineWidth = 0.5;
   const ySteps = 5;
@@ -143,15 +411,9 @@ function drawChart(
     ctx.fillText(formatPrice(cents), chartLeft - 8, y);
   }
 
-  const labelCount = Math.min(6, points.length);
-  ctx.fillStyle = COLORS.textMuted;
-  ctx.font = `9px "JetBrains Mono", monospace`;
-  ctx.textAlign = "center";
-  ctx.textBaseline = "top";
-  for (let i = 0; i < labelCount; i++) {
-    const idx = Math.round((i / (labelCount - 1)) * (points.length - 1));
-    ctx.fillText(formatDateShort(points[idx].date), toX(idx), chartBottom + 6);
-  }
+  // X-axis (shared calendar-aware ticks)
+  const dateStrings = points.map((p) => p.date);
+  drawXAxis(ctx, dateStrings, chartLeft, chartRight, chartTop, chartBottom, range);
 
   // Reference lines
   const yLow = toY(data.allTimeLowCents);
@@ -303,6 +565,7 @@ function drawMultiSeriesChart(
   activeSeries: SeriesDrawData[],
   stats: { low: number; high: number; avg: number },
   hoverDate: string | null,
+  range: TimeRange,
 ) {
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.clearRect(0, 0, width, height);
@@ -338,7 +601,7 @@ function drawMultiSeriesChart(
   // Build date→index map for x lookup
   const dateToIdx = new Map(dates.map((d, i) => [d, i]));
 
-  // Grid lines
+  // Y-axis grid lines
   ctx.strokeStyle = COLORS.gridLine;
   ctx.lineWidth = 0.5;
   const ySteps = 5;
@@ -356,15 +619,8 @@ function drawMultiSeriesChart(
     ctx.fillText(formatPrice(cents), chartLeft - 8, y);
   }
 
-  const labelCount = Math.min(6, n);
-  ctx.fillStyle = COLORS.textMuted;
-  ctx.font = `9px "JetBrains Mono", monospace`;
-  ctx.textAlign = "center";
-  ctx.textBaseline = "top";
-  for (let i = 0; i < labelCount; i++) {
-    const idx = Math.round((i / (labelCount - 1)) * (n - 1));
-    ctx.fillText(formatDateShort(dates[idx]), toX(idx), chartBottom + 6);
-  }
+  // X-axis (shared calendar-aware ticks)
+  drawXAxis(ctx, dates, chartLeft, chartRight, chartTop, chartBottom, range);
 
   // Reference: all-time low
   const yLow = toY(stats.low);
@@ -404,7 +660,6 @@ function drawMultiSeriesChart(
 
   // Draw secondary series (dashed colored lines)
   for (const series of activeSeries) {
-    // Build a points array aligned to the primary date axis
     const ptMap = new Map(series.points.map((p) => [p.date, p.priceCents]));
     ctx.strokeStyle = series.color;
     ctx.lineWidth = 1;
@@ -422,7 +677,7 @@ function drawMultiSeriesChart(
         if (!drawing) { ctx.moveTo(x, y); drawing = true; }
         else ctx.lineTo(x, y);
       } else {
-        drawing = false; // gap for missing/out-of-stock
+        drawing = false;
       }
     }
     ctx.stroke();
@@ -510,7 +765,7 @@ function drawMultiSeriesChart(
         ctx.fill();
       }
 
-      // Multi-series tooltip
+      // Multi-series tooltip (sorted by price, lowest first)
       const tooltipLines: Array<{ label: string; price: number; color: string }> = [];
       if (amberPriceCents != null) {
         tooltipLines.push({ label: "Lowest", price: amberPriceCents, color: COLORS.amber });
@@ -521,10 +776,15 @@ function drawMultiSeriesChart(
         if (pc != null) tooltipLines.push({ label: series.name.split(" ")[0], price: pc, color: series.color });
       }
 
-      if (tooltipLines.length > 0) {
+      // Sort by price (lowest first), but keep "Lowest" at top
+      const lowestEntry = tooltipLines.find((t) => t.label === "Lowest");
+      const rest = tooltipLines.filter((t) => t.label !== "Lowest").sort((a, b) => a.price - b.price);
+      const sortedLines = lowestEntry ? [lowestEntry, ...rest] : rest;
+
+      if (sortedLines.length > 0) {
         const lineH = 16;
         const tooltipW = 150;
-        const tooltipH = 12 + tooltipLines.length * lineH + 4;
+        const tooltipH = 12 + sortedLines.length * lineH + 4;
         let tx = hx + 14, ty = hy - tooltipH / 2;
         if (tx + tooltipW > chartRight) tx = hx - tooltipW - 14;
         if (ty < chartTop) ty = chartTop + 4;
@@ -544,8 +804,8 @@ function drawMultiSeriesChart(
         ctx.textAlign = "left";
         ctx.fillText(formatDateFull(hoverDate), tx + 8, ty + 6);
 
-        for (let li = 0; li < tooltipLines.length; li++) {
-          const line = tooltipLines[li];
+        for (let li = 0; li < sortedLines.length; li++) {
+          const line = sortedLines[li];
           const ly = ty + 18 + li * lineH;
           ctx.fillStyle = line.color;
           ctx.beginPath();
@@ -664,12 +924,12 @@ export function PriceHistoryChart({
     if (isMulti && multiStats) {
       drawMultiSeriesChart(
         ctx, dims.width, dims.height, dpr,
-        filteredLowest, filteredSeriesData, multiStats, hoverDate,
+        filteredLowest, filteredSeriesData, multiStats, hoverDate, range,
       );
     } else if (data && filteredPoints.length >= 2) {
-      drawChart(ctx, dims.width, dims.height, dpr, filteredPoints, data, hoverIndex);
+      drawChart(ctx, dims.width, dims.height, dpr, filteredPoints, data, hoverIndex, range);
     }
-  }, [dims, filteredPoints, filteredLowest, filteredSeriesData, data, hoverIndex, hoverDate, isMulti, multiStats]);
+  }, [dims, filteredPoints, filteredLowest, filteredSeriesData, data, hoverIndex, hoverDate, isMulti, multiStats, range]);
 
   // Mouse/touch interaction
   const handlePointerSingle = useCallback(
@@ -782,7 +1042,7 @@ export function PriceHistoryChart({
   const avgCents = isMulti ? (multiStats?.avg ?? 0) : (data?.averageCents ?? 0);
   const lowCents = isMulti ? (multiStats?.low ?? 0) : (data?.allTimeLowCents ?? 0);
   const highCents = isMulti ? (multiStats?.high ?? 0) : (data?.allTimeHighCents ?? 0);
-  const dataPointCount = isMulti ? filteredLowest.length : (data?.history.length ?? 0);
+  const dataPointCount = isMulti ? filteredLowest.length : filteredPoints.length;
 
   return (
     <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] overflow-hidden">
