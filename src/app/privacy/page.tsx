@@ -38,7 +38,7 @@ export default function PrivacyPage() {
 
       <PageTitle
         title="Privacy Policy"
-        subtitle="Effective March 23, 2026"
+        subtitle="Effective March 31, 2026"
       />
 
       <ContentCard>
@@ -48,6 +48,14 @@ export default function PrivacyPage() {
           how visitors use the site — page views, referral sources, device types, and general
           geographic region. This data is anonymized and aggregated. We do not collect names,
           addresses, or payment information.
+        </Paragraph>
+        <Paragraph>
+          When you use the solar sizing calculator, we record your calculator inputs (loads,
+          sun hours, battery preferences), sizing results, and kit matches. We also capture
+          basic session data such as referral source, screen size, locale, and timezone. We do
+          not collect names, email addresses, or any personally identifiable information through
+          the calculator. This data helps us understand what systems people are looking for so
+          we can improve our kit coverage and recommendations.
         </Paragraph>
         <Paragraph>
           If you sign up for price alerts, we store your email address and the kits or products
@@ -65,7 +73,8 @@ export default function PrivacyPage() {
         <SectionHeading id="cookies">Cookies & Tracking</SectionHeading>
         <Paragraph>
           We use cookies set by Google Analytics to distinguish unique visitors and sessions.
-          These are first-party cookies. We do not set tracking cookies ourselves beyond what
+          These are first-party cookies. We also use localStorage to maintain a session identifier
+          for calculator usage tracking. We do not set tracking cookies ourselves beyond what
           GA4 requires.
         </Paragraph>
         <Paragraph>
@@ -88,6 +97,10 @@ export default function PrivacyPage() {
             {
               service: "ShareASale / Impact / Partnerize",
               purpose: "Affiliate network tracking (sets cookies on click)",
+            },
+            {
+              service: "Supabase",
+              purpose: "Calculator submission storage (anonymous, no PII)",
             },
             {
               service: "Cloudflare",
@@ -120,7 +133,8 @@ export default function PrivacyPage() {
         <Paragraph>
           Price alert email addresses are retained until you unsubscribe. Analytics data
           retention is governed by Google&apos;s standard GA4 retention policies (14 months
-          by default). We do not maintain our own database of visitor information.
+          by default). Calculator submission data is retained indefinitely for product research
+          purposes but contains no personally identifiable information.
         </Paragraph>
 
         <SectionHeading id="your-rights">Your Rights</SectionHeading>
