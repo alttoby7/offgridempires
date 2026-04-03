@@ -34,7 +34,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:32.995Z",
+    "priceObservedAt": "2026-04-03T12:00:31.802Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/renogy-100w-12vstarter-kit?variant=43178671243379",
@@ -107,7 +107,7 @@
         "price": 160,
         "sourceUrl": "https://www.renogy.com/products/renogy-100w-12vstarter-kit?variant=43178671243379",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:32.995Z"
+        "observedAt": "2026-04-03T12:00:31.802Z"
       }
     ],
     "priceHistory": [
@@ -179,15 +179,15 @@
       "boat": "poor"
     },
     "included": {
+      "monitoring": false,
       "battery": false,
       "inverter": false,
-      "monitoring": false,
       "wiring": true,
       "mounting": true,
       "controller": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.367Z",
+    "priceObservedAt": "2026-04-03T12:00:21.027Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B09RZZHHHM",
@@ -222,6 +222,16 @@
         "quantity": 2
       },
       {
+        "role": "Monitoring",
+        "isIncluded": false,
+        "name": "Victron Energy SmartShunt 500A Battery Monitor Bluetooth",
+        "specs": "500A shunt, Bluetooth, VictronConnect app, SOC/voltage/current",
+        "quantity": 1,
+        "estimatedCost": 25,
+        "recommendedAsin": "B0856PHNLX",
+        "recommendedBrand": "Victron Energy"
+      },
+      {
         "role": "Battery",
         "isIncluded": false,
         "name": "ECO-WORTHY 12V 100Ah LiFePO4 Battery with Bluetooth 100A BMS",
@@ -240,16 +250,6 @@
         "estimatedCost": 100,
         "recommendedAsin": "B07XYR1BS3",
         "recommendedBrand": "BESTEK"
-      },
-      {
-        "role": "Monitoring",
-        "isIncluded": false,
-        "name": "Victron Energy SmartShunt 500A Battery Monitor Bluetooth",
-        "specs": "500A shunt, Bluetooth, VictronConnect app, SOC/voltage/current",
-        "quantity": 1,
-        "estimatedCost": 25,
-        "recommendedAsin": "B0856PHNLX",
-        "recommendedBrand": "Victron Energy"
       }
     ],
     "offers": [
@@ -259,7 +259,7 @@
         "price": 170,
         "sourceUrl": "https://www.amazon.com/dp/B09RZZHHHM",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:21.367Z"
+        "observedAt": "2026-04-03T12:00:21.027Z"
       },
       {
         "retailer": "Amazon",
@@ -2664,7 +2664,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.339Z",
+    "priceObservedAt": "2026-04-03T12:00:20.997Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B015DEY2TM",
@@ -2729,7 +2729,7 @@
         "price": 221,
         "sourceUrl": "https://www.amazon.com/dp/B015DEY2TM",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:21.339Z"
+        "observedAt": "2026-04-03T12:00:20.997Z"
       },
       {
         "retailer": "Renogy",
@@ -2737,7 +2737,7 @@
         "price": 290,
         "sourceUrl": "https://www.renogy.com/products/200-watt-12-volt-solar-rv-kit?variant=43178684186739",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:33.015Z"
+        "observedAt": "2026-04-03T12:00:31.814Z"
       }
     ],
     "priceHistory": [
@@ -4726,7 +4726,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:33.002Z",
+    "priceObservedAt": "2026-04-03T12:00:31.807Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/200-watt-12-volt-solar-starter-kit?variant=43178678714483",
@@ -13692,7 +13692,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:33.026Z",
+    "priceObservedAt": "2026-04-03T12:00:31.820Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/renogy-400w-12v-general-off-grid-solar-kit?variant=44229726994547",
@@ -15855,7 +15855,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.351Z",
+    "priceObservedAt": "2026-04-03T12:00:21.011Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B015DFS7X8",
@@ -18599,7 +18599,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.375Z",
+    "priceObservedAt": "2026-04-03T12:00:21.036Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0BPY72B9R",
@@ -21652,7 +21652,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:26.299Z",
+    "priceObservedAt": "2026-04-03T12:00:25.488Z",
     "retailer": "EcoFlow US",
     "retailerSlug": "ecoflow-us",
     "sourceUrl": "https://us.ecoflow.com/products/delta-2-portable-power-station?variant=41719074324553",
@@ -22829,7 +22829,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.417Z",
+    "priceObservedAt": "2026-04-03T12:00:21.070Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0BYS84V1P",
@@ -22892,7 +22892,7 @@
         "price": 469,
         "sourceUrl": "https://www.amazon.com/dp/B0BYS84V1P",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:21.417Z"
+        "observedAt": "2026-04-03T12:00:21.070Z"
       },
       {
         "retailer": "EcoFlow US",
@@ -22900,7 +22900,7 @@
         "price": 499,
         "sourceUrl": "https://us.ecoflow.com/products/ecoflow-river-2-pro-solar-generator?variant=55487232835657",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:26.306Z"
+        "observedAt": "2026-04-03T12:00:25.497Z"
       }
     ],
     "priceHistory": [
@@ -23553,7 +23553,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:33.010Z",
+    "priceObservedAt": "2026-04-03T12:00:31.811Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/200-watt-12-volt-monocrystalline-solar-panel-with-40-amp-mppt-charge-controller?variant=43178665574515",
@@ -27856,7 +27856,7 @@
       "controller": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.316Z",
+    "priceObservedAt": "2026-04-03T12:00:20.974Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B07CTKT56Y",
@@ -27925,7 +27925,7 @@
         "price": 521,
         "sourceUrl": "https://www.amazon.com/dp/B07CTKT56Y",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:21.316Z"
+        "observedAt": "2026-04-03T12:00:20.974Z"
       },
       {
         "retailer": "Renogy",
@@ -27933,7 +27933,7 @@
         "price": 640,
         "sourceUrl": "https://www.renogy.com/products/new-400-watt-12-volt-solar-premium-kit?variant=43178692247667",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:33.021Z"
+        "observedAt": "2026-04-03T12:00:31.817Z"
       }
     ],
     "priceHistory": [
@@ -29870,14 +29870,14 @@
     },
     "included": {
       "inverter": false,
-      "battery": false,
       "monitoring": false,
+      "battery": false,
       "wiring": true,
       "mounting": true,
       "controller": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.391Z",
+    "priceObservedAt": "2026-04-03T12:00:21.049Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B09KZ1MH7Z",
@@ -29922,16 +29922,6 @@
         "recommendedBrand": "WindyNation"
       },
       {
-        "role": "Battery",
-        "isIncluded": false,
-        "name": "BougeRV 12V 100Ah Group 24 LiFePO4 Battery with Low-Temp Protection",
-        "specs": "12V 100Ah LiFePO4, low-temp protection, Group 24, 1280Wh",
-        "quantity": 1,
-        "estimatedCost": 180,
-        "recommendedAsin": "B0B5WTZZRP",
-        "recommendedBrand": "BougeRV"
-      },
-      {
         "role": "Monitoring",
         "isIncluded": false,
         "name": "Victron Energy SmartShunt 500A Battery Monitor Bluetooth",
@@ -29940,6 +29930,16 @@
         "estimatedCost": 25,
         "recommendedAsin": "B0856PHNLX",
         "recommendedBrand": "Victron Energy"
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "BougeRV 12V 100Ah Group 24 LiFePO4 Battery with Low-Temp Protection",
+        "specs": "12V 100Ah LiFePO4, low-temp protection, Group 24, 1280Wh",
+        "quantity": 1,
+        "estimatedCost": 180,
+        "recommendedAsin": "B0B5WTZZRP",
+        "recommendedBrand": "BougeRV"
       }
     ],
     "priceHistory": [
@@ -30035,7 +30035,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.370Z",
+    "priceObservedAt": "2026-04-03T12:00:21.032Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0FWRK8JN6",
@@ -31054,8 +31054,8 @@
       "boat": "fair"
     },
     "included": {
-      "battery": false,
       "monitoring": false,
+      "battery": false,
       "wiring": true,
       "mounting": true,
       "controller": true,
@@ -31104,16 +31104,6 @@
         "quantity": 4
       },
       {
-        "role": "Battery",
-        "isIncluded": false,
-        "name": "BougeRV 12V 100Ah Group 24 LiFePO4 Battery with Low-Temp Protection",
-        "specs": "12V 100Ah LiFePO4, low-temp protection, Group 24, 1280Wh",
-        "quantity": 1,
-        "estimatedCost": 180,
-        "recommendedAsin": "B0B5WTZZRP",
-        "recommendedBrand": "BougeRV"
-      },
-      {
         "role": "Monitoring",
         "isIncluded": false,
         "name": "Victron Energy SmartShunt 500A Battery Monitor Bluetooth",
@@ -31122,6 +31112,16 @@
         "estimatedCost": 25,
         "recommendedAsin": "B0856PHNLX",
         "recommendedBrand": "Victron Energy"
+      },
+      {
+        "role": "Battery",
+        "isIncluded": false,
+        "name": "BougeRV 12V 100Ah Group 24 LiFePO4 Battery with Low-Temp Protection",
+        "specs": "12V 100Ah LiFePO4, low-temp protection, Group 24, 1280Wh",
+        "quantity": 1,
+        "estimatedCost": 180,
+        "recommendedAsin": "B0B5WTZZRP",
+        "recommendedBrand": "BougeRV"
       }
     ],
     "priceHistory": [
@@ -32544,7 +32544,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.453Z",
+    "priceObservedAt": "2026-04-03T12:00:21.117Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B08X6KSJLD",
@@ -36986,7 +36986,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.440Z",
+    "priceObservedAt": "2026-04-03T12:00:21.092Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0D2L1G66J",
@@ -37049,7 +37049,7 @@
         "price": 709,
         "sourceUrl": "https://www.amazon.com/dp/B0D2L1G66J",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:21.440Z"
+        "observedAt": "2026-04-03T12:00:21.092Z"
       },
       {
         "retailer": "Jackery",
@@ -37057,7 +37057,7 @@
         "price": 1299,
         "sourceUrl": "https://www.jackery.com/products/jackery-solar-generator-1000-v2?variant=40910606205015",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:28.283Z"
+        "observedAt": "2026-04-03T12:00:27.198Z"
       }
     ],
     "priceHistory": [
@@ -38327,7 +38327,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:33.030Z",
+    "priceObservedAt": "2026-04-03T12:00:31.824Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/renogy-400w-12v-general-off-grid-solar-kit?variant=43212833194099",
@@ -44666,7 +44666,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:26.291Z",
+    "priceObservedAt": "2026-04-03T12:00:25.477Z",
     "retailer": "EcoFlow US",
     "retailerSlug": "ecoflow-us",
     "sourceUrl": "https://us.ecoflow.com/products/delta-2-max-portable-power-station?variant=54615943512137",
@@ -44729,7 +44729,7 @@
         "price": 899,
         "sourceUrl": "https://us.ecoflow.com/products/delta-2-max-portable-power-station?variant=54615943512137",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:26.291Z"
+        "observedAt": "2026-04-03T12:00:25.477Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -44737,7 +44737,7 @@
         "price": 999,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-2-max?variant=41677816725644",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:23.658Z"
+        "observedAt": "2026-04-03T12:00:22.833Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -44745,7 +44745,7 @@
         "price": 1222,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-2-max?variant=41677816627340",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:23.641Z"
+        "observedAt": "2026-04-03T12:00:22.812Z"
       },
       {
         "retailer": "Amazon",
@@ -44753,7 +44753,7 @@
         "price": 1299,
         "sourceUrl": "https://www.amazon.com/dp/B0C8T7TW4X",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:21.423Z"
+        "observedAt": "2026-04-03T12:00:21.074Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -44761,7 +44761,7 @@
         "price": 1393,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-2-max?variant=41677816660108",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:23.648Z"
+        "observedAt": "2026-04-03T12:00:22.817Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -44769,7 +44769,7 @@
         "price": 1600,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-2-max?variant=41677816692876",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:23.653Z"
+        "observedAt": "2026-04-03T12:00:22.823Z"
       }
     ],
     "priceHistory": [
@@ -45594,7 +45594,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:28.304Z",
+    "priceObservedAt": "2026-04-03T12:00:27.206Z",
     "retailer": "Jackery",
     "retailerSlug": "jackery",
     "sourceUrl": "https://www.jackery.com/products/jackery-solar-generator-1000-plus?variant=40233094873175",
@@ -45657,7 +45657,7 @@
         "price": 899,
         "sourceUrl": "https://www.jackery.com/products/jackery-solar-generator-1000-plus?variant=40233094873175",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:28.304Z"
+        "observedAt": "2026-04-03T12:00:27.206Z"
       },
       {
         "retailer": "Amazon",
@@ -46051,7 +46051,7 @@
         "price": 1300,
         "sourceUrl": "https://www.renogy.com/products/800w-12v-24v-monocrystalline-solar-premium-kit-w-rover-60a-charger-controller?variant=43178697752691",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:33.038Z"
+        "observedAt": "2026-04-03T12:00:31.831Z"
       }
     ],
     "priceHistory": [
@@ -47315,7 +47315,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:26.302Z",
+    "priceObservedAt": "2026-04-03T12:00:25.493Z",
     "retailer": "EcoFlow US",
     "retailerSlug": "ecoflow-us",
     "sourceUrl": "https://us.ecoflow.com/products/delta-2-portable-power-station?variant=54725057708105",
@@ -51304,7 +51304,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:28.324Z",
+    "priceObservedAt": "2026-04-03T12:00:27.228Z",
     "retailer": "Jackery",
     "retailerSlug": "jackery",
     "sourceUrl": "https://www.jackery.com/products/jackery-explorer-1500-ultra-portable-power-station?variant=42447145435223",
@@ -56625,7 +56625,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:33.034Z",
+    "priceObservedAt": "2026-04-03T12:00:31.828Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/renogy-600w-12v-general-off-grid-solar-kit?variant=43212820283507",
@@ -65881,7 +65881,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.456Z",
+    "priceObservedAt": "2026-04-03T12:00:21.121Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B09Z78BCZH",
@@ -68612,7 +68612,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.380Z",
+    "priceObservedAt": "2026-04-03T12:00:21.040Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0GH7XTJWS",
@@ -75554,7 +75554,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:21.400Z",
+    "priceObservedAt": "2026-04-03T12:00:21.056Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B09KYLMYJC",
@@ -81118,7 +81118,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:26.296Z",
+    "priceObservedAt": "2026-04-03T12:00:25.484Z",
     "retailer": "EcoFlow US",
     "retailerSlug": "ecoflow-us",
     "sourceUrl": "https://us.ecoflow.com/products/delta-pro-portable-power-station?variant=40516140138569",
@@ -81181,7 +81181,7 @@
         "price": 1899,
         "sourceUrl": "https://us.ecoflow.com/products/delta-pro-portable-power-station?variant=40516140138569",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:26.296Z"
+        "observedAt": "2026-04-03T12:00:25.484Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -81189,7 +81189,7 @@
         "price": 1899,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41522406391948",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:23.635Z"
+        "observedAt": "2026-04-03T12:00:22.806Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -81197,7 +81197,7 @@
         "price": 2276,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41611407917196",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:23.627Z"
+        "observedAt": "2026-04-03T12:00:22.801Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -81205,7 +81205,7 @@
         "price": 2531,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41522406490252",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:23.595Z"
+        "observedAt": "2026-04-03T12:00:22.776Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -81213,7 +81213,7 @@
         "price": 2660,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41522406424716",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:23.604Z"
+        "observedAt": "2026-04-03T12:00:22.784Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -81221,7 +81221,7 @@
         "price": 2976,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41522406457484",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:23.612Z"
+        "observedAt": "2026-04-03T12:00:22.789Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -81229,7 +81229,7 @@
         "price": 3196,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41674358849676",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:23.620Z"
+        "observedAt": "2026-04-03T12:00:22.794Z"
       }
     ],
     "priceHistory": [
@@ -92133,7 +92133,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:24.414Z",
+    "priceObservedAt": "2026-04-03T12:00:23.595Z",
     "retailer": "Bluetti",
     "retailerSlug": "bluetti",
     "sourceUrl": "https://www.bluettipower.com/products/bluetti-ac300-b300k-pv350-home-battery-backup?variant=45969587470555",
@@ -92196,7 +92196,7 @@
         "price": 2299,
         "sourceUrl": "https://www.bluettipower.com/products/bluetti-ac300-b300k-pv350-home-battery-backup?variant=45969587470555",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:24.414Z"
+        "observedAt": "2026-04-03T12:00:23.595Z"
       },
       {
         "retailer": "Amazon",
@@ -94412,7 +94412,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:28.319Z",
+    "priceObservedAt": "2026-04-03T12:00:27.217Z",
     "retailer": "Jackery",
     "retailerSlug": "jackery",
     "sourceUrl": "https://www.jackery.com/products/solar-generator-2000-plus?variant=40442282639447",
@@ -94475,7 +94475,7 @@
         "price": 2349,
         "sourceUrl": "https://www.jackery.com/products/solar-generator-2000-plus?variant=40442282639447",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:28.319Z"
+        "observedAt": "2026-04-03T12:00:27.217Z"
       },
       {
         "retailer": "Amazon",
@@ -94483,7 +94483,7 @@
         "price": 2639,
         "sourceUrl": "https://www.amazon.com/dp/B0C6DP7VXX",
         "inStock": true,
-        "observedAt": "2026-04-03T06:00:21.447Z"
+        "observedAt": "2026-04-03T12:00:21.100Z"
       }
     ],
     "priceHistory": [
@@ -135775,7 +135775,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:33.042Z",
+    "priceObservedAt": "2026-04-03T12:00:31.835Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/renogy-1-2kw-essential-kit?variant=43178724556915",
@@ -169031,7 +169031,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:33.045Z",
+    "priceObservedAt": "2026-04-03T12:00:31.839Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/renogy-2-5kw-essential-plus-kit?variant=43178724589683",
@@ -280685,7 +280685,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:37.921Z",
+    "priceObservedAt": "2026-04-03T12:00:36.094Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -281547,7 +281547,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:37.927Z",
+    "priceObservedAt": "2026-04-03T12:00:36.101Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -282409,7 +282409,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:37.932Z",
+    "priceObservedAt": "2026-04-03T12:00:36.107Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -283228,7 +283228,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:37.936Z",
+    "priceObservedAt": "2026-04-03T12:00:36.114Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -283402,7 +283402,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:37.940Z",
+    "priceObservedAt": "2026-04-03T12:00:36.120Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -283576,7 +283576,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:37.945Z",
+    "priceObservedAt": "2026-04-03T12:00:36.125Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -283750,7 +283750,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:37.968Z",
+    "priceObservedAt": "2026-04-03T12:00:36.135Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -283924,7 +283924,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:37.979Z",
+    "priceObservedAt": "2026-04-03T12:00:36.142Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -284056,7 +284056,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:37.999Z",
+    "priceObservedAt": "2026-04-03T12:00:36.156Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -284230,7 +284230,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.006Z",
+    "priceObservedAt": "2026-04-03T12:00:36.164Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -284402,7 +284402,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.021Z",
+    "priceObservedAt": "2026-04-03T12:00:36.185Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -284526,7 +284526,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.026Z",
+    "priceObservedAt": "2026-04-03T12:00:36.192Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -285338,7 +285338,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.035Z",
+    "priceObservedAt": "2026-04-03T12:00:36.199Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -286192,7 +286192,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.048Z",
+    "priceObservedAt": "2026-04-03T12:00:36.206Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -287046,7 +287046,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.054Z",
+    "priceObservedAt": "2026-04-03T12:00:36.212Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -287893,7 +287893,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.061Z",
+    "priceObservedAt": "2026-04-03T12:00:36.217Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -288707,7 +288707,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.069Z",
+    "priceObservedAt": "2026-04-03T12:00:36.224Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -288833,7 +288833,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.075Z",
+    "priceObservedAt": "2026-04-03T12:00:36.230Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -289069,7 +289069,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.080Z",
+    "priceObservedAt": "2026-04-03T12:00:36.235Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -289354,7 +289354,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.084Z",
+    "priceObservedAt": "2026-04-03T12:00:36.241Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -290031,7 +290031,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.090Z",
+    "priceObservedAt": "2026-04-03T12:00:36.247Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -290864,7 +290864,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.098Z",
+    "priceObservedAt": "2026-04-03T12:00:36.252Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -291251,7 +291251,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.104Z",
+    "priceObservedAt": "2026-04-03T12:00:36.260Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -292103,7 +292103,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.110Z",
+    "priceObservedAt": "2026-04-03T12:00:36.266Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -292913,7 +292913,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.115Z",
+    "priceObservedAt": "2026-04-03T12:00:36.272Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -293085,7 +293085,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.123Z",
+    "priceObservedAt": "2026-04-03T12:00:36.278Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -293932,7 +293932,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.130Z",
+    "priceObservedAt": "2026-04-03T12:00:36.286Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -295389,7 +295389,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.137Z",
+    "priceObservedAt": "2026-04-03T12:00:36.291Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -296225,7 +296225,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.144Z",
+    "priceObservedAt": "2026-04-03T12:00:36.296Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -297061,7 +297061,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.151Z",
+    "priceObservedAt": "2026-04-03T12:00:36.301Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -297897,7 +297897,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.158Z",
+    "priceObservedAt": "2026-04-03T12:00:36.306Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -298734,7 +298734,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.172Z",
+    "priceObservedAt": "2026-04-03T12:00:36.310Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -299570,7 +299570,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.181Z",
+    "priceObservedAt": "2026-04-03T12:00:36.318Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -300406,7 +300406,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.188Z",
+    "priceObservedAt": "2026-04-03T12:00:36.329Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -300558,7 +300558,7 @@
       "battery": true,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.194Z",
+    "priceObservedAt": "2026-04-03T12:00:36.334Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -301391,7 +301391,7 @@
       "battery": false,
       "panels": true
     },
-    "priceObservedAt": "2026-04-03T06:00:38.200Z",
+    "priceObservedAt": "2026-04-03T12:00:36.343Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -301714,7 +301714,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.212Z",
+    "priceObservedAt": "2026-04-03T12:00:36.350Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -302562,7 +302562,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.220Z",
+    "priceObservedAt": "2026-04-03T12:00:36.356Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -302742,7 +302742,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.225Z",
+    "priceObservedAt": "2026-04-03T12:00:36.362Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -303590,7 +303590,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.231Z",
+    "priceObservedAt": "2026-04-03T12:00:36.368Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -304438,7 +304438,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.236Z",
+    "priceObservedAt": "2026-04-03T12:00:36.374Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -305272,7 +305272,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.241Z",
+    "priceObservedAt": "2026-04-03T12:00:36.379Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -305422,7 +305422,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.244Z",
+    "priceObservedAt": "2026-04-03T12:00:36.385Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -305572,7 +305572,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.249Z",
+    "priceObservedAt": "2026-04-03T12:00:36.390Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -305726,7 +305726,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.255Z",
+    "priceObservedAt": "2026-04-03T12:00:36.396Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -305882,7 +305882,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.262Z",
+    "priceObservedAt": "2026-04-03T12:00:36.401Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -306062,7 +306062,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.270Z",
+    "priceObservedAt": "2026-04-03T12:00:36.406Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -306214,7 +306214,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.276Z",
+    "priceObservedAt": "2026-04-03T12:00:36.411Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -307062,7 +307062,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.284Z",
+    "priceObservedAt": "2026-04-03T12:00:36.417Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -307896,7 +307896,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.291Z",
+    "priceObservedAt": "2026-04-03T12:00:36.424Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -308730,7 +308730,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.297Z",
+    "priceObservedAt": "2026-04-03T12:00:36.431Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -309564,7 +309564,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.303Z",
+    "priceObservedAt": "2026-04-03T12:00:36.436Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -309744,7 +309744,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.308Z",
+    "priceObservedAt": "2026-04-03T12:00:36.442Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -309924,7 +309924,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.315Z",
+    "priceObservedAt": "2026-04-03T12:00:36.449Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -310104,7 +310104,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.321Z",
+    "priceObservedAt": "2026-04-03T12:00:36.453Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -310284,7 +310284,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.326Z",
+    "priceObservedAt": "2026-04-03T12:00:36.458Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -310476,7 +310476,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.330Z",
+    "priceObservedAt": "2026-04-03T12:00:36.462Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -311324,7 +311324,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.336Z",
+    "priceObservedAt": "2026-04-03T12:00:36.466Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -312158,7 +312158,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.341Z",
+    "priceObservedAt": "2026-04-03T12:00:36.470Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -312308,7 +312308,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.345Z",
+    "priceObservedAt": "2026-04-03T12:00:36.476Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -313156,7 +313156,7 @@
       "battery": true,
       "panels": false
     },
-    "priceObservedAt": "2026-04-03T06:00:38.350Z",
+    "priceObservedAt": "2026-04-03T12:00:36.481Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
