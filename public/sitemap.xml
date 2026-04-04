@@ -37,13 +37,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/eco-worthy-200w-starter</loc>
+    <loc>https://offgridempire.com/kits/renogy-100w-starter-kit</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/renogy-100w-starter-kit</loc>
+    <loc>https://offgridempire.com/kits/eco-worthy-200w-starter</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -103,18 +103,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/eco-worthy-400w-premium-mppt</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://offgridempire.com/kits/renogy-400w-rv-kit</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://offgridempire.com/kits/bluetti-200w-ac50p</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
@@ -145,19 +133,25 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://offgridempire.com/kits/renogy-400w-rv-kit</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://offgridempire.com/kits/bluetti-bluetti-ac-double-kit-2-x-100w-rigid-panels</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/ecoflow-160w-max-ecoflow-river-2-max-160w-panel</loc>
+    <loc>https://offgridempire.com/kits/eco-worthy-400w-premium-mppt</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/ecoflow-river2pro-160w</loc>
+    <loc>https://offgridempire.com/kits/ecoflow-160w-max-ecoflow-river-2-max-160w-panel</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -182,6 +176,12 @@
   </url>
   <url>
     <loc>https://offgridempire.com/kits/renogy-400w-bluetooth-kit</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://offgridempire.com/kits/ecoflow-river2pro-160w</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -271,12 +271,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/jackery-1000v2-200w-panel</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://offgridempire.com/kits/bluetti-500w-ac180p-bluetti-ac180p-main-unit-only</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
@@ -284,6 +278,12 @@
   </url>
   <url>
     <loc>https://offgridempire.com/kits/ecoflow-ecoflow-delta-delta-3-plus-main-unit-only</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://offgridempire.com/kits/jackery-1000v2-200w-panel</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -301,7 +301,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/ecoflow-ecoflow-delta-black-delta-3-max-main-unit-only</loc>
+    <loc>https://offgridempire.com/kits/ecoflow-ecoflow-delta-gray-delta-3-max-main-unit-only</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -313,7 +313,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/ecoflow-ecoflow-delta-gray-delta-3-max-main-unit-only</loc>
+    <loc>https://offgridempire.com/kits/ecoflow-ecoflow-delta-black-delta-3-max-main-unit-only</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -325,19 +325,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/ecoflow-delta2max-400w</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://offgridempire.com/kits/anker-400w-anker-solix-c1000-gen-2-1-x-400w-solar-panel</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/jackery-1500-4x100w</loc>
+    <loc>https://offgridempire.com/kits/ecoflow-delta2max-400w</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -386,6 +380,12 @@
   </url>
   <url>
     <loc>https://offgridempire.com/kits/bluetti-500w-ac70p-basecamp-kit-1-x-200w-folding-panels-emp</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://offgridempire.com/kits/jackery-1500-4x100w</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -721,12 +721,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://offgridempire.com/kits/jackery-2000plus-4085wh-2x200w</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://offgridempire.com/kits/bluetti-ac300-b300k-pv350</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
@@ -746,6 +740,12 @@
   </url>
   <url>
     <loc>https://offgridempire.com/kits/ecoflow-ecoflow-delta-basecamp-kit-4-x-200w-rigid-solar-panel</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://offgridempire.com/kits/jackery-2000plus-4085wh-2x200w</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>

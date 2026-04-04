@@ -4,6 +4,8 @@ import { getKits } from "@/lib/get-kits";
 import { KitCard } from "@/components/kit-card";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 
+export const revalidate = 3600;
+
 // Brand slug → display info
 const BRANDS: Record<
   string,

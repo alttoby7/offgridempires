@@ -15,6 +15,8 @@ import { buildAffiliateUrl, deriveRetailerSlug } from "@/lib/affiliate";
 import { AffiliateLink } from "@/components/ui/affiliate-link";
 import { StickyBuyBar } from "@/components/ui/sticky-buy-bar";
 
+export const revalidate = 3600;
+
 export function generateStaticParams() {
   return getKitSlugs().map((slug) => ({ slug }));
 }

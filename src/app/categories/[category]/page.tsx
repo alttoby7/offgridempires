@@ -5,6 +5,8 @@ import { getKits } from "@/lib/get-kits";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { CategoryBrowser } from "@/components/category-browser";
 
+export const revalidate = 3600;
+
 const categoryMeta: Record<string, { title: string; description: string }> = {
   batteries: {
     title: "Best LiFePO4 Batteries",

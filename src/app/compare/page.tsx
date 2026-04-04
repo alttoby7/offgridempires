@@ -5,6 +5,8 @@ import { getKits } from "@/lib/get-kits";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { CompareView } from "@/components/compare-view";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Compare Solar Kits",
   description:

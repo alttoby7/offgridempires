@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# opennext
+/.open-next/
+
 # production
 /build
 
@@ -32,6 +35,10 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+.dev.vars
+
+# wrangler local state
+.wrangler/
 
 # discovery outputs (local-only, not committed)
 scripts/asin_candidates.json

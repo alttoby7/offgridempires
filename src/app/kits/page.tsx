@@ -5,6 +5,8 @@ import { getKits } from "@/lib/get-kits";
 import { KitListJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { KitBrowser } from "@/components/kit-browser";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Browse Solar Kits",
   description:

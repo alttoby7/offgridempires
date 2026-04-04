@@ -5,6 +5,8 @@ import { getKitsByType } from "@/lib/get-kits";
 import { KitListJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { KitBrowser } from "@/components/kit-browser";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Whole-Home & Off-Grid Systems",
   description:
