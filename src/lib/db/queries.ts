@@ -247,11 +247,15 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       }
     }
 
-    // Build items list (included + missing)
+    // Build items list (included + missing), deduped by role code
     const kitItems: KitItem[] = [];
+    const seenRoleCodes = new Set<string>();
 
-    // Add included items from kit_items
+    // Add included items from kit_items (first-write-wins by sortOrder)
     for (const item of items) {
+      if (seenRoleCodes.has(item.roleCode)) continue;
+      seenRoleCodes.add(item.roleCode);
+
       kitItems.push({
         role: ROLE_LABELS[item.roleCode] ?? item.roleCode,
         isIncluded: true,
@@ -263,20 +267,22 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
 
     // Add missing items from coverage (with recommended product if available)
     for (const cov of coverage) {
-      if (cov.status === "missing") {
-        kitItems.push({
-          role: ROLE_LABELS[cov.roleCode] ?? cov.roleCode,
-          isIncluded: false,
-          name: cov.recProductTitle ?? "Not included",
-          specs: cov.notes ?? "",
-          quantity: Number(cov.missingQuantity ?? 1),
-          estimatedCost: cov.recommendedCostCents
-            ? Math.round(cov.recommendedCostCents / 100)
-            : undefined,
-          recommendedAsin: cov.recAsin ?? undefined,
-          recommendedBrand: cov.recBrandName ?? undefined,
-        });
-      }
+      if (cov.status !== "missing") continue;
+      if (seenRoleCodes.has(cov.roleCode)) continue;
+      seenRoleCodes.add(cov.roleCode);
+
+      kitItems.push({
+        role: ROLE_LABELS[cov.roleCode] ?? cov.roleCode,
+        isIncluded: false,
+        name: cov.recProductTitle ?? "Not included",
+        specs: cov.notes ?? "",
+        quantity: Number(cov.missingQuantity ?? 1),
+        estimatedCost: cov.recommendedCostCents
+          ? Math.round(cov.recommendedCostCents / 100)
+          : undefined,
+        recommendedAsin: cov.recAsin ?? undefined,
+        recommendedBrand: cov.recBrandName ?? undefined,
+      });
     }
 
     // Recompute missing cost from live prices (overrides stale DB value)
