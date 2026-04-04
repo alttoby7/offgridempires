@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/hero";
 import { KitCard } from "@/components/kit-card";
-import { WebSiteJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
+import {
+  WebSiteJsonLd,
+  BreadcrumbJsonLd,
+  FaqJsonLd,
+  OrganizationJsonLd,
+} from "@/components/json-ld";
 import { getKits, getKitsByType, getKitCounts } from "@/lib/get-kits";
 import Link from "next/link";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
-  title: "OffGridEmpire — Compare Every Off-Grid Solar Kit",
+  title: "Off-Grid Solar Kit Comparison Engine | OffGridEmpire",
   description:
-    "Stop comparing sticker prices. Compare true total costs. The solar kit comparison engine with real build costs, component breakdowns, and price tracking.",
+    "Compare off-grid solar kits across 16 brands. See real build costs, component breakdowns, completeness scores, and price history — updated every 6 hours. Portable stations, DIY panel kits, and whole-home systems.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "OffGridEmpire — Compare Every Off-Grid Solar Kit",
+    title: "Off-Grid Solar Kit Comparison Engine | OffGridEmpire",
     description:
-      "Stop comparing sticker prices. Compare true total costs. The solar kit comparison engine with real build costs and component breakdowns.",
+      "Compare off-grid solar kits with real build costs, component breakdowns, and price tracking across 16 brands.",
     url: "/",
   },
 };
@@ -131,10 +138,58 @@ export default function HomePage() {
     .sort((a, b) => a.trueCost - b.trueCost)
     .slice(0, 4);
 
+  const faqQuestions = [
+    {
+      question: "What is the real build cost of a solar kit?",
+      answer:
+        "The real build cost = advertised price + the cost of every required missing part. Most solar kits don't include everything needed for a working system. We calculate what's missing and add those costs so you see the true total.",
+    },
+    {
+      question: "What does the completeness score mean?",
+      answer:
+        "Completeness measures how many of the 7 required component roles (panels, controller, battery, inverter, wiring, mounting, monitoring) are included in the kit. A 100% complete kit is ready to install with no additional purchases.",
+    },
+    {
+      question: "How often are solar kit prices updated?",
+      answer:
+        "Prices are tracked every 6 hours from Amazon, Shop Solar Kits, and brand-direct retailers. The price history chart on each kit page shows pricing trends over time.",
+    },
+    {
+      question: "What is the completion gap?",
+      answer:
+        "The completion gap is the difference between a kit's advertised price and its real build cost. It represents the cost of components the manufacturer left out — parts you still need to buy separately.",
+    },
+    {
+      question: "How do you compare solar kits from different brands?",
+      answer:
+        "Every kit is broken into the same 7 component roles and measured using normalized metrics: cost per watt-hour ($/Wh), cost per watt ($/W), and completeness percentage. This makes it possible to compare a $300 portable station against a $3,000 DIY kit on equal terms.",
+    },
+  ];
+
+  const categoryLinks = [
+    { label: "Solar Panels", href: "/categories/panels" },
+    { label: "LiFePO4 Batteries", href: "/categories/batteries" },
+    { label: "Charge Controllers", href: "/categories/charge-controllers" },
+    { label: "Inverters", href: "/categories/inverters" },
+    { label: "Power Stations", href: "/categories/power-stations" },
+    { label: "Generators", href: "/categories/generators" },
+  ];
+
+  const brandLinks = [
+    { label: "Renogy", href: "/brands/renogy" },
+    { label: "EcoFlow", href: "/brands/ecoflow" },
+    { label: "Bluetti", href: "/brands/bluetti" },
+    { label: "Jackery", href: "/brands/jackery" },
+    { label: "Eco-Worthy", href: "/brands/eco-worthy" },
+    { label: "WindyNation", href: "/brands/windynation" },
+  ];
+
   return (
     <>
       <WebSiteJsonLd />
       <BreadcrumbJsonLd items={[{ name: "Home", url: "/" }]} />
+      <FaqJsonLd questions={faqQuestions} />
+      <OrganizationJsonLd />
 
       {/* Section 1: Hero */}
       {trapKit && (
@@ -145,11 +200,129 @@ export default function HomePage() {
         />
       )}
 
-      {/* Section 2: Persona Router — "What are you looking for?" */}
+      {/* Section 2: How It Works */}
+      <section className="border-b border-[var(--border)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+          <h2 className="text-lg font-bold text-[var(--text-primary)] mb-6">
+            How the Solar Kit Comparison Engine Works
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div>
+              <p className="font-mono text-xs text-[var(--accent)] mb-1">01</p>
+              <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
+                Decompose into 7 component roles
+              </p>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                Solar panels, charge controller, battery, inverter, wiring,
+                mounting, and monitoring. If a kit is missing any of these,
+                it&apos;s not ready to use out of the box.
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-xs text-[var(--accent)] mb-1">02</p>
+              <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
+                Calculate the real build cost
+              </p>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                The advertised price only tells part of the story. The{" "}
+                <Link
+                  href="/methodology"
+                  className="text-[var(--accent)] hover:underline"
+                >
+                  real build cost
+                </Link>{" "}
+                adds every required missing part to show what the kit actually
+                costs to build a working system.
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-xs text-[var(--accent)] mb-1">03</p>
+              <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
+                Normalize specs for comparison
+              </p>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                Cost per watt-hour, cost per watt, completeness percentage —
+                every kit measured the same way so you can{" "}
+                <Link
+                  href="/compare"
+                  className="text-[var(--accent)] hover:underline"
+                >
+                  compare across brands
+                </Link>{" "}
+                and retailers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2b: Common Missing Parts — alt bg for rhythm */}
+      <section className="border-b border-[var(--border)] bg-[var(--bg-secondary)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+          <h2 className="text-lg font-bold text-[var(--text-primary)] mb-4">
+            Common Missing Parts in Solar Kits
+          </h2>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-5 max-w-3xl">
+            Most solar kits ship without everything needed for a working
+            system. These are the components most often left out — and the
+            ones that inflate the real build cost above the advertised price.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {[
+              {
+                part: "Battery (LiFePO4)",
+                note: "Often the single largest hidden cost",
+              },
+              {
+                part: "Inverter",
+                note: "Required to convert DC to AC power",
+              },
+              {
+                part: "MPPT Charge Controller",
+                note: "Regulates panel output to battery",
+              },
+              {
+                part: "Mounting & Racking",
+                note: "Roof, ground, or pole mount hardware",
+              },
+              {
+                part: "Wiring & Connectors",
+                note: "MC4 cables, battery cables, conduit",
+              },
+              {
+                part: "Breakers & Fuses",
+                note: "Overcurrent protection for each circuit",
+              },
+              {
+                part: "Transfer Switch",
+                note: "Needed for home backup integration",
+              },
+              {
+                part: "Monitoring System",
+                note: "Bluetooth or Wi-Fi production tracking",
+              },
+            ].map((item) => (
+              <div
+                key={item.part}
+                className="rounded border-l-2 border-l-[var(--accent)]/30 border border-[var(--border)] bg-[var(--bg-surface)] p-3"
+              >
+                <p className="text-sm font-medium text-[var(--text-primary)]">
+                  {item.part}
+                </p>
+                <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                  {item.note}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: Persona Router */}
       <section className="border-b border-[var(--border)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
           <h2 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] mb-4">
-            What are you looking for?
+            Off-Grid Solar Kits by System Type
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -278,11 +451,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 3: Smart Paths */}
+      {/* Section 4: Smart Paths */}
       <section className="border-b border-[var(--border)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
           <h2 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] mb-4">
-            Quick Finds
+            Solar Kit Comparison: Find Your Match
           </h2>
 
           <div className="grid grid-cols-2 lg:grid-cols-6 gap-3">
@@ -345,15 +518,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 4: Featured by Type */}
+      {/* Section 5: Featured by Type */}
       <section className="border-b border-[var(--border)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 space-y-10">
           {/* Portable Stations */}
           {topPortable.length > 0 && (
             <div>
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-2">
                 <h2 className="text-lg font-bold text-[var(--text-primary)]">
-                  Top Portable Stations
+                  Portable Solar Power Stations Compared
                 </h2>
                 <Link
                   href="/portable-power"
@@ -362,6 +535,11 @@ export default function HomePage() {
                   See all {portableKits.length} &rarr;
                 </Link>
               </div>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-4">
+                Portable solar power stations from EcoFlow, Bluetti, and
+                Jackery — all-in-one units with built-in batteries and
+                inverters. Sorted by real build cost from lowest to highest.
+              </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {topPortable.map((kit) => (
                   <KitCard key={kit.slug} kit={kit} />
@@ -373,9 +551,9 @@ export default function HomePage() {
           {/* DIY Kits */}
           {topDiy.length > 0 && (
             <div>
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-2">
                 <h2 className="text-lg font-bold text-[var(--text-primary)]">
-                  Top DIY Kits
+                  DIY Solar Panel Kits Compared
                 </h2>
                 <Link
                   href="/solar-kits"
@@ -385,6 +563,12 @@ export default function HomePage() {
                   &rarr;
                 </Link>
               </div>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-4">
+                DIY solar panel kits from Renogy, Eco-Worthy, and WindyNation.
+                These kits ship as separate components — panels, controllers,
+                wiring — for RV, cabin, or shed installations. Check the
+                completeness score to see what else you need.
+              </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {topDiy.map((kit) => (
                   <KitCard key={kit.slug} kit={kit} />
@@ -396,9 +580,9 @@ export default function HomePage() {
           {/* Whole-Home Systems */}
           {topWholeHome.length > 0 && (
             <div>
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-2">
                 <h2 className="text-lg font-bold text-[var(--text-primary)]">
-                  Top Complete Systems
+                  Whole-Home Off-Grid Solar Systems
                 </h2>
                 <Link
                   href="/whole-home"
@@ -407,6 +591,11 @@ export default function HomePage() {
                   See all {wholeHomeKits.length} &rarr;
                 </Link>
               </div>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-4">
+                Off-grid solar systems rated 5kW and above from Shop Solar, EG4,
+                and Sol-Ark. Equipment packages for full home power — skip
+                contractor markup, buy the hardware directly.
+              </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {topWholeHome.map((kit) => (
                   <KitCard key={kit.slug} kit={kit} />
@@ -417,12 +606,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 5: Trust / Transparency */}
+      {/* Section 6: Trust / Transparency */}
       <section className="bg-[var(--bg-secondary)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-xl font-bold text-[var(--text-primary)] mb-3">
-              No hidden agendas. Just data.
+              How OffGridEmpire Compares Solar Kits
             </h2>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-8">
               We earn affiliate commissions when you buy through our links —
@@ -490,6 +679,70 @@ export default function HomePage() {
                 </svg>
               </Link>
             </div>
+          </div>
+
+          {/* Browse links — folded into trust section */}
+          <div className="mt-12 pt-8 border-t border-[var(--border)] max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] mb-3">
+                Browse by Component
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {categoryLinks.map((cat) => (
+                  <Link
+                    key={cat.href}
+                    href={cat.href}
+                    className="rounded-sm border border-[var(--border)] bg-[var(--bg-primary)]/50 px-3 py-1.5 text-sm text-[var(--text-secondary)] hover:border-[var(--border-accent)] hover:text-[var(--accent)] transition-colors"
+                  >
+                    {cat.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-sm font-medium uppercase tracking-wide text-[var(--text-muted)] mb-3">
+                Browse by Brand
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {brandLinks.map((brand) => (
+                  <Link
+                    key={brand.href}
+                    href={brand.href}
+                    className="rounded-sm border border-[var(--border)] bg-[var(--bg-primary)]/50 px-3 py-1.5 text-sm text-[var(--text-secondary)] hover:border-[var(--border-accent)] hover:text-[var(--accent)] transition-colors"
+                  >
+                    {brand.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 7: FAQ */}
+      <section className="border-b border-[var(--border)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <h2 className="text-lg font-bold text-[var(--text-primary)] mb-8">
+            Off-Grid Solar Kit FAQ
+          </h2>
+          <div className="max-w-3xl space-y-0 divide-y divide-[var(--border)]">
+            {faqQuestions.map((faq, i) => (
+              <div key={faq.question} className="py-5 first:pt-0 last:pb-0">
+                <div className="flex gap-3">
+                  <span className="font-mono text-xs text-[var(--accent)] pt-0.5 shrink-0">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <h3 className="text-sm font-semibold text-[var(--text-primary)] mb-2">
+                      {faq.question}
+                    </h3>
+                    <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

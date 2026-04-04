@@ -183,3 +183,25 @@ export function FaqJsonLd({
     />
   );
 }
+
+/**
+ * Organization schema for homepage — establishes entity identity.
+ */
+export function OrganizationJsonLd() {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "OffGridEmpire",
+    url: SITE_URL,
+    description:
+      "Solar kit comparison engine with real build costs and component breakdowns.",
+    sameAs: [],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}

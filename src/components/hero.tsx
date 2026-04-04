@@ -41,20 +41,25 @@ export function Hero({ trapKit, kitCount, brandCount }: HeroProps) {
               </span>
             </div>
 
-            {/* Headline — live data from worst-trap kit */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1]">
+            {/* Stable H1 for SEO — reads as category context */}
+            <h1 className="text-sm sm:text-base font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-4">
+              Compare Off-Grid Solar Kits by Real Build Cost
+            </h1>
+
+            {/* Dynamic hook — visual centerpiece */}
+            <p className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1]">
               That ${trapKit.listedPrice.toLocaleString()} solar kit{" "}
               <span className="text-[var(--danger)] line-through decoration-2">
                 costs ${trapKit.trueCost.toLocaleString()}
               </span>{" "}
               <span className="text-[var(--accent)]">to actually use.</span>
-            </h1>
+            </p>
 
             {/* Subheadline */}
             <p className="mt-5 text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-xl">
-              We break down every off-grid solar kit into components, expose
-              what&apos;s missing, and calculate the real cost to build a working
-              system. Stop comparing sticker prices.
+              Every off-grid solar kit is broken into components to expose
+              required missing parts and calculate the real build cost.
+              Stop comparing advertised prices.
             </p>
 
             {/* Decision-first CTAs */}
