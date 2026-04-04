@@ -14,13 +14,12 @@
       "service": "offgridempire"
     }
   ],
-  // Enable R2 caching after activating R2 in Cloudflare Dashboard:
-  // "r2_buckets": [
-  //   {
-  //     "binding": "NEXT_INC_CACHE_R2_BUCKET",
-  //     "bucket_name": "offgridempire-cache"
-  //   }
-  // ]
+  "r2_buckets": [
+    {
+      "binding": "NEXT_INC_CACHE_R2_BUCKET",
+      "bucket_name": "offgridempire-cache"
+    }
+  ],
   "account_id": "4e99280ddad67e4382b367daccf6c5e0",
   "routes": [
     { "pattern": "offgridempire.com/*", "zone_name": "offgridempire.com" },
