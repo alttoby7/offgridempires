@@ -284,6 +284,60 @@ function cleanShopSolarHouseTitle(raw: string, brand: string): string {
   return tierStr || title.slice(0, 60);
 }
 
+// ── Variant panel extraction ───────────────────────────────────────────────
+
+/**
+ * Extract panel wattage from variant names like "[2 x 200W Folding Panel]"
+ * or "+ 400W Anker PS400 Solar Panel". Returns null if no panel info found.
+ */
+function extractVariantPanelWatts(
+  rawName: string
+): { watts: number; count: number; description: string } | null {
+  // Pattern 1: Bracket with count — [N x MW Folding/Rigid Panel]
+  const bracketMulti = rawName.match(
+    /\[(\d+)\s*[xX×]\s*(\d+)\s*W\s*(?:Folding|Rigid|Portable)?\s*(?:Solar\s*)?Panels?/i
+  );
+  if (bracketMulti) {
+    const count = parseInt(bracketMulti[1], 10);
+    const perPanel = parseInt(bracketMulti[2], 10);
+    const type = /Folding/i.test(rawName)
+      ? "Folding"
+      : /Rigid/i.test(rawName)
+        ? "Rigid"
+        : "";
+    const desc =
+      count === 1
+        ? `${perPanel}W ${type} Panel`.trim()
+        : `${count}× ${perPanel}W ${type} Panels`.trim();
+    return { watts: count * perPanel, count, description: desc };
+  }
+
+  // Pattern 2: Bracket single panel — [100W Folding Panel]
+  const bracketSingle = rawName.match(
+    /\[\s*(\d+)\s*W\s*(?:Folding|Rigid|Portable)\s*(?:Solar\s*)?Panels?/i
+  );
+  if (bracketSingle) {
+    const perPanel = parseInt(bracketSingle[1], 10);
+    const type = /Folding/i.test(rawName) ? "Folding" : "Rigid";
+    return {
+      watts: perPanel,
+      count: 1,
+      description: `${perPanel}W ${type} Panel`,
+    };
+  }
+
+  // Pattern 3: Plus format — + 400W Anker PS400 Solar Panel
+  const plusFormat = rawName.match(
+    /\+\s*(\d+)\s*W\s+\w+[\w\s]*?(?:Solar\s+)?Panel/i
+  );
+  if (plusFormat) {
+    const watts = parseInt(plusFormat[1], 10);
+    return { watts, count: 1, description: `${watts}W Solar Panel` };
+  }
+
+  return null;
+}
+
 // ── Kit loading ─────────────────────────────────────────────────────────────
 
 function loadKits(): Kit[] {
@@ -301,6 +355,30 @@ function loadKits(): Kit[] {
         name: cleaned,
         displayName: cleaned,
       };
+
+      // Enrich variant kits that bundle panels but have panelWatts=0
+      const variantPanel = extractVariantPanelWatts(k.name);
+      if (variantPanel && kit.panelWatts === 0) {
+        kit.panelWatts = variantPanel.watts;
+        kit.included = { ...kit.included, panels: true };
+        kit.items = kit.items.map((item) =>
+          item.role === "Solar Panels" && !item.isIncluded
+            ? {
+                ...item,
+                isIncluded: true,
+                name: variantPanel.description,
+                specs: `${variantPanel.watts}W total`,
+                quantity: variantPanel.count,
+              }
+            : item
+        );
+        kit.costPerW = `$${(kit.trueCost / variantPanel.watts).toFixed(2)}`;
+        const vals = Object.values(kit.included);
+        kit.completeness = Math.round(
+          (vals.filter(Boolean).length / vals.length) * 100
+        );
+      }
+
       kit.systemType = classifyKit(kit);
       return kit;
     });
