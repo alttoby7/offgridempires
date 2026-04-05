@@ -69,6 +69,24 @@ export const articles: ArticleEntry[] = [
     publishedAt: "2026-04-05T00:00:00Z",
     primaryKeyword: "solar water and pool heating",
   },
+  {
+    slug: "solar-panels-for-home",
+    title: "Solar Panels for Home: 140 DIY Kits Compared by Real Build Cost",
+    format: "category",
+    pageType: "supporting",
+    parentSlug: null,
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "solar panels for home",
+  },
+  {
+    slug: "battery-types-and-deep-cycle",
+    title: "Battery Types and Deep Cycle: A Data-Backed Guide for Off-Grid Solar",
+    format: "guide",
+    pageType: "cluster",
+    parentSlug: null,
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "battery types and deep cycle",
+  },
 ];
 
 export function getArticleSlugs(): string[] {
