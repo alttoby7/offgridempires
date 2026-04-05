@@ -1024,15 +1024,34 @@ export function PriceHistoryChart({
     : !data || data.history.length < 2;
 
   if (isEmpty) {
+    // Show single-point info if we have exactly 1 observation
+    const singlePoint = isMulti
+      ? (multiHistory?.lowestAvailable[0] ?? null)
+      : (data?.history[0] ?? null);
+
     return (
       <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-6">
         <h2 className="text-lg font-bold text-[var(--text-primary)] mb-4">Price History</h2>
         <div className="flex flex-col items-center justify-center h-40 rounded bg-[var(--bg-primary)] border border-dashed border-[var(--border)]">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--text-muted)] mb-2">
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-          </svg>
-          <p className="text-sm text-[var(--text-muted)]">Price tracking starts when we first see this kit</p>
-          <p className="text-xs text-[var(--text-muted)] mt-1">Check back for historical data</p>
+          {singlePoint ? (
+            <>
+              <span className="text-2xl font-bold text-[var(--accent)] mb-1">
+                {formatPrice(singlePoint.priceCents)}
+              </span>
+              <p className="text-sm text-[var(--text-muted)]">
+                Tracking since {singlePoint.date}
+              </p>
+              <p className="text-xs text-[var(--text-muted)] mt-1">Chart appears after more observations</p>
+            </>
+          ) : (
+            <>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--text-muted)] mb-2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+              <p className="text-sm text-[var(--text-muted)]">Price tracking starts when we first see this kit</p>
+              <p className="text-xs text-[var(--text-muted)] mt-1">Check back for historical data</p>
+            </>
+          )}
         </div>
       </div>
     );
