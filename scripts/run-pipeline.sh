@@ -48,6 +48,10 @@ npx tsx scripts/export-data.ts || {
   exit 1
 }
 
+# Check for price drops and send alerts
+echo "${LOG_PREFIX} Checking price drop alerts..."
+python3 scripts/check-alerts.py || echo "${LOG_PREFIX} WARNING: Alert check had errors"
+
 # Check if anything changed
 git add src/lib/data/kits.json public/data/history/
 if git diff --cached --quiet; then
