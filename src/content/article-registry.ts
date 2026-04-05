@@ -33,6 +33,24 @@ export const articles: ArticleEntry[] = [
     publishedAt: "2026-04-04T00:00:00Z",
     primaryKeyword: "rv and camper solar",
   },
+  {
+    slug: "portable-solar-panels-and-chargers",
+    title: "Portable Solar Panels and Chargers: 29 Systems Compared by Output and Real Build Cost",
+    format: "category",
+    pageType: "cluster",
+    parentSlug: "portable-power-and-power-stations",
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "portable solar panels and chargers",
+  },
+  {
+    slug: "watts-amps-volts-conversions",
+    title: "Watts, Amps, and Volts: The Solar Math Every DIY Builder Needs",
+    format: "tool",
+    pageType: "supporting",
+    parentSlug: "solar-panel-types-and-efficiency",
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "watts amps volts conversions",
+  },
 ];
 
 export function getArticleSlugs(): string[] {

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ArticleRecord } from "@/content/types";
 import { ArticleKitEmbed } from "./article-kit-embed";
+import { WattsAmpsCalc } from "./watts-amps-calc";
 import {
   Breadcrumb,
   PageTitle,
@@ -69,6 +70,23 @@ function renderBody(body: string) {
     if (line.trim().match(/^\[KIT_EMBED:([^\]]+)\]$/)) {
       const slug = line.trim().match(/^\[KIT_EMBED:([^\]]+)\]$/)![1];
       elements.push(<ArticleKitEmbed key={`kit-${i}`} slug={slug} />);
+      i++;
+      continue;
+    }
+
+    // Calculator embed
+    if (line.trim() === "[CALC_EMBED:watts-amps-calculator]") {
+      elements.push(<WattsAmpsCalc key={`calc-${i}`} />);
+      i++;
+      continue;
+    }
+
+    // Tool embed placeholder (renders as CTA link)
+    if (line.trim().match(/^\{\{TOOL_EMBED:([^}]+)\}\}$/)) {
+      const toolId = line.trim().match(/^\{\{TOOL_EMBED:([^}]+)\}\}$/)![1];
+      if (toolId === "watts-amps-calculator") {
+        elements.push(<WattsAmpsCalc key={`calc-embed-${i}`} />);
+      }
       i++;
       continue;
     }
