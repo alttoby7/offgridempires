@@ -105,6 +105,15 @@ export const articles: ArticleEntry[] = [
     publishedAt: "2026-04-05T00:00:00Z",
     primaryKeyword: "inverters and power conversion",
   },
+  {
+    slug: "solar-installation-diy",
+    title: "How to Install a DIY Off-Grid Solar System (With Real Costs)",
+    format: "how-to",
+    pageType: "cluster",
+    parentSlug: "solar-installation-and-diy",
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "solar installation and diy",
+  },
 ];
 
 export function getArticleSlugs(): string[] {
