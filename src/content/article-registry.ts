@@ -114,6 +114,15 @@ export const articles: ArticleEntry[] = [
     publishedAt: "2026-04-05T00:00:00Z",
     primaryKeyword: "solar installation and diy",
   },
+  {
+    slug: "home-generators-and-backup-power",
+    title: "Home Generators and Backup Power: 4 Categories, Real Costs, No Rankings",
+    format: "guide",
+    pageType: "cluster",
+    parentSlug: null,
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "home generators and backup power",
+  },
 ];
 
 export function getArticleSlugs(): string[] {
