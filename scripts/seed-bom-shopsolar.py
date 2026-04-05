@@ -52,12 +52,12 @@ MISSING_COSTS = {
 
 def build_bom(slug: str, specs: dict) -> dict:
     """Generate BOM from kit specs."""
-    panel_w = specs.get("panelW", 0)
-    battery_total_wh = specs.get("batteryTotalWh", 0)
-    battery_usable_wh = specs.get("batteryUsableWh", 0)
-    inverter_w = specs.get("inverterW", 0)
-    voltage = specs.get("voltage", 48)
-    chemistry = specs.get("chemistry", "LiFePO4")
+    panel_w = specs.get("panelW") or 0
+    battery_total_wh = specs.get("batteryTotalWh") or 0
+    battery_usable_wh = specs.get("batteryUsableWh") or 0
+    inverter_w = specs.get("inverterW") or 0
+    voltage = specs.get("voltage") or 48
+    chemistry = specs.get("chemistry") or "LiFePO4"
 
     is_large = panel_w >= LARGE_SYSTEM_THRESHOLD
 
