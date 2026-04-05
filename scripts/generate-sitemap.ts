@@ -22,7 +22,9 @@ function loadKitSlugs(): string[] {
     const data = JSON.parse(
       fs.readFileSync(path.join(__dirname, "../src/lib/data/kits.json"), "utf-8")
     );
-    return data.map((k: { slug: string }) => k.slug);
+    return data
+      .filter((k: { slug: string; listedPrice?: number }) => k.listedPrice && k.listedPrice > 0)
+      .map((k: { slug: string }) => k.slug);
   } catch {
     // Fall back to demo data slugs
     return [
