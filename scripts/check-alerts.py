@@ -21,7 +21,7 @@ SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
 SUPABASE_SERVICE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
 SITE_URL = "https://offgridempire.com"
-FROM_EMAIL = os.environ.get("RESEND_FROM_EMAIL", "OffGridEmpire <onboarding@resend.dev>")
+FROM_EMAIL = os.environ.get("RESEND_FROM_EMAIL", "OffGridEmpire <alerts@offgridempire.com>")
 DROP_THRESHOLD = 0.05  # 5%
 DAILY_SEND_LIMIT = 95  # Leave buffer under Resend's 100/day
 
