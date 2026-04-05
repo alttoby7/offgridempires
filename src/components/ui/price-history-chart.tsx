@@ -1036,7 +1036,7 @@ export function PriceHistoryChart({
           {singlePoint ? (
             <>
               <span className="text-2xl font-bold text-[var(--accent)] mb-1">
-                {formatPrice(singlePoint.priceCents)}
+                {formatPrice(singlePoint.priceCents ?? 0)}
               </span>
               <p className="text-sm text-[var(--text-muted)]">
                 Tracking since {singlePoint.date}

@@ -10,7 +10,7 @@ import {
 import { getKits, getKitsByType, getKitCounts } from "@/lib/get-kits";
 import Link from "next/link";
 
-export const revalidate = 3600;
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "Off-Grid Solar Kit Comparison Engine | OffGridEmpire",

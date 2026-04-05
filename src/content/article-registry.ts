@@ -24,6 +24,15 @@ export const articles: ArticleEntry[] = [
     publishedAt: "2026-04-04T00:00:00Z",
     primaryKeyword: "lithium and lifepo4 batteries",
   },
+  {
+    slug: "rv-and-camper-solar",
+    title: "RV and Camper Solar: What the Kits Don't Tell You",
+    format: "guide",
+    pageType: "cluster",
+    parentSlug: null,
+    publishedAt: "2026-04-04T00:00:00Z",
+    primaryKeyword: "rv and camper solar",
+  },
 ];
 
 export function getArticleSlugs(): string[] {

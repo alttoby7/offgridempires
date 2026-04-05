@@ -5,6 +5,7 @@
 
 import * as fs from "fs";
 import * as path from "path";
+import { articles } from "../src/content/article-registry";
 
 const SITE_URL = "https://offgridempire.com";
 const today = new Date().toISOString().split("T")[0];
@@ -74,6 +75,30 @@ function buildEntries(): SitemapEntry[] {
       priority: 0.7,
       lastmod: today,
     });
+  }
+
+  // Learn articles
+  if (articles.length > 0) {
+    entries.push({
+      loc: "/learn",
+      changefreq: "weekly",
+      priority: 0.7,
+      lastmod: today,
+    });
+    for (const article of articles) {
+      const priority =
+        article.pageType === "pillar"
+          ? 0.9
+          : article.pageType === "cluster"
+            ? 0.8
+            : 0.7;
+      entries.push({
+        loc: `/learn/${article.slug}`,
+        changefreq: "weekly",
+        priority,
+        lastmod: article.publishedAt || today,
+      });
+    }
   }
 
   return entries;

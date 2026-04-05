@@ -32,6 +32,7 @@ const footerLinks = {
     { href: "/solar-kits/under-3000", label: "Under $3,000" },
   ],
   Resources: [
+    { href: "/learn", label: "Learn" },
     { href: "/calculator", label: "Size My System" },
     { href: "/methodology", label: "How We Score" },
     { href: "/affiliate-disclosure", label: "Affiliate Disclosure" },

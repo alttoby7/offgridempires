@@ -5,7 +5,7 @@ import { getKits } from "@/lib/get-kits";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { CategoryBrowser } from "@/components/category-browser";
 
-export const revalidate = 3600;
+export const dynamic = "force-static";
 
 const categoryMeta: Record<string, { title: string; description: string }> = {
   batteries: {

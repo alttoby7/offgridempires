@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/whole-home", label: "Large Systems" },
   { href: "/calculator", label: "Calculator" },
   { href: "/compare", label: "Compare" },
+  { href: "/learn", label: "Learn" },
 ];
 
 const mobileMenuSections = [

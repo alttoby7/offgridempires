@@ -16,7 +16,7 @@ import { AffiliateLink } from "@/components/ui/affiliate-link";
 import { StickyBuyBar } from "@/components/ui/sticky-buy-bar";
 import { PriceAlertForm } from "@/components/ui/price-alert-form";
 
-export const revalidate = 3600;
+export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return getKitSlugs().map((slug) => ({ slug }));

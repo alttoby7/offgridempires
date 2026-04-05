@@ -6,7 +6,7 @@ import { getArticleSlugs } from "@/content/article-registry";
 import { ArticleRenderer } from "@/components/article-renderer";
 import type { ArticleRecord } from "@/content/types";
 
-export const revalidate = 3600;
+export const dynamic = "force-static";
 
 function loadArticle(slug: string): ArticleRecord | null {
   try {

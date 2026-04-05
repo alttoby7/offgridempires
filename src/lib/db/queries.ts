@@ -505,62 +505,13 @@ async function getPriceHistory(kitId: string): Promise<PriceHistoryPoint[]> {
 }
 
 /**
- * Generate synthetic price history when real data is sparse.
- * Deterministic based on kit price (seeded by price value).
- */
-function generateSyntheticHistory(
-  currentPriceCents: number,
-  days: number,
-): PriceHistoryPoint[] {
-  const points: PriceHistoryPoint[] = [];
-  const now = Date.now();
-
-  // Simple seeded PRNG based on price for determinism
-  let seed = currentPriceCents;
-  const rand = () => {
-    seed = (seed * 1103515245 + 12345) & 0x7fffffff;
-    return seed / 0x7fffffff;
-  };
-
-  let price = currentPriceCents;
-  const prices: number[] = [price];
-
-  for (let d = 1; d < days; d++) {
-    const noise = (rand() - 0.5) * 2 * 0.015 * price;
-    const reversion = (currentPriceCents - price) * 0.01;
-    price = price - noise + reversion;
-    // Occasional sale
-    if (d % 45 < 2) price *= 0.96;
-    prices.push(Math.round(price));
-  }
-
-  prices.reverse();
-
-  for (let i = 0; i < prices.length; i++) {
-    const date = new Date(now - (days - 1 - i) * 24 * 60 * 60 * 1000);
-    points.push({
-      date: date.toISOString().split("T")[0],
-      priceCents: prices[i],
-    });
-  }
-
-  return points;
-}
-
-/**
  * Fetch all active kits with price history included.
  */
 export async function getKitsForListingWithHistory(useCaseSlug = "rv-weekend"): Promise<Kit[]> {
   const kits = await getKitsForListing(useCaseSlug);
 
   for (const kit of kits) {
-    const real = await getPriceHistory(kit.id);
-    if (real.length >= 7) {
-      kit.priceHistory = real;
-    } else {
-      // Generate synthetic history until real data accumulates
-      kit.priceHistory = generateSyntheticHistory(kit.listedPrice * 100, 180);
-    }
+    kit.priceHistory = await getPriceHistory(kit.id);
   }
 
   return kits;
