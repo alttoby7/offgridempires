@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx tsx scripts/generate-sitemap.ts && next build",
+    "build": "npx tsx scripts/generate-sitemap.ts && next build --webpack",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "deploy": "NEXT_TURBOPACK_DISABLED=1 opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "NEXT_TURBOPACK_DISABLED=1 opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "lint": "eslint"
   },
