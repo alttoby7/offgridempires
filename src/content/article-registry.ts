@@ -96,6 +96,15 @@ export const articles: ArticleEntry[] = [
     publishedAt: "2026-04-05T00:00:00Z",
     primaryKeyword: "solar panel kits and bundles",
   },
+  {
+    slug: "inverters-and-power-conversion",
+    title: "The $600 Kit With an Inverter That Kills Your CPAP",
+    format: "guide",
+    pageType: "cluster",
+    parentSlug: "inverters-charge-controllers-components",
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "inverters and power conversion",
+  },
 ];
 
 export function getArticleSlugs(): string[] {
