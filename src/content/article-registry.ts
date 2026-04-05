@@ -123,6 +123,15 @@ export const articles: ArticleEntry[] = [
     publishedAt: "2026-04-05T00:00:00Z",
     primaryKeyword: "home generators and backup power",
   },
+  {
+    slug: "solar-for-sheds-and-small-structures",
+    title: "Solar for Sheds Costs $359 to $1,899, Not $11,000",
+    format: "guide",
+    pageType: "cluster",
+    parentSlug: "off-grid-system-design-and-diy",
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "solar for sheds and small structures",
+  },
 ];
 
 export function getArticleSlugs(): string[] {
