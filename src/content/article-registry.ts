@@ -60,6 +60,15 @@ export const articles: ArticleEntry[] = [
     publishedAt: "2026-04-05T00:00:00Z",
     primaryKeyword: "watts to kilowatts",
   },
+  {
+    slug: "solar-water-and-pool-heating",
+    title: "Solar Water and Pool Heating: The DIY Numbers Guide",
+    format: "guide",
+    pageType: "cluster",
+    parentSlug: "solar-heating-cooling-lighting",
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "solar water and pool heating",
+  },
 ];
 
 export function getArticleSlugs(): string[] {
