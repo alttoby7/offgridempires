@@ -414,6 +414,15 @@ export function getKitsByType(type: SystemType): Kit[] {
   return getKits().filter((k) => k.systemType === type);
 }
 
+export function getKitVariants(slug: string): Kit[] {
+  const kit = getKitBySlug(slug);
+  if (!kit?.sourceUrl) return [];
+  const base = kit.sourceUrl.split("?")[0];
+  return getKits()
+    .filter((k) => k.sourceUrl?.split("?")[0] === base && k.slug !== slug)
+    .sort((a, b) => a.listedPrice - b.listedPrice);
+}
+
 export function getKitCounts(): Record<SystemType, number> {
   const kits = getKits();
   return {

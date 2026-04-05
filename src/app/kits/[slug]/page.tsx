@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getKits, getKitBySlug, getKitSlugs } from "@/lib/get-kits";
+import { getKits, getKitBySlug, getKitSlugs, getKitVariants } from "@/lib/get-kits";
 import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { TrueCostBar } from "@/components/ui/true-cost-bar";
@@ -13,6 +13,7 @@ import { KitProductJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { getSimilarKits } from "@/lib/similar-kits";
 import { buildAffiliateUrl, deriveRetailerSlug } from "@/lib/affiliate";
 import { AffiliateLink } from "@/components/ui/affiliate-link";
+import { VariantPicker } from "@/components/ui/variant-picker";
 import { StickyBuyBar } from "@/components/ui/sticky-buy-bar";
 import { PriceAlertForm } from "@/components/ui/price-alert-form";
 
@@ -84,6 +85,8 @@ export default async function KitDetailPage({
 
   const missingItems = kit.items.filter((item) => !item.isIncluded);
   const includedItems = kit.items.filter((item) => item.isIncluded);
+  const variants = getKitVariants(slug);
+  const hasVariantsWithPanels = variants.some((v) => v.included?.panels === true);
   const primarySlug = kit.retailerSlug ?? deriveRetailerSlug(kit.retailer, kit.sourceUrl);
   const affiliateUrl = buildAffiliateUrl(kit.sourceUrl, primarySlug);
 
@@ -285,8 +288,15 @@ export default async function KitDetailPage({
 
       {/* Gap Receipt — the viral feature */}
       <section className="mb-12">
-        <GapReceipt kit={kit} />
+        <GapReceipt kit={kit} hasVariantsWithPanels={hasVariantsWithPanels} />
       </section>
+
+      {/* Variant picker — other configurations of the same product */}
+      {variants.length > 0 && (
+        <section className="mb-12">
+          <VariantPicker currentKit={kit} variants={variants} />
+        </section>
+      )}
 
       {/* Component Decomposition Table */}
       {kit.items.length > 0 && (
