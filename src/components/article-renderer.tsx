@@ -285,13 +285,14 @@ function renderBody(body: string) {
 }
 
 /**
- * Render inline markdown: bold, italic, links, data tags, code.
+ * Render inline markdown: bold, italic, links, data tags, span.font-mono, code.
  */
 function renderInline(text: string): React.ReactNode {
   const parts: React.ReactNode[] = [];
-  // Split on patterns: **bold**, *italic*, [text](url), <data>value</data>, `code`
+  // Split on patterns: **bold**, *italic*, [text](url), <data>value</data>,
+  // <span class="font-mono">value</span>, `code`
   const regex =
-    /(\*\*(.+?)\*\*|\*(.+?)\*|\[([^\]]+)\]\(([^)]+)\)|<data>(.+?)<\/data>|`(.+?)`)/g;
+    /(\*\*(.+?)\*\*|\*(.+?)\*|\[([^\]]+)\]\(([^)]+)\)|<data>(.+?)<\/data>|<span class="font-mono">(.+?)<\/span>|`(.+?)`)/g;
   let lastIndex = 0;
   let match;
 
@@ -325,20 +326,27 @@ function renderInline(text: string): React.ReactNode {
         </Link>
       );
     } else if (match[6]) {
-      // Data value
+      // <data> tag -- monospace accent (dynamically resolved kit values)
       parts.push(
         <span key={match.index} className="font-mono text-[var(--accent)]">
           {match[6]}
         </span>
       );
     } else if (match[7]) {
+      // <span class="font-mono"> -- legacy monospace from pre-resolver articles
+      parts.push(
+        <span key={match.index} className="font-mono text-[var(--accent)]">
+          {match[7]}
+        </span>
+      );
+    } else if (match[8]) {
       // Code
       parts.push(
         <code
           key={match.index}
           className="font-mono text-xs bg-[var(--bg-elevated)] px-1.5 py-0.5 rounded"
         >
-          {match[7]}
+          {match[8]}
         </code>
       );
     }

@@ -51,6 +51,15 @@ export const articles: ArticleEntry[] = [
     publishedAt: "2026-04-05T00:00:00Z",
     primaryKeyword: "watts amps volts conversions",
   },
+  {
+    slug: "watts-to-kilowatts",
+    title: "Watts, Kilowatts, and Kilowatt-Hours: The DIY Solar Sizing Guide",
+    format: "guide",
+    pageType: "supporting",
+    parentSlug: "solar-batteries-and-storage",
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "watts to kilowatts",
+  },
 ];
 
 export function getArticleSlugs(): string[] {
