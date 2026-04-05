@@ -87,6 +87,15 @@ export const articles: ArticleEntry[] = [
     publishedAt: "2026-04-05T00:00:00Z",
     primaryKeyword: "battery types and deep cycle",
   },
+  {
+    slug: "solar-panel-kits-and-bundles",
+    title: "Solar Panel Kits and Bundles",
+    format: "category",
+    pageType: "cluster",
+    parentSlug: null,
+    publishedAt: "2026-04-05T00:00:00Z",
+    primaryKeyword: "solar panel kits and bundles",
+  },
 ];
 
 export function getArticleSlugs(): string[] {
