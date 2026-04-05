@@ -357,6 +357,57 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
   return kits;
 }
 
+// ── Forward-fill helpers ─────────────────────────────────────────────────────
+
+/** Fill date gaps in lowestAvailable by carrying last known price forward. */
+function forwardFillDates(
+  points: Array<{ date: string; priceCents: number }>,
+): Array<{ date: string; priceCents: number }> {
+  if (points.length < 2) return points;
+  const filled: typeof points = [];
+  for (let i = 0; i < points.length; i++) {
+    filled.push(points[i]);
+    if (i < points.length - 1) {
+      const cur = new Date(points[i].date + "T00:00:00Z");
+      const next = new Date(points[i + 1].date + "T00:00:00Z");
+      cur.setUTCDate(cur.getUTCDate() + 1);
+      while (cur < next) {
+        filled.push({
+          date: cur.toISOString().split("T")[0],
+          priceCents: points[i].priceCents,
+        });
+        cur.setUTCDate(cur.getUTCDate() + 1);
+      }
+    }
+  }
+  return filled;
+}
+
+/** Fill date gaps in a series' points by carrying last known price/stock forward. */
+function forwardFillPoints(
+  points: Array<{ date: string; priceCents: number | null; inStock: boolean }>,
+): Array<{ date: string; priceCents: number | null; inStock: boolean }> {
+  if (points.length < 2) return points;
+  const filled: typeof points = [];
+  for (let i = 0; i < points.length; i++) {
+    filled.push(points[i]);
+    if (i < points.length - 1) {
+      const cur = new Date(points[i].date + "T00:00:00Z");
+      const next = new Date(points[i + 1].date + "T00:00:00Z");
+      cur.setUTCDate(cur.getUTCDate() + 1);
+      while (cur < next) {
+        filled.push({
+          date: cur.toISOString().split("T")[0],
+          priceCents: points[i].priceCents,
+          inStock: points[i].inStock,
+        });
+        cur.setUTCDate(cur.getUTCDate() + 1);
+      }
+    }
+  }
+  return filled;
+}
+
 /**
  * Fetch per-retailer price history series for a kit.
  * Returns one series per offer, each with daily price points.
@@ -415,9 +466,17 @@ export async function getPriceHistoryBySeries(kitId: string): Promise<import("..
       }
     }
   }
-  const lowestAvailable = Array.from(dateMap.entries())
+  const lowestRaw = Array.from(dateMap.entries())
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([date, priceCents]) => ({ date, priceCents }));
+
+  // Forward-fill: carry last known price through date gaps
+  const lowestAvailable = forwardFillDates(lowestRaw);
+
+  // Forward-fill each series too
+  for (const s of series) {
+    s.points = forwardFillPoints(s.points);
+  }
 
   return { slug: kitId, series, lowestAvailable };
 }
