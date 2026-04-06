@@ -3,6 +3,8 @@ import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { ShedCalculator } from "@/components/calculator/shed-calculator";
 
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   title: "Shed Solar Calculator — Size Your Off-Grid Shed System",
   description:

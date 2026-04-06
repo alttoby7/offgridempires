@@ -12,6 +12,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      NEXT_TURBOPACK_DISABLED: "1"
     steps:
       - uses: actions/checkout@v4
 
@@ -22,18 +26,14 @@ jobs:
 
       - run: npm ci
 
-      # Step A: Next.js build (includes sitemap generation)
-      - name: Build Next.js
-        run: npm run build
+      - name: Generate sitemap
+        run: npx tsx scripts/generate-sitemap.ts
 
-      # Step B: OpenNext Cloudflare build (generates .open-next/worker.js)
       - name: Build OpenNext Worker
         run: npx opennextjs-cloudflare build
 
-      # Step C: Deploy worker via wrangler
-      - name: Deploy to Cloudflare Workers
-        run: npx wrangler deploy
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          OPEN_NEXT_DEPLOY: "true"
+      - name: Upload & Deploy
+        run: |
+          VERSION=$(npx opennextjs-cloudflare upload 2>&1 | grep 'Worker Version ID:' | awk '{print $NF}')
+          echo "Deploying version: $VERSION"
+          npx wrangler versions deploy "${VERSION}@100%" --name offgridempire --yes
