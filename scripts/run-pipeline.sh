@@ -3,7 +3,7 @@
 # 1. Pull latest code
 # 2. Run price ingestion (Amazon + Shop Solar)
 # 3. Export DB → JSON
-# 4. Commit + push if prices changed → triggers Cloudflare Pages deploy
+# 4. Commit + push if prices changed → triggers Cloudflare Workers deploy via GitHub Actions
 
 set -euo pipefail
 
