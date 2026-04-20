@@ -36,7 +36,7 @@ echo "${LOG_PREFIX} Running Amazon ingestion..."
 python3 scripts/ingest-amazon.py || echo "${LOG_PREFIX} WARNING: Amazon ingestion had errors"
 
 echo "${LOG_PREFIX} Running Shop Solar ingestion..."
-python3 scripts/ingest-shopsolar.py || echo "${LOG_PREFIX} WARNING: Shop Solar ingestion had errors"
+python3 scripts/ingest-shopsolar.py --new-kits || echo "${LOG_PREFIX} WARNING: Shop Solar ingestion had errors"
 
 echo "${LOG_PREFIX} Running Brand Direct ingestion..."
 python3 scripts/ingest-brand-direct.py --all || echo "${LOG_PREFIX} WARNING: Brand Direct ingestion had errors"
