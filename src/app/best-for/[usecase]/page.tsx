@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getKits } from "@/lib/get-kits";
 import { KitCard } from "@/components/kit-card";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
+import { DataFooter } from "@/components/ui/data-footer";
+import { getKitsUpdated } from "@/lib/data-meta";
 
 export const dynamic = "force-static";
 
@@ -186,9 +188,11 @@ export default async function UseCasePage({
       <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)] mb-3">
         {uc.h1}
       </h1>
-      <p className="text-sm text-[var(--text-secondary)] leading-relaxed max-w-3xl mb-6">
+      <p className="text-sm text-[var(--text-secondary)] leading-relaxed max-w-3xl mb-4">
         {uc.intro}
       </p>
+
+      <DataFooter kitCount={kits.length} updated={getKitsUpdated()} />
 
       {/* Power requirements */}
       <div className="flex flex-wrap gap-3 mb-6">

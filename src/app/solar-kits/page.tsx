@@ -4,6 +4,8 @@ import { Suspense } from "react";
 import { getKitsByType } from "@/lib/get-kits";
 import { KitListJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { KitBrowser } from "@/components/kit-browser";
+import { DataFooter } from "@/components/ui/data-footer";
+import { getKitsUpdated } from "@/lib/data-meta";
 
 export const dynamic = "force-static";
 
@@ -54,12 +56,16 @@ export default function SolarKitsPage() {
           DIY Solar Kits
         </h1>
         <p className="text-[var(--text-secondary)] max-w-2xl">
-          Panel and component kits you wire yourself &mdash; for RVs, cabins,
-          sheds, and small off-grid builds. We show you exactly what&apos;s
-          included, what&apos;s missing, and the real cost to get a working
-          system.
+          OffGridEmpire tracks {kits.length} DIY solar kits for RVs, cabins,
+          sheds, and small off-grid builds, compared by real build cost —
+          advertised price plus any required parts the kit leaves out. Every
+          listing shows what&apos;s included, what&apos;s missing, and the
+          full cost to power something.
         </p>
-        <div className="mt-4 flex flex-wrap gap-4 text-sm">
+        <div className="mt-4">
+          <DataFooter kitCount={kits.length} updated={getKitsUpdated()} />
+        </div>
+        <div className="mt-2 flex flex-wrap gap-4 text-sm">
           <span className="font-mono text-[var(--accent)] font-semibold">
             {kits.length}
           </span>

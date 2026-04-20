@@ -4,6 +4,8 @@ import { Suspense } from "react";
 import { getKitsByType } from "@/lib/get-kits";
 import { KitListJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { KitBrowser } from "@/components/kit-browser";
+import { DataFooter } from "@/components/ui/data-footer";
+import { getKitsUpdated } from "@/lib/data-meta";
 
 export const dynamic = "force-static";
 
@@ -51,11 +53,16 @@ export default function PortablePowerPage() {
           Portable Power Stations
         </h1>
         <p className="text-[var(--text-secondary)] max-w-2xl">
-          All-in-one battery stations with built-in inverters. Plug in and go
-          &mdash; no wiring, no installation. Perfect for camping, emergencies,
-          and van life.
+          OffGridEmpire tracks {kits.length} portable power stations across
+          EcoFlow, Bluetti, Jackery, Anker, and more. Every station is compared
+          by real build cost: the advertised price plus any required solar
+          panels or accessories the bundle leaves out. Prices refresh every
+          six hours.
         </p>
-        <div className="mt-4 flex flex-wrap gap-4 text-sm">
+        <div className="mt-4">
+          <DataFooter kitCount={kits.length} updated={getKitsUpdated()} />
+        </div>
+        <div className="mt-2 flex flex-wrap gap-4 text-sm">
           <span className="font-mono text-[var(--accent)] font-semibold">
             {kits.length}
           </span>

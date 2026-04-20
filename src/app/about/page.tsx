@@ -9,6 +9,11 @@ import {
   ProseContainer,
   ContentCard,
 } from "@/components/ui/prose";
+import { DataFooter } from "@/components/ui/data-footer";
+import { getKits } from "@/lib/get-kits";
+import { getKitsUpdated } from "@/lib/data-meta";
+
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "About OffGridEmpire",
@@ -24,6 +29,9 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const kitCount = getKits().length;
+  const updated = getKitsUpdated();
+
   return (
     <ProseContainer>
       <BreadcrumbJsonLd
@@ -41,6 +49,8 @@ export default function AboutPage() {
         title="About OffGridEmpire"
         subtitle="The solar kit comparison engine. No opinions. Just data."
       />
+
+      <DataFooter kitCount={kitCount} updated={updated} />
 
       <ContentCard>
         <SectionHeading id="the-problem">The Problem</SectionHeading>

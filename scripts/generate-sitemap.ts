@@ -67,6 +67,9 @@ function buildEntries(): SitemapEntry[] {
 
   // Trust/static — 0.5
   entries.push({ loc: "/methodology", changefreq: "monthly", priority: 0.5, lastmod: today });
+  entries.push({ loc: "/how-real-build-cost-is-calculated", changefreq: "monthly", priority: 0.7, lastmod: today });
+  entries.push({ loc: "/data-sources", changefreq: "monthly", priority: 0.5, lastmod: today });
+  entries.push({ loc: "/editorial-policy", changefreq: "monthly", priority: 0.5, lastmod: today });
   entries.push({ loc: "/about", changefreq: "monthly", priority: 0.5, lastmod: today });
   entries.push({ loc: "/contact", changefreq: "monthly", priority: 0.4, lastmod: today });
   entries.push({ loc: "/affiliate-disclosure", changefreq: "monthly", priority: 0.4, lastmod: today });

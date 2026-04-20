@@ -9,6 +9,11 @@ import {
   ProseContainer,
   ContentCard,
 } from "@/components/ui/prose";
+import { DataFooter } from "@/components/ui/data-footer";
+import { getKits } from "@/lib/get-kits";
+import { getKitsUpdated } from "@/lib/data-meta";
+
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "How We Calculate Real Build Cost",
@@ -57,6 +62,9 @@ const faqs = [
 ];
 
 export default function MethodologyPage() {
+  const kitCount = getKits().length;
+  const updated = getKitsUpdated();
+
   return (
     <ProseContainer>
       <BreadcrumbJsonLd
@@ -75,6 +83,8 @@ export default function MethodologyPage() {
         title="How We Calculate Real Build Cost"
         subtitle="Transparency is the point. Here's exactly how we arrive at every number on this site."
       />
+
+      <DataFooter kitCount={kitCount} updated={updated} />
 
       <ContentCard>
         <SectionHeading id="the-problem">The Problem</SectionHeading>

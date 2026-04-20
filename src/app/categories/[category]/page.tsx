@@ -4,6 +4,8 @@ import { Suspense } from "react";
 import { getKits } from "@/lib/get-kits";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { CategoryBrowser } from "@/components/category-browser";
+import { DataFooter } from "@/components/ui/data-footer";
+import { getKitsUpdated } from "@/lib/data-meta";
 
 export const dynamic = "force-static";
 
@@ -92,9 +94,10 @@ export default async function CategoryPage({
       <h1 className="text-2xl font-bold text-[var(--text-primary)] mb-2">
         {title}
       </h1>
-      <p className="text-sm text-[var(--text-muted)] mb-8">
+      <p className="text-sm text-[var(--text-muted)] mb-4">
         {meta?.description ?? "Browse and compare products in this category."}
       </p>
+      <DataFooter kitCount={allKits.length} updated={getKitsUpdated()} />
 
       <Suspense fallback={<div className="h-96 animate-pulse rounded bg-[var(--bg-surface)]" />}>
         <CategoryBrowser allKits={allKits} category={category} categoryTitle={title} />

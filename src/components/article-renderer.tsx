@@ -10,6 +10,8 @@ import {
   ContentCard,
 } from "@/components/ui/prose";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
+import { DataFooter } from "@/components/ui/data-footer";
+import { getKits } from "@/lib/get-kits";
 
 const SITE_URL = "https://offgridempire.com";
 
@@ -435,7 +437,7 @@ export function ArticleRenderer({ article }: { article: ArticleRecord }) {
 
       <PageTitle title={article.title} />
 
-      <div className="flex items-center gap-4 text-xs text-[var(--text-muted)] mb-8">
+      <div className="flex items-center gap-4 text-xs text-[var(--text-muted)] mb-4">
         <time dateTime={article.publishedAt}>
           {new Date(article.publishedAt).toLocaleDateString("en-US", {
             year: "numeric",
@@ -445,6 +447,8 @@ export function ArticleRenderer({ article }: { article: ArticleRecord }) {
         </time>
         <span>{article.readingTime}</span>
       </div>
+
+      <DataFooter kitCount={getKits().length} updated={article.updatedAt ?? article.publishedAt} />
 
       <TableOfContents headings={headings} />
 

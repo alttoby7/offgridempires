@@ -4,6 +4,8 @@ import { Suspense } from "react";
 import { getKitsByType } from "@/lib/get-kits";
 import { KitListJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
 import { KitBrowser } from "@/components/kit-browser";
+import { DataFooter } from "@/components/ui/data-footer";
+import { getKitsUpdated } from "@/lib/data-meta";
 
 export const dynamic = "force-static";
 
@@ -53,12 +55,16 @@ export default function WholeHomePage() {
           Whole-Home &amp; Off-Grid Systems
         </h1>
         <p className="text-[var(--text-secondary)] max-w-2xl">
-          Complete 5kW&ndash;60kW+ solar systems with panels, batteries,
-          inverters, and mounting hardware. Buy the equipment yourself and skip
-          contractor markup &mdash; then hand the system to your electrician for
-          installation.
+          OffGridEmpire tracks {kits.length} complete 5kW&ndash;60kW+ solar
+          systems with panels, batteries, inverters, and mounting hardware
+          compared by real build cost. Buy the equipment yourself, skip
+          contractor markup, and hand the system to your electrician. Prices
+          refresh every six hours.
         </p>
-        <div className="mt-4 flex flex-wrap gap-4 text-sm">
+        <div className="mt-4">
+          <DataFooter kitCount={kits.length} updated={getKitsUpdated()} />
+        </div>
+        <div className="mt-2 flex flex-wrap gap-4 text-sm">
           <span className="font-mono text-[var(--accent)] font-semibold">
             {kits.length}
           </span>

@@ -16,6 +16,8 @@ import { AffiliateLink } from "@/components/ui/affiliate-link";
 import { VariantPicker } from "@/components/ui/variant-picker";
 import { StickyBuyBar } from "@/components/ui/sticky-buy-bar";
 import { PriceAlertForm } from "@/components/ui/price-alert-form";
+import { DataFooter } from "@/components/ui/data-footer";
+import { getKitsUpdated } from "@/lib/data-meta";
 
 export const dynamic = "force-static";
 
@@ -129,6 +131,9 @@ export default async function KitDetailPage({
             <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)] leading-tight">
               {(kit.displayName ?? kit.name)}
             </h1>
+            <div className="mt-3">
+              <DataFooter kitCount={getKits().length} updated={getKitsUpdated()} />
+            </div>
           </div>
 
           {/* Specs row */}
