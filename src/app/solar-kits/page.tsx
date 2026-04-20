@@ -78,6 +78,28 @@ export default function SolarKitsPage() {
           </Link>
         </div>
 
+        {/* Ranked-hub shortcuts */}
+        <div className="mt-4 flex flex-wrap gap-2">
+          <Link
+            href="/best-rv-solar-kit"
+            className="inline-flex items-center rounded border border-[var(--accent)]/40 bg-[var(--accent)]/5 px-3 py-1.5 text-xs font-medium text-[var(--accent)] hover:bg-[var(--accent)]/10 transition-colors"
+          >
+            Best RV Solar Kit →
+          </Link>
+          <Link
+            href="/1000-watt-solar-kit"
+            className="inline-flex items-center rounded border border-[var(--accent)]/40 bg-[var(--accent)]/5 px-3 py-1.5 text-xs font-medium text-[var(--accent)] hover:bg-[var(--accent)]/10 transition-colors"
+          >
+            1000W Solar Kit →
+          </Link>
+          <Link
+            href="/2000-watt-solar-kit"
+            className="inline-flex items-center rounded border border-[var(--accent)]/40 bg-[var(--accent)]/5 px-3 py-1.5 text-xs font-medium text-[var(--accent)] hover:bg-[var(--accent)]/10 transition-colors"
+          >
+            2000W Solar Kit →
+          </Link>
+        </div>
+
         {/* Budget shortcuts */}
         <div className="mt-4 flex flex-wrap gap-2">
           {[

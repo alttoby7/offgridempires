@@ -516,6 +516,40 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Section 4.5: Ranked guide hubs */}
+      <section className="border-b border-[var(--border)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-lg font-bold text-[var(--text-primary)]">
+              Ranked Buying Guides
+            </h2>
+          </div>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-4 max-w-3xl">
+            Pre-ranked tables for the most common searches. Every guide uses the same
+            real-build-cost math across all tracked kits.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { href: "/best-rv-solar-kit", label: "Best RV Solar Kit", note: "RV + van life" },
+              { href: "/1000-watt-solar-kit", label: "1000W Solar Kit", note: "Cabins, sheds, small builds" },
+              { href: "/2000-watt-solar-kit", label: "2000W Solar Kit", note: "Cabins, full-time vans" },
+              { href: "/best-solar-generator-under-500", label: "Under $500 Generator", note: "Emergency + weekend" },
+            ].map((h) => (
+              <Link
+                key={h.href}
+                href={h.href}
+                className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-3 hover:border-[var(--accent)] transition-colors group"
+              >
+                <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+                  {h.label}
+                </p>
+                <p className="text-xs text-[var(--text-muted)] mt-0.5">{h.note}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Section 5: Featured by Type */}
       <section className="border-b border-[var(--border)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 space-y-10">

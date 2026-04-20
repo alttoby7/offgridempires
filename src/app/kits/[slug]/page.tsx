@@ -19,6 +19,7 @@ import { PriceAlertForm } from "@/components/ui/price-alert-form";
 import { DataFooter } from "@/components/ui/data-footer";
 import { KitProseBlocks } from "@/components/ui/kit-prose-blocks";
 import { getKitsUpdated } from "@/lib/data-meta";
+import { getMatchingHub } from "@/lib/hubs";
 
 export const dynamic = "force-static";
 
@@ -346,6 +347,30 @@ export default async function KitDetailPage({
         </div>
         <PriceHistorySection kit={kit} />
       </section>
+
+      {/* Matching hub cross-link */}
+      {(() => {
+        const hub = getMatchingHub(kit);
+        if (!hub) return null;
+        return (
+          <section className="mb-12">
+            <Link
+              href={`/${hub.slug}`}
+              className="flex items-center gap-3 rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:border-[var(--accent)] transition-colors group"
+            >
+              <div>
+                <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+                  See how this kit ranks in the {hub.label} guide
+                </p>
+                <p className="text-xs text-[var(--text-muted)] mt-0.5">{hub.note}</p>
+              </div>
+              <svg className="ml-auto shrink-0 text-[var(--text-muted)] group-hover:text-[var(--accent)]" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </section>
+        );
+      })()}
 
       {/* Calculator CTA */}
       <section className="mb-12">

@@ -194,6 +194,16 @@ export default async function UseCasePage({
 
       <DataFooter kitCount={kits.length} updated={getKitsUpdated()} />
 
+      {/* Matching ranked hub (when one exists) */}
+      {usecase === "rv" && (
+        <Link
+          href="/best-rv-solar-kit"
+          className="inline-flex items-center gap-2 rounded border border-[var(--accent)]/40 bg-[var(--accent)]/5 px-4 py-2 mb-6 text-sm font-medium text-[var(--accent)] hover:bg-[var(--accent)]/10 transition-colors"
+        >
+          See the full Best RV Solar Kit ranked guide →
+        </Link>
+      )}
+
       {/* Power requirements */}
       <div className="flex flex-wrap gap-3 mb-6">
         <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] px-4 py-2.5">

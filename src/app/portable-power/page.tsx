@@ -74,6 +74,15 @@ export default function PortablePowerPage() {
             Not sure what size you need? Size my system &rarr;
           </Link>
         </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          <Link
+            href="/best-solar-generator-under-500"
+            className="inline-flex items-center rounded border border-[var(--accent)]/40 bg-[var(--accent)]/5 px-3 py-1.5 text-xs font-medium text-[var(--accent)] hover:bg-[var(--accent)]/10 transition-colors"
+          >
+            Best Under $500 ranked →
+          </Link>
+        </div>
       </div>
 
       <Suspense
