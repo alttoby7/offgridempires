@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { getKits } from "@/lib/get-kits";
-import { KitListJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
+import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { KitBrowser } from "@/components/kit-browser";
 
 export const dynamic = "force-static";
@@ -25,7 +25,6 @@ export default function KitsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
-      <KitListJsonLd kits={allKits} />
       <BreadcrumbJsonLd items={[{ name: "Home", url: "/" }, { name: "Kits", url: "/kits" }]} />
 
       {/* Breadcrumb */}

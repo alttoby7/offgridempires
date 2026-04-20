@@ -63,6 +63,12 @@ export function BreadcrumbJsonLd({
  * Uses Product type with offers and aggregateRating placeholder.
  */
 export function KitProductJsonLd({ kit }: { kit: Kit }) {
+  const offerPrices = (kit.offers ?? []).map((o) => o.price).filter((p) => p > 0);
+  const allPrices = offerPrices.length > 0 ? offerPrices : [kit.listedPrice];
+  const lowPrice = Math.min(...allPrices);
+  const highPrice = Math.max(...allPrices);
+  const offerCount = offerPrices.length > 0 ? offerPrices.length : 1;
+
   const data: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -72,14 +78,15 @@ export function KitProductJsonLd({ kit }: { kit: Kit }) {
       "@type": "Brand",
       name: kit.brand,
     },
+    ...(kit.imageUrl ? { image: kit.imageUrl } : {}),
     url: `${SITE_URL}/kits/${kit.slug}`,
     category: "Solar Kit",
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "USD",
-      lowPrice: kit.listedPrice.toFixed(2),
-      highPrice: kit.trueCost.toFixed(2),
-      offerCount: 1,
+      lowPrice,
+      highPrice,
+      offerCount,
       availability: "https://schema.org/InStock",
     },
     additionalProperty: [

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { getKitsByType } from "@/lib/get-kits";
-import { KitListJsonLd, BreadcrumbJsonLd } from "@/components/json-ld";
+import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { KitBrowser } from "@/components/kit-browser";
 import { DataFooter } from "@/components/ui/data-footer";
 import { getKitsUpdated } from "@/lib/data-meta";
@@ -27,7 +27,6 @@ export default function PortablePowerPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
-      <KitListJsonLd kits={kits} />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", url: "/" },

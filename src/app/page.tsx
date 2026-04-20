@@ -4,7 +4,6 @@ import { KitCard } from "@/components/kit-card";
 import {
   WebSiteJsonLd,
   BreadcrumbJsonLd,
-  FaqJsonLd,
   OrganizationJsonLd,
 } from "@/components/json-ld";
 import { getKits, getKitsByType, getKitCounts } from "@/lib/get-kits";
@@ -188,7 +187,6 @@ export default function HomePage() {
     <>
       <WebSiteJsonLd />
       <BreadcrumbJsonLd items={[{ name: "Home", url: "/" }]} />
-      <FaqJsonLd questions={faqQuestions} />
       <OrganizationJsonLd />
 
       {/* Section 1: Hero */}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: "Browse Solar Components",
@@ -26,6 +27,12 @@ const categories = [
 export default function ProductsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Components", url: "/products" },
+        ]}
+      />
       <nav className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-6">
         <Link href="/" className="hover:text-[var(--accent)] transition-colors">Home</Link>
         <span>/</span>

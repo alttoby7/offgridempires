@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/json-ld";
+import { BreadcrumbJsonLd } from "@/components/json-ld";
 import {
   SectionHeading,
   Paragraph,
@@ -73,8 +73,6 @@ export default function MethodologyPage() {
           { name: "Methodology", url: "/methodology" },
         ]}
       />
-      <FaqJsonLd questions={faqs} />
-
       <Breadcrumb
         items={[{ href: "/", label: "Home" }, { label: "Methodology" }]}
       />
