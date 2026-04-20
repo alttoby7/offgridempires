@@ -17,6 +17,7 @@ import { VariantPicker } from "@/components/ui/variant-picker";
 import { StickyBuyBar } from "@/components/ui/sticky-buy-bar";
 import { PriceAlertForm } from "@/components/ui/price-alert-form";
 import { DataFooter } from "@/components/ui/data-footer";
+import { KitProseBlocks } from "@/components/ui/kit-prose-blocks";
 import { getKitsUpdated } from "@/lib/data-meta";
 
 export const dynamic = "force-static";
@@ -302,6 +303,11 @@ export default async function KitDetailPage({
           <VariantPicker currentKit={kit} variants={variants} />
         </section>
       )}
+
+      {/* Data-driven prose analysis */}
+      <section className="mb-12">
+        <KitProseBlocks kit={kit} allKits={getKits()} />
+      </section>
 
       {/* Component Decomposition Table */}
       {kit.items.length > 0 && (
