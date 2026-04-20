@@ -61,6 +61,12 @@ function buildEntries(): SitemapEntry[] {
   entries.push({ loc: "/products", changefreq: "weekly", priority: 0.9, lastmod: today });
   entries.push({ loc: "/tools/shed-solar-calculator", changefreq: "weekly", priority: 0.9, lastmod: today });
 
+  // Demand-matched hubs (ranked tables, cohort value calls) — 0.9
+  entries.push({ loc: "/best-rv-solar-kit", changefreq: "weekly", priority: 0.9, lastmod: today });
+  entries.push({ loc: "/1000-watt-solar-kit", changefreq: "weekly", priority: 0.9, lastmod: today });
+  entries.push({ loc: "/2000-watt-solar-kit", changefreq: "weekly", priority: 0.9, lastmod: today });
+  entries.push({ loc: "/best-solar-generator-under-500", changefreq: "weekly", priority: 0.9, lastmod: today });
+
   // Secondary tool/aggregate pages — 0.7
   entries.push({ loc: "/compare", changefreq: "weekly", priority: 0.7, lastmod: today });
   entries.push({ loc: "/learn", changefreq: "weekly", priority: 0.7, lastmod: today });
