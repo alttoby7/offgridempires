@@ -870,6 +870,8 @@ export function PriceHistoryChart({
 
   const filteredSeriesData = useMemo((): SeriesDrawData[] => {
     if (!isMulti) return [];
+    // When only one retailer, its series is identical to lowestAvailable — skip it to avoid a duplicate overlapping line + tooltip entry
+    if (multiHistory!.series.length < 2) return [];
     return multiHistory!.series
       .filter((s) => activeSeries[s.offerId] !== false)
       .map((s, i) => ({
@@ -1061,7 +1063,6 @@ export function PriceHistoryChart({
   const avgCents = isMulti ? (multiStats?.avg ?? 0) : (data?.averageCents ?? 0);
   const lowCents = isMulti ? (multiStats?.low ?? 0) : (data?.allTimeLowCents ?? 0);
   const highCents = isMulti ? (multiStats?.high ?? 0) : (data?.allTimeHighCents ?? 0);
-  const dataPointCount = isMulti ? filteredLowest.length : filteredPoints.length;
 
   return (
     <div className="rounded border border-[var(--border)] bg-[var(--bg-surface)] overflow-hidden">
@@ -1096,8 +1097,8 @@ export function PriceHistoryChart({
         </div>
       </div>
 
-      {/* Retailer series toggles (multi-series only) */}
-      {isMulti && multiHistory!.series.length > 1 && (
+      {/* Retailer series toggles (only shown when ≥2 retailers — single-retailer kits need no toggle) */}
+      {isMulti && multiHistory!.series.length >= 2 && (
         <div className="flex flex-wrap gap-1.5 px-4 sm:px-6 pb-3">
           <span className="text-[10px] font-medium uppercase tracking-widest text-[var(--text-muted)] self-center mr-1">
             Show:
@@ -1159,7 +1160,6 @@ export function PriceHistoryChart({
         <span className="text-xs text-[var(--text-muted)]">
           High: <span className="font-mono text-[var(--text-secondary)]">{formatPrice(highCents)}</span>
         </span>
-        <span className="ml-auto text-xs text-[var(--text-muted)]">{dataPointCount} data points</span>
       </div>
     </div>
   );

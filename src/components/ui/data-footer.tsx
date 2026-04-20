@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 interface DataFooterProps {
-  kitCount: number;
+  kitCount?: number;
   updated?: string;
 }
 
@@ -14,8 +14,12 @@ export function DataFooter({ kitCount, updated }: DataFooterProps) {
     >
       <span>Updated {date}</span>
       <span aria-hidden="true">·</span>
-      <span>Based on {kitCount.toLocaleString()} kits</span>
-      <span aria-hidden="true">·</span>
+      {kitCount != null && (
+        <>
+          <span>Based on {kitCount.toLocaleString()} kits</span>
+          <span aria-hidden="true">·</span>
+        </>
+      )}
       <span>Prices refreshed every 6h</span>
       <span aria-hidden="true">·</span>
       <Link

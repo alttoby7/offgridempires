@@ -134,7 +134,7 @@ export default async function KitDetailPage({
               {(kit.displayName ?? kit.name)}
             </h1>
             <div className="mt-3">
-              <DataFooter kitCount={getKits().length} updated={getKitsUpdated()} />
+              <DataFooter updated={getKitsUpdated()} />
             </div>
           </div>
 
