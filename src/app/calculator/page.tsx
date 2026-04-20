@@ -4,6 +4,23 @@ import { Suspense } from "react";
 import { getKits } from "@/lib/get-kits";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { CalculatorFlow } from "@/components/calculator/calculator-flow";
+import { DataFooter } from "@/components/ui/data-footer";
+import { getKitsUpdated } from "@/lib/data-meta";
+import { APPLIANCE_CATALOG, LOAD_PRESETS } from "@/lib/calculator/appliances";
+
+export const dynamic = "force-static";
+
+function buildPresetUrl(presetId: string): string {
+  const preset = LOAD_PRESETS.find((p) => p.id === presetId);
+  if (!preset) return "/calculator";
+  const parts: string[] = [];
+  for (const id of preset.applianceIds) {
+    const def = APPLIANCE_CATALOG.find((a) => a.id === id);
+    if (!def) continue;
+    parts.push(`${def.id}~${def.defaultQty}~${def.defaultHours}`);
+  }
+  return `/calculator?v=1&step=1&l=${parts.join(",")}`;
+}
 
 export const metadata: Metadata = {
   title: "Solar Calculator: Size Panels, Battery & Inverter",
@@ -45,6 +62,26 @@ const howToJsonLd = {
 
 export default function CalculatorPage() {
   const allKits = getKits();
+  const scenarios = [
+    {
+      id: "van-life",
+      title: "RV / Van Life",
+      summary: "Lights, phone, laptop, 12V fan, mini fridge — a mobile setup that runs overnight on battery and recharges while you drive or park in the sun.",
+      sizing: "~600–900Wh/day · 200–400W solar · 1–1.5kWh battery",
+    },
+    {
+      id: "weekend-cabin",
+      title: "Weekend Cabin",
+      summary: "Lights, Wi-Fi, fridge, coffee maker, fan, hair dryer — a fully off-grid weekend getaway with enough headroom to cover cloudy-day shortfalls.",
+      sizing: "~2–3kWh/day · 600–1,200W solar · 3–5kWh battery",
+    },
+    {
+      id: "homestead",
+      title: "Homestead / Full Off-Grid",
+      summary: "Lights, security, fridge, freezer, well pump, washer — a self-sufficient property that runs appliances, pumps water, and survives multi-day storms.",
+      sizing: "~5–8kWh/day · 2,000–4,000W solar · 10–15kWh battery",
+    },
+  ];
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
@@ -67,6 +104,51 @@ export default function CalculatorPage() {
         <span>/</span>
         <span className="text-[var(--text-secondary)]">Calculator</span>
       </nav>
+
+      {/* H1 + snippet-safe summary */}
+      <header className="mb-6 max-w-3xl">
+        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-primary)] mb-3">
+          Solar Calculator: Size Panels, Battery & Inverter
+        </h1>
+        <p className="text-[var(--text-secondary)] leading-relaxed">
+          Add the appliances you plan to run off-grid and get the exact solar wattage,
+          battery capacity, and inverter size you need. Calculations use NREL peak-sun-hour
+          data for your ZIP code and match your requirements against {allKits.length} tracked
+          kits with real build cost.
+        </p>
+        <div className="mt-4">
+          <DataFooter kitCount={allKits.length} updated={getKitsUpdated()} />
+        </div>
+      </header>
+
+      {/* Worked scenarios */}
+      <section className="mb-8">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--text-muted)] mb-3">
+          Try a worked example
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {scenarios.map((s) => (
+            <Link
+              key={s.id}
+              href={buildPresetUrl(s.id)}
+              className="group rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:border-[var(--accent)] transition-colors"
+            >
+              <p className="text-sm font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+                {s.title}
+              </p>
+              <p className="mt-1 text-xs text-[var(--text-secondary)] leading-relaxed">
+                {s.summary}
+              </p>
+              <p className="mt-2 font-mono text-[11px] text-[var(--text-muted)]">
+                {s.sizing}
+              </p>
+              <p className="mt-3 text-xs font-medium text-[var(--accent)] group-hover:underline">
+                Prefill calculator →
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       <Suspense
         fallback={
@@ -152,7 +234,7 @@ export default function CalculatorPage() {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-4 mt-8">
+        <div className="flex flex-wrap gap-x-5 gap-y-2 mt-8">
           <Link
             href="/kits"
             className="text-sm font-medium text-[var(--accent)] hover:underline"
@@ -160,10 +242,34 @@ export default function CalculatorPage() {
             Browse all tracked kits →
           </Link>
           <Link
+            href="/solar-kits"
+            className="text-sm font-medium text-[var(--accent)] hover:underline"
+          >
+            DIY solar kits →
+          </Link>
+          <Link
+            href="/portable-power"
+            className="text-sm font-medium text-[var(--accent)] hover:underline"
+          >
+            Portable power stations →
+          </Link>
+          <Link
+            href="/whole-home"
+            className="text-sm font-medium text-[var(--accent)] hover:underline"
+          >
+            Whole-home systems →
+          </Link>
+          <Link
             href="/methodology"
             className="text-sm font-medium text-[var(--text-muted)] hover:text-[var(--text-secondary)] hover:underline"
           >
-            Our testing methodology →
+            Our methodology →
+          </Link>
+          <Link
+            href="/how-real-build-cost-is-calculated"
+            className="text-sm font-medium text-[var(--text-muted)] hover:text-[var(--text-secondary)] hover:underline"
+          >
+            How real build cost is calculated →
           </Link>
         </div>
       </section>
