@@ -1,5 +1,14 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /*?sort=
+Disallow: /*?price=
+Disallow: /*?chemistry=
+Disallow: /*?brand=
+Disallow: /*?voltage=
+Disallow: /*?complete=
+Disallow: /*?minPrice=
+Disallow: /*?maxPrice=
+Disallow: /*?q=
 
 Sitemap: https://offgridempire.com/sitemap.xml

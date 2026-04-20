@@ -63,17 +63,17 @@ export function Hero({ trapKit, kitCount, brandCount }: HeroProps) {
             {/* Decision-first CTAs */}
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
-                href="/kits?sort=cost_per_wh"
+                href="/kits/"
                 className="inline-flex items-center justify-center gap-2 rounded bg-[var(--accent)] px-6 py-3 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
               >
                 Find the best true value
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
               <Link
-                href="/kits?complete=1"
+                href="/calculator/"
                 className="inline-flex items-center justify-center gap-2 rounded border border-[var(--border)] bg-[var(--bg-surface)] px-6 py-3 text-sm font-medium text-[var(--text-secondary)] hover:border-[var(--border-accent)] hover:text-[var(--accent)] transition-colors"
               >
-                Only show complete kits
+                Size my system
               </Link>
             </div>
 
