@@ -1,7 +1,7 @@
 {
   "slug": "lithium-and-lifepo4-batteries",
   "title": "Lithium and LiFePO4 Batteries: The Complete Guide for Off-Grid Solar",
-  "metaTitle": "Lithium and LiFePO4 Batteries | OffGridEmpire",
+  "metaTitle": "Lithium and LiFePO4 Batteries",
   "metaDescription": "LiFePO4 kits start at $0.25/Wh vs $0.91/Wh for AGM. Chemistry, voltage, MPPT settings, and real kit costs for off-grid solar.",
   "publishedAt": "2026-04-04T00:00:00Z",
   "updatedAt": "2026-04-04T00:00:00Z",
@@ -57,7 +57,20 @@
       "label": "All Solar Kits"
     }
   ],
-  "relatedArticles": [],
+  "relatedArticles": [
+    {
+      "slug": "battery-types-and-deep-cycle",
+      "title": "Battery Types and Deep Cycle: A Data-Backed Guide for Off-Grid Solar"
+    },
+    {
+      "slug": "portable-power-stations",
+      "title": "Portable Power Stations: 173 Options Compared by Real Build Cost"
+    },
+    {
+      "slug": "solar-installation-diy",
+      "title": "How to Install a DIY Off-Grid Solar System (With Real Costs)"
+    }
+  ],
   "kitSlugs": [
     "ecoflow-pro-ecoflow-river-2-pro-main-unit-only",
     "ecoflow-max-ecoflow-river-2-max-main-unit-only",

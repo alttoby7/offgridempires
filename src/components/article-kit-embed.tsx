@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getKitBySlug } from "@/lib/get-kits";
+import { buildAffiliateUrl } from "@/lib/affiliate";
 
 /**
  * Compact kit summary card for embedding in /learn articles.
@@ -15,6 +16,14 @@ export function ArticleKitEmbed({ slug }: { slug: string }) {
       </div>
     );
   }
+
+  // Find lowest-price in-stock offer for affiliate CTA
+  const bestOffer = kit.offers
+    ?.filter((o) => o.inStock && o.sourceUrl)
+    .sort((a, b) => a.price - b.price)[0];
+  const affiliateUrl = bestOffer
+    ? buildAffiliateUrl(bestOffer.sourceUrl, bestOffer.retailerSlug)
+    : null;
 
   const completenessColor =
     kit.completeness >= 100
@@ -35,12 +44,24 @@ export function ArticleKitEmbed({ slug }: { slug: string }) {
             {kit.displayName || kit.name}
           </h4>
         </div>
-        <Link
-          href={`/kits/${kit.slug}`}
-          className="text-xs text-[var(--accent)] hover:underline whitespace-nowrap"
-        >
-          Full breakdown &rarr;
-        </Link>
+        <div className="flex items-center gap-3">
+          {affiliateUrl && (
+            <a
+              href={affiliateUrl}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="text-xs border border-[var(--accent)]/30 text-[var(--accent)] px-3 py-1.5 rounded hover:bg-[var(--accent)]/10 transition-colors whitespace-nowrap"
+            >
+              View on {bestOffer!.retailer} &rarr;
+            </a>
+          )}
+          <Link
+            href={`/kits/${kit.slug}`}
+            className="text-xs text-[var(--accent)] hover:underline whitespace-nowrap"
+          >
+            Full breakdown &rarr;
+          </Link>
+        </div>
       </div>
 
       {/* Specs grid */}
@@ -59,7 +80,7 @@ export function ArticleKitEmbed({ slug }: { slug: string }) {
           value={`${kit.completeness}%`}
           className={completenessColor}
         />
-        <SpecCell label="Cost/Wh" value={`$${kit.costPerWh}`} />
+        <SpecCell label="Cost/Wh" value={kit.costPerWh} />
       </div>
 
       {/* Key specs row */}

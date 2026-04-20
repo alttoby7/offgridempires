@@ -69,7 +69,7 @@ export async function generateMetadata({
     title: b.title,
     description: b.description,
     alternates: { canonical: `/solar-kits/${budget}` },
-    openGraph: { title: `${b.title} | OffGridEmpire`, description: b.description, url: `/solar-kits/${budget}` },
+    openGraph: { title: b.title, description: b.description, url: `/solar-kits/${budget}` },
   };
 }
 

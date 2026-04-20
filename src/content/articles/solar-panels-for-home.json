@@ -1,7 +1,7 @@
 {
   "slug": "solar-panels-for-home",
   "title": "Solar Panels for Home: 140 DIY Kits Compared by Real Build Cost",
-  "metaTitle": "Solar Panels for Home | OffGridEmpire",
+  "metaTitle": "Solar Panels for Home",
   "metaDescription": "140 home solar kits compared by real build cost, from $449 plug-in starters to $103,138 whole-property systems. Find the right DIY system for your home.",
   "publishedAt": "2026-04-05T00:00:00Z",
   "updatedAt": "2026-04-05T00:00:00Z",
@@ -63,7 +63,20 @@
       "label": "Methodology"
     }
   ],
-  "relatedArticles": [],
+  "relatedArticles": [
+    {
+      "slug": "solar-panel-kits-and-bundles",
+      "title": "Solar Panel Kits and Bundles"
+    },
+    {
+      "slug": "inverters-and-power-conversion",
+      "title": "The $600 Kit With an Inverter That Kills Your CPAP"
+    },
+    {
+      "slug": "solar-installation-diy",
+      "title": "How to Install a DIY Off-Grid Solar System (With Real Costs)"
+    }
+  ],
   "kitSlugs": [
     "anker-600w-anker-solix-c1000-gen-2-main-unit-only",
     "ecoflow-delta2max-400w",

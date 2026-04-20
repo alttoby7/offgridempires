@@ -1,7 +1,7 @@
 {
   "slug": "solar-water-and-pool-heating",
   "title": "Solar Water and Pool Heating: The DIY Numbers Guide",
-  "metaTitle": "Solar Water and Pool Heating | OffGridEmpire",
+  "metaTitle": "Solar Water and Pool Heating",
   "metaDescription": "Gas pool heaters cost $36,000-$60,000 over 10 years. Solar costs $50-$100/yr. DIY from $50. Sizing formulas, step-by-step builds, 10-yr TCO.",
   "publishedAt": "2026-04-05T00:00:00Z",
   "updatedAt": "2026-04-05T00:00:00Z",
@@ -59,7 +59,16 @@
       "label": "Kit Comparison Tool"
     }
   ],
-  "relatedArticles": [],
+  "relatedArticles": [
+    {
+      "slug": "solar-panels-for-home",
+      "title": "Solar Panels for Home: 140 DIY Kits Compared by Real Build Cost"
+    },
+    {
+      "slug": "solar-installation-diy",
+      "title": "How to Install a DIY Off-Grid Solar System (With Real Costs)"
+    }
+  ],
   "kitSlugs": [
     "renogy-100w-starter-kit"
   ],

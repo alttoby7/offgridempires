@@ -8,12 +8,12 @@ import { KitBrowser } from "@/components/kit-browser";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Browse Solar Kits",
+  title: "Browse All Solar Kits by Real Build Cost",
   description:
     "Compare off-grid solar kits with normalized specs, true total cost, and live pricing across brands.",
   alternates: { canonical: "/kits" },
   openGraph: {
-    title: "Browse Solar Kits | OffGridEmpire",
+    title: "Browse All Solar Kits by Real Build Cost",
     description:
       "Compare off-grid solar kits with normalized specs, true total cost, and live pricing across brands.",
     url: "/kits",

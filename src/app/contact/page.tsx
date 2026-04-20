@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Get in touch with OffGridEmpire for data corrections, brand partnerships, or bug reports.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact | OffGridEmpire",
+    title: "Contact",
     description:
       "Get in touch with OffGridEmpire for data corrections, brand partnerships, or bug reports.",
     url: "/contact",

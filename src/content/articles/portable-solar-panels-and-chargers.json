@@ -1,7 +1,7 @@
 {
   "slug": "portable-solar-panels-and-chargers",
   "title": "Portable Solar Panels and Chargers: 29 Systems Compared by Output and Real Build Cost",
-  "metaTitle": "Portable Solar Panels and Chargers | OffGridEmpire",
+  "metaTitle": "Portable Solar Panels and Chargers",
   "metaDescription": "29 portable solar systems tracked. Compare storage, panel input, $/Wh, and completeness across EcoFlow, Bluetti, and Anker. Prices Apr 2026.",
   "publishedAt": "2026-04-05T00:00:00Z",
   "updatedAt": "2026-04-05T00:00:00Z",
@@ -56,8 +56,14 @@
     }
   ],
   "relatedArticles": [
-    "portable-power-stations",
-    "lithium-and-lifepo4-batteries"
+    {
+      "slug": "portable-power-stations",
+      "title": "Portable Power Stations: 173 Options Compared by Real Build Cost"
+    },
+    {
+      "slug": "rv-and-camper-solar",
+      "title": "RV and Camper Solar: What the Kits Don't Tell You"
+    }
   ],
   "kitSlugs": [
     "bluetti-200w-ac50p",

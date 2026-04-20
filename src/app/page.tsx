@@ -13,12 +13,12 @@ import Link from "next/link";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Off-Grid Solar Kit Comparison Engine | OffGridEmpire",
+  title: "Compare Off-Grid Solar Kits by Real Build Cost",
   description:
     "Compare off-grid solar kits across 16 brands. See real build costs, component breakdowns, completeness scores, and price history — updated every 6 hours. Portable stations, DIY panel kits, and whole-home systems.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Off-Grid Solar Kit Comparison Engine | OffGridEmpire",
+    title: "Compare Off-Grid Solar Kits by Real Build Cost",
     description:
       "Compare off-grid solar kits with real build costs, component breakdowns, and price tracking across 16 brands.",
     url: "/",

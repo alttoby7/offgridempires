@@ -6,12 +6,12 @@ import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { CalculatorFlow } from "@/components/calculator/calculator-flow";
 
 export const metadata: Metadata = {
-  title: "Solar Power Calculator — Size Your Off-Grid System",
+  title: "Solar Calculator: Size Panels, Battery & Inverter",
   description:
     "Calculate exactly how much solar, battery storage, and inverter capacity you need. Enter your appliances, set your location, and get matched to real kits with pricing.",
   alternates: { canonical: "/calculator" },
   openGraph: {
-    title: "Solar Power Calculator | OffGridEmpire",
+    title: "Solar Calculator: Size Panels, Battery & Inverter",
     description:
       "Calculate exactly how much solar, battery, and inverter you need — then see which real kits match.",
     url: "/calculator",

@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Components & Products",
+  title: "Browse Solar Components",
   description:
     "Browse individual solar components — batteries, panels, charge controllers, inverters — with price tracking.",
   alternates: { canonical: "/products" },
   openGraph: {
-    title: "Components & Products | OffGridEmpire",
+    title: "Browse Solar Components",
     description:
       "Browse individual solar components — batteries, panels, charge controllers, inverters — with price tracking.",
     url: "/products",

@@ -129,11 +129,12 @@ export async function generateMetadata({
   const uc = USE_CASES[usecase];
   if (!uc) return { title: "Use Case Not Found" };
 
+  const title = `${uc.title} (2026): Real Build Cost Comparison`;
   return {
-    title: uc.title,
+    title,
     description: uc.description,
     alternates: { canonical: `/best-for/${usecase}` },
-    openGraph: { title: `${uc.title} | OffGridEmpire`, description: uc.description, url: `/best-for/${usecase}` },
+    openGraph: { title, description: uc.description, url: `/best-for/${usecase}` },
   };
 }
 

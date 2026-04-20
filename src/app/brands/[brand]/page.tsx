@@ -79,14 +79,14 @@ export async function generateMetadata({
   const { brand } = await params;
   const info = BRANDS[brand];
   const name = info?.name ?? brand.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-  const title = `${name} Solar Kits — Prices, Specs & True Cost`;
+  const title = `${name} Solar Kits Compared by Real Build Cost`;
   const description = `Compare all ${name} off-grid solar kits with real build costs, component breakdowns, and live Amazon prices. See what's included and what's missing.`;
 
   return {
     title,
     description,
     alternates: { canonical: `/brands/${brand}` },
-    openGraph: { title: `${name} Solar Kits | OffGridEmpire`, description, url: `/brands/${brand}` },
+    openGraph: { title, description, url: `/brands/${brand}` },
   };
 }
 

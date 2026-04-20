@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "How OffGridEmpire earns revenue through affiliate partnerships. Full transparency on our relationships with Amazon, Renogy, EcoFlow, Bluetti, and other solar brands.",
   alternates: { canonical: "/affiliate-disclosure" },
   openGraph: {
-    title: "Affiliate Disclosure | OffGridEmpire",
+    title: "Affiliate Disclosure",
     description:
       "How OffGridEmpire earns revenue through affiliate partnerships.",
     url: "/affiliate-disclosure",

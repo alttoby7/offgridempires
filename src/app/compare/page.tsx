@@ -8,12 +8,12 @@ import { CompareView } from "@/components/compare-view";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Compare Solar Kits",
+  title: "Compare Up to 3 Solar Kits Side-by-Side",
   description:
     "Side-by-side comparison of off-grid solar kits with normalized specs and true total cost.",
   alternates: { canonical: "/compare" },
   openGraph: {
-    title: "Compare Solar Kits | OffGridEmpire",
+    title: "Compare Up to 3 Solar Kits Side-by-Side",
     description:
       "Side-by-side comparison of off-grid solar kits with normalized specs and true total cost.",
     url: "/compare",

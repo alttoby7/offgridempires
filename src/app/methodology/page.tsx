@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Our methodology for calculating true total cost of off-grid solar kits. Learn how we break down components, identify missing parts, and estimate real build costs.",
   alternates: { canonical: "/methodology" },
   openGraph: {
-    title: "How We Calculate Real Build Cost | OffGridEmpire",
+    title: "How We Calculate Real Build Cost",
     description:
       "Our methodology for calculating true total cost of off-grid solar kits.",
     url: "/methodology",

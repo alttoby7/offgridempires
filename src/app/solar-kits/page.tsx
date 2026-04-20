@@ -8,12 +8,12 @@ import { KitBrowser } from "@/components/kit-browser";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "DIY Solar Kits",
+  title: "DIY Solar Panel Kits Compared by Real Build Cost",
   description:
     "Compare DIY solar panel kits from Renogy, Eco-Worthy, WindyNation, and more. See what's included, what's missing, and the real cost to build a working system.",
   alternates: { canonical: "/solar-kits" },
   openGraph: {
-    title: "DIY Solar Kits | OffGridEmpire",
+    title: "DIY Solar Panel Kits Compared by Real Build Cost",
     description:
       "Compare DIY solar kits with component breakdowns, missing part costs, and true build prices.",
     url: "/solar-kits",

@@ -31,7 +31,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const kit = getKitBySlug(slug);
   const fullName = kit ? `${kit.brand} ${kit.name}` : "";
-  const title = kit ? `${fullName} — Real Build Cost Breakdown` : "Kit Not Found";
+  const title = kit ? `${fullName} Review: Real Build Cost, Missing Parts & Price History` : "Kit Not Found";
   const description = kit
     ? `Full component breakdown and true total cost for the ${fullName}. See what's included, what's missing, and the real price.`
     : undefined;
@@ -41,7 +41,7 @@ export async function generateMetadata({
     description,
     alternates: { canonical: `/kits/${slug}` },
     openGraph: {
-      title: kit ? `${fullName} | OffGridEmpire` : title,
+      title: kit ? `${fullName} Review: Real Build Cost` : title,
       description,
       url: `/kits/${slug}`,
     },

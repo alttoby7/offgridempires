@@ -8,12 +8,12 @@ import { KitBrowser } from "@/components/kit-browser";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Whole-Home & Off-Grid Systems",
+  title: "Whole-Home Off-Grid Solar Systems Compared",
   description:
     "Compare complete 5kW–60kW+ off-grid solar systems. See real build costs, component breakdowns, and what you need for professional installation.",
   alternates: { canonical: "/whole-home" },
   openGraph: {
-    title: "Whole-Home Solar Systems | OffGridEmpire",
+    title: "Whole-Home Off-Grid Solar Systems Compared",
     description:
       "Complete off-grid solar systems for homesteads and whole-home backup. Compare real build costs across Shop Solar, EG4, and more.",
     url: "/whole-home",

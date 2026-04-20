@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "OffGridEmpire terms of service. Use of this comparison tool and its data.",
   alternates: { canonical: "/terms" },
   openGraph: {
-    title: "Terms of Service | OffGridEmpire",
+    title: "Terms of Service",
     description: "Terms of service for using OffGridEmpire.",
     url: "/terms",
   },

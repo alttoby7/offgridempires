@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Convert between W, kW, Wh, kWh, and mAh instantly. Then calculate your daily solar load and get matched kit recommendations — no sign-up required.",
   alternates: { canonical: "/learn/watts-to-kilowatts" },
   openGraph: {
-    title: "Watts to Kilowatts Converter + Solar Load Calculator | OffGridEmpire",
+    title: "Watts to Kilowatts Converter + Solar Load Calculator",
     description:
       "Convert between W, kW, Wh, kWh, and mAh. Calculate your daily solar load and find matching kits.",
     url: "/learn/watts-to-kilowatts",

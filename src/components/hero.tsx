@@ -55,11 +55,9 @@ export function Hero({ trapKit, kitCount, brandCount }: HeroProps) {
               <span className="text-[var(--accent)]">to actually use.</span>
             </p>
 
-            {/* Subheadline */}
+            {/* Subheadline — snippet-safe summary */}
             <p className="mt-5 text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-xl">
-              Every off-grid solar kit is broken into components to expose
-              required missing parts and calculate the real build cost.
-              Stop comparing advertised prices.
+              OffGridEmpire tracks {kitCount} off-grid solar kits across {brandCount} brands and compares them by real build cost — the advertised price plus any required parts the kit leaves out. Prices refresh every six hours. See component breakdowns, completeness scores, and price history for each kit.
             </p>
 
             {/* Decision-first CTAs */}

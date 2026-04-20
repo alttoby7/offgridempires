@@ -8,12 +8,12 @@ import { KitBrowser } from "@/components/kit-browser";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Portable Power Stations",
+  title: "Portable Power Stations Compared by Real Build Cost",
   description:
     "Compare portable power stations from EcoFlow, Bluetti, Jackery, Anker, and more. See true costs, battery capacity, and bundled solar panels.",
   alternates: { canonical: "/portable-power" },
   openGraph: {
-    title: "Portable Power Stations | OffGridEmpire",
+    title: "Portable Power Stations Compared by Real Build Cost",
     description:
       "Compare portable power stations with real costs, specs, and solar panel bundles across top brands.",
     url: "/portable-power",

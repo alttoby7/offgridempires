@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ArticleRecord } from "@/content/types";
 import { ArticleKitEmbed } from "./article-kit-embed";
 import { WattsAmpsCalc } from "./watts-amps-calc";
+import { FloatingCta } from "./floating-cta";
 import {
   Breadcrumb,
   PageTitle,
@@ -11,6 +12,43 @@ import {
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 
 const SITE_URL = "https://offgridempire.com";
+
+function extractHeadings(body: string): { id: string; text: string }[] {
+  return body
+    .split("\n")
+    .filter((line) => line.startsWith("## ") && !line.startsWith("### "))
+    .map((line) => {
+      const text = line.slice(3);
+      const id = text
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/(^-|-$)/g, "");
+      return { id, text };
+    });
+}
+
+function TableOfContents({ headings }: { headings: { id: string; text: string }[] }) {
+  if (headings.length < 3) return null;
+  return (
+    <nav className="mb-8 rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4">
+      <div className="font-mono text-[10px] uppercase tracking-wider text-[var(--text-muted)] mb-3">
+        Contents
+      </div>
+      <ul className="space-y-1.5">
+        {headings.map((h) => (
+          <li key={h.id}>
+            <a
+              href={`#${h.id}`}
+              className="text-xs text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+            >
+              {h.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}
 
 function ArticleJsonLd({ article }: { article: ArticleRecord }) {
   const data = {
@@ -54,6 +92,20 @@ function ArticleJsonLd({ article }: { article: ArticleRecord }) {
  */
 function renderBody(body: string) {
   const lines = body.split("\n");
+
+  // Strip duplicate H1 — already rendered by <PageTitle> above
+  const firstNonEmpty = lines.findIndex((l) => l.trim() !== "");
+  if (firstNonEmpty >= 0 && lines[firstNonEmpty].trim().startsWith("# ")) {
+    lines[firstNonEmpty] = "";
+    // Also strip the "Prices verified" disclaimer if it immediately follows
+    const next = lines.findIndex(
+      (l, idx) => idx > firstNonEmpty && l.trim() !== ""
+    );
+    if (next >= 0 && lines[next].trim().startsWith("*Prices verified")) {
+      lines[next] = "";
+    }
+  }
+
   const elements: React.ReactNode[] = [];
   let i = 0;
 
@@ -363,6 +415,8 @@ function renderInline(text: string): React.ReactNode {
 }
 
 export function ArticleRenderer({ article }: { article: ArticleRecord }) {
+  const headings = extractHeadings(article.body);
+
   return (
     <ProseContainer>
       <BreadcrumbJsonLd
@@ -392,7 +446,42 @@ export function ArticleRenderer({ article }: { article: ArticleRecord }) {
         <span>{article.readingTime}</span>
       </div>
 
+      <TableOfContents headings={headings} />
+
       <ContentCard>{renderBody(article.body)}</ContentCard>
+
+      {/* Related articles */}
+      {article.relatedArticles.length > 0 && (
+        <div className="mt-8">
+          <h2 className="font-mono text-sm uppercase tracking-wider text-[var(--accent)] mb-4">
+            Read Next
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {article.relatedArticles.map((related) => (
+              <Link
+                key={related.slug}
+                href={`/learn/${related.slug}/`}
+                className="flex items-center justify-between rounded border border-[var(--border)] bg-[var(--bg-surface)] px-4 py-3 text-sm text-[var(--text-secondary)] hover:border-[var(--accent)]/30 hover:text-[var(--accent)] transition-colors"
+              >
+                <span>{related.title}</span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="shrink-0 ml-2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Related tool pages */}
       {article.relatedToolPages.length > 0 && (
@@ -425,6 +514,8 @@ export function ArticleRenderer({ article }: { article: ArticleRecord }) {
           </div>
         </div>
       )}
+
+      <FloatingCta />
     </ProseContainer>
   );
 }

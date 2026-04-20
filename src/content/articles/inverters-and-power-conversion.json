@@ -1,7 +1,7 @@
 {
   "slug": "inverters-and-power-conversion",
   "title": "The $600 Kit With an Inverter That Kills Your CPAP",
-  "metaTitle": "Inverters and Power Conversion | OffGridEmpire",
+  "metaTitle": "Inverters and Power Conversion",
   "metaDescription": "Modified sine wave damages CPAPs, variable-speed motors, and laser printers. Full sizing math, voltage wiring costs, and 7 kits from $209 to $3,399.",
   "publishedAt": "2026-04-05T00:00:00Z",
   "updatedAt": "2026-04-05T00:00:00Z",
@@ -58,7 +58,20 @@
       "label": "How Real Build Cost is Calculated"
     }
   ],
-  "relatedArticles": [],
+  "relatedArticles": [
+    {
+      "slug": "solar-panel-kits-and-bundles",
+      "title": "Solar Panel Kits and Bundles"
+    },
+    {
+      "slug": "watts-amps-volts-conversions",
+      "title": "Watts, Amps, and Volts: The Solar Math Every DIY Builder Needs"
+    },
+    {
+      "slug": "solar-installation-diy",
+      "title": "How to Install a DIY Off-Grid Solar System (With Real Costs)"
+    }
+  ],
   "kitSlugs": [
     "windynation-400w-complete-inverter",
     "bluetti-bluetti-ac-bluetti-ac2p-main-unit-only",

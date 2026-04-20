@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "OffGridEmpire privacy policy. What data we collect and how we use it.",
   alternates: { canonical: "/privacy" },
   openGraph: {
-    title: "Privacy Policy | OffGridEmpire",
+    title: "Privacy Policy",
     description: "What data we collect and how we use it.",
     url: "/privacy",
   },

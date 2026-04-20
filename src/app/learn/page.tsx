@@ -9,12 +9,12 @@ import {
 } from "@/components/ui/prose";
 
 export const metadata: Metadata = {
-  title: "Learn — Off-Grid Solar Guides & Data",
+  title: "Off-Grid Solar Learning Center",
   description:
     "Data-backed guides, comparisons, and tutorials for off-grid solar systems. Real kit specs, real build costs, no opinions.",
   alternates: { canonical: "/learn" },
   openGraph: {
-    title: "Learn | OffGridEmpire",
+    title: "Off-Grid Solar Learning Center",
     description:
       "Data-backed guides, comparisons, and tutorials for off-grid solar systems.",
     url: "/learn",

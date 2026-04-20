@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "OffGridEmpire is the solar kit comparison engine. We break down kits, expose hidden costs, and show real build prices. No opinions. Just data.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About | OffGridEmpire",
+    title: "About OffGridEmpire",
     description:
       "The solar kit comparison engine. Break down kits, expose hidden costs, show real build prices.",
     url: "/about",

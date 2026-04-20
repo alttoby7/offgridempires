@@ -397,6 +397,8 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
   const chemFilter = searchParams.get("chemistry") || "all";
   const voltageFilter = searchParams.get("voltage") || "all";
   const priceFilter = searchParams.get("price") || "0";
+  const minPriceParam = searchParams.get("minPrice");
+  const maxPriceParam = searchParams.get("maxPrice");
   const completeOnly = searchParams.get("complete") === "1";
 
   // Compare selection (local state — not in URL to avoid clutter)
@@ -448,12 +450,20 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
         kits = kits.filter((k) => k.trueCost >= range.min && k.trueCost <= range.max);
       }
     }
+    if (minPriceParam) {
+      const min = Number(minPriceParam);
+      if (!isNaN(min)) kits = kits.filter((k) => k.trueCost >= min);
+    }
+    if (maxPriceParam) {
+      const max = Number(maxPriceParam);
+      if (!isNaN(max)) kits = kits.filter((k) => k.trueCost <= max);
+    }
     if (completeOnly) {
       kits = kits.filter((k) => k.completeness === 100);
     }
 
     return sortKits(kits, sortKey, matchMap);
-  }, [allKits, sortKey, brandFilter, chemFilter, voltageFilter, priceFilter, completeOnly, matchMap]);
+  }, [allKits, sortKey, brandFilter, chemFilter, voltageFilter, priceFilter, minPriceParam, maxPriceParam, completeOnly, matchMap]);
 
   const activeFilterCount = [
     brandFilter !== "all",
@@ -467,7 +477,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
     <>
       {/* Sizing banner (when calculator results exist) */}
       {sizing && sizing.totalDailyWh > 0 && (
-        <div className="mb-6 flex flex-wrap items-center gap-x-4 gap-y-2 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5 px-4 py-3">
+        <div data-nosnippet className="mb-6 flex flex-wrap items-center gap-x-4 gap-y-2 rounded border border-[var(--accent)]/30 bg-[var(--accent)]/5 px-4 py-3">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--accent)] shrink-0">
             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
           </svg>
@@ -498,7 +508,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
             {allKits.length} kits compared with true total cost
           </p>
         </div>
-        <div className="flex items-center gap-2">
+        <div data-nosnippet className="flex items-center gap-2">
           <span className="text-xs font-medium text-[var(--text-muted)] uppercase">Sort:</span>
           <select
             value={sortKey}
@@ -515,7 +525,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
       </div>
 
       {/* Filter bar */}
-      <div className="flex flex-wrap gap-2 mb-6 p-3 rounded border border-[var(--border)] bg-[var(--bg-surface)]">
+      <div data-nosnippet className="flex flex-wrap gap-2 mb-6 p-3 rounded border border-[var(--border)] bg-[var(--bg-surface)]">
         <FilterDropdown
           label="Price"
           value={priceFilter}
@@ -582,7 +592,7 @@ export function KitBrowser({ allKits }: { allKits: Kit[] }) {
       </div>
 
       {/* Results count + compare bar */}
-      <div className="flex items-center justify-between mb-4">
+      <div data-nosnippet className="flex items-center justify-between mb-4">
         <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">
           Showing {filteredKits.length} of {allKits.length} kits
         </p>

@@ -6,12 +6,12 @@ import { ShedCalculator } from "@/components/calculator/shed-calculator";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Shed Solar Calculator — Size Your Off-Grid Shed System",
+  title: "Shed Solar Calculator: Size Your Shed Off-Grid System",
   description:
     "Size a solar system for your shed in 60 seconds. Enter your loads — lights, tools, electronics — and get panel, battery, and inverter specs based on real DIY shed builds.",
   alternates: { canonical: "/tools/shed-solar-calculator" },
   openGraph: {
-    title: "Shed Solar Calculator | OffGridEmpire",
+    title: "Shed Solar Calculator: Size Your Shed Off-Grid System",
     description:
       "Pick your shed type, select your loads, and get panel/battery/inverter specs instantly. Based on real DIY shed solar build data.",
     url: "/tools/shed-solar-calculator",
