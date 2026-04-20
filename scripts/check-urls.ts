@@ -61,6 +61,9 @@ function buildUrls(): string[] {
     "/calculator",
     "/compare",
     "/contact",
+    "/data-sources",
+    "/editorial-policy",
+    "/how-real-build-cost-is-calculated",
     "/kits",
     "/learn",
     "/methodology",
@@ -71,6 +74,10 @@ function buildUrls(): string[] {
     "/terms",
     "/tools/shed-solar-calculator",
     "/whole-home",
+    "/best-rv-solar-kit",
+    "/1000-watt-solar-kit",
+    "/2000-watt-solar-kit",
+    "/best-solar-generator-under-500",
   ];
   urls.push(...staticPaths);
 
