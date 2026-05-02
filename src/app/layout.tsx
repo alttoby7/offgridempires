@@ -1,20 +1,29 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Fraunces, Inter_Tight, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-const inter = Inter({
-  variable: "--font-inter",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  axes: ["opsz", "SOFT"],
+  display: "swap",
+});
+
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 const SITE_URL = "https://offgridempire.com";
@@ -26,21 +35,21 @@ export const metadata: Metadata = {
     template: "%s | OffGridEmpire",
   },
   description:
-    "The solar kit comparison engine. Break down components, see true total costs, track prices, and find the right off-grid system for your build.",
+    "The independent audit layer for off-grid solar buying decisions. We show the real build cost of every kit — advertised price plus the parts they leave out.",
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "OffGridEmpire",
     title: "OffGridEmpire — Compare Every Off-Grid Solar Kit",
     description:
-      "The solar kit comparison engine. Break down components, see true total costs, track prices, and find the right off-grid system for your build.",
+      "The independent audit layer for off-grid solar buying decisions. We show the real build cost of every kit — advertised price plus the parts they leave out.",
     url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
     title: "OffGridEmpire — Compare Every Off-Grid Solar Kit",
     description:
-      "The solar kit comparison engine. Break down components, see true total costs, and find the right off-grid system.",
+      "Real build cost of every off-grid solar kit. Advertised price plus the parts they leave out.",
   },
   alternates: {
     canonical: SITE_URL,
@@ -66,10 +75,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${interTight.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <head>
-<Script
+        <meta name="theme-color" content="#faf7f2" />
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PGP7GKZ3ZT"
           strategy="afterInteractive"
         />

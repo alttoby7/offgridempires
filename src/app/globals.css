@@ -1,64 +1,139 @@
 @import "tailwindcss";
 
+/*
+ * OffGridEmpire — Light editorial + brass
+ * Mood: clipboard, daylight, metal, dust.
+ * Three surface modes: REPORT (paper), DATA (ink), ADVISORY (warm tint).
+ */
+
 :root {
-  --bg-primary: #0f1419;
-  --bg-secondary: #1a2332;
-  --bg-surface: #1e2a3a;
-  --bg-elevated: #243044;
-  --accent: #f59e0b;
-  --accent-hover: #d97706;
-  --accent-glow: rgba(245, 158, 11, 0.15);
-  --text-primary: #e2e8f0;
-  --text-secondary: #a8b8c8;
-  --text-muted: #8899aa;
-  --border: #2d3748;
-  --border-accent: rgba(245, 158, 11, 0.3);
-  --success: #22c55e;
-  --danger: #ef4444;
-  --warning: #f59e0b;
+  /* Surfaces */
+  --bg-primary: #faf7f2;     /* paper — primary canvas */
+  --bg-secondary: #f1ece2;   /* paper-tint — section bands */
+  --bg-surface: #ffffff;     /* report card */
+  --bg-elevated: #ebe5d6;    /* warm soft for hovers / muted blocks */
+  --paper: #faf7f2;          /* alias for new code */
+
+  /* DATA surface — ink section, used by receipt, spec tables, calc results */
+  --bg-data: #14110d;        /* deep warm near-black */
+  --bg-data-2: #1f1a13;      /* one step lighter, for sub-rows */
+  --paper-on-data: #ece6d8;  /* text on ink */
+  --paper-on-data-soft: #b8b09e;
+
+  /* Text on paper */
+  --text-primary: #1a1d23;   /* ink */
+  --text-secondary: #4a4d54; /* ink-soft */
+  --text-muted: #7a7d82;     /* ink-muted */
+  --ink: #1a1d23;            /* alias for new code */
+  --ink-soft: #4a4d54;
+  --ink-muted: #7a7d82;
+
+  /* Accent — single brass / dusk-orange */
+  --accent: #b8732e;
+  --accent-hover: #9a5e22;
+  --accent-glow: rgba(184, 115, 46, 0.12);
+  --accent-soft: #e9c69a;     /* ADVISORY surface tint */
+  --accent-soft-2: #f3dcb6;   /* lighter tint */
+
+  /* Rules / borders */
+  --border: #d8d2c4;          /* warm hairline */
+  --border-strong: #b9b0a0;
+  --border-accent: rgba(184, 115, 46, 0.35);
+  --rule: #d8d2c4;
+
+  /* Status — reserved meanings */
+  --success: #4f7d4a;         /* muted field green for "complete kit" */
+  --danger: #c0392b;          /* signal red — receipt warnings only */
+  --signal-red: #c0392b;
+  --warning: #c8884e;
 }
 
 @theme inline {
   --color-background: var(--bg-primary);
   --color-foreground: var(--text-primary);
-  --font-sans: var(--font-inter);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter-tight);
   --font-mono: var(--font-jetbrains-mono);
 }
 
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-inter-tight), system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Grain overlay */
+/* Display type — Fraunces with proper opsz on big sizes */
+.font-display {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "opsz" 144, "SOFT" 50, "WONK" 0;
+  letter-spacing: -0.015em;
+}
+
+/* Paper grain — kept low, gives surfaces tactility */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
-/* Scrollbar */
+/* Warm scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 3px;
+  background: var(--border-strong);
+  border: 2px solid var(--bg-secondary);
+  border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
+  background: var(--accent);
 }
 
-/* Selection */
 ::selection {
-  background: rgba(245, 158, 11, 0.3);
-  color: #fff;
+  background: rgba(184, 115, 46, 0.28);
+  color: var(--ink);
+}
+
+/* DATA surface override — paper text on ink, used by .surface-data wrapper or directly */
+.surface-data {
+  background: var(--bg-data);
+  color: var(--paper-on-data);
+}
+.surface-data ::selection {
+  background: rgba(233, 198, 154, 0.35);
+  color: var(--paper-on-data);
+}
+
+/* Hairline rule — used everywhere instead of solid borders */
+.rule-hair {
+  border-color: var(--rule);
+}
+
+/* Editorial small caps — used for eyebrows */
+.eyebrow {
+  font-family: var(--font-inter-tight), system-ui, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.6875rem; /* 11px */
+  color: var(--ink-muted);
+}
+
+/* Mono numerals — only for prices and specs */
+.tabular {
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
 }
