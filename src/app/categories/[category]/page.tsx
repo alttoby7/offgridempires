@@ -8,6 +8,7 @@ import { DataFooter } from "@/components/ui/data-footer";
 import { getKitsUpdated } from "@/lib/data-meta";
 
 export const dynamic = "force-static";
+export const dynamicParams = false;
 
 const categoryMeta: Record<string, { title: string; description: string }> = {
   batteries: {

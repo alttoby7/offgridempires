@@ -17,14 +17,27 @@ interface SitemapEntry {
   priority?: number;
 }
 
-function loadKits(): { slug: string; brand: string }[] {
+function loadKits(): { slug: string; brand: string; lastObserved: string }[] {
   try {
     const data = JSON.parse(
       fs.readFileSync(path.join(__dirname, "../src/lib/data/kits.json"), "utf-8")
     );
     return data
       .filter((k: { slug: string; listedPrice?: number }) => k.listedPrice && k.listedPrice > 0)
-      .map((k: { slug: string; brand: string }) => ({ slug: k.slug, brand: k.brand }));
+      .map((k: { slug: string; brand: string; priceObservedAt?: string; priceHistory?: { date: string }[] }) => {
+        // Use the most recent real observation date — fall back to priceObservedAt or today
+        let lastObserved = today;
+        if (k.priceHistory && k.priceHistory.length > 0) {
+          const latest = k.priceHistory
+            .map((p) => p.date)
+            .sort()
+            .reverse()[0];
+          if (latest) lastObserved = latest.split("T")[0];
+        } else if (k.priceObservedAt) {
+          lastObserved = k.priceObservedAt.split("T")[0];
+        }
+        return { slug: k.slug, brand: k.brand, lastObserved };
+      });
   } catch {
     return [];
   }
@@ -60,6 +73,29 @@ function buildEntries(): SitemapEntry[] {
   entries.push({ loc: "/solar-kits", changefreq: "weekly", priority: 0.9, lastmod: today });
   entries.push({ loc: "/products", changefreq: "weekly", priority: 0.9, lastmod: today });
   entries.push({ loc: "/tools/shed-solar-calculator", changefreq: "weekly", priority: 0.9, lastmod: today });
+  entries.push({ loc: "/tools/battery-sizing-calculator", changefreq: "weekly", priority: 0.9, lastmod: today });
+
+  // Weekly price-drops index — refreshed every 6h via pipeline
+  entries.push({ loc: "/this-week", changefreq: "daily", priority: 0.9, lastmod: today });
+  entries.push({ loc: "/this-week/archive", changefreq: "weekly", priority: 0.7, lastmod: today });
+
+  // Per-issue archive snapshots
+  try {
+    const archiveIndexPath = path.join(__dirname, "../public/data/weekly-archive/index.json");
+    if (fs.existsSync(archiveIndexPath)) {
+      const dates: string[] = JSON.parse(fs.readFileSync(archiveIndexPath, "utf-8"));
+      for (const date of dates) {
+        entries.push({
+          loc: `/this-week/archive/${date}`,
+          changefreq: "yearly",
+          priority: 0.5,
+          lastmod: date,
+        });
+      }
+    }
+  } catch {
+    // ignore — first run or missing file
+  }
 
   // Demand-matched hubs (ranked tables, cohort value calls) — 0.9
   entries.push({ loc: "/best-rv-solar-kit", changefreq: "weekly", priority: 0.9, lastmod: today });
@@ -89,7 +125,7 @@ function buildEntries(): SitemapEntry[] {
       loc: `/kits/${kit.slug}`,
       changefreq: "daily",
       priority: 0.6,
-      lastmod: today,
+      lastmod: kit.lastObserved,
     });
   }
 

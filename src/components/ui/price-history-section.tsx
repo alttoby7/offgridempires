@@ -58,11 +58,28 @@ export function PriceHistorySection({ kit }: { kit: Kit }) {
     multiHistory !== null &&
     multiHistory.lowestAvailable.length >= 2;
 
+  // Most-recent real observation date (priceObservedAt is the last actual check)
+  const lastObservedDate = kit.priceObservedAt
+    ? new Date(kit.priceObservedAt).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      })
+    : null;
+
   return (
-    <PriceHistoryChart
-      data={hasMultiData ? null : singleSeriesData}
-      multiHistory={hasMultiData ? multiHistory! : undefined}
-      kitName={kit.name}
-    />
+    <div>
+      <PriceHistoryChart
+        data={hasMultiData ? null : singleSeriesData}
+        multiHistory={hasMultiData ? multiHistory! : undefined}
+        kitName={kit.name}
+      />
+      {lastObservedDate && (
+        <p className="mt-2 text-xs text-[var(--ink-muted)] leading-relaxed">
+          Last observed at retailer: <span className="text-[var(--ink-soft)]">{lastObservedDate}</span>.
+          Days between observations carry the most recent known price — not new data.
+        </p>
+      )}
+    </div>
   );
 }

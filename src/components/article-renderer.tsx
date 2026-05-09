@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/prose";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { DataFooter } from "@/components/ui/data-footer";
+import { Byline } from "@/components/ui/byline";
 import { getKits } from "@/lib/get-kits";
 
 const SITE_URL = "https://offgridempire.com";
@@ -437,9 +438,9 @@ export function ArticleRenderer({ article }: { article: ArticleRecord }) {
 
       <PageTitle title={article.title} />
 
-      <div className="flex items-center gap-4 text-xs text-[var(--text-muted)] mb-4">
+      <div className="flex items-center gap-4 text-xs text-[var(--text-muted)] mb-2">
         <time dateTime={article.publishedAt}>
-          {new Date(article.publishedAt).toLocaleDateString("en-US", {
+          Published {new Date(article.publishedAt).toLocaleDateString("en-US", {
             year: "numeric",
             month: "short",
             day: "numeric",
@@ -447,6 +448,16 @@ export function ArticleRenderer({ article }: { article: ArticleRecord }) {
         </time>
         <span>{article.readingTime}</span>
       </div>
+
+      <Byline
+        lastUpdated={new Date(article.updatedAt ?? article.publishedAt).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+        })}
+        observationLabel="Last updated"
+        cadence="Reviewed against latest kit data"
+      />
 
       <DataFooter kitCount={getKits().length} updated={article.updatedAt ?? article.publishedAt} />
 

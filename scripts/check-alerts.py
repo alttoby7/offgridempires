@@ -102,27 +102,44 @@ def send_email(to: str, kit: dict, unsub_token: str) -> bool:
     """Send price drop email via Resend."""
     old_price = f"${kit['old_cents'] / 100:,.0f}"
     new_price = f"${kit['new_cents'] / 100:,.0f}"
+    drop_dollars = f"${(kit['old_cents'] - kit['new_cents']) / 100:,.0f}"
     savings_pct = f"{kit['pct'] * 100:.0f}"
     kit_url = f"{SITE_URL}/kits/{kit['slug']}/"
     unsub_url = f"{SITE_URL}/api/alerts/unsubscribe?token={unsub_token}"
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    html = f"""
-    <div style="font-family: system-ui, sans-serif; max-width: 500px; margin: 0 auto; background: #0a0f1a; color: #e2e8f0; padding: 24px; border-radius: 8px;">
-      <h2 style="color: #f97316; margin: 0 0 16px;">Price Drop Alert</h2>
-      <p style="margin: 0 0 8px; font-size: 18px; font-weight: 600;">{kit['name']}</p>
-      <p style="margin: 0 0 16px;">
-        <span style="color: #94a3b8; text-decoration: line-through;">{old_price}</span>
-        <span style="color: #22c55e; font-size: 24px; font-weight: 700; margin-left: 8px;">{new_price}</span>
-        <span style="color: #22c55e; font-size: 14px; margin-left: 4px;">(-{savings_pct}%)</span>
-      </p>
-      <a href="{kit_url}" style="display: inline-block; background: #f97316; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600;">View Kit</a>
-      <hr style="border: none; border-top: 1px solid #1e293b; margin: 24px 0;" />
-      <p style="font-size: 12px; color: #64748b; margin: 0;">
-        You received this because you subscribed to price alerts on OffGridEmpire.<br/>
-        <a href="{unsub_url}" style="color: #64748b;">Unsubscribe</a>
-      </p>
-    </div>
-    """
+    html = f"""<!DOCTYPE html>
+<html>
+<body style="margin:0;padding:0;background:#faf7f2;font-family:Georgia,'Times New Roman',serif;color:#1a1a1a;">
+  <div style="max-width:560px;margin:0 auto;padding:32px 24px;">
+    <p style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#8a8275;margin:0 0 24px;font-family:system-ui,sans-serif;">
+      OffGridEmpire &middot; Price observation &middot; {today}
+    </p>
+    <h1 style="font-size:22px;font-weight:500;line-height:1.3;margin:0 0 16px;color:#1a1a1a;">
+      {kit['name']} dropped {drop_dollars}.
+    </h1>
+    <p style="font-size:16px;line-height:1.6;margin:0 0 8px;color:#3a3a3a;font-family:system-ui,sans-serif;">
+      Was <span style="text-decoration:line-through;color:#8a8275;">{old_price}</span>.
+      Now <strong style="color:#1a1a1a;">{new_price}</strong> ({savings_pct}% off the prior observed price).
+    </p>
+    <p style="font-size:14px;line-height:1.6;margin:0 0 24px;color:#5a5a5a;font-family:system-ui,sans-serif;">
+      Observed by our pipeline. We don&rsquo;t verify the retailer&rsquo;s checkout price &mdash; confirm before you buy.
+    </p>
+    <p style="margin:0 0 32px;">
+      <a href="{kit_url}" style="display:inline-block;background:#1a1a1a;color:#faf7f2;padding:12px 24px;border-radius:2px;text-decoration:none;font-size:14px;font-weight:600;font-family:system-ui,sans-serif;">
+        See the full kit page &rarr;
+      </a>
+    </p>
+    <hr style="border:none;border-top:1px solid #e8e2d5;margin:32px 0;" />
+    <p style="font-size:11px;line-height:1.6;color:#8a8275;margin:0;font-family:system-ui,sans-serif;">
+      You subscribed to price alerts on this kit at offgridempire.com.<br/>
+      <a href="{unsub_url}" style="color:#8a8275;">Unsubscribe from this kit</a>
+    </p>
+  </div>
+</body>
+</html>"""
+
+    subject = f"{kit['name']}: {old_price} → {new_price}"
 
     resp = requests.post(
         "https://api.resend.com/emails",
@@ -133,7 +150,7 @@ def send_email(to: str, kit: dict, unsub_token: str) -> bool:
         json={
             "from": FROM_EMAIL,
             "to": [to],
-            "subject": f"Price drop: {kit['name']} is now {new_price} (was {old_price})",
+            "subject": subject,
             "html": html,
             "headers": {
                 "List-Unsubscribe": f"<{unsub_url}>",

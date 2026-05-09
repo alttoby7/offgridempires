@@ -5,6 +5,7 @@ import { KitCard } from "@/components/kit-card";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 
 export const dynamic = "force-static";
+export const dynamicParams = false;
 
 const BUDGETS: Record<
   string,

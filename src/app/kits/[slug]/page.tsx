@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { getKits, getKitBySlug, getKitSlugs, getKitVariants } from "@/lib/get-kits";
 import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
@@ -23,6 +24,7 @@ import { getKitsUpdated } from "@/lib/data-meta";
 import { getMatchingHub } from "@/lib/hubs";
 
 export const dynamic = "force-static";
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return getKitSlugs().map((slug) => ({ slug }));
@@ -64,14 +66,7 @@ export default async function KitDetailPage({
   const kit = getKitBySlug(slug);
 
   if (!kit) {
-    return (
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <h1 className="font-display text-2xl text-[var(--ink)]">Kit not found</h1>
-        <Link href="/kits" className="text-sm text-[var(--accent)] mt-4 inline-block">
-          ← Back to all kits
-        </Link>
-      </div>
-    );
+    notFound();
   }
 
   const missingItems = kit.items.filter((item) => !item.isIncluded);

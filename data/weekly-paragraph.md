@@ -1,0 +1,1 @@
+[Write the week's intro paragraph here. One real, human sentence or two — what stood out, what's unusual, what to ignore. The send script will skip the broadcast if this file is empty or unchanged from a placeholder. Replace this whole block before each Tuesday send.]

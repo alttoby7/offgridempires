@@ -5,6 +5,7 @@ import { getKitsUpdated } from "@/lib/data-meta";
 const footerLinks = {
   Browse: [
     { href: "/kits", label: "All kits" },
+    { href: "/this-week", label: "This week's price drops" },
     { href: "/portable-power", label: "Portable power" },
     { href: "/solar-kits", label: "DIY solar kits" },
     { href: "/whole-home", label: "Whole-home systems" },

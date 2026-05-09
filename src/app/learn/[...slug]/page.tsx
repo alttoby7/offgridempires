@@ -7,6 +7,7 @@ import { ArticleRenderer } from "@/components/article-renderer";
 import type { ArticleRecord } from "@/content/types";
 
 export const dynamic = "force-static";
+export const dynamicParams = false;
 
 // Kit field type for price resolution
 interface KitData {

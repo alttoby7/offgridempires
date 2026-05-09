@@ -188,6 +188,12 @@ export default function HomePage() {
                 </Link>
               </div>
 
+              <p className="mt-6 text-sm text-[var(--ink-soft)]">
+                <Link href="/this-week/" className="text-[var(--accent)] hover:underline font-medium">
+                  See this week&apos;s biggest price drops →
+                </Link>
+              </p>
+
               {/* Quick stats */}
               <dl className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-y-5 gap-x-4">
                 {[
