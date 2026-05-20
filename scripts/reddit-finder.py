@@ -143,11 +143,21 @@ def send_email(subject, body_html):
 def main():
     token, ua = get_token()
     if not token:
-        send_email("OGE Reddit finder needs setup",
-                   "<p>The Reddit opportunity-finder couldn't authenticate. Create a <b>script</b> app at "
-                   "<a href='https://www.reddit.com/prefs/apps'>reddit.com/prefs/apps</a>, then add "
-                   "<code>REDDIT_CLIENT_ID</code>, <code>REDDIT_CLIENT_SECRET</code>, and "
-                   "<code>REDDIT_USER_AGENT</code> to <code>/opt/offgridempire/.env</code>.</p>")
+        # Email the setup notice at most once, not every daily run.
+        marker = os.environ.get("REDDIT_SETUP_MARKER", "/opt/offgridempire/.reddit-setup-notified")
+        if not os.path.exists(marker):
+            send_email("OGE Reddit finder needs setup",
+                       "<p>The Reddit opportunity-finder couldn't authenticate. Create a <b>script</b> app at "
+                       "<a href='https://www.reddit.com/prefs/apps'>reddit.com/prefs/apps</a>, then add "
+                       "<code>REDDIT_CLIENT_ID</code>, <code>REDDIT_CLIENT_SECRET</code>, and "
+                       "<code>REDDIT_USER_AGENT</code> to <code>/opt/offgridempire/.env</code>.</p>"
+                       "<p>(You'll only get this reminder once.)</p>")
+            try:
+                open(marker, "w").close()
+            except Exception:
+                pass
+        else:
+            print("no reddit creds; setup notice already sent, skipping email")
         return
     seen = load_seen()
     now = datetime.now(timezone.utc).timestamp()
