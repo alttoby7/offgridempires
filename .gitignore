@@ -50,3 +50,4 @@ scripts/.bestsellers_cache.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+__pycache__/
