@@ -3,6 +3,7 @@ import type { ArticleRecord } from "@/content/types";
 import { ArticleKitEmbed } from "./article-kit-embed";
 import { WattsAmpsCalc } from "./watts-amps-calc";
 import { FloatingCta } from "./floating-cta";
+import { NewsletterForm } from "./ui/newsletter-form";
 import {
   Breadcrumb,
   PageTitle,
@@ -529,6 +530,22 @@ export function ArticleRenderer({ article }: { article: ArticleRecord }) {
           </div>
         </div>
       )}
+
+      {/* Price-wedge funnel — every article routes into the weekly drops digest */}
+      <div className="mt-10 rounded border border-[var(--accent)]/30 bg-[var(--bg-surface)] p-6">
+        <h2 className="font-mono text-sm uppercase tracking-wider text-[var(--accent)] mb-2">
+          Track the prices, not the hype
+        </h2>
+        <p className="text-sm text-[var(--text-secondary)] mb-4 max-w-prose">
+          We track real build costs across 400+ off-grid kits and email the biggest verified price
+          drops every week.{" "}
+          <Link href="/this-week/" className="text-[var(--accent)] hover:underline">
+            See this week&rsquo;s drops
+          </Link>
+          .
+        </p>
+        <NewsletterForm source={`learn-${article.slug}`} />
+      </div>
 
       <FloatingCta />
     </ProseContainer>
