@@ -423,6 +423,74 @@ export function getKitVariants(slug: string): Kit[] {
     .sort((a, b) => a.listedPrice - b.listedPrice);
 }
 
+// ── Variant consolidation (SEO) ─────────────────────────────────────────────
+// Kit pages that share a product (same sourceUrl base) are near-duplicate
+// configurations. We index ONE "primary" per group and noindex the rest to
+// stop thin/duplicate-content demotion. The primary is the stable "base
+// representative": prefer a base-config name hint, else the simplest config
+// (fewest words), then lowest price, then slug for determinism. We deliberately
+// do NOT pick by cheapest-first (prices thrash) or most-complete (biases to
+// long-tail bundles).
+
+const BASE_NAME_HINTS = ["main unit only", "unit only", "base"];
+
+function variantGroupKey(kit: Kit): string {
+  return kit.sourceUrl ? kit.sourceUrl.split("?")[0] : `__nourl__${kit.slug}`;
+}
+
+function compareForPrimary(a: Kit, b: Kit): number {
+  const nameA = (a.displayName ?? a.name ?? "").toLowerCase();
+  const nameB = (b.displayName ?? b.name ?? "").toLowerCase();
+  const hintA = BASE_NAME_HINTS.some((h) => nameA.includes(h)) ? 0 : 1;
+  const hintB = BASE_NAME_HINTS.some((h) => nameB.includes(h)) ? 0 : 1;
+  if (hintA !== hintB) return hintA - hintB; // base-config hint wins
+  const modsA = nameA.split(/\s+/).filter(Boolean).length;
+  const modsB = nameB.split(/\s+/).filter(Boolean).length;
+  if (modsA !== modsB) return modsA - modsB; // simplest config wins
+  const priceA = a.listedPrice || Number.MAX_SAFE_INTEGER;
+  const priceB = b.listedPrice || Number.MAX_SAFE_INTEGER;
+  if (priceA !== priceB) return priceA - priceB; // lowest price tie-break
+  return a.slug.localeCompare(b.slug); // deterministic final tie-break
+}
+
+let _primaryByGroup: Map<string, string> | null = null;
+
+function primaryByGroup(): Map<string, string> {
+  if (_primaryByGroup) return _primaryByGroup;
+  const groups = new Map<string, Kit[]>();
+  for (const k of getKits()) {
+    const key = variantGroupKey(k);
+    const arr = groups.get(key);
+    if (arr) arr.push(k);
+    else groups.set(key, [k]);
+  }
+  const map = new Map<string, string>();
+  for (const [key, arr] of groups) {
+    map.set(key, [...arr].sort(compareForPrimary)[0].slug);
+  }
+  _primaryByGroup = map;
+  return map;
+}
+
+/** The primary (indexable) kit slug for the group `slug` belongs to. */
+export function getPrimaryVariantSlug(slug: string): string | undefined {
+  const kit = getKitBySlug(slug);
+  if (!kit) return undefined;
+  return primaryByGroup().get(variantGroupKey(kit));
+}
+
+/** True if this slug is the indexable primary for its variant group. */
+export function isPrimaryVariant(slug: string): boolean {
+  const kit = getKitBySlug(slug);
+  if (!kit) return false;
+  return primaryByGroup().get(variantGroupKey(kit)) === slug;
+}
+
+/** All indexable primary kit slugs (one per product group). */
+export function getPrimaryKitSlugs(): string[] {
+  return [...primaryByGroup().values()];
+}
+
 export function getKitCounts(): Record<SystemType, number> {
   const kits = getKits();
   return {

@@ -6,6 +6,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import { articles } from "../src/content/article-registry";
+import { getPrimaryKitSlugs } from "../src/lib/get-kits";
 
 const SITE_URL = "https://offgridempire.com";
 const today = new Date().toISOString().split("T")[0];
@@ -22,8 +23,12 @@ function loadKits(): { slug: string; brand: string; lastObserved: string }[] {
     const data = JSON.parse(
       fs.readFileSync(path.join(__dirname, "../src/lib/data/kits.json"), "utf-8")
     );
+    // Only emit ONE primary URL per variant group — non-primary variants are
+    // noindex'd, so they must not appear in the sitemap.
+    const primarySlugs = new Set(getPrimaryKitSlugs());
     return data
       .filter((k: { slug: string; listedPrice?: number }) => k.listedPrice && k.listedPrice > 0)
+      .filter((k: { slug: string }) => primarySlugs.has(k.slug))
       .map((k: { slug: string; brand: string; priceObservedAt?: string; priceHistory?: { date: string }[] }) => {
         // Use the most recent real observation date — fall back to priceObservedAt or today
         let lastObserved = today;
