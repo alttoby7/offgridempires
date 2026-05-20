@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx tsx scripts/generate-sitemap.ts && next build --webpack",
+    "build": "npx tsx scripts/generate-sitemap.ts && npx tsx scripts/generate-feed.ts && next build --webpack",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "NEXT_TURBOPACK_DISABLED=1 opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "NEXT_TURBOPACK_DISABLED=1 opennextjs-cloudflare build && opennextjs-cloudflare upload",

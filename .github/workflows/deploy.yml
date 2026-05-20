@@ -29,6 +29,9 @@ jobs:
       - name: Generate sitemap
         run: npx tsx scripts/generate-sitemap.ts
 
+      - name: Generate RSS feed
+        run: npx tsx scripts/generate-feed.ts
+
       - name: Build OpenNext Worker
         run: npx opennextjs-cloudflare build
 
