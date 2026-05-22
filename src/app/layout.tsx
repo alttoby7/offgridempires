@@ -84,7 +84,7 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PGP7GKZ3ZT');`}
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());if(typeof window!=='undefined'&&window.location.hostname==='offgridempire.com'){gtag('config','G-PGP7GKZ3ZT');}`}
         </Script>
       </head>
       <body className="min-h-full flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
