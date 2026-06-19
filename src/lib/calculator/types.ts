@@ -76,6 +76,22 @@ export interface SizingResult {
   systemEfficiency: number;
 }
 
+// ── Verdicts ("what works / what won't") ────────────────────────────────────
+
+export type VerdictSeverity = "blocker" | "warning" | "ok";
+
+export interface Verdict {
+  /** Stable id, used for React keys + dedupe */
+  id: string;
+  severity: VerdictSeverity;
+  /** Plain-English headline, e.g. "Your well pump can stall a right-sized inverter" */
+  title: string;
+  /** Why it happens — the field reality the raw math misses */
+  detail: string;
+  /** What to actually do about it (omitted on "ok") */
+  fix?: string;
+}
+
 // ── Kit Match ───────────────────────────────────────────────────────────────
 
 export type FitBucket =
