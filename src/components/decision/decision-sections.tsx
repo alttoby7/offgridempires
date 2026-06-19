@@ -372,9 +372,10 @@ export function MethodologyFreshness({
       <p>
         <span className="font-semibold text-[var(--text-primary)]">Cohort:</span> {cohortLabel} →{" "}
         <span className="font-mono">{headlineCount.toLocaleString()}</span> kits clear the bar;{" "}
-        the shortlist is drawn from the{" "}
-        <span className="font-mono">{shortlistCount.toLocaleString()}</span> that ship with panels.
-        Prices auto-refresh from multiple retailers every 6 hours; this page last refreshed{" "}
+        the podium is drawn from the{" "}
+        <span className="font-mono">{shortlistCount.toLocaleString()}</span> clean, complete
+        primaries left after dropping variants and incomplete listings. Prices auto-refresh from
+        multiple retailers every 6 hours; this page last refreshed{" "}
         <span className="font-mono">{updatedAt.slice(0, 10)}</span>.
       </p>
       <p className="text-xs text-[var(--text-muted)]">
