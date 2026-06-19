@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getKits } from "@/lib/get-kits";
+import { robotsFor } from "@/lib/index-manifest";
 import { KitCard } from "@/components/kit-card";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 
@@ -70,6 +71,7 @@ export async function generateMetadata({
     title: b.title,
     description: b.description,
     alternates: { canonical: `/solar-kits/${budget}` },
+    ...robotsFor(`/solar-kits/${budget}`),
     openGraph: { title: b.title, description: b.description, url: `/solar-kits/${budget}` },
   };
 }

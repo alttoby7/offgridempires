@@ -43,7 +43,7 @@ function CostCell({ item }: { item: KitItem }) {
           <a
             href={amazonAsinUrl(item.recommendedAsin)}
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel="nofollow noopener noreferrer sponsored"
             className="inline-flex items-center gap-1 text-[10px] font-medium text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
           >
             View on Amazon

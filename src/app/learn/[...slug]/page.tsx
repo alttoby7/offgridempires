@@ -3,6 +3,7 @@ import Link from "next/link";
 import * as fs from "fs";
 import * as path from "path";
 import { getArticleSlugs } from "@/content/article-registry";
+import { robotsFor } from "@/lib/index-manifest";
 import { ArticleRenderer } from "@/components/article-renderer";
 import type { ArticleRecord } from "@/content/types";
 
@@ -123,6 +124,7 @@ export async function generateMetadata({
     title: article.metaTitle,
     description: article.metaDescription,
     alternates: { canonical: `/learn/${joinedSlug}` },
+    ...robotsFor(`/learn/${joinedSlug}`),
     openGraph: {
       title: article.metaTitle,
       description: article.metaDescription,

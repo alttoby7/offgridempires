@@ -49,7 +49,7 @@ export function ArticleKitEmbed({ slug }: { slug: string }) {
             <a
               href={affiliateUrl}
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel="nofollow noopener noreferrer sponsored"
               className="text-xs border border-[var(--accent)]/30 text-[var(--accent)] px-3 py-1.5 rounded hover:bg-[var(--accent)]/10 transition-colors whitespace-nowrap"
             >
               View on {bestOffer!.retailer} &rarr;

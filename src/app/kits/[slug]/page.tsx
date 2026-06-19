@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getKits, getKitBySlug, getKitSlugs, getKitVariants, isPrimaryVariant } from "@/lib/get-kits";
+import { getKits, getKitBySlug, getKitSlugs, getKitVariants, isIndexableKit } from "@/lib/get-kits";
 import { CompletenessBadges } from "@/components/ui/completeness-badges";
 import { PriceTimestamp } from "@/components/ui/price-timestamp";
 import { SpecBlock } from "@/components/ui/spec-block";
@@ -45,10 +45,11 @@ export async function generateMetadata({
     ? `Full component breakdown and true total cost for the ${fullName}. See what's included, what's missing, and the real price.`
     : undefined;
 
-  // Non-primary variants are near-duplicate configs of the same product —
-  // noindex,follow them so only one indexable page exists per product group.
-  // Variant pages stay rendered + crawlable for the VariantPicker UX.
-  const noindex = kit ? !isPrimaryVariant(slug) : false;
+  // Index Governor: a kit page is indexed only if it's the primary variant AND
+  // passes the quality gate (complete system w/ real BOM + price history) —
+  // cuts the indexed kit surface 107 → ~37. Non-primary + thin/accessory kits
+  // stay rendered + crawlable (VariantPicker UX, internal links) but noindex,follow.
+  const noindex = kit ? !isIndexableKit(slug) : false;
 
   return {
     title,

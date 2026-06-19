@@ -36,7 +36,7 @@ else:
 # Use OFFGRID_-prefixed credentials first, fall back to shared
 CREDENTIAL_ID = os.environ.get("OFFGRID_AMAZON_CREDENTIAL_ID") or os.environ.get("AMAZON_PA_ACCESS_KEY", "")
 CREDENTIAL_SECRET = os.environ.get("OFFGRID_AMAZON_CREDENTIAL_SECRET") or os.environ.get("AMAZON_PA_SECRET_KEY", "")
-PARTNER_TAG = os.environ.get("OFFGRID_AMAZON_PARTNER_TAG") or os.environ.get("AMAZON_PA_PARTNER_TAG", "fidohikes-20")
+PARTNER_TAG = os.environ.get("OFFGRID_AMAZON_PARTNER_TAG") or os.environ.get("AMAZON_PA_PARTNER_TAG", "offgridempire-20")
 DATABASE_URL = os.environ.get("OFFGRID_DATABASE_URL", "")
 
 REGISTRY_PATH = Path(__file__).resolve().parent / "asin_registry.json"

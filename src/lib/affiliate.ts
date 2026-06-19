@@ -6,8 +6,12 @@
  * At build time, Next.js inlines process.env.NEXT_PUBLIC_* values.
  */
 
+// OffGridEmpire's own Amazon Associates tag. The previous default was
+// `fidohikes-20` (a DIFFERENT site) — every Amazon link shipped commission to
+// the wrong account. Defaulting to OUR tag means a missing/unset env can never
+// silently leak revenue again; the env var still overrides for rotation.
 const AMAZON_TAG =
-  process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG || "fidohikes-20";
+  process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG || "offgridempire-20";
 const AWIN_ADVERTISER_ID =
   process.env.NEXT_PUBLIC_AWIN_SHOPSOLAR_ADVERTISER_ID || "";
 const AWIN_PUBLISHER_ID =
