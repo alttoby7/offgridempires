@@ -6,6 +6,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import { articles } from "../src/content/article-registry";
+import { decisionGuides } from "../src/content/decision-guide-registry";
 import { getPrimaryKitSlugs } from "../src/lib/get-kits";
 import { isIndexablePath } from "../src/lib/index-manifest";
 
@@ -192,6 +193,17 @@ function buildEntries(): SitemapEntry[] {
     });
   }
   entries.push({ loc: "/learn/watts-to-kilowatts", changefreq: "weekly", priority: 0.7, lastmod: today });
+
+  // Decision guides — only the human-approved (indexable) ones survive the
+  // isIndexablePath filter below; noindex drafts render but stay out of sitemap.
+  for (const g of decisionGuides) {
+    entries.push({
+      loc: `/guides/${g.slug}`,
+      changefreq: "weekly",
+      priority: 0.8,
+      lastmod: (g.updatedAt || today).split("T")[0],
+    });
+  }
 
   return entries;
 }

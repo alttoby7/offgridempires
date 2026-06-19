@@ -23,13 +23,16 @@ import {
   INDEX_CEILING,
 } from "../src/lib/index-manifest";
 import { getIndexableKitSlugs } from "../src/lib/get-kits";
+import { getIndexableDecisionGuideSlugs } from "../src/content/decision-guide-registry";
 
 const FLOOR = 15; // sanity floor — fewer than this means the data/gate broke
 
 const staticPaths = [...INDEXABLE_PATHS].sort();
 const kitSlugs = getIndexableKitSlugs().sort();
 const kitPaths = kitSlugs.map((s) => `/kits/${s}`);
-const total = staticPaths.length + kitPaths.length;
+// Decision guides count against the ceiling only once a human flips `indexable`.
+const guidePaths = getIndexableDecisionGuideSlugs().sort().map((s) => `/guides/${s}`);
+const total = staticPaths.length + kitPaths.length + guidePaths.length;
 
 const manifest = {
   ceiling: INDEX_CEILING,
@@ -37,16 +40,18 @@ const manifest = {
     total,
     static: staticPaths.length,
     kits: kitPaths.length,
+    guides: guidePaths.length,
   },
   static: staticPaths,
   kits: kitPaths,
+  guides: guidePaths,
 };
 
 const outPath = path.join(__dirname, "../src/lib/data/index-manifest.json");
 fs.writeFileSync(outPath, JSON.stringify(manifest, null, 2) + "\n");
 
 console.log(
-  `Index governor: ${total} indexable URLs (${staticPaths.length} static + ${kitPaths.length} kit) → ${outPath}`
+  `Index governor: ${total} indexable URLs (${staticPaths.length} static + ${kitPaths.length} kit + ${guidePaths.length} guide) → ${outPath}`
 );
 
 if (total > INDEX_CEILING) {

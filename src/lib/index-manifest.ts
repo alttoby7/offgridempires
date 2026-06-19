@@ -19,6 +19,7 @@
  */
 
 import { isIndexableKit } from "./get-kits";
+import { getIndexableDecisionGuideSlugs } from "@/content/decision-guide-registry";
 
 /**
  * Hard ceiling: the CI build (`scripts/index-governor.ts`) fails if the
@@ -94,6 +95,11 @@ export function isIndexablePath(p: string): boolean {
   const path = normalizePath(p);
   if (path.startsWith("/kits/")) {
     return isIndexableKit(path.slice("/kits/".length));
+  }
+  // Decision guides defer to the registry's per-guide `indexable` flag (default
+  // false). Flipping one to indexable is a 🔴 human-approval action.
+  if (path.startsWith("/guides/")) {
+    return getIndexableDecisionGuideSlugs().includes(path.slice("/guides/".length));
   }
   return INDEXABLE_PATHS.has(path);
 }

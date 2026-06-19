@@ -3,7 +3,8 @@
   "counts": {
     "total": 63,
     "static": 26,
-    "kits": 37
+    "kits": 37,
+    "guides": 0
   },
   "static": [
     "/",
@@ -71,5 +72,6 @@
     "/kits/summit-35.2kw-summit-max-renon-e-cube-61kwh-i-ll-handle-my-own-ra",
     "/kits/summit-35.2kw-summit-pro-renon-e-cube-61kwh-i-ll-handle-my-own-ra",
     "/kits/windynation-400w-kit-inverter-300ah"
-  ]
+  ],
+  "guides": []
 }
