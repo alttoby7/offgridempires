@@ -2,6 +2,8 @@ import { useState } from "react";
 import Link from "next/link";
 import type { LoadEntry, SystemAssumptions, SizingResult, KitMatch, FitBucket } from "@/lib/calculator/types";
 import { EFFICIENCY, BUCKET_LABELS, computeLoadWh } from "@/lib/calculator/engine";
+import { computeVerdicts, verdictCounts } from "@/lib/calculator/verdicts";
+import { VerdictCard } from "./verdict-list";
 import { PowerProfile } from "./power-profile";
 
 interface StepResultsProps {
@@ -45,6 +47,9 @@ export function StepResults({ loads, assumptions, sizing, kitMatches, shareUrl }
 
   const meetsCount = kitMatches.filter((m) => m.bucket === "meets").length;
   const nearCount = kitMatches.filter((m) => m.bucket === "near").length;
+
+  const verdicts = computeVerdicts(loads, assumptions, sizing);
+  const { blockers, warnings } = verdictCounts(verdicts);
 
   return (
     <div>
@@ -90,6 +95,33 @@ export function StepResults({ loads, assumptions, sizing, kitMatches, shareUrl }
           </div>
         ))}
       </div>
+
+      {/* Will this actually work? — the honest verdict layer */}
+      {verdicts.length > 0 && (
+        <div className="mb-8">
+          <div className="flex items-baseline justify-between gap-2 mb-3">
+            <h3 className="text-base font-semibold text-[var(--text-primary)]">
+              Will this actually work?
+            </h3>
+            <span className="text-xs text-[var(--text-muted)]">
+              {blockers > 0
+                ? `${blockers} dealbreaker${blockers !== 1 ? "s" : ""}${warnings > 0 ? `, ${warnings} to watch` : ""}`
+                : warnings > 0
+                ? `${warnings} thing${warnings !== 1 ? "s" : ""} to watch`
+                : "No red flags"}
+            </span>
+          </div>
+          <p className="text-xs text-[var(--text-muted)] mb-4 max-w-2xl">
+            The math above sizes the system. This is what the numbers don&apos;t show — the
+            real-world ways a setup like yours stalls, fails early, or quietly drains the bank.
+          </p>
+          <div className="space-y-2">
+            {verdicts.map((v) => (
+              <VerdictCard key={v.id} verdict={v} />
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Share power profile */}
       <PowerProfile

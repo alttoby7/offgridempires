@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { getKits } from "@/lib/get-kits";
+import { robotsFor } from "@/lib/index-manifest";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { CategoryBrowser } from "@/components/category-browser";
 import { DataFooter } from "@/components/ui/data-footer";
@@ -55,6 +56,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: `/categories/${category}` },
+    ...robotsFor(`/categories/${category}`),
     openGraph: {
       title,
       description,

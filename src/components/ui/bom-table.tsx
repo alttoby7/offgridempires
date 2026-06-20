@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { KitItem } from "@/lib/demo-data";
+import { buildAffiliateUrl } from "@/lib/affiliate";
 
 function StatusIcon({ included }: { included: boolean }) {
   if (included) {
@@ -22,10 +23,12 @@ function StatusIcon({ included }: { included: boolean }) {
   );
 }
 
-const AFFILIATE_TAG = "fidohikes-20";
-
-function buildAffiliateUrl(asin: string): string {
-  return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_TAG}`;
+function amazonAsinUrl(asin: string): string {
+  // Route through the central affiliate logic so the tag lives in one place.
+  return (
+    buildAffiliateUrl(`https://www.amazon.com/dp/${asin}`, "amazon") ??
+    `https://www.amazon.com/dp/${asin}`
+  );
 }
 
 function CostCell({ item }: { item: KitItem }) {
@@ -38,9 +41,9 @@ function CostCell({ item }: { item: KitItem }) {
         <span className="font-mono text-xs font-semibold text-[var(--danger)]">~${item.estimatedCost.toLocaleString()}</span>
         {item.recommendedAsin && (
           <a
-            href={buildAffiliateUrl(item.recommendedAsin)}
+            href={amazonAsinUrl(item.recommendedAsin)}
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel="nofollow noopener noreferrer sponsored"
             className="inline-flex items-center gap-1 text-[10px] font-medium text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
           >
             View on Amazon

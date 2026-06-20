@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getKits } from "@/lib/get-kits";
+import { robotsFor } from "@/lib/index-manifest";
 import { KitCard } from "@/components/kit-card";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { DataFooter } from "@/components/ui/data-footer";
@@ -89,6 +90,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: `/brands/${brand}` },
+    ...robotsFor(`/brands/${brand}`),
     openGraph: { title, description, url: `/brands/${brand}` },
   };
 }

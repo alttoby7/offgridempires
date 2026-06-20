@@ -16,7 +16,9 @@ const CATEGORY_ROLES: Record<string, string[]> = {
   generators: ["Inverter"],
 };
 
-const AFFILIATE_TAG = "fidohikes-20";
+// OffGridEmpire's own Amazon tag — never default to another site's tag.
+const AFFILIATE_TAG =
+  process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG || "offgridempire-20";
 
 // ── Types ────────────────────────────────────────────────────────────────────
 

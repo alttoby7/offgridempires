@@ -134,7 +134,7 @@ export function RetailerListings({ offers, kitName }: RetailerListingsProps) {
                   <a
                     href={offer.sourceUrl}
                     target="_blank"
-                    rel="noopener noreferrer sponsored"
+                    rel="nofollow noopener noreferrer sponsored"
                     className={`
                       inline-flex items-center gap-1 px-3 py-1.5 text-xs font-semibold
                       border rounded-sm transition-all duration-150
@@ -218,7 +218,7 @@ export function RetailerListings({ offers, kitName }: RetailerListingsProps) {
                     <a
                       href={offer.sourceUrl}
                       target="_blank"
-                      rel="noopener noreferrer sponsored"
+                      rel="nofollow noopener noreferrer sponsored"
                       className={`
                         mt-1 inline-flex items-center gap-1 px-2.5 py-1 text-[11px] font-semibold
                         border rounded-sm transition-all duration-150

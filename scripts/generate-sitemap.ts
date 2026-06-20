@@ -6,7 +6,9 @@
 import * as fs from "fs";
 import * as path from "path";
 import { articles } from "../src/content/article-registry";
+import { decisionGuides } from "../src/content/decision-guide-registry";
 import { getPrimaryKitSlugs } from "../src/lib/get-kits";
+import { isIndexablePath } from "../src/lib/index-manifest";
 
 const SITE_URL = "https://offgridempire.com";
 const today = new Date().toISOString().split("T")[0];
@@ -192,6 +194,17 @@ function buildEntries(): SitemapEntry[] {
   }
   entries.push({ loc: "/learn/watts-to-kilowatts", changefreq: "weekly", priority: 0.7, lastmod: today });
 
+  // Decision guides — only the human-approved (indexable) ones survive the
+  // isIndexablePath filter below; noindex drafts render but stay out of sitemap.
+  for (const g of decisionGuides) {
+    entries.push({
+      loc: `/guides/${g.slug}`,
+      changefreq: "weekly",
+      priority: 0.8,
+      lastmod: (g.updatedAt || today).split("T")[0],
+    });
+  }
+
   return entries;
 }
 
@@ -212,8 +225,15 @@ ${urls}
 `;
 }
 
-const entries = buildEntries();
+// INDEX GOVERNOR: emit ONLY URLs the manifest approves (and only kit pages that
+// pass the quality gate). Everything else — thin brand/category/budget/archive
+// pages, non-kept hubs/learn/best-for — is dropped from the sitemap (and renders
+// noindex,follow). This is what takes the sitemap 197 → ~25-40.
+const allEntries = buildEntries();
+const entries = allEntries.filter((e) => isIndexablePath(e.loc));
 const xml = toXml(entries);
 const outPath = path.join(__dirname, "../public/sitemap.xml");
 fs.writeFileSync(outPath, xml);
-console.log(`Sitemap generated: ${entries.length} URLs → ${outPath}`);
+console.log(
+  `Sitemap generated: ${entries.length} URLs (governed; dropped ${allEntries.length - entries.length} non-indexable) → ${outPath}`
+);

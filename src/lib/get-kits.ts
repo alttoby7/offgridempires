@@ -491,6 +491,54 @@ export function getPrimaryKitSlugs(): string[] {
   return [...primaryByGroup().values()];
 }
 
+// ─── Index Governor: kit-page quality gate ──────────────────────────────────
+// A kit page earns the right to be INDEXED only if it is a complete,
+// self-contained off-grid SYSTEM with the decision-grade evidence the moat is
+// built on (real BOM, real price history, panel+storage+inverter). This cuts
+// the indexed kit surface 107 → ~37 and is the #1 recovery lever after the
+// 2026-04-28 thin-programmatic-catalog demotion. See growth-system/inputs/
+// kit-page-audit.md. The gate is deterministic on kits.json; any kit entering
+// or leaving the indexed set is a human-approval event (the daily briefing
+// proposes, a human approves — automation never auto-flips an index decision).
+
+const TRICKLE_RE = /trickle|maintainer|battery tender/i;
+
+/** Accessory / bare component, not a buyable off-grid SYSTEM. */
+function isAccessoryLike(k: Kit): boolean {
+  if (TRICKLE_RE.test(k.name ?? "")) return true;
+  const pw = k.panelWatts ?? 0,
+    sw = k.storageWh ?? 0,
+    iw = k.inverterWatts ?? 0;
+  // a bare panel / bare inverter / sub-100W toy is not a system
+  if (pw < 100 && sw < 300 && iw < 100) return true;
+  return false;
+}
+
+/** TRUE => this kit is substantive enough to deserve indexation. */
+export function passesIndexQualityGate(k: Kit): boolean {
+  if (!(k.listedPrice > 0)) return false; // priced (real build-cost receipt)
+  if ((k.completeness ?? 0) < 51) return false; // ≥51% complete
+  if (!k.items || k.items.length < 5) return false; // real BOM
+  if (!k.priceHistory || k.priceHistory.length < 6) return false; // real 6-mo history
+  if (isAccessoryLike(k)) return false; // not a component/toy
+  const specs = [k.panelWatts > 0, k.storageWh > 0, k.inverterWatts > 0].filter(
+    Boolean
+  ).length;
+  if (specs < 3) return false; // self-contained: panel + storage + inverter
+  return true;
+}
+
+/** Final robots gate for a kit page: primary variant AND passes the quality gate. */
+export function isIndexableKit(slug: string): boolean {
+  const k = getKitBySlug(slug);
+  return !!k && isPrimaryVariant(slug) && passesIndexQualityGate(k);
+}
+
+/** All kit slugs that should be indexed (primary + passes quality gate). */
+export function getIndexableKitSlugs(): string[] {
+  return getPrimaryKitSlugs().filter((slug) => isIndexableKit(slug));
+}
+
 export function getKitCounts(): Record<SystemType, number> {
   const kits = getKits();
   return {
