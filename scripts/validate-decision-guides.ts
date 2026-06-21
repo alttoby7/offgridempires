@@ -23,6 +23,7 @@ import {
   getDecisionGuideSlugs,
 } from "../src/content/decision-guide-registry";
 import { getResolvedDecisionGuide } from "../src/lib/decision/resolve";
+import { checkClaims } from "../src/lib/decision/check-claims";
 import type { DecisionGuideMeta } from "../src/lib/decision/types";
 
 const STRICT = process.argv.includes("--strict");
@@ -70,6 +71,7 @@ function main() {
   let resolveErrors = 0;
   let lintHits = 0;
   let leftoverHits = 0;
+  let claimErrors = 0;
 
   for (const slug of slugs) {
     // 1. VALIDATE — resolution must not throw.
@@ -85,6 +87,14 @@ function main() {
       resolveErrors++;
       console.error(`✗ [${slug}] not found`);
       continue;
+    }
+
+    // 1b. CLAIMS — superlative/comparative assertions must hold vs live data.
+    try {
+      checkClaims(resolved.rawMeta, resolved.picks);
+    } catch (e) {
+      claimErrors++;
+      console.error(`✗ [${slug}] ${(e as Error).message}`);
     }
 
     // Assert no markers survived resolution.
@@ -109,11 +119,11 @@ function main() {
   }
 
   console.log(
-    `\nGuides: ${slugs.length} | resolve errors: ${resolveErrors} | unresolved markers: ${leftoverHits} | lint hits: ${lintHits}`
+    `\nGuides: ${slugs.length} | resolve errors: ${resolveErrors} | claim errors: ${claimErrors} | unresolved markers: ${leftoverHits} | lint hits: ${lintHits}`
   );
 
-  if (resolveErrors > 0 || leftoverHits > 0) {
-    console.error("FAILED — resolution/marker errors must be fixed.");
+  if (resolveErrors > 0 || claimErrors > 0 || leftoverHits > 0) {
+    console.error("FAILED — resolution / false-claim / marker errors must be fixed.");
     process.exit(1);
   }
   if (lintHits > 0 && STRICT) {

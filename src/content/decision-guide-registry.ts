@@ -42,7 +42,7 @@ export const decisionGuides: DecisionGuideMeta[] = [
         kitSlug: "ecoflow-delta2max-400w",
         label: "Best value",
         rationale:
-          "The literal answer to the question. The 2,400W pure-sine inverter clears a fridge's ~1,200–1,800W startup surge with margin, the 2,048Wh battery runs a typical 150W-cycling fridge roughly 24–36 hours with no sun, and at {p1.costPerWh} it's the cheapest complete, surge-clearing kit in the pool. If you want full access at the lowest price, start here.",
+          "The literal answer to the question. The 2,400W pure-sine inverter clears a fridge's ~1,200–1,800W startup surge with margin, the 2,048Wh battery runs a typical 150W-cycling fridge roughly 24–36 hours with no sun, and at {p1.listedPrice} it's the lowest-priced complete, panel-included pick that clears the surge bar — nothing left to buy. The #2 pick stores more per dollar, but if you want a covered fridge at the lowest sticker price, start here.",
         cta: true,
       },
       {
@@ -134,9 +134,15 @@ Need the next size up, or want to compare side by side? See the [2,000W solar ki
           "Yes — but plan for the combined cycling load (often 2.5–3.5 kWh/day) and the simultaneous surges. A kit with ~5 kWh of storage, a 3,000W+ inverter, and 1,000W+ of panels (like our autonomy pick) handles both comfortably; a 2,000W single-fridge unit will be marginal.",
       },
     ],
+    claims: [
+      { pick: "p1", metric: "listedPrice", direction: "lowest", among: ["p1", "p2", "p5"], note: "#1 lowest-priced complete, panel-included pick" },
+      { pick: "p2", metric: "costPerWh", direction: "lowest", note: "#2 most autonomy per dollar (lowest $/Wh)" },
+      { pick: "p2", metric: "storageWh", direction: "highest", note: "#2 most storage (5,120Wh)" },
+      { pick: "p2", metric: "inverterWatts", direction: "highest", note: "#2 autonomy pick at 5,000W" },
+    ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: true, // ✅ FLIPPED 2026-06-21 — pilot money page; tokenized + claim-verified, audited GO
   },
 
   // ── #2 (Tier 1) — solar generator for a well pump ───────────────────────────
@@ -265,6 +271,12 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
         answer:
           "Only if it outputs true 120/240V split-phase. A single Anker F3800 is 120V unless you pair two on a Double Voltage Hub; the EG4 6000XP-based kits are natively 240V. For a hardwired 240V pump you'll also need a manual transfer switch or generator interlock (about [[const:$150–$400]] installed) — that's the one part the kit itself doesn't include.",
       },
+    ],
+    claims: [
+      { pick: "p1", metric: "inverterWatts", direction: "highest", note: "#1 at 7,500W vs 6,000W rest" },
+      { pick: "p2", metric: "costPerWh", direction: "lowest", note: "#2 best value on the board" },
+      { pick: "p2", metric: "storageWh", direction: "highest", note: "#2 biggest bank (14,300Wh)" },
+      { pick: "p3", metric: "listedPrice", direction: "lowest", note: "#3 cheapest / lowest-priced kit here" },
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
@@ -398,6 +410,13 @@ We flag exactly which line items each kit includes versus omits from its own BOM
           "It can keep a fridge topped up over a full day, but not on the panel alone — you need a battery to ride through cycling and the night. A 400W array generates roughly 1.5–2 kWh on a good day, which covers a typical fridge's ~1.2–1.8 kWh/day, but only if it's paired with 2 kWh+ of storage and a 2,000W+ pure-sine inverter to clear the compressor's startup surge. Three of our five cabin picks are exactly 400W-panel systems.",
       },
     ],
+    claims: [
+      { pick: "p1", metric: "costPerWh", direction: "lowest", note: "#1 most battery per dollar (lowest $/Wh)" },
+      { pick: "p3", metric: "completeness", direction: "highest", note: "#3 completeness 100, highest in cohort" },
+      { pick: "p3", metric: "costPerWh", direction: "highest", note: "#3 priciest per watt-hour here" },
+      { pick: "p5", metric: "listedPrice", direction: "lowest", note: "#5 cheapest path / lowest outlay" },
+      { pick: "p2", metric: "listedPrice", direction: "highest", note: "FAQ price-range top end" },
+    ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
     indexable: false, // 🔴 human flip required to index
@@ -497,7 +516,7 @@ See how we derive these verdicts in our [methodology](/methodology).`,
         body: `The podium leads with the **hardwired** pick (true off-grid coach power) and then ranks the **plug-and-play** stations. They're different buyers, so the table says so out loud:
 
 - **#1 Renogy 400W** — the only complete hardwired LiFePO4 kit in the cohort. Buy this if you want power permanently wired into the coach.
-- **#2 EcoFlow Delta 2 Max** — lowest cost-per-Wh in the cohort ({p2.costPerWh}). The plug-and-play value anchor.
+- **#2 EcoFlow Delta 2 Max** — lowest cost-per-Wh of the complete picks ({p2.costPerWh}). The plug-and-play value anchor.
 - **#3 Bluetti AC180P double-kit** — mid-coach, extra panel wattage for shaded parking.
 - **#4 Anker C1000 (main unit only)** — cheapest door in; ships without a panel, so you add the array.
 - **#5 Anker C2000** — most inverter headroom of the plug-and-play picks for a bigger coach.
@@ -546,6 +565,12 @@ Budget roughly **[[const:$250–$600]]** of integration parts on top of a hardwi
         answer:
           "For most coaches, target 1,000–2,560Wh of LiFePO4 storage and an 1,800–2,400W pure-sine inverter. Around 1,024Wh suits a weekender running lights, fans, charging, and microwave bursts; 1,440–2,048Wh covers a full boondock day with margin; 2,560Wh gives the most headroom and supports a permanent hardwired install. Size it to your actual loads with the load calculator.",
       },
+    ],
+    claims: [
+      { pick: "p2", metric: "costPerWh", direction: "lowest", among: ["p1", "p2", "p3", "p5"], note: "#2 lowest $/Wh of the complete (panel-included) picks" },
+      { pick: "p1", metric: "costPerWh", direction: "highest", note: "whyWon $/Wh range ceiling ($0.74/Wh)" },
+      { pick: "p1", metric: "completeness", direction: "highest", note: "#1 only complete hardwired kit, 100/100" },
+      { pick: "p1", metric: "storageWh", direction: "highest", note: "#1 2,560Wh most all-day headroom" },
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
@@ -680,6 +705,13 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
           "LiFePO4. It lasts roughly twice as many cycles as AGM at a similar price, holds charge for months between visits, and handles deep daily discharge without damage. Every pick on this shortlist is LiFePO4 — we skipped AGM kits like the WindyNation 400W because the cycle-life math doesn't favor them for a shed.",
       },
     ],
+    claims: [
+      { pick: "p1", metric: "costPerWh", direction: "lowest", among: ["p1", "p2"], note: "#2 'a hair above the Anker' — p1 < p2 $/Wh" },
+      { pick: "p1", metric: "listedPrice", direction: "lowest", among: ["p1", "p2", "p3", "p5"], note: "#1 cheapest complete setup" },
+      { pick: "p5", metric: "costPerWh", direction: "lowest", note: "#5 cheapest real storage in the cohort" },
+      { pick: "p5", metric: "inverterWatts", direction: "highest", note: "#5 most surge headroom on the shortlist" },
+      { pick: "p5", metric: "storageWh", direction: "highest", note: "#5 most battery — no other kit here" },
+    ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
     indexable: false, // 🔴 human flip required to index
@@ -719,15 +751,15 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
       },
       {
         kitSlug: "jackery-2000plus-4085wh-2x200w",
-        label: "Most runtime per dollar",
+        label: "Best for runtime",
         rationale:
-          "The value buy for the longest fridge runtime. At 4,085Wh and {p2.costPerWh} it has the most raw storage on the podium, and its 3,000W pure-sine inverter still clears the surge gate. It's also sitting at its all-time-low price right now — the best dollars-per-fridge-hour on the board if you want runtime over modularity.",
+          "The value buy for long fridge runtime in a complete, panel-included unit. At 4,085Wh and {p2.costPerWh} it carries the most raw storage of the three complete picks, and its 3,000W pure-sine inverter clears the surge gate. It's also sitting at its 6-month-low price right now — the strongest buy-now signal on the board if you want proven runtime in a unit that ships ready to recharge. (The unit-only #5 packs more watt-hours per dollar, but arrives without panels.)",
       },
       {
         kitSlug: "ecoflow-delta-pro-400w",
-        label: "Biggest surge headroom",
+        label: "Best for surge stacking",
         rationale:
-          "The surge king, and the pick if your well, sump, and furnace blower can stack-start at the same instant. Its 3,600W inverter is the largest here, and at {p3.costPerW} it's also the cheapest watt on the board. 3,600Wh of LiFePO4 keeps the fridge cold while leaving inverter overhead for a simultaneous motor inrush.",
+          "The surge pick if your well, sump, and furnace blower can stack-start at the same instant. Its 3,600W inverter is the largest of the three complete picks, and at {p3.costPerW} it's the cheapest watt among them. 3,600Wh of LiFePO4 keeps the fridge cold while leaving inverter overhead for a simultaneous motor inrush.",
       },
       {
         kitSlug: "ecoflow-11kw-ecoflow-delta-delta-3-ultra-plus-main-unit-only",
@@ -809,6 +841,14 @@ None of that is a price-hiding trick — it's the difference between "rides out 
         answer:
           "Yes, but size for the worst case. A sump pump pulls ~800–1,050W running with ~2× inrush, and you need it most during multi-day storms when there's no sun to recharge — so you want real inverter surge headroom and 2–3 days of LiFePO4 autonomy. That autonomy gate is exactly what our podium is filtered to clear.",
       },
+    ],
+    claims: [
+      { pick: "p1", metric: "costPerWh", direction: "highest", note: "#1 'you pay a premium' (highest $/Wh)" },
+      { pick: "p2", metric: "storageWh", direction: "highest", among: ["p1", "p2", "p3"], note: "#2 most storage of the three complete picks" },
+      { pick: "p3", metric: "inverterWatts", direction: "highest", among: ["p1", "p2", "p3"], note: "#3 largest inverter of the complete picks" },
+      { pick: "p3", metric: "costPerW", direction: "lowest", among: ["p1", "p2", "p3"], note: "#3 cheapest watt of the complete picks" },
+      { pick: "p4", metric: "listedPrice", direction: "lowest", among: ["p3", "p4"], note: "#4 cheapest 3,600W entry" },
+      { pick: "p5", metric: "costPerWh", direction: "lowest", note: "#5 lowest $/Wh here / most capacity per dollar" },
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",

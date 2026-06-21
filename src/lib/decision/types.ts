@@ -34,6 +34,42 @@ export interface PodiumPick {
   cta?: boolean;
 }
 
+/**
+ * A build-time SUPERLATIVE/COMPARATIVE assertion. The token resolver keeps the
+ * NUMBERS in prose live; a GuideClaim keeps a COMPARISON in prose true. e.g. a
+ * rationale that calls a pick "the lowest cost-per-Wh" is backed by
+ * `{ pick: "p5", metric: "costPerWh", direction: "lowest" }`; if the price cron
+ * later makes another pick cheaper, the build FAILS instead of the page quietly
+ * lying. (This is Phase 2 — it catches what the naked-literal lint cannot: a
+ * claim that is false not because a number is stale but because the RANK moved.)
+ *
+ * Scope is the podium by default. `among` narrows it to a subset of picks — use
+ * it for claims qualified to e.g. "the complete picks" (exclude the main-unit-
+ * only ones). Ties are allowed: the pick must BE a min/max, not strictly beat
+ * every other. Cohort-wide superlatives ("lowest in all 65") are NOT enforceable
+ * here — keep those qualified in prose and verify by hand before flipping.
+ */
+export interface GuideClaim {
+  /** Pick id the claim is about: "p1".."pN" (1-based, p1 = picks[0]). */
+  pick: string;
+  /** Which numeric kit metric the superlative is over. */
+  metric:
+    | "costPerWh"
+    | "costPerW"
+    | "listedPrice"
+    | "trueCost"
+    | "missingCost"
+    | "storageWh"
+    | "inverterWatts"
+    | "completeness";
+  /** "lowest" → pick must be the minimum; "highest" → the maximum. */
+  direction: "lowest" | "highest";
+  /** Optional subset of pick ids to compare within (default: all picks). */
+  among?: string[];
+  /** Human note tying the claim to the prose it guards (for error messages). */
+  note?: string;
+}
+
 export interface GuideSection {
   heading: string;
   /** Light markdown: paragraphs, **bold**, [text](/internal-path), "- " bullets. */
@@ -78,6 +114,13 @@ export interface DecisionGuideMeta {
   whyWon: string[];
   whyFailed: string[];
   faqs: { question: string; answer: string }[];
+
+  /**
+   * Build-time superlative assertions guarding the comparative claims in the
+   * prose above (e.g. "the lowest cost-per-Wh", "the most storage"). Optional,
+   * but every clean podium-scoped superlative SHOULD have one. See GuideClaim.
+   */
+  claims?: GuideClaim[];
 
   // ── freshness + gate ──
   publishedAt: string;
