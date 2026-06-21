@@ -168,38 +168,38 @@ Need the next size up, or want to compare side by side? See the [2,000W solar ki
         kitSlug: "core-3.2kw-core-pro",
         label: "Best surge headroom",
         rationale:
-          "The cleanest answer to a well pump's startup problem. Its 7,500W continuous inverter swallows a 3,500W locked-rotor spike with more than 2× headroom — the pump never even nudges the inverter's ceiling on a start. 10,000Wh of LiFePO4 rides a pump's daily duty cycle plus the fridge and freezer that almost always run alongside it, and at $0.60/Wh it lands mid-pack on price for far more inverter than the field. If you want one box that just won't trip, this is it.",
+          "The cleanest answer to a well pump's startup problem. Its 7,500W continuous inverter swallows a 3,500W locked-rotor spike with more than 2× headroom — the pump never even nudges the inverter's ceiling on a start. 10,000Wh of LiFePO4 rides a pump's daily duty cycle plus the fridge and freezer that almost always run alongside it, and at {p1.costPerWh} it lands mid-pack on price for far more inverter than the field. If you want one box that just won't trip, this is it.",
         cta: true,
       },
       {
         kitSlug: "prime-4.4kw-prime-plus-eg4-wallmount-indoor-14-3kwh-budget-frie",
         label: "Best value / native 240V",
         rationale:
-          "Built on the EG4 6000XP, a 6,000W 120/240V split-phase inverter — so it runs a 240V deep submersible directly, no hub or workaround. At $0.51/Wh it is the best value on the board and ships the biggest bank in the group at 14,300Wh, enough for a homestead where the pump is one load among many. If your pump is 240V and hardwired, start here.",
+          "Built on the EG4 6000XP, a 6,000W 120/240V split-phase inverter — so it runs a 240V deep submersible directly, no hub or workaround. At {p2.costPerWh} it is the best value on the board and ships the biggest bank in the group at 14,300Wh, enough for a homestead where the pump is one load among many. If your pump is 240V and hardwired, start here.",
       },
       {
         kitSlug: "anker-3200w-plus-1-x-f3800p-main-unit",
         label: "Cheapest that clears the inrush",
         rationale:
-          "The lowest-priced kit here that still beats the startup spike: the F3800's 6,000W surge clears a 3,500W locked-rotor inrush with room to spare, and it puts out both 120V and 240V. At $2,299 it's the entry point for grid-down well backup. The trade-off is the 3,840Wh bank — it's a backup unit for outages, not whole-house autonomy, and a single F3800 needs the Double Voltage Hub for a true 240V well.",
+          "The lowest-priced kit here that still beats the startup spike: the F3800's 6,000W surge clears a 3,500W locked-rotor inrush with room to spare, and it puts out both 120V and 240V. At {p3.listedPrice} it's the entry point for grid-down well backup. The trade-off is the 3,840Wh bank — it's a backup unit for outages, not whole-house autonomy, and a single F3800 needs the Double Voltage Hub for a true 240V well.",
       },
       {
         kitSlug: "anker-6400w-plus-2-x-f3800p-double-voltage-hub",
         label: "Portable 240V, bigger bank",
         rationale:
-          "Two F3800 units on the Double Voltage Hub give you true split-phase 240V plus 7,680Wh — a plug-and-play 240V well backup with no electrician for the unit itself. The 6,000W inverter clears the inrush, and at $0.62/Wh it's the practical pick when you want 240V capability without hardwiring a wall-mount. Skip the single F3800 (#3) for a 240V submersible and buy this instead.",
+          "Two F3800 units on the Double Voltage Hub give you true split-phase 240V plus 7,680Wh — a plug-and-play 240V well backup with no electrician for the unit itself. The 6,000W inverter clears the inrush, and at {p4.costPerWh} it's the practical pick when you want 240V capability without hardwiring a wall-mount. Skip the single F3800 (#3) for a 240V submersible and buy this instead.",
       },
       {
         kitSlug: "prime-4.4kw-prime-plus-alpha-5-pro-10-2kwh-budget-friendly-open",
         label: "Hardwire, mid bank",
         rationale:
-          "The same EG4 6000XP split-phase platform as #2 with a 10,200Wh bank — a 6,000W native-240V inverter that runs a submersible directly, sized for a household that doesn't need the full 14kWh. At $0.63/Wh it's a fair alternate to the WallMount when you want a different battery format. One caveat: it's currently sitting near its 6-month high, so watch the buy/wait note before pulling the trigger.",
+          "The same EG4 6000XP split-phase platform as #2 with a 10,200Wh bank — a 6,000W native-240V inverter that runs a submersible directly, sized for a household that doesn't need the full 14kWh. At {p5.costPerWh} it's a fair alternate to the WallMount when you want a different battery format. One caveat: it's currently sitting near its 6-month high, so watch the buy/wait note before pulling the trigger.",
       },
     ],
     receiptMode: "autonomy",
     effectiveLoadWatts: 750,
     receiptNote:
-      "Here's the honest part: all five picks are component-complete integrated systems — **missing-parts cost is $0, there's no hidden BOM surcharge to make the kit itself work**. So the receipt here isn't about padding the price; it's about **runtime** (how many pump-and-fridge hours your money buys) and the one thing the kit doesn't include: the **pump tie-in**. For a hardwired 240V submersible that's a manual transfer switch or generator interlock (≈$150–$400, electrician install) plus appropriately-rated cable — see the gap-closing BOM below. The kit price is real and complete; the pump-connection parts are the gap.",
+      "Here's the honest part: all five picks are component-complete integrated systems — **missing-parts cost is [[const:$0]], there's no hidden BOM surcharge to make the kit itself work**. So the receipt here isn't about padding the price; it's about **runtime** (how many pump-and-fridge hours your money buys) and the one thing the kit doesn't include: the **pump tie-in**. For a hardwired 240V submersible that's a manual transfer switch or generator interlock (≈[[const:$150–$400]], electrician install) plus appropriately-rated cable — see the gap-closing BOM below. The kit price is real and complete; the pump-connection parts are the gap.",
     sections: [
       {
         heading: "The load profile: what a well pump actually pulls",
@@ -233,8 +233,8 @@ Be opinionated about voltage: if you have a **240V deep submersible**, **skip th
         body: `These kits are component-complete — panel, battery, inverter, controller and cabling are in the box, so there's no missing-parts surcharge ([how we calculate that](/how-real-build-cost-is-calculated)). The real "still need to buy" is the **pump tie-in**, which no power station includes:
 
 - **120V power station path** — if your pump and its pressure-control are 120V, nothing extra. **Verify the pump voltage first.**
-- **240V submersible path** — confirm the inverter is **120/240V split-phase** (#2 and #4 are; a single F3800 is 120V unless hubbed), then add a **manual transfer switch or generator interlock kit** (~$150–$400, electrician install) and appropriately-rated cable (e.g. an L14-30 path for portables).
-- **Soft-start option** — if you keep a smaller inverter, a **CSCR control box / soft starter** on the pump (~$80–$250) cuts the inrush — straight from the verdict note's fix.
+- **240V submersible path** — confirm the inverter is **120/240V split-phase** (#2 and #4 are; a single F3800 is 120V unless hubbed), then add a **manual transfer switch or generator interlock kit** (~[[const:$150–$400]], electrician install) and appropriately-rated cable (e.g. an L14-30 path for portables).
+- **Soft-start option** — if you keep a smaller inverter, a **CSCR control box / soft starter** on the pump (~[[const:$80–$250]]) cuts the inrush — straight from the verdict note's fix.
 
 Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), and re-check your numbers in the [calculator](/calculator) after you add the pump and its companions. Prices on the kits come from multi-retailer tracking — see [data sources](/data-sources).`,
       },
@@ -263,7 +263,7 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
       {
         question: "Will a portable power station run my 240V submersible well pump?",
         answer:
-          "Only if it outputs true 120/240V split-phase. A single Anker F3800 is 120V unless you pair two on a Double Voltage Hub; the EG4 6000XP-based kits are natively 240V. For a hardwired 240V pump you'll also need a manual transfer switch or generator interlock (about $150–$400 installed) — that's the one part the kit itself doesn't include.",
+          "Only if it outputs true 120/240V split-phase. A single Anker F3800 is 120V unless you pair two on a Double Voltage Hub; the EG4 6000XP-based kits are natively 240V. For a hardwired 240V pump you'll also need a manual transfer switch or generator interlock (about [[const:$150–$400]] installed) — that's the one part the kit itself doesn't include.",
       },
     ],
     publishedAt: "2026-06-19T00:00:00Z",
@@ -714,26 +714,26 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
         kitSlug: "bluetti-ac300-b300k-pv350",
         label: "Best all-round",
         rationale:
-          "The editor's pick because it clears every load on this page with margin. A true 3,000W pure-sine inverter swallows the fridge, furnace-blower, and sump-pump surges without flinching, and 2,764Wh of LiFePO4 carries the cycling load through a long outage. It's modular too — add a B300 expansion battery later for multi-day storm autonomy. You pay a premium at $0.83/Wh, but you're buying surge headroom plus the option to grow.",
+          "The editor's pick because it clears every load on this page with margin. A true 3,000W pure-sine inverter swallows the fridge, furnace-blower, and sump-pump surges without flinching, and 2,764Wh of LiFePO4 carries the cycling load through a long outage. It's modular too — add a B300 expansion battery later for multi-day storm autonomy. You pay a premium at {p1.costPerWh}, but you're buying surge headroom plus the option to grow.",
         cta: true,
       },
       {
         kitSlug: "jackery-2000plus-4085wh-2x200w",
         label: "Most runtime per dollar",
         rationale:
-          "The value buy for the longest fridge runtime. At 4,085Wh and $0.49/Wh it has the most raw storage on the podium, and its 3,000W pure-sine inverter still clears the surge gate. It's also sitting at its all-time-low price right now — the best dollars-per-fridge-hour on the board if you want runtime over modularity.",
+          "The value buy for the longest fridge runtime. At 4,085Wh and {p2.costPerWh} it has the most raw storage on the podium, and its 3,000W pure-sine inverter still clears the surge gate. It's also sitting at its all-time-low price right now — the best dollars-per-fridge-hour on the board if you want runtime over modularity.",
       },
       {
         kitSlug: "ecoflow-delta-pro-400w",
         label: "Biggest surge headroom",
         rationale:
-          "The surge king, and the pick if your well, sump, and furnace blower can stack-start at the same instant. Its 3,600W inverter is the largest here, and at $4.50/W it's also the cheapest watt on the board. 3,600Wh of LiFePO4 keeps the fridge cold while leaving inverter overhead for a simultaneous motor inrush.",
+          "The surge king, and the pick if your well, sump, and furnace blower can stack-start at the same instant. Its 3,600W inverter is the largest here, and at {p3.costPerW} it's also the cheapest watt on the board. 3,600Wh of LiFePO4 keeps the fridge cold while leaving inverter overhead for a simultaneous motor inrush.",
       },
       {
         kitSlug: "ecoflow-11kw-ecoflow-delta-delta-3-ultra-plus-main-unit-only",
         label: "Most expandable",
         rationale:
-          "The future-proof pick: a 3,600W inverter and 3,072Wh base unit that expands toward 11kWh as your storm-autonomy needs grow. At $1,499 it's the cheapest 3,600W entry on the podium ($0.49/Wh). One catch — this is the main-unit-only configuration, so it ships without panels; you'll add solar separately if you want to recharge off-grid between storms.",
+          "The future-proof pick: a 3,600W inverter and 3,072Wh base unit that expands toward 11kWh as your storm-autonomy needs grow. At {p4.listedPrice} it's the cheapest 3,600W entry on the podium ({p4.costPerWh}). One catch — this is the main-unit-only configuration, so it ships without panels; you'll add solar separately if you want to recharge off-grid between storms.",
       },
       {
         kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
@@ -745,7 +745,7 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
     receiptMode: "autonomy",
     effectiveLoadWatts: 175,
     receiptNote:
-      "Here's the core honesty hook for this class: **the receipt is the price**. Every all-in-one station in this cohort has a missing-parts cost of **$0** — the inverter, battery, charge controller, and outlets are already in the box, so true cost equals the listed price. The trap here isn't hidden parts the way it is with DIY component kits (where the advertised price can hide $300–$1,000 of still-to-buy BOM). The trap is **sizing**: buying too little inverter or too little battery for the loads that actually decide an outage. So the real receipt for this class is **runtime** — what your money buys is fridge-hours and surge headroom, not a parts shortfall.",
+      "Here's the core honesty hook for this class: **the receipt is the price**. Every all-in-one station in this cohort has a missing-parts cost of **[[const:$0]]** — the inverter, battery, charge controller, and outlets are already in the box, so true cost equals the listed price. The trap here isn't hidden parts the way it is with DIY component kits (where the advertised price can hide [[const:$300–$1,000]] of still-to-buy BOM). The trap is **sizing**: buying too little inverter or too little battery for the loads that actually decide an outage. So the real receipt for this class is **runtime** — what your money buys is fridge-hours and surge headroom, not a parts shortfall.",
     sections: [
       {
         heading: "The load profile: fridge, furnace fan, and a sump pump in a storm",
@@ -772,7 +772,7 @@ Each kit name links to its full audit on [portable power](/portable-power), and 
       },
       {
         heading: "The receipt and what's actually left to buy",
-        body: `For all-in-one stations, **listed price = true cost** — missing-parts cost is $0 across this entire cohort, unlike DIY kits where the advertised price can hide $300–$1,000 of BOM. See [how real build cost is calculated](/how-real-build-cost-is-calculated) for the full method.
+        body: `For all-in-one stations, **listed price = true cost** — missing-parts cost is [[const:$0]] across this entire cohort, unlike DIY kits where the advertised price can hide [[const:$300–$1,000]] of BOM. See [how real build cost is calculated](/how-real-build-cost-is-calculated) for the full method.
 
 So the "gap" here isn't parts — it's **operational add-ons**, all optional:
 
