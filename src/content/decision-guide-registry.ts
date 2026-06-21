@@ -42,14 +42,14 @@ export const decisionGuides: DecisionGuideMeta[] = [
         kitSlug: "ecoflow-delta2max-400w",
         label: "Best value",
         rationale:
-          "The literal answer to the question. The 2,400W pure-sine inverter clears a fridge's ~1,200–1,800W startup surge with margin, the 2,048Wh battery runs a typical 150W-cycling fridge roughly 24–36 hours with no sun, and at $0.44/Wh it's the cheapest complete, surge-clearing kit in the pool. If you want full access at the lowest price, start here.",
+          "The literal answer to the question. The 2,400W pure-sine inverter clears a fridge's ~1,200–1,800W startup surge with margin, the 2,048Wh battery runs a typical 150W-cycling fridge roughly 24–36 hours with no sun, and at {p1.costPerWh} it's the cheapest complete, surge-clearing kit in the pool. If you want full access at the lowest price, start here.",
         cta: true,
       },
       {
         kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
         label: "Most autonomy per dollar",
         rationale:
-          "Wins on runtime per dollar — $0.25/Wh, 5,120Wh of storage, and 1,800W of panels to refill it. This is the pick for \"fridge plus a freezer plus a couple of cloudy days.\" Its 5,000W inverter is overkill-safe for any fridge surge you'll throw at it.",
+          "Wins on runtime per dollar — {p2.costPerWh}, 5,120Wh of storage, and 1,800W of panels to refill it. This is the pick for \"fridge plus a freezer plus a couple of cloudy days.\" Its 5,000W inverter is overkill-safe for any fridge surge you'll throw at it.",
       },
       {
         kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
@@ -73,7 +73,7 @@ export const decisionGuides: DecisionGuideMeta[] = [
     receiptMode: "autonomy",
     effectiveLoadWatts: 75,
     receiptNote:
-      "Here's the honest part: every kit in this cohort is an integrated power-station-plus-panel bundle, so **missing-parts cost is $0 — there's nothing left to buy to make it run a fridge**. The real receipt for this class isn't hidden parts, it's **runtime**: what your money actually buys is fridge-hours. (About 29 of our 439 catalog kits *do* hide required parts — component kits like a panel-and-controller starter that ships with no battery — those carry a real Completion Gap Receipt. These don't.)",
+      "Here's the honest part: every kit in this cohort is an integrated power-station-plus-panel bundle, so **missing-parts cost is [[const:$0]] — there's nothing left to buy to make it run a fridge**. The real receipt for this class isn't hidden parts, it's **runtime**: what your money actually buys is fridge-hours. (About 29 of our 439 catalog kits *do* hide required parts — component kits like a panel-and-controller starter that ships with no battery — those carry a real Completion Gap Receipt. These don't.)",
     sections: [
       {
         heading: "The load profile: what a fridge actually pulls",
