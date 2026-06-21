@@ -142,7 +142,7 @@ Need the next size up, or want to compare side by side? See the [2,000W solar ki
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: true, // ✅ FLIPPED 2026-06-21 — pilot money page; tokenized + claim-verified, audited GO
   },
 
   // ── #2 (Tier 1) — solar generator for a well pump ───────────────────────────
