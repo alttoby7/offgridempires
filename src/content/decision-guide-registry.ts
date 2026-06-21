@@ -354,7 +354,7 @@ That's why this page filters to **≥2,000W inverters** and recommends 3,000W+ p
         heading: "The shortlist: five cabin kits that win",
         body: `All five picks are **LiFePO4 and pure-sine**, clear the 2,000W inverter floor, and carry a real 6-month price history. The podium below ranks on what matters for a cabin — battery per dollar, surge headroom, and how "cabin-real" the build is — with the single buy link on the #1 value pick. Each kit name links to its full audit.
 
-The honest split: the **Bluetti, Jackery, and Anker** are integrated stations with big inverters (3,000–5,000W) that survive a well pump; the **Renogy and Eco-Worthy** are 2,000W systems better suited to a pump-free cabin or one running a soft starter. The Renogy is the only true wired, mountable, expandable component build — completeness 100 — which is the right shape if you plan to grow the system. Compare any two [head-to-head](/compare), or step up to the [2,000W solar kit](/2000-watt-solar-kit) class.`,
+The honest split: the **Bluetti, Jackery, and Anker F3000** are integrated stations with big inverters (3,000–5,000W) that survive a well pump; the **Renogy and Anker C2000** are smaller 2,000–2,400W systems better suited to a pump-free cabin or one running a soft starter. The Renogy is the only true wired, mountable, expandable component build — completeness 100 — which is the right shape if you plan to grow the system. Compare any two [head-to-head](/compare), or step up to the [2,000W solar kit](/2000-watt-solar-kit) class.`,
       },
       {
         heading: "The receipt and the gap-closing BOM: what brand pages hide",
@@ -412,7 +412,7 @@ We flag exactly which line items each kit includes versus omits from its own BOM
       "We evaluated 65 RV-rated solar kits (1–3kWh). The 5 that actually power a boondocking coach — plus the mounts, fuses & transfer switch nobody itemizes.",
     intent: "decision / shortlist — off grid rv solar kit / solar power for rv",
     answer:
-      "A boondocking RV solar kit is panels + a LiFePO4 battery + a pure-sine inverter + a charge controller — and for most coaches a 1,000–2,560Wh, 1,800–2,400W pick is the right band. There are two real paths: a plug-and-play power station (complete out of the box, nothing left to buy) or a hardwired component kit (permanent coach integration, but it adds install-side parts the kit doesn't carry). We screened 65 RV-rated kits in that storage band; 91% run LiFePO4 and the median lists around $1,299. Below are the 5 that actually power a coach — and the honest line on air conditioning.",
+      "A boondocking RV solar kit is panels + a LiFePO4 battery + a pure-sine inverter + a charge controller — and for most coaches a 1,000–2,560Wh, 1,800–2,400W pick is the right band. There are two real paths: a plug-and-play power station (complete out of the box, nothing left to buy) or a hardwired component kit (permanent coach integration, but it adds install-side parts the kit doesn't carry). We screened 65 RV-rated kits in that storage band; 91% run LiFePO4 and the median lists around [[const:$1,299]]. Below are the 5 that actually power a coach — and the honest line on air conditioning.",
     loadIds: [
       "led-light",
       "phone-charger",
@@ -441,37 +441,37 @@ We flag exactly which line items each kit includes versus omits from its own BOM
         kitSlug: "renogy-400w-complete-lifepo4",
         label: "Best for true off-grid (hardwired)",
         rationale:
-          "The only complete *hardwired* LiFePO4 kit in the cohort, and the real answer if you want power permanently integrated into the coach. Its BOM fills every role — 400W panels, a Rover 40A MPPT controller, a 200Ah 12V LiFePO4 battery, a 2,000W pure-sine inverter, MC4 + battery cables, Z-bracket mounts, and a BT-2 Bluetooth monitor — which is why it scores 100/100 completeness at $1,899 ($0.74/Wh). The catch isn't missing kit parts; it's the install-side receipt below (mounts, a Class-T fuse, a transfer switch) that a real coach hardwire still needs.",
+          "The only complete *hardwired* LiFePO4 kit in the cohort, and the real answer if you want power permanently integrated into the coach. Its BOM fills every role — 400W panels, a Rover 40A MPPT controller, a 200Ah 12V LiFePO4 battery, a 2,000W pure-sine inverter, MC4 + battery cables, Z-bracket mounts, and a BT-2 Bluetooth monitor — which is why it scores 100/100 completeness at {p1.listedPrice} ({p1.costPerWh}). The catch isn't missing kit parts; it's the install-side receipt below (mounts, a Class-T fuse, a transfer switch) that a real coach hardwire still needs.",
         cta: true,
       },
       {
         kitSlug: "ecoflow-delta2max-400w",
         label: "Best plug-and-play value",
         rationale:
-          "The value anchor: at $0.44/Wh it's the lowest cost-per-Wh in the excellent, complete cohort. The 2,400W pure-sine inverter clears a microwave's startup draw in bursts, and the 2,048Wh LiFePO4 battery carries a full boondock day of 12V loads. It ships complete — missing-parts cost is $0 — so you trade permanent integration for plug-in simplicity. Price sits in fair territory; it has discounted hard before, so watch for a drop.",
+          "The value anchor: at {p2.costPerWh} it's the lowest cost-per-Wh in the excellent, complete cohort. The 2,400W pure-sine inverter clears a microwave's startup draw in bursts, and the 2,048Wh LiFePO4 battery carries a full boondock day of 12V loads. It ships complete — missing-parts cost is {p2.missingCost} — so you trade permanent integration for plug-in simplicity. Price sits in fair territory; it has discounted hard before, so watch for a drop.",
       },
       {
         kitSlug: "bluetti-500w-ac180p-double-kit-2-x-200w-rigid-panels",
         label: "Mid-coach plug-and-play",
         rationale:
-          "A balanced mid-coach pick: 500W of rigid panels feeding a 1,440Wh LiFePO4 station with an 1,800W pure-sine inverter, complete out of the box at $969 ($0.67/Wh). The extra panel wattage refills faster than the storage tier implies, which suits a coach that parks in part shade. Good for lights, fans, DC fridge, devices, and microwave bursts — not air conditioning.",
+          "A balanced mid-coach pick: 500W of rigid panels feeding a 1,440Wh LiFePO4 station with an 1,800W pure-sine inverter, complete out of the box at {p3.listedPrice} ({p3.costPerWh}). The extra panel wattage refills faster than the storage tier implies, which suits a coach that parks in part shade. Good for lights, fans, DC fridge, devices, and microwave bursts — not air conditioning.",
       },
       {
         kitSlug: "anker-600w-anker-solix-c1000-gen-2-main-unit-only",
         label: "Cheapest door in (weekender)",
         rationale:
-          "The honest budget entry at $500. The C1000 main unit ships WITHOUT a panel — its '600W' is solar-input capacity, not an included array — so you add panels to make it off-grid. Its 2,000W pure-sine inverter will run a microwave in bursts, but the 1,024Wh battery won't sustain much else while it does. Good for a weekender who wants the cheapest viable station and will buy panels separately. Note: it's at its 6-month price high right now — it has sold for less.",
+          "The honest budget entry at {p4.listedPrice}. The C1000 main unit ships WITHOUT a panel — its '600W' is solar-input capacity, not an included array — so you add panels to make it off-grid. Its 2,000W pure-sine inverter will run a microwave in bursts, but the 1,024Wh battery won't sustain much else while it does. Good for a weekender who wants the cheapest viable station and will buy panels separately. Note: it's at its 6-month price high right now — it has sold for less.",
       },
       {
         kitSlug: "anker-4kw-anker-solix-c2000-gen-2-400w-solar-panel",
         label: "Big-coach plug-and-play",
         rationale:
-          "The most headroom of the plug-and-play picks: a 2,400W pure-sine inverter and 2,048Wh of LiFePO4 with a 400W panel, complete at $1,200 ($0.59/Wh). The bigger inverter and expandable platform suit a larger coach stacking a microwave on top of the usual DC loads. Complete out of the box, nothing left to buy; price currently sits in a fair, narrow range.",
+          "The most headroom of the plug-and-play picks: a 2,400W pure-sine inverter and 2,048Wh of LiFePO4 with a 400W panel, complete at {p5.listedPrice} ({p5.costPerWh}). The bigger inverter and expandable platform suit a larger coach stacking a microwave on top of the usual DC loads. Complete out of the box, nothing left to buy; price currently sits in a fair, narrow range.",
       },
     ],
     receiptMode: "missing-parts",
     receiptNote:
-      "Two truths here. The plug-and-play picks (EcoFlow, Bluetti, Anker) are genuinely complete — **missing-parts cost is $0**, the panel, battery, inverter, and cables are in the box, and that's their whole appeal. The hardwired #1 scores 100/100 on *kit* completeness, but a permanent coach install still needs install-side parts the kit BOM doesn't carry: roof mounts/tilt brackets (~$30–$120), a Class-T or ANL fuse + holder on the inverter cable (~$25–$60), a DC fuse block / bus bars (~$40–$90), a battery shunt if not included (~$30–$200), a transfer switch or shore-power inlet (~$60–$200), and cable upgrades/lugs/gland (~$30–$80) — roughly $250–$600 of integration parts on top of the kit. Two in-cohort kits also carry a *modeled* gap: WindyNation 400W (+$170) and Eco-Worthy 200W (+$125) look cheap but aren't complete.",
+      "Two truths here. The plug-and-play picks (EcoFlow, Bluetti, Anker) are genuinely complete — **missing-parts cost is [[const:$0]]**, the panel, battery, inverter, and cables are in the box, and that's their whole appeal. The hardwired #1 scores 100/100 on *kit* completeness, but a permanent coach install still needs install-side parts the kit BOM doesn't carry: roof mounts/tilt brackets (~[[const:$30–$120]]), a Class-T or ANL fuse + holder on the inverter cable (~[[const:$25–$60]]), a DC fuse block / bus bars (~[[const:$40–$90]]), a battery shunt if not included (~[[const:$30–$200]]), a transfer switch or shore-power inlet (~[[const:$60–$200]]), and cable upgrades/lugs/gland (~[[const:$30–$80]]) — roughly [[const:$250–$600]] of integration parts on top of the kit. Two in-cohort kits also carry a *modeled* gap: WindyNation 400W ([[const:+$170]]) and Eco-Worthy 200W ([[const:+$125]]) look cheap but aren't complete.",
     sections: [
       {
         heading: "What you're actually powering on a boondock day",
@@ -497,7 +497,7 @@ See how we derive these verdicts in our [methodology](/methodology).`,
         body: `The podium leads with the **hardwired** pick (true off-grid coach power) and then ranks the **plug-and-play** stations. They're different buyers, so the table says so out loud:
 
 - **#1 Renogy 400W** — the only complete hardwired LiFePO4 kit in the cohort. Buy this if you want power permanently wired into the coach.
-- **#2 EcoFlow Delta 2 Max** — lowest cost-per-Wh in the cohort ($0.44/Wh). The plug-and-play value anchor.
+- **#2 EcoFlow Delta 2 Max** — lowest cost-per-Wh in the cohort ({p2.costPerWh}). The plug-and-play value anchor.
 - **#3 Bluetti AC180P double-kit** — mid-coach, extra panel wattage for shaded parking.
 - **#4 Anker C1000 (main unit only)** — cheapest door in; ships without a panel, so you add the array.
 - **#5 Anker C2000** — most inverter headroom of the plug-and-play picks for a bigger coach.
@@ -506,28 +506,28 @@ Each kit name links to its full [audit](/kits). The single buy link on this page
       },
       {
         heading: "The receipt: what's complete vs what you still buy",
-        body: `This is the part competitors never print. For the **plug-and-play picks**, real build cost = listed price: missing-parts cost is **$0**, and that's genuinely their appeal — the panel, battery, inverter, and cables are in the box.
+        body: `This is the part competitors never print. For the **plug-and-play picks**, real build cost = listed price: missing-parts cost is **[[const:$0]]**, and that's genuinely their appeal — the panel, battery, inverter, and cables are in the box.
 
 For the **hardwired path**, the Renogy kit is complete on paper (100/100 — it carries the panels, MPPT controller, battery, pure-sine inverter, cables, mounts, and a BT-2 monitor), but a real permanent install adds install-side parts the kit BOM doesn't model:
 
-- Roof mounts / tilt brackets: ~$30–$120
-- Class-T or ANL fuse + holder on the inverter cable (safety-critical): ~$25–$60
-- DC fuse block / bus bars: ~$40–$90
-- Battery monitor / shunt if not bundled: ~$30–$200
-- Transfer switch or shore-power inlet to tie into the coach AC panel: ~$60–$200
-- Cable upgrades / lugs / entry gland: ~$30–$80
+- Roof mounts / tilt brackets: ~[[const:$30–$120]]
+- Class-T or ANL fuse + holder on the inverter cable (safety-critical): ~[[const:$25–$60]]
+- DC fuse block / bus bars: ~[[const:$40–$90]]
+- Battery monitor / shunt if not bundled: ~[[const:$30–$200]]
+- Transfer switch or shore-power inlet to tie into the coach AC panel: ~[[const:$60–$200]]
+- Cable upgrades / lugs / entry gland: ~[[const:$30–$80]]
 
-Budget roughly **$250–$600** of integration parts on top of a hardwired kit. As proof our engine already tracks gaps: in-cohort, WindyNation 400W carries a modeled **+$170** and Eco-Worthy 200W **+$125** — kits that look cheap but aren't complete. See [how real build cost is calculated](/how-real-build-cost-is-calculated) and the [DIY install guide](/learn/solar-installation-diy).`,
+Budget roughly **[[const:$250–$600]]** of integration parts on top of a hardwired kit. As proof our engine already tracks gaps: in-cohort, WindyNation 400W carries a modeled **[[const:+$170]]** and Eco-Worthy 200W **[[const:+$125]]** — kits that look cheap but aren't complete. See [how real build cost is calculated](/how-real-build-cost-is-calculated) and the [DIY install guide](/learn/solar-installation-diy).`,
       },
     ],
     whyWon: [
       "Every podium pick runs a 1,800W+ pure-sine inverter, so a microwave fires in bursts without tripping or buzzing a compressor.",
       "All five are LiFePO4 — 91% of the viable RV cohort runs it — so they deep-cycle daily and hold charge between trips, unlike the 2 legacy AGM kits we left off.",
-      "Each is ranked on real specs and cost-per-Wh ($0.44–$0.74/Wh), splitting the honest plug-and-play vs hardwired choice instead of pushing one brand's box.",
+      "Each is ranked on real specs and cost-per-Wh ({p2.costPerWh}–{p1.costPerWh}), splitting the honest plug-and-play vs hardwired choice instead of pushing one brand's box.",
     ],
     whyFailed: [
       "The 2 AGM kits in the cohort were excluded for ~50% usable depth and shorter life — a worse buy per real watt-hour than the LiFePO4 picks.",
-      "PWM-controller, modified-sine kits like WindyNation 400W (+$170 modeled gap) buzz compressors on microwave and A/C surges and lose charge-controller efficiency.",
+      "PWM-controller, modified-sine kits like WindyNation 400W ([[const:+$170]] modeled gap) buzz compressors on microwave and A/C surges and lose charge-controller efficiency.",
       "No kit in this 1–3kWh band runs rooftop air conditioning off-grid — even the 2,560Wh Renogy needs a soft-start kit and a far bigger bank, so we say so instead of implying it.",
     ],
     faqs: [
@@ -539,7 +539,7 @@ Budget roughly **$250–$600** of integration parts on top of a hardwired kit. A
       {
         question: "What do I still need to buy beyond the kit?",
         answer:
-          "For the plug-and-play stations (EcoFlow, Bluetti, Anker), essentially nothing — they ship complete, with $0 in missing parts. For a hardwired install like the Renogy 400W, the kit covers every component but a permanent coach integration still adds install-side parts: roof mounts, a Class-T or ANL fuse on the inverter cable, a DC fuse block/bus bars, a battery shunt if not bundled, a transfer switch or shore-power inlet, and cable upgrades — roughly $250–$600 total.",
+          "For the plug-and-play stations (EcoFlow, Bluetti, Anker), essentially nothing — they ship complete, with [[const:$0]] in missing parts. For a hardwired install like the Renogy 400W, the kit covers every component but a permanent coach integration still adds install-side parts: roof mounts, a Class-T or ANL fuse on the inverter cable, a DC fuse block/bus bars, a battery shunt if not bundled, a transfer switch or shore-power inlet, and cable upgrades — roughly [[const:$250–$600]] total.",
       },
       {
         question: "How big a solar kit do I need for boondocking?",
@@ -558,10 +558,10 @@ Budget roughly **$250–$600** of integration parts on top of a hardwired kit. A
     h1: "Solar Kits for a Shed or Workshop: Cheapest Complete Setup After Hidden Costs",
     metaTitle: "Solar Kit for a Shed: Cheapest Complete Setup",
     metaDescription:
-      "We ranked 26 shed solar kits under $1,500 by real build cost, not sticker price. The cheapest complete setup, hidden-cost receipts, and buy-now-vs-wait.",
+      "We ranked 26 shed solar kits under [[const:$1,500]] by real build cost, not sticker price. The cheapest complete setup, hidden-cost receipts, and buy-now-vs-wait.",
     intent: "transactional / budget-led — which solar kit to buy for a shed or workshop under $1,500",
     answer:
-      "For most sheds, the cheapest complete setup that survives shop-tool surges is the Anker SOLIX C1000 bundle at $500 — a 2,000W pure-sine inverter, 1,024Wh of LiFePO4, and 600W of panels, with $0 in hidden parts. We ranked 26 shed-rated kits under $1,500 ($269–$1,499 band) by real build cost, not sticker price, because many \"kits\" quote a number that excludes mounting and monitoring. A $550 panel kit can become a $675 working system once you add the parts it left out.",
+      "For most sheds, the cheapest complete setup that survives shop-tool surges is the Anker SOLIX C1000 bundle at {p1.listedPrice} — a 2,000W pure-sine inverter, 1,024Wh of LiFePO4, and 600W of panels, with {p1.missingCost} in hidden parts. We ranked 26 shed-rated kits under [[const:$1,500]] ([[const:$269–$1,499]] band) by real build cost, not sticker price, because many \"kits\" quote a number that excludes mounting and monitoring. A {p4.listedPrice} panel kit can become a {p4.trueCost} working system once you add the parts it left out.",
     loadIds: ["led-light", "work-light", "drill-charger", "laptop", "mini-fridge", "air-compressor"],
     assumptions: {
       sunHoursPerDay: 4.5,
@@ -572,7 +572,7 @@ Budget roughly **$250–$600** of integration parts on top of a hardwired kit. A
       controllerType: "mppt",
       batteryChemistry: "lifepo4",
     },
-    cohortLabel: "shed-rated, complete, and under $1,500 (panel + battery + inverter, real build cost)",
+    cohortLabel: "shed-rated, complete, and under [[const:$1,500]] (panel + battery + inverter, real build cost)",
     cohortHeadlineCount: 26,
     cohortShortlistCount: 5,
     picks: [
@@ -580,46 +580,46 @@ Budget roughly **$250–$600** of integration parts on top of a hardwired kit. A
         kitSlug: "anker-600w-anker-solix-c1000-gen-2-main-unit-only",
         label: "Best value",
         rationale:
-          "The default shed pick. Its 2,000W pure-sine inverter clears real shop tools, the 1,024Wh LiFePO4 battery runs lights, a laptop, and intermittent power tools through a work day, and the 600W of solar input refills it. At $500 with $0 in hidden parts it's the cheapest complete, surge-ready setup in the cohort — $0.49/Wh, plug-and-play, nothing left to buy. If you want lights, electronics, and occasional tools in a shed, start here.",
+          "The default shed pick. Its 2,000W pure-sine inverter clears real shop tools, the 1,024Wh LiFePO4 battery runs lights, a laptop, and intermittent power tools through a work day, and the 600W of solar input refills it. At {p1.listedPrice} with {p1.missingCost} in hidden parts it's the cheapest complete, surge-ready setup in the cohort — {p1.costPerWh}, plug-and-play, nothing left to buy. If you want lights, electronics, and occasional tools in a shed, start here.",
         cta: true,
       },
       {
         kitSlug: "bluetti-500w-ac180p-bluetti-ac180p-main-unit-only",
         label: "More storage per dollar",
         rationale:
-          "The step-up when a shop fridge or longer tool sessions are in play. Same $0.49/Wh as the Anker but with 1,440Wh of LiFePO4 — about 40% more battery — behind an 1,800W pure-sine inverter, all for $699 with no hidden parts. Buy this if your shed has a beer fridge cycling 24/7 or you run power tools for hours, not minutes.",
+          "The step-up when a shop fridge or longer tool sessions are in play. At {p2.costPerWh} — a hair above the Anker's {p1.costPerWh} — it packs 1,440Wh of LiFePO4, about 40% more battery, behind an 1,800W pure-sine inverter, all for {p2.listedPrice} with no hidden parts. Buy this if your shed has a beer fridge cycling 24/7 or you run power tools for hours, not minutes.",
       },
       {
         kitSlug: "ecoflow-delta2max-400w",
         label: "Workshop-grade inverter",
         rationale:
-          "The pick when the \"workshop\" half of the question is real. The 2,400W pure-sine inverter gives the surge headroom a table saw or a pancake compressor needs, the 2,048Wh battery covers a full shop session, and at $0.44/Wh it's strong value for a workshop-grade inverter. $899 today sits within ~6% of its 6-month low — a fair price to lock in.",
+          "The pick when the \"workshop\" half of the question is real. The 2,400W pure-sine inverter gives the surge headroom a table saw or a pancake compressor needs, the 2,048Wh battery covers a full shop session, and at {p3.costPerWh} it's strong value for a workshop-grade inverter. {p3.listedPrice} today sits within ~{p3.pctAboveLow} of its 6-month low — a fair price to lock in.",
       },
       {
         kitSlug: "eco-worthy-200w-complete",
         label: "DIY budget — read the receipt",
         rationale:
-          "The lowest entry for a 12V hard-wired shed, and the kit that teaches the hidden-cost lesson. Advertised at $550, its real build cost is $675: the mounting hardware is \"Not included\" and there's no battery monitor (the data names a Victron SmartShunt as the gap, ~+$125). You get 1,280Wh of LiFePO4, but the $550 sticker is a $675 working system — which is exactly why a $500 integrated unit can beat it.",
+          "The lowest entry for a 12V hard-wired shed, and the kit that teaches the hidden-cost lesson. Advertised at {p4.listedPrice}, its real build cost is {p4.trueCost}: the mounting hardware is \"Not included\" and there's no battery monitor (the data names a Victron SmartShunt as the gap, ~+{p4.missingCost}). You get 1,280Wh of LiFePO4, but the {p4.listedPrice} sticker is a {p4.trueCost} working system — which is exactly why a {p1.listedPrice} integrated unit can beat it.",
       },
       {
         kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
         label: "Big-bank ceiling pick",
         rationale:
-          "The \"run a fridge and tools all day\" ceiling under $1,500. Its 5,120Wh of LiFePO4 is the cheapest real storage in the cohort at $0.25/Wh, behind a 5,000W pure-sine inverter — the most surge headroom on the shortlist — with the panels, mounting, and monitoring already in the box ($0 hidden). At $1,299 it has held flat for six months with no dip to wait for, so buy it when you need the runtime — no other kit here gives you this much battery, or this much inverter, for the money.",
+          "The \"run a fridge and tools all day\" ceiling under [[const:$1,500]]. Its 5,120Wh of LiFePO4 is the cheapest real storage in the cohort at {p5.costPerWh}, behind a 5,000W pure-sine inverter — the most surge headroom on the shortlist — with the panels, mounting, and monitoring already in the box ({p5.missingCost} hidden). At {p5.listedPrice} it has held flat for six months with no dip to wait for, so buy it when you need the runtime — no other kit here gives you this much battery, or this much inverter, for the money.",
       },
     ],
     receiptMode: "autonomy",
     effectiveLoadWatts: 130,
     receiptNote:
-      "Here's the honest part: the top three picks are integrated power-station bundles, so their **missing-parts cost is $0 — there's nothing left to buy to power a shed**. For this class the real receipt isn't hidden parts, it's **runtime** — what your money buys is hours of lights, tools, and a fridge before the battery needs sun. The hidden-cost trap shows up on the DIY \"kits\": the Eco-Worthy 200W advertises **$550 but builds to $675** once you add the mounting and the battery monitor it ships without. That $125 gap is the whole reason a $500 integrated unit can beat a $550 kit.",
+      "Here's the honest part: the top three picks are integrated power-station bundles, so their **missing-parts cost is [[const:$0]] — there's nothing left to buy to power a shed**. For this class the real receipt isn't hidden parts, it's **runtime** — what your money buys is hours of lights, tools, and a fridge before the battery needs sun. The hidden-cost trap shows up on the DIY \"kits\": the Eco-Worthy 200W advertises **{p4.listedPrice} but builds to {p4.trueCost}** once you add the mounting and the battery monitor it ships without. That {p4.missingCost} gap is the whole reason a {p1.listedPrice} integrated unit can beat a {p4.listedPrice} kit.",
     sections: [
       {
         heading: "The load profile: what a shed or workshop actually pulls",
         body: `A shed splits into three load tiers, and the tier decides the price band:
 
-- **Tier 1 — lights + electronics + the odd tool.** LED work lights, a phone or laptop charger, a drill on the charger. This is a few hundred watt-hours a day; a ~$500 unit covers it.
-- **Tier 2 — add a shop fridge or long tool sessions.** A beer fridge cycles 24/7 and quietly dominates the daily watt-hours, and an hour of power tools adds up. Step the battery up — this is the $700 tier.
-- **Tier 3 — a real workshop.** A table saw, a pancake compressor, or a window AC. Now the **surge** matters more than the running watts, and you're in the $900+ tier.
+- **Tier 1 — lights + electronics + the odd tool.** LED work lights, a phone or laptop charger, a drill on the charger. This is a few hundred watt-hours a day; a ~[[const:$500]] unit covers it.
+- **Tier 2 — add a shop fridge or long tool sessions.** A beer fridge cycles 24/7 and quietly dominates the daily watt-hours, and an hour of power tools adds up. Step the battery up — this is the [[const:$700]] tier.
+- **Tier 3 — a real workshop.** A table saw, a pancake compressor, or a window AC. Now the **surge** matters more than the running watts, and you're in the [[const:$900+]] tier.
 
 Two loads change everything: an **air compressor** (it spikes on every restart) and any **electric heat** (a space heater alone can outdraw your whole system). Size your exact loads first with the [shed solar calculator](/tools/shed-solar-calculator), then come back to the shortlist.`,
       },
@@ -627,52 +627,52 @@ Two loads change everything: an **air compressor** (it spikes on every restart) 
         heading: "The verdict: two loads will break a cheap kit",
         body: `Before you buy, the verdict block below fires on the two loads that decide whether a budget kit survives a workshop:
 
-- **Air compressor (the blocker).** A 1,500W compressor spikes **past 3,000W** on restart and stalls small inverters mid-cut. That's why this shortlist floors the inverter at 2,000W (the Anker) and pushes 2,400W (the EcoFlow) for true shop use. A $300 pancake compressor needs the DELTA 2 Max tier, not the entry unit.
+- **Air compressor (the blocker).** A 1,500W compressor spikes **past 3,000W** on restart and stalls small inverters mid-cut. That's why this shortlist floors the inverter at 2,000W (the Anker) and pushes 2,400W (the EcoFlow) for true shop use. A [[const:$300]] pancake compressor needs the DELTA 2 Max tier, not the entry unit.
 - **Electric heat (don't size for it).** Resistance heat is the number-one way off-grid systems get blown out. A shop heater can exceed every other load combined — heat with propane and keep an electric heater as spot backup, never a sized load.
 
 A shop fridge is a milder version of the same lesson: pure-sine only, and size for the 24/7 cycling, not the nameplate. For the inverter detail, see [inverters and power conversion](/learn/inverters-and-power-conversion).`,
       },
       {
         heading: "The shortlist: five kits that clear the bar",
-        body: `Every pick below is **LiFePO4 and pure-sine**, shed-rated, and under $1,500. The podium runs from the cheapest complete setup up to the biggest battery; the single buy link on the page sits on the #1 value pick.
+        body: `Every pick below is **LiFePO4 and pure-sine**, shed-rated, and under [[const:$1,500]]. The podium runs from the cheapest complete setup up to the biggest battery; the single buy link on the page sits on the #1 value pick.
 
-- **#1 Anker SOLIX C1000 — $500.** Cheapest complete, surge-ready floor. 2,000W inverter, 1,024Wh, $0 hidden.
-- **#2 Bluetti AC180P — $699.** Same $0.49/Wh, 1,440Wh — the storage step-up for a shop fridge.
-- **#3 EcoFlow DELTA 2 Max — $899.** 2,400W inverter, $0.44/Wh — the workshop-grade pick.
-- **#4 Eco-Worthy 200W Complete — $550 sticker / $675 real.** The DIY budget entry; read the receipt below.
-- **#5 Bluetti RV5 Power Hub — $1,299.** 5,120Wh at $0.25/Wh behind a 5,000W inverter — the all-day ceiling.
+- **#1 Anker SOLIX C1000 — {p1.listedPrice}.** Cheapest complete, surge-ready floor. 2,000W inverter, 1,024Wh, {p1.missingCost} hidden.
+- **#2 Bluetti AC180P — {p2.listedPrice}.** {p2.costPerWh}, 1,440Wh — the storage step-up for a shop fridge.
+- **#3 EcoFlow DELTA 2 Max — {p3.listedPrice}.** 2,400W inverter, {p3.costPerWh} — the workshop-grade pick.
+- **#4 Eco-Worthy 200W Complete — {p4.listedPrice} sticker / {p4.trueCost} real.** The DIY budget entry; read the receipt below.
+- **#5 Bluetti RV5 Power Hub — {p5.listedPrice}.** 5,120Wh at {p5.costPerWh} behind a 5,000W inverter — the all-day ceiling.
 
 Each name links to its full audit. To see the whole shed-rated pool, browse [best solar kits for a shed](/best-for/shed) or run a [side-by-side compare](/compare).`,
       },
       {
         heading: "The receipt and the gap: sticker price vs real build cost",
-        body: `The top three picks are integrated power stations — the panel, battery, inverter, and cables are in the box, so the gap to power a shed is **nothing**. That $0 hidden cost is the real reason a $500 unit can beat a $550 "kit."
+        body: `The top three picks are integrated power stations — the panel, battery, inverter, and cables are in the box, so the gap to power a shed is **nothing**. That [[const:$0]] hidden cost is the real reason a {p1.listedPrice} unit can beat a {p4.listedPrice} "kit."
 
-The DIY picks tell the other story. The **Eco-Worthy 200W advertises $550 but builds to $675**: the mounting hardware is "Not included," and there's no battery monitor (a Victron SmartShunt, ~+$125). If you go DIY, budget the gap list up front — Z-bracket roof or wall mounts (~$25–40), a battery monitor, and a properly rated breaker or fuse if you're hard-wiring into shed lights. Watch out for "main unit only" listings too: a cheap-looking per-watt-hour price often means there's no panel in the box at all.
+The DIY picks tell the other story. The **Eco-Worthy 200W advertises {p4.listedPrice} but builds to {p4.trueCost}**: the mounting hardware is "Not included," and there's no battery monitor (a Victron SmartShunt, ~+{p4.missingCost}). If you go DIY, budget the gap list up front — Z-bracket roof or wall mounts (~[[const:$25–40]]), a battery monitor, and a properly rated breaker or fuse if you're hard-wiring into shed lights. Watch out for "main unit only" listings too: a cheap-looking per-watt-hour price often means there's no panel in the box at all.
 
 See exactly [how real build cost is calculated](/how-real-build-cost-is-calculated) and our full [methodology](/methodology).`,
       },
     ],
     whyWon: [
       "Every podium kit is LiFePO4 and pure-sine, with an inverter at or above 2,000W — enough to clear real shop-tool surges, not just the running watts.",
-      "The top three are integrated stations with $0 in hidden parts, so a $500 unit is genuinely a $500 working system — nothing left to buy.",
-      "All five are priced and ranked from live data by real build cost and cost-per-watt-hour, from the $500 floor to the $0.25/Wh storage ceiling.",
+      "The top three are integrated stations with [[const:$0]] in hidden parts, so a {p1.listedPrice} unit is genuinely a {p1.listedPrice} working system — nothing left to buy.",
+      "All five are priced and ranked from live data by real build cost and cost-per-watt-hour, from the {p1.listedPrice} floor to the {p5.costPerWh} storage ceiling.",
     ],
     whyFailed: [
-      "Sub-2,000W kits and a $300 pancake compressor don't mix — the inrush spike past 3,000W on restart trips small inverters mid-task.",
+      "Sub-2,000W kits and a [[const:$300]] pancake compressor don't mix — the inrush spike past 3,000W on restart trips small inverters mid-task.",
       "Modified-sine \"kits\" make compressors and shop fridges buzz, run hot, and fail early — we kept the shortlist pure-sine only.",
       "Panel-only or \"main unit only\" listings look cheap per watt-hour but ship with no battery or no panel, so you'd pay again to make them a working shed system.",
     ],
     faqs: [
       {
-        question: "Can a $500 solar kit run shop tools?",
+        question: "Can a {p1.listedPrice} solar kit run shop tools?",
         answer:
-          "Yes, within limits. The $500 Anker SOLIX C1000 has a 2,000W pure-sine inverter that runs a drill, a circular saw, lights, and a laptop. What it won't do is a 1,500W air compressor, which spikes past 3,000W on restart — for that step up to a 2,400W kit like the EcoFlow DELTA 2 Max or add a soft-start.",
+          "Yes, within limits. The {p1.listedPrice} Anker SOLIX C1000 has a 2,000W pure-sine inverter that runs a drill, a circular saw, lights, and a laptop. What it won't do is a 1,500W air compressor, which spikes past 3,000W on restart — for that step up to a 2,400W kit like the EcoFlow DELTA 2 Max or add a soft-start.",
       },
       {
         question: "Why is the \"kit\" more expensive than the advertised price?",
         answer:
-          "Many DIY kits quote a sticker that excludes mounting hardware and a battery monitor. The Eco-Worthy 200W advertises $550 but its real build cost is $675 once you add the parts it ships without. Integrated power stations (Anker, Bluetti, EcoFlow) carry $0 hidden cost because mounting is N/A and monitoring is built in.",
+          "Many DIY kits quote a sticker that excludes mounting hardware and a battery monitor. The Eco-Worthy 200W advertises {p4.listedPrice} but its real build cost is {p4.trueCost} once you add the parts it ships without. Integrated power stations (Anker, Bluetti, EcoFlow) carry [[const:$0]] hidden cost because mounting is N/A and monitoring is built in.",
       },
       {
         question: "LiFePO4 or AGM for a shed?",
