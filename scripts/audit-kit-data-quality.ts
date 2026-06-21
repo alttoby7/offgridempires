@@ -22,11 +22,29 @@ interface Kit {
   name: string;
   listedPrice?: number;
   missingCost?: number;
+  inverterWatts?: number;
   included?: Record<string, boolean>;
   items?: { isIncluded?: boolean; name?: string }[];
   priceHistory?: { date: string; priceCents: number }[];
   offers?: { sourceUrl?: string; price?: number; inStock?: boolean }[];
   sourceUrl?: string;
+}
+
+/** Inverter sanity ceiling — mirrors MAX_PLAUSIBLE_INVERTER_W in get-kits.ts. */
+const MAX_PLAUSIBLE_INVERTER_W = 100_000;
+
+/**
+ * Parse a HIGH-CONFIDENCE inverter wattage from a kit name — only an explicit
+ * "...W inverter" / "N.NkW inverter" token, never a bare solar/system figure
+ * (those routinely get misread as inverter power). Returns null when unsure,
+ * so the audit only flags mismatches it's confident about.
+ */
+function inverterWattsFromName(name: string): number | null {
+  let m = name.match(/(\d+(?:,\d{3})*)\s*[Ww](?!h)\s*(?:pure\s+sine\s+)?[Ii]nverter/);
+  if (m) return parseInt(m[1].replace(/,/g, ""), 10);
+  m = name.match(/(\d+(?:\.\d+)?)\s*kW(?!h)\s*[Ii]nverter/i);
+  if (m) return Math.round(parseFloat(m[1]) * 1000);
+  return null;
 }
 
 interface KitFlag {
@@ -67,12 +85,31 @@ function audit(): KitFlag[] {
       flags.push("empty-items");
     }
 
+    // ── Inverter spec sanity (parser bugs: ~1000x inflation + comma truncation) ──
+    const inv = kit.inverterWatts ?? 0;
+    const nameInv = inverterWattsFromName(kit.name);
+    if (inv > MAX_PLAUSIBLE_INVERTER_W) {
+      flags.push("inverter-outlier-high");
+    } else if (nameInv !== null && inv > 0 && inv > nameInv * 1.5) {
+      // Stored materially exceeds the inverter wattage stated in the title.
+      flags.push("inverter-inflated-vs-title");
+    } else if (nameInv !== null && (inv === 0 || inv < nameInv * 0.6)) {
+      // Title clearly states an inverter wattage the stored value undershoots —
+      // the hallmark of the uncommaed-thousands truncation bug.
+      flags.push("inverter-truncated-vs-title");
+    }
+
     if (flags.length === 0) continue;
 
     const severity: "high" | "medium" | "low" =
-      flags.includes("no-listed-price") || flags.includes("no-working-offer")
+      flags.includes("no-listed-price") ||
+      flags.includes("no-working-offer") ||
+      flags.includes("inverter-outlier-high")
         ? "high"
-        : flags.includes("empty-included") || flags.includes("empty-items")
+        : flags.includes("empty-included") ||
+            flags.includes("empty-items") ||
+            flags.includes("inverter-inflated-vs-title") ||
+            flags.includes("inverter-truncated-vs-title")
           ? "medium"
           : "low";
 

@@ -113,8 +113,11 @@ export function Podium({ picks }: { picks: ResolvedPick[] }) {
               {first.kit.displayName ?? first.kit.name}
             </Link>
             <div className="text-xs text-[var(--text-muted)] mt-0.5">
-              {first.kit.brand} · {first.kit.panelWatts}W solar · {fmtWh(first.kit.storageWh)} ·{" "}
-              {first.kit.inverterWatts.toLocaleString()}W inverter · {first.kit.costPerWh}/Wh
+              {first.kit.brand} · {first.kit.panelWatts}W solar · {fmtWh(first.kit.storageWh)}
+              {first.kit.inverterWatts > 0
+                ? ` · ${first.kit.inverterWatts.toLocaleString()}W inverter`
+                : ""}{" "}
+              · {first.kit.costPerWh}/Wh
             </div>
           </div>
           {first.cta && buy && (
@@ -156,8 +159,10 @@ export function Podium({ picks }: { picks: ResolvedPick[] }) {
                 {p.kit.displayName ?? p.kit.name}
               </Link>
               <div className="text-xs text-[var(--text-muted)] mt-0.5 mb-2">
-                {p.kit.brand} · {p.kit.panelWatts}W solar · {fmtWh(p.kit.storageWh)} ·{" "}
-                {p.kit.inverterWatts.toLocaleString()}W inverter
+                {p.kit.brand} · {p.kit.panelWatts}W solar · {fmtWh(p.kit.storageWh)}
+                {p.kit.inverterWatts > 0
+                  ? ` · ${p.kit.inverterWatts.toLocaleString()}W inverter`
+                  : ""}
               </div>
               <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{p.rationale}</p>
             </div>

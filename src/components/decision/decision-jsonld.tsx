@@ -79,7 +79,11 @@ export function DecisionGuideJsonLd({
         },
         additionalProperty: [
           { "@type": "PropertyValue", name: "Real Build Cost", value: `$${kit.trueCost.toLocaleString()}` },
-          { "@type": "PropertyValue", name: "Inverter Output", value: `${kit.inverterWatts}W` },
+          // Omit inverter output when unknown (0) — e.g. blanked by the parser
+          // sanity guard in get-kits.ts — so we never publish a bogus spec.
+          ...(kit.inverterWatts > 0
+            ? [{ "@type": "PropertyValue", name: "Inverter Output", value: `${kit.inverterWatts}W` }]
+            : []),
           { "@type": "PropertyValue", name: "Battery Storage", value: `${kit.storageWh}Wh` },
         ],
       });

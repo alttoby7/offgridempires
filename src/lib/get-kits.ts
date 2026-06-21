@@ -340,6 +340,19 @@ function extractVariantPanelWatts(
 
 // ── Kit loading ─────────────────────────────────────────────────────────────
 
+/**
+ * Inverter sanity ceiling. The discovery parser (scripts/discover-shopsolar.py)
+ * has a regex bug that occasionally inflates inverter wattage by ~1000x when an
+ * inverter spec sits near a "kWh"/"kW" token, producing physically impossible
+ * values (e.g. 7,200,000W, 20,000,000W) on the big residential-system kits.
+ * The largest *legitimate* inverter in the catalog is a 60,000W SUMMIT system,
+ * so anything above 100kW is parser garbage. We blank it to 0 rather than guess
+ * a replacement — the spec-rendering UI already treats 0 as "unknown/hidden".
+ * This is a display-layer safety net; the real fix is in the parser + a re-seed.
+ */
+const MAX_PLAUSIBLE_INVERTER_W = 100_000;
+const _warnedInverterSlugs = new Set<string>();
+
 function loadKits(): Kit[] {
   if (_kits) return _kits;
 
@@ -355,6 +368,17 @@ function loadKits(): Kit[] {
         name: cleaned,
         displayName: cleaned,
       };
+
+      // Blank physically-impossible inverter values (parser inflation bug).
+      if (kit.inverterWatts > MAX_PLAUSIBLE_INVERTER_W) {
+        if (!_warnedInverterSlugs.has(kit.slug)) {
+          _warnedInverterSlugs.add(kit.slug);
+          console.warn(
+            `[get-kits] Blanked implausible inverterWatts=${kit.inverterWatts} on "${kit.slug}" (>${MAX_PLAUSIBLE_INVERTER_W}W). Parser inflation — re-seed to repair.`
+          );
+        }
+        kit.inverterWatts = 0;
+      }
 
       // Enrich variant kits that bundle panels but have panelWatts=0
       const variantPanel = extractVariantPanelWatts(k.name);
