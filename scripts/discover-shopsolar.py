@@ -104,22 +104,43 @@ def parse_specs(body_html: str, title: str, variants: list) -> dict:
             specs["batteryUsableWh"] = wh  # Assume LiFePO4 ~90% DoD
             break
 
-    # Inverter wattage
+    # Inverter wattage.
+    #
+    # Two bugs used to live here and produced absurd specs (e.g. 240,000W on a
+    # 5.12kWh NUE SunCase, 7,200,000W on a Delta Pro Ultra):
+    #   1. The number group `\d{1,3}(?:,\d{3})*` only matched thousands written
+    #      WITH commas, so an uncommaed "3000W" slid to its last 3 digits → "000".
+    #   2. The first pattern's `.*?` drifted forward from "Inverter" into later
+    #      text like "240W Solar Panels", grabbing an unrelated wattage — and the
+    #      ×1000 decision tested whether the matched SPAN contained "kw", which is
+    #      true for "kWh", so it multiplied the wrong number by 1000.
+    #
+    # Fixes: `\d+(?:,\d{3})*` matches uncommaed thousands; the ×1000 flag is a
+    # per-pattern property (not a substring scan); the watt token uses `(?!h)` so
+    # it never matches the "W" inside "kWh"; the keyword<->value gap is bounded
+    # and may not cross a "solar"/"panel" word; and an implausible result (>100kW
+    # or ≤0) is rejected to None rather than stored. Patterns are (regex, is_kw).
+    # re.IGNORECASE is applied, so literals are written lowercase.
     inverter_patterns = [
-        r"[Ii]nverter.*?(\d{1,3}(?:,\d{3})*)\s*[Ww]",
-        r"(\d{1,3}(?:,\d{3})*)\s*[Ww]\s*[Ii]nverter",
-        r"(\d{1,3}(?:,\d{3})*)\s*[Ww]\s*(?:AC|continuous|output)",
-        r"AC [Oo]utput:?\s*(\d{1,3}(?:,\d{3})*)\s*[Ww]",
-        r"(\d+(?:\.\d+)?)\s*kW\s*[Ii]nverter",
+        # "3,600W Inverter", "3000 W pure sine inverter"
+        (r"(\d+(?:,\d{3})*)\s*w(?!h)\s*(?:pure\s+sine\s+)?inverter", False),
+        # "AC Output: 3,600W"
+        (r"ac\s+output:?\s*(\d+(?:,\d{3})*)\s*w(?!h)", False),
+        # "3,600W AC", "3000W continuous", "3600W output"
+        (r"(\d+(?:,\d{3})*)\s*w(?!h)\s*(?:ac|continuous|output)", False),
+        # "Inverter: 3,600W" / "Inverter ... 3000W" — bounded gap, no panel word
+        (r"inverter[^.|\n]{0,25}?(\d+(?:,\d{3})*)\s*w(?!h)(?!\s*(?:solar|panel))", False),
+        # "7.2kW Inverter"
+        (r"(\d+(?:\.\d+)?)\s*kw(?!h)\s*inverter", True),
     ]
-    for pat in inverter_patterns:
+    for pat, is_kw in inverter_patterns:
         m = re.search(pat, combined, re.IGNORECASE)
         if m:
             val = m.group(1).replace(",", "")
-            if "kW" in pat or "kw" in m.group(0).lower():
-                specs["inverterW"] = int(float(val) * 1000)
-            else:
-                specs["inverterW"] = int(val)
+            watts = int(round(float(val) * 1000)) if is_kw else int(float(val))
+            # Reject physically impossible parses instead of storing garbage.
+            if 0 < watts <= 100_000:
+                specs["inverterW"] = watts
             break
 
     # System voltage

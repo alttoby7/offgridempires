@@ -1,24 +1,161 @@
 {
-  "generatedAt": "2026-05-09T05:36:27.357Z",
-  "totalKits": 435,
-  "flaggedKits": 97,
+  "generatedAt": "2026-06-20T16:55:05.888Z",
+  "totalKits": 439,
+  "flaggedKits": 118,
   "byFlag": {
-    "no-listed-price": 81,
-    "empty-included": 20,
-    "insufficient-price-history": 24,
-    "no-working-offer": 81,
-    "empty-items": 20
+    "inverter-outlier-high": 15,
+    "no-listed-price": 84,
+    "empty-included": 24,
+    "insufficient-price-history": 12,
+    "no-working-offer": 84,
+    "empty-items": 24,
+    "inverter-truncated-vs-title": 2
   },
   "bySeverity": {
-    "high": 81,
-    "medium": 13,
+    "high": 99,
+    "medium": 16,
     "low": 3
   },
   "kits": [
     {
-      "slug": "victron-energy-victron-energy-orion-tr-dc-to-dc-converter-24",
-      "brand": "Victron Energy",
-      "name": "Victron Energy Orion-Tr DC to DC Converter - 24/12-Volt 30 amp 360-Watt - IP43 Protected - for Dual Battery Systems - Isolated",
+      "slug": "ecoflow-6kw-ultra-delta-pro-ultra-inverter-1-x-6kwh-batter",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA PRO [ULTRA] - 7,200W Output / 6kWh-90kWh Capacity | 5.6kW-16.8kW Solar Input | 5-Year Warranty - DELTA Pro Ultra [Inverter + 1 x 6kWh Battery]",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "new-use-energy-5.12kw-nue-suncase-suncase-3651-main-unit-only",
+      "brand": "New Use Energy",
+      "name": "New Use Energy NUE SunCase 3651 Portable Power Station | 3,600W Inverter & 5.12kWh LiFePO4 | 120V & 48V Output | Bundle Options w/ 240W Solar Panels | 2-Year Warranty - SunCase 3651 [Main Unit Only]",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "new-use-energy-5.12kw-nue-suncase-suncase-3651-and-1-x-nuesolar-240w-porta",
+      "brand": "New Use Energy",
+      "name": "New Use Energy NUE SunCase 3651 Portable Power Station | 3,600W Inverter & 5.12kWh LiFePO4 | 120V & 48V Output | Bundle Options w/ 240W Solar Panels | 2-Year Warranty - SunCase 3651 and 1 x NUESolar 240W Portable Solar Panel",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "new-use-energy-5.12kw-nue-suncase-suncase-3651-and-3-x-nuesolar-240w-porta",
+      "brand": "New Use Energy",
+      "name": "New Use Energy NUE SunCase 3651 Portable Power Station | 3,600W Inverter & 5.12kWh LiFePO4 | 120V & 48V Output | Bundle Options w/ 240W Solar Panels | 2-Year Warranty - SunCase 3651 and 3 x NUESolar 240W Portable Solar Panel",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-6kw-ultra-delta-pro-ultra-inverter-2-x-battery-12k",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA PRO [ULTRA] - 7,200W Output / 6kWh-90kWh Capacity | 5.6kW-16.8kW Solar Input | 5-Year Warranty - DELTA Pro Ultra [Inverter + 2 x Battery] - 12kWh",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-6kw-ultra-delta-pro-ultra-inverter-3-x-battery-18k",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA PRO [ULTRA] - 7,200W Output / 6kWh-90kWh Capacity | 5.6kW-16.8kW Solar Input | 5-Year Warranty - DELTA Pro Ultra [Inverter + 3 x Battery] - 18kWh",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-6kw-ultra-delta-pro-ultra-inverter-4-x-battery-24k",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA PRO [ULTRA] - 7,200W Output / 6kWh-90kWh Capacity | 5.6kW-16.8kW Solar Input | 5-Year Warranty - DELTA Pro Ultra [Inverter + 4 x Battery] - 24kWh",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-6kw-ultra-delta-pro-ultra-inverter-5-x-battery-30k",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA PRO [ULTRA] - 7,200W Output / 6kWh-90kWh Capacity | 5.6kW-16.8kW Solar Input | 5-Year Warranty - DELTA Pro Ultra [Inverter + 5 x Battery] - 30kWh",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "elite-21.1kw-elite-pro-renon-xc-plus-32kwh-code-compliant-premi",
+      "brand": "ELITE",
+      "name": "ELITE 21.1kW Complete Solar Kit - Sol-Ark 18K Inverter - 28-40kWh Lithium Battery [ELITE PRO] - RENON XC PLUS - 32kWh - Code Compliant - Premium - Closed Loop / I’ll Handle My Own Racking",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "elite-21.1kw-elite-pro-discover-helios-32-2kwh-code-compliant-p",
+      "brand": "ELITE",
+      "name": "ELITE 21.1kW Complete Solar Kit - Sol-Ark 18K Inverter - 28-40kWh Lithium Battery [ELITE PRO] - DISCOVER HELIOS - 32.2kWh - Code Compliant - Premium - Closed Loop / I’ll Handle My Own Racking",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "elite-21.1kw-elite-pro-pytes-v5-server-rack-40-96kwh-code-compl",
+      "brand": "ELITE",
+      "name": "ELITE 21.1kW Complete Solar Kit - Sol-Ark 18K Inverter - 28-40kWh Lithium Battery [ELITE PRO] - PYTES V5 Server Rack - 40.96kWh - Code Compliant - Premium - Closed Loop / I’ll Handle My Own Racking",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "edge-63.4kw-edge-pro-renon-xcellent-plus-128-kwh",
+      "brand": "EDGE",
+      "name": "EDGE 63.4kW Complete Solar Kit - 6 x Sol-Ark 18K Inverters - 122-128kWh Lithium Battery [EDGE PRO] - RENON XCELLENT PLUS | 128 kWh",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "edge-63.4kw-edge-pro-eg4-indoor-wallmount-128-kwh",
+      "brand": "EDGE",
+      "name": "EDGE 63.4kW Complete Solar Kit - 6 x Sol-Ark 18K Inverters - 122-128kWh Lithium Battery [EDGE PRO] - EG4 INDOOR WALLMOUNT | 128 kWh",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "edge-63.4kw-edge-pro-renon-xtreme-lv-122-88-kwh",
+      "brand": "EDGE",
+      "name": "EDGE 63.4kW Complete Solar Kit - 6 x Sol-Ark 18K Inverters - 122-128kWh Lithium Battery [EDGE PRO] - RENON XTREME LV | 122.88 kWh",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "edge-63.4kw-edge-pro-eg4-ll-s-122-88-kwh",
+      "brand": "EDGE",
+      "name": "EDGE 63.4kW Complete Solar Kit - 6 x Sol-Ark 18K Inverters - 122-128kWh Lithium Battery [EDGE PRO] - EG4 LL-S | 122.88 kWh",
+      "flags": [
+        "inverter-outlier-high"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "sungoldpower-5kw-solar-kit",
+      "brand": "SunGoldPower",
+      "name": "SunGoldPower 5KW Complete Solar Kit",
       "flags": [
         "no-listed-price",
         "empty-included",
@@ -29,48 +166,9 @@
       "severity": "high"
     },
     {
-      "slug": "eco-worthy-eco-worthy-energy-storage-system-powermega-48v-31",
-      "brand": "Eco-Worthy",
-      "name": "ECO-WORTHY Energy Storage System, Powermega 48V 314Ah(V2) LiFePO4 Battery with 5kW Inverter, Active Balancing BMS, Built-in Bluetooth and WiFi, Communication-Ready for Home Backup, Emergency Use",
-      "flags": [
-        "no-listed-price",
-        "empty-included",
-        "insufficient-price-history",
-        "no-working-offer",
-        "empty-items"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "eco-worthy-eco-worthy-home-power-station-backup-power-20480w",
-      "brand": "Eco-Worthy",
-      "name": "ECO-WORTHY Home Power Station Backup Power,20480Wh LiFePO4 Battery Support Communication,Bluetooth and WiFi,AC 5000W Inverter,Battery Monitor,for Home Backup,Emergency,Solar System Components",
-      "flags": [
-        "no-listed-price",
-        "empty-included",
-        "insufficient-price-history",
-        "no-working-offer",
-        "empty-items"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "powmr-powmr-2400w-solar-inverter-24vdc-to-110v-120vac-pure-s",
-      "brand": "PowMr",
-      "name": "PowMr 2400W Solar Inverter, 24VDC to 110V/120VAC, Pure Sine Wave, 50A PWM Charge Controller, Hybrid Inverter for Homes, RV, 24V Lead-Acid, Sealed Gel/AGM Battery, Off-Grid Systems",
-      "flags": [
-        "no-listed-price",
-        "empty-included",
-        "insufficient-price-history",
-        "no-working-offer",
-        "empty-items"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "aninerel-12000w-solar-hybrid-inverter-48v-dc-to-120v-240v-ac",
-      "brand": "Aninerel",
-      "name": "12000W Solar Hybrid Inverter 48V DC to 120V/240V AC Split Phase, Pure Sine Wave, Built-in 2 MPPT Controller, Max. 220A Battery Charging, Support Parallel 6 Units, for Home On/Off-Grid Systems",
+      "slug": "newpowa-200w-solar-kit",
+      "brand": "Newpowa",
+      "name": "Newpowa 200W 12V Solar Panel Kit",
       "flags": [
         "no-listed-price",
         "empty-included",
@@ -94,6 +192,59 @@
       "severity": "high"
     },
     {
+      "slug": "eco-worthy-eco-worthy-home-power-station-backup-power-20480w",
+      "brand": "Eco-Worthy",
+      "name": "ECO-WORTHY Home Power Station Backup Power,20480Wh LiFePO4 Battery Support Communication,Bluetooth and WiFi,AC 5000W Inverter,Battery Monitor,for Home Backup,Emergency,Solar System Components",
+      "flags": [
+        "no-listed-price",
+        "empty-included",
+        "insufficient-price-history",
+        "no-working-offer",
+        "empty-items",
+        "inverter-truncated-vs-title"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "newpowa-400w-solar-kit",
+      "brand": "Newpowa",
+      "name": "Newpowa 400W 12V Solar Panel Kit",
+      "flags": [
+        "no-listed-price",
+        "empty-included",
+        "insufficient-price-history",
+        "no-working-offer",
+        "empty-items"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "aninerel-12000w-solar-hybrid-inverter-48v-dc-to-120v-240v-ac",
+      "brand": "Aninerel",
+      "name": "12000W Solar Hybrid Inverter 48V DC to 120V/240V AC Split Phase, Pure Sine Wave, Built-in 2 MPPT Controller, Max. 220A Battery Charging, Support Parallel 6 Units, for Home On/Off-Grid Systems",
+      "flags": [
+        "no-listed-price",
+        "empty-included",
+        "insufficient-price-history",
+        "no-working-offer",
+        "empty-items"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "powmr-powmr-2400w-solar-inverter-24vdc-to-110v-120vac-pure-s",
+      "brand": "PowMr",
+      "name": "PowMr 2400W Solar Inverter, 24VDC to 110V/120VAC, Pure Sine Wave, 50A PWM Charge Controller, Hybrid Inverter for Homes, RV, 24V Lead-Acid, Sealed Gel/AGM Battery, Off-Grid Systems",
+      "flags": [
+        "no-listed-price",
+        "empty-included",
+        "insufficient-price-history",
+        "no-working-offer",
+        "empty-items"
+      ],
+      "severity": "high"
+    },
+    {
       "slug": "voltset-100w-kit-12-volt-monocrystalline-solar-battery-trick",
       "brand": "Voltset",
       "name": "Voltset 100W Solar Panel Kit: 12 Volt Monocrystalline Solar Battery Trickle Charger Maintainer with 20A PWM Controller - Waterproof Solar Charger for RV Trailer Truck Camper Boats Vehicle Trucks",
@@ -107,39 +258,9 @@
       "severity": "high"
     },
     {
-      "slug": "hysolis-6000w-apollo-5k-hysolis-apollo-240-platinum-2-h5k-2-10-x",
-      "brand": "Hysolis",
-      "name": "Hysolis [Apollo 5K] 120V / 240V Split Phase Solar Kits - 6,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Hysolis Apollo 240 PLATINUM 2 [H5K-2] [10 x 400W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
       "slug": "hysolis-6000w-apollo-5k-hysolis-apollo-240-platinum-3-h5k-3-12-x",
       "brand": "Hysolis",
       "name": "Hysolis [Apollo 5K] 120V / 240V Split Phase Solar Kits - 6,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Hysolis Apollo 240 PLATINUM 3 [H5K-3] [12 x 400W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "hysolis-6000w-apollo-5k-hysolis-apollo-240-platinum-1-h5k-1-8-x",
-      "brand": "Hysolis",
-      "name": "Hysolis [Apollo 5K] 120V / 240V Split Phase Solar Kits - 6,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Hysolis Apollo 240 PLATINUM 1 [H5K-1] [8 x 400W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "hysolis-6000w-apollo-5k-hysolis-apollo-240-dual-hex-kit-12-x-400",
-      "brand": "Hysolis",
-      "name": "Hysolis [Apollo 5K] 120V / 240V Split Phase Solar Kits - 6,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Hysolis Apollo 240 Dual Hex Kit [12 x 400W Rigid Panels]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -157,29 +278,39 @@
       "severity": "high"
     },
     {
+      "slug": "hysolis-6000w-apollo-5k-hysolis-apollo-240-platinum-1-h5k-1-8-x",
+      "brand": "Hysolis",
+      "name": "Hysolis [Apollo 5K] 120V / 240V Split Phase Solar Kits - 6,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Hysolis Apollo 240 PLATINUM 1 [H5K-1] [8 x 400W Rigid Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "hysolis-6000w-apollo-5k-hysolis-apollo-240-platinum-2-h5k-2-10-x",
+      "brand": "Hysolis",
+      "name": "Hysolis [Apollo 5K] 120V / 240V Split Phase Solar Kits - 6,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Hysolis Apollo 240 PLATINUM 2 [H5K-2] [10 x 400W Rigid Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "hysolis-6000w-apollo-5k-hysolis-apollo-240-dual-hex-kit-12-x-400",
+      "brand": "Hysolis",
+      "name": "Hysolis [Apollo 5K] 120V / 240V Split Phase Solar Kits - 6,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Hysolis Apollo 240 Dual Hex Kit [12 x 400W Rigid Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
       "slug": "hysolis-6000w-apollo-5k-hysolis-apollo-240-octo-kit-8-x-400w-rig",
       "brand": "Hysolis",
       "name": "Hysolis [Apollo 5K] 120V / 240V Split Phase Solar Kits - 6,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Hysolis Apollo 240 Octo Kit [8 x 400W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "hysolis-3000w-apollo-5k-apollo-5k-unit-only",
-      "brand": "Hysolis",
-      "name": "Hysolis [Apollo 5K] 120V Solar Kits - 5,376Wh / 3,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit | 5-Year Warranty - APOLLO 5K [Unit Only]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "hysolis-3000w-apollo-5k-apollo-5k-hex-kit-6-x-400w-rigid-panels",
-      "brand": "Hysolis",
-      "name": "Hysolis [Apollo 5K] 120V Solar Kits - 5,376Wh / 3,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit | 5-Year Warranty - APOLLO 5K Hex Kit [6 x 400W Rigid Panels]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -197,9 +328,19 @@
       "severity": "high"
     },
     {
-      "slug": "ecoflow-2600w-ecoflow-delta-4-x-415w-rigid-panels",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA Pro 3 + Extra Battery + Solar Panels | 8,192Wh | 4,000W 120/240V | UL9540 Certified | 3 Solar Kit Options | 5-Year Warranty - [4 x 415W Rigid Panels]",
+      "slug": "hysolis-3000w-apollo-5k-apollo-5k-hex-kit-6-x-400w-rigid-panels",
+      "brand": "Hysolis",
+      "name": "Hysolis [Apollo 5K] 120V Solar Kits - 5,376Wh / 3,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit | 5-Year Warranty - APOLLO 5K Hex Kit [6 x 400W Rigid Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "hysolis-3000w-apollo-5k-apollo-5k-unit-only",
+      "brand": "Hysolis",
+      "name": "Hysolis [Apollo 5K] 120V Solar Kits - 5,376Wh / 3,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit | 5-Year Warranty - APOLLO 5K [Unit Only]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -217,29 +358,19 @@
       "severity": "high"
     },
     {
+      "slug": "ecoflow-2600w-ecoflow-delta-4-x-415w-rigid-panels",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA Pro 3 + Extra Battery + Solar Panels | 8,192Wh | 4,000W 120/240V | UL9540 Certified | 3 Solar Kit Options | 5-Year Warranty - [4 x 415W Rigid Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
       "slug": "ecoflow-2600w-ecoflow-delta-quad-kit-4-x-200w-rigid-panels",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA Pro 3 + Extra Battery + Solar Panels | 8,192Wh | 4,000W 120/240V | UL9540 Certified | 3 Solar Kit Options | 5-Year Warranty - Quad Kit [4 x 200W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-2400w-max-delta-max-quad-kit-4-x-200w-rigid-panels",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Quad Kit [4 x 200W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-2400w-max-delta-max-nomad-kit-2-x-200w-folding-pan",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Nomad Kit [2 x 200W Folding Panels]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -287,6 +418,26 @@
       "severity": "high"
     },
     {
+      "slug": "ecoflow-2400w-max-delta-max-nomad-kit-2-x-200w-folding-pan",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Nomad Kit [2 x 200W Folding Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-2400w-max-delta-max-quad-kit-4-x-200w-rigid-panels",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Quad Kit [4 x 200W Rigid Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
       "slug": "ecoflow-2400w-max-delta-max-unit-only",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX [Unit Only]",
@@ -307,16 +458,6 @@
       "severity": "high"
     },
     {
-      "slug": "bluetti-1200w-ac240p-basecamp-kit-2-x-200w-folding-panels-emp",
-      "brand": "Bluetti",
-      "name": "BLUETTI Premium 240S [AC240P] Portable Power Station | Complete Solar Generator Kit | 2,400 W / 1,843Wh LiFePO4 | 6-Year Warranty | Choose Your Bundle - Basecamp Kit [2 x 200W Folding Panels + EMP Bag]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
       "slug": "bluetti-1200w-ac240p-bluetti-ac240p-main-unit-only",
       "brand": "Bluetti",
       "name": "BLUETTI Premium 240S [AC240P] Portable Power Station | Complete Solar Generator Kit | 2,400 W / 1,843Wh LiFePO4 | 6-Year Warranty | Choose Your Bundle - Bluetti AC240P [Main Unit Only]",
@@ -327,9 +468,9 @@
       "severity": "high"
     },
     {
-      "slug": "bluetti-1200w-ac240p-double-kit-2-x-200w-rigid-panels",
+      "slug": "bluetti-1200w-ac240p-nomad-kit-2-x-200w-folding-panels",
       "brand": "Bluetti",
-      "name": "BLUETTI Premium 240S [AC240P] Portable Power Station | Complete Solar Generator Kit | 2,400 W / 1,843Wh LiFePO4 | 6-Year Warranty | Choose Your Bundle - Double Kit [2 x 200W Rigid Panels]",
+      "name": "BLUETTI Premium 240S [AC240P] Portable Power Station | Complete Solar Generator Kit | 2,400 W / 1,843Wh LiFePO4 | 6-Year Warranty | Choose Your Bundle - Nomad Kit [2 x 200W Folding Panels]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -337,9 +478,19 @@
       "severity": "high"
     },
     {
-      "slug": "bluetti-1200w-ac240p-nomad-kit-2-x-200w-folding-panels",
+      "slug": "bluetti-1200w-ac240p-basecamp-kit-2-x-200w-folding-panels-emp",
       "brand": "Bluetti",
-      "name": "BLUETTI Premium 240S [AC240P] Portable Power Station | Complete Solar Generator Kit | 2,400 W / 1,843Wh LiFePO4 | 6-Year Warranty | Choose Your Bundle - Nomad Kit [2 x 200W Folding Panels]",
+      "name": "BLUETTI Premium 240S [AC240P] Portable Power Station | Complete Solar Generator Kit | 2,400 W / 1,843Wh LiFePO4 | 6-Year Warranty | Choose Your Bundle - Basecamp Kit [2 x 200W Folding Panels + EMP Bag]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "bluetti-1200w-ac240p-double-kit-2-x-200w-rigid-panels",
+      "brand": "Bluetti",
+      "name": "BLUETTI Premium 240S [AC240P] Portable Power Station | Complete Solar Generator Kit | 2,400 W / 1,843Wh LiFePO4 | 6-Year Warranty | Choose Your Bundle - Double Kit [2 x 200W Rigid Panels]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -358,6 +509,36 @@
       "severity": "high"
     },
     {
+      "slug": "eco-worthy-400w-premium-zbrackets",
+      "brand": "Eco-Worthy",
+      "name": "ECO-WORTHY 400W 12V Premium Panel Kit with 40A MPPT + Z Brackets",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "eco-worthy-400w-ultra-280ah",
+      "brand": "Eco-Worthy",
+      "name": "ECO-WORTHY 400W 12V Complete Kit Ultra with 40A MPPT + 280Ah LiFePO4 + 2000W Inverter",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "renogy-400w-rv-kit",
+      "brand": "Renogy",
+      "name": "Renogy 400W 12V Monocrystalline RV Kit with Adventurer 30A PWM + Cable Entry Housing",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
       "slug": "hqst-400w-kit-mppt",
       "brand": "HQST",
       "name": "HQST 400W Solar Panel Kit with 40A MPPT Controller",
@@ -371,16 +552,6 @@
       "slug": "windynation-400w-kit-agm",
       "brand": "WindyNation",
       "name": "WindyNation 400W Solar Kit with P30L Controller + AGM Battery",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "eco-worthy-400w-premium-zbrackets",
-      "brand": "Eco-Worthy",
-      "name": "ECO-WORTHY 400W 12V Premium Panel Kit with 40A MPPT + Z Brackets",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -408,9 +579,39 @@
       "severity": "high"
     },
     {
+      "slug": "anker-200w-anker-solix-anker-c800x-unit-only",
+      "brand": "Anker",
+      "name": "Anker SOLIX C800X 768Wh / 1200W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Anker C800X [Unit Only]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "anker-200w-anker-solix-basecamp-kit-1-x-200w-folding-panel",
+      "brand": "Anker",
+      "name": "Anker SOLIX C800X 768Wh / 1200W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Basecamp Kit [1 x 200W Folding Panel]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
       "slug": "ecoflow-200w-max-delta-max-base-camp-kit-4-x-200w-panels",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Base Camp Kit [4 x 200W Panels + EMP Bag]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "renogy-200w-starter-mppt-20a",
+      "brand": "Renogy",
+      "name": "Renogy 200W 12V Monocrystalline Solar Starter Kit with 20A MPPT Rover Controller",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -428,29 +629,9 @@
       "severity": "high"
     },
     {
-      "slug": "anker-200w-anker-solix-anker-c800x-unit-only",
-      "brand": "Anker",
-      "name": "Anker SOLIX C800X 768Wh / 1200W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Anker C800X [Unit Only]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "bluetti-200w-ac60p-double-kit-2-x-100w-rigid-panels",
+      "slug": "bluetti-200w-ac60p-basecamp-kit-1-x-100w-folding-panels-emp",
       "brand": "Bluetti",
-      "name": "BLUETTI Premium 60S [AC60P] Portable Power Station | Complete Solar Generator Kit | 600W / 504Wh LiFePO4| 3,000 Cycles | 6‑Year Warranty | Choose Your Bundle - Double Kit [2 x 100W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "bluetti-200w-ac60p-eclipse-kit-1-x-100w-folding-panels",
-      "brand": "Bluetti",
-      "name": "BLUETTI Premium 60S [AC60P] Portable Power Station | Complete Solar Generator Kit | 600W / 504Wh LiFePO4| 3,000 Cycles | 6‑Year Warranty | Choose Your Bundle - Eclipse Kit [1 x 100W Folding Panels]",
+      "name": "BLUETTI Premium 60S [AC60P] Portable Power Station | Complete Solar Generator Kit | 600W / 504Wh LiFePO4| 3,000 Cycles | 6‑Year Warranty | Choose Your Bundle - Basecamp Kit [1 x 100W Folding Panels + EMP Bag]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -478,9 +659,9 @@
       "severity": "high"
     },
     {
-      "slug": "renogy-200w-starter-mppt-20a",
-      "brand": "Renogy",
-      "name": "Renogy 200W 12V Monocrystalline Solar Starter Kit with 20A MPPT Rover Controller",
+      "slug": "bluetti-200w-ac60p-bluetti-ac60p-pv120-600w-504wh",
+      "brand": "Bluetti",
+      "name": "BLUETTI Premium 60S [AC60P] Portable Power Station | Complete Solar Generator Kit | 600W / 504Wh LiFePO4| 3,000 Cycles | 6‑Year Warranty | Choose Your Bundle - Bluetti AC60P+PV120 | 600W 504Wh",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -488,9 +669,19 @@
       "severity": "high"
     },
     {
-      "slug": "bluetti-200w-ac60p-basecamp-kit-1-x-100w-folding-panels-emp",
+      "slug": "bluetti-200w-ac60p-double-kit-2-x-100w-rigid-panels",
       "brand": "Bluetti",
-      "name": "BLUETTI Premium 60S [AC60P] Portable Power Station | Complete Solar Generator Kit | 600W / 504Wh LiFePO4| 3,000 Cycles | 6‑Year Warranty | Choose Your Bundle - Basecamp Kit [1 x 100W Folding Panels + EMP Bag]",
+      "name": "BLUETTI Premium 60S [AC60P] Portable Power Station | Complete Solar Generator Kit | 600W / 504Wh LiFePO4| 3,000 Cycles | 6‑Year Warranty | Choose Your Bundle - Double Kit [2 x 100W Rigid Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "bluetti-200w-ac60p-eclipse-kit-1-x-100w-folding-panels",
+      "brand": "Bluetti",
+      "name": "BLUETTI Premium 60S [AC60P] Portable Power Station | Complete Solar Generator Kit | 600W / 504Wh LiFePO4| 3,000 Cycles | 6‑Year Warranty | Choose Your Bundle - Eclipse Kit [1 x 100W Folding Panels]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -508,59 +699,9 @@
       "severity": "high"
     },
     {
-      "slug": "anker-200w-anker-solix-basecamp-kit-1-x-200w-folding-panel",
-      "brand": "Anker",
-      "name": "Anker SOLIX C800X 768Wh / 1200W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - Basecamp Kit [1 x 200W Folding Panel]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "bluetti-200w-ac60p-bluetti-ac60p-pv120-600w-504wh",
-      "brand": "Bluetti",
-      "name": "BLUETTI Premium 60S [AC60P] Portable Power Station | Complete Solar Generator Kit | 600W / 504Wh LiFePO4| 3,000 Cycles | 6‑Year Warranty | Choose Your Bundle - Bluetti AC60P+PV120 | 600W 504Wh",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
       "slug": "ecoflow-160w-pro-ecoflow-river-pro-160w-solar-panel",
       "brand": "EcoFlow",
       "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Ecoflow River Pro + 160W Solar Panel",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "hqst-100w-mono-kit",
-      "brand": "HQST",
-      "name": "HQST 100W 12V Mono Kit with 30A PWM Controller",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "anker-100w-anker-solix-anker-c300x-basecamp-kit-1-x-100w-foldin",
-      "brand": "Anker",
-      "name": "Anker SOLIX C300X 288Wh / 300W Portable Power Station + Choose Custom Solar Panel Bundle Option | 3-Year Warranty | Complete Solar Kit - Anker C300X Basecamp Kit [1 x 100W Folding Panel]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "anker-100w-anker-solix-anker-c300x-nomad-kit-1-x-100w-folding-p",
-      "brand": "Anker",
-      "name": "Anker SOLIX C300X 288Wh / 300W Portable Power Station + Choose Custom Solar Panel Bundle Option | 3-Year Warranty | Complete Solar Kit - Anker C300X Nomad Kit [1 x 100W Folding Panel]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -578,9 +719,19 @@
       "severity": "high"
     },
     {
-      "slug": "anker-100w-anker-solix",
+      "slug": "anker-100w-anker-solix-anker-c300x-nomad-kit-1-x-100w-folding-p",
       "brand": "Anker",
-      "name": "Anker SOLIX C300 DC 288Wh / 300W Portable Power Station | 90,000mAh",
+      "name": "Anker SOLIX C300X 288Wh / 300W Portable Power Station + Choose Custom Solar Panel Bundle Option | 3-Year Warranty | Complete Solar Kit - Anker C300X Nomad Kit [1 x 100W Folding Panel]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "anker-100w-anker-solix-anker-c300x-basecamp-kit-1-x-100w-foldin",
+      "brand": "Anker",
+      "name": "Anker SOLIX C300X 288Wh / 300W Portable Power Station + Choose Custom Solar Panel Bundle Option | 3-Year Warranty | Complete Solar Kit - Anker C300X Basecamp Kit [1 x 100W Folding Panel]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -598,9 +749,19 @@
       "severity": "high"
     },
     {
-      "slug": "anker-anker-solix-double-kit-2-x-200w-rigid-panels",
+      "slug": "hqst-100w-mono-kit",
+      "brand": "HQST",
+      "name": "HQST 100W 12V Mono Kit with 30A PWM Controller",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "anker-100w-anker-solix",
       "brand": "Anker",
-      "name": "Anker Solix F2600 - 2,560Wh / 2,400W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Double Kit [2 x 200W Rigid Panels]",
+      "name": "Anker SOLIX C300 DC 288Wh / 300W Portable Power Station | 90,000mAh",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -611,6 +772,26 @@
       "slug": "anker-anker-solix-basecamp-kit-1-x-200w-folding-panel-emp",
       "brand": "Anker",
       "name": "Anker Solix F2600 - 2,560Wh / 2,400W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Basecamp Kit [1 x 200W Folding Panel + EMP Bag]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-pro-basecamp-kit-1-x-200w-folding-panel-emp",
+      "brand": "EcoFlow",
+      "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Basecamp Kit [1 x 200W Folding Panel + EMP Bag]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-ecoflow-delta-double-quad-kit-2-delta-8-x-100w-rigid-p",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Double Quad Kit [2 Delta + 8 x 100W Rigid Panels]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -631,6 +812,56 @@
       "slug": "anker-anker-solix-anker-solix-f2600-expansion-battery",
       "brand": "Anker",
       "name": "Anker Solix F2600 - 2,560Wh / 2,400W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Anker Solix F2600 + Expansion Battery",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-ecoflow-delta-eclipse-kit-1-x-200w-folding-panel",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Eclipse Kit [1 x 200W Folding Panel]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "anker-anker-solix-double-kit-2-x-200w-rigid-panels",
+      "brand": "Anker",
+      "name": "Anker Solix F2600 - 2,560Wh / 2,400W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Double Kit [2 x 200W Rigid Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-max",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] 1,600 Portable Power Station | 1,600wH / 2,000W Lithium Solar Generator",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "anker-anker-solix-anker-solix-c1000x-200w-anker-solix-ps20",
+      "brand": "Anker",
+      "name": "Anker SOLIX C1000X 1056Wh / 1800W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Anker SOLIX C1000X + 200W Anker SOLIX PS200 Solar Panel",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-ecoflow-delta-delta-1800-unit-only",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Delta 1800 [Unit Only]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -678,159 +909,9 @@
       "severity": "high"
     },
     {
-      "slug": "ecoflow-ecoflow-delta-basecamp-kit-4-x-100w-rigid-panels-emp-b",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Basecamp Kit [4 x 100W Rigid Panels + EMP Bag]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-ecoflow-delta-delta-1800-unit-only",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Delta 1800 [Unit Only]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-ecoflow-delta-double-kit-2-x-100w-rigid-panels",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Double Kit [2 x 100W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-ecoflow-delta-double-quad-kit-2-delta-8-x-100w-rigid-p",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Double Quad Kit [2 Delta + 8 x 100W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-ecoflow-delta-eclipse-kit-1-x-200w-folding-panel",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Eclipse Kit [1 x 200W Folding Panel]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-ecoflow-delta-ecoflow-delta-1000",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA 1,000 | 1600W / 1000Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - EcoFlow Delta 1000",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "anker-anker-solix-anker-solix-c1000x-200w-anker-solix-ps20",
-      "brand": "Anker",
-      "name": "Anker SOLIX C1000X 1056Wh / 1800W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Anker SOLIX C1000X + 200W Anker SOLIX PS200 Solar Panel",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-ecoflow-delta-quad-kit-4-x-100w-rigid-panels-best-sell",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Quad Kit [4 x 100W Rigid Panels] *Best Seller*",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
       "slug": "ecoflow-ecoflow-delta-two-by-four-kit-2-delta-4-x-100w-rigid-p",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Two By Four Kit [2 Delta + 4 x 100W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-pro-basecamp-kit-1-x-200w-folding-panel-emp",
-      "brand": "EcoFlow",
-      "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Basecamp Kit [1 x 200W Folding Panel + EMP Bag]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-pro-double-kit-2-x-100w-rigid-panels",
-      "brand": "EcoFlow",
-      "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Double Kit [2 x 100W Rigid Panels]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-pro-eclipse-kit-1-x-200w-folding-panel",
-      "brand": "EcoFlow",
-      "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Eclipse Kit [1 x 200W Folding Panel]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-pro-ecoflow-river-pro-expansion-battery",
-      "brand": "EcoFlow",
-      "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Ecoflow River Pro + Expansion Battery",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-pro-ecoflow-river-pro-only",
-      "brand": "EcoFlow",
-      "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Ecoflow River Pro [Only]",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "ecoflow-max",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA [MAX] 1,600 Portable Power Station | 1,600wH / 2,000W Lithium Solar Generator",
-      "flags": [
-        "no-listed-price",
-        "no-working-offer"
-      ],
-      "severity": "high"
-    },
-    {
-      "slug": "anker-anker-solix-nomad-kit-2-x-200w-folding-panels",
-      "brand": "Anker",
-      "name": "Anker Solix F2600 - 2,560Wh / 2,400W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Nomad Kit [2 x 200W Folding Panels]",
       "flags": [
         "no-listed-price",
         "no-working-offer"
@@ -848,12 +929,101 @@
       "severity": "high"
     },
     {
+      "slug": "ecoflow-ecoflow-delta-basecamp-kit-4-x-100w-rigid-panels-emp-b",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Basecamp Kit [4 x 100W Rigid Panels + EMP Bag]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-ecoflow-delta-ecoflow-delta-1000",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,000 | 1600W / 1000Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - EcoFlow Delta 1000",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-ecoflow-delta-double-kit-2-x-100w-rigid-panels",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Double Kit [2 x 100W Rigid Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-ecoflow-delta-quad-kit-4-x-100w-rigid-panels-best-sell",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Quad Kit [4 x 100W Rigid Panels] *Best Seller*",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-pro-ecoflow-river-pro-expansion-battery",
+      "brand": "EcoFlow",
+      "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Ecoflow River Pro + Expansion Battery",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-pro-eclipse-kit-1-x-200w-folding-panel",
+      "brand": "EcoFlow",
+      "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Eclipse Kit [1 x 200W Folding Panel]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-pro-double-kit-2-x-100w-rigid-panels",
+      "brand": "EcoFlow",
+      "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Double Kit [2 x 100W Rigid Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "ecoflow-pro-ecoflow-river-pro-only",
+      "brand": "EcoFlow",
+      "name": "EcoFlow RIVER [PRO] 720wH / 600W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Ecoflow River Pro [Only]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
+      "slug": "anker-anker-solix-nomad-kit-2-x-200w-folding-panels",
+      "brand": "Anker",
+      "name": "Anker Solix F2600 - 2,560Wh / 2,400W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - Nomad Kit [2 x 200W Folding Panels]",
+      "flags": [
+        "no-listed-price",
+        "no-working-offer"
+      ],
+      "severity": "high"
+    },
+    {
       "slug": "solperk-kit-20w-12v-waterproof-solar-battery-trickle-charger",
       "brand": "SOLPERK",
       "name": "SOLPERK Solar Panel Kit 20W 12V, Waterproof Solar Battery Trickle Charger Maintainer + Smart MPPT Controller + Adjustable Mount Bracket for Boat Car RV Motorcycle Marine Automotive",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
@@ -864,7 +1034,6 @@
       "name": "POWLSOJX Solar Grid Tie Micro Inverter MPPT Smart Micro PV System 180W 500W 700W DC 18V-50V to AC Output 120V/230V Auto (180W)",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
@@ -875,7 +1044,6 @@
       "name": "Pulsar Inverter Generator Parallel Kit, 30 Amp, 120V TT-30R(RV), PGIPAIRB5",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
@@ -886,7 +1054,6 @@
       "name": "DOKIO 100W Portable Foldable Solar Panel Kit (19x26in, 5.3lb), with Separate Controller and Dual USB, Monocrystalline Charger for 12V Batteries & Power Stations, RV Camping Trailer Emergency Backup",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
@@ -897,7 +1064,6 @@
       "name": "SUNER POWER 30W 12V Solar Battery Charger Maintainer, Built-in Smart MPPT Charge Controller, Adjustable Mount Bracket, Waterproof 30 Watt Solar Panel Kits for Car Automotive Boat Marine RV Trailer",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
@@ -908,7 +1074,6 @@
       "name": "3000W Power Inverter, 12v DC to 120v Ac Inverter, Power Inverters for Vehicles with LCD Display, 3AC Sockets and USB-C & QC 3.0 Port with Remote Control for Camping Home Truck Rv Solar System",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
@@ -919,7 +1084,6 @@
       "name": "DOKIO 200W Portable Foldable Solar Panel Kit, Compact 20x26.4in Design 9.7lb with Standalone Controller and USB, Monocrystalline Charger for 12V Batteries, Power Stations, RV Camping Emergency Use",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
@@ -930,7 +1094,6 @@
       "name": "200W Portable Solar Panel for Power Station, Foldable Solar Charger w/ 4 Kickstands, IP65 Waterproof Solar Panel Kit w/DC XT60 Anderson Aviation Output for Outdoor RV Camper Blackout",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
@@ -941,18 +1104,16 @@
       "name": "Callsun N-Type 16BB 200W Bifacial Solar Panel, 200 Watt Solar Panel for 12V Battery Systems, 25% High Efficiency, Dual-Module Parallel Anti-Shade Design, for RV Van Marine Home Rooftop Off-Grid",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
     },
     {
-      "slug": "anjfylque-hybrid-solar-inverter-3000w-24vdc-to110vac-off-gri",
-      "brand": "Anjfylque",
-      "name": "Hybrid Solar Inverter 3000W, 24Vdc to110Vac Off-Grid Inverter,100A MPPT Controller,Support Battery-Less or AGM Lithium Battery, Pure Sine Wave for Home Backup,Solar Systems",
+      "slug": "victron-energy-victron-energy-orion-tr-dc-to-dc-converter-24",
+      "brand": "Victron Energy",
+      "name": "Victron Energy Orion-Tr DC to DC Converter - 24/12-Volt 30 amp 360-Watt - IP43 Protected - for Dual Battery Systems - Isolated",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
@@ -963,7 +1124,16 @@
       "name": "Renogy ShadowFlux Solar Panels, N-Type Anti-Shading Panels for 12V/24V Systems with 25% High-Efficiency PV Modules, 200W ShadowFlux N-Type Panel",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
+        "empty-items"
+      ],
+      "severity": "medium"
+    },
+    {
+      "slug": "anjfylque-hybrid-solar-inverter-3000w-24vdc-to110vac-off-gri",
+      "brand": "Anjfylque",
+      "name": "Hybrid Solar Inverter 3000W, 24Vdc to110Vac Off-Grid Inverter,100A MPPT Controller,Support Battery-Less or AGM Lithium Battery, Pure Sine Wave for Home Backup,Solar Systems",
+      "flags": [
+        "empty-included",
         "empty-items"
       ],
       "severity": "medium"
@@ -974,7 +1144,6 @@
       "name": "SUNGOLDPOWER UL1741 5000W Hybrid Solar Inverter,48V DC to 110V/120V AC,All in One,80A MPPT Solar Charger and 40A AC Battery Charger Pure Sine Wave for Off Grid System(NO Parallel)",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
       ],
       "severity": "medium"
@@ -985,8 +1154,28 @@
       "name": "SUNGOLDPOWER UL1741 5000W DC 48V solar inverter All In One,120V AC output Pure Sine Wave Inverter,Built-in 80A MPPT solar charger and 40A AC charger,For home,Cabin,Backup,Off-grid system (NO Parallel)",
       "flags": [
         "empty-included",
-        "insufficient-price-history",
         "empty-items"
+      ],
+      "severity": "medium"
+    },
+    {
+      "slug": "sungoldpower-3kw-solar-kit",
+      "brand": "SunGoldPower",
+      "name": "SunGoldPower 3KW Complete Solar Kit",
+      "flags": [
+        "empty-included",
+        "empty-items"
+      ],
+      "severity": "medium"
+    },
+    {
+      "slug": "eco-worthy-eco-worthy-energy-storage-system-powermega-48v-31",
+      "brand": "Eco-Worthy",
+      "name": "ECO-WORTHY Energy Storage System, Powermega 48V 314Ah(V2) LiFePO4 Battery with 5kW Inverter, Active Balancing BMS, Built-in Bluetooth and WiFi, Communication-Ready for Home Backup, Emergency Use",
+      "flags": [
+        "empty-included",
+        "empty-items",
+        "inverter-truncated-vs-title"
       ],
       "severity": "medium"
     },

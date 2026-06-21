@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getDecisionGuide, getDecisionGuideSlugs } from "@/content/decision-guide-registry";
+import { getDecisionGuideSlugs } from "@/content/decision-guide-registry";
+import { getResolvedDecisionGuide } from "@/lib/decision/resolve";
 import { APPLIANCE_CATALOG } from "@/lib/calculator/appliances";
 import { computeSizing } from "@/lib/calculator/engine";
 import { computeVerdicts } from "@/lib/calculator/verdicts";
@@ -20,7 +21,6 @@ import {
   BuyTimingTable,
   WhyWonWhyFailed,
   MethodologyFreshness,
-  resolvePicks,
 } from "@/components/decision/decision-sections";
 
 export const dynamic = "force-static";
@@ -55,8 +55,9 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const meta = getDecisionGuide(slug);
-  if (!meta) return { title: "Guide Not Found" };
+  const resolved = getResolvedDecisionGuide(slug);
+  if (!resolved) return { title: "Guide Not Found" };
+  const meta = resolved.meta;
   return {
     title: meta.metaTitle,
     description: meta.metaDescription,
@@ -79,13 +80,13 @@ export default async function DecisionGuidePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const meta = getDecisionGuide(slug);
-  if (!meta) notFound();
+  const resolved = getResolvedDecisionGuide(slug);
+  if (!resolved) notFound();
+  const { meta, picks } = resolved;
 
   const loads = presetToLoads(meta.loadIds);
   const sizing = computeSizing(loads, meta.assumptions);
   const verdicts = computeVerdicts(loads, meta.assumptions, sizing);
-  const picks = resolvePicks(meta.picks);
   const sections = meta.sections;
 
   return (

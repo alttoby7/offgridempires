@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { Kit } from "@/lib/demo-data";
-import type { DecisionGuideMeta, PodiumPick } from "@/lib/decision/types";
 import type { SizingResult } from "@/lib/calculator/types";
-import { getKitBySlug } from "@/lib/get-kits";
+import type { DecisionGuideMeta } from "@/lib/decision/types";
+import type { ResolvedPick } from "@/lib/decision/resolve";
 import { buildAffiliateUrl } from "@/lib/affiliate";
 import { getBuyTiming, BUY_SIGNAL_STYLE } from "@/lib/decision/evidence";
 import { Receipt } from "@/components/receipt";
@@ -30,19 +30,6 @@ function bestBuy(kit: Kit): { url: string; retailer: string; price: number } | n
     if (url) return { url, retailer: kit.retailer, price: kit.listedPrice };
   }
   return null;
-}
-
-interface ResolvedPick extends PodiumPick {
-  kit: Kit;
-}
-
-export function resolvePicks(picks: PodiumPick[]): ResolvedPick[] {
-  return picks
-    .map((p) => {
-      const kit = getKitBySlug(p.kitSlug);
-      return kit ? { ...p, kit } : null;
-    })
-    .filter((p): p is ResolvedPick => p !== null);
 }
 
 const ArrowOut = () => (
@@ -113,8 +100,11 @@ export function Podium({ picks }: { picks: ResolvedPick[] }) {
               {first.kit.displayName ?? first.kit.name}
             </Link>
             <div className="text-xs text-[var(--text-muted)] mt-0.5">
-              {first.kit.brand} · {first.kit.panelWatts}W solar · {fmtWh(first.kit.storageWh)} ·{" "}
-              {first.kit.inverterWatts.toLocaleString()}W inverter · {first.kit.costPerWh}/Wh
+              {first.kit.brand} · {first.kit.panelWatts}W solar · {fmtWh(first.kit.storageWh)}
+              {first.kit.inverterWatts > 0
+                ? ` · ${first.kit.inverterWatts.toLocaleString()}W inverter`
+                : ""}{" "}
+              · {first.kit.costPerWh}/Wh
             </div>
           </div>
           {first.cta && buy && (
@@ -156,8 +146,10 @@ export function Podium({ picks }: { picks: ResolvedPick[] }) {
                 {p.kit.displayName ?? p.kit.name}
               </Link>
               <div className="text-xs text-[var(--text-muted)] mt-0.5 mb-2">
-                {p.kit.brand} · {p.kit.panelWatts}W solar · {fmtWh(p.kit.storageWh)} ·{" "}
-                {p.kit.inverterWatts.toLocaleString()}W inverter
+                {p.kit.brand} · {p.kit.panelWatts}W solar · {fmtWh(p.kit.storageWh)}
+                {p.kit.inverterWatts > 0
+                  ? ` · ${p.kit.inverterWatts.toLocaleString()}W inverter`
+                  : ""}
               </div>
               <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{p.rationale}</p>
             </div>

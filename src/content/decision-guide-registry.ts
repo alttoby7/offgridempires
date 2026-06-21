@@ -42,14 +42,14 @@ export const decisionGuides: DecisionGuideMeta[] = [
         kitSlug: "ecoflow-delta2max-400w",
         label: "Best value",
         rationale:
-          "The literal answer to the question. The 2,400W pure-sine inverter clears a fridge's ~1,200–1,800W startup surge with margin, the 2,048Wh battery runs a typical 150W-cycling fridge roughly 24–36 hours with no sun, and at $0.44/Wh it's the cheapest complete, surge-clearing kit in the pool. If you want full access at the lowest price, start here.",
+          "The literal answer to the question. The 2,400W pure-sine inverter clears a fridge's ~1,200–1,800W startup surge with margin, the 2,048Wh battery runs a typical 150W-cycling fridge roughly 24–36 hours with no sun, and at {p1.costPerWh} it's the cheapest complete, surge-clearing kit in the pool. If you want full access at the lowest price, start here.",
         cta: true,
       },
       {
         kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
         label: "Most autonomy per dollar",
         rationale:
-          "Wins on runtime per dollar — $0.25/Wh, 5,120Wh of storage, and 1,800W of panels to refill it. This is the pick for \"fridge plus a freezer plus a couple of cloudy days.\" Its 5,000W inverter is overkill-safe for any fridge surge you'll throw at it.",
+          "Wins on runtime per dollar — {p2.costPerWh}, 5,120Wh of storage, and 1,800W of panels to refill it. This is the pick for \"fridge plus a freezer plus a couple of cloudy days.\" Its 5,000W inverter is overkill-safe for any fridge surge you'll throw at it.",
       },
       {
         kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
@@ -58,10 +58,10 @@ export const decisionGuides: DecisionGuideMeta[] = [
           "The choice if you'll stack loads. Its 3,600W inverter leaves headroom for a microwave, a well pump, or an older fridge with a stiff compressor running on top of the fridge — without nudging the inverter toward its limit on every compressor start.",
       },
       {
-        kitSlug: "eco-worthy-400w-ultra-280ah",
-        label: "Alt — Amazon buyers",
+        kitSlug: "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
+        label: "Budget pick",
         rationale:
-          "A strong Amazon-native option with the most raw storage of the group (3,584Wh) at $0.36/Wh. Its 2,000W inverter sits right at the floor, so it's fine for a single modern fridge but leave the second big surge load off it. Note the price: it's currently above its 6-month low (see the buy/wait table).",
+          "An entry-level path onto the podium at {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.listedPrice}: {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.storageKwh} of {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.chemistry} behind a {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.inverterWatts} pure-sine inverter, with {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.missingCost} in hidden parts. At {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.costPerWh} it runs a single modern fridge cleanly — buy it when the goal is a covered fridge for the lowest outlay, not the longest runtime. It's the main unit only, so add panels separately to recharge off-grid.",
       },
       {
         kitSlug: "anker-4kw-anker-solix-c2000-gen-2-200w-solar-panel",
@@ -73,7 +73,7 @@ export const decisionGuides: DecisionGuideMeta[] = [
     receiptMode: "autonomy",
     effectiveLoadWatts: 75,
     receiptNote:
-      "Here's the honest part: every kit in this cohort is an integrated power-station-plus-panel bundle, so **missing-parts cost is $0 — there's nothing left to buy to make it run a fridge**. The real receipt for this class isn't hidden parts, it's **runtime**: what your money actually buys is fridge-hours. (About 29 of our 439 catalog kits *do* hide required parts — component kits like a panel-and-controller starter that ships with no battery — those carry a real Completion Gap Receipt. These don't.)",
+      "Here's the honest part: every kit in this cohort is an integrated power-station-plus-panel bundle, so **missing-parts cost is [[const:$0]] — there's nothing left to buy to make it run a fridge**. The real receipt for this class isn't hidden parts, it's **runtime**: what your money actually buys is fridge-hours. (About 29 of our 439 catalog kits *do* hide required parts — component kits like a panel-and-controller starter that ships with no battery — those carry a real Completion Gap Receipt. These don't.)",
     sections: [
       {
         heading: "The load profile: what a fridge actually pulls",
@@ -168,38 +168,38 @@ Need the next size up, or want to compare side by side? See the [2,000W solar ki
         kitSlug: "core-3.2kw-core-pro",
         label: "Best surge headroom",
         rationale:
-          "The cleanest answer to a well pump's startup problem. Its 7,500W continuous inverter swallows a 3,500W locked-rotor spike with more than 2× headroom — the pump never even nudges the inverter's ceiling on a start. 10,000Wh of LiFePO4 rides a pump's daily duty cycle plus the fridge and freezer that almost always run alongside it, and at $0.60/Wh it lands mid-pack on price for far more inverter than the field. If you want one box that just won't trip, this is it.",
+          "The cleanest answer to a well pump's startup problem. Its 7,500W continuous inverter swallows a 3,500W locked-rotor spike with more than 2× headroom — the pump never even nudges the inverter's ceiling on a start. 10,000Wh of LiFePO4 rides a pump's daily duty cycle plus the fridge and freezer that almost always run alongside it, and at {p1.costPerWh} it lands mid-pack on price for far more inverter than the field. If you want one box that just won't trip, this is it.",
         cta: true,
       },
       {
         kitSlug: "prime-4.4kw-prime-plus-eg4-wallmount-indoor-14-3kwh-budget-frie",
         label: "Best value / native 240V",
         rationale:
-          "Built on the EG4 6000XP, a 6,000W 120/240V split-phase inverter — so it runs a 240V deep submersible directly, no hub or workaround. At $0.51/Wh it is the best value on the board and ships the biggest bank in the group at 14,300Wh, enough for a homestead where the pump is one load among many. If your pump is 240V and hardwired, start here.",
+          "Built on the EG4 6000XP, a 6,000W 120/240V split-phase inverter — so it runs a 240V deep submersible directly, no hub or workaround. At {p2.costPerWh} it is the best value on the board and ships the biggest bank in the group at 14,300Wh, enough for a homestead where the pump is one load among many. If your pump is 240V and hardwired, start here.",
       },
       {
         kitSlug: "anker-3200w-plus-1-x-f3800p-main-unit",
         label: "Cheapest that clears the inrush",
         rationale:
-          "The lowest-priced kit here that still beats the startup spike: the F3800's 6,000W surge clears a 3,500W locked-rotor inrush with room to spare, and it puts out both 120V and 240V. At $2,299 it's the entry point for grid-down well backup. The trade-off is the 3,840Wh bank — it's a backup unit for outages, not whole-house autonomy, and a single F3800 needs the Double Voltage Hub for a true 240V well.",
+          "The lowest-priced kit here that still beats the startup spike: the F3800's 6,000W surge clears a 3,500W locked-rotor inrush with room to spare, and it puts out both 120V and 240V. At {p3.listedPrice} it's the entry point for grid-down well backup. The trade-off is the 3,840Wh bank — it's a backup unit for outages, not whole-house autonomy, and a single F3800 needs the Double Voltage Hub for a true 240V well.",
       },
       {
         kitSlug: "anker-6400w-plus-2-x-f3800p-double-voltage-hub",
         label: "Portable 240V, bigger bank",
         rationale:
-          "Two F3800 units on the Double Voltage Hub give you true split-phase 240V plus 7,680Wh — a plug-and-play 240V well backup with no electrician for the unit itself. The 6,000W inverter clears the inrush, and at $0.62/Wh it's the practical pick when you want 240V capability without hardwiring a wall-mount. Skip the single F3800 (#3) for a 240V submersible and buy this instead.",
+          "Two F3800 units on the Double Voltage Hub give you true split-phase 240V plus 7,680Wh — a plug-and-play 240V well backup with no electrician for the unit itself. The 6,000W inverter clears the inrush, and at {p4.costPerWh} it's the practical pick when you want 240V capability without hardwiring a wall-mount. Skip the single F3800 (#3) for a 240V submersible and buy this instead.",
       },
       {
         kitSlug: "prime-4.4kw-prime-plus-alpha-5-pro-10-2kwh-budget-friendly-open",
         label: "Hardwire, mid bank",
         rationale:
-          "The same EG4 6000XP split-phase platform as #2 with a 10,200Wh bank — a 6,000W native-240V inverter that runs a submersible directly, sized for a household that doesn't need the full 14kWh. At $0.63/Wh it's a fair alternate to the WallMount when you want a different battery format. One caveat: it's currently sitting near its 6-month high, so watch the buy/wait note before pulling the trigger.",
+          "The same EG4 6000XP split-phase platform as #2 with a 10,200Wh bank — a 6,000W native-240V inverter that runs a submersible directly, sized for a household that doesn't need the full 14kWh. At {p5.costPerWh} it's a fair alternate to the WallMount when you want a different battery format. One caveat: it's currently sitting near its 6-month high, so watch the buy/wait note before pulling the trigger.",
       },
     ],
     receiptMode: "autonomy",
     effectiveLoadWatts: 750,
     receiptNote:
-      "Here's the honest part: all five picks are component-complete integrated systems — **missing-parts cost is $0, there's no hidden BOM surcharge to make the kit itself work**. So the receipt here isn't about padding the price; it's about **runtime** (how many pump-and-fridge hours your money buys) and the one thing the kit doesn't include: the **pump tie-in**. For a hardwired 240V submersible that's a manual transfer switch or generator interlock (≈$150–$400, electrician install) plus appropriately-rated cable — see the gap-closing BOM below. The kit price is real and complete; the pump-connection parts are the gap.",
+      "Here's the honest part: all five picks are component-complete integrated systems — **missing-parts cost is [[const:$0]], there's no hidden BOM surcharge to make the kit itself work**. So the receipt here isn't about padding the price; it's about **runtime** (how many pump-and-fridge hours your money buys) and the one thing the kit doesn't include: the **pump tie-in**. For a hardwired 240V submersible that's a manual transfer switch or generator interlock (≈[[const:$150–$400]], electrician install) plus appropriately-rated cable — see the gap-closing BOM below. The kit price is real and complete; the pump-connection parts are the gap.",
     sections: [
       {
         heading: "The load profile: what a well pump actually pulls",
@@ -233,8 +233,8 @@ Be opinionated about voltage: if you have a **240V deep submersible**, **skip th
         body: `These kits are component-complete — panel, battery, inverter, controller and cabling are in the box, so there's no missing-parts surcharge ([how we calculate that](/how-real-build-cost-is-calculated)). The real "still need to buy" is the **pump tie-in**, which no power station includes:
 
 - **120V power station path** — if your pump and its pressure-control are 120V, nothing extra. **Verify the pump voltage first.**
-- **240V submersible path** — confirm the inverter is **120/240V split-phase** (#2 and #4 are; a single F3800 is 120V unless hubbed), then add a **manual transfer switch or generator interlock kit** (~$150–$400, electrician install) and appropriately-rated cable (e.g. an L14-30 path for portables).
-- **Soft-start option** — if you keep a smaller inverter, a **CSCR control box / soft starter** on the pump (~$80–$250) cuts the inrush — straight from the verdict note's fix.
+- **240V submersible path** — confirm the inverter is **120/240V split-phase** (#2 and #4 are; a single F3800 is 120V unless hubbed), then add a **manual transfer switch or generator interlock kit** (~[[const:$150–$400]], electrician install) and appropriately-rated cable (e.g. an L14-30 path for portables).
+- **Soft-start option** — if you keep a smaller inverter, a **CSCR control box / soft starter** on the pump (~[[const:$80–$250]]) cuts the inrush — straight from the verdict note's fix.
 
 Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), and re-check your numbers in the [calculator](/calculator) after you add the pump and its companions. Prices on the kits come from multi-retailer tracking — see [data sources](/data-sources).`,
       },
@@ -263,7 +263,7 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
       {
         question: "Will a portable power station run my 240V submersible well pump?",
         answer:
-          "Only if it outputs true 120/240V split-phase. A single Anker F3800 is 120V unless you pair two on a Double Voltage Hub; the EG4 6000XP-based kits are natively 240V. For a hardwired 240V pump you'll also need a manual transfer switch or generator interlock (about $150–$400 installed) — that's the one part the kit itself doesn't include.",
+          "Only if it outputs true 120/240V split-phase. A single Anker F3800 is 120V unless you pair two on a Double Voltage Hub; the EG4 6000XP-based kits are natively 240V. For a hardwired 240V pump you'll also need a manual transfer switch or generator interlock (about [[const:$150–$400]] installed) — that's the one part the kit itself doesn't include.",
       },
     ],
     publishedAt: "2026-06-19T00:00:00Z",
@@ -280,7 +280,7 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
       "We compared 56 cabin-rated solar kits on true build cost, hidden missing parts, and 6-month price trends. The honest shortlist — plus when to buy vs. wait.",
     intent: "decision / shortlist — off grid solar system for a cabin (high commercial intent)",
     answer:
-      "For a cabin, the kit that works is whatever clears your well pump's startup surge and stores enough for a fridge that never sleeps — not whatever has the biggest panel number. We filtered to 143 cabin-rated kits with a 2,000W+ inverter, then ranked the 56 clean, paneled primaries. The honest surprise: the best cabin kits are near-complete integrated LiFePO4 stations (missing-parts cost ~$0), so the real receipt isn't a hidden battery — it's panel mounts, monitoring, and a soft starter for the well. The five below win on cost-per-watt-hour, surge headroom, and a verifiable 6-month price signal.",
+      "For a cabin, the kit that works is whatever clears your well pump's startup surge and stores enough for a fridge that never sleeps — not whatever has the biggest panel number. We filtered to 143 cabin-rated kits with a 2,000W+ inverter, then ranked the 56 clean, paneled primaries. The honest surprise: the best cabin kits are near-complete integrated LiFePO4 stations (missing-parts cost ~[[const:$0]]), so the real receipt isn't a hidden battery — it's panel mounts, monitoring, and a soft starter for the well. The five below win on cost-per-watt-hour, surge headroom, and a verifiable 6-month price signal.",
     loadIds: ["mini-fridge", "well-pump", "led-light", "wifi-router"],
     assumptions: {
       sunHoursPerDay: 4.5,
@@ -299,38 +299,38 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
         kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
         label: "Best $/Wh — most battery per dollar",
         rationale:
-          "The most storage you can buy per dollar in this cohort: 5,120Wh of LiFePO4 at $0.25/Wh, with a 5,000W inverter that won't flinch at a ½-HP well pump's 2,000–3,500W startup spike — the single biggest reason cabin kits fail. That surge headroom plus 1,800W of panels to refill it makes this the pick for a fridge, a pump, and a couple of cloudy days. One caveat to confirm on the retailer page: the \"unit only\" listing is an integrated bundle in our data (panels, battery, inverter, controller, wiring, and mounting all flagged included) — verify the panel array before you buy. Flat at $1,299 across its full 37-point history, so buy when you need it.",
+          "The most storage you can buy per dollar in this cohort: 5,120Wh of LiFePO4 at {p1.costPerWh}, with a 5,000W inverter that won't flinch at a ½-HP well pump's 2,000–3,500W startup spike — the single biggest reason cabin kits fail. That surge headroom plus 1,800W of panels to refill it makes this the pick for a fridge, a pump, and a couple of cloudy days. One caveat to confirm on the retailer page: the \"unit only\" listing is an integrated bundle in our data (panels, battery, inverter, controller, wiring, and mounting all flagged included) — verify the panel array before you buy. Flat at {p1.listedPrice} across its full 37-point history, so buy when you need it.",
         cta: true,
       },
       {
         kitSlug: "jackery-2000plus-4085wh-2x200w",
         label: "Best balanced cabin pick — and best buy-now story",
         rationale:
-          "The most balanced cabin system here: 4,085Wh of LiFePO4, a 3,000W inverter with real surge margin for a well pump, and app monitoring built in — at $0.49/Wh. It's also the strongest buy-now signal in the whole cohort: $1,999 today, down from a $4,999 peak across 167 price observations, a $3,000 drop, and it has not been cheaper. If you want one box that handles a full cabin load and you're buying this month, this is it.",
+          "The most balanced cabin system here: 4,085Wh of LiFePO4, a 3,000W inverter with real surge margin for a well pump, and app monitoring built in — at {p2.costPerWh}. It's also the strongest buy-now signal in the whole cohort: {p2.listedPrice} today, down from a {p2.high6mo} peak across 167 price observations, a steep drop, and it has not been cheaper. If you want one box that handles a full cabin load and you're buying this month, this is it.",
       },
       {
         kitSlug: "renogy-400w-complete-lifepo4",
         label: "Best true component kit — most \"cabin-real\"",
         rationale:
-          "The only kit on the list that itemizes a real wired build: 400W of panels, a 40A MPPT controller, a 200Ah (2,560Wh) LiFePO4 battery, a 2,000W pure-sine inverter, and Bluetooth monitoring — completeness 100, the highest in the cohort. At $0.74/Wh it's the priciest per watt-hour here, and that's the honest tradeoff: you're paying for a mountable, expandable, rack-style system instead of a sealed box. The 2,000W inverter sits right at the floor, so pair it with a soft starter if you're on a submersible well. Price history is a single observation, so we won't fake a trend — treat list price as current.",
+          "The only kit on the list that itemizes a real wired build: 400W of panels, a 40A MPPT controller, a 200Ah (2,560Wh) LiFePO4 battery, a 2,000W pure-sine inverter, and Bluetooth monitoring — completeness 100, the highest in the cohort. At {p3.costPerWh} it's the priciest per watt-hour here, and that's the honest tradeoff: you're paying for a mountable, expandable, rack-style system instead of a sealed box. The 2,000W inverter sits right at the floor, so pair it with a soft starter if you're on a submersible well. Price history is a single observation, so we won't fake a trend — treat list price as current.",
       },
       {
         kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
         label: "Best value all-in-one",
         rationale:
-          "A big-inverter all-in-one at its 6-month low: 3,072Wh of LiFePO4, a 3,600W inverter with plenty of room to stack a microwave or pump on top of the fridge, and 2,400W of panels — at $0.42/Wh. Currently $1,299, the bottom of its $1,299–$1,699 range over the last six months ($400 off peak), so the price signal says buy now. The integrated unit ships near-complete (completeness 86, missing-parts cost $0).",
+          "A big-inverter all-in-one at its 6-month low: 3,072Wh of LiFePO4, a 3,600W inverter with plenty of room to stack a microwave or pump on top of the fridge, and 2,400W of panels — at {p4.costPerWh}. Currently {p4.listedPrice}, the bottom of its {p4.low6mo}–{p4.high6mo} range over the last six months (at the floor of that range), so the price signal says buy now. The integrated unit ships near-complete (completeness 86, missing-parts cost {p4.missingCost}).",
       },
       {
-        kitSlug: "eco-worthy-400w-ultra-280ah",
-        label: "Most storage per dollar in a budget build",
+        kitSlug: "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
+        label: "Cheapest path into a cabin build",
         rationale:
-          "The budget storage play: 3,584Wh of LiFePO4 at $0.36/Wh with real Z-bracket mounts included — only remote monitoring is flagged not-included, a genuine $30–$80 gap. Its 2,000W inverter is fine for a single modern fridge but leave the second big surge load off it, and use a soft starter on a well pump. One pricing note: at $1,300 it sits $130 above its $1,170 six-month low, so set a price alert rather than buying at today's number.",
+          "The budget entry: {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.storageKwh} of {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.chemistry} at {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.costPerWh} behind a {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.inverterWatts} pure-sine inverter, {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.missingCost} hidden. At {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.listedPrice} it's the lowest outlay on the podium — enough for a weekend cabin's lights, fridge, and electronics. It's the main unit only, so add panels to recharge between visits, and step up if you want more than a couple of cloudy days of autonomy.",
       },
     ],
     receiptMode: "autonomy",
     effectiveLoadWatts: 220,
     receiptNote:
-      "Here's the receipt most cabin solar pages won't show you — and the honest surprise is good news. Unlike most brand catalog kits, these five are **near-complete** (completeness 86–100, missing-parts cost $0): you are *not* getting nickel-and-dimed into a second $800 order for the battery. So the real cabin \"build cost\" isn't a hidden component — it's the **surge-and-cold tax** the brand pages bury: panel mounts (~$60–$150, omitted by several cohort kits), remote monitoring (~$30–$80, the one gap on the Eco-Worthy), a soft starter for a well pump (~$50–$70), and an optional transfer switch (~$150–$300) if you're backfeeding the cabin panel. What your money actually buys here is autonomy: roughly two days of a real cabin load before you need sun.",
+      "Here's the receipt most cabin solar pages won't show you — and the honest surprise is good news. Unlike most brand catalog kits, these five are **near-complete** (completeness 86–100, missing-parts cost [[const:$0]]): you are *not* getting nickel-and-dimed into a second [[const:$800]] order for the battery. So the real cabin \"build cost\" isn't a hidden component — it's the **surge-and-cold tax** the brand pages bury: panel mounts (~[[const:$60–$150]], omitted by several cohort kits), remote monitoring (~[[const:$30–$80]], a common omission), a soft starter for a well pump (~[[const:$50–$70]]), and an optional transfer switch (~[[const:$150–$300]]) if you're backfeeding the cabin panel. What your money actually buys here is autonomy: roughly two days of a real cabin load before you need sun.",
     sections: [
       {
         heading: "The cabin load profile: why inverter watts decide it",
@@ -358,14 +358,14 @@ The honest split: the **Bluetti, Jackery, and Anker** are integrated stations wi
       },
       {
         heading: "The receipt and the gap-closing BOM: what brand pages hide",
-        body: `Here's the receipt cabin solar pages won't show you, and for this cohort the good news is real: these five list for what they actually cost to *run* — completeness 86–100, **missing-parts cost $0**. You are not getting nickel-and-dimed into a second order for the battery, which is rare; most brand catalog kits are not this complete.
+        body: `Here's the receipt cabin solar pages won't show you, and for this cohort the good news is real: these five list for what they actually cost to *run* — completeness 86–100, **missing-parts cost [[const:$0]]**. You are not getting nickel-and-dimed into a second order for the battery, which is rare; most brand catalog kits are not this complete.
 
 But "complete enough to run" isn't "complete for a cabin." The small, real gaps the brand pages bury — and a realistic dollar band for each:
 
-- **Panel mounts** ($60–$150) — ground racks or roof Z-brackets, omitted by several cohort kits (the Eco-Worthy includes its Z-brackets; confirm on each kit page).
-- **Soft starter** ($50–$70) — the blocker fix if you have a well pump or an AC compressor on a 2,000W inverter.
-- **Remote monitoring / shunt** ($30–$80) — the one flagged gap on the Eco-Worthy 400W Ultra.
-- **Transfer switch + inlet** ($150–$300) — only if you're backfeeding cabin circuits rather than plugging loads in directly.
+- **Panel mounts** ([[const:$60–$150]]) — ground racks or roof Z-brackets, omitted by several cohort kits (confirm inclusion on each kit page).
+- **Soft starter** ([[const:$50–$70]]) — the blocker fix if you have a well pump or an AC compressor on a 2,000W inverter.
+- **Remote monitoring / shunt** ([[const:$30–$80]]) — a common omission on budget kits.
+- **Transfer switch + inlet** ([[const:$150–$300]]) — only if you're backfeeding cabin circuits rather than plugging loads in directly.
 - **Extra LiFePO4** — for 2–3 days of winter autonomy if the cabin is a full-time residence.
 
 We flag exactly which line items each kit includes versus omits from its own BOM — see the per-kit breakdown on each [kit page](/compare). The point of the receipt isn't that the gap is huge; it's that it's **small and finally visible**.`,
@@ -385,7 +385,7 @@ We flag exactly which line items each kit includes versus omits from its own BOM
       {
         question: "How much should an off-grid solar system cost for a small cabin?",
         answer:
-          "For a near-complete LiFePO4 station that clears a cabin's surge loads, plan roughly $1,300–$2,000 — our five cabin picks list from $1,299 to $1,999. Because these ship with panels, battery, and inverter integrated, the real build cost is close to the sticker; budget another ~$100–$300 for panel mounts, monitoring, and a soft starter if you're on a well.",
+          "For a near-complete LiFePO4 station that clears a cabin's surge loads, plan roughly [[const:$1,300–$2,000]] — our five cabin picks list from {p5.listedPrice} to {p2.listedPrice}. Because these ship with panels, battery, and inverter integrated, the real build cost is close to the sticker; budget another ~[[const:$100–$300]] for panel mounts, monitoring, and a soft starter if you're on a well.",
       },
       {
         question: "How much solar power do I need for an off-grid cabin?",
@@ -593,7 +593,7 @@ Budget roughly **$250–$600** of integration parts on top of a hardwired kit. A
         kitSlug: "ecoflow-delta2max-400w",
         label: "Workshop-grade inverter",
         rationale:
-          "The pick when the \"workshop\" half of the question is real. The 2,400W pure-sine inverter gives the surge headroom a table saw or a pancake compressor needs, the 2,048Wh battery covers a full shop session, and at $0.44/Wh it's the lowest cost-per-watt-hour of the plug-and-play tier. $899 today sits within ~6% of its 6-month low — a fair price to lock in.",
+          "The pick when the \"workshop\" half of the question is real. The 2,400W pure-sine inverter gives the surge headroom a table saw or a pancake compressor needs, the 2,048Wh battery covers a full shop session, and at $0.44/Wh it's strong value for a workshop-grade inverter. $899 today sits within ~6% of its 6-month low — a fair price to lock in.",
       },
       {
         kitSlug: "eco-worthy-200w-complete",
@@ -602,10 +602,10 @@ Budget roughly **$250–$600** of integration parts on top of a hardwired kit. A
           "The lowest entry for a 12V hard-wired shed, and the kit that teaches the hidden-cost lesson. Advertised at $550, its real build cost is $675: the mounting hardware is \"Not included\" and there's no battery monitor (the data names a Victron SmartShunt as the gap, ~+$125). You get 1,280Wh of LiFePO4, but the $550 sticker is a $675 working system — which is exactly why a $500 integrated unit can beat it.",
       },
       {
-        kitSlug: "eco-worthy-400w-ultra-280ah",
+        kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
         label: "Big-bank ceiling pick",
         rationale:
-          "The \"run a fridge and tools all day\" ceiling under $1,500. Its 3,584Wh of LiFePO4 is the cheapest real storage in the cohort at $0.36/Wh, behind a 2,000W pure-sine inverter with MPPT and mounting included. At $1,300 it sits ~11% above its 6-month low, so it's a buy-when-you-need-it rather than a buy-the-dip — but no other kit here gives you this much battery for the money.",
+          "The \"run a fridge and tools all day\" ceiling under $1,500. Its 5,120Wh of LiFePO4 is the cheapest real storage in the cohort at $0.25/Wh, behind a 5,000W pure-sine inverter — the most surge headroom on the shortlist — with the panels, mounting, and monitoring already in the box ($0 hidden). At $1,299 it has held flat for six months with no dip to wait for, so buy it when you need the runtime — no other kit here gives you this much battery, or this much inverter, for the money.",
       },
     ],
     receiptMode: "autonomy",
@@ -640,7 +640,7 @@ A shop fridge is a milder version of the same lesson: pure-sine only, and size f
 - **#2 Bluetti AC180P — $699.** Same $0.49/Wh, 1,440Wh — the storage step-up for a shop fridge.
 - **#3 EcoFlow DELTA 2 Max — $899.** 2,400W inverter, $0.44/Wh — the workshop-grade pick.
 - **#4 Eco-Worthy 200W Complete — $550 sticker / $675 real.** The DIY budget entry; read the receipt below.
-- **#5 Eco-Worthy 400W Ultra 280Ah — $1,300.** 3,584Wh at $0.36/Wh — the all-day ceiling.
+- **#5 Bluetti RV5 Power Hub — $1,299.** 5,120Wh at $0.25/Wh behind a 5,000W inverter — the all-day ceiling.
 
 Each name links to its full audit. To see the whole shed-rated pool, browse [best solar kits for a shed](/best-for/shed) or run a [side-by-side compare](/compare).`,
       },
@@ -656,7 +656,7 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
     whyWon: [
       "Every podium kit is LiFePO4 and pure-sine, with an inverter at or above 2,000W — enough to clear real shop-tool surges, not just the running watts.",
       "The top three are integrated stations with $0 in hidden parts, so a $500 unit is genuinely a $500 working system — nothing left to buy.",
-      "All five are priced and ranked from live data by real build cost and cost-per-watt-hour, from the $500 floor to the $0.36/Wh storage ceiling.",
+      "All five are priced and ranked from live data by real build cost and cost-per-watt-hour, from the $500 floor to the $0.25/Wh storage ceiling.",
     ],
     whyFailed: [
       "Sub-2,000W kits and a $300 pancake compressor don't mix — the inrush spike past 3,000W on restart trips small inverters mid-task.",
@@ -714,38 +714,38 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
         kitSlug: "bluetti-ac300-b300k-pv350",
         label: "Best all-round",
         rationale:
-          "The editor's pick because it clears every load on this page with margin. A true 3,000W pure-sine inverter swallows the fridge, furnace-blower, and sump-pump surges without flinching, and 2,764Wh of LiFePO4 carries the cycling load through a long outage. It's modular too — add a B300 expansion battery later for multi-day storm autonomy. You pay a premium at $0.83/Wh, but you're buying surge headroom plus the option to grow.",
+          "The editor's pick because it clears every load on this page with margin. A true 3,000W pure-sine inverter swallows the fridge, furnace-blower, and sump-pump surges without flinching, and 2,764Wh of LiFePO4 carries the cycling load through a long outage. It's modular too — add a B300 expansion battery later for multi-day storm autonomy. You pay a premium at {p1.costPerWh}, but you're buying surge headroom plus the option to grow.",
         cta: true,
       },
       {
         kitSlug: "jackery-2000plus-4085wh-2x200w",
         label: "Most runtime per dollar",
         rationale:
-          "The value buy for the longest fridge runtime. At 4,085Wh and $0.49/Wh it has the most raw storage on the podium, and its 3,000W pure-sine inverter still clears the surge gate. It's also sitting at its all-time-low price right now — the best dollars-per-fridge-hour on the board if you want runtime over modularity.",
+          "The value buy for the longest fridge runtime. At 4,085Wh and {p2.costPerWh} it has the most raw storage on the podium, and its 3,000W pure-sine inverter still clears the surge gate. It's also sitting at its all-time-low price right now — the best dollars-per-fridge-hour on the board if you want runtime over modularity.",
       },
       {
         kitSlug: "ecoflow-delta-pro-400w",
         label: "Biggest surge headroom",
         rationale:
-          "The surge king, and the pick if your well, sump, and furnace blower can stack-start at the same instant. Its 3,600W inverter is the largest here, and at $4.50/W it's also the cheapest watt on the board. 3,600Wh of LiFePO4 keeps the fridge cold while leaving inverter overhead for a simultaneous motor inrush.",
+          "The surge king, and the pick if your well, sump, and furnace blower can stack-start at the same instant. Its 3,600W inverter is the largest here, and at {p3.costPerW} it's also the cheapest watt on the board. 3,600Wh of LiFePO4 keeps the fridge cold while leaving inverter overhead for a simultaneous motor inrush.",
       },
       {
         kitSlug: "ecoflow-11kw-ecoflow-delta-delta-3-ultra-plus-main-unit-only",
         label: "Most expandable",
         rationale:
-          "The future-proof pick: a 3,600W inverter and 3,072Wh base unit that expands toward 11kWh as your storm-autonomy needs grow. At $1,499 it's the cheapest 3,600W entry on the podium ($0.49/Wh). One catch — this is the main-unit-only configuration, so it ships without panels; you'll add solar separately if you want to recharge off-grid between storms.",
+          "The future-proof pick: a 3,600W inverter and 3,072Wh base unit that expands toward 11kWh as your storm-autonomy needs grow. At {p4.listedPrice} it's the cheapest 3,600W entry on the podium ({p4.costPerWh}). One catch — this is the main-unit-only configuration, so it ships without panels; you'll add solar separately if you want to recharge off-grid between storms.",
       },
       {
-        kitSlug: "eco-worthy-400w-ultra-280ah",
+        kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
         label: "Budget / most Wh per dollar",
         rationale:
-          "The honest \"you can spend less, here's the tradeoff\" anchor. At $0.36/Wh it's the only sub-$1,300 entry with real backup capacity (3,584Wh). But its 2,000W inverter and 12V architecture are the floor, not the comfortable middle — fine for a fridge plus furnace fan, tight for a sump pump under storm load. Buy it knowing where its limit is.",
+          "The most backup capacity per dollar on the podium: {kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.storageKwh} of {kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.chemistry} at {kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.costPerWh}, the lowest cost-per-watt-hour here. Unlike a 12V budget build, its {kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.inverterWatts} pure-sine inverter carries a sump pump's start-up surge under storm load, not just a fridge and a furnace fan. At {kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.listedPrice} ({kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.missingCost} hidden) it has held flat for six months — buy it when you want the capacity.",
       },
     ],
     receiptMode: "autonomy",
     effectiveLoadWatts: 175,
     receiptNote:
-      "Here's the core honesty hook for this class: **the receipt is the price**. Every all-in-one station in this cohort has a missing-parts cost of **$0** — the inverter, battery, charge controller, and outlets are already in the box, so true cost equals the listed price. The trap here isn't hidden parts the way it is with DIY component kits (where the advertised price can hide $300–$1,000 of still-to-buy BOM). The trap is **sizing**: buying too little inverter or too little battery for the loads that actually decide an outage. So the real receipt for this class is **runtime** — what your money buys is fridge-hours and surge headroom, not a parts shortfall.",
+      "Here's the core honesty hook for this class: **the receipt is the price**. Every all-in-one station in this cohort has a missing-parts cost of **[[const:$0]]** — the inverter, battery, charge controller, and outlets are already in the box, so true cost equals the listed price. The trap here isn't hidden parts the way it is with DIY component kits (where the advertised price can hide [[const:$300–$1,000]] of still-to-buy BOM). The trap is **sizing**: buying too little inverter or too little battery for the loads that actually decide an outage. So the real receipt for this class is **runtime** — what your money buys is fridge-hours and surge headroom, not a parts shortfall.",
     sections: [
       {
         heading: "The load profile: fridge, furnace fan, and a sump pump in a storm",
@@ -772,7 +772,7 @@ Each kit name links to its full audit on [portable power](/portable-power), and 
       },
       {
         heading: "The receipt and what's actually left to buy",
-        body: `For all-in-one stations, **listed price = true cost** — missing-parts cost is $0 across this entire cohort, unlike DIY kits where the advertised price can hide $300–$1,000 of BOM. See [how real build cost is calculated](/how-real-build-cost-is-calculated) for the full method.
+        body: `For all-in-one stations, **listed price = true cost** — missing-parts cost is [[const:$0]] across this entire cohort, unlike DIY kits where the advertised price can hide [[const:$300–$1,000]] of BOM. See [how real build cost is calculated](/how-real-build-cost-is-calculated) for the full method.
 
 So the "gap" here isn't parts — it's **operational add-ons**, all optional:
 
