@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { Kit } from "@/lib/demo-data";
-import type { DecisionGuideMeta, PodiumPick } from "@/lib/decision/types";
 import type { SizingResult } from "@/lib/calculator/types";
-import { getKitBySlug } from "@/lib/get-kits";
+import type { DecisionGuideMeta } from "@/lib/decision/types";
+import type { ResolvedPick } from "@/lib/decision/resolve";
 import { buildAffiliateUrl } from "@/lib/affiliate";
 import { getBuyTiming, BUY_SIGNAL_STYLE } from "@/lib/decision/evidence";
 import { Receipt } from "@/components/receipt";
@@ -30,19 +30,6 @@ function bestBuy(kit: Kit): { url: string; retailer: string; price: number } | n
     if (url) return { url, retailer: kit.retailer, price: kit.listedPrice };
   }
   return null;
-}
-
-interface ResolvedPick extends PodiumPick {
-  kit: Kit;
-}
-
-export function resolvePicks(picks: PodiumPick[]): ResolvedPick[] {
-  return picks
-    .map((p) => {
-      const kit = getKitBySlug(p.kitSlug);
-      return kit ? { ...p, kit } : null;
-    })
-    .filter((p): p is ResolvedPick => p !== null);
 }
 
 const ArrowOut = () => (

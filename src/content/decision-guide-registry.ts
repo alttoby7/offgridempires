@@ -58,10 +58,10 @@ export const decisionGuides: DecisionGuideMeta[] = [
           "The choice if you'll stack loads. Its 3,600W inverter leaves headroom for a microwave, a well pump, or an older fridge with a stiff compressor running on top of the fridge — without nudging the inverter toward its limit on every compressor start.",
       },
       {
-        kitSlug: "eco-worthy-400w-ultra-280ah",
-        label: "Alt — Amazon buyers",
+        kitSlug: "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
+        label: "Budget pick",
         rationale:
-          "A strong Amazon-native option with the most raw storage of the group (3,584Wh) at $0.36/Wh. Its 2,000W inverter sits right at the floor, so it's fine for a single modern fridge but leave the second big surge load off it. Note the price: it's currently above its 6-month low (see the buy/wait table).",
+          "An entry-level path onto the podium at {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.listedPrice}: {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.storageKwh} of {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.chemistry} behind a {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.inverterWatts} pure-sine inverter, with {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.missingCost} in hidden parts. At {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.costPerWh} it runs a single modern fridge cleanly — buy it when the goal is a covered fridge for the lowest outlay, not the longest runtime. It's the main unit only, so add panels separately to recharge off-grid.",
       },
       {
         kitSlug: "anker-4kw-anker-solix-c2000-gen-2-200w-solar-panel",
@@ -321,10 +321,10 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
           "A big-inverter all-in-one at its 6-month low: 3,072Wh of LiFePO4, a 3,600W inverter with plenty of room to stack a microwave or pump on top of the fridge, and 2,400W of panels — at $0.42/Wh. Currently $1,299, the bottom of its $1,299–$1,699 range over the last six months ($400 off peak), so the price signal says buy now. The integrated unit ships near-complete (completeness 86, missing-parts cost $0).",
       },
       {
-        kitSlug: "eco-worthy-400w-ultra-280ah",
-        label: "Most storage per dollar in a budget build",
+        kitSlug: "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
+        label: "Cheapest path into a cabin build",
         rationale:
-          "The budget storage play: 3,584Wh of LiFePO4 at $0.36/Wh with real Z-bracket mounts included — only remote monitoring is flagged not-included, a genuine $30–$80 gap. Its 2,000W inverter is fine for a single modern fridge but leave the second big surge load off it, and use a soft starter on a well pump. One pricing note: at $1,300 it sits $130 above its $1,170 six-month low, so set a price alert rather than buying at today's number.",
+          "The budget entry: {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.storageKwh} of {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.chemistry} at {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.costPerWh} behind a {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.inverterWatts} pure-sine inverter, {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.missingCost} hidden. At {kit:anker-4kw-anker-solix-c2000-gen-2-main-unit-only.listedPrice} it's the lowest outlay on the podium — enough for a weekend cabin's lights, fridge, and electronics. It's the main unit only, so add panels to recharge between visits, and step up if you want more than a couple of cloudy days of autonomy.",
       },
     ],
     receiptMode: "autonomy",
@@ -736,10 +736,10 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
           "The future-proof pick: a 3,600W inverter and 3,072Wh base unit that expands toward 11kWh as your storm-autonomy needs grow. At $1,499 it's the cheapest 3,600W entry on the podium ($0.49/Wh). One catch — this is the main-unit-only configuration, so it ships without panels; you'll add solar separately if you want to recharge off-grid between storms.",
       },
       {
-        kitSlug: "eco-worthy-400w-ultra-280ah",
+        kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
         label: "Budget / most Wh per dollar",
         rationale:
-          "The honest \"you can spend less, here's the tradeoff\" anchor. At $0.36/Wh it's the only sub-$1,300 entry with real backup capacity (3,584Wh). But its 2,000W inverter and 12V architecture are the floor, not the comfortable middle — fine for a fridge plus furnace fan, tight for a sump pump under storm load. Buy it knowing where its limit is.",
+          "The most backup capacity per dollar on the podium: {kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.storageKwh} of {kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.chemistry} at {kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.costPerWh}, the lowest cost-per-watt-hour here. Unlike a 12V budget build, its {kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.inverterWatts} pure-sine inverter carries a sump pump's start-up surge under storm load, not just a fridge and a furnace fan. At {kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.listedPrice} ({kit:bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only.missingCost} hidden) it has held flat for six months — buy it when you want the capacity.",
       },
     ],
     receiptMode: "autonomy",
