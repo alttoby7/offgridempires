@@ -593,7 +593,7 @@ Budget roughly **$250–$600** of integration parts on top of a hardwired kit. A
         kitSlug: "ecoflow-delta2max-400w",
         label: "Workshop-grade inverter",
         rationale:
-          "The pick when the \"workshop\" half of the question is real. The 2,400W pure-sine inverter gives the surge headroom a table saw or a pancake compressor needs, the 2,048Wh battery covers a full shop session, and at $0.44/Wh it's the lowest cost-per-watt-hour of the plug-and-play tier. $899 today sits within ~6% of its 6-month low — a fair price to lock in.",
+          "The pick when the \"workshop\" half of the question is real. The 2,400W pure-sine inverter gives the surge headroom a table saw or a pancake compressor needs, the 2,048Wh battery covers a full shop session, and at $0.44/Wh it's strong value for a workshop-grade inverter. $899 today sits within ~6% of its 6-month low — a fair price to lock in.",
       },
       {
         kitSlug: "eco-worthy-200w-complete",
@@ -602,10 +602,10 @@ Budget roughly **$250–$600** of integration parts on top of a hardwired kit. A
           "The lowest entry for a 12V hard-wired shed, and the kit that teaches the hidden-cost lesson. Advertised at $550, its real build cost is $675: the mounting hardware is \"Not included\" and there's no battery monitor (the data names a Victron SmartShunt as the gap, ~+$125). You get 1,280Wh of LiFePO4, but the $550 sticker is a $675 working system — which is exactly why a $500 integrated unit can beat it.",
       },
       {
-        kitSlug: "eco-worthy-400w-ultra-280ah",
+        kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
         label: "Big-bank ceiling pick",
         rationale:
-          "The \"run a fridge and tools all day\" ceiling under $1,500. Its 3,584Wh of LiFePO4 is the cheapest real storage in the cohort at $0.36/Wh, behind a 2,000W pure-sine inverter with MPPT and mounting included. At $1,300 it sits ~11% above its 6-month low, so it's a buy-when-you-need-it rather than a buy-the-dip — but no other kit here gives you this much battery for the money.",
+          "The \"run a fridge and tools all day\" ceiling under $1,500. Its 5,120Wh of LiFePO4 is the cheapest real storage in the cohort at $0.25/Wh, behind a 5,000W pure-sine inverter — the most surge headroom on the shortlist — with the panels, mounting, and monitoring already in the box ($0 hidden). At $1,299 it has held flat for six months with no dip to wait for, so buy it when you need the runtime — no other kit here gives you this much battery, or this much inverter, for the money.",
       },
     ],
     receiptMode: "autonomy",
@@ -640,7 +640,7 @@ A shop fridge is a milder version of the same lesson: pure-sine only, and size f
 - **#2 Bluetti AC180P — $699.** Same $0.49/Wh, 1,440Wh — the storage step-up for a shop fridge.
 - **#3 EcoFlow DELTA 2 Max — $899.** 2,400W inverter, $0.44/Wh — the workshop-grade pick.
 - **#4 Eco-Worthy 200W Complete — $550 sticker / $675 real.** The DIY budget entry; read the receipt below.
-- **#5 Eco-Worthy 400W Ultra 280Ah — $1,300.** 3,584Wh at $0.36/Wh — the all-day ceiling.
+- **#5 Bluetti RV5 Power Hub — $1,299.** 5,120Wh at $0.25/Wh behind a 5,000W inverter — the all-day ceiling.
 
 Each name links to its full audit. To see the whole shed-rated pool, browse [best solar kits for a shed](/best-for/shed) or run a [side-by-side compare](/compare).`,
       },
@@ -656,7 +656,7 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
     whyWon: [
       "Every podium kit is LiFePO4 and pure-sine, with an inverter at or above 2,000W — enough to clear real shop-tool surges, not just the running watts.",
       "The top three are integrated stations with $0 in hidden parts, so a $500 unit is genuinely a $500 working system — nothing left to buy.",
-      "All five are priced and ranked from live data by real build cost and cost-per-watt-hour, from the $500 floor to the $0.36/Wh storage ceiling.",
+      "All five are priced and ranked from live data by real build cost and cost-per-watt-hour, from the $500 floor to the $0.25/Wh storage ceiling.",
     ],
     whyFailed: [
       "Sub-2,000W kits and a $300 pancake compressor don't mix — the inrush spike past 3,000W on restart trips small inverters mid-task.",
