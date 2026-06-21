@@ -280,7 +280,7 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
       "We compared 56 cabin-rated solar kits on true build cost, hidden missing parts, and 6-month price trends. The honest shortlist — plus when to buy vs. wait.",
     intent: "decision / shortlist — off grid solar system for a cabin (high commercial intent)",
     answer:
-      "For a cabin, the kit that works is whatever clears your well pump's startup surge and stores enough for a fridge that never sleeps — not whatever has the biggest panel number. We filtered to 143 cabin-rated kits with a 2,000W+ inverter, then ranked the 56 clean, paneled primaries. The honest surprise: the best cabin kits are near-complete integrated LiFePO4 stations (missing-parts cost ~$0), so the real receipt isn't a hidden battery — it's panel mounts, monitoring, and a soft starter for the well. The five below win on cost-per-watt-hour, surge headroom, and a verifiable 6-month price signal.",
+      "For a cabin, the kit that works is whatever clears your well pump's startup surge and stores enough for a fridge that never sleeps — not whatever has the biggest panel number. We filtered to 143 cabin-rated kits with a 2,000W+ inverter, then ranked the 56 clean, paneled primaries. The honest surprise: the best cabin kits are near-complete integrated LiFePO4 stations (missing-parts cost ~[[const:$0]]), so the real receipt isn't a hidden battery — it's panel mounts, monitoring, and a soft starter for the well. The five below win on cost-per-watt-hour, surge headroom, and a verifiable 6-month price signal.",
     loadIds: ["mini-fridge", "well-pump", "led-light", "wifi-router"],
     assumptions: {
       sunHoursPerDay: 4.5,
@@ -299,26 +299,26 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
         kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
         label: "Best $/Wh — most battery per dollar",
         rationale:
-          "The most storage you can buy per dollar in this cohort: 5,120Wh of LiFePO4 at $0.25/Wh, with a 5,000W inverter that won't flinch at a ½-HP well pump's 2,000–3,500W startup spike — the single biggest reason cabin kits fail. That surge headroom plus 1,800W of panels to refill it makes this the pick for a fridge, a pump, and a couple of cloudy days. One caveat to confirm on the retailer page: the \"unit only\" listing is an integrated bundle in our data (panels, battery, inverter, controller, wiring, and mounting all flagged included) — verify the panel array before you buy. Flat at $1,299 across its full 37-point history, so buy when you need it.",
+          "The most storage you can buy per dollar in this cohort: 5,120Wh of LiFePO4 at {p1.costPerWh}, with a 5,000W inverter that won't flinch at a ½-HP well pump's 2,000–3,500W startup spike — the single biggest reason cabin kits fail. That surge headroom plus 1,800W of panels to refill it makes this the pick for a fridge, a pump, and a couple of cloudy days. One caveat to confirm on the retailer page: the \"unit only\" listing is an integrated bundle in our data (panels, battery, inverter, controller, wiring, and mounting all flagged included) — verify the panel array before you buy. Flat at {p1.listedPrice} across its full 37-point history, so buy when you need it.",
         cta: true,
       },
       {
         kitSlug: "jackery-2000plus-4085wh-2x200w",
         label: "Best balanced cabin pick — and best buy-now story",
         rationale:
-          "The most balanced cabin system here: 4,085Wh of LiFePO4, a 3,000W inverter with real surge margin for a well pump, and app monitoring built in — at $0.49/Wh. It's also the strongest buy-now signal in the whole cohort: $1,999 today, down from a $4,999 peak across 167 price observations, a $3,000 drop, and it has not been cheaper. If you want one box that handles a full cabin load and you're buying this month, this is it.",
+          "The most balanced cabin system here: 4,085Wh of LiFePO4, a 3,000W inverter with real surge margin for a well pump, and app monitoring built in — at {p2.costPerWh}. It's also the strongest buy-now signal in the whole cohort: {p2.listedPrice} today, down from a {p2.high6mo} peak across 167 price observations, a steep drop, and it has not been cheaper. If you want one box that handles a full cabin load and you're buying this month, this is it.",
       },
       {
         kitSlug: "renogy-400w-complete-lifepo4",
         label: "Best true component kit — most \"cabin-real\"",
         rationale:
-          "The only kit on the list that itemizes a real wired build: 400W of panels, a 40A MPPT controller, a 200Ah (2,560Wh) LiFePO4 battery, a 2,000W pure-sine inverter, and Bluetooth monitoring — completeness 100, the highest in the cohort. At $0.74/Wh it's the priciest per watt-hour here, and that's the honest tradeoff: you're paying for a mountable, expandable, rack-style system instead of a sealed box. The 2,000W inverter sits right at the floor, so pair it with a soft starter if you're on a submersible well. Price history is a single observation, so we won't fake a trend — treat list price as current.",
+          "The only kit on the list that itemizes a real wired build: 400W of panels, a 40A MPPT controller, a 200Ah (2,560Wh) LiFePO4 battery, a 2,000W pure-sine inverter, and Bluetooth monitoring — completeness 100, the highest in the cohort. At {p3.costPerWh} it's the priciest per watt-hour here, and that's the honest tradeoff: you're paying for a mountable, expandable, rack-style system instead of a sealed box. The 2,000W inverter sits right at the floor, so pair it with a soft starter if you're on a submersible well. Price history is a single observation, so we won't fake a trend — treat list price as current.",
       },
       {
         kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
         label: "Best value all-in-one",
         rationale:
-          "A big-inverter all-in-one at its 6-month low: 3,072Wh of LiFePO4, a 3,600W inverter with plenty of room to stack a microwave or pump on top of the fridge, and 2,400W of panels — at $0.42/Wh. Currently $1,299, the bottom of its $1,299–$1,699 range over the last six months ($400 off peak), so the price signal says buy now. The integrated unit ships near-complete (completeness 86, missing-parts cost $0).",
+          "A big-inverter all-in-one at its 6-month low: 3,072Wh of LiFePO4, a 3,600W inverter with plenty of room to stack a microwave or pump on top of the fridge, and 2,400W of panels — at {p4.costPerWh}. Currently {p4.listedPrice}, the bottom of its {p4.low6mo}–{p4.high6mo} range over the last six months (at the floor of that range), so the price signal says buy now. The integrated unit ships near-complete (completeness 86, missing-parts cost {p4.missingCost}).",
       },
       {
         kitSlug: "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
@@ -330,7 +330,7 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
     receiptMode: "autonomy",
     effectiveLoadWatts: 220,
     receiptNote:
-      "Here's the receipt most cabin solar pages won't show you — and the honest surprise is good news. Unlike most brand catalog kits, these five are **near-complete** (completeness 86–100, missing-parts cost $0): you are *not* getting nickel-and-dimed into a second $800 order for the battery. So the real cabin \"build cost\" isn't a hidden component — it's the **surge-and-cold tax** the brand pages bury: panel mounts (~$60–$150, omitted by several cohort kits), remote monitoring (~$30–$80, the one gap on the Eco-Worthy), a soft starter for a well pump (~$50–$70), and an optional transfer switch (~$150–$300) if you're backfeeding the cabin panel. What your money actually buys here is autonomy: roughly two days of a real cabin load before you need sun.",
+      "Here's the receipt most cabin solar pages won't show you — and the honest surprise is good news. Unlike most brand catalog kits, these five are **near-complete** (completeness 86–100, missing-parts cost [[const:$0]]): you are *not* getting nickel-and-dimed into a second [[const:$800]] order for the battery. So the real cabin \"build cost\" isn't a hidden component — it's the **surge-and-cold tax** the brand pages bury: panel mounts (~[[const:$60–$150]], omitted by several cohort kits), remote monitoring (~[[const:$30–$80]], a common omission), a soft starter for a well pump (~[[const:$50–$70]]), and an optional transfer switch (~[[const:$150–$300]]) if you're backfeeding the cabin panel. What your money actually buys here is autonomy: roughly two days of a real cabin load before you need sun.",
     sections: [
       {
         heading: "The cabin load profile: why inverter watts decide it",
@@ -358,14 +358,14 @@ The honest split: the **Bluetti, Jackery, and Anker** are integrated stations wi
       },
       {
         heading: "The receipt and the gap-closing BOM: what brand pages hide",
-        body: `Here's the receipt cabin solar pages won't show you, and for this cohort the good news is real: these five list for what they actually cost to *run* — completeness 86–100, **missing-parts cost $0**. You are not getting nickel-and-dimed into a second order for the battery, which is rare; most brand catalog kits are not this complete.
+        body: `Here's the receipt cabin solar pages won't show you, and for this cohort the good news is real: these five list for what they actually cost to *run* — completeness 86–100, **missing-parts cost [[const:$0]]**. You are not getting nickel-and-dimed into a second order for the battery, which is rare; most brand catalog kits are not this complete.
 
 But "complete enough to run" isn't "complete for a cabin." The small, real gaps the brand pages bury — and a realistic dollar band for each:
 
-- **Panel mounts** ($60–$150) — ground racks or roof Z-brackets, omitted by several cohort kits (the Eco-Worthy includes its Z-brackets; confirm on each kit page).
-- **Soft starter** ($50–$70) — the blocker fix if you have a well pump or an AC compressor on a 2,000W inverter.
-- **Remote monitoring / shunt** ($30–$80) — the one flagged gap on the Eco-Worthy 400W Ultra.
-- **Transfer switch + inlet** ($150–$300) — only if you're backfeeding cabin circuits rather than plugging loads in directly.
+- **Panel mounts** ([[const:$60–$150]]) — ground racks or roof Z-brackets, omitted by several cohort kits (confirm inclusion on each kit page).
+- **Soft starter** ([[const:$50–$70]]) — the blocker fix if you have a well pump or an AC compressor on a 2,000W inverter.
+- **Remote monitoring / shunt** ([[const:$30–$80]]) — a common omission on budget kits.
+- **Transfer switch + inlet** ([[const:$150–$300]]) — only if you're backfeeding cabin circuits rather than plugging loads in directly.
 - **Extra LiFePO4** — for 2–3 days of winter autonomy if the cabin is a full-time residence.
 
 We flag exactly which line items each kit includes versus omits from its own BOM — see the per-kit breakdown on each [kit page](/compare). The point of the receipt isn't that the gap is huge; it's that it's **small and finally visible**.`,
@@ -385,7 +385,7 @@ We flag exactly which line items each kit includes versus omits from its own BOM
       {
         question: "How much should an off-grid solar system cost for a small cabin?",
         answer:
-          "For a near-complete LiFePO4 station that clears a cabin's surge loads, plan roughly $1,300–$2,000 — our five cabin picks list from $1,299 to $1,999. Because these ship with panels, battery, and inverter integrated, the real build cost is close to the sticker; budget another ~$100–$300 for panel mounts, monitoring, and a soft starter if you're on a well.",
+          "For a near-complete LiFePO4 station that clears a cabin's surge loads, plan roughly [[const:$1,300–$2,000]] — our five cabin picks list from {p5.listedPrice} to {p2.listedPrice}. Because these ship with panels, battery, and inverter integrated, the real build cost is close to the sticker; budget another ~[[const:$100–$300]] for panel mounts, monitoring, and a soft starter if you're on a well.",
       },
       {
         question: "How much solar power do I need for an off-grid cabin?",
