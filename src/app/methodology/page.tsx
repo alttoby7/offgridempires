@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BreadcrumbJsonLd } from "@/components/json-ld";
+import { BreadcrumbJsonLd, DatasetJsonLd, FaqJsonLd } from "@/components/json-ld";
 import {
   SectionHeading,
   Paragraph,
@@ -62,7 +62,9 @@ const faqs = [
 ];
 
 export default function MethodologyPage() {
-  const kitCount = getKits().length;
+  const kits = getKits();
+  const kitCount = kits.length;
+  const pricedCount = kits.filter((k) => k.listedPrice > 0).length;
   const updated = getKitsUpdated();
 
   return (
@@ -73,6 +75,12 @@ export default function MethodologyPage() {
           { name: "Methodology", url: "/methodology" },
         ]}
       />
+      <DatasetJsonLd
+        kitCount={kitCount}
+        pricedCount={pricedCount}
+        updated={updated}
+      />
+      <FaqJsonLd questions={faqs} />
       <Breadcrumb
         items={[{ href: "/", label: "Home" }, { label: "Methodology" }]}
       />

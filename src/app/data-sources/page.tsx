@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BreadcrumbJsonLd } from "@/components/json-ld";
+import { BreadcrumbJsonLd, DatasetJsonLd } from "@/components/json-ld";
 import {
   SectionHeading,
   Paragraph,
@@ -34,12 +34,14 @@ const retailers = [
   { name: "Signature Solar", feed: "Impact data feed", cadence: "12h" },
   { name: "EcoFlow", feed: "Impact data feed", cadence: "12h" },
   { name: "Anker SOLIX", feed: "Impact data feed", cadence: "12h" },
-  { name: "BioLongevity Labs partners", feed: "TUNE affiliate API", cadence: "12h" },
+  { name: "Renogy", feed: "Impact data feed", cadence: "12h" },
 ];
 
 export default function DataSourcesPage() {
-  const kitCount = getKits().length;
-  const brandCount = new Set(getKits().map((k) => k.brand)).size;
+  const kits = getKits();
+  const kitCount = kits.length;
+  const pricedCount = kits.filter((k) => k.listedPrice > 0).length;
+  const brandCount = new Set(kits.map((k) => k.brand)).size;
   const updated = getKitsUpdated();
 
   return (
@@ -49,6 +51,11 @@ export default function DataSourcesPage() {
           { name: "Home", url: "/" },
           { name: "Data Sources", url: "/data-sources" },
         ]}
+      />
+      <DatasetJsonLd
+        kitCount={kitCount}
+        pricedCount={pricedCount}
+        updated={updated}
       />
 
       <Breadcrumb

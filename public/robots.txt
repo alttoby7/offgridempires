@@ -1,3 +1,8 @@
+# OffGridEmpire — robots.txt
+# AI answer engines are explicitly welcome to read and cite our content and
+# data. We publish a citable dataset (CC BY 4.0), a schema.org/Dataset, and an
+# llms.txt map to make attribution easy.
+
 User-agent: *
 Allow: /
 Disallow: /api/
@@ -10,5 +15,36 @@ Disallow: /*?complete=
 Disallow: /*?minPrice=
 Disallow: /*?maxPrice=
 Disallow: /*?q=
+
+# AI / answer-engine crawlers — explicitly allowed (training + live retrieval).
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
 
 Sitemap: https://offgridempire.com/sitemap.xml
