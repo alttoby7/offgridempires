@@ -78,6 +78,10 @@ export const INDEXABLE_PATHS: ReadonlySet<string> = new Set([
   "/how-real-build-cost-is-calculated",
   "/data-sources",
   "/editorial-policy",
+
+  // Original-data reports = link/citation-earning assets (flipped 2026-06-22)
+  "/reports",
+  "/reports/state-of-off-grid-solar-pricing-2026",
 ]);
 
 /** Normalize a path: strip query/hash + trailing slash (except root). */

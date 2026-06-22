@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/json-ld";
+import { robotsFor } from "@/lib/index-manifest";
 import {
   Breadcrumb,
   PageTitle,
@@ -15,8 +16,8 @@ export const metadata: Metadata = {
   description:
     "Original-data reports on the off-grid solar market, computed from OffGridEmpire's live kit corpus — pricing, hidden costs, and buying signals.",
   alternates: { canonical: "/reports" },
-  // INDEX GOVERNOR — ships noindex,follow until a 🔴 gated flip.
-  robots: { index: false, follow: true },
+  // INDEX GOVERNOR — defers to INDEXABLE_PATHS. Indexable as of 2026-06-22.
+  ...robotsFor("/reports"),
   openGraph: {
     title: "Data Reports — OffGridEmpire",
     description:
