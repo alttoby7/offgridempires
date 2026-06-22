@@ -119,6 +119,8 @@ function buildEntries(): SitemapEntry[] {
   entries.push({ loc: "/how-real-build-cost-is-calculated", changefreq: "monthly", priority: 0.7, lastmod: today });
   entries.push({ loc: "/data-sources", changefreq: "monthly", priority: 0.5, lastmod: today });
   entries.push({ loc: "/editorial-policy", changefreq: "monthly", priority: 0.5, lastmod: today });
+  entries.push({ loc: "/reports", changefreq: "monthly", priority: 0.6, lastmod: today });
+  entries.push({ loc: "/reports/state-of-off-grid-solar-pricing-2026", changefreq: "monthly", priority: 0.8, lastmod: today });
   entries.push({ loc: "/about", changefreq: "monthly", priority: 0.5, lastmod: today });
   entries.push({ loc: "/contact", changefreq: "monthly", priority: 0.4, lastmod: today });
   entries.push({ loc: "/affiliate-disclosure", changefreq: "monthly", priority: 0.4, lastmod: today });

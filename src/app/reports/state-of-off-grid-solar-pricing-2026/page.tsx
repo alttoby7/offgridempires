@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd, DatasetJsonLd } from "@/components/json-ld";
+import { robotsFor } from "@/lib/index-manifest";
 import {
   SectionHeading,
   Paragraph,
@@ -25,8 +26,8 @@ export const metadata: Metadata = {
   description:
     "An original-data report on off-grid solar kit pricing: hidden build costs, a 3.2× spread for the same stored energy, the sub-2,000W surge trap, and how far prices swing over six months. Computed from 355 live kits.",
   alternates: { canonical: `/reports/${SLUG}` },
-  // INDEX GOVERNOR — ships noindex,follow. Flipping to index is a 🔴 gated action.
-  robots: { index: false, follow: true },
+  // INDEX GOVERNOR — defers to INDEXABLE_PATHS. Indexable as of 2026-06-22.
+  ...robotsFor(`/reports/${SLUG}`),
   openGraph: {
     title: `${TITLE}: What 355 Kits Reveal`,
     description:
