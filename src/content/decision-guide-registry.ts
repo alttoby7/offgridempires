@@ -23,7 +23,7 @@ export const decisionGuides: DecisionGuideMeta[] = [
       "Yes—if it clears the fridge's startup surge and sizes the battery for all-day cycling. We ran the math on 160 kits and ranked the 3 that actually win.",
     intent: "transactional / pre-purchase validation — will a solar generator run a refrigerator",
     answer:
-      "Yes — a solar generator will run a refrigerator if two things are true: its inverter clears the compressor's startup surge (≥2,000W pure-sine), and its battery is sized for all-day cycling, not the fridge's ~150W nameplate. We checked 160 kits against that bar; 78 ship with their own panels and clear it. Below are the three that win on cost, plus the surge math behind the rule.",
+      "Yes — a solar generator will run a refrigerator if two things are true: its inverter clears the compressor's startup surge (≥2,000W pure-sine), and its battery is sized for all-day cycling, not the fridge's ~150W nameplate. Of the 160 solar-generator kits OffGridEmpire tested against that bar, 78 (49%) ship with their own panels and clear it. Below are the three that win on cost, plus the surge math — a compressor's locked-rotor draw is 3–5× its running watts — behind the rule.",
     loadIds: ["mini-fridge", "chest-freezer"],
     assumptions: {
       sunHoursPerDay: 5.0,
@@ -77,7 +77,7 @@ export const decisionGuides: DecisionGuideMeta[] = [
     sections: [
       {
         heading: "The load profile: what a fridge actually pulls",
-        body: `A refrigerator lies to you twice. First, the ~150W on the nameplate is its *running* draw — but a compressor pulls **3–5× that to start**, a ~1,200–1,800W spike for a fraction of a second every time it kicks on. Second, it never really turns off: it cycles roughly a third of the day, 24/7.
+        body: `A refrigerator lies to you twice. First, the ~150W on the nameplate is its *running* draw — but a compressor pulls **3–5× that to start** (its *locked-rotor amperage*, or LRA), a ~1,200–1,800W spike for a fraction of a second every time it kicks on. Second, it never really turns off: it cycles roughly a third of the day, 24/7.
 
 Do the real math. A 150W fridge cycling ~⅓ of the day is about **1.2–1.5 kWh per day**. In summer heat, add ~30% — call it **1.8 kWh/day**. That is why a "1000W solar generator" with a 1,000W inverter so often fails on a fridge it's supposedly "rated" for: the inverter trips on the surge, or the battery is sized for the nameplate and dies overnight.
 

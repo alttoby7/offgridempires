@@ -192,6 +192,118 @@ export function FaqJsonLd({
 }
 
 /**
+ * Dataset schema — exposes OffGridEmpire's proprietary off-grid-solar cost &
+ * price corpus as a citable schema.org/Dataset. This is the AIO/GEO lever: it
+ * tells answer engines (ChatGPT, Perplexity, Google AI Overviews) that the
+ * site is the ORIGINAL SOURCE of structured data they can attribute — real
+ * build cost, completeness, cost-per-Wh, and 6-month price history across the
+ * full kit corpus — backed by an actual machine-readable DataDownload.
+ */
+export function DatasetJsonLd({
+  kitCount,
+  pricedCount,
+  updated,
+}: {
+  kitCount: number;
+  pricedCount: number;
+  updated?: string;
+}) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "OffGridEmpire Off-Grid Solar Kit Cost & Price Dataset",
+    description: `A continuously updated dataset of ${kitCount.toLocaleString()} off-grid solar kits (${pricedCount.toLocaleString()} actively priced) decomposed into 7 standard component roles. Each kit carries its advertised price, real build cost (advertised price plus required missing components), completeness score, cost per usable watt-hour, and 6-month price history. Prices refresh every 6–12 hours from retailer APIs and affiliate feeds.`,
+    url: `${SITE_URL}/methodology`,
+    sameAs: `${SITE_URL}/data-sources`,
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    isAccessibleForFree: true,
+    creator: {
+      "@type": "Organization",
+      name: "OffGridEmpire",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "OffGridEmpire",
+      url: SITE_URL,
+    },
+    ...(updated ? { dateModified: updated } : {}),
+    keywords: [
+      "off-grid solar kits",
+      "solar generator pricing",
+      "real build cost",
+      "cost per watt-hour",
+      "solar kit completeness",
+      "solar price history",
+      "LiFePO4 battery storage",
+      "portable power stations",
+    ],
+    measurementTechnique:
+      "Component-role decomposition with required-missing-part cost estimation; 6–12 hour retailer/affiliate price polling.",
+    variableMeasured: [
+      { "@type": "PropertyValue", name: "Advertised Price", unitText: "USD" },
+      {
+        "@type": "PropertyValue",
+        name: "Real Build Cost",
+        description:
+          "Advertised price plus the estimated cost of required components the kit does not include.",
+        unitText: "USD",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Completeness",
+        description:
+          "Percentage of the 7 required component roles the kit includes.",
+        unitText: "PERCENT",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Cost per Usable Watt-Hour",
+        description:
+          "Real build cost divided by usable battery watt-hours (depth-of-discharge adjusted).",
+        unitText: "USD per Wh",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Battery Storage",
+        unitText: "Wh",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Inverter Output",
+        unitText: "W",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "6-Month Price History",
+        description: "Daily-observed price points over the trailing 6 months.",
+      },
+    ],
+    distribution: [
+      {
+        "@type": "DataDownload",
+        name: "Full kit dataset (CSV)",
+        encodingFormat: "text/csv",
+        contentUrl: `${SITE_URL}/data/offgridempire-solar-kit-dataset.csv`,
+      },
+      {
+        "@type": "DataDownload",
+        name: "Full kit dataset (JSON)",
+        encodingFormat: "application/json",
+        contentUrl: `${SITE_URL}/data/offgridempire-solar-kit-dataset.json`,
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+/**
  * Organization schema for homepage — establishes entity identity.
  */
 export function OrganizationJsonLd() {

@@ -32,6 +32,12 @@ jobs:
       - name: Generate RSS feed
         run: npx tsx scripts/generate-feed.ts
 
+      - name: Generate citable dataset (CSV + JSON)
+        run: npx tsx scripts/generate-dataset.ts
+
+      - name: Generate llms.txt
+        run: npx tsx scripts/generate-llms.ts
+
       - name: Build OpenNext Worker
         run: npx opennextjs-cloudflare build
 
