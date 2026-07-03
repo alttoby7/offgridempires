@@ -11,7 +11,8 @@ import { getSessionId, getAttribution } from "@/lib/calculator/calc-recording";
 export interface AffiliateClickMeta {
   kitSlug: string;
   retailer: string;
-  price: number;
+  /** Omit for links with no meaningful price (e.g. add-on BOM parts). */
+  price?: number;
   /** kit_page | retailer_table | bom_missing_part | article_embed | best_for | compare | sticky_bar */
   surface?: string;
   /** systemType|completenessBand|priceBucket (optional) */
@@ -30,7 +31,7 @@ export function recordAffiliateClick(meta: AffiliateClickMeta): void {
         session_id: getSessionId(),
         kit_slug: meta.kitSlug,
         retailer: meta.retailer,
-        price_cents: Math.round((meta.price ?? 0) * 100),
+        price_cents: typeof meta.price === "number" ? Math.round(meta.price * 100) : null,
         surface: meta.surface ?? null,
         content_slug: meta.contentSlug ?? null,
         cohort: meta.cohort ?? null,

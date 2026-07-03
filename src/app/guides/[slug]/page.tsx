@@ -107,7 +107,7 @@ export default async function DecisionGuidePage({
         <span>/</span>
         <Link href="/guides" className="hover:text-[var(--accent)] transition-colors">Guides</Link>
         <span>/</span>
-        <span className="text-[var(--text-secondary)] truncate">Refrigerator</span>
+        <span className="text-[var(--text-secondary)] truncate">{meta.h1}</span>
       </nav>
 
       {/* 1. Header + answer-first */}

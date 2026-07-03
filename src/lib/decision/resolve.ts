@@ -77,6 +77,12 @@ export function getResolvedDecisionGuide(slug: string): ResolvedDecisionGuide | 
     whyWon: rawMeta.whyWon.map(R),
     whyFailed: rawMeta.whyFailed.map(R),
     faqs: rawMeta.faqs.map((f) => ({ question: R(f.question), answer: R(f.answer) })),
+    addOnBom: rawMeta.addOnBom?.map((it) => ({
+      ...it,
+      part: R(it.part),
+      why: R(it.why),
+      estCost: R(it.estCost),
+    })),
   };
 
   const resolvedPicks: ResolvedPick[] = picks.map((p, i) => ({

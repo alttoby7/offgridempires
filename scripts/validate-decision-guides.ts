@@ -58,6 +58,11 @@ function managedFields(m: DecisionGuideMeta): Field[] {
     f.push({ path: `faqs[${i}].question`, text: q.question });
     f.push({ path: `faqs[${i}].answer`, text: q.answer });
   });
+  m.addOnBom?.forEach((it, i) => {
+    f.push({ path: `addOnBom[${i}].part`, text: it.part });
+    f.push({ path: `addOnBom[${i}].why`, text: it.why });
+    f.push({ path: `addOnBom[${i}].estCost`, text: it.estCost });
+  });
   return f;
 }
 

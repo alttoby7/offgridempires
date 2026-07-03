@@ -313,17 +313,28 @@ export function BuyTimingTable({ picks }: { picks: ResolvedPick[] }) {
 
 // ── Add-on BOM (Tier-3 add-on pages) ─────────────────────────────────────────
 
+function addonSlug(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 40);
+}
+
 export function AddOnBom({ items, guideSlug }: { items: AddOnItem[]; guideSlug: string }) {
   if (!items.length) return null;
   return (
     <div className="overflow-x-auto rounded border border-[var(--border)] bg-[var(--bg-surface)]">
       <table className="w-full text-sm">
+        <caption className="sr-only">
+          Parts to add to a near-fit solar kit, with estimated cost and where to buy
+        </caption>
         <thead>
           <tr className="border-b border-[var(--border)] bg-[var(--bg-secondary)] text-xs uppercase tracking-wide text-[var(--text-muted)]">
-            <th className="px-4 py-3 text-left font-medium">Part to add</th>
-            <th className="px-4 py-3 text-left font-medium">Why it closes the gap</th>
-            <th className="px-4 py-3 text-right font-medium">Est. cost</th>
-            <th className="px-4 py-3 text-right font-medium">Shop</th>
+            <th scope="col" className="px-4 py-3 text-left font-medium">Part to add</th>
+            <th scope="col" className="px-4 py-3 text-left font-medium">Why it closes the gap</th>
+            <th scope="col" className="px-4 py-3 text-right font-medium">Est. cost</th>
+            <th scope="col" className="px-4 py-3 text-right font-medium">Shop</th>
           </tr>
         </thead>
         <tbody>
@@ -334,6 +345,12 @@ export function AddOnBom({ items, guideSlug }: { items: AddOnItem[]; guideSlug: 
                 ? `https://www.amazon.com/s?k=${encodeURIComponent(item.search)}`
                 : null;
             const url = target ? buildAffiliateUrl(target, "amazon") : null;
+            // Stable attribution id (never "addon:undefined").
+            const addonId = item.asin
+              ? `addon:asin:${item.asin}`
+              : item.search
+                ? `addon:search:${addonSlug(item.search)}`
+                : `addon:part:${addonSlug(item.part)}`;
             return (
               <tr
                 key={i}
@@ -348,11 +365,11 @@ export function AddOnBom({ items, guideSlug }: { items: AddOnItem[]; guideSlug: 
                   {url ? (
                     <AffiliateLink
                       href={url}
-                      kitSlug={`addon:${item.asin}`}
+                      kitSlug={addonId}
                       retailer="amazon"
-                      price={0}
                       surface="bom_addon"
                       contentSlug={guideSlug}
+                      aria-label={`Find ${item.part} on Amazon`}
                       className="text-xs font-medium text-[var(--accent)] hover:underline whitespace-nowrap"
                     >
                       Find on Amazon &rarr;

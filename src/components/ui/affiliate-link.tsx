@@ -7,12 +7,15 @@ interface AffiliateLinkProps {
   href: string;
   kitSlug: string;
   retailer: string;
-  price: number;
-  /** where the click happened — kit_page | retailer_table | bom_missing_part | article_embed | best_for | compare | sticky_bar */
+  /** Omit when there is no meaningful price (e.g. an add-on BOM part) — the
+   * trackers then skip price_cents rather than record a misleading 0. */
+  price?: number;
+  /** where the click happened — kit_page | retailer_table | bom_missing_part | bom_addon | article_embed | best_for | compare | sticky_bar */
   surface?: string;
   cohort?: string;
   contentSlug?: string;
   className?: string;
+  "aria-label"?: string;
   children: React.ReactNode;
 }
 
@@ -32,6 +35,7 @@ export function AffiliateLink({
   cohort,
   contentSlug,
   className,
+  "aria-label": ariaLabel,
   children,
 }: AffiliateLinkProps) {
   const onClick = () => {
@@ -44,6 +48,7 @@ export function AffiliateLink({
       target="_blank"
       rel="nofollow noopener noreferrer sponsored"
       className={className}
+      aria-label={ariaLabel}
       onClick={onClick}
     >
       {children}
