@@ -419,7 +419,7 @@ We flag exactly which line items each kit includes versus omits from its own BOM
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
-    indexable: false, // HELD noindex 2026-07-03 — Codex audit flagged (fix before flip)
+    indexable: true, // flipped 2026-07-03 after Codex-flagged fixes
   },
 
   // ── #4 (Tier 2) — off-grid / boondocking RV solar kit ──────────────────────
@@ -518,7 +518,7 @@ See how we derive these verdicts in our [methodology](/methodology).`,
 - **#1 Renogy 400W** — the only complete hardwired LiFePO4 kit in the cohort. Buy this if you want power permanently wired into the coach.
 - **#2 EcoFlow Delta 2 Max** — lowest cost-per-Wh of the complete picks ({p2.costPerWh}). The plug-and-play value anchor.
 - **#3 Bluetti AC180P double-kit** — mid-coach, extra panel wattage for shaded parking.
-- **#4 Anker C1000 (main unit only)** — cheapest door in; ships without a panel, so you add the array.
+- **#4 Anker C1000** — cheapest door in; flagged panel-included (600W) in our data, but confirm the array on the listing before you buy.
 - **#5 Anker C2000** — most inverter headroom of the plug-and-play picks for a bigger coach.
 
 Each kit name links to its full [audit](/kits). The single buy link on this page sits on the #1 pick. Want the broader set? Browse [RV-rated solar kits](/best-for/rv).`,
@@ -574,7 +574,7 @@ Budget roughly **[[const:$250–$600]]** of integration parts on top of a hardwi
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
-    indexable: false, // HELD noindex 2026-07-03 — Codex audit flagged (fix before flip)
+    indexable: true, // flipped 2026-07-03 after Codex-flagged fixes
   },
 
   // ── #5 (Tier 2) — solar kit for a shed or workshop ─────────────────────────
@@ -690,7 +690,7 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
     ],
     faqs: [
       {
-        question: "Can a {p1.listedPrice} solar kit run shop tools?",
+        question: "Can a compact solar kit run shop tools?",
         answer:
           "Yes, within limits. The {p1.listedPrice} Anker SOLIX C1000 has a 2,000W pure-sine inverter that runs a drill, a circular saw, lights, and a laptop. What it won't do is a 1,500W air compressor, which spikes past 3,000W on restart — for that step up to a 2,400W kit like the EcoFlow DELTA 2 Max or add a soft-start.",
       },
@@ -714,7 +714,7 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
-    indexable: false, // HELD noindex 2026-07-03 — Codex audit flagged (fix before flip)
+    indexable: true, // flipped 2026-07-03 after Codex-flagged fixes
   },
 
   // ── #6 (Tier 5) — portable power station for home backup ───────────────────
@@ -1699,7 +1699,7 @@ It's also the wrong buy if your real need is a few hours of grid-down lights and
     ],
     publishedAt: "2026-07-03T00:00:00Z",
     updatedAt: "2026-07-03T00:00:00Z",
-    indexable: false, // HELD noindex 2026-07-03 — Codex audit flagged (fix before flip)
+    indexable: true, // flipped 2026-07-03 after Codex-flagged fixes
   },
 ];
 

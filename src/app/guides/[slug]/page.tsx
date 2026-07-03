@@ -232,6 +232,20 @@ export default async function DecisionGuidePage({
           updatedAt={meta.updatedAt}
         />
       </section>
+
+      {/* Hub backlink — every spoke routes up to the by-use-case router */}
+      {!isHub && (
+        <p className="mt-8 text-sm text-[var(--text-muted)]">
+          Different use case?{" "}
+          <Link
+            href="/guides/best-off-grid-solar-generator"
+            className="text-[var(--accent)] hover:underline"
+          >
+            See the best off-grid solar generator for every load
+          </Link>
+          .
+        </p>
+      )}
     </div>
   );
 }

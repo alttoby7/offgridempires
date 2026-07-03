@@ -44,7 +44,32 @@ export function DecisionGuideJsonLd({
     },
   ];
 
-  if (meta.indexable) {
+  if (meta.indexable && meta.pageKind === "hub" && meta.segments?.length) {
+    // Hub: the ItemList is the by-use-case winners (no picks[] / Product blocks).
+    graph.push({
+      "@type": "ItemList",
+      "@id": `${pageUrl}#winners`,
+      name: meta.h1,
+      numberOfItems: meta.segments.length,
+      itemListElement: meta.segments.map((s, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: s.label,
+        url: `${SITE_URL}/guides/${s.sourceGuideSlug}`,
+      })),
+    });
+    if (meta.faqs.length > 0) {
+      graph.push({
+        "@type": "FAQPage",
+        "@id": `${pageUrl}#faq`,
+        mainEntity: meta.faqs.map((q) => ({
+          "@type": "Question",
+          name: q.question,
+          acceptedAnswer: { "@type": "Answer", text: q.answer },
+        })),
+      });
+    }
+  } else if (meta.indexable && picks.length > 0) {
     graph.push({
       "@type": "ItemList",
       "@id": `${pageUrl}#shortlist`,
