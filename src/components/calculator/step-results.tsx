@@ -18,10 +18,12 @@ function fmt(n: number): string {
   return n >= 1000 ? `${(n / 1000).toFixed(1)}k` : n.toLocaleString();
 }
 
+// Coverage is capped at 100% upstream (see matchKits), so an over-provisioned
+// kit reads as "100%" rather than an absurd 1595%. Clamp defensively here too.
 function CoverageBar({ pct, label }: { pct: number; label: string }) {
-  const clamped = Math.min(pct, 200);
+  const clamped = Math.max(0, Math.min(100, pct));
   const color =
-    pct >= 100 ? "var(--success)" : pct >= 80 ? "var(--accent)" : pct >= 50 ? "var(--warning)" : "var(--danger)";
+    clamped >= 100 ? "var(--success)" : clamped >= 80 ? "var(--accent)" : clamped >= 50 ? "var(--warning)" : "var(--danger)";
 
   return (
     <div className="flex items-center gap-2">
@@ -30,14 +32,102 @@ function CoverageBar({ pct, label }: { pct: number; label: string }) {
         <div
           className="h-full rounded-full transition-all duration-500"
           style={{
-            width: `${Math.min(100, (clamped / 200) * 100)}%`,
+            width: `${clamped}%`,
             backgroundColor: color,
           }}
         />
       </div>
       <span className="font-mono text-xs w-10 text-right" style={{ color }}>
-        {Math.round(pct)}%
+        {Math.round(clamped)}%
       </span>
+    </div>
+  );
+}
+
+// Show a sensible shortlist per bucket instead of listing all ~355 matched kits.
+const SHORTLIST_LIMIT = 6;
+
+function BucketSection({ bucket, matches }: { bucket: FitBucket; matches: KitMatch[] }) {
+  const [showAll, setShowAll] = useState(false);
+  const bucketInfo = BUCKET_LABELS[bucket];
+  const visible = showAll ? matches : matches.slice(0, SHORTLIST_LIMIT);
+  const hiddenCount = matches.length - visible.length;
+
+  return (
+    <div>
+      <div className="flex items-center gap-2 mb-3">
+        <div
+          className="w-2 h-2 rounded-full"
+          style={{ backgroundColor: bucketInfo.color }}
+        />
+        <h3 className="text-sm font-semibold" style={{ color: bucketInfo.color }}>
+          {bucketInfo.label}
+        </h3>
+        <span className="text-xs text-[var(--text-muted)]">
+          ({matches.length} kit{matches.length !== 1 ? "s" : ""})
+        </span>
+      </div>
+
+      <div className="space-y-2">
+        {visible.map((match) => (
+          <div
+            key={match.kit.id}
+            className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4"
+          >
+            <div className="flex items-start justify-between mb-3">
+              <div>
+                <Link
+                  href={`/kits/${match.kit.slug}`}
+                  className="text-sm font-semibold text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors"
+                >
+                  {match.kit.name}
+                </Link>
+                <div className="text-xs text-[var(--text-muted)] mt-0.5">
+                  {match.kit.brand} · ${match.kit.trueCost.toLocaleString()} real cost
+                </div>
+              </div>
+              <Link
+                href={`/kits/${match.kit.slug}`}
+                className="text-xs text-[var(--accent)] hover:underline shrink-0 ml-4"
+              >
+                View Kit →
+              </Link>
+            </div>
+
+            {/* Coverage bars */}
+            <div className="space-y-1.5">
+              <CoverageBar pct={match.solarCoverage} label="Solar" />
+              <CoverageBar pct={match.storageCoverage} label="Storage" />
+              <CoverageBar pct={match.inverterCoverage} label="Inverter" />
+            </div>
+
+            {/* Gap strings */}
+            {match.gaps.length > 0 && (
+              <div className="mt-3 pt-3 border-t border-[var(--border)]">
+                <div className="flex flex-wrap gap-2">
+                  {match.gaps.map((gap, i) => (
+                    <span
+                      key={i}
+                      className="text-xs px-2 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-muted)] border border-[var(--border)]"
+                    >
+                      {gap}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {matches.length > SHORTLIST_LIMIT && (
+        <button
+          onClick={() => setShowAll(!showAll)}
+          className="mt-3 text-xs font-medium text-[var(--accent)] hover:underline"
+        >
+          {showAll ? "Show fewer" : `Show ${hiddenCount} more kit${hiddenCount !== 1 ? "s" : ""}`}
+        </button>
+      )}
     </div>
   );
 }
@@ -236,77 +326,7 @@ export function StepResults({ loads, assumptions, sizing, kitMatches, shareUrl }
           (bucket) => {
             const matches = kitMatches.filter((m) => m.bucket === bucket);
             if (matches.length === 0) return null;
-
-            const bucketInfo = BUCKET_LABELS[bucket];
-
-            return (
-              <div key={bucket}>
-                <div className="flex items-center gap-2 mb-3">
-                  <div
-                    className="w-2 h-2 rounded-full"
-                    style={{ backgroundColor: bucketInfo.color }}
-                  />
-                  <h3 className="text-sm font-semibold" style={{ color: bucketInfo.color }}>
-                    {bucketInfo.label}
-                  </h3>
-                  <span className="text-xs text-[var(--text-muted)]">
-                    ({matches.length} kit{matches.length !== 1 ? "s" : ""})
-                  </span>
-                </div>
-
-                <div className="space-y-2">
-                  {matches.map((match) => (
-                    <div
-                      key={match.kit.id}
-                      className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4"
-                    >
-                      <div className="flex items-start justify-between mb-3">
-                        <div>
-                          <Link
-                            href={`/kits/${match.kit.slug}`}
-                            className="text-sm font-semibold text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors"
-                          >
-                            {match.kit.name}
-                          </Link>
-                          <div className="text-xs text-[var(--text-muted)] mt-0.5">
-                            {match.kit.brand} · ${match.kit.trueCost.toLocaleString()} real cost
-                          </div>
-                        </div>
-                        <Link
-                          href={`/kits/${match.kit.slug}`}
-                          className="text-xs text-[var(--accent)] hover:underline shrink-0 ml-4"
-                        >
-                          View Kit →
-                        </Link>
-                      </div>
-
-                      {/* Coverage bars */}
-                      <div className="space-y-1.5">
-                        <CoverageBar pct={match.solarCoverage} label="Solar" />
-                        <CoverageBar pct={match.storageCoverage} label="Storage" />
-                        <CoverageBar pct={match.inverterCoverage} label="Inverter" />
-                      </div>
-
-                      {/* Gap strings */}
-                      {match.gaps.length > 0 && (
-                        <div className="mt-3 pt-3 border-t border-[var(--border)]">
-                          <div className="flex flex-wrap gap-2">
-                            {match.gaps.map((gap, i) => (
-                              <span
-                                key={i}
-                                className="text-xs px-2 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-muted)] border border-[var(--border)]"
-                              >
-                                {gap}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            );
+            return <BucketSection key={bucket} bucket={bucket} matches={matches} />;
           }
         )}
       </div>

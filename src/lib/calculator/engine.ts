@@ -84,18 +84,27 @@ export function matchKits(sizing: SizingResult, kits: Kit[]): KitMatch[] {
 
   return kits
     .map((kit) => {
-      const solarCoverage =
+      // Raw coverage can exceed 100% for a kit that far outsizes the load.
+      // We cap at 100 for display, scoring, and bucketing so an over-provisioned
+      // kit reads as "100% covered" (not 1595%) and doesn't outrank a right-sized
+      // kit. Capping never changes which side of the 100/80/50 thresholds a value
+      // falls on, so bucket + gap logic below is unaffected.
+      const rawSolar =
         sizing.requiredPanelWatts > 0
           ? (kit.panelWatts / sizing.requiredPanelWatts) * 100
           : 100;
-      const storageCoverage =
+      const rawStorage =
         sizing.requiredStorageWh > 0
           ? (kit.storageWh / sizing.requiredStorageWh) * 100
           : 100;
-      const inverterCoverage =
+      const rawInverter =
         sizing.requiredInverterWatts > 0
           ? (kit.inverterWatts / sizing.requiredInverterWatts) * 100
           : 100;
+
+      const solarCoverage = Math.min(100, rawSolar);
+      const storageCoverage = Math.min(100, rawStorage);
+      const inverterCoverage = Math.min(100, rawInverter);
 
       const gaps: string[] = [];
       if (solarCoverage < 100) {
@@ -155,7 +164,10 @@ export function matchKits(sizing: SizingResult, kits: Kit[]): KitMatch[] {
     .sort((a, b) => {
       const diff = BUCKET_ORDER[a.bucket] - BUCKET_ORDER[b.bucket];
       if (diff !== 0) return diff;
-      return b.score - a.score;
+      if (b.score !== a.score) return b.score - a.score;
+      // Scores now cap at 100, so fully-covering kits tie. Break the tie toward
+      // the cheaper (right-sized) kit rather than leaving it to input order.
+      return a.kit.trueCost - b.kit.trueCost;
     });
 }
 
