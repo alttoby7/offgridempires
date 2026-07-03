@@ -46,3 +46,26 @@ jobs:
           VERSION=$(npx opennextjs-cloudflare upload 2>&1 | grep 'Worker Version ID:' | awk '{print $NF}')
           echo "Deploying version: $VERSION"
           npx wrangler versions deploy "${VERSION}@100%" --name offgridempire --yes
+
+      # Post-deploy smoke test. On 2026-06-22 a deploy left every prerendered
+      # dynamic page serving 404 and rotted silently for 10 days (health score → 9,
+      # 382 pages 404). Fail LOUD here so a broken deploy is caught immediately by
+      # CI, not weeks later by an SEO crawl. Covers one URL per prerendered route type.
+      - name: Smoke test live site
+        run: |
+          sleep 20
+          fail=0
+          for path in \
+            "/" \
+            "/kits/bluetti-200w-ac50p/" \
+            "/best-for/cabin/" \
+            "/learn/lithium-and-lifepo4-batteries/" \
+            "/reports/state-of-off-grid-solar-pricing-2026/"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" -L "https://offgridempire.com${path}")
+            echo "$code  $path"
+            if [ "$code" != "200" ]; then fail=1; fi
+          done
+          if [ "$fail" = "1" ]; then
+            echo "::error::Smoke test failed — a live page did not return 200 after deploy."
+            exit 1
+          fi

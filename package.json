@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx tsx scripts/build-evidence-graph.ts && npx tsx scripts/validate-decision-guides.ts --strict && npx tsx scripts/index-governor.ts && npx tsx scripts/generate-sitemap.ts && npx tsx scripts/generate-feed.ts && npx tsx scripts/generate-dataset.ts && npx tsx scripts/generate-llms.ts && next build --webpack",
+    "build": "npx tsx scripts/build-evidence-graph.ts && npx tsx scripts/validate-decision-guides.ts --strict && npx tsx scripts/index-governor.ts && npx tsx scripts/generate-sitemap.ts && npx tsx scripts/generate-feed.ts && npx tsx scripts/generate-dataset.ts && npx tsx scripts/generate-llms.ts && npx tsx scripts/audit-affiliate-coverage.ts && next build --webpack",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "NEXT_TURBOPACK_DISABLED=1 opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "NEXT_TURBOPACK_DISABLED=1 opennextjs-cloudflare build && opennextjs-cloudflare upload",
