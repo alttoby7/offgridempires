@@ -1256,6 +1256,133 @@ Re-check your overnight numbers in the [calculator](/calculator) with your real 
     updatedAt: "2026-07-03T00:00:00Z",
     indexable: false, // 🔴 human flip required to index
   },
+
+  // ── #10 (Tier 3) — complete 2,000–3,000W kits, real off-grid price ──────────
+  {
+    slug: "complete-2000-3000w-off-grid-solar-kits-priced",
+    h1: "Complete 2,000–3,000W Off-Grid Solar Kits — the Real Price Once You Add the Panel",
+    metaTitle: "Complete 2,000–3,000W Off-Grid Solar Kits: Real Price + Panel",
+    metaDescription:
+      "A cheap 2–3kW 'kit' is often a battery with no panel. We show the real off-grid price once you add the solar you need — and the 5 that are actually complete.",
+    intent:
+      "decision, wattage-anchored — complete 2000-3000W off-grid solar kit (real price with the panel included)",
+    answer:
+      "In the 2,000–3,000W class the cheapest headline prices are a trap: nearly half the kits ship as \"main unit only\" — a battery and inverter with no solar panel at all. That's fine if you already own panels, but it isn't an off-grid kit until you add them, which typically means [[const:$300–$600]] more for 400–600W of solar. The tell is right there in the data: the same Anker SOLIX C2000 is {p4.listedPrice} as a main-unit-only bank and {p3.listedPrice} bundled with a 400W panel — that gap IS the panel. We took the 33 LiFePO4 kits in this inverter class and ranked the 5 by their real off-grid price, marking exactly which include the solar and which don't.",
+    loadIds: ["mini-fridge", "box-fan"],
+    assumptions: {
+      sunHoursPerDay: 4.5,
+      sunSource: "tier",
+      zipCode: "",
+      sunTier: "average",
+      autonomyDays: 1,
+      controllerType: "mppt",
+      batteryChemistry: "lifepo4",
+    },
+    cohortLabel:
+      "LiFePO4 power stations with a 2,000–3,000W inverter and 1 kWh+ storage; many ship 'main unit only' with no panel",
+    cohortHeadlineCount: 33,
+    cohortShortlistCount: 18,
+    picks: [
+      {
+        kitSlug: "ecoflow-delta2max-400w",
+        label: "Best off-grid-ready value (panel included)",
+        rationale:
+          "Actually complete out of the box: {p1.storageWh} plus a bundled 400W panel at {p1.listedPrice}, {p1.costPerWh}. No headline asterisk — the price you see is the price that runs off-grid and recharges by day. For most people buying a 2–3kW kit to actually leave the grid, this is the honest pick.",
+        cta: true,
+      },
+      {
+        kitSlug: "jackery-2000plus-4085wh-2x200w",
+        label: "Most runtime (panels included)",
+        rationale:
+          "The most storage in the class at {p2.storageWh}, shipped with two 200W panels — a genuinely complete off-grid kit, not a bare bank. At {p2.costPerWh} and {p2.listedPrice} it costs more up front, but nothing is hidden: it's sized to run a fridge and lights for real and refill from the sun.",
+      },
+      {
+        kitSlug: "anker-4kw-anker-solix-c2000-gen-2-400w-solar-panel",
+        label: "The C2000, done right (with the panel)",
+        rationale:
+          "The same {p3.storageWh} Anker C2000 as the cheapest headline below — but bundled with the 400W panel that makes it an off-grid kit, at {p3.listedPrice}. Buy it this way, not the bare unit plus a panel you source later, unless you already have solar. This is the apples-to-apples off-grid price.",
+      },
+      {
+        kitSlug: "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
+        label: "Cheapest headline — but main unit only",
+        rationale:
+          "The lowest sticker in the class at {p4.listedPrice}, and the lowest cost-per-watt-hour at {p4.costPerWh} — precisely because it's a bare bank with no panel. It's a great buy IF you already own solar; if you don't, add [[const:$300–$600]] for a 400–600W panel and you're back at the bundled price. Don't mistake the headline for an off-grid kit.",
+      },
+      {
+        kitSlug: "ecoflow-ecoflow-delta-black-delta-3-max-main-unit-only",
+        label: "Cheap big-brand bank (also no panel)",
+        rationale:
+          "A {p5.storageWh} EcoFlow at {p5.listedPrice}, {p5.costPerWh} — another strong bank at a low sticker, and another main-unit-only listing. Same rule: it's a genuine value if you have panels or want a big battery for grid-backup, but budget the solar before you call it an off-grid kit.",
+      },
+    ],
+    receiptMode: "autonomy",
+    effectiveLoadWatts: 80,
+    receiptNote:
+      "The receipt here isn't about missing internal parts — these units are complete, **required missing-parts cost is [[const:$0]]**. It's about the **panel the listing leaves off**. A power station with no solar isn't an off-grid kit; it's a battery you recharge from the wall. For the main-unit-only picks, add **400–600W of panel (≈[[const:$300–$600]])** to get the real off-grid price — which lands right about where the bundled kits already sit. The autonomy figures below assume the loads run and the sun refills the bank.",
+    sections: [
+      {
+        heading: "What 2–3kW actually powers (and what it doesn't)",
+        body: `A 2,000–3,000W inverter is the **one-room / small-cabin / serious-backup** class — and it's easy to over-buy or mis-buy on the wattage number alone. What this class comfortably runs: a **fridge or chest freezer, lights, phones and laptops, a fan, a TV, and power tools in bursts**. What it does **not** run: **central AC, an electric range or water heater, or a 240V well pump** — those need the whole-home split-phase tier (see the [homestead systems](/guides/off-grid-solar-system-for-homestead) guide). Match the class to the loads with the [load calculator](/calculator) before you shop the sticker.`,
+      },
+      {
+        heading: "The trap: the headline price is often a battery with no solar",
+        body: `Search "3,000W solar kit" and the cheapest results look like steals — until you read "main unit only." In this class, **a large share of the kits ship with no panel at all**: a battery and inverter, nothing to recharge them off-grid. The data makes it plain — the identical Anker SOLIX C2000 is listed at **{p4.listedPrice}** bare and **{p3.listedPrice}** with a 400W panel. That **difference is the panel**, and it's the line the headline price hides.
+
+Two honest buyers here: **(a)** you already own solar and want the cheapest quality LiFePO4 bank — then a main-unit-only unit is a genuine bargain; **(b)** you're actually going off-grid — then you want a bundled kit, or you must add [[const:$300–$600]] of panel to the sticker to get the real price. This page ranks by that **real off-grid price**, not the headline.`,
+      },
+      {
+        heading: "The 5, ranked by real off-grid price",
+        body: `All five are **LiFePO4 and pure sine** in the 2–3kW inverter class. Three (#1–#3) ship **complete with panels** — the price is the off-grid price. Two (#4–#5) are **main-unit-only** banks: cheapest on paper, but add the solar before you compare. The {p2.storageWh} Jackery carries the most; the {p4.listedPrice} Anker is the cheapest headline (panel not included). The single buy link sits on the #1 complete pick. Each kit name links to its full audit with real build cost and 6-month price history.
+
+Decide which buyer you are first: already have panels → take the cheapest bare bank; going off-grid fresh → take a bundled kit. Compare any [head-to-head](/compare) or browse the full [portable power](/portable-power) pool.`,
+      },
+      {
+        heading: "Adding the panel: what the main-unit-only kits still need",
+        body: `If you buy a bare bank, here's the real "still to buy" to make it off-grid:
+
+- **Solar panels** — **400–600W** is the practical match for a 2–3kW / 2kWh-class unit: enough to meaningfully refill the bank on a good day. Budget **≈[[const:$300–$600]]** for rigid or portable panels; confirm your unit's **max solar input voltage and wattage** so you don't overbuild.
+- **The right cable/connector** — most units take standard XT60/MC4 solar input; check which and get the matching cable if it isn't in the box.
+- **Nothing else** — these are integrated systems, so once the panel is on there's no separate charge controller, inverter, or wiring kit to buy. That's the upside of this class.
+
+Re-check your exact solar and runtime in the [calculator](/calculator), and see [data sources](/data-sources) for where kit prices come from.`,
+      },
+    ],
+    whyWon: [
+      "Every pick is pure-sine LiFePO4 in the 2–3kW class, and the top three ship complete with panels — so the price you see is the price that actually runs off-grid, not a bank you still have to finish.",
+      "The ranking is by real off-grid price, not the headline: main-unit-only banks are shown for what they are (great if you own solar, incomplete if you don't), with the panel cost stated.",
+      "Prices, specs, and 6-month price trends are pulled from live data — including the same-unit bundled-vs-bare comparison that proves the panel-gap rather than asserting it.",
+    ],
+    whyFailed: [
+      "Buying on the headline sticker — a 'main unit only' price isn't an off-grid price, and the panel you still need often erases the apparent savings.",
+      "Buying on inverter watts alone — 2–3kW won't run central AC, electric heat/cooking, or a 240V well, no matter how cheap the kit looks.",
+      "We cut sub-1kWh units (too little to run this class's loads for long) and DC-only or non-LiFePO4 records that don't belong in a complete-kit comparison.",
+    ],
+    faqs: [
+      {
+        question: "Does a 3,000W solar kit come with panels?",
+        answer:
+          "Often not. Many 2,000–3,000W 'kits' are sold main-unit-only — a battery and inverter with no solar panel. Check the listing for 'main unit only' or a panel wattage in the name. If there's no panel, budget [[const:$300–$600]] for 400–600W of solar to make it an actual off-grid kit; a bundled kit usually costs about the same once you do.",
+      },
+      {
+        question: "What can a 2,000–3,000W solar generator run?",
+        answer:
+          "A fridge or chest freezer, lights, electronics, a fan, a TV, and power tools in bursts — the one-room, small-cabin, or serious-backup class. It won't run central air conditioning, an electric range or water heater, or a 240V well pump; those need a whole-home split-phase system.",
+      },
+      {
+        question: "Is it cheaper to buy a power station and panels separately?",
+        answer:
+          "Usually not by much. In this class the bundled kit and the bare unit plus a comparable panel tend to land at nearly the same price — the identical Anker C2000 is about {p4.listedPrice} bare and {p3.listedPrice} with a 400W panel. Buy the bundle unless you already own solar or want a specific panel; the main saving from going separate is reusing panels you already have.",
+      },
+    ],
+    claims: [
+      { pick: "p4", metric: "listedPrice", direction: "lowest", note: "#4 cheapest headline — main unit only" },
+      { pick: "p4", metric: "costPerWh", direction: "lowest", note: "#4 lowest $/Wh precisely because no panel" },
+      { pick: "p2", metric: "storageWh", direction: "highest", note: "#2 most storage in the class" },
+    ],
+    publishedAt: "2026-07-03T00:00:00Z",
+    updatedAt: "2026-07-03T00:00:00Z",
+    indexable: false, // 🔴 human flip required to index
+  },
 ];
 
 export function getDecisionGuideSlugs(): string[] {
