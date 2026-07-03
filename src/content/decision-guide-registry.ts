@@ -984,6 +984,143 @@ Re-check your exact runtime with the [load calculator](/calculator) after you se
     updatedAt: "2026-07-03T00:00:00Z",
     indexable: false, // 🔴 human flip required to index
   },
+
+  // ── #7 (Tier 2) — off-grid solar system for a homestead ────────────────────
+  {
+    slug: "off-grid-solar-system-for-homestead",
+    h1: "Off-Grid Homestead Solar Systems: Sizing for the Well, the Freezer, and Winter",
+    metaTitle: "Off-Grid Homestead Solar: Sizing for Well, Freezer & Winter",
+    metaDescription:
+      "A homestead's three killers are the well pump's surge, the freezer's 24/7 cycle, and winter's short sun. We ranked 65 LiFePO4 systems (5kWh+) by what actually carries them.",
+    intent:
+      "decision, high-ticket — off-grid solar system for a homestead (well + freezer + winter autonomy)",
+    answer:
+      "A homestead isn't one load, it's three that break undersized systems: the well pump's 2,000–3,500W startup surge, the chest freezer's 24/7 compressor cycle, and winter — when the days that need the most power deliver the least sun. That means you size for a 120/240V split-phase inverter (for the well), real surge headroom (for the pump and freezer), and 2–3 days of storage autonomy (for the cloudy winter stretch), not a sunny-day average. We took the 70 homestead-rated LiFePO4 systems with 5kWh or more of storage — 65 of them 240V-capable — and ranked the 5 that carry the whole property, by real value per watt-hour.",
+    loadIds: ["well-pump", "chest-freezer", "space-heater"],
+    assumptions: {
+      sunHoursPerDay: 4.5,
+      sunSource: "tier",
+      zipCode: "",
+      sunTier: "average",
+      autonomyDays: 3,
+      controllerType: "mppt",
+      batteryChemistry: "lifepo4",
+    },
+    cohortLabel:
+      "homestead-rated LiFePO4 systems with 5 kWh+ of storage; 65 of 70 are 120/240V split-phase capable",
+    cohortHeadlineCount: 70,
+    cohortShortlistCount: 65,
+    picks: [
+      {
+        kitSlug: "prime-4.4kw-prime-plus-eg4-wallmount-indoor-14-3kwh-budget-frie",
+        label: "Best value / native 240V",
+        rationale:
+          "The homestead sweet spot. Built on the EG4 6000XP — a {p1.inverterWatts} 120/240V split-phase inverter that runs a deep well pump directly, no hub — with {p1.storageWh} of LiFePO4 at {p1.costPerWh}, the lowest cost-per-watt-hour on this board. That's enough bank to ride the well, the freezer, and lights through a two-to-three-day cloudy stretch, at a price a serious homestead can actually justify. If your well is 240V and hardwired, start here.",
+        cta: true,
+      },
+      {
+        kitSlug: "elite-7.92kw-elite-plus-renon-xc-plus-32kwh-premium-closed-loop",
+        label: "Winter autonomy / no compromise",
+        rationale:
+          "The biggest bank here at {p2.storageWh}, on a {p2.inverterWatts} inverter, with a premium closed-loop battery that talks to the inverter for tighter charge management. At {p2.costPerWh} it's the pick when winter autonomy is non-negotiable — a homestead where a week of overcast can't be allowed to drain the freezer or stop the pump. This is whole-property, run-everything capacity.",
+      },
+      {
+        kitSlug: "anker-6400w-plus-2-x-f3800p-double-voltage-hub",
+        label: "Cheapest true-240V entry",
+        rationale:
+          "The lowest-priced way onto a homestead-grade 240V system: two Anker F3800 units on a Double Voltage Hub give real split-phase 240V plus {p3.storageWh}, plug-and-play, no electrician for the unit itself. At {p3.listedPrice} it clears the well-pump inrush and carries a freezer, and it expands later. The trade-off is the smaller bank — it's a starter homestead or a critical-loads backup, not full winter autonomy.",
+      },
+      {
+        kitSlug: "core-3.2kw-core-pro",
+        label: "Most surge headroom",
+        rationale:
+          "A {p4.inverterWatts} continuous inverter — the most surge headroom in the group — swallows a well pump's locked-rotor spike and a freezer's compressor kick at the same time without flinching. {p4.storageWh} at {p4.costPerWh} makes it a strong all-in-one for a mid-size homestead whose worry is startup surges stacking, not multi-day autonomy.",
+      },
+      {
+        kitSlug: "select-10.6kw-select-max-eg4-wallmount-indoor-28-6kwh-budget-frie",
+        label: "Serious homestead, best big-bank value",
+        rationale:
+          "{p5.storageWh} on a {p5.inverterWatts} split-phase inverter at {p5.costPerWh} — nearly the capacity of the no-compromise pick for less money. The best value once you cross into true whole-homestead storage: well, freezer, winter heat, and everyday loads with days of reserve. The alternate to the Elite when you want the bank without the closed-loop premium.",
+      },
+    ],
+    receiptMode: "autonomy",
+    effectiveLoadWatts: 500,
+    receiptNote:
+      "These are component-complete systems — panels, batteries, inverter, and controller are in the box, so the **required missing-parts cost is [[const:$0]]**. The real spend a homestead adds is **installation**: a 120/240V whole-property system means a **manual transfer switch or main-panel interlock, rated cable, and — for a hardwired well — a licensed electrician and likely a permit** (budget [[const:$500–$2,000]] installed, depending on your panel and run). The kit price is real and complete; the tie-in to your house and well is the line item nobody itemizes. The receipt below is about **days of autonomy**, not hidden hardware.",
+    sections: [
+      {
+        heading: "The three loads that break a homestead system",
+        body: `A homestead isn't a single appliance, it's a **stack of the hardest off-grid loads at once** — and undersized systems fail on the combination, not any one of them.
+
+- **The well pump** draws a **2,000–3,500W locked-rotor surge** on every start (a ½ HP submersible runs at ~750W but spikes 3–5× that). A 240V deep submersible needs a **120/240V split-phase inverter**, not a 120V unit. See the full breakdown in the [solar generator for a well pump](/guides/solar-generator-for-well-pump) guide.
+- **The freezer (and fridge)** surge 3–5× on their compressors too and **cycle 24/7**, quietly dominating daily watt-hours — worse in a hot summer outbuilding.
+- **Winter.** The days that demand the most power (heat, longer lighting, a pump working a cold line) deliver the **least sun**. This is why a homestead sizes for **autonomy** — days of stored energy — not a sunny-day average.
+
+Our load calculator and verdict engine model all three together; size your exact stack with the [load calculator](/calculator).`,
+      },
+      {
+        heading: "The verdict: size for surge, split-phase, and days — not for a sunny afternoon",
+        body: `Our failure engine fires **three separate blockers** on a homestead stack:
+
+> **Well pump:** the locked-rotor inrush trips inverters sized for the running watts — use a low-frequency 3,000W+ or split-phase inverter, pure sine only.
+> **Fridge/freezer:** compressors surge 3–5× and run around the clock; add ~30% in heat.
+> **Resistive heat:** space and water heat are brutal, near-constant draws — the fastest way to flatten a bank in winter.
+
+The synthesis those three force: a **120/240V split-phase inverter** (65 of the 70 kits here qualify), **real surge headroom** for the pump-plus-freezer overlap, and **2–3 days of storage** for the winter cloudy stretch. A "3,000W" 120V power station that looks fine in July won't run a 240V well in January — that's the whole reason this cohort filters the way it does. See [how the methodology works](/methodology) and [how real build cost is calculated](/how-real-build-cost-is-calculated).`,
+      },
+      {
+        heading: "The 5 that carry the property",
+        body: `All five are **LiFePO4 and pure sine**, homestead-rated, and — except the entry Anker's smaller bank — sized for real winter autonomy. The podium ranks by **value per watt-hour at homestead scale**: the {p1.costPerWh} EG4-based value pick leads, the {p2.storageWh} Elite carries the most winter reserve, and the {p3.listedPrice} Anker is the cheapest way onto true 240V. The single buy link sits on the #1 value pick. Each kit name links to its full audit with real build cost and 6-month price history.
+
+Match the bank to your winter, not your July: a mild-climate homestead with a shallow pump is well-served by the value or surge picks; a cold-climate property running heat and a deep submersible should size up to the 28–32kWh tier. Compare any [head-to-head](/compare) or browse the full [whole-home](/whole-home) pool.`,
+      },
+      {
+        heading: "What you still add: the house-and-well tie-in",
+        body: `The kits are complete; connecting them to a homestead is the part the product pages skip:
+
+- **240V well / whole-house** — confirm the inverter is **120/240V split-phase** (all five here can be; the two EG4 WallMount kits natively), then add a **manual transfer switch or main-panel interlock** and rated cable. A hardwired well means a **licensed electrician and likely a permit** — budget [[const:$500–$2,000]] installed.
+- **Freezer placement** — keep chest freezers out of hot outbuildings where the compressor runs ~30% harder; every watt-hour you don't spend cooling a hot shed is autonomy you keep.
+- **Winter margin** — if you heat with resistive electric at all, size the bank for the worst week you actually see, or plan a generator / wood backup for the deepest cold. The [inverters & power conversion](/learn/inverters-and-power-conversion) explainer covers the split-phase wiring.
+
+Re-run your exact numbers in the [calculator](/calculator) with your real pump, freezer, and heat loads, and see [data sources](/data-sources) for where kit prices come from.`,
+      },
+    ],
+    whyWon: [
+      "Every pick is pure-sine LiFePO4 and (except the entry unit) sized for 2–3 days of winter autonomy — and 65 of the 70-kit cohort are 120/240V split-phase capable, so they run a deep well directly.",
+      "The podium spans the real homestead range — from a cheapest-true-240V entry to a 32kWh no-compromise bank — so the recommendation matches the property, not a one-size number.",
+      "Every spec, price, and 6-month price trend is pulled from live data, and the verdict stacks three sourced failure notes (well, freezer, resistive heat) that a single-brand blog can't assemble.",
+    ],
+    whyFailed: [
+      "120V-only power stations can't run a 240V submersible at all — the single most common homestead mismatch, no matter how many watts they claim.",
+      "Systems sized for a sunny-day average flatten in the first multi-day winter overcast, exactly when the well and heat are working hardest.",
+      "We cut sub-5kWh units (too little for whole-property autonomy) and mis-parsed inverter-only / fused-kW records that can't actually carry the stack.",
+    ],
+    faqs: [
+      {
+        question: "How big a solar system do I need for an off-grid homestead?",
+        answer:
+          "Size for three things at once: a 120/240V split-phase inverter for the well (2,000–3,500W surge headroom), enough continuous inverter for the freezer and pump to start together, and 2–3 days of battery autonomy for winter overcast. In practice that's a 10–32kWh LiFePO4 system with a 6,000W+ split-phase inverter — the range this page's picks cover.",
+      },
+      {
+        question: "Can an off-grid solar system run a well pump and freezer together?",
+        answer:
+          "Yes, if the inverter has the surge headroom for both to start at once and outputs 120/240V split-phase for a deep submersible. A well pump spikes 2,000–3,500W on startup and a freezer compressor surges 3–5×; the picks here run 6,000–19,500W continuous specifically so overlapping startups don't trip the system.",
+      },
+      {
+        question: "How much battery do I need for winter on a homestead?",
+        answer:
+          "Enough to ride your longest realistic cloudy stretch, not the average. Winter delivers the least sun exactly when heat, lighting, and a hard-working pump demand the most, so homesteads size for 2–3 days of autonomy — commonly 20–32kWh for a cold-climate property running a freezer and any resistive heat.",
+      },
+    ],
+    claims: [
+      { pick: "p1", metric: "costPerWh", direction: "lowest", note: "#1 lowest $/Wh in the podium" },
+      { pick: "p2", metric: "storageWh", direction: "highest", note: "#2 biggest bank / winter autonomy" },
+      { pick: "p3", metric: "listedPrice", direction: "lowest", note: "#3 cheapest true-240V entry" },
+    ],
+    publishedAt: "2026-07-03T00:00:00Z",
+    updatedAt: "2026-07-03T00:00:00Z",
+    indexable: false, // 🔴 human flip required to index
+  },
 ];
 
 export function getDecisionGuideSlugs(): string[] {
