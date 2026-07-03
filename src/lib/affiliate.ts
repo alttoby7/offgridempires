@@ -35,7 +35,9 @@ const RENOGY_IMPACT_BASE =
 // Awin merchant; else a direct ?ref= code; else passthrough. Both pending.
 const SHOPSOLAR_AWIN_ADVERTISER =
   process.env.NEXT_PUBLIC_AWIN_SHOPSOLAR_ADVERTISER_ID || "";
-const SHOPSOLAR_REF = process.env.NEXT_PUBLIC_SHOPSOLAR_REF || "";
+// Shop Solar referral code — vanity link shopsolarkits.com/2006 → /?ref=2006.
+// Appended as ?ref= (or &ref=) to product URLs on shopsolarkits.com.
+const SHOPSOLAR_REF = process.env.NEXT_PUBLIC_SHOPSOLAR_REF || "2006";
 
 function awinRedirect(advertiserId: string, sourceUrl: string): string {
   return `https://www.awin1.com/cread.php?awinmid=${advertiserId}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(
