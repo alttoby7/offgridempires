@@ -854,6 +854,136 @@ None of that is a price-hiding trick — it's the difference between "rides out 
     updatedAt: "2026-06-19T00:00:00Z",
     indexable: false, // 🔴 human flip required to index
   },
+
+  // ── #9 (Tier 1) — solar power for a CPAP ───────────────────────────────────
+  {
+    slug: "solar-power-for-cpap",
+    h1: "Best Portable Power for a CPAP Off-Grid: Nights of Runtime, Not Just Watts",
+    metaTitle: "Best Portable Power for a CPAP Off-Grid: 5 by Nights of Runtime",
+    metaDescription:
+      "A CPAP only pulls ~60W — the real question is how many nights it runs. We ranked 38 LiFePO4 power stations by runtime, with the humidifier-off math and prices.",
+    intent:
+      "transactional / recurring-medical — portable power for a CPAP off-grid (how many nights of runtime)",
+    answer:
+      "A CPAP is not a watts problem — the machine pulls only ~30–60W, well under any of these inverters. It is a RUNTIME problem: how many nights you can sleep through before the battery is flat. Budget ~400–500Wh a night with the heated humidifier on (it roughly doubles the draw) or ~250Wh with it off, then divide your battery's watt-hours by that. We filtered 81 LiFePO4 power stations with real storage down to the 38 rated for emergency use, and ranked the 5 with the best runtime-per-dollar — plus the one trick (run it on 12V DC, drop the humidifier) that turns two nights into three.",
+    loadIds: ["cpap"],
+    assumptions: {
+      sunHoursPerDay: 4.5,
+      sunSource: "tier",
+      zipCode: "",
+      sunTier: "average",
+      autonomyDays: 2,
+      controllerType: "mppt",
+      batteryChemistry: "lifepo4",
+    },
+    cohortLabel:
+      "LiFePO4 power stations with an AC inverter and 1–5 kWh of storage (the CPAP runtime band)",
+    cohortHeadlineCount: 81,
+    cohortShortlistCount: 38,
+    picks: [
+      {
+        kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
+        label: "Best runtime per dollar",
+        rationale:
+          "The cleanest value on the board. {p1.storageWh} of LiFePO4 at {p1.costPerWh} — the lowest cost-per-watt-hour of any pick here — runs a humidified CPAP about six nights on a full charge, or past a week with the humidifier off. It has a 12V DC output so you can skip the inverter entirely (see below), expands past 12kWh if your needs grow, and carries a 5-year warranty. For most people this is the one to buy.",
+        cta: true,
+      },
+      {
+        kitSlug: "jackery-2000plus-4085wh-2x200w",
+        label: "Most nights + solar included",
+        rationale:
+          "The longest runtime in the group: {p2.storageWh} rides roughly eight humidified nights, and it ships with two 200W panels so a sunny afternoon tops it back up during a multi-day outage. At {p2.costPerWh} it isn't the cheapest per watt-hour, but the bundled solar and the biggest bank make it the pick when a single cloudy stretch can't be allowed to interrupt therapy.",
+      },
+      {
+        kitSlug: "ecoflow-delta2max-400w",
+        label: "Cheapest way in (solar included)",
+        rationale:
+          "At {p3.listedPrice} this is the lowest entry price here and it still ships with a 400W panel. {p3.storageWh} covers about four humidified nights — or six-plus with the humidifier off — enough for weekend trips and short outages. If you don't need a week of autonomy, don't pay for it; start here.",
+      },
+      {
+        kitSlug: "ecoflow-delta-pro-400w",
+        label: "Best for humidifier-on / heavy use",
+        rationale:
+          "{p4.storageWh} at {p4.costPerWh}, bundled with a 400W panel, gives roughly seven humidified nights with headroom to spare — the pick if you refuse to turn the heated humidifier off. It has a 12V car output for DC-direct running and enough inverter to carry a CPAP plus a medication fridge on the same unit.",
+      },
+      {
+        kitSlug: "anker-2400w-anker-solix-nomad-kit-2-x-200w-folding-solar-panels",
+        label: "Portable / camping CPAP",
+        rationale:
+          "The same {p5.storageWh} F3000 as the value pick, but bundled with two folding 200W panels that pack flat for a truck bed or a tent vestibule. At {p5.costPerWh} you pay a premium over the main-unit-only build for the portability of folding solar — worth it if your CPAP travels with you rather than living in a closet.",
+      },
+    ],
+    receiptMode: "autonomy",
+    effectiveLoadWatts: 55,
+    receiptNote:
+      "There's no missing-parts surcharge here — these are integrated power stations, **required missing-parts cost is [[const:$0]]**. The only thing worth buying that the box may not include is a **12V DC output cable** for your CPAP (≈[[const:$15–$30]]): running the machine on DC skips the inverter's AC-conversion overhead and can stretch runtime 10–20%. The receipt below is about **nights of autonomy**, not hidden cost — how many nights of therapy your money actually buys.",
+    sections: [
+      {
+        heading: "The load profile: a CPAP is a runtime problem, not a watts problem",
+        body: `A CPAP is the rare off-grid load where **watts barely matter**. The machine itself pulls **30–60W** running — every power station here inverts that without noticing. What matters is **how many nights** it keeps going, and the biggest variable is the **heated humidifier**: turn it on and the draw roughly **doubles**, from ~250Wh a night to **~400–500Wh** for a typical 8-hour sleep. (Our [load calculator](/calculator) lists the CPAP at 60W with the humidifier; drop it and you're closer to 30W.)
+
+The math is simple and it's the whole decision: **battery watt-hours ÷ nightly watt-hours = nights of runtime.** A {p3.storageWh} unit is about four humidified nights; a {p2.storageWh} unit is about eight. Size for the **cloudiest stretch you expect between recharges**, not the average — for medical equipment, that's the number that matters.`,
+      },
+      {
+        heading: "The verdict: plan a CPAP conservatively, and run it on DC if you can",
+        body: `Our failure-note engine flags a CPAP as a **plan-conservatively** load — not because it's hard to power, but because the stakes are:
+
+> **Running a CPAP through an AC inverter wastes power on overhead, and the heated humidifier roughly doubles the draw. A single cloudy night can't be allowed to cut therapy.**
+
+The fix, verbatim from the engine: **power it from 12V DC where possible, turn off the heated humidifier to cut draw ~50%, and size 2+ days of autonomy.** Three of the picks below (both F3000-based Anker kits and the EcoFlow DELTA Pro) have a **12V DC output**, so a DC-compatible CPAP runs without the inverter conversion loss at all. See [how the methodology works](/methodology) and the [inverters & power conversion](/learn/inverters-and-power-conversion) explainer for why DC-direct saves watt-hours.`,
+      },
+      {
+        heading: "The 5 that win, ranked by runtime per dollar",
+        body: `All five are **LiFePO4 and pure sine** — non-negotiable for the sensitive electronics in a CPAP — and every one is rated for emergency use in our data. The podium ranks by **nights of runtime against price**: the {p1.costPerWh} value pick leads, the {p2.storageWh} Jackery carries the most nights, and the {p3.listedPrice} EcoFlow is the cheapest way in. The single buy link sits on the #1 value pick. Each kit name links to its full audit with the real build cost and 6-month price history.
+
+Be honest about how many nights you actually need: a weekend camper is over-served by a week of autonomy, and a homebound medical user shouldn't skimp on it. Compare any of these [head-to-head](/compare), or browse the full [portable power](/portable-power) pool.`,
+      },
+      {
+        heading: "Stretching a charge: the humidifier and the DC cable",
+        body: `Two levers decide whether a given battery is two nights or three:
+
+- **The heated humidifier** is the biggest single draw. Turning it off (or using a heat-and-moisture-exchange filter instead) cuts nightly watt-hours **~50%** — the fastest way to add nights in an outage. Keep it on when you have sun to spare; drop it when you don't.
+- **Run on 12V DC.** A CPAP powered from a power station's DC output skips the **inverter's AC-conversion overhead** (typically 10–20% loss), so the same battery lasts noticeably longer. You'll need the right **12V DC cable** for your machine (≈[[const:$15–$30]]) — the one accessory worth buying up front. Confirm your CPAP model supports DC input first.
+
+Re-check your exact runtime with the [load calculator](/calculator) after you set your pressure, humidifier, and nightly hours, and see [data sources](/data-sources) for where the kit prices come from.`,
+      },
+    ],
+    whyWon: [
+      "Every pick is pure-sine LiFePO4 rated for emergency use, and each clears at least four humidified nights of CPAP runtime on a full charge — the metric that actually matters for medical backup.",
+      "Three of the five (both F3000 kits and the DELTA Pro) offer a 12V DC output, so a DC-compatible CPAP runs without inverter conversion loss — real watt-hours saved, straight from the verdict engine's fix.",
+      "Runtime, price, and 6-month price history are all pulled from live data — not a single-brand blog quoting its own spec sheet.",
+    ],
+    whyFailed: [
+      "Undersized power stations under ~1kWh look fine on watts but flatten before a second night — the #1 CPAP mistake is buying for the running number, not the nights.",
+      "Modified-sine inverters can make sensitive CPAP electronics buzz or misread — pure sine is non-negotiable for medical equipment.",
+      "We cut DC-only battery boxes with no AC inverter, and oversized whole-home stacks whose surge headroom a 60W machine will never use — both are the wrong tool for a bedside CPAP.",
+    ],
+    faqs: [
+      {
+        question: "How many watt-hours does a CPAP use per night?",
+        answer:
+          "Roughly 250Wh a night with the heated humidifier off, and 400–500Wh with it on, for a typical 8-hour sleep at mid-range pressure. Divide your battery's watt-hours by that to get nights of runtime: a 2,000Wh unit is about four humidified nights, a 4,000Wh unit about eight.",
+      },
+      {
+        question: "Can I run my CPAP off a solar generator all night?",
+        answer:
+          "Yes — a CPAP only draws 30–60W, which any LiFePO4 power station here inverts easily. The real question is how many nights it lasts between recharges. Run it off the unit's 12V DC output if your machine supports it (skips inverter loss) and turn off the heated humidifier to roughly double your runtime.",
+      },
+      {
+        question: "Do I need a pure sine wave inverter for a CPAP?",
+        answer:
+          "Yes. CPAP machines have sensitive electronics and a blower motor that can buzz, run hot, or misread on a modified-sine inverter. Every pick on this page is pure sine and LiFePO4 — the safe combination for nightly medical use.",
+      },
+    ],
+    claims: [
+      { pick: "p1", metric: "costPerWh", direction: "lowest", note: "#1 lowest $/Wh in the podium" },
+      { pick: "p2", metric: "storageWh", direction: "highest", note: "#2 biggest bank / most nights" },
+      { pick: "p3", metric: "listedPrice", direction: "lowest", note: "#3 cheapest entry price" },
+    ],
+    publishedAt: "2026-07-03T00:00:00Z",
+    updatedAt: "2026-07-03T00:00:00Z",
+    indexable: false, // 🔴 human flip required to index
+  },
 ];
 
 export function getDecisionGuideSlugs(): string[] {
