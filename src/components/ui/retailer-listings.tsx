@@ -1,6 +1,7 @@
 "use client";
 
 import type { KitOffer } from "@/lib/demo-data";
+import { AffiliateLink } from "./affiliate-link";
 
 // Retailer display metadata
 const RETAILER_META: Record<string, { label: string; abbrev: string }> = {
@@ -21,9 +22,10 @@ function getRetailerMeta(slug: string, name: string) {
 interface RetailerListingsProps {
   offers: KitOffer[];
   kitName: string;
+  kitSlug: string;
 }
 
-export function RetailerListings({ offers, kitName }: RetailerListingsProps) {
+export function RetailerListings({ offers, kitName, kitSlug }: RetailerListingsProps) {
   // Sort: in-stock cheapest first, then out-of-stock by price
   const sorted = [...offers].sort((a, b) => {
     if (a.inStock !== b.inStock) return a.inStock ? -1 : 1;
@@ -131,10 +133,12 @@ export function RetailerListings({ offers, kitName }: RetailerListingsProps) {
               {/* CTA */}
               <div className="col-span-2 text-right">
                 {offer.inStock && offer.sourceUrl ? (
-                  <a
+                  <AffiliateLink
                     href={offer.sourceUrl}
-                    target="_blank"
-                    rel="nofollow noopener noreferrer sponsored"
+                    kitSlug={kitSlug}
+                    retailer={offer.retailerSlug}
+                    price={offer.price}
+                    surface="retailer_table"
                     className={`
                       inline-flex items-center gap-1 px-3 py-1.5 text-xs font-semibold
                       border rounded-sm transition-all duration-150
@@ -148,7 +152,7 @@ export function RetailerListings({ offers, kitName }: RetailerListingsProps) {
                     <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
                     </svg>
-                  </a>
+                  </AffiliateLink>
                 ) : offer.inStock ? (
                   <span className="inline-flex items-center px-3 py-1.5 text-[10px] font-medium text-[var(--text-muted)] border border-[var(--border)] rounded-sm">
                     Link unavailable
@@ -215,10 +219,12 @@ export function RetailerListings({ offers, kitName }: RetailerListingsProps) {
                     ${offer.price.toLocaleString()}
                   </div>
                   {offer.inStock && offer.sourceUrl ? (
-                    <a
+                    <AffiliateLink
                       href={offer.sourceUrl}
-                      target="_blank"
-                      rel="nofollow noopener noreferrer sponsored"
+                      kitSlug={kitSlug}
+                      retailer={offer.retailerSlug}
+                      price={offer.price}
+                      surface="retailer_table"
                       className={`
                         mt-1 inline-flex items-center gap-1 px-2.5 py-1 text-[11px] font-semibold
                         border rounded-sm transition-all duration-150
@@ -232,7 +238,7 @@ export function RetailerListings({ offers, kitName }: RetailerListingsProps) {
                       <svg width="7" height="7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
                       </svg>
-                    </a>
+                    </AffiliateLink>
                   ) : offer.inStock ? (
                     <span className="mt-1 inline-flex items-center px-2.5 py-1 text-[10px] font-medium text-[var(--text-muted)] border border-[var(--border)] rounded-sm">
                       Link unavailable

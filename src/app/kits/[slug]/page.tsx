@@ -187,6 +187,7 @@ export default async function KitDetailPage({
                 kitSlug={kit.slug}
                 retailer={kit.retailer ?? "unknown"}
                 price={kit.listedPrice}
+                surface="kit_page"
                 className="flex items-center justify-center gap-2 w-full rounded-sm bg-[var(--ink)] py-3.5 text-sm font-bold text-[var(--paper)] hover:bg-[var(--accent)] transition-colors"
               >
                 View on {kit.retailer}
@@ -288,7 +289,7 @@ export default async function KitDetailPage({
               {includedItems.length} included · {missingItems.length} missing
             </span>
           </div>
-          <BomTable items={kit.items} missingCost={kit.missingCost} />
+          <BomTable items={kit.items} missingCost={kit.missingCost} kitSlug={kit.slug} />
         </section>
       )}
 
@@ -308,7 +309,7 @@ export default async function KitDetailPage({
             <h2 className="font-display text-xl text-[var(--ink)]">Where to buy</h2>
             <span className="flex-1 border-b border-[var(--rule)]" />
           </div>
-          <RetailerListings offers={allOffers} kitName={`${kit.brand} ${kit.name}`} />
+          <RetailerListings offers={allOffers} kitName={`${kit.brand} ${kit.name}`} kitSlug={kit.slug} />
         </section>
       )}
 

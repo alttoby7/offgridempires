@@ -10,7 +10,7 @@ import type { LoadEntry, SystemAssumptions, SizingResult, KitMatch } from "./typ
 
 const SESSION_KEY = "oge_session_id";
 
-function getSessionId(): string {
+export function getSessionId(): string {
   if (typeof window === "undefined") return "ssr";
   try {
     let id = localStorage.getItem(SESSION_KEY);
@@ -40,7 +40,7 @@ interface Attribution {
 
 let _attribution: Attribution | null = null;
 
-function getAttribution(): Attribution {
+export function getAttribution(): Attribution {
   if (_attribution) return _attribution;
   if (typeof window === "undefined") {
     return {

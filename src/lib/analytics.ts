@@ -72,12 +72,16 @@ export function trackKitClick(kitSlug: string, source: string) {
 export function trackAffiliateClick(
   kitSlug: string,
   retailer: string,
-  price: number
+  price: number,
+  extra?: { surface?: string; cohort?: string; contentSlug?: string }
 ) {
   gtag("event", "affiliate_click", {
     kit_slug: kitSlug,
     retailer,
     price_cents: Math.round(price * 100),
+    ...(extra?.surface ? { surface: extra.surface } : {}),
+    ...(extra?.cohort ? { cohort: extra.cohort } : {}),
+    ...(extra?.contentSlug ? { content_slug: extra.contentSlug } : {}),
   });
 }
 

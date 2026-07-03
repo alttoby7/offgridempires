@@ -420,6 +420,7 @@ function PlannedSystemLayout({
                   kitSlug={recommended.kit.slug}
                   retailer={buy.retailer}
                   price={buy.price}
+                  surface="best_for"
                   className="inline-flex items-center gap-1.5 rounded-sm bg-[var(--accent)] px-4 py-2 text-xs font-semibold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
                 >
                   Check price at {buy.retailer}
@@ -441,7 +442,7 @@ function PlannedSystemLayout({
               <p className="text-xs font-semibold uppercase tracking-wide text-[var(--text-muted)] mb-2">
                 The full bill of materials
               </p>
-              <BomTable items={recommended.kit.items} missingCost={recommended.kit.missingCost} />
+              <BomTable items={recommended.kit.items} missingCost={recommended.kit.missingCost} kitSlug={recommended.kit.slug} />
             </div>
           </div>
         ) : (

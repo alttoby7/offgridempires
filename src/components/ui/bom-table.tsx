@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { KitItem } from "@/lib/demo-data";
 import { buildAffiliateUrl } from "@/lib/affiliate";
+import { AffiliateLink } from "./affiliate-link";
 
 function StatusIcon({ included }: { included: boolean }) {
   if (included) {
@@ -31,7 +32,7 @@ function amazonAsinUrl(asin: string): string {
   );
 }
 
-function CostCell({ item }: { item: KitItem }) {
+function CostCell({ item, kitSlug }: { item: KitItem; kitSlug: string }) {
   if (item.isIncluded) {
     return <span className="font-mono text-xs text-[var(--success)]/70">Included</span>;
   }
@@ -40,17 +41,19 @@ function CostCell({ item }: { item: KitItem }) {
       <span className="flex flex-col items-end gap-0.5">
         <span className="font-mono text-xs font-semibold text-[var(--danger)]">~${item.estimatedCost.toLocaleString()}</span>
         {item.recommendedAsin && (
-          <a
+          <AffiliateLink
             href={amazonAsinUrl(item.recommendedAsin)}
-            target="_blank"
-            rel="nofollow noopener noreferrer sponsored"
+            kitSlug={kitSlug}
+            retailer="amazon"
+            price={item.estimatedCost}
+            surface="bom_missing_part"
             className="inline-flex items-center gap-1 text-[10px] font-medium text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
           >
             View on Amazon
             <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
             </svg>
-          </a>
+          </AffiliateLink>
         )}
       </span>
     );
@@ -79,9 +82,11 @@ function ChevronIcon({ open }: { open: boolean }) {
 export function BomTable({
   items,
   missingCost,
+  kitSlug,
 }: {
   items: KitItem[];
   missingCost: number;
+  kitSlug: string;
 }) {
   if (items.length === 0) return null;
   const missingItems = items.filter((item) => !item.isIncluded);
@@ -106,7 +111,7 @@ export function BomTable({
         {missingItems.length > 0 && (
           <>
             {missingItems.map((item, i) => (
-              <DesktopRow key={`missing-${i}`} item={item} />
+              <DesktopRow key={`missing-${i}`} item={item} kitSlug={kitSlug} />
             ))}
           </>
         )}
@@ -128,7 +133,7 @@ export function BomTable({
 
             {showIncluded &&
               includedItems.map((item, i) => (
-                <DesktopRow key={`included-${i}`} item={item} />
+                <DesktopRow key={`included-${i}`} item={item} kitSlug={kitSlug} />
               ))}
           </>
         )}
@@ -154,7 +159,7 @@ export function BomTable({
       <div className="lg:hidden space-y-2">
         {/* Missing items first */}
         {missingItems.map((item, i) => (
-          <MobileCard key={`missing-${i}`} item={item} />
+          <MobileCard key={`missing-${i}`} item={item} kitSlug={kitSlug} />
         ))}
 
         {/* Included items — collapsible */}
@@ -172,7 +177,7 @@ export function BomTable({
 
             {showIncluded &&
               includedItems.map((item, i) => (
-                <MobileCard key={`included-${i}`} item={item} />
+                <MobileCard key={`included-${i}`} item={item} kitSlug={kitSlug} />
               ))}
           </>
         )}
@@ -189,7 +194,7 @@ export function BomTable({
   );
 }
 
-function DesktopRow({ item }: { item: KitItem }) {
+function DesktopRow({ item, kitSlug }: { item: KitItem; kitSlug: string }) {
   return (
     <div
       className={`grid grid-cols-12 gap-2 px-4 py-3.5 items-center border-b border-[var(--border)] last:border-b-0 ${
@@ -222,13 +227,13 @@ function DesktopRow({ item }: { item: KitItem }) {
         </span>
       </div>
       <div className="col-span-2 text-right">
-        <CostCell item={item} />
+        <CostCell item={item} kitSlug={kitSlug} />
       </div>
     </div>
   );
 }
 
-function MobileCard({ item }: { item: KitItem }) {
+function MobileCard({ item, kitSlug }: { item: KitItem; kitSlug: string }) {
   return (
     <div
       className={`rounded border p-3 ${
@@ -253,7 +258,7 @@ function MobileCard({ item }: { item: KitItem }) {
           </div>
         </div>
         <div className="text-right shrink-0">
-          <CostCell item={item} />
+          <CostCell item={item} kitSlug={kitSlug} />
           {item.quantity > 0 && (
             <p className="font-mono text-xs text-[var(--text-muted)]">{item.quantity}&times;</p>
           )}

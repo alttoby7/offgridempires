@@ -51,6 +51,7 @@ export function StickyBuyBar({
           kitSlug={kitSlug}
           retailer={retailer}
           price={listedPrice}
+          surface="sticky_bar"
           className="flex items-center gap-2 rounded bg-[var(--accent)] px-5 py-2.5 text-sm font-bold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors whitespace-nowrap"
         >
           View on {retailer}

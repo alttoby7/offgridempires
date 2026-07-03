@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getKitBySlug } from "@/lib/get-kits";
 import { buildAffiliateUrl } from "@/lib/affiliate";
+import { AffiliateLink } from "@/components/ui/affiliate-link";
 
 /**
  * Compact kit summary card for embedding in /learn articles.
@@ -46,14 +47,16 @@ export function ArticleKitEmbed({ slug }: { slug: string }) {
         </div>
         <div className="flex items-center gap-3">
           {affiliateUrl && (
-            <a
+            <AffiliateLink
               href={affiliateUrl}
-              target="_blank"
-              rel="nofollow noopener noreferrer sponsored"
+              kitSlug={kit.slug}
+              retailer={bestOffer!.retailer}
+              price={bestOffer!.price}
+              surface="article_embed"
               className="text-xs border border-[var(--accent)]/30 text-[var(--accent)] px-3 py-1.5 rounded hover:bg-[var(--accent)]/10 transition-colors whitespace-nowrap"
             >
               View on {bestOffer!.retailer} &rarr;
-            </a>
+            </AffiliateLink>
           )}
           <Link
             href={`/kits/${kit.slug}`}

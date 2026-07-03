@@ -237,7 +237,7 @@ export function ReceiptSection({
     <div className="space-y-4">
       {note && <Prose body={note} />}
       <Receipt kit={lead.kit} variant="report" />
-      <BomTable items={lead.kit.items} missingCost={lead.kit.missingCost} />
+      <BomTable items={lead.kit.items} missingCost={lead.kit.missingCost} kitSlug={lead.kit.slug} />
     </div>
   );
 }
