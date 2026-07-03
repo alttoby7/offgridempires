@@ -1121,6 +1121,141 @@ Re-run your exact numbers in the [calculator](/calculator) with your real pump, 
     updatedAt: "2026-07-03T00:00:00Z",
     indexable: false, // 🔴 human flip required to index
   },
+
+  // ── #8 (Tier 2) — marine solar kit for a boat ──────────────────────────────
+  {
+    slug: "marine-solar-kit-for-boat",
+    h1: "Marine Solar for a Boat: Sizing for the Fridge and Starlink That Run All Night",
+    metaTitle: "Marine Solar Kits for a Boat: Sizing for Fridge + Starlink",
+    metaDescription:
+      "On a boat the killers aren't peak watts — they're the fridge and Starlink that draw 24/7 at anchor. We ranked 79 LiFePO4 systems by what rides a night on the hook.",
+    intent:
+      "decision — marine solar kit / portable power for a boat (24/7 fridge + Starlink at anchor)",
+    answer:
+      "A boat's power problem isn't peak watts — it's the loads that never turn off. The marine fridge cycles 24/7, and Starlink at anchor pulls a steady 75–100W around the clock, together eating 2.5–3.5kWh on a quiet night on the hook, with only deck solar and the odd engine run to put it back. So you size for storage that rides the night plus panels that refill it by afternoon, in LiFePO4 (for the depth-of-discharge and the weight), not for a big inverter you'll rarely load. We took the 246 boat-rated LiFePO4 systems, narrowed to the 79 cruiser-band units (1–5kWh with an inverter), and ranked the 5 that actually carry a boat's overnight draw.",
+    loadIds: ["mini-fridge", "starlink"],
+    assumptions: {
+      sunHoursPerDay: 5,
+      sunSource: "tier",
+      zipCode: "",
+      sunTier: "average",
+      autonomyDays: 1,
+      controllerType: "mppt",
+      batteryChemistry: "lifepo4",
+    },
+    cohortLabel:
+      "boat-rated LiFePO4 power stations in the 1–5 kWh cruiser band (with an AC inverter)",
+    cohortHeadlineCount: 246,
+    cohortShortlistCount: 79,
+    picks: [
+      {
+        kitSlug: "ecoflow-delta2max-400w",
+        label: "Best all-round for a cruiser",
+        rationale:
+          "The balanced pick for coastal cruising: {p1.storageWh} rides a night of fridge-plus-Starlink with margin, and the bundled 400W panel refills it on a sunny afternoon at anchor. At {p1.costPerWh} it's honest value, and the flat form factor stows in a lazarette without a marine-electrician install. For most weekend-to-coastal boats, this is the one.",
+        cta: true,
+      },
+      {
+        kitSlug: "jackery-2000plus-4085wh-2x200w",
+        label: "Liveaboard / biggest bank",
+        rationale:
+          "The most storage in the group at {p2.storageWh}, with two 200W panels included — enough to carry a fridge, Starlink, and nav electronics through a cloudy night and still have reserve. At {p2.costPerWh} it's the pick for a liveaboard or a longer passage where you can't count on daily sun, and it expands if your loads grow.",
+      },
+      {
+        kitSlug: "ecoflow-delta2-220w",
+        label: "Cheapest way in (weekender)",
+        rationale:
+          "At {p3.listedPrice} — the lowest entry price here — {p3.storageWh} and a 220W panel cover a weekender's fridge and lights with a phone-and-Starlink top-up. It won't ride a 24/7 Starlink liveaboard load, but for coastal hops where you run the engine daily anyway, it's the cheapest honest start.",
+      },
+      {
+        kitSlug: "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
+        label: "Best value if you already have marine panels",
+        rationale:
+          "{p4.storageWh} at {p4.costPerWh} — the lowest cost-per-watt-hour on the board — as a main-unit-only bank. If your boat already has deck or arch solar with its own controller, this is the cheapest way to add real LiFePO4 storage; pair it with your existing marine panels rather than paying for a bundled one.",
+      },
+      {
+        kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
+        label: "Room to grow / expandable",
+        rationale:
+          "{p5.storageWh} at {p5.costPerWh} on a bank that expands past 12kWh — the pick if you're outfitting a boat you'll add loads to (watermaker, more refrigeration, induction). Main-unit-only, so add marine-rated panels to taste. More headroom than the cruiser picks without jumping to a liveaboard price.",
+      },
+    ],
+    receiptMode: "autonomy",
+    effectiveLoadWatts: 130,
+    receiptNote:
+      "These are complete power stations — **required missing-parts cost is [[const:$0]]** — but a boat adds a few marine realities the box doesn't: **secure mounting** for a seaway (a power station that slides in a knockdown is a hazard), **corrosion-aware placement** away from salt spray and bilge damp, and, if you want to charge underway, a **DC-DC or shore-charge path** (≈[[const:$100–$300]]). The receipt below is about **hours on the hook**, not hidden cost — how long your bank rides the overnight draw before the sun or the engine puts it back.",
+    sections: [
+      {
+        heading: "The load profile: a boat is beaten by what never turns off",
+        body: `On a boat, **peak watts barely matter** — few marine loads are big. What drains you is the **24/7 draw at anchor**:
+
+- **The fridge/freezer** is the classic boat killer: it **cycles around the clock**, surges 3–5× on the compressor, and works harder in a hot cabin or warm water — quietly the biggest single consumer on most boats.
+- **Starlink at anchor** changed the math. A steady **75–100W, all night**, is ~1.8–2.4kWh a day that older boats never had to plan for. Add the fridge and a quiet night on the hook is **2.5–3.5kWh** with no shore power and limited deck solar.
+
+The rule that follows: size the **battery to ride the night** and the **panels to refill it by afternoon**, and use LiFePO4 for the deep discharge and the weight savings over lead. Size your exact boat with the [load calculator](/calculator).`,
+      },
+      {
+        heading: "The verdict: storage that rides the night, panels that refill by day",
+        body: `Our failure engine flags two loads that decide a boat's system:
+
+> **Fridge/freezer:** compressors surge 3–5× and cycle 24/7; add ~30% in heat — the dominant daily draw on most boats.
+> **Starlink (always-on):** a continuous 75–100W that runs ~1.8–2.4kWh/day whether you're using it or not — plan for it as a base load, not an accessory.
+
+Together they mean the number that matters is **overnight watt-hours**, not inverter size. A boat rarely needs more than a 2,000–3,000W inverter, but it always needs enough **storage** to get from sunset to a productive solar afternoon — and enough **panel** to actually refill the bank before the next night. That's why this cohort filters on the 1–5kWh cruiser band and rewards bundled solar. See [how the methodology works](/methodology) and the [inverters & power conversion](/learn/inverters-and-power-conversion) explainer.`,
+      },
+      {
+        heading: "The 5 that carry a boat",
+        body: `All five are **LiFePO4 and pure sine** and boat-rated in our data. The podium ranks by **overnight capacity against value**: the {p1.storageWh} EcoFlow leads as the balanced cruiser pick, the {p2.storageWh} Jackery carries the most for a liveaboard, and the {p3.listedPrice} EcoFlow is the cheapest way in. The single buy link sits on the #1 pick. Each kit name links to its full audit with real build cost and 6-month price history.
+
+Match the bank to how you cruise: coastal hoppers who run the engine daily can size down; liveaboards running Starlink and refrigeration 24/7 should size up to the biggest bank. Compare any [head-to-head](/compare) or browse the full [portable power](/portable-power) pool.`,
+      },
+      {
+        heading: "Marine reality: mounting, charging, and salt",
+        body: `A power station on a boat isn't a power station in a garage:
+
+- **Mount it for a seaway.** Anything that can slide across the cabin in a knockdown is a hazard — strap or bracket it low and central. This is the step the product photos never show.
+- **Plan the recharge, not just the discharge.** Deck or arch solar refills the bank by day; add a **DC-DC charger or a shore-power path** (≈[[const:$100–$300]]) if you want to top up from the engine alternator or a marina.
+- **Respect salt and damp.** Keep the unit out of direct spray and away from bilge humidity; corrosion is the quiet killer of marine electronics.
+
+Re-check your overnight numbers in the [calculator](/calculator) with your real fridge and Starlink hours, and see [data sources](/data-sources) for where kit prices come from.`,
+      },
+    ],
+    whyWon: [
+      "Every pick is pure-sine LiFePO4, boat-rated, and sized to ride a real overnight fridge-plus-Starlink draw — the metric that actually decides a marine system, not peak inverter watts.",
+      "The podium spans how people actually cruise — a cheapest weekender, a balanced coastal all-rounder, a liveaboard bank, and two main-unit-only options for boats that already have deck solar.",
+      "Specs, prices, and 6-month price trends are pulled from live data, and the verdict is anchored to the two sourced 24/7 loads (fridge cycling, always-on Starlink) a generic marine blog hand-waves.",
+    ],
+    whyFailed: [
+      "Sizing for peak watts instead of overnight watt-hours — a boat's fridge and Starlink drain the bank between sunset and a good solar afternoon, and undersized storage dies in the dark.",
+      "Forgetting Starlink is a 24/7 base load, not an accessory — it silently adds ~1.8–2.4kWh a day that older boat systems never planned for.",
+      "We cut sub-1kWh units (too little to ride a night) and lead-acid or DC-only records that either weigh too much or can't run AC marine loads.",
+    ],
+    faqs: [
+      {
+        question: "What size solar system do I need for a boat with a fridge and Starlink?",
+        answer:
+          "Plan for the overnight draw, not peak watts. A marine fridge plus Starlink at anchor runs about 2.5–3.5kWh a day, so most cruisers want 2–4kWh of LiFePO4 storage and enough deck solar (300–600W) to refill it by afternoon. Liveaboards running both 24/7 should size to the top of that range or beyond.",
+      },
+      {
+        question: "How much power does Starlink use on a boat?",
+        answer:
+          "A steady 75–100W whenever it's on — roughly 1.8–2.4kWh a day if you leave it running at anchor. That makes it a base load to plan around, not an accessory: on many boats Starlink and the fridge together are the two biggest consumers of the house bank.",
+      },
+      {
+        question: "Do I need a special marine solar kit for a boat?",
+        answer:
+          "The battery and inverter don't have to be marine-specific — a quality LiFePO4 power station works well — but the installation does: mount it securely for a seaway, keep it away from salt spray and bilge damp, and plan a recharge path (deck solar plus an optional DC-DC or shore charger). Marine-rated flexible panels are worth it for curved decks.",
+      },
+    ],
+    claims: [
+      { pick: "p2", metric: "storageWh", direction: "highest", note: "#2 biggest bank / liveaboard" },
+      { pick: "p3", metric: "listedPrice", direction: "lowest", note: "#3 cheapest entry" },
+      { pick: "p4", metric: "costPerWh", direction: "lowest", note: "#4 lowest $/Wh in the podium" },
+    ],
+    publishedAt: "2026-07-03T00:00:00Z",
+    updatedAt: "2026-07-03T00:00:00Z",
+    indexable: false, // 🔴 human flip required to index
+  },
 ];
 
 export function getDecisionGuideSlugs(): string[] {
