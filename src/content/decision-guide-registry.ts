@@ -1383,6 +1383,153 @@ Re-check your exact solar and runtime in the [calculator](/calculator), and see 
     updatedAt: "2026-07-03T00:00:00Z",
     indexable: false, // 🔴 human flip required to index
   },
+
+  // ── #9 (Tier 3) — what to add to a solar kit to run a window AC ─────────────
+  {
+    slug: "what-you-need-to-add-to-a-solar-kit-to-run-ac",
+    h1: "What to Add to a Solar Kit to Run a Window AC (Soft-Start, Inverter, Battery Math)",
+    metaTitle: "What to Add to a Solar Kit to Run a Window AC",
+    metaDescription:
+      "A window AC trips most solar kits on the compressor surge. Here's the exact soft-start, inverter, and battery math to make a near-fit kit run it — plus 3 that already do.",
+    intent:
+      "transactional add-on — what to add to a solar kit / power station to run a window air conditioner",
+    answer:
+      "A window air conditioner defeats most solar kits two ways: the compressor spikes about 3× its running watts on every start, and then it runs for hours, eating the battery. To make a near-fit kit work you close three gaps: fit a soft-start kit to cut the startup surge ~65%, make sure the inverter is pure sine (a modified-sine one buzzes and overheats the motor), and add enough battery for the runtime you want. Below is the exact parts list to close each gap, plus the 3 LiFePO4 kits from the 135 AC-capable systems that already clear it out of the box.",
+    loadIds: ["window-ac"],
+    assumptions: {
+      sunHoursPerDay: 4.5,
+      sunSource: "tier",
+      zipCode: "",
+      sunTier: "average",
+      autonomyDays: 1,
+      controllerType: "mppt",
+      batteryChemistry: "lifepo4",
+    },
+    cohortLabel:
+      "LiFePO4 systems with a 2,000W+ inverter and 2 kWh+ storage that can run a window AC (with a soft-start on marginal ones)",
+    cohortHeadlineCount: 135,
+    cohortShortlistCount: 111,
+    picks: [
+      {
+        kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
+        label: "Best value that already runs a window AC",
+        rationale:
+          "A {p1.inverterWatts} inverter clears a 5,000–10,000 BTU window unit's startup surge without a soft-start, and {p1.storageWh} at {p1.costPerWh} — the lowest cost-per-watt-hour here — runs one for several hours. It has a 12V DC output and expands past 12kWh for longer runtime. If you're buying fresh rather than upgrading, start here.",
+        cta: true,
+      },
+      {
+        kitSlug: "ecoflow-delta-pro-400w",
+        label: "Most runtime for a bigger AC",
+        rationale:
+          "{p2.storageWh} — the most storage in this shortlist — on a {p2.inverterWatts} inverter, so it swallows a larger window unit's surge and keeps it running longer before the sun comes back. At {p2.costPerWh}, bundled with a 400W panel, it's the pick when the AC is the load you care about most.",
+      },
+      {
+        kitSlug: "ecoflow-delta2max-400w",
+        label: "Cheapest that runs a small window unit",
+        rationale:
+          "At {p3.listedPrice} — the lowest here — {p3.storageWh} and a {p3.inverterWatts} inverter run a 5,000–6,000 BTU window unit, especially with a soft-start fitted. Runtime is shorter than the bigger banks, but for a single small room or a nap-time cool-down it's the cheapest honest way in.",
+      },
+    ],
+    addOnBom: [
+      {
+        part: "Soft-start kit (e.g. Micro-Air EasyStart, SoftStartRV)",
+        why: "Cuts the compressor's startup inrush ~65%, so a marginal 2,000W inverter stops tripping — the single highest-leverage add-on for running AC off solar.",
+        estCost: "$250–$350",
+        search: "micro-air easystart soft start air conditioner",
+      },
+      {
+        part: "Pure-sine inverter upgrade (only if your kit is modified-sine)",
+        why: "Modified-sine power makes an AC compressor buzz, run hot, and fail early. If your existing kit isn't pure sine, swap it before you run a motor load.",
+        estCost: "$150–$500",
+        search: "pure sine wave inverter 3000w",
+      },
+      {
+        part: "Expansion battery / extra LiFePO4 storage",
+        why: "A window AC is a marathon load — it runs for hours. Runtime is battery watt-hours ÷ running watts, so more storage is the only way to run it longer between charges.",
+        estCost: "$400–$1,200",
+        search: "lifepo4 expansion battery power station",
+      },
+      {
+        part: "Plug-in watt meter (e.g. Kill A Watt)",
+        why: "Measure your specific AC's real running and startup draw before you rely on it — nameplate BTU and watts lie, and the surge is what trips the inverter.",
+        estCost: "$20–$40",
+        search: "kill a watt meter",
+      },
+    ],
+    receiptMode: "autonomy",
+    effectiveLoadWatts: 550,
+    receiptNote:
+      "This page's 'receipt' is the add-on table above — the parts to close the gap on a near-fit kit — not a hidden cost inside the three picks (those are complete, **missing-parts cost is [[const:$0]]**). The biggest lever is the **soft-start** (≈[[const:$250–$350]]): it drops the surge enough that a 2,000W inverter you already own can run an AC it otherwise trips. The autonomy figures below assume the AC's continuous running draw; add a soft-start and battery to run it longer.",
+    sections: [
+      {
+        heading: "The load profile: a window AC is a surge, then a marathon",
+        body: `A window air conditioner is hard on solar for two separate reasons:
+
+- **The startup surge.** The compressor motor spikes roughly **3× its running watts** for a split second every time it kicks on. A 5,000 BTU unit runs at ~**450–550W** but can surge past **1,500W**; a 12,000 BTU unit runs ~**1,100–1,300W** and surges past **3,500W**. Inverters sized for the running number **trip on that spike**.
+- **The marathon.** Unlike a well pump's quick cycle, an AC **runs for hours**. So after you survive the surge, it steadily drains the battery: runtime is simply **battery watt-hours ÷ running watts**. A 2kWh bank runs a 500W window unit ~3–4 hours; a 3.6kWh bank, ~6–7.
+
+Size your exact unit — BTU, run hours, and the room — with the [load calculator](/calculator) before you buy parts.`,
+      },
+      {
+        heading: "The verdict: soft-start the surge, pure-sine the motor, size the battery",
+        body: `Our failure engine fires a **blocker** on a window AC:
+
+> **A window AC's compressor surges ~3× its running watts on startup; inverters sized for the running number trip on it. Use a soft-start kit to cut the inrush, a pure-sine inverter, and size the battery for the hours it actually runs.**
+
+That verdict maps straight to the three add-ons in the table above: **soft-start** (kills the surge so a smaller inverter copes), **pure sine** (protects the compressor motor), and **more battery** (buys runtime). Fit the soft-start first — it's the cheapest way to turn a kit that *almost* runs your AC into one that does. See [how the methodology works](/methodology) and the [inverters & power conversion](/learn/inverters-and-power-conversion) explainer for why modified-sine and motors don't mix.`,
+      },
+      {
+        heading: "Or just buy one that already runs it: 3 kits that clear the surge",
+        body: `If you'd rather not retrofit, three LiFePO4 kits clear a window AC out of the box. The podium ranks by **value against runtime**: the {p1.costPerWh} Anker leads, the {p2.storageWh} EcoFlow carries the most for a bigger unit, and the {p3.listedPrice} EcoFlow is the cheapest that runs a small one. The single buy link sits on the #1 pick. Each links to its full audit with real build cost and 6-month price history.
+
+Even on these, a **soft-start still helps** — it lets a smaller unit run a bigger AC and reduces wear. Compare any [head-to-head](/compare) or browse the [portable power](/portable-power) pool.`,
+      },
+      {
+        heading: "The add-on math: making a near-fit kit work",
+        body: `Two quick calculations decide whether your existing kit can run your AC:
+
+- **Surge check.** Take your AC's running watts × 3 for the startup spike (or measure it with a watt meter). If that exceeds your inverter's surge rating, a **soft-start kit** — which cuts the inrush ~65% — usually brings it under the limit. A 500W unit's ~1,500W surge drops to ~**500–600W** with a soft-start, which almost any 2,000W inverter handles.
+- **Runtime check.** Battery watt-hours ÷ AC running watts = hours. Want more? Add **expansion storage**; solar alone rarely keeps up with an AC in real time, so the battery is what carries it.
+
+If your inverter is **modified sine**, fix that first — no amount of battery makes a modified-sine inverter safe for a compressor. Re-check your exact numbers in the [calculator](/calculator), and see [data sources](/data-sources) for kit pricing.`,
+      },
+    ],
+    whyWon: [
+      "The soft-start kit is the highest-leverage add-on — it cuts the AC's startup surge ~65%, so a 2,000W inverter you already own can run a unit it otherwise trips, for a fraction of a new system's cost.",
+      "The three shortlist kits are pure-sine LiFePO4 with real surge headroom, so they run a window AC without a retrofit — and they're ranked by runtime-per-dollar from live data.",
+      "Every add-on is tied to a sourced failure-note (compressor surge, modified-sine motor damage, marathon runtime) — the specific, computable gaps a generic 'can solar run AC?' article hand-waves.",
+    ],
+    whyFailed: [
+      "Sizing the inverter for the AC's running watts, not the ~3× startup surge — the number-one reason a kit that 'should' run an AC trips the moment the compressor kicks on.",
+      "Running a compressor on a modified-sine inverter — it buzzes, overheats, and shortens the motor's life; pure sine is non-negotiable for AC.",
+      "Forgetting the marathon: even after the surge, an AC drains the bank for hours, so undersized storage runs out long before the heat does.",
+    ],
+    faqs: [
+      {
+        question: "What do I need to add to a solar generator to run a window AC?",
+        answer:
+          "Three things, in order: a soft-start kit to cut the compressor's ~3× startup surge (so your inverter stops tripping), a pure-sine inverter if your kit isn't already one (modified sine damages compressor motors), and enough battery for the hours the AC actually runs. The soft-start is the cheapest and highest-impact — it often turns a near-fit kit into one that works.",
+      },
+      {
+        question: "Will a soft-start kit let a small inverter run an air conditioner?",
+        answer:
+          "Usually, yes. A soft-start cuts the compressor's inrush by roughly 65%, so a 500W window unit that spikes ~1,500W on startup drops to ~500–600W — within reach of most 2,000W inverters. It doesn't reduce the running watts, so you still need enough battery for runtime, but it's the key to surviving the startup surge on a smaller system.",
+      },
+      {
+        question: "How long will a solar battery run a window air conditioner?",
+        answer:
+          "Runtime is battery watt-hours divided by the AC's running watts. A 2,000Wh unit runs a ~500W (5,000 BTU) window AC about 3–4 hours; a 3,600Wh unit about 6–7. Solar rarely keeps up with an AC in real time, so the battery size is what determines how long you can run it between recharges.",
+      },
+    ],
+    claims: [
+      { pick: "p1", metric: "costPerWh", direction: "lowest", note: "#1 lowest $/Wh in the shortlist" },
+      { pick: "p2", metric: "storageWh", direction: "highest", note: "#2 most storage / longest runtime" },
+      { pick: "p3", metric: "listedPrice", direction: "lowest", note: "#3 cheapest that runs a small window AC" },
+    ],
+    publishedAt: "2026-07-03T00:00:00Z",
+    updatedAt: "2026-07-03T00:00:00Z",
+    indexable: false, // 🔴 human flip required to index
+  },
 ];
 
 export function getDecisionGuideSlugs(): string[] {

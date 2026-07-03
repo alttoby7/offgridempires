@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Kit } from "@/lib/demo-data";
 import type { SizingResult } from "@/lib/calculator/types";
-import type { DecisionGuideMeta } from "@/lib/decision/types";
+import type { DecisionGuideMeta, AddOnItem } from "@/lib/decision/types";
 import type { ResolvedPick } from "@/lib/decision/resolve";
 import { buildAffiliateUrl } from "@/lib/affiliate";
 import { getBuyTiming, BUY_SIGNAL_STYLE } from "@/lib/decision/evidence";
@@ -307,6 +307,65 @@ export function BuyTimingTable({ picks }: { picks: ResolvedPick[] }) {
         </p>
         <PriceHistorySection kit={chartKit} />
       </div>
+    </div>
+  );
+}
+
+// ── Add-on BOM (Tier-3 add-on pages) ─────────────────────────────────────────
+
+export function AddOnBom({ items, guideSlug }: { items: AddOnItem[]; guideSlug: string }) {
+  if (!items.length) return null;
+  return (
+    <div className="overflow-x-auto rounded border border-[var(--border)] bg-[var(--bg-surface)]">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="border-b border-[var(--border)] bg-[var(--bg-secondary)] text-xs uppercase tracking-wide text-[var(--text-muted)]">
+            <th className="px-4 py-3 text-left font-medium">Part to add</th>
+            <th className="px-4 py-3 text-left font-medium">Why it closes the gap</th>
+            <th className="px-4 py-3 text-right font-medium">Est. cost</th>
+            <th className="px-4 py-3 text-right font-medium">Shop</th>
+          </tr>
+        </thead>
+        <tbody>
+          {items.map((item, i) => {
+            const target = item.asin
+              ? `https://www.amazon.com/dp/${item.asin}`
+              : item.search
+                ? `https://www.amazon.com/s?k=${encodeURIComponent(item.search)}`
+                : null;
+            const url = target ? buildAffiliateUrl(target, "amazon") : null;
+            return (
+              <tr
+                key={i}
+                className="border-b border-[var(--border)] last:border-b-0 align-top"
+              >
+                <td className="px-4 py-3 font-medium text-[var(--text-primary)]">{item.part}</td>
+                <td className="px-4 py-3 text-[var(--text-secondary)] leading-relaxed">{item.why}</td>
+                <td className="px-4 py-3 text-right font-mono text-[var(--text-secondary)] whitespace-nowrap">
+                  {item.estCost}
+                </td>
+                <td className="px-4 py-3 text-right whitespace-nowrap">
+                  {url ? (
+                    <AffiliateLink
+                      href={url}
+                      kitSlug={`addon:${item.asin}`}
+                      retailer="amazon"
+                      price={0}
+                      surface="bom_addon"
+                      contentSlug={guideSlug}
+                      className="text-xs font-medium text-[var(--accent)] hover:underline whitespace-nowrap"
+                    >
+                      Find on Amazon &rarr;
+                    </AffiliateLink>
+                  ) : (
+                    <span className="text-xs text-[var(--text-muted)]">—</span>
+                  )}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
     </div>
   );
 }

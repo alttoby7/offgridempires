@@ -76,6 +76,30 @@ export interface GuideSection {
   body: string;
 }
 
+/**
+ * One row of an add-on BOM — the parts to add to a near-fit kit to close a
+ * specific gap (e.g. a soft-start kit to run a window AC). Used by Tier-3
+ * add-on pages via `DecisionGuideMeta.addOnBom`. `estCost` is an editorial
+ * price RANGE (a display string like "$80–$250"), not a live kit price, so it
+ * is not token-resolved. `asin` (optional) renders a tracked Amazon affiliate
+ * link.
+ */
+export interface AddOnItem {
+  part: string;
+  /** One line: why this part closes the gap. */
+  why: string;
+  /** Display price range, e.g. "$80–$250". */
+  estCost: string;
+  /** Optional Amazon ASIN → renders a tagged AffiliateLink to that product. */
+  asin?: string;
+  /**
+   * Optional Amazon search query → renders a tagged affiliate search link.
+   * Preferred over `asin` for multi-brand parts (soft-start kits, cable) where
+   * a single product would be arbitrary. Ignored if `asin` is set.
+   */
+  search?: string;
+}
+
 export interface DecisionGuideMeta {
   slug: string;
   /** Query-intent H1 (GATED). */
@@ -114,6 +138,13 @@ export interface DecisionGuideMeta {
   whyWon: string[];
   whyFailed: string[];
   faqs: { question: string; answer: string }[];
+
+  /**
+   * Optional add-on BOM — the parts to add to a near-fit kit to close the
+   * page's gap (Tier-3 add-on pages, e.g. what-to-add-to-run-a-window-AC).
+   * When present, the guide renders a parts table after the podium.
+   */
+  addOnBom?: AddOnItem[];
 
   /**
    * Build-time superlative assertions guarding the comparative claims in the

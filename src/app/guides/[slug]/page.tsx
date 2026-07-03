@@ -18,6 +18,7 @@ import {
   SizingCards,
   Podium,
   ReceiptSection,
+  AddOnBom,
   BuyTimingTable,
   WhyWonWhyFailed,
   MethodologyFreshness,
@@ -145,6 +146,14 @@ export default async function DecisionGuidePage({
             <Prose body={sections[2].body} />
           </div>
           <Podium picks={picks} />
+        </section>
+      )}
+
+      {/* 4b. Add-on BOM (Tier-3 add-on pages only) */}
+      {meta.addOnBom && meta.addOnBom.length > 0 && (
+        <section className="mt-10">
+          <H2>What to add to close the gap</H2>
+          <AddOnBom items={meta.addOnBom} guideSlug={slug} />
         </section>
       )}
 
