@@ -77,6 +77,7 @@ function main() {
   let lintHits = 0;
   let leftoverHits = 0;
   let claimErrors = 0;
+  let segmentErrors = 0;
 
   for (const slug of slugs) {
     // 1. VALIDATE — resolution must not throw.
@@ -102,6 +103,21 @@ function main() {
       console.error(`✗ [${slug}] ${(e as Error).message}`);
     }
 
+    // 1c. HUB SEGMENTS — each "best for X" winner must equal its source guide's
+    // #1 pick, so the hub can never silently disagree with the page it routes to.
+    for (const seg of getDecisionGuide(slug)!.segments ?? []) {
+      const spoke = getDecisionGuide(seg.sourceGuideSlug);
+      if (!spoke) {
+        segmentErrors++;
+        console.error(`✗ [${slug}] segment "${seg.label}": sourceGuideSlug "${seg.sourceGuideSlug}" not found`);
+      } else if (spoke.picks[0]?.kitSlug !== seg.kitSlug) {
+        segmentErrors++;
+        console.error(
+          `✗ [${slug}] segment "${seg.label}": winner "${seg.kitSlug}" != ${seg.sourceGuideSlug} #1 pick "${spoke.picks[0]?.kitSlug}" (spoke drifted)`
+        );
+      }
+    }
+
     // Assert no markers survived resolution.
     for (const { path, text } of managedFields(resolved.meta)) {
       const leftover = text.match(/\{[^{}]+\}|\[\[const:/);
@@ -124,11 +140,11 @@ function main() {
   }
 
   console.log(
-    `\nGuides: ${slugs.length} | resolve errors: ${resolveErrors} | claim errors: ${claimErrors} | unresolved markers: ${leftoverHits} | lint hits: ${lintHits}`
+    `\nGuides: ${slugs.length} | resolve errors: ${resolveErrors} | claim errors: ${claimErrors} | segment errors: ${segmentErrors} | unresolved markers: ${leftoverHits} | lint hits: ${lintHits}`
   );
 
-  if (resolveErrors > 0 || claimErrors > 0 || leftoverHits > 0) {
-    console.error("FAILED — resolution / false-claim / marker errors must be fixed.");
+  if (resolveErrors > 0 || claimErrors > 0 || segmentErrors > 0 || leftoverHits > 0) {
+    console.error("FAILED — resolution / false-claim / segment-drift / marker errors must be fixed.");
     process.exit(1);
   }
   if (lintHits > 0 && STRICT) {

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { Kit } from "@/lib/demo-data";
 import type { SizingResult } from "@/lib/calculator/types";
-import type { DecisionGuideMeta, AddOnItem } from "@/lib/decision/types";
+import type { DecisionGuideMeta, AddOnItem, HubSegment } from "@/lib/decision/types";
+import { getKitBySlug } from "@/lib/get-kits";
 import type { ResolvedPick } from "@/lib/decision/resolve";
 import { buildAffiliateUrl } from "@/lib/affiliate";
 import { getBuyTiming, BUY_SIGNAL_STYLE } from "@/lib/decision/evidence";
@@ -383,6 +384,67 @@ export function AddOnBom({ items, guideSlug }: { items: AddOnItem[]; guideSlug: 
           })}
         </tbody>
       </table>
+    </div>
+  );
+}
+
+// ── Hub segment matrix (#14 "best of" router — no retailer CTA, links to spokes) ─
+
+export function SegmentMatrix({ segments }: { segments: HubSegment[] }) {
+  if (!segments.length) return null;
+  return (
+    <div className="space-y-3">
+      {segments.map((seg, i) => {
+        const kit = getKitBySlug(seg.kitSlug);
+        const spokeLabel = seg.label.replace(/^Best for (a |an |the )?/i, "");
+        return (
+          <div
+            key={i}
+            className="rounded border border-[var(--border)] bg-[var(--bg-surface)] p-4 sm:p-5"
+          >
+            <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+              <h3 className="text-sm font-bold text-[var(--text-primary)]">{seg.label}</h3>
+              <span className="text-xs text-[var(--text-muted)]">{seg.audience}</span>
+            </div>
+            {kit && (
+              <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
+                <Link
+                  href={`/kits/${kit.slug}`}
+                  className="font-medium text-[var(--accent)] hover:underline"
+                >
+                  {kit.displayName ?? kit.name}
+                </Link>
+                <span className="font-mono text-[var(--text-secondary)]">
+                  ${kit.listedPrice.toLocaleString()}
+                </span>
+                {kit.storageWh > 0 && (
+                  <span className="font-mono text-[var(--text-secondary)]">{fmtWh(kit.storageWh)}</span>
+                )}
+                {kit.inverterWatts > 0 && (
+                  <span className="font-mono text-[var(--text-secondary)]">
+                    {kit.inverterWatts.toLocaleString()}W
+                  </span>
+                )}
+                {kit.costPerWh && (
+                  <span className="font-mono text-[var(--text-secondary)]">{kit.costPerWh}/Wh</span>
+                )}
+              </div>
+            )}
+            <p className="mt-2 text-sm text-[var(--text-secondary)] leading-relaxed">{seg.thesis}</p>
+            <p className="mt-1 text-xs text-[var(--text-muted)]">
+              <span className="font-semibold text-[var(--danger)]">Avoids:</span> {seg.failureMode}
+            </p>
+            <div className="mt-3">
+              <Link
+                href={`/guides/${seg.sourceGuideSlug}`}
+                className="text-xs font-medium text-[var(--accent)] hover:underline"
+              >
+                Full {spokeLabel} guide &rarr;
+              </Link>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

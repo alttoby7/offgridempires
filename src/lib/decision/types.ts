@@ -100,8 +100,35 @@ export interface AddOnItem {
   search?: string;
 }
 
+/**
+ * One "best for X" segment on a hub page (#14 best-off-grid-solar-generator).
+ * The winner is the #1 pick of an existing spoke guide; the build asserts
+ * `kitSlug === getDecisionGuide(sourceGuideSlug).picks[0].kitSlug` so the hub
+ * can never silently disagree with the guide it routes to. Live price/specs are
+ * rendered from kits.json at build; `thesis`/`failureMode` are editorial prose
+ * (no money literals — the live numbers come from the kit columns).
+ */
+export interface HubSegment {
+  /** e.g. "Best for a CPAP". */
+  label: string;
+  /** Winner kit slug — must equal the source guide's first pick. */
+  kitSlug: string;
+  /** Spoke guide slug this segment routes to (and is asserted against). */
+  sourceGuideSlug: string;
+  /** Who this segment is for, one line. */
+  audience: string;
+  /** Why this winner, one line (editorial). */
+  thesis: string;
+  /** The failure mode it avoids that a generic pick doesn't (editorial). */
+  failureMode: string;
+}
+
 export interface DecisionGuideMeta {
   slug: string;
+  /** "standard" (default) or "hub" — a router page rendered as a segment matrix. */
+  pageKind?: "standard" | "hub";
+  /** Hub-only: the "best for X" segments (each routes to a spoke guide). */
+  segments?: HubSegment[];
   /** Query-intent H1 (GATED). */
   h1: string;
   metaTitle: string;

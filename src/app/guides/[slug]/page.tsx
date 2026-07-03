@@ -19,6 +19,7 @@ import {
   Podium,
   ReceiptSection,
   AddOnBom,
+  SegmentMatrix,
   BuyTimingTable,
   WhyWonWhyFailed,
   MethodologyFreshness,
@@ -85,6 +86,7 @@ export default async function DecisionGuidePage({
   if (!resolved) notFound();
   const { meta, picks } = resolved;
 
+  const isHub = meta.pageKind === "hub";
   const loads = presetToLoads(meta.loadIds);
   const sizing = computeSizing(loads, meta.assumptions);
   const verdicts = computeVerdicts(loads, meta.assumptions, sizing);
@@ -116,36 +118,48 @@ export default async function DecisionGuidePage({
         <DataFooter updated={getKitsUpdated()} />
       </div>
 
-      {/* 2. Load profile + sizing */}
+      {/* 2. Load profile + sizing (standard) / intro (hub) */}
       {sections[0] && (
         <section className="mt-8">
           <H2>{sections[0].heading}</H2>
           <Prose body={sections[0].body} />
-          <div className="mt-5">
-            <SizingCards sizing={sizing} />
-          </div>
+          {!isHub && (
+            <div className="mt-5">
+              <SizingCards sizing={sizing} />
+            </div>
+          )}
         </section>
       )}
 
-      {/* 3. Verdict block */}
+      {/* Hub: segment matrix (the core "best for X" router, no retailer CTA) */}
+      {isHub && meta.segments && (
+        <section className="mt-10">
+          <H2>Best by use case</H2>
+          <SegmentMatrix segments={meta.segments} />
+        </section>
+      )}
+
+      {/* 3. Verdict block (standard only) */}
       {sections[1] && (
         <section className="mt-10">
           <H2>{sections[1].heading}</H2>
           <Prose body={sections[1].body} />
-          <div className="mt-4">
-            <VerdictList verdicts={verdicts} />
-          </div>
+          {!isHub && (
+            <div className="mt-4">
+              <VerdictList verdicts={verdicts} />
+            </div>
+          )}
         </section>
       )}
 
-      {/* 4. Podium */}
+      {/* 4. Podium (standard only) */}
       {sections[2] && (
         <section className="mt-10">
           <H2>{sections[2].heading}</H2>
           <div className="mb-4">
             <Prose body={sections[2].body} />
           </div>
-          <Podium picks={picks} />
+          {!isHub && <Podium picks={picks} />}
         </section>
       )}
 
@@ -157,16 +171,18 @@ export default async function DecisionGuidePage({
         </section>
       )}
 
-      {/* 5. Receipt (autonomy or missing-parts) */}
-      <section className="mt-10">
-        <H2>The receipt: what your money actually buys</H2>
-        <ReceiptSection
-          picks={picks}
-          mode={meta.receiptMode}
-          effectiveLoadWatts={meta.effectiveLoadWatts}
-          note={meta.receiptNote}
-        />
-      </section>
+      {/* 5. Receipt (autonomy or missing-parts) — standard only */}
+      {!isHub && (
+        <section className="mt-10">
+          <H2>The receipt: what your money actually buys</H2>
+          <ReceiptSection
+            picks={picks}
+            mode={meta.receiptMode}
+            effectiveLoadWatts={meta.effectiveLoadWatts}
+            note={meta.receiptNote}
+          />
+        </section>
+      )}
 
       {/* 6. Gap-closing BOM (narrative for integrated kits) */}
       {sections[3] && (
@@ -176,11 +192,13 @@ export default async function DecisionGuidePage({
         </section>
       )}
 
-      {/* 7. Buy now vs wait */}
-      <section className="mt-10">
-        <H2>Buy now or wait?</H2>
-        <BuyTimingTable picks={picks} />
-      </section>
+      {/* 7. Buy now vs wait — standard only */}
+      {!isHub && (
+        <section className="mt-10">
+          <H2>Buy now or wait?</H2>
+          <BuyTimingTable picks={picks} />
+        </section>
+      )}
 
       {/* 8. Why won / why failed */}
       <section className="mt-10">

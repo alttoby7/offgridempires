@@ -94,7 +94,7 @@ That two-part gate is exactly why we filtered to **inverter ≥ 2,000W and stora
       },
       {
         heading: "The 3 kits that win",
-        body: `All five picks below are **LiFePO4 and pure-sine** integrated stations — they pass the chemistry and surge-headroom rules cleanly. The podium ranks by cost-per-watt-hour; the single buy link on the page sits on the #1 value pick. Each kit name links to its full audit.`,
+        body: `All five picks below are **LiFePO4 and pure-sine** integrated stations — they pass the chemistry and surge-headroom rules cleanly. The podium leads with the best-value pick; the single buy link on the page sits on it. Each kit name links to its full audit.`,
       },
       {
         heading: "Gap-closing BOM: what you still need",
@@ -419,7 +419,7 @@ We flag exactly which line items each kit includes versus omits from its own BOM
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: false, // HELD noindex 2026-07-03 — Codex audit flagged (fix before flip)
   },
 
   // ── #4 (Tier 2) — off-grid / boondocking RV solar kit ──────────────────────
@@ -574,7 +574,7 @@ Budget roughly **[[const:$250–$600]]** of integration parts on top of a hardwi
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: false, // HELD noindex 2026-07-03 — Codex audit flagged (fix before flip)
   },
 
   // ── #5 (Tier 2) — solar kit for a shed or workshop ─────────────────────────
@@ -714,7 +714,7 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: false, // HELD noindex 2026-07-03 — Codex audit flagged (fix before flip)
   },
 
   // ── #6 (Tier 5) — portable power station for home backup ───────────────────
@@ -753,7 +753,7 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
         kitSlug: "jackery-2000plus-4085wh-2x200w",
         label: "Best for runtime",
         rationale:
-          "The value buy for long fridge runtime in a complete, panel-included unit. At 4,085Wh and {p2.costPerWh} it carries the most raw storage of the three complete picks, and its 3,000W pure-sine inverter clears the surge gate. It's also sitting at its 6-month-low price right now — the strongest buy-now signal on the board if you want proven runtime in a unit that ships ready to recharge. (The unit-only #5 packs more watt-hours per dollar, but arrives without panels.)",
+          "The value buy for long fridge runtime in a complete, panel-included unit. At 4,085Wh and {p2.costPerWh} it carries the most raw storage of the three complete picks, and its 3,000W pure-sine inverter clears the surge gate. It's also sitting at its 6-month-low price right now — a strong buy-now signal if you want proven runtime in a unit that ships ready to recharge. (The unit-only #5 packs more watt-hours per dollar, but arrives without panels.)",
       },
       {
         kitSlug: "ecoflow-delta-pro-400w",
@@ -852,7 +852,7 @@ None of that is a price-hiding trick — it's the difference between "rides out 
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: true, // flipped 2026-07-03 (owner do-not-gate directive)
   },
 
   // ── #9 (Tier 1) — solar power for a CPAP ───────────────────────────────────
@@ -982,7 +982,7 @@ Re-check your exact runtime with the [load calculator](/calculator) after you se
     ],
     publishedAt: "2026-07-03T00:00:00Z",
     updatedAt: "2026-07-03T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: true, // flipped 2026-07-03 (owner do-not-gate directive)
   },
 
   // ── #7 (Tier 2) — off-grid solar system for a homestead ────────────────────
@@ -1032,15 +1032,15 @@ Re-check your exact runtime with the [load calculator](/calculator) after you se
       },
       {
         kitSlug: "core-3.2kw-core-pro",
-        label: "Most surge headroom",
+        label: "Big surge headroom, all-in-one",
         rationale:
-          "A {p4.inverterWatts} continuous inverter — the most surge headroom in the group — swallows a well pump's locked-rotor spike and a freezer's compressor kick at the same time without flinching. {p4.storageWh} at {p4.costPerWh} makes it a strong all-in-one for a mid-size homestead whose worry is startup surges stacking, not multi-day autonomy.",
+          "A {p4.inverterWatts} continuous inverter has generous surge headroom — it swallows a well pump's locked-rotor spike and a freezer's compressor kick at the same time without flinching. {p4.storageWh} at {p4.costPerWh} makes it a strong all-in-one for a mid-size homestead whose worry is startup surges stacking, not multi-day autonomy.",
       },
       {
         kitSlug: "select-10.6kw-select-max-eg4-wallmount-indoor-28-6kwh-budget-frie",
-        label: "Serious homestead, best big-bank value",
+        label: "Serious homestead, big-bank value",
         rationale:
-          "{p5.storageWh} on a {p5.inverterWatts} split-phase inverter at {p5.costPerWh} — nearly the capacity of the no-compromise pick for less money. The best value once you cross into true whole-homestead storage: well, freezer, winter heat, and everyday loads with days of reserve. The alternate to the Elite when you want the bank without the closed-loop premium.",
+          "{p5.storageWh} on a {p5.inverterWatts} split-phase inverter at {p5.costPerWh} — nearly the capacity of the no-compromise pick for less money. A strong value once you cross into true whole-homestead storage: well, freezer, winter heat, and everyday loads with days of reserve. The alternate to the Elite when you want the bank without the closed-loop premium.",
       },
     ],
     receiptMode: "autonomy",
@@ -1119,7 +1119,7 @@ Re-run your exact numbers in the [calculator](/calculator) with your real pump, 
     ],
     publishedAt: "2026-07-03T00:00:00Z",
     updatedAt: "2026-07-03T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: true, // flipped 2026-07-03 (owner do-not-gate directive)
   },
 
   // ── #8 (Tier 2) — marine solar kit for a boat ──────────────────────────────
@@ -1254,7 +1254,7 @@ Re-check your overnight numbers in the [calculator](/calculator) with your real 
     ],
     publishedAt: "2026-07-03T00:00:00Z",
     updatedAt: "2026-07-03T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: true, // flipped 2026-07-03 (owner do-not-gate directive)
   },
 
   // ── #10 (Tier 3) — complete 2,000–3,000W kits, real off-grid price ──────────
@@ -1381,7 +1381,7 @@ Re-check your exact solar and runtime in the [calculator](/calculator), and see 
     ],
     publishedAt: "2026-07-03T00:00:00Z",
     updatedAt: "2026-07-03T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: true, // flipped 2026-07-03 (owner do-not-gate directive)
   },
 
   // ── #9 (Tier 3) — what to add to a solar kit to run a window AC ─────────────
@@ -1528,7 +1528,178 @@ If your inverter is **modified sine**, fix that first — no amount of battery m
     ],
     publishedAt: "2026-07-03T00:00:00Z",
     updatedAt: "2026-07-03T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    indexable: true, // flipped 2026-07-03 (owner do-not-gate directive)
+  },
+
+  // ── #14 (Tier 6) — best off-grid solar generator (HUB / router) ────────────
+  {
+    slug: "best-off-grid-solar-generator",
+    pageKind: "hub",
+    h1: "Best Off-Grid Solar Generator: 10 Winners by Use Case, Not One Flat Ranking",
+    metaTitle: "Best Off-Grid Solar Generator: 10 Winners by Use Case",
+    metaDescription:
+      "There is no single best off-grid solar generator. We name the winner for each real load — fridge, well pump, CPAP, homestead, boat, RV, cabin, shed, backup, AC — with live prices.",
+    intent: "decision, top-of-shortlist — best off-grid solar generator (router by use case)",
+    answer:
+      "There is no single best off-grid solar generator, and any page that names one is guessing. The right unit depends on the load that breaks the others: a well pump's startup surge, a fridge's 24/7 cycle, a CPAP's runtime, a homestead's 240V. So instead of one flat ranking, we name the winner for each real use case — each the #1 pick from that load's full evidence page, with the real build cost, price history, and the failure mode it avoids. Find your load below, see the winner and why, then go deep on its guide. And if none fits, we cover when NOT to buy a solar generator at all.",
+    loadIds: [],
+    assumptions: {
+      sunHoursPerDay: 4.5,
+      sunSource: "tier",
+      zipCode: "",
+      sunTier: "average",
+      autonomyDays: 1,
+      controllerType: "mppt",
+      batteryChemistry: "lifepo4",
+    },
+    cohortLabel:
+      "every off-grid solar generator we track, sorted into the use case each one actually wins",
+    cohortHeadlineCount: 355,
+    cohortShortlistCount: 10,
+    picks: [],
+    segments: [
+      {
+        label: "Best for a refrigerator",
+        kitSlug: "ecoflow-delta2max-400w",
+        sourceGuideSlug: "will-a-solar-generator-run-a-refrigerator",
+        audience: "Keeping a fridge or freezer cold in an outage",
+        thesis:
+          "Clears a compressor's startup surge and ships with a panel to recharge it — the best price-per-watt-hour of the units that actually run a fridge.",
+        failureMode: "Cheap units that stall on the 3× compressor inrush, or arrive with no way to recharge.",
+      },
+      {
+        label: "Best for a well pump",
+        kitSlug: "core-3.2kw-core-pro",
+        sourceGuideSlug: "solar-generator-for-well-pump",
+        audience: "Running a well pump off-grid or grid-down",
+        thesis:
+          "Enough continuous inverter to swallow a locked-rotor startup spike with margin, and the storage to cycle a pump all day.",
+        failureMode: "120V power stations that trip on the 2,000–3,500W inrush or can't output 240V.",
+      },
+      {
+        label: "Best for a CPAP",
+        kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
+        sourceGuideSlug: "solar-power-for-cpap",
+        audience: "Powering a CPAP for nights of runtime",
+        thesis:
+          "The best runtime per dollar for a small overnight medical load, with a 12V DC output to skip inverter overhead.",
+        failureMode: "Undersized banks that die before a second night, or modified-sine units that stress the electronics.",
+      },
+      {
+        label: "Best for a homestead",
+        kitSlug: "prime-4.4kw-prime-plus-eg4-wallmount-indoor-14-3kwh-budget-frie",
+        sourceGuideSlug: "off-grid-solar-system-for-homestead",
+        audience: "A whole homestead: well, freezer, winter",
+        thesis:
+          "Native 120/240V split-phase to run a deep well directly, with a big LiFePO4 bank for multi-day winter autonomy — the best value at homestead scale.",
+        failureMode: "Portable units that can't do 240V or ride a cloudy winter week.",
+      },
+      {
+        label: "Best for a boat",
+        kitSlug: "ecoflow-delta2max-400w",
+        sourceGuideSlug: "marine-solar-kit-for-boat",
+        audience: "A boat's fridge and Starlink at anchor",
+        thesis:
+          "Enough overnight storage for a boat's 24/7 loads plus a bundled panel to refill by day, in a flat form factor that stows aboard.",
+        failureMode: "Sizing for peak watts instead of the overnight fridge-plus-Starlink drain.",
+      },
+      {
+        label: "Best for a cabin",
+        kitSlug: "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
+        sourceGuideSlug: "off-grid-solar-kit-for-cabin",
+        audience: "A weekend cabin's lights, fridge and electronics",
+        thesis:
+          "A complete cabin-scale system priced honestly once you account for the parts a bare kit leaves out.",
+        failureMode: "Advertised 'kits' that need hundreds in missing parts to actually run a cabin.",
+      },
+      {
+        label: "Best for an RV",
+        kitSlug: "renogy-400w-complete-lifepo4",
+        sourceGuideSlug: "off-grid-solar-kit-for-rv",
+        audience: "Boondocking in an RV or van",
+        thesis:
+          "A complete boondocking kit with the mounts, wiring and fuses in the box — not a panel-and-hope bundle.",
+        failureMode: "RV 'kits' missing the tie-in parts, so real build cost runs well above the sticker.",
+      },
+      {
+        label: "Best for a shed or workshop",
+        kitSlug: "anker-600w-anker-solix-c1000-gen-2-main-unit-only",
+        sourceGuideSlug: "solar-kit-for-shed-or-workshop",
+        audience: "A shed or workshop on a budget",
+        thesis:
+          "The cheapest complete way to light and power a small structure, once the hidden costs are added.",
+        failureMode: "Budget kits whose sticker hides the panel, battery or wiring you still need.",
+      },
+      {
+        label: "Best for home backup",
+        kitSlug: "bluetti-ac300-b300k-pv350",
+        sourceGuideSlug: "portable-power-station-for-home-backup",
+        audience: "Carrying a fridge and furnace fan through an outage",
+        thesis:
+          "The storage and surge to carry critical home loads — fridge, sump, furnace fan — through a multi-hour outage.",
+        failureMode: "Small stations that can't start a sump pump or run out mid-outage.",
+      },
+      {
+        label: "Best for running a window AC",
+        kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
+        sourceGuideSlug: "what-you-need-to-add-to-a-solar-kit-to-run-ac",
+        audience: "Running a window air conditioner off solar",
+        thesis:
+          "Enough surge headroom to run a window unit out of the box — plus the exact soft-start parts to make a near-fit kit work.",
+        failureMode: "Inverters sized for the AC's running watts that trip on the 3× compressor surge.",
+      },
+    ],
+    receiptMode: "autonomy",
+    sections: [
+      {
+        heading: "Why 'best off-grid solar generator' is the wrong question",
+        body: `Ask "what's the best off-grid solar generator?" and every honest answer starts with **"for what?"** The units that win opposite loads are opposites: a **CPAP** wants a small, efficient bank sized for *nights of runtime*; a **well pump** wants a big inverter that survives a *startup surge*; a **homestead** wants **240V split-phase** and days of winter storage. No single box is best at all three.
+
+So this page isn't a flat "top 10." It's a **router**: pick the load that actually decides your system, and it points you to the unit that wins it — and to the full [evidence guide](/guides) behind that call, with real build cost, 6-month price history, and the specific failure mode it avoids. That's the part a generic listicle can't fake, and it's exactly why a single ranking gets people the wrong machine.`,
+      },
+      {
+        heading: "How each winner is chosen: the audit, not the hype",
+        body: `Every winner below is the **#1 pick of that load's full evidence page** — not an editor's hunch. Each of those pages ranks a real, filtered cohort by objective metrics (cost-per-watt-hour, storage, surge headroom, real build cost after missing parts) and is guarded by **build-time assertions**: if a price move or data update changes which unit is #1, the build fails until this hub is corrected, so it can never silently disagree with the guide it routes to.
+
+There's **no editor's pick and no pay-to-play** here. A unit wins a use case because it clears that load's specific math in the live data, and it links straight to its [full audit](/guides) and its individual [kit page](/kits) so you can check the numbers yourself. Read [how the methodology works](/methodology) and [how real build cost is calculated](/how-real-build-cost-is-calculated).`,
+      },
+      {
+        heading: "When to skip a solar generator entirely",
+        body: `The most useful thing a "best solar generator" page can tell you is sometimes **don't buy one**. A portable solar generator is the wrong tool if you need to run **central air conditioning, electric heat or an electric range continuously**, or you want a **permanent whole-home system** — those need a **fixed 120/240V split-phase system** wired to your panel (start with the [homestead systems](/guides/off-grid-solar-system-for-homestead) guide), not a plug-in box.
+
+It's also the wrong buy if your real need is a few hours of grid-down lights and phones — a small [portable power station](/portable-power) is cheaper and lighter than a "generator." Size the actual loads first with the [calculator](/calculator); the right answer is sometimes a smaller unit, a fixed system, or nothing at all.`,
+      },
+    ],
+    whyWon: [
+      "Every winner is the #1 pick of a full evidence page — chosen by real build cost, 6-month price history, and a failure-mode verdict, not an editor's hunch.",
+      "The build fails if any winner here stops matching its source guide's top pick, so the hub can never silently drift from the evidence it routes to.",
+      "No editor's pick and no pay-to-play: winners are the units that clear each load's specific math in live data, each linked to its full audit.",
+    ],
+    whyFailed: [
+      "Flat 'top 10 solar generators' lists ignore that the right unit depends entirely on the load — a fridge, a well pump, and a CPAP have opposite requirements.",
+      "Generic lists quote nameplate watts and sticker prices, missing the startup surge, the missing parts, and the real build cost that decide whether a unit actually works.",
+      "They rarely say when NOT to buy a solar generator, because a no-sale isn't monetizable — we do.",
+    ],
+    faqs: [
+      {
+        question: "What is the best off-grid solar generator?",
+        answer:
+          "There isn't a single one — it depends on the load that decides your system. A CPAP, a well pump, a fridge, and a homestead all want different machines. Use the by-use-case matrix above to find the winner for your specific need, each chosen from that load's full evidence page.",
+      },
+      {
+        question: "How did you choose these winners?",
+        answer:
+          "Each winner is the #1 pick from that load's dedicated guide, ranked on objective live data — cost-per-watt-hour, storage, surge headroom, and real build cost after missing parts — with build-time checks that fail if the pick ever stops matching the evidence. No editor's pick, no sponsorship.",
+      },
+      {
+        question: "When should I NOT buy an off-grid solar generator?",
+        answer:
+          "If you need to run central AC, electric heat, or a 240V well continuously, a portable solar generator is the wrong tool — size a fixed 120/240V split-phase system instead. And if you only need a few hours of lights and phones, a small portable power station is cheaper than a 'generator.'",
+      },
+    ],
+    publishedAt: "2026-07-03T00:00:00Z",
+    updatedAt: "2026-07-03T00:00:00Z",
+    indexable: false, // HELD noindex 2026-07-03 — Codex audit flagged (fix before flip)
   },
 ];
 
