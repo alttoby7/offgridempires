@@ -1,10 +1,10 @@
 {
   "ceiling": 75,
   "counts": {
-    "total": 58,
-    "static": 26,
+    "total": 61,
+    "static": 28,
     "kits": 32,
-    "guides": 0
+    "guides": 1
   },
   "static": [
     "/",
@@ -30,6 +30,8 @@
     "/learn/solar-for-sheds-and-small-structures",
     "/methodology",
     "/portable-power",
+    "/reports",
+    "/reports/state-of-off-grid-solar-pricing-2026",
     "/this-week",
     "/tools/battery-sizing-calculator",
     "/tools/shed-solar-calculator"
@@ -68,5 +70,7 @@
     "/kits/summit-35.2kw-summit-pro-renon-e-cube-61kwh-i-ll-handle-my-own-ra",
     "/kits/windynation-400w-kit-inverter-300ah"
   ],
-  "guides": []
+  "guides": [
+    "/guides/will-a-solar-generator-run-a-refrigerator"
+  ]
 }
