@@ -279,8 +279,8 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
       { pick: "p3", metric: "listedPrice", direction: "lowest", note: "#3 cheapest / lowest-priced kit here" },
     ],
     publishedAt: "2026-06-19T00:00:00Z",
-    updatedAt: "2026-06-19T00:00:00Z",
-    indexable: false, // 🔴 human flip required to index
+    updatedAt: "2026-07-03T00:00:00Z",
+    indexable: true, // ✅ FLIPPED 2026-07-03 — 2nd money page; audited clean, claim-verified, owner-approved (1/wk cadence)
   },
 
   // ── #3 (Tier 2) — off-grid solar kit for a cabin ───────────────────────────
