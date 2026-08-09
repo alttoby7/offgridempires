@@ -612,7 +612,7 @@ Budget roughly **[[const:$250–$600]]** of integration parts on top of a hardwi
         kitSlug: "bluetti-500w-ac180p-bluetti-ac180p-main-unit-only",
         label: "More storage per dollar",
         rationale:
-          "The step-up when a shop fridge or longer tool sessions are in play. At {p2.costPerWh} — a hair above the Anker's {p1.costPerWh} — it packs 1,440Wh of LiFePO4, about 40% more battery, behind an 1,800W pure-sine inverter, all for {p2.listedPrice} with no hidden parts. Buy this if your shed has a beer fridge cycling 24/7 or you run power tools for hours, not minutes.",
+          "The step-up when a shop fridge or longer tool sessions are in play. At {p2.costPerWh} — below the Anker's {p1.costPerWh} — it packs 1,440Wh of LiFePO4, about 40% more battery, behind an 1,800W pure-sine inverter, all for {p2.listedPrice} with no hidden parts. Buy this if your shed has a beer fridge cycling 24/7 or you run power tools for hours, not minutes.",
       },
       {
         kitSlug: "ecoflow-delta2max-400w",
@@ -706,7 +706,7 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
       },
     ],
     claims: [
-      { pick: "p1", metric: "costPerWh", direction: "lowest", among: ["p1", "p2"], note: "#2 'a hair above the Anker' — p1 < p2 $/Wh" },
+      { pick: "p2", metric: "costPerWh", direction: "lowest", among: ["p1", "p2"], note: "#2 'below the Anker's' — p2 < p1 $/Wh" },
       { pick: "p1", metric: "listedPrice", direction: "lowest", among: ["p1", "p2", "p3", "p5"], note: "#1 cheapest complete setup" },
       { pick: "p5", metric: "costPerWh", direction: "lowest", note: "#5 cheapest real storage in the cohort" },
       { pick: "p5", metric: "inverterWatts", direction: "highest", note: "#5 most surge headroom on the shortlist" },
@@ -1171,7 +1171,7 @@ Re-run your exact numbers in the [calculator](/calculator) with your real pump, 
         kitSlug: "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
         label: "Best value if you already have marine panels",
         rationale:
-          "{p4.storageWh} at {p4.costPerWh} — the lowest cost-per-watt-hour on the board — as a main-unit-only bank. If your boat already has deck or arch solar with its own controller, this is the cheapest way to add real LiFePO4 storage; pair it with your existing marine panels rather than paying for a bundled one.",
+          "{p4.storageWh} at {p4.costPerWh} as a main-unit-only bank, and at {p4.listedPrice} the cheaper of the two bare banks here. If your boat already has deck or arch solar with its own controller, this is the cheapest way to add real LiFePO4 storage; pair it with your existing marine panels rather than paying for a bundled one.",
       },
       {
         kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
@@ -1250,7 +1250,7 @@ Re-check your overnight numbers in the [calculator](/calculator) with your real 
     claims: [
       { pick: "p2", metric: "storageWh", direction: "highest", note: "#2 biggest bank / liveaboard" },
       { pick: "p3", metric: "listedPrice", direction: "lowest", note: "#3 cheapest entry" },
-      { pick: "p4", metric: "costPerWh", direction: "lowest", note: "#4 lowest $/Wh in the podium" },
+      { pick: "p4", metric: "listedPrice", direction: "lowest", among: ["p4", "p5"], note: "#4 'the cheaper of the two bare banks' — p4 < p5 sticker" },
     ],
     publishedAt: "2026-07-03T00:00:00Z",
     updatedAt: "2026-07-03T00:00:00Z",
@@ -1300,19 +1300,19 @@ Re-check your overnight numbers in the [calculator](/calculator) with your real 
         kitSlug: "anker-4kw-anker-solix-c2000-gen-2-400w-solar-panel",
         label: "The C2000, done right (with the panel)",
         rationale:
-          "The same {p3.storageWh} Anker C2000 as the cheapest headline below — but bundled with the 400W panel that makes it an off-grid kit, at {p3.listedPrice}. Buy it this way, not the bare unit plus a panel you source later, unless you already have solar. This is the apples-to-apples off-grid price.",
+          "The same {p3.storageWh} Anker C2000 as the bare bank below — but bundled with the 400W panel that makes it an off-grid kit, at {p3.listedPrice}. Buy it this way, not the bare unit plus a panel you source later, unless you already have solar. This is the apples-to-apples off-grid price.",
       },
       {
         kitSlug: "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
-        label: "Cheapest headline — but main unit only",
+        label: "The same C2000, bare — main unit only",
         rationale:
-          "The lowest sticker in the class at {p4.listedPrice}, and the lowest cost-per-watt-hour at {p4.costPerWh} — precisely because it's a bare bank with no panel. It's a great buy IF you already own solar; if you don't, add [[const:$300–$600]] for a 400–600W panel and you're back at the bundled price. Don't mistake the headline for an off-grid kit.",
+          "The identical bank to #3 with the panel stripped out: {p4.listedPrice} bare against {p3.listedPrice} bundled, and {p4.costPerWh} against that kit's {p3.costPerWh} — the per-watt-hour price looks better precisely because there's no solar in the box. It's a great buy IF you already own solar; if you don't, add [[const:$300–$600]] for a 400–600W panel and you're back at the bundled price. Don't mistake the headline for an off-grid kit.",
       },
       {
         kitSlug: "ecoflow-ecoflow-delta-black-delta-3-max-main-unit-only",
-        label: "Cheap big-brand bank (also no panel)",
+        label: "Cheapest headline — also no panel",
         rationale:
-          "A {p5.storageWh} EcoFlow at {p5.listedPrice}, {p5.costPerWh} — another strong bank at a low sticker, and another main-unit-only listing. Same rule: it's a genuine value if you have panels or want a big battery for grid-backup, but budget the solar before you call it an off-grid kit.",
+          "The lowest sticker in the class at {p5.listedPrice}, and the lowest cost-per-watt-hour at {p5.costPerWh} — a {p5.storageWh} EcoFlow, and another main-unit-only listing. Same rule as #4: it's a genuine value if you have panels or want a big battery for grid-backup, but budget the solar before you call it an off-grid kit.",
       },
     ],
     receiptMode: "autonomy",
@@ -1332,7 +1332,7 @@ Two honest buyers here: **(a)** you already own solar and want the cheapest qual
       },
       {
         heading: "The 5, ranked by real off-grid price",
-        body: `All five are **LiFePO4 and pure sine** in the 2–3kW inverter class. Three (#1–#3) ship **complete with panels** — the price is the off-grid price. Two (#4–#5) are **main-unit-only** banks: cheapest on paper, but add the solar before you compare. The {p2.storageWh} Jackery carries the most; the {p4.listedPrice} Anker is the cheapest headline (panel not included). The single buy link sits on the #1 complete pick. Each kit name links to its full audit with real build cost and 6-month price history.
+        body: `All five are **LiFePO4 and pure sine** in the 2–3kW inverter class. Three (#1–#3) ship **complete with panels** — the price is the off-grid price. Two (#4–#5) are **main-unit-only** banks: cheapest on paper, but add the solar before you compare. The {p2.storageWh} Jackery carries the most; the {p5.listedPrice} EcoFlow is the cheapest headline (panel not included). The single buy link sits on the #1 complete pick. Each kit name links to its full audit with real build cost and 6-month price history.
 
 Decide which buyer you are first: already have panels → take the cheapest bare bank; going off-grid fresh → take a bundled kit. Compare any [head-to-head](/compare) or browse the full [portable power](/portable-power) pool.`,
       },
@@ -1375,8 +1375,13 @@ Re-check your exact solar and runtime in the [calculator](/calculator), and see 
       },
     ],
     claims: [
-      { pick: "p4", metric: "listedPrice", direction: "lowest", note: "#4 cheapest headline — main unit only" },
-      { pick: "p4", metric: "costPerWh", direction: "lowest", note: "#4 lowest $/Wh precisely because no panel" },
+      { pick: "p5", metric: "listedPrice", direction: "lowest", note: "#5 cheapest headline — main unit only" },
+      { pick: "p5", metric: "costPerWh", direction: "lowest", note: "#5 lowest $/Wh precisely because no panel" },
+      // Same-unit C2000 pair: the bare #4 must stay cheaper than the bundled #3 on both
+      // sticker and $/Wh — that gap IS the panel, and it's the page's whole thesis
+      // (answer, "the trap" section, and the buy-separately FAQ all assert it).
+      { pick: "p4", metric: "listedPrice", direction: "lowest", among: ["p3", "p4"], note: "#4 bare {p4.listedPrice} < #3 bundled {p3.listedPrice} — 'that gap IS the panel'" },
+      { pick: "p4", metric: "costPerWh", direction: "lowest", among: ["p3", "p4"], note: "#4 '$/Wh looks better precisely because there's no solar in the box'" },
       { pick: "p2", metric: "storageWh", direction: "highest", note: "#2 most storage in the class" },
     ],
     publishedAt: "2026-07-03T00:00:00Z",
