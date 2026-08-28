@@ -1,10 +1,10 @@
 {
-  "ceiling": 75,
+  "ceiling": 90,
   "counts": {
-    "total": 61,
+    "total": 82,
     "static": 28,
-    "kits": 32,
-    "guides": 1
+    "kits": 42,
+    "guides": 12
   },
   "static": [
     "/",
@@ -40,6 +40,7 @@
     "/kits/anker-1000w-anker-solix-2-x-f3000-double-voltage-hub-free-tt-30",
     "/kits/anker-2400w-anker-solix-f3000-main-unit-only",
     "/kits/anker-3200w-plus-1-x-f3800p-main-unit",
+    "/kits/anker-6000w-anker-f3800-main-unit-only",
     "/kits/anker-600w-anker-solix-c1000-gen-2-main-unit-only",
     "/kits/anker-6400w-plus-2-x-f3800p-double-voltage-hub",
     "/kits/bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
@@ -48,18 +49,27 @@
     "/kits/bluetti-500w-ac180p-bluetti-ac180p-main-unit-only",
     "/kits/bluetti-ac300-b300k-pv350",
     "/kits/core-3.2kw-core-pro",
+    "/kits/core-7kw-core-plus-2-x-100ah-24v-lfp-battery-5kwh",
     "/kits/eco-worthy-200w-complete",
+    "/kits/eco-worthy-400w-ultra-280ah",
+    "/kits/ecoflow-2400w-max-delta-max-unit-only",
+    "/kits/ecoflow-6kw-ultra-delta-pro-ultra-inverter-2-x-battery-12k",
+    "/kits/ecoflow-delta-pro-400w",
+    "/kits/ecoflow-delta2-220w",
     "/kits/ecoflow-delta2max-400w",
     "/kits/ecoflow-river2pro-160w",
     "/kits/edge-23.8kw-complete-solar-eg4-indoor-wallmount-64-kwh",
     "/kits/edge-31.7kw-complete-solar-eg4-indoor-wallmount-96-kwh",
     "/kits/elite-15.8kw-elite-max-renon-xc-plus-32kwh-code-compliant-premi",
+    "/kits/elite-21.1kw-elite-pro-renon-xc-plus-32kwh-code-compliant-premi",
     "/kits/elite-7.92kw-elite-plus-pytes-v5-20-48kwh-code-compliant-premium",
     "/kits/hysolis-3000w-hysolis-mps-mps-3k-unit-only",
     "/kits/jackery-1000plus-2x100w",
     "/kits/jackery-1000v2-200w-panel",
+    "/kits/jackery-1500-4x100w",
     "/kits/jackery-2000plus-4085wh-2x200w",
     "/kits/new-use-energy-400w-nue-suncase-suncase-605-main-unit-only",
+    "/kits/new-use-energy-5.12kw-nue-suncase-suncase-3651-main-unit-only",
     "/kits/prime-10.6kw-prime-pro-eg4-wallmount-indoors-28-6kwh-budget-fri",
     "/kits/prime-4.4kw-prime-plus-alpha-5-pro-10-2kwh-budget-friendly-open",
     "/kits/prime-7.92kw-prime-max-eg4-wallmount-indoor-14-3kwh-budget-frie",
@@ -71,6 +81,17 @@
     "/kits/windynation-400w-kit-inverter-300ah"
   ],
   "guides": [
+    "/guides/best-off-grid-solar-generator",
+    "/guides/complete-2000-3000w-off-grid-solar-kits-priced",
+    "/guides/marine-solar-kit-for-boat",
+    "/guides/off-grid-solar-kit-for-cabin",
+    "/guides/off-grid-solar-kit-for-rv",
+    "/guides/off-grid-solar-system-for-homestead",
+    "/guides/portable-power-station-for-home-backup",
+    "/guides/solar-generator-for-well-pump",
+    "/guides/solar-kit-for-shed-or-workshop",
+    "/guides/solar-power-for-cpap",
+    "/guides/what-you-need-to-add-to-a-solar-kit-to-run-ac",
     "/guides/will-a-solar-generator-run-a-refrigerator"
   ]
 }

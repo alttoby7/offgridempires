@@ -4,17 +4,17 @@
   "source": "https://offgridempire.com",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "methodology": "https://offgridempire.com/methodology",
-  "updated": "2026-07-03",
-  "recordCount": 355,
+  "updated": "2026-08-28",
+  "recordCount": 366,
   "records": [
     {
       "slug": "anjfylque-hybrid-solar-inverter-3000w-24vdc-to110vac-off-gri",
       "brand": "Anjfylque",
       "name": "Hybrid Solar Inverter 3000W, 24Vdc to110Vac Off-Grid Inverter,100A MPPT Controller,Support Battery-Less or AGM Lithium Battery, Pure Sine Wave for Home Backup,Solar Systems",
       "url": "https://offgridempire.com/kits/anjfylque-hybrid-solar-inverter-3000w-24vdc-to110vac-off-gri",
-      "listed_price_usd": 254,
+      "listed_price_usd": 259,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 254,
+      "real_build_cost_usd": 259,
       "completeness_pct": 0,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": null,
@@ -26,8 +26,8 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 229.22,
       "price_high_6mo_usd": 259,
-      "price_points_6mo": 42,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 62,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-1000w-anker-solix-2-x-f3000-double-power-hub-power-saver-k",
@@ -48,8 +48,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3296,
       "price_high_6mo_usd": 3996,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-1000w-anker-solix-2-x-f3000-double-voltage-hub-free-tt-30",
@@ -70,20 +70,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2997,
       "price_high_6mo_usd": 3597,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-100w-anker-solix-c1000-gen-2-1-x-100w-solar-panel",
       "brand": "Anker",
       "name": "Anker SOLIX C1000 Gen2 Portable Power Station | 1,024Wh / 2,000W | 49-Min UltraFast Recharge | 600W Solar Input | Choose Your Bundle Option | 5-Year Warranty - C1000 Gen 2 + 1 x 100W Solar Panel",
       "url": "https://offgridempire.com/kits/anker-100w-anker-solix-c1000-gen-2-1-x-100w-solar-panel",
-      "listed_price_usd": 599,
+      "listed_price_usd": 710,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 599,
+      "real_build_cost_usd": 710,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.58,
-      "cost_per_w_usd": 5.99,
+      "cost_per_wh_usd": 0.69,
+      "cost_per_w_usd": 7.1,
       "panel_watts": 100,
       "storage_wh": 1024,
       "inverter_watts": 2000,
@@ -91,9 +91,9 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 529,
-      "price_high_6mo_usd": 649.99,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 729.99,
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-18kw-anker-solix-12kwh-10-x-400w-solar-panels-automatic",
@@ -906,8 +906,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 5455.35,
       "price_high_6mo_usd": 5455.35,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-200w-anker-solix-backup-kit-max-16-x-200w-solar-panels-4",
@@ -928,8 +928,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 10189.35,
       "price_high_6mo_usd": 10189.35,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-200w-anker-solix-backup-kit-plus-16-x-200w-solar-panels-2",
@@ -950,8 +950,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 8357.96,
       "price_high_6mo_usd": 8357.96,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-200w-anker-solix-backup-kit-pro-16-x-200w-solar-panels-6",
@@ -972,20 +972,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 12018.46,
       "price_high_6mo_usd": 12018.46,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-200w-anker-solix-c1000-gen-2-1-x-200w-solar-panel",
       "brand": "Anker",
       "name": "Anker SOLIX C1000 Gen2 Portable Power Station | 1,024Wh / 2,000W | 49-Min UltraFast Recharge | 600W Solar Input | Choose Your Bundle Option | 5-Year Warranty - C1000 Gen 2 + 1 x 200W Solar Panel",
       "url": "https://offgridempire.com/kits/anker-200w-anker-solix-c1000-gen-2-1-x-200w-solar-panel",
-      "listed_price_usd": 669,
+      "listed_price_usd": 830,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 669,
+      "real_build_cost_usd": 830,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.65,
-      "cost_per_w_usd": 3.35,
+      "cost_per_wh_usd": 0.81,
+      "cost_per_w_usd": 4.15,
       "panel_watts": 200,
       "storage_wh": 1024,
       "inverter_watts": 2000,
@@ -993,9 +993,9 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 619,
-      "price_high_6mo_usd": 719.99,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 849.99,
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-200w-plus-hex-kit-12-x-200w-solar-panels",
@@ -1016,8 +1016,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 6899.24,
       "price_high_6mo_usd": 8299,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-200w-plus-nomad-kit-f3800p-2-x-folding-200w-panels",
@@ -1038,20 +1038,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2757.87,
       "price_high_6mo_usd": 3589,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-2400w-anker-solix-f3000-main-unit-only",
       "brand": "Anker",
       "name": "Anker SOLIX F3000 Portable Power Station | 3,072Wh / 3,600W | 2,400W Solar Input | Expandable to 12,288Wh | 5-Year Warranty - F3000 [Main Unit Only]",
       "url": "https://offgridempire.com/kits/anker-2400w-anker-solix-f3000-main-unit-only",
-      "listed_price_usd": 1299,
+      "listed_price_usd": 1500,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1299,
+      "real_build_cost_usd": 1500,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.42,
-      "cost_per_w_usd": 0.54,
+      "cost_per_wh_usd": 0.49,
+      "cost_per_w_usd": 0.63,
       "panel_watts": 2400,
       "storage_wh": 3072,
       "inverter_watts": 3600,
@@ -1060,8 +1060,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1199,
       "price_high_6mo_usd": 1699,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-2400w-anker-solix-hex-kit-6-x-200w-rigid-solar-panels",
@@ -1082,8 +1082,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2389.35,
       "price_high_6mo_usd": 2627.35,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-2400w-anker-solix-nomad-kit-2-x-200w-folding-solar-panels",
@@ -1104,8 +1104,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1889,
       "price_high_6mo_usd": 2325.25,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-2400w-anker-solix-quad-kit-4-x-200w-rigid-solar-panels",
@@ -1126,20 +1126,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2071.96,
       "price_high_6mo_usd": 2322.97,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-3200w-plus-1-x-f3800p-main-unit",
       "brand": "Anker",
       "name": "Anker F3800 [PLUS] - 3,840Wh / 6,000W Portable Power Station | 120V/240V Output | 3,200W Solar Input | Choose Your Bundle Option | 5-Year Warranty - 1 x F3800P [Main Unit]",
       "url": "https://offgridempire.com/kits/anker-3200w-plus-1-x-f3800p-main-unit",
-      "listed_price_usd": 2199,
+      "listed_price_usd": 2600,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 2199,
+      "real_build_cost_usd": 2600,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.57,
-      "cost_per_w_usd": 0.69,
+      "cost_per_wh_usd": 0.68,
+      "cost_per_w_usd": 0.81,
       "panel_watts": 3200,
       "storage_wh": 3840,
       "inverter_watts": 6000,
@@ -1148,20 +1148,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2199,
       "price_high_6mo_usd": 3199,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-3200w-plus-1-x-f3800p-main-unit-expansion-battery",
       "brand": "Anker",
       "name": "Anker F3800 [PLUS] - 3,840Wh / 6,000W Portable Power Station | 120V/240V Output | 3,200W Solar Input | Choose Your Bundle Option | 5-Year Warranty - 1 x F3800P [Main Unit] + Expansion Battery",
       "url": "https://offgridempire.com/kits/anker-3200w-plus-1-x-f3800p-main-unit-expansion-battery",
-      "listed_price_usd": 3698,
+      "listed_price_usd": 4299,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 3698,
+      "real_build_cost_usd": 4299,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.96,
-      "cost_per_w_usd": 1.16,
+      "cost_per_wh_usd": 1.12,
+      "cost_per_w_usd": 1.34,
       "panel_watts": 3200,
       "storage_wh": 3840,
       "inverter_watts": 6000,
@@ -1170,20 +1170,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3598,
       "price_high_6mo_usd": 4399,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-3200w-plus-1-x-f3800p-main-unit-gas-generator-adapt",
       "brand": "Anker",
       "name": "Anker F3800 [PLUS] - 3,840Wh / 6,000W Portable Power Station | 120V/240V Output | 3,200W Solar Input | Choose Your Bundle Option | 5-Year Warranty - 1 x F3800P [Main Unit] + Gas Generator Adapter",
       "url": "https://offgridempire.com/kits/anker-3200w-plus-1-x-f3800p-main-unit-gas-generator-adapt",
-      "listed_price_usd": 2498,
+      "listed_price_usd": 2698,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 2498,
+      "real_build_cost_usd": 2698,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.65,
-      "cost_per_w_usd": 0.78,
+      "cost_per_wh_usd": 0.7,
+      "cost_per_w_usd": 0.84,
       "panel_watts": 3200,
       "storage_wh": 3840,
       "inverter_watts": 6000,
@@ -1192,8 +1192,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2498,
       "price_high_6mo_usd": 3198,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-3200w-plus-double-kit-f3800p-2-x-200w-rigid-panels",
@@ -1214,8 +1214,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2610.42,
       "price_high_6mo_usd": 3449,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-3200w-plus-hex-kit-f3800p-6-x-200w-rigid-panels",
@@ -1236,8 +1236,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3359.92,
       "price_high_6mo_usd": 4149,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-3200w-plus-platinum-kit-f3800p-10-x-200w-rigid-pane",
@@ -1258,8 +1258,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 4205.32,
       "price_high_6mo_usd": 4849,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-3200w-plus-quad-kit-f3800p-4-x-200w-rigid-panels",
@@ -1280,8 +1280,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2991.94,
       "price_high_6mo_usd": 3789,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-400w-anker-solix-c1000-gen-2-1-x-400w-solar-panel",
@@ -1302,8 +1302,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 829.99,
       "price_high_6mo_usd": 899,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-410w-plus-smart-home-kit-smart-home-panel-16-x-410",
@@ -1324,8 +1324,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 15685.21,
       "price_high_6mo_usd": 21899,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-48kw-anker-solix-12kwh-base-12-x-400w-solar-panels-automa",
@@ -1860,12 +1860,12 @@
       "brand": "Anker",
       "name": "Anker SOLIX C2000 Gen2 Portable Power Station | 2,048Wh / 2,400W (4,000W Peak) | 58-Min UltraFast Recharge | Expandable to 4kWh | Choose Your Bundle | 5-Year Warranty - C2000 Gen 2 + 200W Solar Panel",
       "url": "https://offgridempire.com/kits/anker-4kw-anker-solix-c2000-gen-2-200w-solar-panel",
-      "listed_price_usd": 969,
+      "listed_price_usd": 1300,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 969,
+      "real_build_cost_usd": 1300,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.47,
-      "cost_per_w_usd": 4.84,
+      "cost_per_wh_usd": 0.63,
+      "cost_per_w_usd": 6.5,
       "panel_watts": 200,
       "storage_wh": 2048,
       "inverter_watts": 2400,
@@ -1873,21 +1873,21 @@
       "chemistry": "Unknown",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 919,
-      "price_high_6mo_usd": 1049.99,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 1299.99,
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-4kw-anker-solix-c2000-gen-2-400w-solar-panel",
       "brand": "Anker",
       "name": "Anker SOLIX C2000 Gen2 Portable Power Station | 2,048Wh / 2,400W (4,000W Peak) | 58-Min UltraFast Recharge | Expandable to 4kWh | Choose Your Bundle | 5-Year Warranty - C2000 Gen 2 + 400W Solar Panel",
       "url": "https://offgridempire.com/kits/anker-4kw-anker-solix-c2000-gen-2-400w-solar-panel",
-      "listed_price_usd": 1149,
+      "listed_price_usd": 1500,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1149,
+      "real_build_cost_usd": 1500,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.56,
-      "cost_per_w_usd": 2.87,
+      "cost_per_wh_usd": 0.73,
+      "cost_per_w_usd": 3.75,
       "panel_watts": 400,
       "storage_wh": 2048,
       "inverter_watts": 2400,
@@ -1895,21 +1895,21 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1099,
-      "price_high_6mo_usd": 1299,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 1499.99,
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-4kw-anker-solix-c2000-gen-2-400w-solar-panel-car-alterna",
       "brand": "Anker",
       "name": "Anker SOLIX C2000 Gen2 Portable Power Station | 2,048Wh / 2,400W (4,000W Peak) | 58-Min UltraFast Recharge | Expandable to 4kWh | Choose Your Bundle | 5-Year Warranty - C2000 Gen 2 +400W Solar Panel + Car Alternator Charger",
       "url": "https://offgridempire.com/kits/anker-4kw-anker-solix-c2000-gen-2-400w-solar-panel-car-alterna",
-      "listed_price_usd": 1647,
+      "listed_price_usd": 2048,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1647,
+      "real_build_cost_usd": 2048,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.8,
-      "cost_per_w_usd": 4.12,
+      "cost_per_wh_usd": 1,
+      "cost_per_w_usd": 5.12,
       "panel_watts": 400,
       "storage_wh": 2048,
       "inverter_watts": 2400,
@@ -1917,42 +1917,20 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1498,
-      "price_high_6mo_usd": 1747.99,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
-    },
-    {
-      "slug": "anker-4kw-anker-solix-c2000-gen-2-car-alternator-charger",
-      "brand": "Anker",
-      "name": "Anker SOLIX C2000 Gen2 Portable Power Station | 2,048Wh / 2,400W (4,000W Peak) | 58-Min UltraFast Recharge | Expandable to 4kWh | Choose Your Bundle | 5-Year Warranty - C2000 Gen 2 + Car Alternator Charger",
-      "url": "https://offgridempire.com/kits/anker-4kw-anker-solix-c2000-gen-2-car-alternator-charger",
-      "listed_price_usd": 1049,
-      "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1049,
-      "completeness_pct": 71,
-      "cost_per_wh_usd": 0.51,
-      "cost_per_w_usd": null,
-      "panel_watts": 0,
-      "storage_wh": 2048,
-      "inverter_watts": 2400,
-      "voltage": 48,
-      "chemistry": "LiFePO4",
-      "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 1048.99,
-      "price_high_6mo_usd": 1148.99,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 2047.99,
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-4kw-anker-solix-c2000-gen-2-expansion-battery",
       "brand": "Anker",
       "name": "Anker SOLIX C2000 Gen2 Portable Power Station | 2,048Wh / 2,400W (4,000W Peak) | 58-Min UltraFast Recharge | Expandable to 4kWh | Choose Your Bundle | 5-Year Warranty - C2000 Gen 2 + Expansion Battery",
       "url": "https://offgridempire.com/kits/anker-4kw-anker-solix-c2000-gen-2-expansion-battery",
-      "listed_price_usd": 1348,
+      "listed_price_usd": 1699,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1348,
+      "real_build_cost_usd": 1699,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.66,
+      "cost_per_wh_usd": 0.83,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 2048,
@@ -1961,20 +1939,20 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1198,
-      "price_high_6mo_usd": 1398.99,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 1698.99,
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-4kw-anker-solix-c2000-gen-2-expansion-battery-car-altern",
       "brand": "Anker",
       "name": "Anker SOLIX C2000 Gen2 Portable Power Station | 2,048Wh / 2,400W (4,000W Peak) | 58-Min UltraFast Recharge | Expandable to 4kWh | Choose Your Bundle | 5-Year Warranty - C2000 Gen 2 + Expansion Battery + Car Alternator Charger",
       "url": "https://offgridempire.com/kits/anker-4kw-anker-solix-c2000-gen-2-expansion-battery-car-altern",
-      "listed_price_usd": 1749,
+      "listed_price_usd": 2199,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1749,
+      "real_build_cost_usd": 2199,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.85,
+      "cost_per_wh_usd": 1.07,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 2048,
@@ -1983,20 +1961,20 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1647.99,
-      "price_high_6mo_usd": 1898,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 2198.98,
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
       "brand": "Anker",
       "name": "Anker SOLIX C2000 Gen2 Portable Power Station | 2,048Wh / 2,400W (4,000W Peak) | 58-Min UltraFast Recharge | Expandable to 4kWh | Choose Your Bundle | 5-Year Warranty - C2000 Gen 2 [Main Unit Only]",
       "url": "https://offgridempire.com/kits/anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
-      "listed_price_usd": 749,
+      "listed_price_usd": 1000,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 749,
+      "real_build_cost_usd": 1000,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.37,
+      "cost_per_wh_usd": 0.49,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 2048,
@@ -2005,9 +1983,9 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 699,
-      "price_high_6mo_usd": 799.99,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 999.99,
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-6000w-anker-2-x-f3800-double-power-hub",
@@ -2022,14 +2000,14 @@
       "cost_per_w_usd": 0.7,
       "panel_watts": 6000,
       "storage_wh": 3840,
-      "inverter_watts": 0,
+      "inverter_watts": 6000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 4197,
       "price_high_6mo_usd": 5599,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-6000w-anker-double-kit-2-x-200w-24v-rigid-panels",
@@ -2044,36 +2022,36 @@
       "cost_per_w_usd": 0.37,
       "panel_watts": 6000,
       "storage_wh": 3840,
-      "inverter_watts": 0,
+      "inverter_watts": 6000,
       "voltage": 24,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2242.23,
       "price_high_6mo_usd": 3189,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-6000w-anker-f3800-expansion-battery",
       "brand": "Anker",
       "name": "Anker F3800 - 3,840Wh / 6,000W Solar Power Station | 1,600W Solar Input | Choose Your Custom Bundle | 5-Year Warranty | Complete Solar Kit - F3800 + Expansion Battery",
       "url": "https://offgridempire.com/kits/anker-6000w-anker-f3800-expansion-battery",
-      "listed_price_usd": 3298,
+      "listed_price_usd": 3599,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 3298,
+      "real_build_cost_usd": 3599,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.86,
-      "cost_per_w_usd": 0.55,
+      "cost_per_wh_usd": 0.94,
+      "cost_per_w_usd": 0.6,
       "panel_watts": 6000,
       "storage_wh": 3840,
-      "inverter_watts": 0,
+      "inverter_watts": 6000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3098,
       "price_high_6mo_usd": 4499,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-6000w-anker-f3800-main-unit-only",
@@ -2088,14 +2066,14 @@
       "cost_per_w_usd": 0.33,
       "panel_watts": 6000,
       "storage_wh": 3840,
-      "inverter_watts": 0,
+      "inverter_watts": 6000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1899,
       "price_high_6mo_usd": 3499,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-6000w-anker-nomad-kit-2-x-200w-folding-panels",
@@ -2110,14 +2088,14 @@
       "cost_per_w_usd": 0.4,
       "panel_watts": 6000,
       "storage_wh": 3840,
-      "inverter_watts": 0,
+      "inverter_watts": 6000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2422.12,
       "price_high_6mo_usd": 3889,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-6000w-anker-quad-kit-4-x-200w-24v-rigid-panels",
@@ -2132,26 +2110,26 @@
       "cost_per_w_usd": 0.44,
       "panel_watts": 6000,
       "storage_wh": 3840,
-      "inverter_watts": 0,
+      "inverter_watts": 6000,
       "voltage": 24,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2625.56,
       "price_high_6mo_usd": 4139,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-600w-anker-solix-c1000-gen-2-main-unit-only",
       "brand": "Anker",
       "name": "Anker SOLIX C1000 Gen2 Portable Power Station | 1,024Wh / 2,000W | 49-Min UltraFast Recharge | 600W Solar Input | Choose Your Bundle Option | 5-Year Warranty - C1000 Gen 2 [Main Unit Only]",
       "url": "https://offgridempire.com/kits/anker-600w-anker-solix-c1000-gen-2-main-unit-only",
-      "listed_price_usd": 449,
+      "listed_price_usd": 530,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 449,
+      "real_build_cost_usd": 530,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.44,
-      "cost_per_w_usd": 0.75,
+      "cost_per_wh_usd": 0.52,
+      "cost_per_w_usd": 0.88,
       "panel_watts": 600,
       "storage_wh": 1024,
       "inverter_watts": 2000,
@@ -2159,9 +2137,9 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 399,
-      "price_high_6mo_usd": 499.99,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 549.99,
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-6400w-plus-2-x-f3800p-double-voltage-hub",
@@ -2182,8 +2160,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 4797,
       "price_high_6mo_usd": 4997,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-6400w-plus-2-x-f3800p-home-power-panel-sub-panel",
@@ -2204,8 +2182,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 6798,
       "price_high_6mo_usd": 6798,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-6400w-plus-backup-kit-20-x-200w-rigid-panels-2-x-xp",
@@ -2226,8 +2204,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 10852.34,
       "price_high_6mo_usd": 14999,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "anker-6400w-plus-backup-kit-pro-24-x-200w-rigid-panels-4",
@@ -2248,8 +2226,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 14045.23,
       "price_high_6mo_usd": 17549,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-1800w-bluetti-rv-basic-solution-set-rv5-power-hub-b4810-b",
@@ -2270,8 +2248,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2799,
       "price_high_6mo_usd": 2799,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-1800w-bluetti-rv-rv5-power-hub-unit-only",
@@ -2292,8 +2270,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1299,
       "price_high_6mo_usd": 1299,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-1800w-bluetti-rv-smart-solution-set-rv5-power-hub-b4810-b",
@@ -2314,8 +2292,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3699,
       "price_high_6mo_usd": 3699,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-200w-ac50p",
@@ -2336,8 +2314,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 319,
       "price_high_6mo_usd": 359,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-30000w-apex-300-apex300-2-x-b300k2",
@@ -2358,8 +2336,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1599,
       "price_high_6mo_usd": 3399,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-30000w-apex-300-apex300-b300k2",
@@ -2380,8 +2358,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1599,
       "price_high_6mo_usd": 2499,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-30000w-apex-300-apex300-basecamp-kit-4-x-200w-rigid-pane",
@@ -2402,8 +2380,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1599,
       "price_high_6mo_usd": 3929,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-30000w-apex-300-apex300-hex-kit-6-x-200w-rigid-panels",
@@ -2424,8 +2402,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1599,
       "price_high_6mo_usd": 3789,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-30000w-apex-300-apex300-main-unit-only",
@@ -2446,8 +2424,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1599,
       "price_high_6mo_usd": 1599,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-30000w-apex-300-apex300-nomad-kit-2-x-200w-rigid-panels",
@@ -2468,8 +2446,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1599,
       "price_high_6mo_usd": 2929,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-30000w-apex-300-apex300-platinum-kit-2-x-apex300-6-x-b30",
@@ -2490,8 +2468,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1599,
       "price_high_6mo_usd": 11889,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-30000w-apex-300-apex300-quad-kit-4-x-200w-rigid-panels",
@@ -2512,8 +2490,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1599,
       "price_high_6mo_usd": 3399,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-500w-ac180p-basecamp-kit-1-x-200w-folding-panels-emp",
@@ -2534,8 +2512,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1189,
       "price_high_6mo_usd": 1349,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-500w-ac180p-bluetti-ac180p-main-unit-only",
@@ -2556,8 +2534,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 699,
       "price_high_6mo_usd": 999,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-500w-ac180p-double-kit-2-x-200w-rigid-panels",
@@ -2578,8 +2556,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 969,
       "price_high_6mo_usd": 1249,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-500w-ac180p-eclipse-kit-1-x-200w-folding-panels",
@@ -2600,8 +2578,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 909,
       "price_high_6mo_usd": 1069,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-500w-ac180p-nomad-f-2-x-200w-folding-panels",
@@ -2622,8 +2600,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1169,
       "price_high_6mo_usd": 1349,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-500w-ac180p-nomad-r-2-x-200w-rigid-panels-brackets",
@@ -2644,8 +2622,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 989,
       "price_high_6mo_usd": 1269,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-ac200pl-basecamp-kit-1-x-200w-folding-panels-emp",
@@ -2666,8 +2644,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1789,
       "price_high_6mo_usd": 1999,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-ac200pl-bluetti-ac200p-l-main-unit-only",
@@ -2688,8 +2666,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1199,
       "price_high_6mo_usd": 1999,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-ac200pl-double-kit-2-x-200w-rigid-panels",
@@ -2710,8 +2688,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1589,
       "price_high_6mo_usd": 1999,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-ac200pl-eclipse-kit-1-x-200w-folding-panels",
@@ -2732,8 +2710,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1509,
       "price_high_6mo_usd": 1999,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-ac200pl-nomad-kit-2-x-200w-folding-panels",
@@ -2754,8 +2732,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1749,
       "price_high_6mo_usd": 1999,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-ac200pl-quad-kit-4-x-200w-rigid-panels",
@@ -2776,8 +2754,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1899,
       "price_high_6mo_usd": 2389,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-ac300-b300-pv350",
@@ -2842,8 +2820,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 999,
       "price_high_6mo_usd": 999,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-bluetti-ac-basecamp-kit-1-x-100w-folding-panels-emp",
@@ -2864,8 +2842,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 659,
       "price_high_6mo_usd": 699,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-bluetti-ac-bluetti-ac2p-main-unit-only",
@@ -2886,8 +2864,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 209,
       "price_high_6mo_usd": 299,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-bluetti-ac-double-kit-2-x-100w-rigid-panels",
@@ -2908,8 +2886,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 409,
       "price_high_6mo_usd": 439,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-bluetti-ac-eclipse-kit-1-x-100w-folding-panels",
@@ -2930,8 +2908,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 379,
       "price_high_6mo_usd": 429,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-bluetti-ac-nomad-kit-2-x-100w-folding-panels",
@@ -2952,8 +2930,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 509,
       "price_high_6mo_usd": 569,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "bluetti-bluetti-eb",
@@ -2974,17 +2952,17 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 239,
       "price_high_6mo_usd": 299,
-      "price_points_6mo": 71,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 91,
+      "price_observed_at": "2026-08-28"
     },
     {
-      "slug": "callsun-ntype-16bb-200w-bifacial-200-watt-for-12v-battery-sy",
+      "slug": "callsun-15w-12v-solar-battery-charger-maintainer-smart-contr",
       "brand": "Callsun",
-      "name": "Callsun N-Type 16BB 200W Bifacial Solar Panel, 200 Watt Solar Panel for 12V Battery Systems, 25% High Efficiency, Dual-Module Parallel Anti-Shade Design, for RV Van Marine Home Rooftop Off-Grid",
-      "url": "https://offgridempire.com/kits/callsun-ntype-16bb-200w-bifacial-200-watt-for-12v-battery-sy",
-      "listed_price_usd": 167,
+      "name": "Callsun 15W 12V Solar Battery Charger Maintainer with Smart Controller, IP68 Waterproof, High-Transparency Tempered Glass, 360° Mount, 12V Solar Panel Kit for Car/RV/Boat/Motorcycle",
+      "url": "https://offgridempire.com/kits/callsun-15w-12v-solar-battery-charger-maintainer-smart-contr",
+      "listed_price_usd": 28,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 167,
+      "real_build_cost_usd": 28,
       "completeness_pct": 0,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": null,
@@ -2994,10 +2972,32 @@
       "voltage": 12,
       "chemistry": "Unknown",
       "retailer": "Amazon",
-      "price_low_6mo_usd": 151.99,
+      "price_low_6mo_usd": 27.99,
+      "price_high_6mo_usd": 27.99,
+      "price_points_6mo": 20,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "callsun-ntype-16bb-200w-bifacial-200-watt-for-12v-battery-sy",
+      "brand": "Callsun",
+      "name": "Callsun N-Type 16BB 200W Bifacial Solar Panel, 200 Watt Solar Panel for 12V Battery Systems, 25% High Efficiency, Dual-Module Parallel Anti-Shade Design, for RV Van Marine Home Rooftop Off-Grid",
+      "url": "https://offgridempire.com/kits/callsun-ntype-16bb-200w-bifacial-200-watt-for-12v-battery-sy",
+      "listed_price_usd": 152,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 152,
+      "completeness_pct": 0,
+      "cost_per_wh_usd": null,
+      "cost_per_w_usd": null,
+      "panel_watts": 0,
+      "storage_wh": 0,
+      "inverter_watts": 0,
+      "voltage": 12,
+      "chemistry": "Unknown",
+      "retailer": "Amazon",
+      "price_low_6mo_usd": 151.97,
       "price_high_6mo_usd": 179.99,
-      "price_points_6mo": 45,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 65,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "core-1.6kw-core-max-2-x-100ah-24v-lfp-battery-5kwh",
@@ -3018,8 +3018,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 4389,
       "price_high_6mo_usd": 4389,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "core-1.6kw-core-max-3-x-100ah-24v-lfp-battery-7kwh",
@@ -3040,8 +3040,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 4989,
       "price_high_6mo_usd": 4989,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "core-3.2kw-core-pro",
@@ -3062,8 +3062,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 5989,
       "price_high_6mo_usd": 5989,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "core-7kw-core-plus-2-x-100ah-24v-lfp-battery-5kwh",
@@ -3073,19 +3073,19 @@
       "listed_price_usd": 2549,
       "missing_parts_cost_usd": 0,
       "real_build_cost_usd": 2549,
-      "completeness_pct": 71,
+      "completeness_pct": 100,
       "cost_per_wh_usd": 0.51,
       "cost_per_w_usd": 3.19,
       "panel_watts": 800,
       "storage_wh": 5000,
-      "inverter_watts": 0,
+      "inverter_watts": 3000,
       "voltage": 24,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2549,
       "price_high_6mo_usd": 2549,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "core-7kw-core-plus-3-x-100ah-24v-lfp-battery-7kwh",
@@ -3095,19 +3095,19 @@
       "listed_price_usd": 3089,
       "missing_parts_cost_usd": 0,
       "real_build_cost_usd": 3089,
-      "completeness_pct": 71,
+      "completeness_pct": 100,
       "cost_per_wh_usd": 0.44,
       "cost_per_w_usd": 3.86,
       "panel_watts": 800,
       "storage_wh": 7000,
-      "inverter_watts": 0,
+      "inverter_watts": 3000,
       "voltage": 24,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3089,
       "price_high_6mo_usd": 3089,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "dokio-100w-portable-foldable-kit-19x26in-53lb-separate-contr",
@@ -3128,17 +3128,17 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 64.77,
       "price_high_6mo_usd": 68.77,
-      "price_points_6mo": 45,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 65,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "dokio-200w-portable-foldable-kit-compact-20x264in-design-97l",
       "brand": "DOKIO",
       "name": "DOKIO 200W Portable Foldable Solar Panel Kit, Compact 20x26.4in Design 9.7lb with Standalone Controller and USB, Monocrystalline Charger for 12V Batteries, Power Stations, RV Camping Emergency Use",
       "url": "https://offgridempire.com/kits/dokio-200w-portable-foldable-kit-compact-20x264in-design-97l",
-      "listed_price_usd": 137,
+      "listed_price_usd": 150,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 137,
+      "real_build_cost_usd": 150,
       "completeness_pct": 0,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": null,
@@ -3149,21 +3149,21 @@
       "chemistry": "Unknown",
       "retailer": "Amazon",
       "price_low_6mo_usd": 86.17,
-      "price_high_6mo_usd": 136.77,
-      "price_points_6mo": 39,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 149.77,
+      "price_points_6mo": 59,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "eco-worthy-200w-complete",
       "brand": "Eco-Worthy",
       "name": "ECO-WORTHY 200W 12V Complete Kit with 100Ah Battery + 1100W Inverter",
       "url": "https://offgridempire.com/kits/eco-worthy-200w-complete",
-      "listed_price_usd": 640,
-      "missing_parts_cost_usd": 135,
-      "real_build_cost_usd": 775,
+      "listed_price_usd": 600,
+      "missing_parts_cost_usd": 119,
+      "real_build_cost_usd": 719,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.61,
-      "cost_per_w_usd": 3.88,
+      "cost_per_wh_usd": 0.56,
+      "cost_per_w_usd": 3.6,
       "panel_watts": 200,
       "storage_wh": 1280,
       "inverter_watts": 1100,
@@ -3172,20 +3172,20 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 399.99,
       "price_high_6mo_usd": 639.99,
-      "price_points_6mo": 108,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 128,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "eco-worthy-200w-starter",
       "brand": "Eco-Worthy",
       "name": "Eco-Worthy 200W 12V Solar Starter Kit",
       "url": "https://offgridempire.com/kits/eco-worthy-200w-starter",
-      "listed_price_usd": 170,
-      "missing_parts_cost_usd": 430,
-      "real_build_cost_usd": 600,
+      "listed_price_usd": 186,
+      "missing_parts_cost_usd": 417,
+      "real_build_cost_usd": 603,
       "completeness_pct": 57,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 3,
+      "cost_per_w_usd": 3.02,
       "panel_watts": 200,
       "storage_wh": 0,
       "inverter_watts": 0,
@@ -3194,8 +3194,8 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 134.99,
       "price_high_6mo_usd": 258.85,
-      "price_points_6mo": 246,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 266,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "eco-worthy-400w-premium-mppt",
@@ -3216,8 +3216,30 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 343.99,
       "price_high_6mo_usd": 569.99,
-      "price_points_6mo": 177,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 197,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "eco-worthy-400w-ultra-280ah",
+      "brand": "Eco-Worthy",
+      "name": "ECO-WORTHY 400W 12V Complete Kit Ultra with 40A MPPT + 280Ah LiFePO4 + 2000W Inverter",
+      "url": "https://offgridempire.com/kits/eco-worthy-400w-ultra-280ah",
+      "listed_price_usd": 1250,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 1250,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 0.35,
+      "cost_per_w_usd": 3.13,
+      "panel_watts": 400,
+      "storage_wh": 3584,
+      "inverter_watts": 2000,
+      "voltage": 12,
+      "chemistry": "LiFePO4",
+      "retailer": "Amazon",
+      "price_low_6mo_usd": 1169.99,
+      "price_high_6mo_usd": 1599.99,
+      "price_points_6mo": 113,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "eco-worthy-eco-worthy-energy-storage-system-powermega-48v-31",
@@ -3260,8 +3282,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 6899,
       "price_high_6mo_usd": 6899,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-11kw-ecoflow-delta-basecamp-kit-4-x-200w-rigid-solar-panel",
@@ -3282,19 +3304,19 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2796.64,
       "price_high_6mo_usd": 2797.94,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-11kw-ecoflow-delta-delta-3-ultra-plus-main-unit-only",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA 3 Ultra Plus – 3,072Wh / 3,600W Portable Power Station + Smart Output Priority Tech | Expandable to 11kWh | 5-Year Warranty | Complete Solar Kit - DELTA 3 ULTRA Plus [Main Unit Only]",
       "url": "https://offgridempire.com/kits/ecoflow-11kw-ecoflow-delta-delta-3-ultra-plus-main-unit-only",
-      "listed_price_usd": 1499,
+      "listed_price_usd": 1599,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1499,
+      "real_build_cost_usd": 1599,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.49,
+      "cost_per_wh_usd": 0.52,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 3072,
@@ -3304,8 +3326,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1499,
       "price_high_6mo_usd": 1599,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-11kw-ecoflow-delta-hex-kit-6-x-200w-rigid-solar-panel",
@@ -3326,8 +3348,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2637.14,
       "price_high_6mo_usd": 2642.34,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-11kw-ecoflow-delta-nomad-kit-2-x-200w-folding-solar-panel",
@@ -3348,8 +3370,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2005.57,
       "price_high_6mo_usd": 2025.97,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-11kw-ecoflow-delta-quad-kit-4-x-200w-rigid-solar-panel",
@@ -3370,20 +3392,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2234.04,
       "price_high_6mo_usd": 2249.23,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-160w-max-ecoflow-river-2-max-160w-panel",
       "brand": "EcoFlow",
       "name": "EcoFlow RIVER 2 [MAX] 512Wh / 500W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - EcoFlow River 2 Max + 160W Panel",
       "url": "https://offgridempire.com/kits/ecoflow-160w-max-ecoflow-river-2-max-160w-panel",
-      "listed_price_usd": 437,
+      "listed_price_usd": 537,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 437,
+      "real_build_cost_usd": 537,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.85,
-      "cost_per_w_usd": 2.73,
+      "cost_per_wh_usd": 1.05,
+      "cost_per_w_usd": 3.36,
       "panel_watts": 160,
       "storage_wh": 512,
       "inverter_watts": 600,
@@ -3391,21 +3413,21 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 437,
-      "price_high_6mo_usd": 437,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 537,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-160w-pro-ecoflow-river-2-pro-160w-solar-panel",
       "brand": "EcoFlow",
       "name": "EcoFlow RIVER 2 [PRO] 768Wh / 800W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - EcoFlow River 2 Pro + 160W Solar Panel",
       "url": "https://offgridempire.com/kits/ecoflow-160w-pro-ecoflow-river-2-pro-160w-solar-panel",
-      "listed_price_usd": 499,
+      "listed_price_usd": 899,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 499,
+      "real_build_cost_usd": 899,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.65,
-      "cost_per_w_usd": 3.12,
+      "cost_per_wh_usd": 1.17,
+      "cost_per_w_usd": 5.62,
       "panel_watts": 160,
       "storage_wh": 768,
       "inverter_watts": 800,
@@ -3413,53 +3435,229 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 499,
-      "price_high_6mo_usd": 519,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 899,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-200w-max-delta-max-base-camp-kit-4-x-200w-panels",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Base Camp Kit [4 x 200W Panels + EMP Bag]",
+      "url": "https://offgridempire.com/kits/ecoflow-200w-max-delta-max-base-camp-kit-4-x-200w-panels",
+      "listed_price_usd": 2425,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 2425,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 1.2,
+      "cost_per_w_usd": 12.13,
+      "panel_watts": 200,
+      "storage_wh": 2016,
+      "inverter_watts": 2400,
+      "voltage": 24,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 1799,
+      "price_high_6mo_usd": 2799,
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-2400w-max-delta-max-double-kit-2-x-200w-rigid-pane",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Double Kit [2 x 200W Rigid Panels]",
+      "url": "https://offgridempire.com/kits/ecoflow-2400w-max-delta-max-double-kit-2-x-200w-rigid-pane",
+      "listed_price_usd": 1487,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 1487,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 0.74,
+      "cost_per_w_usd": 0.62,
+      "panel_watts": 2400,
+      "storage_wh": 2016,
+      "inverter_watts": 2400,
+      "voltage": 24,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 1486.92,
+      "price_high_6mo_usd": 1899,
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-2400w-max-delta-max-double-quad-kit-8-x-200w-rigid",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Double Quad Kit [8 x 200W Rigid Panels]",
+      "url": "https://offgridempire.com/kits/ecoflow-2400w-max-delta-max-double-quad-kit-8-x-200w-rigid",
+      "listed_price_usd": 3648,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 3648,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 1.81,
+      "cost_per_w_usd": 1.52,
+      "panel_watts": 2400,
+      "storage_wh": 2016,
+      "inverter_watts": 2400,
+      "voltage": 24,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 1799,
+      "price_high_6mo_usd": 4129,
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-2400w-max-delta-max-eclipse-kit-1-x-200w-folding-p",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Eclipse Kit [1 x 200W Folding Panel]",
+      "url": "https://offgridempire.com/kits/ecoflow-2400w-max-delta-max-eclipse-kit-1-x-200w-folding-p",
+      "listed_price_usd": 1408,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 1408,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 0.7,
+      "cost_per_w_usd": 0.59,
+      "panel_watts": 2400,
+      "storage_wh": 2016,
+      "inverter_watts": 2400,
+      "voltage": 24,
+      "chemistry": "Unknown",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 1408.12,
+      "price_high_6mo_usd": 1899,
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-2400w-max-delta-max-hex-kit-6-x-100w-rigid-panels",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Hex Kit [6 x 100W Rigid Panels]",
+      "url": "https://offgridempire.com/kits/ecoflow-2400w-max-delta-max-hex-kit-6-x-100w-rigid-panels",
+      "listed_price_usd": 2156,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 2156,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 1.07,
+      "cost_per_w_usd": 0.9,
+      "panel_watts": 2400,
+      "storage_wh": 2016,
+      "inverter_watts": 2400,
+      "voltage": 24,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 1598,
+      "price_high_6mo_usd": 2155.94,
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-2400w-max-delta-max-nomad-kit-2-x-200w-folding-pan",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Nomad Kit [2 x 200W Folding Panels]",
+      "url": "https://offgridempire.com/kits/ecoflow-2400w-max-delta-max-nomad-kit-2-x-200w-folding-pan",
+      "listed_price_usd": 1688,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 1688,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 0.84,
+      "cost_per_w_usd": 0.7,
+      "panel_watts": 2400,
+      "storage_wh": 2016,
+      "inverter_watts": 2400,
+      "voltage": 24,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 1687.81,
+      "price_high_6mo_usd": 1899,
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-2400w-max-delta-max-quad-kit-4-x-200w-rigid-panels",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX Quad Kit [4 x 200W Rigid Panels]",
+      "url": "https://offgridempire.com/kits/ecoflow-2400w-max-delta-max-quad-kit-4-x-200w-rigid-panels",
+      "listed_price_usd": 1838,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 1838,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 0.91,
+      "cost_per_w_usd": 0.77,
+      "panel_watts": 2400,
+      "storage_wh": 2016,
+      "inverter_watts": 2400,
+      "voltage": 24,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 1799,
+      "price_high_6mo_usd": 2069,
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-2400w-max-delta-max-unit-only",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA [MAX] Solar Kits - 2,400W / 2,016Wh Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - DELTA MAX [Unit Only]",
+      "url": "https://offgridempire.com/kits/ecoflow-2400w-max-delta-max-unit-only",
+      "listed_price_usd": 1049,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 1049,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 0.52,
+      "cost_per_w_usd": 0.44,
+      "panel_watts": 2400,
+      "storage_wh": 2016,
+      "inverter_watts": 2400,
+      "voltage": 24,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 1049,
+      "price_high_6mo_usd": 1899,
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-6kw-ultra-delta-pro-ultra-inverter-1-x-6kwh-batter",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA PRO [ULTRA] - 7,200W Output / 6kWh-90kWh Capacity | 5.6kW-16.8kW Solar Input | 5-Year Warranty - DELTA Pro Ultra [Inverter + 1 x 6kWh Battery]",
       "url": "https://offgridempire.com/kits/ecoflow-6kw-ultra-delta-pro-ultra-inverter-1-x-6kwh-batter",
-      "listed_price_usd": 4099,
+      "listed_price_usd": 4199,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 4099,
+      "real_build_cost_usd": 4199,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.67,
-      "cost_per_w_usd": 10.25,
+      "cost_per_wh_usd": 0.68,
+      "cost_per_w_usd": 10.5,
       "panel_watts": 400,
       "storage_wh": 6144,
-      "inverter_watts": 7200000,
+      "inverter_watts": 7200,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 4099,
-      "price_high_6mo_usd": 4099,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 4199,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-6kw-ultra-delta-pro-ultra-inverter-2-x-battery-12k",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA PRO [ULTRA] - 7,200W Output / 6kWh-90kWh Capacity | 5.6kW-16.8kW Solar Input | 5-Year Warranty - DELTA Pro Ultra [Inverter + 2 x Battery] - 12kWh",
       "url": "https://offgridempire.com/kits/ecoflow-6kw-ultra-delta-pro-ultra-inverter-2-x-battery-12k",
-      "listed_price_usd": 6499,
+      "listed_price_usd": 5999,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 6499,
+      "real_build_cost_usd": 5999,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 1.06,
-      "cost_per_w_usd": 16.25,
+      "cost_per_wh_usd": 0.98,
+      "cost_per_w_usd": 15,
       "panel_watts": 400,
       "storage_wh": 6144,
-      "inverter_watts": 7200000,
+      "inverter_watts": 7200,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 5999,
       "price_high_6mo_usd": 6499,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-6kw-ultra-delta-pro-ultra-inverter-3-x-battery-18k",
@@ -3474,14 +3672,14 @@
       "cost_per_w_usd": 20,
       "panel_watts": 400,
       "storage_wh": 6144,
-      "inverter_watts": 7200000,
+      "inverter_watts": 7200,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 7998,
       "price_high_6mo_usd": 7999,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-6kw-ultra-delta-pro-ultra-inverter-4-x-battery-24k",
@@ -3496,36 +3694,36 @@
       "cost_per_w_usd": 25.25,
       "panel_watts": 400,
       "storage_wh": 6144,
-      "inverter_watts": 7200000,
+      "inverter_watts": 7200,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 9999,
       "price_high_6mo_usd": 10099,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-6kw-ultra-delta-pro-ultra-inverter-5-x-battery-30k",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA PRO [ULTRA] - 7,200W Output / 6kWh-90kWh Capacity | 5.6kW-16.8kW Solar Input | 5-Year Warranty - DELTA Pro Ultra [Inverter + 5 x Battery] - 30kWh",
       "url": "https://offgridempire.com/kits/ecoflow-6kw-ultra-delta-pro-ultra-inverter-5-x-battery-30k",
-      "listed_price_usd": 12099,
+      "listed_price_usd": 12199,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 12099,
+      "real_build_cost_usd": 12199,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 1.97,
-      "cost_per_w_usd": 30.25,
+      "cost_per_wh_usd": 1.99,
+      "cost_per_w_usd": 30.5,
       "panel_watts": 400,
       "storage_wh": 6144,
-      "inverter_watts": 7200000,
+      "inverter_watts": 7200,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 11998,
-      "price_high_6mo_usd": 12099,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 12199,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-80kw-ecoflow-ocean-1-x-10kwh-battery-inverter",
@@ -3546,8 +3744,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 9598,
       "price_high_6mo_usd": 9598,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-80kw-ecoflow-ocean-2-x-10kwh-batteries-20kwh-inverter",
@@ -3568,8 +3766,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 16389,
       "price_high_6mo_usd": 16389,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-80kw-ecoflow-ocean-3-x-10kwh-batteries-30kwh-inverter",
@@ -3590,8 +3788,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 23189,
       "price_high_6mo_usd": 23189,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-80kw-ecoflow-ocean-none-inverter-only",
@@ -3612,20 +3810,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2799,
       "price_high_6mo_usd": 2799,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-delta-pro-400w",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA Pro + 400W Solar Panel",
       "url": "https://offgridempire.com/kits/ecoflow-delta-pro-400w",
-      "listed_price_usd": 1699,
+      "listed_price_usd": 1899,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1699,
-      "completeness_pct": 0,
-      "cost_per_wh_usd": 0.47,
-      "cost_per_w_usd": 4.25,
+      "real_build_cost_usd": 1899,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 0.53,
+      "cost_per_w_usd": 4.75,
       "panel_watts": 400,
       "storage_wh": 3600,
       "inverter_watts": 3600,
@@ -3634,8 +3832,8 @@
       "retailer": "EcoFlow US",
       "price_low_6mo_usd": 1399,
       "price_high_6mo_usd": 4999,
-      "price_points_6mo": 299,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 319,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-delta2-220w",
@@ -3645,7 +3843,7 @@
       "listed_price_usd": 449,
       "missing_parts_cost_usd": 0,
       "real_build_cost_usd": 449,
-      "completeness_pct": 0,
+      "completeness_pct": 86,
       "cost_per_wh_usd": 0.44,
       "cost_per_w_usd": 2.04,
       "panel_watts": 220,
@@ -3656,7 +3854,7 @@
       "retailer": "EcoFlow US",
       "price_low_6mo_usd": 419,
       "price_high_6mo_usd": 1649,
-      "price_points_6mo": 253,
+      "price_points_6mo": 266,
       "price_observed_at": "2026-06-21"
     },
     {
@@ -3667,7 +3865,7 @@
       "listed_price_usd": 869,
       "missing_parts_cost_usd": 0,
       "real_build_cost_usd": 869,
-      "completeness_pct": 0,
+      "completeness_pct": 86,
       "cost_per_wh_usd": 0.85,
       "cost_per_w_usd": 1.98,
       "panel_watts": 440,
@@ -3678,7 +3876,7 @@
       "retailer": "EcoFlow US",
       "price_low_6mo_usd": 799,
       "price_high_6mo_usd": 2297,
-      "price_points_6mo": 198,
+      "price_points_6mo": 203,
       "price_observed_at": "2026-06-21"
     },
     {
@@ -3686,12 +3884,12 @@
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA 2 Max 2048Wh + 400W Solar Panel",
       "url": "https://offgridempire.com/kits/ecoflow-delta2max-400w",
-      "listed_price_usd": 899,
+      "listed_price_usd": 1049,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 899,
+      "real_build_cost_usd": 1049,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.44,
-      "cost_per_w_usd": 2.25,
+      "cost_per_wh_usd": 0.51,
+      "cost_per_w_usd": 2.62,
       "panel_watts": 400,
       "storage_wh": 2048,
       "inverter_watts": 2400,
@@ -3700,19 +3898,19 @@
       "retailer": "EcoFlow US",
       "price_low_6mo_usd": 849,
       "price_high_6mo_usd": 2999,
-      "price_points_6mo": 273,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 293,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA PRO 3,600Wh / 3,600W Portable Power Station",
       "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta",
-      "listed_price_usd": 1799,
+      "listed_price_usd": 1899,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1799,
+      "real_build_cost_usd": 1899,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.5,
+      "cost_per_wh_usd": 0.53,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 3600,
@@ -3722,8 +3920,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1799,
       "price_high_6mo_usd": 2399,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-basecamp-kit-1-x-200w-folding-panel",
@@ -3744,30 +3942,30 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1289,
       "price_high_6mo_usd": 1487.41,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
-      "slug": "ecoflow-ecoflow-delta-basecamp-kit-2-x-200w-folding-panels-emp",
+      "slug": "ecoflow-ecoflow-delta-basecamp-kit-4-x-100w-rigid-panels-emp-b",
       "brand": "EcoFlow",
-      "name": "EcoFlow DELTA PRO 3 - 4,096Wh / 4,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit - Basecamp Kit [2 x 200W Folding Panels + EMP Bag]",
-      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-basecamp-kit-2-x-200w-folding-panels-emp",
-      "listed_price_usd": 3356,
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Basecamp Kit [4 x 100W Rigid Panels + EMP Bag]",
+      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-basecamp-kit-4-x-100w-rigid-panels-emp-b",
+      "listed_price_usd": 1584,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 3356,
-      "completeness_pct": 57,
-      "cost_per_wh_usd": 0.82,
+      "real_build_cost_usd": 1584,
+      "completeness_pct": 71,
+      "cost_per_wh_usd": 1.22,
       "cost_per_w_usd": null,
       "panel_watts": 0,
-      "storage_wh": 4096,
-      "inverter_watts": 0,
+      "storage_wh": 1300,
+      "inverter_watts": 300,
       "voltage": 12,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 3086.97,
-      "price_high_6mo_usd": 4239,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_low_6mo_usd": 999,
+      "price_high_6mo_usd": 1759,
+      "price_points_6mo": 97,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-basecamp-kit-4-x-200w-rigid-solar-panel",
@@ -3788,19 +3986,19 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2330.41,
       "price_high_6mo_usd": 2465.51,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-black-delta-3-max-main-unit-only",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA 3 Max – 2,048Wh / 2,400W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit - Black / DELTA 3 MAX [Main Unit Only]",
       "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-black-delta-3-max-main-unit-only",
-      "listed_price_usd": 789,
+      "listed_price_usd": 899,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 789,
+      "real_build_cost_usd": 899,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.39,
+      "cost_per_wh_usd": 0.44,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 2048,
@@ -3810,8 +4008,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 789,
       "price_high_6mo_usd": 899,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-black-nomad-kit-2-x-200w-folding-solar-p",
@@ -3832,19 +4030,41 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1348.75,
       "price_high_6mo_usd": 1498.75,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-ecoflow-delta-delta-1800-unit-only",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Delta 1800 [Unit Only]",
+      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-delta-1800-unit-only",
+      "listed_price_usd": 899,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 899,
+      "completeness_pct": 71,
+      "cost_per_wh_usd": 0.69,
+      "cost_per_w_usd": null,
+      "panel_watts": 0,
+      "storage_wh": 1300,
+      "inverter_watts": 300,
+      "voltage": 12,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 735,
+      "price_high_6mo_usd": 1399,
+      "price_points_6mo": 97,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-delta-3-max-plus-main-unit-only",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA 3 Max Plus – 2,048Wh / 3,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit - DELTA 3 MAX PLUS [Main Unit Only]",
       "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-delta-3-max-plus-main-unit-only",
-      "listed_price_usd": 1099,
+      "listed_price_usd": 1199,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1099,
+      "real_build_cost_usd": 1199,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.54,
+      "cost_per_wh_usd": 0.59,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 2048,
@@ -3853,20 +4073,20 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1049,
-      "price_high_6mo_usd": 1109,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 1199,
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-delta-3-plus-main-unit-only",
       "brand": "EcoFlow",
       "name": "EcoFlow Ecoflow DELTA 3 PLUS 1,024Wh Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit - Delta 3 Plus [Main Unit Only]",
       "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-delta-3-plus-main-unit-only",
-      "listed_price_usd": 699,
+      "listed_price_usd": 669,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 699,
+      "real_build_cost_usd": 669,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.68,
+      "cost_per_wh_usd": 0.65,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 1024,
@@ -3875,20 +4095,20 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 649,
-      "price_high_6mo_usd": 699,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 719,
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-delta-3-ultra-main-unit-only",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA 3 Ultra – 3,072Wh / 3,600W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit - Delta 3 Ultra [Main Unit Only]",
       "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-delta-3-ultra-main-unit-only",
-      "listed_price_usd": 1299,
+      "listed_price_usd": 1399,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1299,
+      "real_build_cost_usd": 1399,
       "completeness_pct": 57,
-      "cost_per_wh_usd": 0.42,
+      "cost_per_wh_usd": 0.46,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 3072,
@@ -3898,30 +4118,30 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1299,
       "price_high_6mo_usd": 1499,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
-      "slug": "ecoflow-ecoflow-delta-delta-pro-3-main-unit-only",
+      "slug": "ecoflow-ecoflow-delta-double-kit-2-x-100w-rigid-panels",
       "brand": "EcoFlow",
-      "name": "EcoFlow DELTA PRO 3 - 4,096Wh / 4,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit - DELTA PRO 3 [Main Unit Only]",
-      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-delta-pro-3-main-unit-only",
-      "listed_price_usd": 2599,
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Double Kit [2 x 100W Rigid Panels]",
+      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-double-kit-2-x-100w-rigid-panels",
+      "listed_price_usd": 906,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 2599,
-      "completeness_pct": 57,
-      "cost_per_wh_usd": 0.63,
+      "real_build_cost_usd": 906,
+      "completeness_pct": 71,
+      "cost_per_wh_usd": 0.7,
       "cost_per_w_usd": null,
       "panel_watts": 0,
-      "storage_wh": 4096,
-      "inverter_watts": 0,
+      "storage_wh": 1300,
+      "inverter_watts": 300,
       "voltage": 12,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 1999,
-      "price_high_6mo_usd": 3699,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_low_6mo_usd": 905.72,
+      "price_high_6mo_usd": 1399,
+      "price_points_6mo": 97,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-double-kit-2-x-200w-rigid-panel",
@@ -3942,19 +4162,63 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 998.12,
       "price_high_6mo_usd": 1139,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-ecoflow-delta-double-quad-kit-2-delta-8-x-100w-rigid-p",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Double Quad Kit [2 Delta + 8 x 100W Rigid Panels]",
+      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-double-quad-kit-2-delta-8-x-100w-rigid-p",
+      "listed_price_usd": 2285,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 2285,
+      "completeness_pct": 71,
+      "cost_per_wh_usd": 1.76,
+      "cost_per_w_usd": null,
+      "panel_watts": 0,
+      "storage_wh": 1300,
+      "inverter_watts": 300,
+      "voltage": 12,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 999,
+      "price_high_6mo_usd": 2299,
+      "price_points_6mo": 97,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-ecoflow-delta-eclipse-kit-1-x-200w-folding-panel",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Eclipse Kit [1 x 200W Folding Panel]",
+      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-eclipse-kit-1-x-200w-folding-panel",
+      "listed_price_usd": 1058,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 1058,
+      "completeness_pct": 71,
+      "cost_per_wh_usd": 0.81,
+      "cost_per_w_usd": null,
+      "panel_watts": 0,
+      "storage_wh": 1300,
+      "inverter_watts": 300,
+      "voltage": 12,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 885.12,
+      "price_high_6mo_usd": 1399,
+      "price_points_6mo": 100,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-gray-delta-3-max-main-unit-only",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA 3 Max – 2,048Wh / 2,400W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit - Gray / DELTA 3 MAX [Main Unit Only]",
       "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-gray-delta-3-max-main-unit-only",
-      "listed_price_usd": 789,
+      "listed_price_usd": 849,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 789,
+      "real_build_cost_usd": 849,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.39,
+      "cost_per_wh_usd": 0.41,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 2048,
@@ -3964,8 +4228,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 789,
       "price_high_6mo_usd": 899,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-gray-nomad-kit-2-x-200w-folding-solar-pa",
@@ -3986,30 +4250,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1348.75,
       "price_high_6mo_usd": 1398.75,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
-    },
-    {
-      "slug": "ecoflow-ecoflow-delta-hex-kit-6-x-200w-rigid-panels",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA PRO 3 - 4,096Wh / 4,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit - Hex Kit [6 x 200W Rigid Panels]",
-      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-hex-kit-6-x-200w-rigid-panels",
-      "listed_price_usd": 3272,
-      "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 3272,
-      "completeness_pct": 57,
-      "cost_per_wh_usd": 0.8,
-      "cost_per_w_usd": null,
-      "panel_watts": 0,
-      "storage_wh": 4096,
-      "inverter_watts": 0,
-      "voltage": 12,
-      "chemistry": "LiFePO4",
-      "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 3073.97,
-      "price_high_6mo_usd": 3271.97,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-nomad-kit-2-x-200w-folding-panel",
@@ -4030,19 +4272,19 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 859,
       "price_high_6mo_usd": 1208.72,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-nomad-kit-2-x-200w-folding-panels",
       "brand": "EcoFlow",
       "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Nomad Kit [2 x 200W Folding Panels]",
       "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-nomad-kit-2-x-200w-folding-panels",
-      "listed_price_usd": 2806,
+      "listed_price_usd": 1356,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 2806,
+      "real_build_cost_usd": 1356,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 2.16,
+      "cost_per_wh_usd": 1.04,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 1300,
@@ -4052,8 +4294,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 999,
       "price_high_6mo_usd": 3639,
-      "price_points_6mo": 81,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 101,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-nomad-kit-2-x-200w-folding-solar-panel",
@@ -4074,30 +4316,30 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1539.23,
       "price_high_6mo_usd": 1658.64,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
-      "slug": "ecoflow-ecoflow-delta-octo-kit-8-x-200w-rigid-panels",
+      "slug": "ecoflow-ecoflow-delta-quad-kit-4-x-100w-rigid-panels-best-sell",
       "brand": "EcoFlow",
-      "name": "EcoFlow DELTA PRO 3 - 4,096Wh / 4,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit - Octo Kit [8 x 200W Rigid Panels]",
-      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-octo-kit-8-x-200w-rigid-panels",
-      "listed_price_usd": 3650,
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Quad Kit [4 x 100W Rigid Panels] *Best Seller*",
+      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-quad-kit-4-x-100w-rigid-panels-best-sell",
+      "listed_price_usd": 987,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 3650,
-      "completeness_pct": 57,
-      "cost_per_wh_usd": 0.89,
+      "real_build_cost_usd": 987,
+      "completeness_pct": 71,
+      "cost_per_wh_usd": 0.76,
       "cost_per_w_usd": null,
       "panel_watts": 0,
-      "storage_wh": 4096,
-      "inverter_watts": 0,
+      "storage_wh": 1300,
+      "inverter_watts": 300,
       "voltage": 12,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 3451.97,
-      "price_high_6mo_usd": 3649.97,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_low_6mo_usd": 986.92,
+      "price_high_6mo_usd": 1399,
+      "price_points_6mo": 97,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-quad-kit-4-x-200w-rigid-panel",
@@ -4118,30 +4360,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 809,
       "price_high_6mo_usd": 1404.94,
-      "price_points_6mo": 68,
-      "price_observed_at": "2026-06-21"
-    },
-    {
-      "slug": "ecoflow-ecoflow-delta-quad-kit-4-x-200w-rigid-panels",
-      "brand": "EcoFlow",
-      "name": "EcoFlow DELTA PRO 3 - 4,096Wh / 4,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit - Quad Kit [4 x 200W Rigid Panels]",
-      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-quad-kit-4-x-200w-rigid-panels",
-      "listed_price_usd": 2952,
-      "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 2952,
-      "completeness_pct": 57,
-      "cost_per_wh_usd": 0.72,
-      "cost_per_w_usd": null,
-      "panel_watts": 0,
-      "storage_wh": 4096,
-      "inverter_watts": 0,
-      "voltage": 12,
-      "chemistry": "LiFePO4",
-      "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 2688.97,
-      "price_high_6mo_usd": 4089,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 88,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-delta-quad-kit-4-x-200w-rigid-solar-panel",
@@ -4162,8 +4382,30 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1767.91,
       "price_high_6mo_usd": 1907.62,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "ecoflow-ecoflow-delta-two-by-four-kit-2-delta-4-x-100w-rigid-p",
+      "brand": "EcoFlow",
+      "name": "EcoFlow DELTA 1,800W / 1,300Wh Solar Kit / Portable Power Station + Choose Your Custom Bundle | Complete Solar Generator Kit - Two By Four Kit [2 Delta + 4 x 100W Rigid Panels]",
+      "url": "https://offgridempire.com/kits/ecoflow-ecoflow-delta-two-by-four-kit-2-delta-4-x-100w-rigid-p",
+      "listed_price_usd": 1888,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 1888,
+      "completeness_pct": 71,
+      "cost_per_wh_usd": 1.45,
+      "cost_per_w_usd": null,
+      "panel_watts": 0,
+      "storage_wh": 1300,
+      "inverter_watts": 300,
+      "voltage": 12,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 999,
+      "price_high_6mo_usd": 1949,
+      "price_points_6mo": 97,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-river-basecamp-kit-1-x-100w-folding-panel",
@@ -4184,8 +4426,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 629,
       "price_high_6mo_usd": 679,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-river-eclipse-kit-1-x-100w-rigid-panel",
@@ -4206,8 +4448,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 309,
       "price_high_6mo_usd": 342.94,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-river-nomad-kit-1-x-100w-folding-panel",
@@ -4228,19 +4470,19 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 359,
       "price_high_6mo_usd": 391.73,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-ecoflow-river-river-3-main-unit-only",
       "brand": "EcoFlow",
       "name": "EcoFlow RIVER 3 300W / 245Wh Portable Power Station + Choose Custom Solar Panel Bundle Option | 2-Year Warranty | Complete Solar Kit - River 3 [Main Unit Only]",
       "url": "https://offgridempire.com/kits/ecoflow-ecoflow-river-river-3-main-unit-only",
-      "listed_price_usd": 209,
+      "listed_price_usd": 199,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 209,
+      "real_build_cost_usd": 199,
       "completeness_pct": 57,
-      "cost_per_wh_usd": 0.85,
+      "cost_per_wh_usd": 0.81,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 245,
@@ -4250,19 +4492,19 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 199,
       "price_high_6mo_usd": 239,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-max-ecoflow-river-2-max-main-unit-only",
       "brand": "EcoFlow",
       "name": "EcoFlow RIVER 2 [MAX] 512Wh / 500W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - EcoFlow River 2 Max [Main Unit Only]",
       "url": "https://offgridempire.com/kits/ecoflow-max-ecoflow-river-2-max-main-unit-only",
-      "listed_price_usd": 269,
+      "listed_price_usd": 309,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 269,
+      "real_build_cost_usd": 309,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.53,
+      "cost_per_wh_usd": 0.6,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 512,
@@ -4271,20 +4513,20 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 269,
-      "price_high_6mo_usd": 269,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 329,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-pro-ecoflow-river-2-pro-main-unit-only",
       "brand": "EcoFlow",
       "name": "EcoFlow RIVER 2 [PRO] 768Wh / 800W Portable Power Station + Choose Your Custom Bundle | Complete Solar Kit - EcoFlow River 2 Pro [Main Unit Only]",
       "url": "https://offgridempire.com/kits/ecoflow-pro-ecoflow-river-2-pro-main-unit-only",
-      "listed_price_usd": 349,
+      "listed_price_usd": 569,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 349,
+      "real_build_cost_usd": 569,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.45,
+      "cost_per_wh_usd": 0.74,
       "cost_per_w_usd": null,
       "panel_watts": 0,
       "storage_wh": 768,
@@ -4293,9 +4535,9 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 339,
-      "price_high_6mo_usd": 349,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 569,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ecoflow-river2pro-160w",
@@ -4316,7 +4558,7 @@
       "retailer": "EcoFlow US",
       "price_low_6mo_usd": 439,
       "price_high_6mo_usd": 899,
-      "price_points_6mo": 231,
+      "price_points_6mo": 251,
       "price_observed_at": "2026-05-14"
     },
     {
@@ -4338,8 +4580,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 43379.27,
       "price_high_6mo_usd": 48879.27,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-23.8kw-complete-solar-eg4-ll-s-61-44-kwh",
@@ -4360,8 +4602,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 44279.27,
       "price_high_6mo_usd": 50921.79,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-23.8kw-complete-solar-renon-xcellent-plus-64-kwh",
@@ -4382,8 +4624,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 46121.27,
       "price_high_6mo_usd": 46121.27,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-23.8kw-complete-solar-renon-xtreme-lv-61-44-kwh",
@@ -4404,8 +4646,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 48890.79,
       "price_high_6mo_usd": 48890.79,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-31.7kw-complete-solar-eg4-indoor-wallmount-96-kwh",
@@ -4426,8 +4668,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 58863.92,
       "price_high_6mo_usd": 63663.92,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-31.7kw-complete-solar-eg4-ll-s-92-16-kwh",
@@ -4448,8 +4690,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 64829.71,
       "price_high_6mo_usd": 67329.71,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-31.7kw-complete-solar-renon-xcellent-plus-96-kwh",
@@ -4470,8 +4712,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 61129.22,
       "price_high_6mo_usd": 61129.22,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-31.7kw-complete-solar-renon-xtreme-lv-92-16-kwh",
@@ -4492,8 +4734,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 67845.72,
       "price_high_6mo_usd": 67845.72,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-63.4kw-edge-pro-eg4-indoor-wallmount-128-kwh",
@@ -4514,8 +4756,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 104649.58,
       "price_high_6mo_usd": 104649.58,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-63.4kw-edge-pro-eg4-ll-s-122-88-kwh",
@@ -4536,8 +4778,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 114731.97,
       "price_high_6mo_usd": 114731.97,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-63.4kw-edge-pro-renon-xcellent-plus-128-kwh",
@@ -4558,8 +4800,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 103137.98,
       "price_high_6mo_usd": 103137.98,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "edge-63.4kw-edge-pro-renon-xtreme-lv-122-88-kwh",
@@ -4580,8 +4822,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 111688.27,
       "price_high_6mo_usd": 111688.27,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "elite-15.8kw-elite-max-discover-helios-32-2kwh-code-compliant-p",
@@ -4602,8 +4844,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 21989,
       "price_high_6mo_usd": 23389,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "elite-15.8kw-elite-max-pytes-v5-30-72kwh-code-compliant-premium",
@@ -4624,8 +4866,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 21489,
       "price_high_6mo_usd": 22989,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "elite-15.8kw-elite-max-renon-xc-plus-32kwh-code-compliant-premi",
@@ -4646,8 +4888,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 21189,
       "price_high_6mo_usd": 21989,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "elite-21.1kw-elite-pro-discover-helios-32-2kwh-code-compliant-p",
@@ -4662,14 +4904,14 @@
       "cost_per_w_usd": 1.29,
       "panel_watts": 20000,
       "storage_wh": 32200,
-      "inverter_watts": 20000000,
+      "inverter_watts": 18000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 25489,
       "price_high_6mo_usd": 27489,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "elite-21.1kw-elite-pro-pytes-v5-server-rack-40-96kwh-code-compl",
@@ -4684,14 +4926,14 @@
       "cost_per_w_usd": 1.49,
       "panel_watts": 20000,
       "storage_wh": 40960,
-      "inverter_watts": 20000000,
+      "inverter_watts": 18000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 29889,
       "price_high_6mo_usd": 29889,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "elite-21.1kw-elite-pro-renon-xc-plus-32kwh-code-compliant-premi",
@@ -4706,14 +4948,14 @@
       "cost_per_w_usd": 1.28,
       "panel_watts": 20000,
       "storage_wh": 32000,
-      "inverter_watts": 20000000,
+      "inverter_watts": 18000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 25689,
       "price_high_6mo_usd": 25689,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "elite-7.92kw-elite-plus-discover-helios-32-2kwh-premium-closed-l",
@@ -4734,8 +4976,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 17989,
       "price_high_6mo_usd": 18989,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "elite-7.92kw-elite-plus-pytes-v5-20-48kwh-code-compliant-premium",
@@ -4756,8 +4998,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 15489,
       "price_high_6mo_usd": 15689,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "elite-7.92kw-elite-plus-renon-xc-plus-32kwh-premium-closed-loop",
@@ -4778,8 +5020,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 17389,
       "price_high_6mo_usd": 17389,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "ft-feiteeng-3000w-power-inverter-12v-dc-to-120v-ac-inverter",
@@ -4800,17 +5042,17 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 102.99,
       "price_high_6mo_usd": 149.99,
-      "price_points_6mo": 45,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 59,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "grecell-200w-portable-for-power-station-foldable-solar-charg",
       "brand": "GRECELL",
       "name": "200W Portable Solar Panel for Power Station, Foldable Solar Charger w/ 4 Kickstands, IP65 Waterproof Solar Panel Kit w/DC XT60 Anderson Aviation Output for Outdoor RV Camper Blackout",
       "url": "https://offgridempire.com/kits/grecell-200w-portable-for-power-station-foldable-solar-charg",
-      "listed_price_usd": 200,
+      "listed_price_usd": 180,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 200,
+      "real_build_cost_usd": 180,
       "completeness_pct": 0,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": null,
@@ -4822,8 +5064,8 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 149.96,
       "price_high_6mo_usd": 199.99,
-      "price_points_6mo": 45,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 64,
+      "price_observed_at": "2026-08-27"
     },
     {
       "slug": "hysolis-3000w-hysolis-mps-mps-3k-hex-kit-6-x-200w-rigid-panels",
@@ -4844,8 +5086,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2995,
       "price_high_6mo_usd": 5199,
-      "price_points_6mo": 74,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "hysolis-3000w-hysolis-mps-mps-3k-home-integration-kit-6-x-200w-rig",
@@ -4866,8 +5108,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2995,
       "price_high_6mo_usd": 5489,
-      "price_points_6mo": 74,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "hysolis-3000w-hysolis-mps-mps-3k-nomad-kit-4-x-200w-folding-panels",
@@ -4888,8 +5130,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2995,
       "price_high_6mo_usd": 5109,
-      "price_points_6mo": 74,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "hysolis-3000w-hysolis-mps-mps-3k-one-kw-kit-10-x-100w-rigid-panels",
@@ -4910,8 +5152,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2995,
       "price_high_6mo_usd": 4859,
-      "price_points_6mo": 74,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "hysolis-3000w-hysolis-mps-mps-3k-quad-kit-4-x-200w-rigid-panels",
@@ -4932,8 +5174,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2995,
       "price_high_6mo_usd": 4659,
-      "price_points_6mo": 74,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "hysolis-3000w-hysolis-mps-mps-3k-unit-only",
@@ -4954,8 +5196,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2995,
       "price_high_6mo_usd": 3595,
-      "price_points_6mo": 74,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 94,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "jackery-1000plus-2x100w",
@@ -4976,20 +5218,20 @@
       "retailer": "Jackery",
       "price_low_6mo_usd": 899,
       "price_high_6mo_usd": 1699,
-      "price_points_6mo": 145,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 165,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "jackery-1000v2-200w-panel",
       "brand": "Jackery",
       "name": "Jackery Solar Generator 1000 v2 + 200W Panel, 1070Wh LiFePO4",
       "url": "https://offgridempire.com/kits/jackery-1000v2-200w-panel",
-      "listed_price_usd": 649,
+      "listed_price_usd": 699,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 649,
+      "real_build_cost_usd": 699,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.61,
-      "cost_per_w_usd": 3.25,
+      "cost_per_wh_usd": 0.65,
+      "cost_per_w_usd": 3.5,
       "panel_watts": 200,
       "storage_wh": 1070,
       "inverter_watts": 1500,
@@ -4998,20 +5240,20 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 551,
       "price_high_6mo_usd": 1490,
-      "price_points_6mo": 183,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 203,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "jackery-1500-4x100w",
       "brand": "Jackery",
       "name": "Jackery Explorer 1500 + 4x SolarSaga 100W Panels",
       "url": "https://offgridempire.com/kits/jackery-1500-4x100w",
-      "listed_price_usd": 999,
+      "listed_price_usd": 1199,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 999,
-      "completeness_pct": 0,
-      "cost_per_wh_usd": 0.65,
-      "cost_per_w_usd": 2.5,
+      "real_build_cost_usd": 1199,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 0.78,
+      "cost_per_w_usd": 3,
       "panel_watts": 400,
       "storage_wh": 1534,
       "inverter_watts": 1800,
@@ -5020,30 +5262,30 @@
       "retailer": "Jackery",
       "price_low_6mo_usd": 899,
       "price_high_6mo_usd": 2899,
-      "price_points_6mo": 127,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 147,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "jackery-2000plus-4085wh-2x200w",
       "brand": "Jackery",
       "name": "Jackery 2000 Plus + PackPlus E2000 Battery + 2x 200W Panels (4085Wh)",
       "url": "https://offgridempire.com/kits/jackery-2000plus-4085wh-2x200w",
-      "listed_price_usd": 1979,
+      "listed_price_usd": 1880,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 1979,
+      "real_build_cost_usd": 1880,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.48,
-      "cost_per_w_usd": 4.95,
+      "cost_per_wh_usd": 0.46,
+      "cost_per_w_usd": 4.7,
       "panel_watts": 400,
       "storage_wh": 4085,
       "inverter_watts": 3000,
       "voltage": 48,
       "chemistry": "LiFePO4",
-      "retailer": "Jackery",
-      "price_low_6mo_usd": 1979,
+      "retailer": "Amazon",
+      "price_low_6mo_usd": 1880.05,
       "price_high_6mo_usd": 4999,
-      "price_points_6mo": 197,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 217,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-0-solar-panels-0-emp-bags-0-led-light-st",
@@ -5064,8 +5306,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1499,
       "price_high_6mo_usd": 2998,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-0-solar-panels-0-emp-bags-1-led-light-st",
@@ -5086,8 +5328,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1538,
       "price_high_6mo_usd": 3037,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-0-solar-panels-1-emp-bag-0-led-light-str",
@@ -5108,8 +5350,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1698,
       "price_high_6mo_usd": 3297,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-0-solar-panels-1-emp-bag-1-led-light-str",
@@ -5130,8 +5372,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1737,
       "price_high_6mo_usd": 3336,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-1-solar-panel-0-emp-bags-0-led-light-str",
@@ -5152,8 +5394,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1777,
       "price_high_6mo_usd": 1927,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-1-solar-panel-0-emp-bags-1-led-light-str",
@@ -5174,8 +5416,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1816,
       "price_high_6mo_usd": 1966,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-1-solar-panel-1-emp-bag-0-led-light-stri",
@@ -5196,8 +5438,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1926,
       "price_high_6mo_usd": 2226,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-1-solar-panel-1-emp-bag-1-led-light-stri",
@@ -5218,8 +5460,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1965,
       "price_high_6mo_usd": 2265,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-1-solar-panels-0-emp-bags-0-led-light-st",
@@ -5240,8 +5482,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3226,
       "price_high_6mo_usd": 3226,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-1-solar-panels-0-emp-bags-1-led-light-st",
@@ -5262,8 +5504,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3265,
       "price_high_6mo_usd": 3265,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-1-solar-panels-1-emp-bag-0-led-light-str",
@@ -5284,8 +5526,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3525,
       "price_high_6mo_usd": 3525,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-1-solar-panels-1-emp-bag-1-led-light-str",
@@ -5306,8 +5548,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3564,
       "price_high_6mo_usd": 3564,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-2-solar-panels-0-emp-bags-0-led-light-st",
@@ -5328,8 +5570,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1926,
       "price_high_6mo_usd": 3425,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-2-solar-panels-0-emp-bags-1-led-light-st",
@@ -5350,8 +5592,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1965,
       "price_high_6mo_usd": 3464,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-2-solar-panels-1-emp-bag-0-led-light-str",
@@ -5372,8 +5614,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2125,
       "price_high_6mo_usd": 3724,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-2-solar-panels-1-emp-bag-1-led-light-str",
@@ -5394,8 +5636,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2164,
       "price_high_6mo_usd": 3763,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-3-solar-panels-0-emp-bags-0-led-light-st",
@@ -5416,8 +5658,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2125,
       "price_high_6mo_usd": 3624,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-3-solar-panels-0-emp-bags-1-led-light-st",
@@ -5438,8 +5680,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2164,
       "price_high_6mo_usd": 3663,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-3-solar-panels-1-emp-bag-0-led-light-str",
@@ -5460,8 +5702,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2324,
       "price_high_6mo_usd": 3923,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-3-solar-panels-1-emp-bag-1-led-light-str",
@@ -5482,8 +5724,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2363,
       "price_high_6mo_usd": 3962,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-4-solar-panels-0-emp-bags-0-led-light-st",
@@ -5504,8 +5746,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2324,
       "price_high_6mo_usd": 3823,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-4-solar-panels-0-emp-bags-1-led-light-st",
@@ -5526,8 +5768,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2363,
       "price_high_6mo_usd": 3862,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-4-solar-panels-1-emp-bag-0-led-light-str",
@@ -5548,8 +5790,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2523,
       "price_high_6mo_usd": 4122,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-4-solar-panels-1-emp-bag-1-led-light-str",
@@ -5570,8 +5812,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2562,
       "price_high_6mo_usd": 4161,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-5-solar-panels-0-emp-bags-0-led-light-st",
@@ -5592,8 +5834,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2523,
       "price_high_6mo_usd": 4022,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-5-solar-panels-0-emp-bags-1-led-light-st",
@@ -5614,8 +5856,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2523,
       "price_high_6mo_usd": 4061,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-5-solar-panels-1-emp-bag-0-led-light-str",
@@ -5636,8 +5878,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2722,
       "price_high_6mo_usd": 4321,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-5-solar-panels-1-emp-bag-1-led-light-str",
@@ -5658,8 +5900,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2761,
       "price_high_6mo_usd": 4360,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-6-solar-panels-0-emp-bags-0-led-light-st",
@@ -5680,8 +5922,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2722,
       "price_high_6mo_usd": 4221,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-6-solar-panels-0-emp-bags-1-led-light-st",
@@ -5702,8 +5944,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2761,
       "price_high_6mo_usd": 4260,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-6-solar-panels-1-emp-bag-0-led-light-str",
@@ -5724,8 +5966,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2921,
       "price_high_6mo_usd": 4520,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "lion-energy-100w-lion-energy-6-solar-panels-1-emp-bag-1-led-light-str",
@@ -5746,8 +5988,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 2960,
       "price_high_6mo_usd": 4559,
-      "price_points_6mo": 72,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 92,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "new-use-energy-400w-nue-suncase-suncase-2425-and-1-x-nuesolar-240w-porta",
@@ -5768,8 +6010,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3555,
       "price_high_6mo_usd": 3555,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "new-use-energy-400w-nue-suncase-suncase-2425-and-3-x-nuesolar-120w-porta",
@@ -5790,8 +6032,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3950,
       "price_high_6mo_usd": 3950,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "new-use-energy-400w-nue-suncase-suncase-2425-and-3-x-nuesolar-240w-porta",
@@ -5812,8 +6054,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 4700,
       "price_high_6mo_usd": 4700,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "new-use-energy-400w-nue-suncase-suncase-2425-unit-only",
@@ -5834,8 +6076,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 3060,
       "price_high_6mo_usd": 3060,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "new-use-energy-400w-nue-suncase-suncase-605-and-1-x-nuesolar-120w-portab",
@@ -5856,8 +6098,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1160,
       "price_high_6mo_usd": 1260,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "new-use-energy-400w-nue-suncase-suncase-605-and-1-x-nuesolar-240w-portab",
@@ -5878,8 +6120,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 1120,
       "price_high_6mo_usd": 1520,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "new-use-energy-400w-nue-suncase-suncase-605-main-unit-only",
@@ -5900,8 +6142,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 980,
       "price_high_6mo_usd": 980,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "new-use-energy-5.12kw-nue-suncase-suncase-3651-and-1-x-nuesolar-240w-porta",
@@ -5916,14 +6158,14 @@
       "cost_per_w_usd": 21.25,
       "panel_watts": 240,
       "storage_wh": 5120,
-      "inverter_watts": 240000,
+      "inverter_watts": 3600,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 5100,
       "price_high_6mo_usd": 5100,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "new-use-energy-5.12kw-nue-suncase-suncase-3651-and-3-x-nuesolar-240w-porta",
@@ -5938,14 +6180,14 @@
       "cost_per_w_usd": 25.83,
       "panel_watts": 240,
       "storage_wh": 5120,
-      "inverter_watts": 240000,
+      "inverter_watts": 3600,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 6200,
       "price_high_6mo_usd": 6200,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "new-use-energy-5.12kw-nue-suncase-suncase-3651-main-unit-only",
@@ -5960,48 +6202,26 @@
       "cost_per_w_usd": 19,
       "panel_watts": 240,
       "storage_wh": 5120,
-      "inverter_watts": 240000,
+      "inverter_watts": 3600,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 4560,
       "price_high_6mo_usd": 4560,
-      "price_points_6mo": 66,
-      "price_observed_at": "2026-06-21"
-    },
-    {
-      "slug": "powlsojx-powlsojx-solar-grid-tie-micro-inverter-mppt-smart-m",
-      "brand": "POWLSOJX",
-      "name": "POWLSOJX Solar Grid Tie Micro Inverter MPPT Smart Micro PV System 180W 500W 700W DC 18V-50V to AC Output 120V/230V Auto (180W)",
-      "url": "https://offgridempire.com/kits/powlsojx-powlsojx-solar-grid-tie-micro-inverter-mppt-smart-m",
-      "listed_price_usd": 45,
-      "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 45,
-      "completeness_pct": 0,
-      "cost_per_wh_usd": null,
-      "cost_per_w_usd": null,
-      "panel_watts": 0,
-      "storage_wh": 0,
-      "inverter_watts": 0,
-      "voltage": 12,
-      "chemistry": "Unknown",
-      "retailer": "Amazon",
-      "price_low_6mo_usd": 45.12,
-      "price_high_6mo_usd": 45.12,
-      "price_points_6mo": 41,
-      "price_observed_at": "2026-06-17"
+      "price_points_6mo": 86,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-10.6kw-prime-pro-eg4-ll-s-30-72kwh-premium-closed-loop-co",
       "brand": "PRIME",
       "name": "PRIME 10.6kW Complete Solar Kit - EG4 18kPV Inverter - 28-30kWh Lithium Battery [PRIME PRO] - EG4 LL-S - 30.72kWh - Premium - Closed Loop - Code Compliant / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/prime-10.6kw-prime-pro-eg4-ll-s-30-72kwh-premium-closed-loop-co",
-      "listed_price_usd": 18789,
+      "listed_price_usd": 18939,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 18789,
+      "real_build_cost_usd": 18939,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.61,
-      "cost_per_w_usd": 1.78,
+      "cost_per_wh_usd": 0.62,
+      "cost_per_w_usd": 1.79,
       "panel_watts": 10560,
       "storage_wh": 30720,
       "inverter_watts": 21000,
@@ -6010,20 +6230,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 18789,
       "price_high_6mo_usd": 19989,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-10.6kw-prime-pro-eg4-lp4-30-7kwh-budget-friendly-closed-l",
       "brand": "PRIME",
       "name": "PRIME 10.6kW Complete Solar Kit - EG4 18kPV Inverter - 28-30kWh Lithium Battery [PRIME PRO] - EG4 LP4 - 30.7kWh - Budget-Friendly - Closed Loop - Code Compliant / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/prime-10.6kw-prime-pro-eg4-lp4-30-7kwh-budget-friendly-closed-l",
-      "listed_price_usd": 18289,
+      "listed_price_usd": 18389,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 18289,
+      "real_build_cost_usd": 18389,
       "completeness_pct": 86,
       "cost_per_wh_usd": 0.6,
-      "cost_per_w_usd": 1.73,
+      "cost_per_w_usd": 1.74,
       "panel_watts": 10560,
       "storage_wh": 30700,
       "inverter_watts": 21000,
@@ -6032,42 +6252,42 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 18289,
       "price_high_6mo_usd": 19489,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-10.6kw-prime-pro-eg4-wallmount-indoors-28-6kwh-budget-fri",
       "brand": "PRIME",
       "name": "PRIME 10.6kW Complete Solar Kit - EG4 18kPV Inverter - 28-30kWh Lithium Battery [PRIME PRO] - EG4 WallMount Indoors - 28.6kWh - Budget-Friendly - Closed Loop - Code Compliant / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/prime-10.6kw-prime-pro-eg4-wallmount-indoors-28-6kwh-budget-fri",
-      "listed_price_usd": 16939,
+      "listed_price_usd": 15989,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 16939,
+      "real_build_cost_usd": 15989,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.59,
-      "cost_per_w_usd": 1.6,
+      "cost_per_wh_usd": 0.56,
+      "cost_per_w_usd": 1.51,
       "panel_watts": 10560,
       "storage_wh": 28600,
       "inverter_watts": 21000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 16889,
+      "price_low_6mo_usd": 15989,
       "price_high_6mo_usd": 18289,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-4.4kw-prime-plus-alpha-5-pro-10-2kwh-budget-friendly-open",
       "brand": "PRIME",
       "name": "PRIME 4.4kW Complete Solar Kit - EG4 6000XP Inverter - 10-14kWh Lithium Battery [PRIME PLUS] - ALPHA 5 PRO - 10.2kWh - Budget-Friendly - Open Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/prime-4.4kw-prime-plus-alpha-5-pro-10-2kwh-budget-friendly-open",
-      "listed_price_usd": 6489,
+      "listed_price_usd": 6189,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 6489,
+      "real_build_cost_usd": 6189,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.64,
-      "cost_per_w_usd": 1.47,
+      "cost_per_wh_usd": 0.61,
+      "cost_per_w_usd": 1.41,
       "panel_watts": 4400,
       "storage_wh": 10200,
       "inverter_watts": 6000,
@@ -6076,17 +6296,61 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 5749,
       "price_high_6mo_usd": 6489,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-4.4kw-prime-plus-eg4-ll-s-10-2kwh-premium-closed-loop-gro",
       "brand": "PRIME",
       "name": "PRIME 4.4kW Complete Solar Kit - EG4 6000XP Inverter - 10-14kWh Lithium Battery [PRIME PLUS] - EG4 LL-S - 10.2kWh - Premium - Closed Loop / Ground Mount - Ballast - IR-30",
       "url": "https://offgridempire.com/kits/prime-4.4kw-prime-plus-eg4-ll-s-10-2kwh-premium-closed-loop-gro",
-      "listed_price_usd": 8289,
+      "listed_price_usd": 8519,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 8289,
+      "real_build_cost_usd": 8519,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 0.84,
+      "cost_per_w_usd": 1.94,
+      "panel_watts": 4400,
+      "storage_wh": 10200,
+      "inverter_watts": 6000,
+      "voltage": 48,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 7489,
+      "price_high_6mo_usd": 8889,
+      "price_points_6mo": 87,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "prime-4.4kw-prime-plus-eg4-ll-s-10-2kwh-premium-closed-loop-i-l",
+      "brand": "PRIME",
+      "name": "PRIME 4.4kW Complete Solar Kit - EG4 6000XP Inverter - 10-14kWh Lithium Battery [PRIME PLUS] - EG4 LL-S - 10.2kWh - Premium - Closed Loop / I’ll Handle My Own Racking",
+      "url": "https://offgridempire.com/kits/prime-4.4kw-prime-plus-eg4-ll-s-10-2kwh-premium-closed-loop-i-l",
+      "listed_price_usd": 7169,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 7169,
+      "completeness_pct": 86,
+      "cost_per_wh_usd": 0.7,
+      "cost_per_w_usd": 1.63,
+      "panel_watts": 4400,
+      "storage_wh": 10200,
+      "inverter_watts": 6000,
+      "voltage": 48,
+      "chemistry": "LiFePO4",
+      "retailer": "Shop Solar Kits",
+      "price_low_6mo_usd": 6389,
+      "price_high_6mo_usd": 7389,
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
+    },
+    {
+      "slug": "prime-4.4kw-prime-plus-eg4-ll-s-10-2kwh-premium-closed-loop-roo",
+      "brand": "PRIME",
+      "name": "PRIME 4.4kW Complete Solar Kit - EG4 6000XP Inverter - 10-14kWh Lithium Battery [PRIME PLUS] - EG4 LL-S - 10.2kWh - Premium - Closed Loop / Roof Rack - Standard - IronRidge",
+      "url": "https://offgridempire.com/kits/prime-4.4kw-prime-plus-eg4-ll-s-10-2kwh-premium-closed-loop-roo",
+      "listed_price_usd": 8259,
+      "missing_parts_cost_usd": 0,
+      "real_build_cost_usd": 8259,
       "completeness_pct": 86,
       "cost_per_wh_usd": 0.81,
       "cost_per_w_usd": 1.88,
@@ -6096,66 +6360,22 @@
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 7489,
-      "price_high_6mo_usd": 8889,
-      "price_points_6mo": 67,
-      "price_observed_at": "2026-06-21"
-    },
-    {
-      "slug": "prime-4.4kw-prime-plus-eg4-ll-s-10-2kwh-premium-closed-loop-i-l",
-      "brand": "PRIME",
-      "name": "PRIME 4.4kW Complete Solar Kit - EG4 6000XP Inverter - 10-14kWh Lithium Battery [PRIME PLUS] - EG4 LL-S - 10.2kWh - Premium - Closed Loop / I’ll Handle My Own Racking",
-      "url": "https://offgridempire.com/kits/prime-4.4kw-prime-plus-eg4-ll-s-10-2kwh-premium-closed-loop-i-l",
-      "listed_price_usd": 7089,
-      "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 7089,
-      "completeness_pct": 86,
-      "cost_per_wh_usd": 0.69,
-      "cost_per_w_usd": 1.61,
-      "panel_watts": 4400,
-      "storage_wh": 10200,
-      "inverter_watts": 6000,
-      "voltage": 48,
-      "chemistry": "LiFePO4",
-      "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 6389,
-      "price_high_6mo_usd": 7389,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
-    },
-    {
-      "slug": "prime-4.4kw-prime-plus-eg4-ll-s-10-2kwh-premium-closed-loop-roo",
-      "brand": "PRIME",
-      "name": "PRIME 4.4kW Complete Solar Kit - EG4 6000XP Inverter - 10-14kWh Lithium Battery [PRIME PLUS] - EG4 LL-S - 10.2kWh - Premium - Closed Loop / Roof Rack - Standard - IronRidge",
-      "url": "https://offgridempire.com/kits/prime-4.4kw-prime-plus-eg4-ll-s-10-2kwh-premium-closed-loop-roo",
-      "listed_price_usd": 8189,
-      "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 8189,
-      "completeness_pct": 86,
-      "cost_per_wh_usd": 0.8,
-      "cost_per_w_usd": 1.86,
-      "panel_watts": 4400,
-      "storage_wh": 10200,
-      "inverter_watts": 6000,
-      "voltage": 48,
-      "chemistry": "LiFePO4",
-      "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 7339,
-      "price_high_6mo_usd": 8189,
-      "price_points_6mo": 69,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 8259,
+      "price_points_6mo": 89,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-4.4kw-prime-plus-eg4-lp4-10-2kwh-budget-friendly-closed-l",
       "brand": "PRIME",
       "name": "PRIME 4.4kW Complete Solar Kit - EG4 6000XP Inverter - 10-14kWh Lithium Battery [PRIME PLUS] - EG4 LP4 - 10.2kWh - Budget-Friendly - Closed Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/prime-4.4kw-prime-plus-eg4-lp4-10-2kwh-budget-friendly-closed-l",
-      "listed_price_usd": 6989,
+      "listed_price_usd": 7039,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 6989,
+      "real_build_cost_usd": 7039,
       "completeness_pct": 86,
       "cost_per_wh_usd": 0.69,
-      "cost_per_w_usd": 1.59,
+      "cost_per_w_usd": 1.6,
       "panel_watts": 4400,
       "storage_wh": 10200,
       "inverter_watts": 6000,
@@ -6164,20 +6384,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 6139,
       "price_high_6mo_usd": 7339,
-      "price_points_6mo": 71,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 91,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-4.4kw-prime-plus-eg4-wallmount-indoor-14-3kwh-budget-frie",
       "brand": "PRIME",
       "name": "PRIME 4.4kW Complete Solar Kit - EG4 6000XP Inverter - 10-14kWh Lithium Battery [PRIME PLUS] - EG4 WallMount Indoor - 14.3kWh - Budget-Friendly - Closed Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/prime-4.4kw-prime-plus-eg4-wallmount-indoor-14-3kwh-budget-frie",
-      "listed_price_usd": 7309,
+      "listed_price_usd": 7109,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 7309,
+      "real_build_cost_usd": 7109,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.51,
-      "cost_per_w_usd": 1.66,
+      "cost_per_wh_usd": 0.5,
+      "cost_per_w_usd": 1.62,
       "panel_watts": 4400,
       "storage_wh": 14300,
       "inverter_watts": 6000,
@@ -6186,20 +6406,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 6549,
       "price_high_6mo_usd": 7959,
-      "price_points_6mo": 70,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 90,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-7.92kw-prime-max-eg4-ll-s-15-36kwh-premium-closed-loop-gr",
       "brand": "PRIME",
       "name": "PRIME 7.92kW Complete Solar Kit - EG4 12000XP Inverter - 14-15kWh Lithium Battery [PRIME MAX] - EG4 LL-S - 15.36kWh - Premium - Closed Loop / Ground Mount - Seasonal Adjust - SkyRack HD",
       "url": "https://offgridempire.com/kits/prime-7.92kw-prime-max-eg4-ll-s-15-36kwh-premium-closed-loop-gr",
-      "listed_price_usd": 15689,
+      "listed_price_usd": 16349,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 15689,
+      "real_build_cost_usd": 16349,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 1.02,
-      "cost_per_w_usd": 1.98,
+      "cost_per_wh_usd": 1.06,
+      "cost_per_w_usd": 2.06,
       "panel_watts": 7920,
       "storage_wh": 15360,
       "inverter_watts": 12000,
@@ -6208,20 +6428,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 15689,
       "price_high_6mo_usd": 16489,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-7.92kw-prime-max-eg4-ll-s-15-36kwh-premium-closed-loop-i",
       "brand": "PRIME",
       "name": "PRIME 7.92kW Complete Solar Kit - EG4 12000XP Inverter - 14-15kWh Lithium Battery [PRIME MAX] - EG4 LL-S - 15.36kWh - Premium - Closed Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/prime-7.92kw-prime-max-eg4-ll-s-15-36kwh-premium-closed-loop-i",
-      "listed_price_usd": 10159,
+      "listed_price_usd": 10689,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 10159,
+      "real_build_cost_usd": 10689,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.66,
-      "cost_per_w_usd": 1.28,
+      "cost_per_wh_usd": 0.7,
+      "cost_per_w_usd": 1.35,
       "panel_watts": 7920,
       "storage_wh": 15360,
       "inverter_watts": 12000,
@@ -6230,20 +6450,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 10159,
       "price_high_6mo_usd": 10959,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-7.92kw-prime-max-eg4-ll-s-15-36kwh-premium-closed-loop-ro",
       "brand": "PRIME",
       "name": "PRIME 7.92kW Complete Solar Kit - EG4 12000XP Inverter - 14-15kWh Lithium Battery [PRIME MAX] - EG4 LL-S - 15.36kWh - Premium - Closed Loop / Roof Rack - Standard - IronRidge",
       "url": "https://offgridempire.com/kits/prime-7.92kw-prime-max-eg4-ll-s-15-36kwh-premium-closed-loop-ro",
-      "listed_price_usd": 12139,
+      "listed_price_usd": 12589,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 12139,
+      "real_build_cost_usd": 12589,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.79,
-      "cost_per_w_usd": 1.53,
+      "cost_per_wh_usd": 0.82,
+      "cost_per_w_usd": 1.59,
       "panel_watts": 7920,
       "storage_wh": 15360,
       "inverter_watts": 12000,
@@ -6251,21 +6471,21 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 12139,
-      "price_high_6mo_usd": 12489,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 12589,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-7.92kw-prime-max-eg4-lp4-15-3kwh-budget-friendly-closed-l",
       "brand": "PRIME",
       "name": "PRIME 7.92kW Complete Solar Kit - EG4 12000XP Inverter - 14-15kWh Lithium Battery [PRIME MAX] - EG4 LP4 - 15.3kWh - Budget-Friendly - Closed Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/prime-7.92kw-prime-max-eg4-lp4-15-3kwh-budget-friendly-closed-l",
-      "listed_price_usd": 9999,
+      "listed_price_usd": 10649,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 9999,
+      "real_build_cost_usd": 10649,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.65,
-      "cost_per_w_usd": 1.26,
+      "cost_per_wh_usd": 0.7,
+      "cost_per_w_usd": 1.34,
       "panel_watts": 7920,
       "storage_wh": 15300,
       "inverter_watts": 12000,
@@ -6274,8 +6494,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 9989,
       "price_high_6mo_usd": 10889,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "prime-7.92kw-prime-max-eg4-wallmount-indoor-14-3kwh-budget-frie",
@@ -6296,8 +6516,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 9239,
       "price_high_6mo_usd": 9989,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "pulsar-pulsar-inverter-generator-parallel-kit-30-amp-120v-tt",
@@ -6318,8 +6538,8 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 54.99,
       "price_high_6mo_usd": 54.99,
-      "price_points_6mo": 45,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 65,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "renogy-1000w-cabin-kit",
@@ -6384,8 +6604,8 @@
       "retailer": "Renogy",
       "price_low_6mo_usd": 6999.99,
       "price_high_6mo_usd": 8449.99,
-      "price_points_6mo": 87,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 107,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "renogy-200w-premium-mppt-40a",
@@ -6395,7 +6615,7 @@
       "listed_price_usd": 470,
       "missing_parts_cost_usd": 408,
       "real_build_cost_usd": 878,
-      "completeness_pct": 0,
+      "completeness_pct": 57,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": 4.39,
       "panel_watts": 200,
@@ -6406,52 +6626,52 @@
       "retailer": "Renogy",
       "price_low_6mo_usd": 199.99,
       "price_high_6mo_usd": 960.99,
-      "price_points_6mo": 491,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 511,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "renogy-200w-rv-kit",
       "brand": "Renogy",
       "name": "Renogy 200W 12V Monocrystalline RV Solar Kit with Adventurer 30A PWM Controller",
       "url": "https://offgridempire.com/kits/renogy-200w-rv-kit",
-      "listed_price_usd": 286,
+      "listed_price_usd": 290,
       "missing_parts_cost_usd": 408,
-      "real_build_cost_usd": 694,
+      "real_build_cost_usd": 698,
       "completeness_pct": 57,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 3.47,
+      "cost_per_w_usd": 3.49,
       "panel_watts": 200,
       "storage_wh": 0,
       "inverter_watts": 0,
       "voltage": 12,
       "chemistry": "None",
-      "retailer": "Amazon",
+      "retailer": "Renogy",
       "price_low_6mo_usd": 200.69,
       "price_high_6mo_usd": 1039,
-      "price_points_6mo": 565,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 585,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "renogy-200w-starter-pwm",
       "brand": "Renogy",
       "name": "Renogy 200W 12V Monocrystalline Solar Starter Kit with 30A PWM Controller",
       "url": "https://offgridempire.com/kits/renogy-200w-starter-pwm",
-      "listed_price_usd": 150,
+      "listed_price_usd": 230,
       "missing_parts_cost_usd": 408,
-      "real_build_cost_usd": 558,
-      "completeness_pct": 0,
+      "real_build_cost_usd": 638,
+      "completeness_pct": 57,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 2.79,
+      "cost_per_w_usd": 3.19,
       "panel_watts": 200,
       "storage_wh": 0,
       "inverter_watts": 0,
       "voltage": 12,
       "chemistry": "None",
-      "retailer": "Amazon",
+      "retailer": "Renogy",
       "price_low_6mo_usd": 139.99,
       "price_high_6mo_usd": 409.99,
-      "price_points_6mo": 562,
-      "price_observed_at": "2026-06-20"
+      "price_points_6mo": 582,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "renogy-400w-bluetooth-kit",
@@ -6459,11 +6679,11 @@
       "name": "Renogy 400W 12V Solar Kit with 30A Controller + Bluetooth",
       "url": "https://offgridempire.com/kits/renogy-400w-bluetooth-kit",
       "listed_price_usd": 450,
-      "missing_parts_cost_usd": 399,
-      "real_build_cost_usd": 849,
+      "missing_parts_cost_usd": 425,
+      "real_build_cost_usd": 875,
       "completeness_pct": 71,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 2.12,
+      "cost_per_w_usd": 2.19,
       "panel_watts": 400,
       "storage_wh": 0,
       "inverter_watts": 0,
@@ -6502,22 +6722,22 @@
       "brand": "Renogy",
       "name": "Renogy 400W 12V Premium Solar Kit with 40A MPPT",
       "url": "https://offgridempire.com/kits/renogy-400w-premium-mppt",
-      "listed_price_usd": 495,
-      "missing_parts_cost_usd": 399,
-      "real_build_cost_usd": 894,
+      "listed_price_usd": 640,
+      "missing_parts_cost_usd": 425,
+      "real_build_cost_usd": 1065,
       "completeness_pct": 71,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 2.23,
+      "cost_per_w_usd": 2.66,
       "panel_watts": 400,
       "storage_wh": 0,
       "inverter_watts": 0,
       "voltage": 12,
       "chemistry": "None",
-      "retailer": "Amazon",
+      "retailer": "Renogy",
       "price_low_6mo_usd": 428.53,
       "price_high_6mo_usd": 1740.99,
-      "price_points_6mo": 554,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 574,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "renogy-400w-starter-mppt",
@@ -6527,7 +6747,7 @@
       "listed_price_usd": 700,
       "missing_parts_cost_usd": 408,
       "real_build_cost_usd": 1108,
-      "completeness_pct": 0,
+      "completeness_pct": 57,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": 2.77,
       "panel_watts": 400,
@@ -6538,8 +6758,8 @@
       "retailer": "Renogy",
       "price_low_6mo_usd": 365.94,
       "price_high_6mo_usd": 1687.14,
-      "price_points_6mo": 571,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 591,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "renogy-400w-starter-pwm",
@@ -6549,7 +6769,7 @@
       "listed_price_usd": 395,
       "missing_parts_cost_usd": 408,
       "real_build_cost_usd": 803,
-      "completeness_pct": 0,
+      "completeness_pct": 57,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": 2.01,
       "panel_watts": 400,
@@ -6560,8 +6780,8 @@
       "retailer": "Renogy",
       "price_low_6mo_usd": 319,
       "price_high_6mo_usd": 1456.1,
-      "price_points_6mo": 595,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 615,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "renogy-600w-premium-kit",
@@ -6571,7 +6791,7 @@
       "listed_price_usd": 1140,
       "missing_parts_cost_usd": 798,
       "real_build_cost_usd": 1938,
-      "completeness_pct": 0,
+      "completeness_pct": 71,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": 3.23,
       "panel_watts": 600,
@@ -6582,8 +6802,8 @@
       "retailer": "Renogy",
       "price_low_6mo_usd": 933.99,
       "price_high_6mo_usd": 3399.99,
-      "price_points_6mo": 247,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 267,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "renogy-800w-cabin-kit",
@@ -6591,11 +6811,11 @@
       "name": "Renogy 800W 12V Solar Cabin Kit",
       "url": "https://offgridempire.com/kits/renogy-800w-cabin-kit",
       "listed_price_usd": 900,
-      "missing_parts_cost_usd": 1051,
-      "real_build_cost_usd": 1951,
-      "completeness_pct": 0,
+      "missing_parts_cost_usd": 1042,
+      "real_build_cost_usd": 1942,
+      "completeness_pct": 71,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 2.44,
+      "cost_per_w_usd": 2.43,
       "panel_watts": 800,
       "storage_wh": 0,
       "inverter_watts": 0,
@@ -6604,7 +6824,7 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 899.99,
       "price_high_6mo_usd": 1899.99,
-      "price_points_6mo": 180,
+      "price_points_6mo": 200,
       "price_observed_at": "2026-03-23"
     },
     {
@@ -6612,9 +6832,9 @@
       "brand": "Renogy",
       "name": "Renogy ShadowFlux Solar Panels, N-Type Anti-Shading Panels for 12V/24V Systems with 25% High-Efficiency PV Modules, 200W ShadowFlux N-Type Panel",
       "url": "https://offgridempire.com/kits/renogy-shadowflux-s-ntype-antishading-panels-for-12v24v-syst",
-      "listed_price_usd": 202,
+      "listed_price_usd": 238,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 202,
+      "real_build_cost_usd": 238,
       "completeness_pct": 0,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": null,
@@ -6624,10 +6844,10 @@
       "voltage": 12,
       "chemistry": "Unknown",
       "retailer": "Amazon",
-      "price_low_6mo_usd": 202.29,
+      "price_low_6mo_usd": 194.39,
       "price_high_6mo_usd": 239.99,
-      "price_points_6mo": 45,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 65,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "rich-solar-400w-premium-kit",
@@ -6648,8 +6868,8 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 615.99,
       "price_high_6mo_usd": 745.99,
-      "price_points_6mo": 103,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 123,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "rich-solar-800w-premium-kit",
@@ -6670,20 +6890,20 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 1299.99,
       "price_high_6mo_usd": 1399.99,
-      "price_points_6mo": 96,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 116,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-10.6kw-select-max-eg4-ll-s-20-48kwh-premium-closed-loop-gr",
       "brand": "SELECT",
       "name": "SELECT 10.6kW Complete Solar Kit - EG4 FlexBoss21 Inverter - 20-28kWh Lithium Battery [SELECT MAX] - EG4-LL-S - 20.48kWh - Premium - Closed Loop / Ground Mount - Seasonal Adjust - SkyRack HD",
       "url": "https://offgridempire.com/kits/select-10.6kw-select-max-eg4-ll-s-20-48kwh-premium-closed-loop-gr",
-      "listed_price_usd": 21589,
+      "listed_price_usd": 21789,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 21589,
+      "real_build_cost_usd": 21789,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 1.05,
-      "cost_per_w_usd": 2.04,
+      "cost_per_wh_usd": 1.06,
+      "cost_per_w_usd": 2.06,
       "panel_watts": 10560,
       "storage_wh": 20480,
       "inverter_watts": 16000,
@@ -6691,21 +6911,21 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 21589,
-      "price_high_6mo_usd": 21589,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 21789,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-10.6kw-select-max-eg4-ll-s-20-48kwh-premium-closed-loop-i",
       "brand": "SELECT",
       "name": "SELECT 10.6kW Complete Solar Kit - EG4 FlexBoss21 Inverter - 20-28kWh Lithium Battery [SELECT MAX] - EG4-LL-S - 20.48kWh - Premium - Closed Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/select-10.6kw-select-max-eg4-ll-s-20-48kwh-premium-closed-loop-i",
-      "listed_price_usd": 15289,
+      "listed_price_usd": 15489,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 15289,
+      "real_build_cost_usd": 15489,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.75,
-      "cost_per_w_usd": 1.45,
+      "cost_per_wh_usd": 0.76,
+      "cost_per_w_usd": 1.47,
       "panel_watts": 10560,
       "storage_wh": 20480,
       "inverter_watts": 16000,
@@ -6713,20 +6933,20 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 15289,
-      "price_high_6mo_usd": 15289,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 15489,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-10.6kw-select-max-eg4-ll-s-20-48kwh-premium-closed-loop-ro",
       "brand": "SELECT",
       "name": "SELECT 10.6kW Complete Solar Kit - EG4 FlexBoss21 Inverter - 20-28kWh Lithium Battery [SELECT MAX] - EG4-LL-S - 20.48kWh - Premium - Closed Loop / Roof Rack - Standard - IronRidge",
       "url": "https://offgridempire.com/kits/select-10.6kw-select-max-eg4-ll-s-20-48kwh-premium-closed-loop-ro",
-      "listed_price_usd": 17689,
+      "listed_price_usd": 17789,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 17689,
+      "real_build_cost_usd": 17789,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.86,
+      "cost_per_wh_usd": 0.87,
       "cost_per_w_usd": 1.68,
       "panel_watts": 10560,
       "storage_wh": 20480,
@@ -6735,21 +6955,21 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 17689,
-      "price_high_6mo_usd": 17689,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 17789,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-10.6kw-select-max-eg4-lp4-v2-server-rack-20-48kwh-budget-f",
       "brand": "SELECT",
       "name": "SELECT 10.6kW Complete Solar Kit - EG4 FlexBoss21 Inverter - 20-28kWh Lithium Battery [SELECT MAX] - EG4-LP4 V2 Server Rack - 20.48kWh - Budget-Friendly - Closed Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/select-10.6kw-select-max-eg4-lp4-v2-server-rack-20-48kwh-budget-f",
-      "listed_price_usd": 14889,
+      "listed_price_usd": 15189,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 14889,
+      "real_build_cost_usd": 15189,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.73,
-      "cost_per_w_usd": 1.41,
+      "cost_per_wh_usd": 0.74,
+      "cost_per_w_usd": 1.44,
       "panel_watts": 10560,
       "storage_wh": 20480,
       "inverter_watts": 16000,
@@ -6757,21 +6977,21 @@
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 14889,
-      "price_high_6mo_usd": 14889,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 15189,
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-10.6kw-select-max-eg4-wallmount-indoor-28-6kwh-budget-frie",
       "brand": "SELECT",
       "name": "SELECT 10.6kW Complete Solar Kit - EG4 FlexBoss21 Inverter - 20-28kWh Lithium Battery [SELECT MAX] - EG4 WallMount Indoor - 28.6kWh - Budget-Friendly - Closed Loop - Code Compliant / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/select-10.6kw-select-max-eg4-wallmount-indoor-28-6kwh-budget-frie",
-      "listed_price_usd": 15789,
+      "listed_price_usd": 15689,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 15789,
+      "real_build_cost_usd": 15689,
       "completeness_pct": 86,
       "cost_per_wh_usd": 0.55,
-      "cost_per_w_usd": 1.5,
+      "cost_per_w_usd": 1.49,
       "panel_watts": 10560,
       "storage_wh": 28600,
       "inverter_watts": 16000,
@@ -6780,130 +7000,130 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 15489,
       "price_high_6mo_usd": 17289,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-15.84kw-select-pro-eg4-ll-s-30-72kwh-premium-closed-loop-gr",
       "brand": "SELECT",
       "name": "SELECT 15.84kW Complete Solar Kit - EG4 FlexBoss21 Inverter + GridBoss - 28-30kWh Lithium Battery [SELECT PRO] - EG4-LL-S - 30.72kWh - Premium - Closed Loop / Ground Mount - Seasonal Adjust - SkyRack HD",
       "url": "https://offgridempire.com/kits/select-15.84kw-select-pro-eg4-ll-s-30-72kwh-premium-closed-loop-gr",
-      "listed_price_usd": 31989,
+      "listed_price_usd": 30889,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 31989,
+      "real_build_cost_usd": 30889,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 1.04,
-      "cost_per_w_usd": 2.02,
+      "cost_per_wh_usd": 1.01,
+      "cost_per_w_usd": 1.95,
       "panel_watts": 15840,
       "storage_wh": 30720,
       "inverter_watts": 16000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 31989,
+      "price_low_6mo_usd": 30889,
       "price_high_6mo_usd": 31989,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-15.84kw-select-pro-eg4-ll-s-30-72kwh-premium-closed-loop-i",
       "brand": "SELECT",
       "name": "SELECT 15.84kW Complete Solar Kit - EG4 FlexBoss21 Inverter + GridBoss - 28-30kWh Lithium Battery [SELECT PRO] - EG4-LL-S - 30.72kWh - Premium - Closed Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/select-15.84kw-select-pro-eg4-ll-s-30-72kwh-premium-closed-loop-i",
-      "listed_price_usd": 24689,
+      "listed_price_usd": 22689,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 24689,
+      "real_build_cost_usd": 22689,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.8,
-      "cost_per_w_usd": 1.56,
+      "cost_per_wh_usd": 0.74,
+      "cost_per_w_usd": 1.43,
       "panel_watts": 15840,
       "storage_wh": 30720,
       "inverter_watts": 16000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 24689,
+      "price_low_6mo_usd": 22689,
       "price_high_6mo_usd": 24689,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-15.84kw-select-pro-eg4-ll-s-30-72kwh-premium-closed-loop-ro",
       "brand": "SELECT",
       "name": "SELECT 15.84kW Complete Solar Kit - EG4 FlexBoss21 Inverter + GridBoss - 28-30kWh Lithium Battery [SELECT PRO] - EG4-LL-S - 30.72kWh - Premium - Closed Loop / Roof Rack - Standard - IronRidge",
       "url": "https://offgridempire.com/kits/select-15.84kw-select-pro-eg4-ll-s-30-72kwh-premium-closed-loop-ro",
-      "listed_price_usd": 27689,
+      "listed_price_usd": 26539,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 27689,
+      "real_build_cost_usd": 26539,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.9,
-      "cost_per_w_usd": 1.75,
+      "cost_per_wh_usd": 0.86,
+      "cost_per_w_usd": 1.68,
       "panel_watts": 15840,
       "storage_wh": 30720,
       "inverter_watts": 16000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 27689,
+      "price_low_6mo_usd": 26539,
       "price_high_6mo_usd": 27689,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-15.84kw-select-pro-eg4-lp4-v2-server-rack-30-72kwh-budget-f",
       "brand": "SELECT",
       "name": "SELECT 15.84kW Complete Solar Kit - EG4 FlexBoss21 Inverter + GridBoss - 28-30kWh Lithium Battery [SELECT PRO] - EG4 LP4 V2 Server Rack - 30.72kWh - Budget-Friendly - Closed Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/select-15.84kw-select-pro-eg4-lp4-v2-server-rack-30-72kwh-budget-f",
-      "listed_price_usd": 23689,
+      "listed_price_usd": 22389,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 23689,
+      "real_build_cost_usd": 22389,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.77,
-      "cost_per_w_usd": 1.5,
+      "cost_per_wh_usd": 0.73,
+      "cost_per_w_usd": 1.41,
       "panel_watts": 15840,
       "storage_wh": 30720,
       "inverter_watts": 16000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 23689,
+      "price_low_6mo_usd": 22389,
       "price_high_6mo_usd": 23689,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-15.84kw-select-pro-eg4-wallmount-indoor-28-6kwh-budget-frie",
       "brand": "SELECT",
       "name": "SELECT 15.84kW Complete Solar Kit - EG4 FlexBoss21 Inverter + GridBoss - 28-30kWh Lithium Battery [SELECT PRO] - EG4 WallMount Indoor - 28.6kWh - Budget-Friendly - Closed Loop - Code Compliant / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/select-15.84kw-select-pro-eg4-wallmount-indoor-28-6kwh-budget-frie",
-      "listed_price_usd": 22689,
+      "listed_price_usd": 19859,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 22689,
+      "real_build_cost_usd": 19859,
       "completeness_pct": 86,
-      "cost_per_wh_usd": 0.79,
-      "cost_per_w_usd": 1.43,
+      "cost_per_wh_usd": 0.69,
+      "cost_per_w_usd": 1.25,
       "panel_watts": 15840,
       "storage_wh": 28600,
       "inverter_watts": 16000,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 20989,
+      "price_low_6mo_usd": 19859,
       "price_high_6mo_usd": 22689,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-7.92kw-select-plus-eg4-ll-s-20-48kwh-premium-closed-loop-gr",
       "brand": "SELECT",
       "name": "SELECT 7.92kW Complete Solar Kit - EG4 FlexBoss18 Inverter - 20-28kWh Lithium Battery [SELECT PLUS] - EG4-LL-S - 20.48kWh - Premium - Closed Loop / Ground Mount - Seasonal Adjust - SkyRack HD",
       "url": "https://offgridempire.com/kits/select-7.92kw-select-plus-eg4-ll-s-20-48kwh-premium-closed-loop-gr",
-      "listed_price_usd": 18789,
+      "listed_price_usd": 19569,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 18789,
+      "real_build_cost_usd": 19569,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.92,
-      "cost_per_w_usd": 2.37,
+      "cost_per_wh_usd": 0.96,
+      "cost_per_w_usd": 2.47,
       "panel_watts": 7920,
       "storage_wh": 20480,
       "inverter_watts": 0,
@@ -6912,20 +7132,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 18789,
       "price_high_6mo_usd": 19689,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-7.92kw-select-plus-eg4-ll-s-20-48kwh-premium-closed-loop-i",
       "brand": "SELECT",
       "name": "SELECT 7.92kW Complete Solar Kit - EG4 FlexBoss18 Inverter - 20-28kWh Lithium Battery [SELECT PLUS] - EG4-LL-S - 20.48kWh - Premium - Closed Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/select-7.92kw-select-plus-eg4-ll-s-20-48kwh-premium-closed-loop-i",
-      "listed_price_usd": 13489,
+      "listed_price_usd": 13689,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 13489,
+      "real_build_cost_usd": 13689,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.66,
-      "cost_per_w_usd": 1.7,
+      "cost_per_wh_usd": 0.67,
+      "cost_per_w_usd": 1.73,
       "panel_watts": 7920,
       "storage_wh": 20480,
       "inverter_watts": 0,
@@ -6934,17 +7154,17 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 13489,
       "price_high_6mo_usd": 14489,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-7.92kw-select-plus-eg4-ll-s-20-48kwh-premium-closed-loop-ro",
       "brand": "SELECT",
       "name": "SELECT 7.92kW Complete Solar Kit - EG4 FlexBoss18 Inverter - 20-28kWh Lithium Battery [SELECT PLUS] - EG4-LL-S - 20.48kWh - Premium - Closed Loop / Roof Rack - Standard - IronRidge",
       "url": "https://offgridempire.com/kits/select-7.92kw-select-plus-eg4-ll-s-20-48kwh-premium-closed-loop-ro",
-      "listed_price_usd": 15589,
+      "listed_price_usd": 15639,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 15589,
+      "real_build_cost_usd": 15639,
       "completeness_pct": 71,
       "cost_per_wh_usd": 0.76,
       "cost_per_w_usd": 1.97,
@@ -6956,20 +7176,20 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 15589,
       "price_high_6mo_usd": 16389,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-7.92kw-select-plus-eg4-lp4-v2-20-48kwh-budget-friendly-clos",
       "brand": "SELECT",
       "name": "SELECT 7.92kW Complete Solar Kit - EG4 FlexBoss18 Inverter - 20-28kWh Lithium Battery [SELECT PLUS] - EG4-LP4 V2 - 20.48kWh] - Budget-Friendly - Closed Loop / I’ll Handle My Own Racking",
       "url": "https://offgridempire.com/kits/select-7.92kw-select-plus-eg4-lp4-v2-20-48kwh-budget-friendly-clos",
-      "listed_price_usd": 13199,
+      "listed_price_usd": 13598,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 13199,
+      "real_build_cost_usd": 13598,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 0.64,
-      "cost_per_w_usd": 1.67,
+      "cost_per_wh_usd": 0.66,
+      "cost_per_w_usd": 1.72,
       "panel_watts": 7920,
       "storage_wh": 20480,
       "inverter_watts": 0,
@@ -6978,8 +7198,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 13199,
       "price_high_6mo_usd": 13989,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "select-7.92kw-select-plus-eg4-wallmount-indoor-28-6kwh-budget-frie",
@@ -7000,17 +7220,17 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 13939,
       "price_high_6mo_usd": 15489,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "sgpwatt-sungoldpower-ul1741-5000w-hybrid-solar-inverter-48v",
       "brand": "SGPWATT",
       "name": "SUNGOLDPOWER UL1741 5000W Hybrid Solar Inverter,48V DC to 110V/120V AC,All in One,80A MPPT Solar Charger and 40A AC Battery Charger Pure Sine Wave for Off Grid System(NO Parallel)",
       "url": "https://offgridempire.com/kits/sgpwatt-sungoldpower-ul1741-5000w-hybrid-solar-inverter-48v",
-      "listed_price_usd": 664,
+      "listed_price_usd": 699,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 664,
+      "real_build_cost_usd": 699,
       "completeness_pct": 0,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": null,
@@ -7022,8 +7242,8 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 664.05,
       "price_high_6mo_usd": 699,
-      "price_points_6mo": 45,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 65,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "sgpwosay-sungoldpower-ul1741-5000w-dc-48v-solar-inverter-all",
@@ -7044,17 +7264,17 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 699,
       "price_high_6mo_usd": 699,
-      "price_points_6mo": 45,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 65,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "solperk-kit-20w-12v-waterproof-solar-battery-trickle-charger",
       "brand": "SOLPERK",
       "name": "SOLPERK Solar Panel Kit 20W 12V, Waterproof Solar Battery Trickle Charger Maintainer + Smart MPPT Controller + Adjustable Mount Bracket for Boat Car RV Motorcycle Marine Automotive",
       "url": "https://offgridempire.com/kits/solperk-kit-20w-12v-waterproof-solar-battery-trickle-charger",
-      "listed_price_usd": 33,
+      "listed_price_usd": 35,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 33,
+      "real_build_cost_usd": 35,
       "completeness_pct": 0,
       "cost_per_wh_usd": null,
       "cost_per_w_usd": null,
@@ -7065,9 +7285,9 @@
       "chemistry": "Unknown",
       "retailer": "Amazon",
       "price_low_6mo_usd": 30.84,
-      "price_high_6mo_usd": 32.99,
-      "price_points_6mo": 45,
-      "price_observed_at": "2026-06-21"
+      "price_high_6mo_usd": 34.99,
+      "price_points_6mo": 65,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-26.4kw-summit-plus-ground-mount-skyrack-hd",
@@ -7088,8 +7308,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 62972.93,
       "price_high_6mo_usd": 62972.93,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-26.4kw-summit-plus-i-ll-handle-my-own-racking",
@@ -7110,8 +7330,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 44078.45,
       "price_high_6mo_usd": 44078.45,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-26.4kw-summit-plus-roof-rack-standard-ironridge",
@@ -7132,8 +7352,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 49581.23,
       "price_high_6mo_usd": 49581.23,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-max-renon-e-cube-61kwh-ground-mount-skyrack",
@@ -7154,8 +7374,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 82973.67,
       "price_high_6mo_usd": 82973.67,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-max-renon-e-cube-61kwh-i-ll-handle-my-own-ra",
@@ -7176,8 +7396,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 54839.64,
       "price_high_6mo_usd": 54839.64,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-max-renon-e-cube-61kwh-roof-rack-standard-ir",
@@ -7198,8 +7418,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 61969.43,
       "price_high_6mo_usd": 61969.43,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-max-sol-ark-l3-60kwh-ground-mount-skyrack-hd",
@@ -7220,8 +7440,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 77906.96,
       "price_high_6mo_usd": 90907,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-max-sol-ark-l3-60kwh-i-ll-handle-my-own-rack",
@@ -7242,8 +7462,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 49195.43,
       "price_high_6mo_usd": 62195,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-max-sol-ark-l3-60kwh-roof-rack-standard-iron",
@@ -7264,8 +7484,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 56905.32,
       "price_high_6mo_usd": 69905,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-pro-renon-e-cube-61kwh-ground-mount-skyrack",
@@ -7286,8 +7506,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 87475.65,
       "price_high_6mo_usd": 87475.65,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-pro-renon-e-cube-61kwh-i-ll-handle-my-own-ra",
@@ -7308,8 +7528,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 59194.39,
       "price_high_6mo_usd": 59194.39,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-pro-renon-e-cube-61kwh-roof-rack-standard-ir",
@@ -7330,8 +7550,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 66484.35,
       "price_high_6mo_usd": 66484.35,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-pro-sol-ark-l3-60kwh-ground-mount-skyrack-hd",
@@ -7352,8 +7572,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 77893.25,
       "price_high_6mo_usd": 92893,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-pro-sol-ark-l3-60kwh-i-ll-handle-my-own-rack",
@@ -7374,8 +7594,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 53559.23,
       "price_high_6mo_usd": 65959,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "summit-35.2kw-summit-pro-sol-ark-l3-60kwh-roof-rack-standard-iron",
@@ -7396,8 +7616,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 56905.54,
       "price_high_6mo_usd": 73906,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "suner-power-30w-12v-solar-battery-charger-maintainer-builtin",
@@ -7418,8 +7638,8 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 89.95,
       "price_high_6mo_usd": 89.95,
-      "price_points_6mo": 45,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 65,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "sungoldpower-3kw-solar-kit",
@@ -7462,52 +7682,52 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 7479,
       "price_high_6mo_usd": 7479,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-10.56kw-vector-max-enphase-iq8a-premium-code-compliant-grou",
       "brand": "VECTOR",
       "name": "VECTOR 10.56kW Complete Grid-Tied Solar Kit - Enphase or APsystems Microinverters - No Battery [VECTOR MAX] - Enphase - IQ8A - Premium - Code Compliant / Ground Mount - Seasonal Adjust [SkyRack HD] / I’ll Handle My Own Permitting",
       "url": "https://offgridempire.com/kits/vector-10.56kw-vector-max-enphase-iq8a-premium-code-compliant-grou",
-      "listed_price_usd": 17879,
+      "listed_price_usd": 17479,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 17879,
+      "real_build_cost_usd": 17479,
       "completeness_pct": 57,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 1.69,
+      "cost_per_w_usd": 1.66,
       "panel_watts": 10560,
       "storage_wh": 0,
       "inverter_watts": 0,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 17879,
+      "price_low_6mo_usd": 17479,
       "price_high_6mo_usd": 17879,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-10.56kw-vector-max-enphase-iq8a-premium-code-compliant-i-ll",
       "brand": "VECTOR",
       "name": "VECTOR 10.56kW Complete Grid-Tied Solar Kit - Enphase or APsystems Microinverters - No Battery [VECTOR MAX] - Enphase - IQ8A - Premium - Code Compliant / I’ll Handle My Own Racking / I’ll Handle My Own Permitting",
       "url": "https://offgridempire.com/kits/vector-10.56kw-vector-max-enphase-iq8a-premium-code-compliant-i-ll",
-      "listed_price_usd": 11479,
+      "listed_price_usd": 11179,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 11479,
+      "real_build_cost_usd": 11179,
       "completeness_pct": 57,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 1.09,
+      "cost_per_w_usd": 1.06,
       "panel_watts": 10560,
       "storage_wh": 0,
       "inverter_watts": 0,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 11479,
+      "price_low_6mo_usd": 11179,
       "price_high_6mo_usd": 11479,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-10.56kw-vector-max-enphase-iq8a-premium-code-compliant-roof",
@@ -7528,8 +7748,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 13129,
       "price_high_6mo_usd": 13129,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-15.84kw-vector-pro-apsystems-ds3-budget-friendly-code-compl",
@@ -7550,8 +7770,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 10979,
       "price_high_6mo_usd": 10979,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-15.84kw-vector-pro-enphase-i-q8a-premium-code-compliant-gro",
@@ -7572,30 +7792,30 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 24679,
       "price_high_6mo_usd": 24679,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-15.84kw-vector-pro-enphase-i-q8a-premium-code-compliant-i-l",
       "brand": "VECTOR",
       "name": "VECTOR 15.84kW Complete Grid-Tied Solar Kit - Enphase or APsystems Microinverters - No Battery [VECTOR PRO] - Enphase -I Q8A - Premium - Code Compliant / I’ll Handle My Own Racking / I’ll Handle My Own Permitting",
       "url": "https://offgridempire.com/kits/vector-15.84kw-vector-pro-enphase-i-q8a-premium-code-compliant-i-l",
-      "listed_price_usd": 16579,
+      "listed_price_usd": 16279,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 16579,
+      "real_build_cost_usd": 16279,
       "completeness_pct": 57,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 1.05,
+      "cost_per_w_usd": 1.03,
       "panel_watts": 15840,
       "storage_wh": 0,
       "inverter_watts": 0,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 16579,
+      "price_low_6mo_usd": 16279,
       "price_high_6mo_usd": 16579,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-15.84kw-vector-pro-enphase-i-q8a-premium-code-compliant-roo",
@@ -7616,8 +7836,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 18679,
       "price_high_6mo_usd": 18679,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-7.92kw-vector-plus-apsystems-ds3-budget-friendly-code-compl",
@@ -7638,8 +7858,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 5979,
       "price_high_6mo_usd": 5979,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-7.92kw-vector-plus-enphase-iq8a-premium-code-compliant-grou",
@@ -7660,30 +7880,30 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 14229,
       "price_high_6mo_usd": 14579,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-7.92kw-vector-plus-enphase-iq8a-premium-code-compliant-i-ll",
       "brand": "VECTOR",
       "name": "VECTOR 7.92kW Complete Grid-Tied Solar Kit - Enphase or APsystems Microinverters - No Battery [VECTOR PLUS] - Enphase - IQ8A -  Premium - Code Compliant / I’ll Handle My Own Racking / I’ll Handle My Own Permitting",
       "url": "https://offgridempire.com/kits/vector-7.92kw-vector-plus-enphase-iq8a-premium-code-compliant-i-ll",
-      "listed_price_usd": 8879,
+      "listed_price_usd": 8579,
       "missing_parts_cost_usd": 0,
-      "real_build_cost_usd": 8879,
+      "real_build_cost_usd": 8579,
       "completeness_pct": 57,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 1.12,
+      "cost_per_w_usd": 1.08,
       "panel_watts": 7920,
       "storage_wh": 0,
       "inverter_watts": 0,
       "voltage": 48,
       "chemistry": "LiFePO4",
       "retailer": "Shop Solar Kits",
-      "price_low_6mo_usd": 8879,
+      "price_low_6mo_usd": 8579,
       "price_high_6mo_usd": 8879,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "vector-7.92kw-vector-plus-enphase-iq8a-premium-code-compliant-roof",
@@ -7704,8 +7924,8 @@
       "retailer": "Shop Solar Kits",
       "price_low_6mo_usd": 10129,
       "price_high_6mo_usd": 10129,
-      "price_points_6mo": 65,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 85,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "victron-energy-victron-energy-orion-tr-dc-to-dc-converter-24",
@@ -7726,8 +7946,8 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 201.45,
       "price_high_6mo_usd": 201.65,
-      "price_points_6mo": 13,
-      "price_observed_at": "2026-05-21"
+      "price_points_6mo": 15,
+      "price_observed_at": "2026-08-25"
     },
     {
       "slug": "windynation-400w-complete",
@@ -7735,11 +7955,11 @@
       "name": "WindyNation 400W Complete Off-Grid Kit",
       "url": "https://offgridempire.com/kits/windynation-400w-complete",
       "listed_price_usd": 1149,
-      "missing_parts_cost_usd": 180,
-      "real_build_cost_usd": 1329,
+      "missing_parts_cost_usd": 164,
+      "real_build_cost_usd": 1313,
       "completeness_pct": 71,
-      "cost_per_wh_usd": 1.11,
-      "cost_per_w_usd": 3.32,
+      "cost_per_wh_usd": 1.09,
+      "cost_per_w_usd": 3.28,
       "panel_watts": 400,
       "storage_wh": 1200,
       "inverter_watts": 1500,
@@ -7757,11 +7977,11 @@
       "name": "WindyNation 400W Complete Kit with 1500W VertaMax Inverter",
       "url": "https://offgridempire.com/kits/windynation-400w-complete-inverter",
       "listed_price_usd": 600,
-      "missing_parts_cost_usd": 280,
-      "real_build_cost_usd": 880,
+      "missing_parts_cost_usd": 264,
+      "real_build_cost_usd": 864,
       "completeness_pct": 71,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 2.2,
+      "cost_per_w_usd": 2.16,
       "panel_watts": 400,
       "storage_wh": 0,
       "inverter_watts": 1500,
@@ -7772,6 +7992,28 @@
       "price_high_6mo_usd": 899.99,
       "price_points_6mo": 143,
       "price_observed_at": "2026-03-23"
+    },
+    {
+      "slug": "windynation-400w-kit-agm",
+      "brand": "WindyNation",
+      "name": "WindyNation 400W Solar Kit with P30L Controller + AGM Battery",
+      "url": "https://offgridempire.com/kits/windynation-400w-kit-agm",
+      "listed_price_usd": 1640,
+      "missing_parts_cost_usd": 159,
+      "real_build_cost_usd": 1799,
+      "completeness_pct": 71,
+      "cost_per_wh_usd": 3,
+      "cost_per_w_usd": 4.5,
+      "panel_watts": 400,
+      "storage_wh": 600,
+      "inverter_watts": 0,
+      "voltage": 12,
+      "chemistry": "AGM",
+      "retailer": "Amazon",
+      "price_low_6mo_usd": 700,
+      "price_high_6mo_usd": 2149.99,
+      "price_points_6mo": 68,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "windynation-400w-kit-inverter-300ah",
@@ -7792,8 +8034,8 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 1617.8,
       "price_high_6mo_usd": 1720.99,
-      "price_points_6mo": 93,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 113,
+      "price_observed_at": "2026-08-28"
     },
     {
       "slug": "windynation-400w-mono-kit",
@@ -7801,11 +8043,11 @@
       "name": "WindyNation 400W Monocrystalline Off-Grid Kit with PWM Controller",
       "url": "https://offgridempire.com/kits/windynation-400w-mono-kit",
       "listed_price_usd": 527,
-      "missing_parts_cost_usd": 439,
-      "real_build_cost_usd": 966,
+      "missing_parts_cost_usd": 423,
+      "real_build_cost_usd": 950,
       "completeness_pct": 57,
       "cost_per_wh_usd": null,
-      "cost_per_w_usd": 2.42,
+      "cost_per_w_usd": 2.38,
       "panel_watts": 400,
       "storage_wh": 0,
       "inverter_watts": 0,
@@ -7814,8 +8056,8 @@
       "retailer": "Amazon",
       "price_low_6mo_usd": 399.99,
       "price_high_6mo_usd": 526.77,
-      "price_points_6mo": 91,
-      "price_observed_at": "2026-06-21"
+      "price_points_6mo": 111,
+      "price_observed_at": "2026-08-28"
     }
   ]
 }
