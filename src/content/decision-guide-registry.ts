@@ -885,14 +885,14 @@ None of that is a price-hiding trick — it's the difference between "rides out 
         kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
         label: "Best runtime per dollar",
         rationale:
-          "The cleanest value on the board. {p1.storageWh} of LiFePO4 at {p1.costPerWh} — the lowest cost-per-watt-hour of any pick here — runs a humidified CPAP about six nights on a full charge, or past a week with the humidifier off. It has a 12V DC output so you can skip the inverter entirely (see below), expands past 12kWh if your needs grow, and carries a 5-year warranty. For most people this is the one to buy.",
+          "The cleanest value on the board. {p1.storageWh} of LiFePO4 at {p1.costPerWh}, which sits at the bottom of the price-per-watt-hour range here, runs a humidified CPAP about six nights on a full charge, or past a week with the humidifier off. It has a 12V DC output so you can skip the inverter entirely (see below), expands past 12kWh if your needs grow, and carries a 5-year warranty. For most people this is the one to buy.",
         cta: true,
       },
       {
         kitSlug: "jackery-2000plus-4085wh-2x200w",
         label: "Most nights + solar included",
         rationale:
-          "The longest runtime in the group: {p2.storageWh} rides roughly eight humidified nights, and it ships with two 200W panels so a sunny afternoon tops it back up during a multi-day outage. At {p2.costPerWh} it isn't the cheapest per watt-hour, but the bundled solar and the biggest bank make it the pick when a single cloudy stretch can't be allowed to interrupt therapy.",
+          "The longest runtime in the group: {p2.storageWh} rides roughly eight humidified nights, and it ships with two 200W panels so a sunny afternoon tops it back up during a multi-day outage. At {p2.costPerWh} it prices within a cent per watt-hour of the top pick, so the bundled solar and the biggest bank are what make it the choice when a single cloudy stretch can't be allowed to interrupt therapy.",
       },
       {
         kitSlug: "ecoflow-delta2max-400w",
@@ -976,7 +976,10 @@ Re-check your exact runtime with the [load calculator](/calculator) after you se
       },
     ],
     claims: [
-      { pick: "p1", metric: "costPerWh", direction: "lowest", note: "#1 lowest $/Wh in the podium" },
+      // p1 and p2 track within ~1 cent per Wh and swap on routine price refreshes, so the
+      // prose now quotes live figures instead of a superlative; this guard follows whichever
+      // pick actually holds the low mark (p2 as of 2026-08-28) so the page can never claim it wrongly.
+      { pick: "p2", metric: "costPerWh", direction: "lowest", note: "lowest $/Wh in the podium" },
       { pick: "p2", metric: "storageWh", direction: "highest", note: "#2 biggest bank / most nights" },
       { pick: "p3", metric: "listedPrice", direction: "lowest", note: "#3 cheapest entry price" },
     ],
