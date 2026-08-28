@@ -397,7 +397,7 @@ We flag exactly which line items each kit includes versus omits from its own BOM
       {
         question: "How much should an off-grid solar system cost for a small cabin?",
         answer:
-          "For a near-complete LiFePO4 station that clears a cabin's surge loads, plan roughly [[const:$1,300–$2,000]] — our five cabin picks list from {p5.listedPrice} to {p2.listedPrice}. Because these ship with panels, battery, and inverter integrated, the real build cost is close to the sticker; budget another ~[[const:$100–$300]] for panel mounts, monitoring, and a soft starter if you're on a well.",
+          "For a near-complete LiFePO4 station that clears a cabin's surge loads, plan roughly [[const:$1,300–$2,000]] — our five cabin picks list from {p5.listedPrice} to {p3.listedPrice}. Because these ship with panels, battery, and inverter integrated, the real build cost is close to the sticker; budget another ~[[const:$100–$300]] for panel mounts, monitoring, and a soft starter if you're on a well.",
       },
       {
         question: "How much solar power do I need for an off-grid cabin?",
@@ -415,7 +415,10 @@ We flag exactly which line items each kit includes versus omits from its own BOM
       { pick: "p3", metric: "completeness", direction: "highest", note: "#3 completeness 100, highest in cohort" },
       { pick: "p3", metric: "costPerWh", direction: "highest", note: "#3 priciest per watt-hour here" },
       { pick: "p5", metric: "listedPrice", direction: "lowest", note: "#5 cheapest path / lowest outlay" },
-      { pick: "p2", metric: "listedPrice", direction: "highest", note: "FAQ price-range top end" },
+      // p2 and p3 list within ~$20 of each other and swap on routine price refreshes, so the
+      // FAQ quotes the live top-end figure and this guard follows whichever pick actually
+      // holds it (p3 as of 2026-08-28), rather than pinning a pick that drifts.
+      { pick: "p3", metric: "listedPrice", direction: "highest", note: "FAQ price-range top end" },
     ],
     publishedAt: "2026-06-19T00:00:00Z",
     updatedAt: "2026-06-19T00:00:00Z",
@@ -759,7 +762,7 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
         kitSlug: "ecoflow-delta-pro-400w",
         label: "Best for surge stacking",
         rationale:
-          "The surge pick if your well, sump, and furnace blower can stack-start at the same instant. Its 3,600W inverter is the largest of the three complete picks, and at {p3.costPerW} it's the cheapest watt among them. 3,600Wh of LiFePO4 keeps the fridge cold while leaving inverter overhead for a simultaneous motor inrush.",
+          "The surge pick if your well, sump, and furnace blower can stack-start at the same instant. Its 3,600W inverter is the largest of the three complete picks, and at {p3.costPerW} its inverter watts price within a nickel of the cheapest here. 3,600Wh of LiFePO4 keeps the fridge cold while leaving inverter overhead for a simultaneous motor inrush.",
       },
       {
         kitSlug: "ecoflow-11kw-ecoflow-delta-delta-3-ultra-plus-main-unit-only",
@@ -846,7 +849,10 @@ None of that is a price-hiding trick — it's the difference between "rides out 
       { pick: "p1", metric: "costPerWh", direction: "highest", note: "#1 'you pay a premium' (highest $/Wh)" },
       { pick: "p2", metric: "storageWh", direction: "highest", among: ["p1", "p2", "p3"], note: "#2 most storage of the three complete picks" },
       { pick: "p3", metric: "inverterWatts", direction: "highest", among: ["p1", "p2", "p3"], note: "#3 largest inverter of the complete picks" },
-      { pick: "p3", metric: "costPerW", direction: "lowest", among: ["p1", "p2", "p3"], note: "#3 cheapest watt of the complete picks" },
+      // p2 and p3 track within ~5 cents per inverter watt and swap on routine price refreshes,
+      // so the prose quotes p3's live figure instead of claiming the low mark, and this guard
+      // follows whichever pick actually holds it (p2 as of 2026-08-28).
+      { pick: "p2", metric: "costPerW", direction: "lowest", among: ["p1", "p2", "p3"], note: "cheapest watt of the complete picks" },
       { pick: "p4", metric: "listedPrice", direction: "lowest", among: ["p3", "p4"], note: "#4 cheapest 3,600W entry" },
       { pick: "p5", metric: "costPerWh", direction: "lowest", note: "#5 lowest $/Wh here / most capacity per dollar" },
     ],

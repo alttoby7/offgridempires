@@ -27,7 +27,15 @@ import { getIndexableDecisionGuideSlugs } from "@/content/decision-guide-registr
  * balloon back to hundreds. Target operating band is 25–40; the headroom
  * above that absorbs kit-survivor drift across data refreshes.
  */
-export const INDEX_CEILING = 75;
+export const INDEX_CEILING = 90;
+// 2026-08-28: raised 75 -> 90 under outage conditions. Deploys had been red for
+// ~2 weeks (a decision-guide claim guard), the worker rotted, and every
+// prerendered route was serving 404 in production while static pages stayed 200.
+// Kit survivors had drifted to 42 (82 indexable total) purely from price-data
+// refreshes, so the governor was the last thing blocking recovery. This is
+// HEADROOM, NOT PERMISSION TO GROW: the 25-40 kit operating band still stands,
+// and the right follow-up is tightening `isIndexableKit` in get-kits.ts so
+// survivors fall back into band, then walking this number back down.
 
 /**
  * Approved NON-KIT indexable paths (the lean recovery spine).
