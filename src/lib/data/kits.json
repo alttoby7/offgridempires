@@ -25,7 +25,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:32.983Z",
+    "priceObservedAt": "2026-09-14T18:00:31.524Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0DZ6R3LT5",
@@ -208,7 +208,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:32.967Z",
+    "priceObservedAt": "2026-09-14T18:00:31.500Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B08GX19KT9",
@@ -571,7 +571,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:33.074Z",
+    "priceObservedAt": "2026-09-14T18:00:31.625Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0CQJGXJGK",
@@ -890,7 +890,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:33.045Z",
+    "priceObservedAt": "2026-09-14T18:00:31.592Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0DX88F7MM",
@@ -1253,7 +1253,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:33.015Z",
+    "priceObservedAt": "2026-09-14T18:00:31.557Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0748FYFSK",
@@ -1616,7 +1616,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:33.032Z",
+    "priceObservedAt": "2026-09-14T18:00:31.572Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B07XY1CV5F",
@@ -3111,7 +3111,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:33.025Z",
+    "priceObservedAt": "2026-09-14T18:00:31.567Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0DC6TLF9S",
@@ -3483,7 +3483,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.879Z",
+    "priceObservedAt": "2026-09-14T18:00:38.570Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-river-3?variant=43432948301964",
@@ -3970,7 +3970,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:32.977Z",
+    "priceObservedAt": "2026-09-14T18:00:31.514Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0B9SP6BNH",
@@ -4273,7 +4273,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-05T12:00:31.483Z",
+    "priceObservedAt": "2026-09-14T18:00:31.581Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B07DQ2HYDL",
@@ -4343,6 +4343,10 @@
       {
         "date": "2026-09-05",
         "priceCents": 20145
+      },
+      {
+        "date": "2026-09-14",
+        "priceCents": 20145
       }
     ]
   },
@@ -4381,7 +4385,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.449Z",
+    "priceObservedAt": "2026-09-14T18:00:39.266Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac2p?variant=42362135937164",
@@ -4891,7 +4895,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:32.842Z",
+    "priceObservedAt": "2026-09-14T18:00:31.382Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B09RZZHHHM",
@@ -4963,7 +4967,7 @@
         "price": 220,
         "sourceUrl": "https://www.amazon.com/dp/B09RZZHHHM",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:32.842Z"
+        "observedAt": "2026-09-14T18:00:31.382Z"
       },
       {
         "retailer": "Amazon",
@@ -6144,7 +6148,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:54.049Z",
+    "priceObservedAt": "2026-09-14T18:00:53.532Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/200-watt-12-volt-solar-starter-kit?variant=43178678714483",
@@ -6209,7 +6213,7 @@
         "price": 230,
         "sourceUrl": "https://www.amazon.com/dp/B00BCRG22A",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:32.788Z"
+        "observedAt": "2026-09-14T18:00:31.332Z"
       },
       {
         "retailer": "Renogy",
@@ -6217,7 +6221,7 @@
         "price": 230,
         "sourceUrl": "https://www.renogy.com/products/200-watt-12-volt-solar-starter-kit?variant=43178678714483",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:54.049Z"
+        "observedAt": "2026-09-14T18:00:53.532Z"
       }
     ],
     "priceHistory": [
@@ -8645,7 +8649,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:32.999Z",
+    "priceObservedAt": "2026-09-14T18:00:31.541Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0DMT2WTC8",
@@ -9017,7 +9021,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:32.801Z",
+    "priceObservedAt": "2026-09-14T18:00:31.345Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B015DEY2TM",
@@ -9082,7 +9086,7 @@
         "price": 257,
         "sourceUrl": "https://www.amazon.com/dp/B015DEY2TM",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:32.801Z"
+        "observedAt": "2026-09-14T18:00:31.345Z"
       },
       {
         "retailer": "Renogy",
@@ -9090,7 +9094,7 @@
         "price": 290,
         "sourceUrl": "https://www.renogy.com/products/200-watt-12-volt-solar-rv-kit?variant=43178684186739",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:54.060Z"
+        "observedAt": "2026-09-14T18:00:53.543Z"
       }
     ],
     "priceHistory": [
@@ -11880,7 +11884,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.823Z",
+    "priceObservedAt": "2026-09-14T18:00:38.505Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-eb3a-portable-power-station?variant=41129233711244",
@@ -12399,7 +12403,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.859Z",
+    "priceObservedAt": "2026-09-14T18:00:38.545Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-river-3?variant=43432948203660",
@@ -12898,7 +12902,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.377Z",
+    "priceObservedAt": "2026-09-14T18:00:39.187Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac50p?variant=43602802540684",
@@ -13401,7 +13405,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.430Z",
+    "priceObservedAt": "2026-09-14T18:00:39.243Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac2p?variant=42362135806092",
@@ -13912,7 +13916,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.867Z",
+    "priceObservedAt": "2026-09-14T18:00:38.557Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-river-3?variant=43432948269196",
@@ -14408,7 +14412,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:54.072Z",
+    "priceObservedAt": "2026-09-14T18:00:53.554Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/renogy-400w-12v-general-off-grid-solar-kit?variant=44229726994547",
@@ -17032,7 +17036,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.435Z",
+    "priceObservedAt": "2026-09-14T18:00:39.248Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac2p?variant=42362135838860",
@@ -18830,7 +18834,7 @@
         "price": 539,
         "sourceUrl": "https://www.amazon.com/dp/B0BYS84V1P",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:32.909Z"
+        "observedAt": "2026-09-14T18:00:31.437Z"
       }
     ],
     "priceHistory": [
@@ -20321,7 +20325,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:32.859Z",
+    "priceObservedAt": "2026-09-14T18:00:31.397Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0BPY72B9R",
@@ -21275,7 +21279,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.360Z",
+    "priceObservedAt": "2026-09-14T18:00:39.167Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/river-2-max?variant=41679307899020",
@@ -21770,7 +21774,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:54.055Z",
+    "priceObservedAt": "2026-09-14T18:00:53.538Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/200-watt-12-volt-monocrystalline-solar-panel-with-40-amp-mppt-charge-controller?variant=43178665574515",
@@ -23983,7 +23987,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.521Z",
+    "priceObservedAt": "2026-09-14T18:00:38.047Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c1000-gen2?variant=44475398783116",
@@ -24486,7 +24490,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.439Z",
+    "priceObservedAt": "2026-09-14T18:00:39.254Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac2p?variant=42362135871628",
@@ -24996,7 +25000,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:32.878Z",
+    "priceObservedAt": "2026-09-14T18:00:31.413Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B09KZ1MH7Z",
@@ -25614,7 +25618,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.356Z",
+    "priceObservedAt": "2026-09-14T18:00:39.160Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/river-2-max?variant=41679307931788",
@@ -26111,7 +26115,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.195Z",
+    "priceObservedAt": "2026-09-14T18:00:38.946Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-river-2-pro?variant=41679254454412",
@@ -27280,7 +27284,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:32.852Z",
+    "priceObservedAt": "2026-09-14T18:00:31.389Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0FWRK8JN6",
@@ -27958,7 +27962,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:54.067Z",
+    "priceObservedAt": "2026-09-14T18:00:53.548Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/new-400-watt-12-volt-solar-premium-kit?variant=43178692247667",
@@ -30413,7 +30417,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:33.087Z",
+    "priceObservedAt": "2026-09-14T18:00:31.637Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0FL7CF58H",
@@ -30784,7 +30788,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:32.951Z",
+    "priceObservedAt": "2026-09-14T18:00:31.473Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B08X6KSJLD",
@@ -31440,7 +31444,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.444Z",
+    "priceObservedAt": "2026-09-14T18:00:39.260Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac2p?variant=42362135904396",
@@ -31951,7 +31955,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.873Z",
+    "priceObservedAt": "2026-09-14T18:00:38.564Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-river-3?variant=43432948236428",
@@ -32450,7 +32454,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.423Z",
+    "priceObservedAt": "2026-09-14T18:00:37.941Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-plus?variant=43417425379468",
@@ -32948,7 +32952,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:33.063Z",
+    "priceObservedAt": "2026-09-14T18:00:31.612Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0GTP5Y39V",
@@ -33324,7 +33328,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.913Z",
+    "priceObservedAt": "2026-09-14T18:00:38.627Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac180p-portable-power-station?variant=41904213033100",
@@ -33839,7 +33843,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:54.079Z",
+    "priceObservedAt": "2026-09-14T18:00:53.560Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/renogy-400w-12v-general-off-grid-solar-kit?variant=43212833194099",
@@ -36371,7 +36375,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.525Z",
+    "priceObservedAt": "2026-09-14T18:00:38.052Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c1000-gen2?variant=44475398815884",
@@ -36878,7 +36882,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.529Z",
+    "priceObservedAt": "2026-09-14T18:00:38.057Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c1000-gen2?variant=44475398848652",
@@ -37385,7 +37389,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.324Z",
+    "priceObservedAt": "2026-09-14T18:00:39.106Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max?variant=44746653696140",
@@ -38852,7 +38856,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:49.163Z",
+    "priceObservedAt": "2026-09-14T18:00:48.522Z",
     "retailer": "Jackery",
     "retailerSlug": "jackery",
     "sourceUrl": "https://www.jackery.com/products/jackery-solar-generator-1000-plus?variant=40233094873175",
@@ -39678,7 +39682,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:49.147Z",
+    "priceObservedAt": "2026-09-14T18:00:48.513Z",
     "retailer": "Jackery",
     "retailerSlug": "jackery",
     "sourceUrl": "https://www.jackery.com/products/jackery-solar-generator-1000-v2?variant=40910606205015",
@@ -39741,7 +39745,7 @@
         "price": 879,
         "sourceUrl": "https://www.amazon.com/dp/B0D2L1G66J",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:32.935Z"
+        "observedAt": "2026-09-14T18:00:31.450Z"
       },
       {
         "retailer": "Jackery",
@@ -39749,7 +39753,7 @@
         "price": 879,
         "sourceUrl": "https://www.jackery.com/products/jackery-solar-generator-1000-v2?variant=40910606205015",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:49.147Z"
+        "observedAt": "2026-09-14T18:00:48.513Z"
       }
     ],
     "priceHistory": [
@@ -40674,7 +40678,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.191Z",
+    "priceObservedAt": "2026-09-14T18:00:38.938Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-river-2-pro?variant=41737132769420",
@@ -41173,7 +41177,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.331Z",
+    "priceObservedAt": "2026-09-14T18:00:39.118Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max?variant=44746661232780",
@@ -41680,7 +41684,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:37.181Z",
+    "priceObservedAt": "2026-09-14T18:00:36.489Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-1300?variant=41677786611852",
@@ -42300,7 +42304,7 @@
         "price": 1150,
         "sourceUrl": "https://www.renogy.com/products/800w-12v-24v-monocrystalline-solar-premium-kit-w-rover-60a-charger-controller?variant=43178697752691",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:54.087Z"
+        "observedAt": "2026-09-14T18:00:53.578Z"
       }
     ],
     "priceHistory": [
@@ -43209,7 +43213,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.191Z",
+    "priceObservedAt": "2026-09-14T18:00:35.326Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-1300?variant=41677786448012",
@@ -43756,7 +43760,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.885Z",
+    "priceObservedAt": "2026-09-14T18:00:38.578Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac180p-portable-power-station?variant=41904212836492",
@@ -44275,7 +44279,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.617Z",
+    "priceObservedAt": "2026-09-14T18:00:38.175Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c2000-gen-2-portable-power-station?variant=44718464598156",
@@ -44786,7 +44790,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.890Z",
+    "priceObservedAt": "2026-09-14T18:00:38.587Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac180p-portable-power-station?variant=41904212902028",
@@ -45304,7 +45308,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.515Z",
+    "priceObservedAt": "2026-09-14T18:00:39.340Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-605-portable-power-station?variant=44340671348876",
@@ -45803,7 +45807,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.612Z",
+    "priceObservedAt": "2026-09-14T18:00:35.828Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-1300?variant=41677786513548",
@@ -46350,7 +46354,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.895Z",
+    "priceObservedAt": "2026-09-14T18:00:38.594Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac180p-portable-power-station?variant=41904212934796",
@@ -46868,7 +46872,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.531Z",
+    "priceObservedAt": "2026-09-14T18:00:39.369Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac180t?variant=43400734965900",
@@ -47378,7 +47382,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.404Z",
+    "priceObservedAt": "2026-09-14T18:00:37.922Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-plus?variant=43417425346700",
@@ -47889,7 +47893,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.533Z",
+    "priceObservedAt": "2026-09-14T18:00:38.063Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c1000-gen2?variant=44475398881420",
@@ -48398,7 +48402,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.346Z",
+    "priceObservedAt": "2026-09-14T18:00:37.862Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-max?variant=41674486349964",
@@ -48935,7 +48939,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:47.295Z",
+    "priceObservedAt": "2026-09-14T18:00:46.571Z",
     "retailer": "EcoFlow US",
     "retailerSlug": "ecoflow-us",
     "sourceUrl": "https://us.ecoflow.com/products/delta-2-max-portable-power-station?variant=54615943512137",
@@ -48998,7 +49002,7 @@
         "price": 1049,
         "sourceUrl": "https://us.ecoflow.com/products/delta-2-max-portable-power-station?variant=54615943512137",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:47.295Z"
+        "observedAt": "2026-09-14T18:00:46.571Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -49006,7 +49010,7 @@
         "price": 1222,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-2-max?variant=41677816627340",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.080Z"
+        "observedAt": "2026-09-14T18:00:33.891Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -49014,7 +49018,7 @@
         "price": 1393,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-2-max?variant=41677816660108",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.085Z"
+        "observedAt": "2026-09-14T18:00:33.904Z"
       },
       {
         "retailer": "Amazon",
@@ -49030,7 +49034,7 @@
         "price": 1600,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-2-max?variant=41677816692876",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.092Z"
+        "observedAt": "2026-09-14T18:00:33.915Z"
       }
     ],
     "priceHistory": [
@@ -50311,7 +50315,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.326Z",
+    "priceObservedAt": "2026-09-14T18:00:35.470Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-1300?variant=41677786480780",
@@ -50869,7 +50873,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.507Z",
+    "priceObservedAt": "2026-09-14T18:00:39.328Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-605-portable-power-station?variant=44340671283340",
@@ -51368,7 +51372,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:54.083Z",
+    "priceObservedAt": "2026-09-14T18:00:53.566Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/renogy-600w-12v-general-off-grid-solar-kit?variant=43212820283507",
@@ -52708,7 +52712,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.510Z",
+    "priceObservedAt": "2026-09-14T18:00:39.334Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-605-portable-power-station?variant=44340671316108",
@@ -53211,7 +53215,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.901Z",
+    "priceObservedAt": "2026-09-14T18:00:38.600Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac180p-portable-power-station?variant=41904212967564",
@@ -53730,7 +53734,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.907Z",
+    "priceObservedAt": "2026-09-14T18:00:38.615Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac180p-portable-power-station?variant=41904212869260",
@@ -54248,7 +54252,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.409Z",
+    "priceObservedAt": "2026-09-14T18:00:37.927Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-plus?variant=43417425281164",
@@ -54760,7 +54764,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:49.168Z",
+    "priceObservedAt": "2026-09-14T18:00:48.542Z",
     "retailer": "Jackery",
     "retailerSlug": "jackery",
     "sourceUrl": "https://www.jackery.com/products/jackery-explorer-1500-ultra-portable-power-station?variant=42447145435223",
@@ -55514,7 +55518,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.280Z",
+    "priceObservedAt": "2026-09-14T18:00:39.048Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44678937837708",
@@ -56025,7 +56029,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.627Z",
+    "priceObservedAt": "2026-09-14T18:00:38.190Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c2000-gen-2-portable-power-station?variant=44718471610508",
@@ -56539,7 +56543,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.303Z",
+    "priceObservedAt": "2026-09-14T18:00:39.077Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-rv5-power-hub-modular-rv-solar-system?variant=44734427332748",
@@ -57046,7 +57050,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.947Z",
+    "priceObservedAt": "2026-09-14T18:00:38.676Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac200pl?variant=42348171296908",
@@ -57560,7 +57564,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:32.956Z",
+    "priceObservedAt": "2026-09-14T18:00:31.481Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B09Z78BCZH",
@@ -58191,7 +58195,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.418Z",
+    "priceObservedAt": "2026-09-14T18:00:37.936Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-plus?variant=43417425313932",
@@ -58702,7 +58706,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.321Z",
+    "priceObservedAt": "2026-09-14T18:00:39.100Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max?variant=44746653630604",
@@ -59213,7 +59217,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.328Z",
+    "priceObservedAt": "2026-09-14T18:00:39.113Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max?variant=44746661167244",
@@ -59720,7 +59724,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.484Z",
+    "priceObservedAt": "2026-09-14T18:00:35.639Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-1300?variant=41677786546316",
@@ -60282,7 +60286,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.414Z",
+    "priceObservedAt": "2026-09-14T18:00:37.932Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-plus?variant=43417425248396",
@@ -60789,7 +60793,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.967Z",
+    "priceObservedAt": "2026-09-14T18:00:38.706Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-ultra?variant=46271240896652",
@@ -61295,7 +61299,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.552Z",
+    "priceObservedAt": "2026-09-14T18:00:38.088Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-portable-power-station?variant=44220308357260",
@@ -61800,7 +61804,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:37.355Z",
+    "priceObservedAt": "2026-09-14T18:00:36.700Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-max?variant=41674484908172",
@@ -62337,7 +62341,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.632Z",
+    "priceObservedAt": "2026-09-14T18:00:38.196Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c2000-gen-2-portable-power-station?variant=44718471577740",
@@ -62850,7 +62854,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:37.482Z",
+    "priceObservedAt": "2026-09-14T18:00:36.866Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-max?variant=41674491035788",
@@ -63385,7 +63389,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.918Z",
+    "priceObservedAt": "2026-09-14T18:00:38.637Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac200pl?variant=42348171165836",
@@ -63900,7 +63904,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.760Z",
+    "priceObservedAt": "2026-09-14T18:00:35.987Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-1300?variant=41677786579084",
@@ -64443,7 +64447,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.268Z",
+    "priceObservedAt": "2026-09-14T18:00:39.034Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44680913322124",
@@ -64492,7 +64496,7 @@
         "price": 1588,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44680913322124",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.268Z"
+        "observedAt": "2026-09-14T18:00:39.034Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -64500,7 +64504,7 @@
         "price": 1798,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-ultra?variant=44748334497932",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.952Z"
+        "observedAt": "2026-09-14T18:00:38.681Z"
       }
     ],
     "priceHistory": [
@@ -64973,7 +64977,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.924Z",
+    "priceObservedAt": "2026-09-14T18:00:38.647Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac200pl?variant=42348171198604",
@@ -65494,7 +65498,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.234Z",
+    "priceObservedAt": "2026-09-14T18:00:38.988Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-apex-300?variant=44408365842572",
@@ -66001,7 +66005,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.851Z",
+    "priceObservedAt": "2026-09-14T18:00:38.539Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-ultra-plus?variant=44698696614028",
@@ -66509,7 +66513,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:32.866Z",
+    "priceObservedAt": "2026-09-14T18:00:31.405Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B0GH7XTJWS",
@@ -67126,7 +67130,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:32.889Z",
+    "priceObservedAt": "2026-09-14T18:00:31.421Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B09KYLMYJC",
@@ -67741,7 +67745,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:32.883Z",
+    "priceObservedAt": "2026-09-14T18:00:31.417Z",
     "retailer": "Amazon",
     "retailerSlug": "amazon",
     "sourceUrl": "https://www.amazon.com/dp/B01CTIHO68",
@@ -68180,7 +68184,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.622Z",
+    "priceObservedAt": "2026-09-14T18:00:38.182Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c2000-gen-2-portable-power-station?variant=44718464630924",
@@ -68693,7 +68697,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:37.624Z",
+    "priceObservedAt": "2026-09-14T18:00:37.018Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-max?variant=41677437665420",
@@ -69226,7 +69230,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.680Z",
+    "priceObservedAt": "2026-09-14T18:00:38.288Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=34043496956044",
@@ -69275,7 +69279,7 @@
         "price": 1699,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=34043496956044",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.680Z"
+        "observedAt": "2026-09-14T18:00:38.288Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -69283,7 +69287,7 @@
         "price": 2998,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626628748",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.982Z"
+        "observedAt": "2026-09-14T18:00:38.732Z"
       }
     ],
     "priceHistory": [
@@ -69762,7 +69766,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.684Z",
+    "priceObservedAt": "2026-09-14T18:00:38.293Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299374732",
@@ -69811,7 +69815,7 @@
         "price": 1738,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299374732",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.684Z"
+        "observedAt": "2026-09-14T18:00:38.293Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -69819,7 +69823,7 @@
         "price": 3037,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626661516",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.987Z"
+        "observedAt": "2026-09-14T18:00:38.740Z"
       }
     ],
     "priceHistory": [
@@ -70300,7 +70304,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.930Z",
+    "priceObservedAt": "2026-09-14T18:00:38.654Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac200pl?variant=42348171231372",
@@ -70819,7 +70823,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.936Z",
+    "priceObservedAt": "2026-09-14T18:00:38.662Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac200pl?variant=42348171264140",
@@ -71334,7 +71338,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.272Z",
+    "priceObservedAt": "2026-09-14T18:00:39.039Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44680913354892",
@@ -71383,7 +71387,7 @@
         "price": 1833,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44680913354892",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.272Z"
+        "observedAt": "2026-09-14T18:00:39.039Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -71391,7 +71395,7 @@
         "price": 2064,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-ultra?variant=44748334530700",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.957Z"
+        "observedAt": "2026-09-14T18:00:38.688Z"
       }
     ],
     "priceHistory": [
@@ -71866,7 +71870,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:37.761Z",
+    "priceObservedAt": "2026-09-14T18:00:37.187Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-max?variant=41677437730956",
@@ -73435,7 +73439,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.894Z",
+    "priceObservedAt": "2026-09-14T18:00:36.185Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-1300?variant=41681153261708",
@@ -73984,7 +73988,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.538Z",
+    "priceObservedAt": "2026-09-14T18:00:38.069Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-portable-power-station?variant=44235939741836",
@@ -74489,7 +74493,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:47.301Z",
+    "priceObservedAt": "2026-09-14T18:00:46.578Z",
     "retailer": "EcoFlow US",
     "retailerSlug": "ecoflow-us",
     "sourceUrl": "https://us.ecoflow.com/products/delta-pro-portable-power-station?variant=40516140138569",
@@ -74552,7 +74556,7 @@
         "price": 1899,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41522406391948",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.076Z"
+        "observedAt": "2026-09-14T18:00:33.876Z"
       },
       {
         "retailer": "EcoFlow US",
@@ -74560,7 +74564,7 @@
         "price": 1899,
         "sourceUrl": "https://us.ecoflow.com/products/delta-pro-portable-power-station?variant=40516140138569",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:47.301Z"
+        "observedAt": "2026-09-14T18:00:46.578Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -74568,7 +74572,7 @@
         "price": 2076,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41611407917196",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.071Z"
+        "observedAt": "2026-09-14T18:00:33.864Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -74576,7 +74580,7 @@
         "price": 2311,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41522406490252",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.046Z"
+        "observedAt": "2026-09-14T18:00:33.804Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -74584,7 +74588,7 @@
         "price": 2440,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41522406424716",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.055Z"
+        "observedAt": "2026-09-14T18:00:33.824Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -74592,7 +74596,7 @@
         "price": 2976,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41522406457484",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.061Z"
+        "observedAt": "2026-09-14T18:00:33.839Z"
       },
       {
         "retailer": "Amazon",
@@ -74600,7 +74604,7 @@
         "price": 2999,
         "sourceUrl": "https://www.amazon.com/dp/B0B1TCMZHZ",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:32.899Z"
+        "observedAt": "2026-09-14T18:00:31.428Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -74608,7 +74612,7 @@
         "price": 3196,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro?variant=41674358849676",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.066Z"
+        "observedAt": "2026-09-14T18:00:33.852Z"
       }
     ],
     "priceHistory": [
@@ -76098,7 +76102,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.612Z",
+    "priceObservedAt": "2026-09-14T18:00:38.168Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/efdp-main?variant=42306217246860",
@@ -76154,7 +76158,7 @@
         "price": 1899,
         "sourceUrl": "https://shopsolarkits.com/products/efdp-main?variant=42306217246860",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.612Z"
+        "observedAt": "2026-09-14T18:00:38.168Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -76162,7 +76166,7 @@
         "price": 2399,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-x-smart-extra-battery?variant=44760796397708",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.977Z"
+        "observedAt": "2026-09-14T18:00:38.724Z"
       }
     ],
     "priceHistory": [
@@ -76619,7 +76623,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.941Z",
+    "priceObservedAt": "2026-09-14T18:00:38.671Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-ac200pl?variant=42348176572556",
@@ -77136,7 +77140,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.697Z",
+    "priceObservedAt": "2026-09-14T18:00:38.310Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299473036",
@@ -77646,7 +77650,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.643Z",
+    "priceObservedAt": "2026-09-14T18:00:38.222Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c2000-gen-2-portable-power-station?variant=44718471512204",
@@ -78155,7 +78159,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.707Z",
+    "priceObservedAt": "2026-09-14T18:00:38.317Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299505804",
@@ -78661,7 +78665,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.688Z",
+    "priceObservedAt": "2026-09-14T18:00:38.299Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299407500",
@@ -78710,7 +78714,7 @@
         "price": 1998,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299407500",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.688Z"
+        "observedAt": "2026-09-14T18:00:38.299Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -78718,7 +78722,7 @@
         "price": 3297,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626694284",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.993Z"
+        "observedAt": "2026-09-14T18:00:38.746Z"
       }
     ],
     "priceHistory": [
@@ -79201,7 +79205,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.398Z",
+    "priceObservedAt": "2026-09-14T18:00:37.916Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800?variant=41952454869132",
@@ -79713,7 +79717,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.827Z",
+    "priceObservedAt": "2026-09-14T18:00:38.511Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-ultra-plus?variant=44698696450188",
@@ -80218,7 +80222,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.693Z",
+    "priceObservedAt": "2026-09-14T18:00:38.304Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299440268",
@@ -80267,7 +80271,7 @@
         "price": 2037,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299440268",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.693Z"
+        "observedAt": "2026-09-14T18:00:38.304Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -80275,7 +80279,7 @@
         "price": 3336,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626727052",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.999Z"
+        "observedAt": "2026-09-14T18:00:38.754Z"
       }
     ],
     "priceHistory": [
@@ -80758,7 +80762,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.543Z",
+    "priceObservedAt": "2026-09-14T18:00:38.076Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-portable-power-station?variant=44235939774604",
@@ -81259,7 +81263,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.723Z",
+    "priceObservedAt": "2026-09-14T18:00:38.343Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299604108",
@@ -81308,7 +81312,7 @@
         "price": 2126,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299604108",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.723Z"
+        "observedAt": "2026-09-14T18:00:38.343Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -81316,7 +81320,7 @@
         "price": 3425,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626923660",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.029Z"
+        "observedAt": "2026-09-14T18:00:38.793Z"
       }
     ],
     "priceHistory": [
@@ -81797,7 +81801,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.648Z",
+    "priceObservedAt": "2026-09-14T18:00:38.233Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c2000-gen-2-portable-power-station?variant=44718471479436",
@@ -82310,7 +82314,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:37.897Z",
+    "priceObservedAt": "2026-09-14T18:00:37.346Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-max?variant=41677437632652",
@@ -82843,7 +82847,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.729Z",
+    "priceObservedAt": "2026-09-14T18:00:38.348Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299636876",
@@ -82892,7 +82896,7 @@
         "price": 2165,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299636876",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.729Z"
+        "observedAt": "2026-09-14T18:00:38.348Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -82900,7 +82904,7 @@
         "price": 3464,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626956428",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.034Z"
+        "observedAt": "2026-09-14T18:00:38.798Z"
       }
     ],
     "priceHistory": [
@@ -83379,7 +83383,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.713Z",
+    "priceObservedAt": "2026-09-14T18:00:38.331Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299538572",
@@ -83889,7 +83893,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.379Z",
+    "priceObservedAt": "2026-09-14T18:00:37.894Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800?variant=42835051020428",
@@ -84397,7 +84401,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.834Z",
+    "priceObservedAt": "2026-09-14T18:00:38.516Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-ultra-plus?variant=44698696482956",
@@ -84902,7 +84906,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.718Z",
+    "priceObservedAt": "2026-09-14T18:00:38.337Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299571340",
@@ -85406,7 +85410,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:37.038Z",
+    "priceObservedAt": "2026-09-14T18:00:36.330Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-1300?variant=41681148215436",
@@ -86493,7 +86497,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.744Z",
+    "priceObservedAt": "2026-09-14T18:00:38.366Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299735180",
@@ -86542,7 +86546,7 @@
         "price": 2325,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299735180",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.744Z"
+        "observedAt": "2026-09-14T18:00:38.366Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -86550,7 +86554,7 @@
         "price": 3624,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627054732",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.049Z"
+        "observedAt": "2026-09-14T18:00:38.822Z"
       }
     ],
     "priceHistory": [
@@ -87029,7 +87033,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.749Z",
+    "priceObservedAt": "2026-09-14T18:00:38.377Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299767948",
@@ -87078,7 +87082,7 @@
         "price": 2364,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299767948",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.749Z"
+        "observedAt": "2026-09-14T18:00:38.377Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -87086,7 +87090,7 @@
         "price": 3663,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627087500",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.058Z"
+        "observedAt": "2026-09-14T18:00:38.831Z"
       }
     ],
     "priceHistory": [
@@ -87563,7 +87567,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.276Z",
+    "priceObservedAt": "2026-09-14T18:00:39.043Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44698824212620",
@@ -87612,7 +87616,7 @@
         "price": 2384,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44698824212620",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.276Z"
+        "observedAt": "2026-09-14T18:00:39.043Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -87620,7 +87624,7 @@
         "price": 2603,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-ultra?variant=44748334563468",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.962Z"
+        "observedAt": "2026-09-14T18:00:38.698Z"
       }
     ],
     "priceHistory": [
@@ -88095,7 +88099,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.547Z",
+    "priceObservedAt": "2026-09-14T18:00:38.082Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-portable-power-station?variant=44235939807372",
@@ -88601,7 +88605,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.464Z",
+    "priceObservedAt": "2026-09-14T18:00:37.981Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800-plus?variant=43913455239308",
@@ -89118,7 +89122,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.373Z",
+    "priceObservedAt": "2026-09-14T18:00:37.888Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800?variant=41952454803596",
@@ -89630,7 +89634,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.073Z",
+    "priceObservedAt": "2026-09-14T18:00:37.492Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-max?variant=41674491560076",
@@ -90163,7 +90167,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.735Z",
+    "priceObservedAt": "2026-09-14T18:00:38.353Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299669644",
@@ -90212,7 +90216,7 @@
         "price": 2425,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299669644",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.735Z"
+        "observedAt": "2026-09-14T18:00:38.353Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -90220,7 +90224,7 @@
         "price": 3724,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626989196",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.039Z"
+        "observedAt": "2026-09-14T18:00:38.805Z"
       }
     ],
     "priceHistory": [
@@ -90699,7 +90703,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.739Z",
+    "priceObservedAt": "2026-09-14T18:00:38.360Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299702412",
@@ -90748,7 +90752,7 @@
         "price": 2464,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299702412",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.739Z"
+        "observedAt": "2026-09-14T18:00:38.360Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -90756,7 +90760,7 @@
         "price": 3763,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627021964",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.044Z"
+        "observedAt": "2026-09-14T18:00:38.811Z"
       }
     ],
     "priceHistory": [
@@ -91239,7 +91243,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.239Z",
+    "priceObservedAt": "2026-09-14T18:00:38.993Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-apex-300?variant=44408365875340",
@@ -91744,7 +91748,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.764Z",
+    "priceObservedAt": "2026-09-14T18:00:38.400Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299866252",
@@ -91793,7 +91797,7 @@
         "price": 2524,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299866252",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.764Z"
+        "observedAt": "2026-09-14T18:00:38.400Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -91801,7 +91805,7 @@
         "price": 3823,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627185804",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.077Z"
+        "observedAt": "2026-09-14T18:00:38.851Z"
       }
     ],
     "priceHistory": [
@@ -92284,7 +92288,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.183Z",
+    "priceObservedAt": "2026-09-14T18:00:34.058Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/core-plus?variant=41613331562636",
@@ -92781,7 +92785,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.769Z",
+    "priceObservedAt": "2026-09-14T18:00:38.409Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299899020",
@@ -92830,7 +92834,7 @@
         "price": 2563,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299899020",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.769Z"
+        "observedAt": "2026-09-14T18:00:38.409Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -92838,7 +92842,7 @@
         "price": 3862,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627218572",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.083Z"
+        "observedAt": "2026-09-14T18:00:38.858Z"
       }
     ],
     "priceHistory": [
@@ -93322,7 +93326,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.429Z",
+    "priceObservedAt": "2026-09-14T18:00:37.947Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800-plus?variant=43918027391116",
@@ -93835,7 +93839,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.754Z",
+    "priceObservedAt": "2026-09-14T18:00:38.385Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299800716",
@@ -93884,7 +93888,7 @@
         "price": 2624,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299800716",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.754Z"
+        "observedAt": "2026-09-14T18:00:38.385Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -93892,7 +93896,7 @@
         "price": 3923,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627120268",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.064Z"
+        "observedAt": "2026-09-14T18:00:38.838Z"
       }
     ],
     "priceHistory": [
@@ -94375,7 +94379,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.383Z",
+    "priceObservedAt": "2026-09-14T18:00:37.900Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800?variant=41952454770828",
@@ -95098,7 +95102,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.840Z",
+    "priceObservedAt": "2026-09-14T18:00:38.522Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-ultra-plus?variant=44698929168524",
@@ -95603,7 +95607,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.758Z",
+    "priceObservedAt": "2026-09-14T18:00:38.392Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299833484",
@@ -95652,7 +95656,7 @@
         "price": 2663,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299833484",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.758Z"
+        "observedAt": "2026-09-14T18:00:38.392Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -95660,7 +95664,7 @@
         "price": 3962,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627153036",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.070Z"
+        "observedAt": "2026-09-14T18:00:38.843Z"
       }
     ],
     "priceHistory": [
@@ -96139,7 +96143,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.784Z",
+    "priceObservedAt": "2026-09-14T18:00:38.434Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299997324",
@@ -96188,7 +96192,7 @@
         "price": 2723,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299997324",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.784Z"
+        "observedAt": "2026-09-14T18:00:38.434Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -96196,7 +96200,7 @@
         "price": 4022,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627316876",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.100Z"
+        "observedAt": "2026-09-14T18:00:38.870Z"
       }
     ],
     "priceHistory": [
@@ -96679,7 +96683,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.434Z",
+    "priceObservedAt": "2026-09-14T18:00:37.952Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800-plus?variant=43921387094156",
@@ -97192,7 +97196,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.789Z",
+    "priceObservedAt": "2026-09-14T18:00:38.443Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300030092",
@@ -97241,7 +97245,7 @@
         "price": 2762,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300030092",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.789Z"
+        "observedAt": "2026-09-14T18:00:38.443Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -97249,7 +97253,7 @@
         "price": 4061,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627349644",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.110Z"
+        "observedAt": "2026-09-14T18:00:38.874Z"
       }
     ],
     "priceHistory": [
@@ -97730,7 +97734,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.845Z",
+    "priceObservedAt": "2026-09-14T18:00:38.528Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-ultra-plus?variant=44698696515724",
@@ -98240,7 +98244,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.454Z",
+    "priceObservedAt": "2026-09-14T18:00:37.972Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800-plus?variant=44047051751564",
@@ -98754,7 +98758,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.306Z",
+    "priceObservedAt": "2026-09-14T18:00:39.081Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-ocean-pro-24kva-hybrid-inverter?variant=45099587207308",
@@ -99260,7 +99264,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.295Z",
+    "priceObservedAt": "2026-09-14T18:00:39.068Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-rv5-power-hub-modular-rv-solar-system?variant=44734427365516",
@@ -99765,7 +99769,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.774Z",
+    "priceObservedAt": "2026-09-14T18:00:38.417Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299931788",
@@ -99814,7 +99818,7 @@
         "price": 2823,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299931788",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.774Z"
+        "observedAt": "2026-09-14T18:00:38.417Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -99822,7 +99826,7 @@
         "price": 4122,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627251340",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.091Z"
+        "observedAt": "2026-09-14T18:00:38.862Z"
       }
     ],
     "priceHistory": [
@@ -100301,7 +100305,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.779Z",
+    "priceObservedAt": "2026-09-14T18:00:38.424Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299964556",
@@ -100350,7 +100354,7 @@
         "price": 2862,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700299964556",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.779Z"
+        "observedAt": "2026-09-14T18:00:38.424Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -100358,7 +100362,7 @@
         "price": 4161,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627284108",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.096Z"
+        "observedAt": "2026-09-14T18:00:38.866Z"
       }
     ],
     "priceHistory": [
@@ -100928,7 +100932,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.803Z",
+    "priceObservedAt": "2026-09-14T18:00:38.474Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300128396",
@@ -100977,7 +100981,7 @@
         "price": 2922,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300128396",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.803Z"
+        "observedAt": "2026-09-14T18:00:38.474Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -100985,7 +100989,7 @@
         "price": 4221,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627447948",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.127Z"
+        "observedAt": "2026-09-14T18:00:38.888Z"
       }
     ],
     "priceHistory": [
@@ -101468,7 +101472,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.249Z",
+    "priceObservedAt": "2026-09-14T18:00:39.004Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-apex-300?variant=44408365940876",
@@ -101973,7 +101977,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.808Z",
+    "priceObservedAt": "2026-09-14T18:00:38.482Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300161164",
@@ -102022,7 +102026,7 @@
         "price": 2961,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300161164",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.808Z"
+        "observedAt": "2026-09-14T18:00:38.482Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -102030,7 +102034,7 @@
         "price": 4260,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627480716",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.135Z"
+        "observedAt": "2026-09-14T18:00:38.892Z"
       }
     ],
     "priceHistory": [
@@ -102514,7 +102518,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.440Z",
+    "priceObservedAt": "2026-09-14T18:00:37.957Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800-plus?variant=43918027423884",
@@ -103027,7 +103031,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.794Z",
+    "priceObservedAt": "2026-09-14T18:00:38.451Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300062860",
@@ -103076,7 +103080,7 @@
         "price": 3022,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300062860",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.794Z"
+        "observedAt": "2026-09-14T18:00:38.451Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -103084,7 +103088,7 @@
         "price": 4321,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627382412",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.116Z"
+        "observedAt": "2026-09-14T18:00:38.879Z"
       }
     ],
     "priceHistory": [
@@ -103565,7 +103569,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.528Z",
+    "priceObservedAt": "2026-09-14T18:00:39.364Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-2425-portable-battery-generator?variant=44334075805836",
@@ -104059,7 +104063,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.798Z",
+    "priceObservedAt": "2026-09-14T18:00:38.466Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300095628",
@@ -104108,7 +104112,7 @@
         "price": 3061,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300095628",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.798Z"
+        "observedAt": "2026-09-14T18:00:38.466Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -104116,7 +104120,7 @@
         "price": 4360,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627415180",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.122Z"
+        "observedAt": "2026-09-14T18:00:38.883Z"
       }
     ],
     "priceHistory": [
@@ -104599,7 +104603,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.188Z",
+    "priceObservedAt": "2026-09-14T18:00:34.064Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/core-plus?variant=41613331595404",
@@ -105100,7 +105104,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.418Z",
+    "priceObservedAt": "2026-09-14T18:00:39.231Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-dual-kits?variant=44320699678860",
@@ -105601,7 +105605,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.812Z",
+    "priceObservedAt": "2026-09-14T18:00:38.491Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300193932",
@@ -105650,7 +105654,7 @@
         "price": 3221,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300193932",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.812Z"
+        "observedAt": "2026-09-14T18:00:38.491Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -105658,7 +105662,7 @@
         "price": 4520,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627513484",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.147Z"
+        "observedAt": "2026-09-14T18:00:38.896Z"
       }
     ],
     "priceHistory": [
@@ -106137,7 +106141,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.006Z",
+    "priceObservedAt": "2026-09-14T18:00:38.763Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626759820",
@@ -106643,7 +106647,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.818Z",
+    "priceObservedAt": "2026-09-14T18:00:38.499Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300226700",
@@ -106692,7 +106696,7 @@
         "price": 3260,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-me?variant=41700300226700",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.818Z"
+        "observedAt": "2026-09-14T18:00:38.499Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -106700,7 +106704,7 @@
         "price": 4559,
         "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700627546252",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:39.152Z"
+        "observedAt": "2026-09-14T18:00:38.900Z"
       }
     ],
     "priceHistory": [
@@ -107179,7 +107183,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.012Z",
+    "priceObservedAt": "2026-09-14T18:00:38.769Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626825356",
@@ -107689,7 +107693,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.423Z",
+    "priceObservedAt": "2026-09-14T18:00:39.237Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-dual-kits?variant=44320699711628",
@@ -108195,7 +108199,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.445Z",
+    "priceObservedAt": "2026-09-14T18:00:37.962Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800-plus?variant=43918027456652",
@@ -108712,7 +108716,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.244Z",
+    "priceObservedAt": "2026-09-14T18:00:38.999Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-apex-300?variant=44408365908108",
@@ -109221,7 +109225,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.254Z",
+    "priceObservedAt": "2026-09-14T18:00:39.010Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-apex-300?variant=44408365973644",
@@ -109726,7 +109730,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.019Z",
+    "priceObservedAt": "2026-09-14T18:00:38.775Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626858124",
@@ -110234,7 +110238,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.525Z",
+    "priceObservedAt": "2026-09-14T18:00:39.359Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-2425-portable-battery-generator?variant=44334075773068",
@@ -110728,7 +110732,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.024Z",
+    "priceObservedAt": "2026-09-14T18:00:38.785Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/lion-safari-3000?variant=41700626890892",
@@ -111238,7 +111242,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.676Z",
+    "priceObservedAt": "2026-09-14T18:00:38.268Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/hysolis-mps-4500-solar-generator?variant=41674279813260",
@@ -111775,7 +111779,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.393Z",
+    "priceObservedAt": "2026-09-14T18:00:37.911Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800?variant=41971893076108",
@@ -112289,7 +112293,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.205Z",
+    "priceObservedAt": "2026-09-14T18:00:37.628Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-max?variant=41674491723916",
@@ -112826,7 +112830,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.658Z",
+    "priceObservedAt": "2026-09-14T18:00:38.244Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/hysolis-mps-4500-solar-generator?variant=41674279649420",
@@ -113364,7 +113368,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.299Z",
+    "priceObservedAt": "2026-09-14T18:00:39.073Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-rv5-power-hub-modular-rv-solar-system?variant=44734427398284",
@@ -113873,7 +113877,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.261Z",
+    "priceObservedAt": "2026-09-14T18:00:39.021Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-apex-300?variant=44408366039180",
@@ -114485,7 +114489,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.257Z",
+    "priceObservedAt": "2026-09-14T18:00:39.016Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-apex-300?variant=44408366006412",
@@ -114992,7 +114996,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.522Z",
+    "priceObservedAt": "2026-09-14T18:00:39.353Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-2425-portable-battery-generator?variant=44334075740300",
@@ -115491,7 +115495,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.459Z",
+    "priceObservedAt": "2026-09-14T18:00:37.977Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800-plus?variant=44278581887116",
@@ -116004,7 +116008,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.493Z",
+    "priceObservedAt": "2026-09-14T18:00:38.016Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra?variant=42007015882892",
@@ -116060,7 +116064,7 @@
         "price": 4199,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra?variant=42007015882892",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.493Z"
+        "observedAt": "2026-09-14T18:00:38.016Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -116068,7 +116072,7 @@
         "price": 5499,
         "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra?variant=42007016046732",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:38.517Z"
+        "observedAt": "2026-09-14T18:00:38.042Z"
       }
     ],
     "priceHistory": [
@@ -116524,7 +116528,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.449Z",
+    "priceObservedAt": "2026-09-14T18:00:37.967Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800-plus?variant=43918027489420",
@@ -117041,7 +117045,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.652Z",
+    "priceObservedAt": "2026-09-14T18:00:38.240Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/hysolis-mps-4500-solar-generator?variant=41674279616652",
@@ -117676,7 +117680,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.193Z",
+    "priceObservedAt": "2026-09-14T18:00:34.069Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/core-max?variant=34427521728652",
@@ -118381,7 +118385,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.391Z",
+    "priceObservedAt": "2026-09-14T18:00:39.202Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-3651-solar-generator?variant=44337746575500",
@@ -118886,7 +118890,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.388Z",
+    "priceObservedAt": "2026-09-14T18:00:37.905Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-f3800?variant=43415901864076",
@@ -119492,7 +119496,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.667Z",
+    "priceObservedAt": "2026-09-14T18:00:38.256Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/hysolis-mps-4500-solar-generator?variant=41674279682188",
@@ -120029,7 +120033,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.663Z",
+    "priceObservedAt": "2026-09-14T18:00:38.250Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/hysolis-mps-4500-solar-generator?variant=41674279747724",
@@ -120564,7 +120568,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.519Z",
+    "priceObservedAt": "2026-09-14T18:00:39.346Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-2425-portable-battery-generator?variant=44334077051020",
@@ -121162,7 +121166,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.672Z",
+    "priceObservedAt": "2026-09-14T18:00:38.263Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/hysolis-mps-4500-solar-generator?variant=41674279780492",
@@ -121699,7 +121703,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.198Z",
+    "priceObservedAt": "2026-09-14T18:00:34.082Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/core-max?variant=40337471996044",
@@ -122400,7 +122404,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.386Z",
+    "priceObservedAt": "2026-09-14T18:00:39.197Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-3651-solar-generator?variant=44337746542732",
@@ -123106,7 +123110,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.181Z",
+    "priceObservedAt": "2026-09-14T18:00:38.928Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3800-plus-dual-kits?variant=44076266553484",
@@ -123607,7 +123611,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.396Z",
+    "priceObservedAt": "2026-09-14T18:00:39.207Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-dual-kits?variant=44447369560204",
@@ -124302,7 +124306,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.683Z",
+    "priceObservedAt": "2026-09-14T18:00:34.779Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=43432197750924",
@@ -124358,7 +124362,7 @@
         "price": 5979,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=43432197750924",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.683Z"
+        "observedAt": "2026-09-14T18:00:34.779Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -124366,7 +124370,7 @@
         "price": 6728,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=44699214119052",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.689Z"
+        "observedAt": "2026-09-14T18:00:34.784Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -124374,7 +124378,7 @@
         "price": 7139,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=43432197783692",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.694Z"
+        "observedAt": "2026-09-14T18:00:34.789Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -124382,7 +124386,7 @@
         "price": 7878,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=44699214151820",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.699Z"
+        "observedAt": "2026-09-14T18:00:34.796Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -124390,7 +124394,7 @@
         "price": 11579,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=43432197816460",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.707Z"
+        "observedAt": "2026-09-14T18:00:34.802Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -124398,7 +124402,7 @@
         "price": 12328,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=44699214184588",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.713Z"
+        "observedAt": "2026-09-14T18:00:34.810Z"
       }
     ],
     "priceHistory": [
@@ -124854,7 +124858,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.415Z",
+    "priceObservedAt": "2026-09-14T18:00:34.458Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/core-pro?variant=41540924637324",
@@ -125355,7 +125359,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.498Z",
+    "priceObservedAt": "2026-09-14T18:00:38.021Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra?variant=42007015915660",
@@ -125857,7 +125861,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.176Z",
+    "priceObservedAt": "2026-09-14T18:00:38.924Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3800-plus-dual-kits?variant=44076266520716",
@@ -126459,7 +126463,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.104Z",
+    "priceObservedAt": "2026-09-14T18:00:33.940Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=43332721016972",
@@ -126515,7 +126519,7 @@
         "price": 6189,
         "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=43332721016972",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.104Z"
+        "observedAt": "2026-09-14T18:00:33.940Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -126523,7 +126527,7 @@
         "price": 6889,
         "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=43332721049740",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.113Z"
+        "observedAt": "2026-09-14T18:00:33.952Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -126531,7 +126535,7 @@
         "price": 7389,
         "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=44686037713036",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.119Z"
+        "observedAt": "2026-09-14T18:00:33.962Z"
       }
     ],
     "priceHistory": [
@@ -127002,7 +127006,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.382Z",
+    "priceObservedAt": "2026-09-14T18:00:39.191Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-3651-solar-generator?variant=44337746477196",
@@ -128201,7 +128205,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.338Z",
+    "priceObservedAt": "2026-09-14T18:00:39.130Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-ocean-pro-10kwh-lfp-solar-battery?variant=44808958967948",
@@ -128702,7 +128706,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.156Z",
+    "priceObservedAt": "2026-09-14T18:00:38.905Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3800-plus-dual-kits?variant=44005102944396",
@@ -129208,7 +129212,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.146Z",
+    "priceObservedAt": "2026-09-14T18:00:34.002Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=42026728685708",
@@ -129264,7 +129268,7 @@
         "price": 7039,
         "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=42026728685708",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.146Z"
+        "observedAt": "2026-09-14T18:00:34.002Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -129272,7 +129276,7 @@
         "price": 8129,
         "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=42943969493132",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.152Z"
+        "observedAt": "2026-09-14T18:00:34.011Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -129280,7 +129284,7 @@
         "price": 8389,
         "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=44686037778572",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.158Z"
+        "observedAt": "2026-09-14T18:00:34.022Z"
       }
     ],
     "priceHistory": [
@@ -129760,7 +129764,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.165Z",
+    "priceObservedAt": "2026-09-14T18:00:34.029Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=42345128427660",
@@ -129816,7 +129820,7 @@
         "price": 7109,
         "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=42345128427660",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.165Z"
+        "observedAt": "2026-09-14T18:00:34.029Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -129824,7 +129828,7 @@
         "price": 8249,
         "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=42943969525900",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.171Z"
+        "observedAt": "2026-09-14T18:00:34.043Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -129832,7 +129836,7 @@
         "price": 8479,
         "sourceUrl": "https://shopsolarkits.com/products/complete-all-in-one-solar-kit-ogk-plus?variant=44686037811340",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.178Z"
+        "observedAt": "2026-09-14T18:00:34.052Z"
       }
     ],
     "priceHistory": [
@@ -130601,7 +130605,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.601Z",
+    "priceObservedAt": "2026-09-14T18:00:34.680Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=43149681950860",
@@ -130657,7 +130661,7 @@
         "price": 7479,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=43149681950860",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.601Z"
+        "observedAt": "2026-09-14T18:00:34.680Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -130665,7 +130669,7 @@
         "price": 8228,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=44699220869260",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.607Z"
+        "observedAt": "2026-09-14T18:00:34.686Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -130673,7 +130677,7 @@
         "price": 9629,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=43149681983628",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.612Z"
+        "observedAt": "2026-09-14T18:00:34.698Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -130681,7 +130685,7 @@
         "price": 10378,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=44699220902028",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.618Z"
+        "observedAt": "2026-09-14T18:00:34.715Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -130689,7 +130693,7 @@
         "price": 13879,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=43149682016396",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.624Z"
+        "observedAt": "2026-09-14T18:00:34.725Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -130697,7 +130701,7 @@
         "price": 14628,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=44699220934796",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.629Z"
+        "observedAt": "2026-09-14T18:00:34.732Z"
       }
     ],
     "priceHistory": [
@@ -131704,7 +131708,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.502Z",
+    "priceObservedAt": "2026-09-14T18:00:38.026Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra?variant=42007015948428",
@@ -132405,7 +132409,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.402Z",
+    "priceObservedAt": "2026-09-14T18:00:39.212Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-dual-kits?variant=44447369592972",
@@ -133100,7 +133104,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:54.092Z",
+    "priceObservedAt": "2026-09-14T18:00:53.589Z",
     "retailer": "Renogy",
     "retailerSlug": "renogy",
     "sourceUrl": "https://www.renogy.com/products/renogy-2-5kw-essential-plus-kit?variant=43178724589683",
@@ -134136,7 +134140,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.635Z",
+    "priceObservedAt": "2026-09-14T18:00:34.739Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=43432197849228",
@@ -134192,7 +134196,7 @@
         "price": 8579,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=43432197849228",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.635Z"
+        "observedAt": "2026-09-14T18:00:34.739Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -134200,7 +134204,7 @@
         "price": 9329,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=44699214020748",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.641Z"
+        "observedAt": "2026-09-14T18:00:34.748Z"
       }
     ],
     "priceHistory": [
@@ -135496,7 +135500,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.241Z",
+    "priceObservedAt": "2026-09-14T18:00:34.161Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/prime-max?variant=41070140489868",
@@ -135552,7 +135556,7 @@
         "price": 9239,
         "sourceUrl": "https://shopsolarkits.com/products/prime-max?variant=41070140489868",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.241Z"
+        "observedAt": "2026-09-14T18:00:34.161Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -135560,7 +135564,7 @@
         "price": 10989,
         "sourceUrl": "https://shopsolarkits.com/products/prime-max?variant=41862763282572",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.252Z"
+        "observedAt": "2026-09-14T18:00:34.168Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -135568,7 +135572,7 @@
         "price": 14889,
         "sourceUrl": "https://shopsolarkits.com/products/prime-max?variant=41862763249804",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.257Z"
+        "observedAt": "2026-09-14T18:00:34.177Z"
       }
     ],
     "priceHistory": [
@@ -136463,7 +136467,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.310Z",
+    "priceObservedAt": "2026-09-14T18:00:39.086Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-ocean-pro-24kva-hybrid-inverter?variant=45099587240076",
@@ -136968,7 +136972,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.507Z",
+    "priceObservedAt": "2026-09-14T18:00:38.032Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra?variant=42007015981196",
@@ -137803,7 +137807,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.647Z",
+    "priceObservedAt": "2026-09-14T18:00:34.755Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=43432197881996",
@@ -137859,7 +137863,7 @@
         "price": 10129,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=43432197881996",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.647Z"
+        "observedAt": "2026-09-14T18:00:34.755Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -137867,7 +137871,7 @@
         "price": 10859,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=44699214053516",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.654Z"
+        "observedAt": "2026-09-14T18:00:34.761Z"
       }
     ],
     "priceHistory": [
@@ -138662,7 +138666,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.407Z",
+    "priceObservedAt": "2026-09-14T18:00:39.216Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-dual-kits?variant=44447369625740",
@@ -139364,7 +139368,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.204Z",
+    "priceObservedAt": "2026-09-14T18:00:34.095Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/prime-max?variant=41172390674572",
@@ -139420,7 +139424,7 @@
         "price": 10649,
         "sourceUrl": "https://shopsolarkits.com/products/prime-max?variant=41172390674572",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.204Z"
+        "observedAt": "2026-09-14T18:00:34.095Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -139428,7 +139432,7 @@
         "price": 12299,
         "sourceUrl": "https://shopsolarkits.com/products/prime-max?variant=41862763348108",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.210Z"
+        "observedAt": "2026-09-14T18:00:34.112Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -139436,7 +139440,7 @@
         "price": 15999,
         "sourceUrl": "https://shopsolarkits.com/products/prime-max?variant=41862763315340",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.218Z"
+        "observedAt": "2026-09-14T18:00:34.121Z"
       }
     ],
     "priceHistory": [
@@ -140332,7 +140336,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.160Z",
+    "priceObservedAt": "2026-09-14T18:00:38.909Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3800-plus-dual-kits?variant=44005102977164",
@@ -140831,7 +140835,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.514Z",
+    "priceObservedAt": "2026-09-14T18:00:34.555Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=43149682966668",
@@ -140887,7 +140891,7 @@
         "price": 10979,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=43149682966668",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.514Z"
+        "observedAt": "2026-09-14T18:00:34.555Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -140895,7 +140899,7 @@
         "price": 11728,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=44699222147212",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.521Z"
+        "observedAt": "2026-09-14T18:00:34.561Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -140903,7 +140907,7 @@
         "price": 13889,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=43149682999436",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.528Z"
+        "observedAt": "2026-09-14T18:00:34.566Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -140911,7 +140915,7 @@
         "price": 14628,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=44699222179980",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.535Z"
+        "observedAt": "2026-09-14T18:00:34.573Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -140919,7 +140923,7 @@
         "price": 19179,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=43149683032204",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.540Z"
+        "observedAt": "2026-09-14T18:00:34.588Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -140927,7 +140931,7 @@
         "price": 19928,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=44699222212748",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.562Z"
+        "observedAt": "2026-09-14T18:00:34.594Z"
       }
     ],
     "priceHistory": [
@@ -141376,7 +141380,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.568Z",
+    "priceObservedAt": "2026-09-14T18:00:34.601Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=43364183244940",
@@ -141432,7 +141436,7 @@
         "price": 11179,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=43364183244940",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.568Z"
+        "observedAt": "2026-09-14T18:00:34.601Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -141440,7 +141444,7 @@
         "price": 12228,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=44699220770956",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.575Z"
+        "observedAt": "2026-09-14T18:00:34.608Z"
       }
     ],
     "priceHistory": [
@@ -142587,7 +142591,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.264Z",
+    "priceObservedAt": "2026-09-14T18:00:39.029Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/bluetti-apex-300?variant=44418568323212",
@@ -143096,7 +143100,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.412Z",
+    "priceObservedAt": "2026-09-14T18:00:39.224Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-dual-kits?variant=44447369658508",
@@ -143597,7 +143601,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:38.512Z",
+    "priceObservedAt": "2026-09-14T18:00:38.037Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra?variant=42007016013964",
@@ -144772,7 +144776,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.580Z",
+    "priceObservedAt": "2026-09-14T18:00:34.615Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=43364183277708",
@@ -144828,7 +144832,7 @@
         "price": 13129,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=43364183277708",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.580Z"
+        "observedAt": "2026-09-14T18:00:34.615Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -144836,7 +144840,7 @@
         "price": 13878,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=44699220803724",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.585Z"
+        "observedAt": "2026-09-14T18:00:34.626Z"
       }
     ],
     "priceHistory": [
@@ -145631,7 +145635,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.860Z",
+    "priceObservedAt": "2026-09-14T18:00:34.985Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/select-plus?variant=43878467141772",
@@ -145687,7 +145691,7 @@
         "price": 13598,
         "sourceUrl": "https://shopsolarkits.com/products/select-plus?variant=43878467141772",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.860Z"
+        "observedAt": "2026-09-14T18:00:34.985Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -145695,7 +145699,7 @@
         "price": 15389,
         "sourceUrl": "https://shopsolarkits.com/products/select-plus?variant=43878467174540",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.866Z"
+        "observedAt": "2026-09-14T18:00:34.998Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -145703,7 +145707,7 @@
         "price": 19139,
         "sourceUrl": "https://shopsolarkits.com/products/select-plus?variant=43878467207308",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.871Z"
+        "observedAt": "2026-09-14T18:00:35.009Z"
       }
     ],
     "priceHistory": [
@@ -146499,7 +146503,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.820Z",
+    "priceObservedAt": "2026-09-14T18:00:34.946Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/select-plus?variant=43878467240076",
@@ -146555,7 +146559,7 @@
         "price": 13939,
         "sourceUrl": "https://shopsolarkits.com/products/select-plus?variant=43878467240076",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.820Z"
+        "observedAt": "2026-09-14T18:00:34.946Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -146563,7 +146567,7 @@
         "price": 15689,
         "sourceUrl": "https://shopsolarkits.com/products/select-plus?variant=43878467272844",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.825Z"
+        "observedAt": "2026-09-14T18:00:34.955Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -146571,7 +146575,7 @@
         "price": 19339,
         "sourceUrl": "https://shopsolarkits.com/products/select-plus?variant=43878467305612",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.831Z"
+        "observedAt": "2026-09-14T18:00:34.963Z"
       }
     ],
     "priceHistory": [
@@ -147027,7 +147031,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.165Z",
+    "priceObservedAt": "2026-09-14T18:00:38.914Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3800-plus-dual-kits?variant=44039782989964",
@@ -147866,7 +147870,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.669Z",
+    "priceObservedAt": "2026-09-14T18:00:34.767Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=43432197914764",
@@ -147922,7 +147926,7 @@
         "price": 14229,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=43432197914764",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.669Z"
+        "observedAt": "2026-09-14T18:00:34.767Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -147930,7 +147934,7 @@
         "price": 14978,
         "sourceUrl": "https://shopsolarkits.com/products/vector-plus?variant=44699214086284",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.675Z"
+        "observedAt": "2026-09-14T18:00:34.772Z"
       }
     ],
     "priceHistory": [
@@ -148726,7 +148730,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.800Z",
+    "priceObservedAt": "2026-09-14T18:00:34.931Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/select-max?variant=43878347440268",
@@ -148782,7 +148786,7 @@
         "price": 15189,
         "sourceUrl": "https://shopsolarkits.com/products/select-max?variant=43878347440268",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.800Z"
+        "observedAt": "2026-09-14T18:00:34.931Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -148790,7 +148794,7 @@
         "price": 17589,
         "sourceUrl": "https://shopsolarkits.com/products/select-max?variant=43878342852748",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.806Z"
+        "observedAt": "2026-09-14T18:00:34.937Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -148798,7 +148802,7 @@
         "price": 21489,
         "sourceUrl": "https://shopsolarkits.com/products/select-max?variant=43878342885516",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.812Z"
+        "observedAt": "2026-09-14T18:00:34.941Z"
       }
     ],
     "priceHistory": [
@@ -149254,7 +149258,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.370Z",
+    "priceObservedAt": "2026-09-14T18:00:34.360Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=40630283042956",
@@ -149310,7 +149314,7 @@
         "price": 15489,
         "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=40630283042956",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.370Z"
+        "observedAt": "2026-09-14T18:00:34.360Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -149318,7 +149322,7 @@
         "price": 16989,
         "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=41862470500492",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.375Z"
+        "observedAt": "2026-09-14T18:00:34.369Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -149326,7 +149330,7 @@
         "price": 21489,
         "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=41862470467724",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.380Z"
+        "observedAt": "2026-09-14T18:00:34.379Z"
       }
     ],
     "priceHistory": [
@@ -150121,7 +150125,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.169Z",
+    "priceObservedAt": "2026-09-14T18:00:38.919Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3800-plus-dual-kits?variant=44039783055500",
@@ -150627,7 +150631,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.765Z",
+    "priceObservedAt": "2026-09-14T18:00:34.876Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/select-max?variant=43878347473036",
@@ -150683,7 +150687,7 @@
         "price": 15689,
         "sourceUrl": "https://shopsolarkits.com/products/select-max?variant=43878347473036",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.765Z"
+        "observedAt": "2026-09-14T18:00:34.876Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -150691,7 +150695,7 @@
         "price": 17889,
         "sourceUrl": "https://shopsolarkits.com/products/select-max?variant=43878342918284",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.770Z"
+        "observedAt": "2026-09-14T18:00:34.882Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -150699,7 +150703,7 @@
         "price": 21889,
         "sourceUrl": "https://shopsolarkits.com/products/select-max?variant=43878342951052",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.776Z"
+        "observedAt": "2026-09-14T18:00:34.890Z"
       }
     ],
     "priceHistory": [
@@ -151155,7 +151159,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.295Z",
+    "priceObservedAt": "2026-09-14T18:00:34.257Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/prime-pro?variant=41359216541836",
@@ -151211,7 +151215,7 @@
         "price": 15989,
         "sourceUrl": "https://shopsolarkits.com/products/prime-pro?variant=41359216541836",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.295Z"
+        "observedAt": "2026-09-14T18:00:34.257Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -151219,7 +151223,7 @@
         "price": 18389,
         "sourceUrl": "https://shopsolarkits.com/products/prime-pro?variant=41862775046284",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.301Z"
+        "observedAt": "2026-09-14T18:00:34.268Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -151227,7 +151231,7 @@
         "price": 22189,
         "sourceUrl": "https://shopsolarkits.com/products/prime-pro?variant=41862775013516",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.306Z"
+        "observedAt": "2026-09-14T18:00:34.274Z"
       }
     ],
     "priceHistory": [
@@ -151676,7 +151680,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.473Z",
+    "priceObservedAt": "2026-09-14T18:00:34.518Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=43364250026124",
@@ -151732,7 +151736,7 @@
         "price": 16279,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=43364250026124",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.473Z"
+        "observedAt": "2026-09-14T18:00:34.518Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -151740,7 +151744,7 @@
         "price": 16978,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=44699222048908",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.478Z"
+        "observedAt": "2026-09-14T18:00:34.523Z"
       }
     ],
     "priceHistory": [
@@ -152195,7 +152199,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.314Z",
+    "priceObservedAt": "2026-09-14T18:00:39.090Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-ocean-pro-24kva-hybrid-inverter?variant=45099587272844",
@@ -152701,7 +152705,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.385Z",
+    "priceObservedAt": "2026-09-14T18:00:34.389Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=44701542482060",
@@ -152757,7 +152761,7 @@
         "price": 17389,
         "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=44701542482060",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.385Z"
+        "observedAt": "2026-09-14T18:00:34.389Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -152765,7 +152769,7 @@
         "price": 18789,
         "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=44701542514828",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.390Z"
+        "observedAt": "2026-09-14T18:00:34.407Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -152773,7 +152777,7 @@
         "price": 22989,
         "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=44701542547596",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.395Z"
+        "observedAt": "2026-09-14T18:00:34.417Z"
       }
     ],
     "priceHistory": [
@@ -153222,7 +153226,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.591Z",
+    "priceObservedAt": "2026-09-14T18:00:34.657Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=43364183310476",
@@ -153278,7 +153282,7 @@
         "price": 17479,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=43364183310476",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.591Z"
+        "observedAt": "2026-09-14T18:00:34.657Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -153286,7 +153290,7 @@
         "price": 18628,
         "sourceUrl": "https://shopsolarkits.com/products/vector-max?variant=44699220836492",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.596Z"
+        "observedAt": "2026-09-14T18:00:34.675Z"
       }
     ],
     "priceHistory": [
@@ -153742,7 +153746,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.401Z",
+    "priceObservedAt": "2026-09-14T18:00:34.425Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=43654952157324",
@@ -153798,7 +153802,7 @@
         "price": 17989,
         "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=43654952157324",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.401Z"
+        "observedAt": "2026-09-14T18:00:34.425Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -153806,7 +153810,7 @@
         "price": 20189,
         "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=43654952190092",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.405Z"
+        "observedAt": "2026-09-14T18:00:34.431Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -153814,7 +153818,7 @@
         "price": 23489,
         "sourceUrl": "https://shopsolarkits.com/products/elite-plus?variant=43654952222860",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.410Z"
+        "observedAt": "2026-09-14T18:00:34.442Z"
       }
     ],
     "priceHistory": [
@@ -154270,7 +154274,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.263Z",
+    "priceObservedAt": "2026-09-14T18:00:34.189Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/prime-pro?variant=41720333369484",
@@ -154326,7 +154330,7 @@
         "price": 18389,
         "sourceUrl": "https://shopsolarkits.com/products/prime-pro?variant=41720333369484",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.263Z"
+        "observedAt": "2026-09-14T18:00:34.189Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -154334,7 +154338,7 @@
         "price": 20589,
         "sourceUrl": "https://shopsolarkits.com/products/prime-pro?variant=41862775111820",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.268Z"
+        "observedAt": "2026-09-14T18:00:34.196Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -154342,7 +154346,7 @@
         "price": 24889,
         "sourceUrl": "https://shopsolarkits.com/products/prime-pro?variant=41862775079052",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.275Z"
+        "observedAt": "2026-09-14T18:00:34.210Z"
       }
     ],
     "priceHistory": [
@@ -155143,7 +155147,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.483Z",
+    "priceObservedAt": "2026-09-14T18:00:34.528Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=43364250058892",
@@ -155199,7 +155203,7 @@
         "price": 18679,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=43364250058892",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.483Z"
+        "observedAt": "2026-09-14T18:00:34.528Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -155207,7 +155211,7 @@
         "price": 19378,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=44699222081676",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.489Z"
+        "observedAt": "2026-09-14T18:00:34.533Z"
       }
     ],
     "priceHistory": [
@@ -156003,7 +156007,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.719Z",
+    "priceObservedAt": "2026-09-14T18:00:34.815Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/select-pro?variant=43878567411852",
@@ -156059,7 +156063,7 @@
         "price": 19859,
         "sourceUrl": "https://shopsolarkits.com/products/select-pro?variant=43878567411852",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.719Z"
+        "observedAt": "2026-09-14T18:00:34.815Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -156067,7 +156071,7 @@
         "price": 23359,
         "sourceUrl": "https://shopsolarkits.com/products/select-pro?variant=43878567444620",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.725Z"
+        "observedAt": "2026-09-14T18:00:34.820Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -156075,7 +156079,7 @@
         "price": 27859,
         "sourceUrl": "https://shopsolarkits.com/products/select-pro?variant=43878567477388",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.731Z"
+        "observedAt": "2026-09-14T18:00:34.826Z"
       }
     ],
     "priceHistory": [
@@ -157551,7 +157555,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.327Z",
+    "priceObservedAt": "2026-09-14T18:00:34.300Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=44701736140940",
@@ -157607,7 +157611,7 @@
         "price": 21189,
         "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=44701736140940",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.327Z"
+        "observedAt": "2026-09-14T18:00:34.300Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -157615,7 +157619,7 @@
         "price": 24189,
         "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=44701736173708",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.348Z"
+        "observedAt": "2026-09-14T18:00:34.311Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -157623,7 +157627,7 @@
         "price": 29189,
         "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=44701736206476",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.352Z"
+        "observedAt": "2026-09-14T18:00:34.318Z"
       }
     ],
     "priceHistory": [
@@ -158079,7 +158083,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.311Z",
+    "priceObservedAt": "2026-09-14T18:00:34.282Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=42004714684556",
@@ -158135,7 +158139,7 @@
         "price": 21489,
         "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=42004714684556",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.311Z"
+        "observedAt": "2026-09-14T18:00:34.282Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -158143,7 +158147,7 @@
         "price": 24389,
         "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=42004714717324",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.317Z"
+        "observedAt": "2026-09-14T18:00:34.288Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -158151,7 +158155,7 @@
         "price": 29489,
         "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=42004714750092",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.322Z"
+        "observedAt": "2026-09-14T18:00:34.293Z"
       }
     ],
     "priceHistory": [
@@ -158947,7 +158951,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.356Z",
+    "priceObservedAt": "2026-09-14T18:00:34.330Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=43655009337484",
@@ -159003,7 +159007,7 @@
         "price": 21989,
         "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=43655009337484",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.356Z"
+        "observedAt": "2026-09-14T18:00:34.330Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -159011,7 +159015,7 @@
         "price": 24889,
         "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=43655009370252",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.360Z"
+        "observedAt": "2026-09-14T18:00:34.341Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -159019,7 +159023,7 @@
         "price": 29989,
         "sourceUrl": "https://shopsolarkits.com/products/elite-max?variant=43655009403020",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.366Z"
+        "observedAt": "2026-09-14T18:00:34.352Z"
       }
     ],
     "priceHistory": [
@@ -159815,7 +159819,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.750Z",
+    "priceObservedAt": "2026-09-14T18:00:34.853Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/select-pro?variant=43878567706764",
@@ -159871,7 +159875,7 @@
         "price": 22389,
         "sourceUrl": "https://shopsolarkits.com/products/select-pro?variant=43878567706764",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.750Z"
+        "observedAt": "2026-09-14T18:00:34.853Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -159879,7 +159883,7 @@
         "price": 25389,
         "sourceUrl": "https://shopsolarkits.com/products/select-pro?variant=43878567739532",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.755Z"
+        "observedAt": "2026-09-14T18:00:34.860Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -159887,7 +159891,7 @@
         "price": 30389,
         "sourceUrl": "https://shopsolarkits.com/products/select-pro?variant=43878567772300",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.760Z"
+        "observedAt": "2026-09-14T18:00:34.868Z"
       }
     ],
     "priceHistory": [
@@ -160682,7 +160686,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:39.317Z",
+    "priceObservedAt": "2026-09-14T18:00:39.095Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/ecoflow-ocean-pro-24kva-hybrid-inverter?variant=45099587305612",
@@ -161181,7 +161185,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.494Z",
+    "priceObservedAt": "2026-09-14T18:00:34.539Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=43364250091660",
@@ -161237,7 +161241,7 @@
         "price": 24679,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=43364250091660",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.494Z"
+        "observedAt": "2026-09-14T18:00:34.539Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -161245,7 +161249,7 @@
         "price": 25378,
         "sourceUrl": "https://shopsolarkits.com/products/vector-pro?variant=44699222114444",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.506Z"
+        "observedAt": "2026-09-14T18:00:34.544Z"
       }
     ],
     "priceHistory": [
@@ -161701,7 +161705,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.441Z",
+    "priceObservedAt": "2026-09-14T18:00:34.481Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=44685927415948",
@@ -161757,7 +161761,7 @@
         "price": 25689,
         "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=44685927415948",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.441Z"
+        "observedAt": "2026-09-14T18:00:34.481Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -161765,7 +161769,7 @@
         "price": 29789,
         "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=44685927448716",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.445Z"
+        "observedAt": "2026-09-14T18:00:34.486Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -161773,7 +161777,7 @@
         "price": 34689,
         "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=44685927481484",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.450Z"
+        "observedAt": "2026-09-14T18:00:34.491Z"
       }
     ],
     "priceHistory": [
@@ -162229,7 +162233,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.455Z",
+    "priceObservedAt": "2026-09-14T18:00:34.501Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=43656877605004",
@@ -162285,7 +162289,7 @@
         "price": 25889,
         "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=43656877605004",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.455Z"
+        "observedAt": "2026-09-14T18:00:34.501Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -162293,7 +162297,7 @@
         "price": 29689,
         "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=43656877637772",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.462Z"
+        "observedAt": "2026-09-14T18:00:34.508Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -162301,7 +162305,7 @@
         "price": 34589,
         "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=43656877670540",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.468Z"
+        "observedAt": "2026-09-14T18:00:34.512Z"
       }
     ],
     "priceHistory": [
@@ -162757,7 +162761,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.420Z",
+    "priceObservedAt": "2026-09-14T18:00:34.464Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=42018763407500",
@@ -162813,7 +162817,7 @@
         "price": 29889,
         "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=42018763407500",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.420Z"
+        "observedAt": "2026-09-14T18:00:34.464Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -162821,7 +162825,7 @@
         "price": 34189,
         "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=42018763440268",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.425Z"
+        "observedAt": "2026-09-14T18:00:34.469Z"
       },
       {
         "retailer": "Shop Solar Kits",
@@ -162829,7 +162833,7 @@
         "price": 38689,
         "sourceUrl": "https://shopsolarkits.com/products/elite-pro?variant=42018763473036",
         "inStock": true,
-        "observedAt": "2026-09-14T12:00:35.433Z"
+        "observedAt": "2026-09-14T18:00:34.476Z"
       }
     ],
     "priceHistory": [
@@ -163285,7 +163289,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.913Z",
+    "priceObservedAt": "2026-09-14T18:00:35.040Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-plus?variant=46399227723916",
@@ -163787,7 +163791,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.038Z",
+    "priceObservedAt": "2026-09-14T18:00:35.157Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-plus?variant=45440696451212",
@@ -164289,7 +164293,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.919Z",
+    "priceObservedAt": "2026-09-14T18:00:35.044Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-plus?variant=46399227691148",
@@ -164791,7 +164795,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.906Z",
+    "priceObservedAt": "2026-09-14T18:00:35.035Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-plus?variant=46399227658380",
@@ -165293,7 +165297,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.925Z",
+    "priceObservedAt": "2026-09-14T18:00:35.050Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-plus?variant=46399227625612",
@@ -165795,7 +165799,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.042Z",
+    "priceObservedAt": "2026-09-14T18:00:35.164Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-plus?variant=45440696483980",
@@ -166297,7 +166301,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.025Z",
+    "priceObservedAt": "2026-09-14T18:00:35.128Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-max?variant=45445130190988",
@@ -166799,7 +166803,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.883Z",
+    "priceObservedAt": "2026-09-14T18:00:35.020Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-max?variant=46412082806924",
@@ -167301,7 +167305,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.980Z",
+    "priceObservedAt": "2026-09-14T18:00:35.091Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-pro?variant=45508195516556",
@@ -167803,7 +167807,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.876Z",
+    "priceObservedAt": "2026-09-14T18:00:35.015Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-max?variant=46412082741388",
@@ -168305,7 +168309,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.030Z",
+    "priceObservedAt": "2026-09-14T18:00:35.135Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-max?variant=45445130223756",
@@ -168807,7 +168811,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.003Z",
+    "priceObservedAt": "2026-09-14T18:00:35.107Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-max?variant=45444880007308",
@@ -169309,7 +169313,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.047Z",
+    "priceObservedAt": "2026-09-14T18:00:35.169Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-plus?variant=45440696516748",
@@ -169811,7 +169815,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.891Z",
+    "priceObservedAt": "2026-09-14T18:00:35.025Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-max?variant=46412082774156",
@@ -170313,7 +170317,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.963Z",
+    "priceObservedAt": "2026-09-14T18:00:35.075Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-pro?variant=45508195418252",
@@ -170815,7 +170819,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.991Z",
+    "priceObservedAt": "2026-09-14T18:00:35.096Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-pro?variant=45508195549324",
@@ -171317,7 +171321,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.900Z",
+    "priceObservedAt": "2026-09-14T18:00:35.031Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-max?variant=46412082708620",
@@ -171819,7 +171823,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.012Z",
+    "priceObservedAt": "2026-09-14T18:00:35.116Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-max?variant=45444880040076",
@@ -172321,7 +172325,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.968Z",
+    "priceObservedAt": "2026-09-14T18:00:35.081Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-pro?variant=45508195451020",
@@ -172823,7 +172827,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.034Z",
+    "priceObservedAt": "2026-09-14T18:00:35.145Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-max?variant=45445130256524",
@@ -173325,7 +173329,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.997Z",
+    "priceObservedAt": "2026-09-14T18:00:35.101Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-pro?variant=45508195582092",
@@ -173827,7 +173831,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:36.019Z",
+    "priceObservedAt": "2026-09-14T18:00:35.122Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-max?variant=45444880072844",
@@ -174329,7 +174333,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.974Z",
+    "priceObservedAt": "2026-09-14T18:00:35.086Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/summit-pro?variant=45508195483788",
@@ -174831,7 +174835,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.931Z",
+    "priceObservedAt": "2026-09-14T18:00:35.054Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-pro?variant=46415261728908",
@@ -175333,7 +175337,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.936Z",
+    "priceObservedAt": "2026-09-14T18:00:35.059Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-pro?variant=46415261794444",
@@ -175835,7 +175839,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.949Z",
+    "priceObservedAt": "2026-09-14T18:00:35.071Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-pro?variant=46415261696140",
@@ -176337,7 +176341,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:35.942Z",
+    "priceObservedAt": "2026-09-14T18:00:35.065Z",
     "retailer": "Shop Solar Kits",
     "retailerSlug": "shop-solar-kits",
     "sourceUrl": "https://shopsolarkits.com/products/edge-pro?variant=46415261761676",
@@ -176823,7 +176827,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:59.059Z",
+    "priceObservedAt": "2026-09-14T18:00:58.251Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -176856,7 +176860,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:59.065Z",
+    "priceObservedAt": "2026-09-14T18:00:58.255Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -176889,7 +176893,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:59.070Z",
+    "priceObservedAt": "2026-09-14T18:00:58.259Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -176922,7 +176926,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:59.078Z",
+    "priceObservedAt": "2026-09-14T18:00:58.263Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -176955,7 +176959,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:59.084Z",
+    "priceObservedAt": "2026-09-14T18:00:58.267Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -176988,7 +176992,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:59.093Z",
+    "priceObservedAt": "2026-09-14T18:00:58.273Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -177021,7 +177025,7 @@
       "boat": "poor"
     },
     "included": {},
-    "priceObservedAt": "2026-09-14T12:00:59.100Z",
+    "priceObservedAt": "2026-09-14T18:00:58.278Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -177070,7 +177074,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.113Z",
+    "priceObservedAt": "2026-09-14T18:00:58.291Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -177571,7 +177575,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.120Z",
+    "priceObservedAt": "2026-09-14T18:00:58.296Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -178072,7 +178076,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.127Z",
+    "priceObservedAt": "2026-09-14T18:00:58.301Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -178573,7 +178577,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.134Z",
+    "priceObservedAt": "2026-09-14T18:00:58.306Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -179074,7 +179078,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.141Z",
+    "priceObservedAt": "2026-09-14T18:00:58.312Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -179575,7 +179579,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.147Z",
+    "priceObservedAt": "2026-09-14T18:00:58.318Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -180076,7 +180080,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.158Z",
+    "priceObservedAt": "2026-09-14T18:00:58.327Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -180577,7 +180581,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.165Z",
+    "priceObservedAt": "2026-09-14T18:00:58.334Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -181078,7 +181082,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.177Z",
+    "priceObservedAt": "2026-09-14T18:00:58.347Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -181578,7 +181582,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.187Z",
+    "priceObservedAt": "2026-09-14T18:00:58.354Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -182078,7 +182082,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.197Z",
+    "priceObservedAt": "2026-09-14T18:00:58.373Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -182578,7 +182582,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.205Z",
+    "priceObservedAt": "2026-09-14T18:00:58.380Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -183079,7 +183083,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.212Z",
+    "priceObservedAt": "2026-09-14T18:00:58.387Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -183580,7 +183584,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.224Z",
+    "priceObservedAt": "2026-09-14T18:00:58.394Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -184081,7 +184085,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.236Z",
+    "priceObservedAt": "2026-09-14T18:00:58.401Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -184582,7 +184586,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.244Z",
+    "priceObservedAt": "2026-09-14T18:00:58.407Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -185083,7 +185087,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.252Z",
+    "priceObservedAt": "2026-09-14T18:00:58.416Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -185584,7 +185588,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.260Z",
+    "priceObservedAt": "2026-09-14T18:00:58.423Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -186085,7 +186089,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.267Z",
+    "priceObservedAt": "2026-09-14T18:00:58.429Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -186586,7 +186590,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.275Z",
+    "priceObservedAt": "2026-09-14T18:00:58.434Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -187095,7 +187099,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.284Z",
+    "priceObservedAt": "2026-09-14T18:00:58.440Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -187612,7 +187616,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.293Z",
+    "priceObservedAt": "2026-09-14T18:00:58.447Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -188129,7 +188133,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.300Z",
+    "priceObservedAt": "2026-09-14T18:00:58.452Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -188650,7 +188654,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.308Z",
+    "priceObservedAt": "2026-09-14T18:00:58.458Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -189171,7 +189175,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.315Z",
+    "priceObservedAt": "2026-09-14T18:00:58.463Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -189692,7 +189696,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.323Z",
+    "priceObservedAt": "2026-09-14T18:00:58.469Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -190193,7 +190197,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.332Z",
+    "priceObservedAt": "2026-09-14T18:00:58.476Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -190694,7 +190698,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.340Z",
+    "priceObservedAt": "2026-09-14T18:00:58.482Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -191192,7 +191196,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.348Z",
+    "priceObservedAt": "2026-09-14T18:00:58.489Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -191720,7 +191724,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.355Z",
+    "priceObservedAt": "2026-09-14T18:00:58.495Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -192240,7 +192244,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.363Z",
+    "priceObservedAt": "2026-09-14T18:00:58.502Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -192760,7 +192764,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.370Z",
+    "priceObservedAt": "2026-09-14T18:00:58.509Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -193280,7 +193284,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.382Z",
+    "priceObservedAt": "2026-09-14T18:00:58.517Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -193793,7 +193797,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:59.393Z",
+    "priceObservedAt": "2026-09-14T18:00:58.525Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -193891,7 +193895,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:59.402Z",
+    "priceObservedAt": "2026-09-14T18:00:58.530Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -194017,7 +194021,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:59.411Z",
+    "priceObservedAt": "2026-09-14T18:00:58.536Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -196199,7 +196203,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:59.419Z",
+    "priceObservedAt": "2026-09-14T18:00:58.541Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -196433,7 +196437,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:59.425Z",
+    "priceObservedAt": "2026-09-14T18:00:58.546Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -197112,7 +197116,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.432Z",
+    "priceObservedAt": "2026-09-14T18:00:58.552Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -197626,7 +197630,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.440Z",
+    "priceObservedAt": "2026-09-14T18:00:58.558Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -198138,7 +198142,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.446Z",
+    "priceObservedAt": "2026-09-14T18:00:58.564Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -198644,7 +198648,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:59.452Z",
+    "priceObservedAt": "2026-09-14T18:00:58.569Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -199029,7 +199033,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.459Z",
+    "priceObservedAt": "2026-09-14T18:00:58.576Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -199539,7 +199543,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.466Z",
+    "priceObservedAt": "2026-09-14T18:00:58.582Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -200048,7 +200052,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.473Z",
+    "priceObservedAt": "2026-09-14T18:00:58.588Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -200557,7 +200561,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.480Z",
+    "priceObservedAt": "2026-09-14T18:00:58.594Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -201063,7 +201067,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:59.488Z",
+    "priceObservedAt": "2026-09-14T18:00:58.600Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -202522,7 +202526,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.495Z",
+    "priceObservedAt": "2026-09-14T18:00:58.606Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -203034,7 +203038,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.501Z",
+    "priceObservedAt": "2026-09-14T18:00:58.612Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -203543,7 +203547,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.508Z",
+    "priceObservedAt": "2026-09-14T18:00:58.619Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -204052,7 +204056,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.517Z",
+    "priceObservedAt": "2026-09-14T18:00:58.627Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -204573,7 +204577,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.524Z",
+    "priceObservedAt": "2026-09-14T18:00:58.633Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -205070,7 +205074,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.531Z",
+    "priceObservedAt": "2026-09-14T18:00:58.639Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -205579,7 +205583,7 @@
       "wiring": true,
       "monitoring": false
     },
-    "priceObservedAt": "2026-09-14T12:00:59.539Z",
+    "priceObservedAt": "2026-09-14T18:00:58.647Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 0,
@@ -205904,7 +205908,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.546Z",
+    "priceObservedAt": "2026-09-14T18:00:58.654Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -206416,7 +206420,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.553Z",
+    "priceObservedAt": "2026-09-14T18:00:58.660Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -206928,7 +206932,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.558Z",
+    "priceObservedAt": "2026-09-14T18:00:58.667Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 86,
@@ -207438,7 +207442,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.564Z",
+    "priceObservedAt": "2026-09-14T18:00:58.673Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -207548,7 +207552,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.571Z",
+    "priceObservedAt": "2026-09-14T18:00:58.679Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -208051,7 +208055,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.578Z",
+    "priceObservedAt": "2026-09-14T18:00:58.684Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -208165,7 +208169,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.584Z",
+    "priceObservedAt": "2026-09-14T18:00:58.690Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -208672,7 +208676,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.593Z",
+    "priceObservedAt": "2026-09-14T18:00:58.696Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -209179,7 +209183,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.601Z",
+    "priceObservedAt": "2026-09-14T18:00:58.701Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -209670,7 +209674,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.607Z",
+    "priceObservedAt": "2026-09-14T18:00:58.707Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -210161,7 +210165,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.613Z",
+    "priceObservedAt": "2026-09-14T18:00:58.712Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -210664,7 +210668,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.621Z",
+    "priceObservedAt": "2026-09-14T18:00:58.717Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -211183,7 +211187,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.629Z",
+    "priceObservedAt": "2026-09-14T18:00:58.723Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -211702,7 +211706,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.635Z",
+    "priceObservedAt": "2026-09-14T18:00:58.729Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -212221,7 +212225,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.642Z",
+    "priceObservedAt": "2026-09-14T18:00:58.734Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -212740,7 +212744,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.649Z",
+    "priceObservedAt": "2026-09-14T18:00:58.739Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -213263,7 +213267,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.657Z",
+    "priceObservedAt": "2026-09-14T18:00:58.745Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -213769,7 +213773,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.665Z",
+    "priceObservedAt": "2026-09-14T18:00:58.752Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -213879,7 +213883,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.672Z",
+    "priceObservedAt": "2026-09-14T18:00:58.758Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -213989,7 +213993,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.679Z",
+    "priceObservedAt": "2026-09-14T18:00:58.763Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -214499,7 +214503,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.686Z",
+    "priceObservedAt": "2026-09-14T18:00:58.771Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -214609,7 +214613,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.692Z",
+    "priceObservedAt": "2026-09-14T18:00:58.778Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -215096,7 +215100,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.698Z",
+    "priceObservedAt": "2026-09-14T18:00:58.786Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -215583,7 +215587,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.707Z",
+    "priceObservedAt": "2026-09-14T18:00:58.792Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -216088,7 +216092,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.715Z",
+    "priceObservedAt": "2026-09-14T18:00:58.799Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
@@ -216602,7 +216606,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.721Z",
+    "priceObservedAt": "2026-09-14T18:00:58.806Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 57,
@@ -217109,7 +217113,7 @@
       "wiring": true,
       "monitoring": true
     },
-    "priceObservedAt": "2026-09-14T12:00:59.733Z",
+    "priceObservedAt": "2026-09-14T18:00:58.821Z",
     "retailer": "Unknown",
     "sourceUrl": null,
     "completeness": 71,
