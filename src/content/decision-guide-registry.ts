@@ -756,13 +756,13 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
         kitSlug: "jackery-2000plus-4085wh-2x200w",
         label: "Best for runtime",
         rationale:
-          "The value buy for long fridge runtime in a complete, panel-included unit. At 4,085Wh and {p2.costPerWh} it carries the most raw storage of the three complete picks, and its 3,000W pure-sine inverter clears the surge gate. It's also sitting at its 6-month-low price right now — a strong buy-now signal if you want proven runtime in a unit that ships ready to recharge. (The unit-only #5 packs more watt-hours per dollar, but arrives without panels.)",
+          "The value buy for long fridge runtime in a complete, panel-included unit. At 4,085Wh and {p2.costPerWh} it carries the most raw storage of the three complete picks, and at {p2.costPerW} it's the cheapest per solar watt among them. Its 3,000W pure-sine inverter clears the surge gate. It's also sitting at its 6-month-low price right now — a strong buy-now signal if you want proven runtime in a unit that ships ready to recharge. (The unit-only #5 packs more watt-hours per dollar, but arrives without panels.)",
       },
       {
         kitSlug: "ecoflow-delta-pro-400w",
         label: "Best for surge stacking",
         rationale:
-          "The surge pick if your well, sump, and furnace blower can stack-start at the same instant. Its 3,600W inverter is the largest of the three complete picks, and at {p3.costPerW} it's also the cheapest per solar watt among them. 3,600Wh of LiFePO4 keeps the fridge cold while leaving inverter overhead for a simultaneous motor inrush.",
+          "The surge pick if your well, sump, and furnace blower can stack-start at the same instant. Its 3,600W inverter is the largest of the three complete picks. 3,600Wh of LiFePO4 keeps the fridge cold while leaving inverter overhead for a simultaneous motor inrush.",
       },
       {
         kitSlug: "ecoflow-11kw-ecoflow-delta-delta-3-ultra-plus-main-unit-only",
@@ -850,10 +850,9 @@ None of that is a price-hiding trick — it's the difference between "rides out 
       { pick: "p2", metric: "storageWh", direction: "highest", among: ["p1", "p2", "p3"], note: "#2 most storage of the three complete picks" },
       { pick: "p3", metric: "inverterWatts", direction: "highest", among: ["p1", "p2", "p3"], note: "#3 largest inverter of the complete picks" },
       // costPerW = true cost / included SOLAR watts. p2 and p3 both ship 400W of panels, so this
-      // is just their sticker order, and they swap on routine price refreshes. p3 holds the low
-      // mark as of 2026-10-06 ($4.54 vs $4.70) and the #3 rationale claims it; on the next swap,
-      // re-point this guard AND that sentence together.
-      { pick: "p3", metric: "costPerW", direction: "lowest", among: ["p1", "p2", "p3"], note: "#3 cheapest per solar watt of the complete picks" },
+      // is just their sticker order, and they swap on routine price refreshes. Keep this guard
+      // and the corresponding rationale sentence on the same pick when that order changes.
+      { pick: "p2", metric: "costPerW", direction: "lowest", among: ["p1", "p2", "p3"], note: "#2 cheapest per solar watt of the complete picks" },
       { pick: "p4", metric: "listedPrice", direction: "lowest", among: ["p3", "p4"], note: "#4 cheapest 3,600W entry" },
       { pick: "p5", metric: "costPerWh", direction: "lowest", note: "#5 lowest $/Wh here / most capacity per dollar" },
     ],
