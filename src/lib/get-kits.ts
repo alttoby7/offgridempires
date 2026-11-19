@@ -418,8 +418,13 @@ function loadKits(): Kit[] {
   return _kits!;
 }
 
+/**
+ * Buyable kits: priced AND in stock. A sold-out kit keeps its last observed
+ * price in the export (inStock === false) but stays off every listing, ranking
+ * and kit page exactly as a zero-price kit does.
+ */
 function kitsWithPrices(kits: Kit[]): Kit[] {
-  return kits.filter((k) => k.listedPrice && k.listedPrice > 0);
+  return kits.filter((k) => k.listedPrice && k.listedPrice > 0 && k.inStock !== false);
 }
 
 export function getKits(): Kit[] {
@@ -428,6 +433,20 @@ export function getKits(): Kit[] {
 
 export function getKitBySlug(slug: string): Kit | undefined {
   return kitsWithPrices(loadKits()).find((k) => k.slug === slug);
+}
+
+/**
+ * Decision-guide podium lookup ONLY: also returns a sold-out kit (with its last
+ * observed price) so a guide can show the pick as sold out instead of failing
+ * the build. Still undefined for a kit that is absent or has never had a price.
+ */
+export function getKitBySlugIncludingSoldOut(slug: string): Kit | undefined {
+  return loadKits().find((k) => k.slug === slug && k.listedPrice > 0);
+}
+
+/** True when the kit's tracked offers are all out of stock. */
+export function isSoldOut(kit: Kit): boolean {
+  return kit.inStock === false;
 }
 
 export function getKitSlugs(): string[] {

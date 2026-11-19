@@ -3,7 +3,8 @@
  * generateMetadata, JSON-LD, and the build-time validator all share.
  *
  * It (1) resolves the podium STRICTLY (a missing or duplicate kit slug throws,
- * instead of the old silent-drop), and (2) resolves every token in the guide's
+ * instead of the old silent-drop; a SOLD-OUT kit resolves with its last observed
+ * price and `soldOut: true`, so stock-outs never block a deploy), and (2) resolves every token in the guide's
  * prose against live kits.json/evidence.json data. The returned `meta` carries
  * fully-resolved strings; `rawMeta` is the untouched source (for the lint).
  */
@@ -11,11 +12,13 @@
 import type { Kit } from "@/lib/demo-data";
 import type { DecisionGuideMeta, PodiumPick } from "./types";
 import { getDecisionGuide } from "@/content/decision-guide-registry";
-import { getKitBySlug } from "@/lib/get-kits";
+import { getKitBySlugIncludingSoldOut, isSoldOut } from "@/lib/get-kits";
 import { resolveTokens, type GuideTokenContext } from "./resolve-tokens";
 
 export interface ResolvedPick extends PodiumPick {
   kit: Kit;
+  /** Every tracked offer is out of stock — kit.listedPrice is the LAST SEEN price. */
+  soldOut: boolean;
 }
 
 /** Resolve the podium to kits in order — throws on a missing/duplicate slug. */
@@ -26,13 +29,13 @@ export function resolvePicksStrict(meta: DecisionGuideMeta): ResolvedPick[] {
       throw new Error(`[decision-guide ${meta.slug}] duplicate podium kit "${p.kitSlug}"`);
     }
     seen.add(p.kitSlug);
-    const kit = getKitBySlug(p.kitSlug);
+    const kit = getKitBySlugIncludingSoldOut(p.kitSlug);
     if (!kit) {
       throw new Error(
-        `[decision-guide ${meta.slug}] pick #${i + 1} kit "${p.kitSlug}" not found or has no price`
+        `[decision-guide ${meta.slug}] pick #${i + 1} kit "${p.kitSlug}" not found or has never had a price`
       );
     }
-    return { ...p, kit };
+    return { ...p, kit, soldOut: isSoldOut(kit) };
   });
 }
 

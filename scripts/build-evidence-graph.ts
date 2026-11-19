@@ -405,7 +405,13 @@ function main() {
   if (!fs.existsSync(KITS_PATH)) fail(`kits.json not found at ${KITS_PATH}`);
 
   const raw = JSON.parse(fs.readFileSync(KITS_PATH, "utf8")) as Kit[];
-  const kits = raw.filter((k) => k.listedPrice && k.listedPrice > 0);
+  const priced = raw.filter((k) => k.listedPrice && k.listedPrice > 0);
+  // Cohorts, percentile pools, primaries and "best of cohort" are built from
+  // IN-STOCK kits only. Sold-out kits (inStock === false, last observed price)
+  // get a per-kit entry further down so a decision guide that still lists one
+  // can resolve its price-history tokens, but they never join a cohort.
+  const kits = priced.filter((k) => k.inStock !== false);
+  const soldOutKits = priced.filter((k) => k.inStock === false);
   if (kits.length === 0) fail("no priced kits in kits.json");
 
   // ── primary-variant resolution ──────────────────────────────────────────────
@@ -532,9 +538,20 @@ function main() {
 
   // ── per-kit evidence ──────────────────────────────────────────────────────────
   const kitEvidence: Record<string, KitEvidence> = {};
-  for (const kit of kits) {
+  for (const kit of [...kits, ...soldOutKits]) {
     const ck = cohortKeyFor(kit);
-    const axes = cohortAxes.get(ck)!;
+    const soldOut = kit.inStock === false;
+    const cohort = cohortAxes.get(ck);
+    // A sold-out kit is ranked AGAINST its in-stock cohort (its own value added
+    // so the pool is never empty); it is not a member of that cohort.
+    const axes: CohortAxes = soldOut
+      ? {
+          costPerWh: [...(cohort?.costPerWh ?? []), ...(costPerWh(kit) !== null ? [{ slug: kit.slug, value: costPerWh(kit)! }] : [])],
+          costPerW: [...(cohort?.costPerW ?? []), ...(costPerW(kit) !== null ? [{ slug: kit.slug, value: costPerW(kit)! }] : [])],
+          completeness: [...(cohort?.completeness ?? []), { slug: kit.slug, value: kit.completeness }],
+          trueCost: [...(cohort?.trueCost ?? []), { slug: kit.slug, value: money(kit.trueCost) }],
+        }
+      : cohort!;
     const groupKey = variantGroupKey(kit);
 
     const cwh = costPerWh(kit);
@@ -587,7 +604,8 @@ function main() {
       }
     }
 
-    const priceSignal = buildPriceSignal(kit);
+    const builtSignal = buildPriceSignal(kit);
+    const priceSignal = builtSignal && soldOut ? { ...builtSignal, inStock: false } : builtSignal;
 
     const hasHiddenCost = kit.missingCost > 0;
     const hiddenCostDelta = {

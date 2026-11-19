@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Kit } from "@/lib/demo-data";
 import type { SizingResult } from "@/lib/calculator/types";
 import type { DecisionGuideMeta, AddOnItem, HubSegment } from "@/lib/decision/types";
-import { getKitBySlug } from "@/lib/get-kits";
+import { getKitBySlugIncludingSoldOut, isSoldOut } from "@/lib/get-kits";
 import type { ResolvedPick } from "@/lib/decision/resolve";
 import { buildAffiliateUrl } from "@/lib/affiliate";
 import { getBuyTiming, BUY_SIGNAL_STYLE } from "@/lib/decision/evidence";
@@ -31,6 +31,33 @@ function bestBuy(kit: Kit): { url: string; retailer: string; price: number } | n
     if (url) return { url, retailer: kit.retailer, price: kit.listedPrice };
   }
   return null;
+}
+
+/** "Sold out at <retailer> · last seen $X (date)" — the honest label for a sold-out pick. */
+function soldOutLabel(kit: Kit): string {
+  const where = kit.retailer && kit.retailer !== "Unknown" ? ` at ${kit.retailer}` : "";
+  const when = kit.priceObservedAt ? ` (${kit.priceObservedAt.slice(0, 10)})` : "";
+  return `Sold out${where} · last seen $${kit.listedPrice.toLocaleString()}${when}`;
+}
+
+function SoldOutBadge({ kit }: { kit: Kit }) {
+  return (
+    <span className="inline-block rounded-sm border border-[var(--warning)]/40 bg-[var(--warning)]/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--warning)]">
+      {soldOutLabel(kit)}
+    </span>
+  );
+}
+
+/** Kit name: links to the kit audit page, except sold-out kits (no kit page while sold out). */
+function KitName({ kit, soldOut, className }: { kit: Kit; soldOut: boolean; className: string }) {
+  if (soldOut) {
+    return <span className={className}>{kit.displayName ?? kit.name}</span>;
+  }
+  return (
+    <Link href={`/kits/${kit.slug}`} className={`${className} hover:text-[var(--accent)] transition-colors`}>
+      {kit.displayName ?? kit.name}
+    </Link>
+  );
 }
 
 const ArrowOut = () => (
@@ -83,7 +110,23 @@ export function SizingCards({ sizing }: { sizing: SizingResult }) {
 export function Podium({ picks }: { picks: ResolvedPick[] }) {
   if (picks.length === 0) return null;
   const [first, ...rest] = picks;
-  const buy = bestBuy(first.kit);
+  // The page's single buy link sits on the FIRST IN-STOCK pick: a sold-out pick
+  // never carries a buy button.
+  const ctaPick = picks.some((p) => p.cta) ? picks.find((p) => !p.soldOut) : undefined;
+  const buy = ctaPick ? bestBuy(ctaPick.kit) : null;
+  const buyButton =
+    ctaPick && buy ? (
+      <AffiliateLink
+        href={buy.url}
+        kitSlug={ctaPick.kit.slug}
+        retailer={buy.retailer}
+        price={buy.price}
+        className="inline-flex items-center gap-1.5 rounded-sm bg-[var(--accent)] px-4 py-2 text-xs font-semibold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
+      >
+        Check live price at {buy.retailer}
+        <ArrowOut />
+      </AffiliateLink>
+    ) : null;
 
   return (
     <div className="space-y-5">
@@ -94,12 +137,11 @@ export function Podium({ picks }: { picks: ResolvedPick[] }) {
             <p className="text-[10px] font-semibold uppercase tracking-wide text-[var(--accent)] mb-1">
               #1 · {first.label}
             </p>
-            <Link
-              href={`/kits/${first.kit.slug}`}
-              className="text-lg font-semibold text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors"
-            >
-              {first.kit.displayName ?? first.kit.name}
-            </Link>
+            <KitName
+              kit={first.kit}
+              soldOut={first.soldOut}
+              className="text-lg font-semibold text-[var(--text-primary)]"
+            />
             <div className="text-xs text-[var(--text-muted)] mt-0.5">
               {first.kit.brand} · {first.kit.panelWatts}W solar · {fmtWh(first.kit.storageWh)}
               {first.kit.inverterWatts > 0
@@ -108,18 +150,7 @@ export function Podium({ picks }: { picks: ResolvedPick[] }) {
               · {first.kit.costPerWh}/Wh
             </div>
           </div>
-          {first.cta && buy && (
-            <AffiliateLink
-              href={buy.url}
-              kitSlug={first.kit.slug}
-              retailer={buy.retailer}
-              price={buy.price}
-              className="inline-flex items-center gap-1.5 rounded-sm bg-[var(--accent)] px-4 py-2 text-xs font-semibold text-[var(--bg-primary)] hover:bg-[var(--accent-hover)] transition-colors"
-            >
-              Check live price at {buy.retailer}
-              <ArrowOut />
-            </AffiliateLink>
-          )}
+          {first.soldOut ? <SoldOutBadge kit={first.kit} /> : ctaPick === first && buyButton}
         </div>
         <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{first.rationale}</p>
       </div>
@@ -140,18 +171,23 @@ export function Podium({ picks }: { picks: ResolvedPick[] }) {
                   {p.kit.costPerWh}/Wh
                 </span>
               </div>
-              <Link
-                href={`/kits/${p.kit.slug}`}
-                className="text-base font-semibold text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors"
-              >
-                {p.kit.displayName ?? p.kit.name}
-              </Link>
+              <KitName
+                kit={p.kit}
+                soldOut={p.soldOut}
+                className="text-base font-semibold text-[var(--text-primary)]"
+              />
               <div className="text-xs text-[var(--text-muted)] mt-0.5 mb-2">
                 {p.kit.brand} · {p.kit.panelWatts}W solar · {fmtWh(p.kit.storageWh)}
                 {p.kit.inverterWatts > 0
                   ? ` · ${p.kit.inverterWatts.toLocaleString()}W inverter`
                   : ""}
               </div>
+              {p.soldOut && (
+                <div className="mb-2">
+                  <SoldOutBadge kit={p.kit} />
+                </div>
+              )}
+              {ctaPick === p && buyButton && <div className="mb-2">{buyButton}</div>}
               <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{p.rationale}</p>
             </div>
           ))}
@@ -198,15 +234,19 @@ export function ReceiptSection({
                 return (
                   <tr key={p.kit.slug} className="border-b border-[var(--border)] last:border-b-0">
                     <td className="px-4 py-3">
-                      <Link
-                        href={`/kits/${p.kit.slug}`}
-                        className="font-medium text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors"
-                      >
-                        {p.kit.displayName ?? p.kit.name}
-                      </Link>
+                      <KitName
+                        kit={p.kit}
+                        soldOut={p.soldOut}
+                        className="font-medium text-[var(--text-primary)]"
+                      />
                     </td>
                     <td className="px-4 py-3 text-right font-mono text-[var(--text-secondary)]">
                       ${p.kit.listedPrice.toLocaleString()}
+                      {p.soldOut && (
+                        <span className="block text-[10px] uppercase tracking-wide text-[var(--warning)]">
+                          sold out · last seen
+                        </span>
+                      )}
                     </td>
                     <td className="px-4 py-3 text-right font-mono text-[var(--text-secondary)]">
                       {fmtWh(p.kit.storageWh)}
@@ -260,7 +300,7 @@ export function BuyTimingTable({ picks }: { picks: ResolvedPick[] }) {
           <thead>
             <tr className="border-b border-[var(--border)] bg-[var(--bg-secondary)] text-xs uppercase tracking-wide text-[var(--text-muted)]">
               <th className="px-4 py-3 text-left font-medium">Kit</th>
-              <th className="px-4 py-3 text-right font-medium">Current</th>
+              <th className="px-4 py-3 text-right font-medium">Current / last seen</th>
               <th className="px-4 py-3 text-right font-medium">6-mo low</th>
               <th className="px-4 py-3 text-right font-medium">Above low</th>
               <th className="px-4 py-3 text-left font-medium">Signal</th>
@@ -268,25 +308,31 @@ export function BuyTimingTable({ picks }: { picks: ResolvedPick[] }) {
           </thead>
           <tbody>
             {rows.map(({ pick, timing }) => {
-              const style = BUY_SIGNAL_STYLE[timing.signal];
+              // A sold-out pick has no buy/wait signal — it can't be bought at any price.
+              const style = pick.soldOut
+                ? { label: "Sold out", color: "var(--warning)" }
+                : BUY_SIGNAL_STYLE[timing.signal];
               return (
                 <tr key={pick.kit.slug} className="border-b border-[var(--border)] last:border-b-0">
                   <td className="px-4 py-3">
-                    <Link
-                      href={`/kits/${pick.kit.slug}`}
-                      className="font-medium text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors"
-                    >
-                      {pick.kit.displayName ?? pick.kit.name}
-                    </Link>
+                    <KitName
+                      kit={pick.kit}
+                      soldOut={pick.soldOut}
+                      className="font-medium text-[var(--text-primary)]"
+                    />
                   </td>
                   <td className="px-4 py-3 text-right font-mono text-[var(--text-secondary)]">
-                    ${Math.round(timing.currentPrice).toLocaleString()}
+                    $
+                    {(pick.soldOut
+                      ? pick.kit.listedPrice
+                      : Math.round(timing.currentPrice)
+                    ).toLocaleString()}
                   </td>
                   <td className="px-4 py-3 text-right font-mono text-[var(--text-secondary)]">
                     ${Math.round(timing.low6mo).toLocaleString()}
                   </td>
                   <td className="px-4 py-3 text-right font-mono text-[var(--text-secondary)]">
-                    {timing.pctAboveLow > 0 ? `+${timing.pctAboveLow}%` : "at low"}
+                    {pick.soldOut ? "—" : timing.pctAboveLow > 0 ? `+${timing.pctAboveLow}%` : "at low"}
                   </td>
                   <td className="px-4 py-3">
                     <span
@@ -395,7 +441,8 @@ export function SegmentMatrix({ segments }: { segments: HubSegment[] }) {
   return (
     <div className="space-y-3">
       {segments.map((seg, i) => {
-        const kit = getKitBySlug(seg.kitSlug);
+        const kit = getKitBySlugIncludingSoldOut(seg.kitSlug);
+        const soldOut = kit ? isSoldOut(kit) : false;
         const spokeLabel = seg.label.replace(/^Best for (a |an |the )?/i, "");
         return (
           <div
@@ -408,15 +455,25 @@ export function SegmentMatrix({ segments }: { segments: HubSegment[] }) {
             </div>
             {kit && (
               <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
-                <Link
-                  href={`/kits/${kit.slug}`}
-                  className="font-medium text-[var(--accent)] hover:underline"
-                >
-                  {kit.displayName ?? kit.name}
-                </Link>
-                <span className="font-mono text-[var(--text-secondary)]">
-                  ${kit.listedPrice.toLocaleString()}
-                </span>
+                {soldOut ? (
+                  <span className="font-medium text-[var(--text-primary)]">
+                    {kit.displayName ?? kit.name}
+                  </span>
+                ) : (
+                  <Link
+                    href={`/kits/${kit.slug}`}
+                    className="font-medium text-[var(--accent)] hover:underline"
+                  >
+                    {kit.displayName ?? kit.name}
+                  </Link>
+                )}
+                {soldOut ? (
+                  <SoldOutBadge kit={kit} />
+                ) : (
+                  <span className="font-mono text-[var(--text-secondary)]">
+                    ${kit.listedPrice.toLocaleString()}
+                  </span>
+                )}
                 {kit.storageWh > 0 && (
                   <span className="font-mono text-[var(--text-secondary)]">{fmtWh(kit.storageWh)}</span>
                 )}

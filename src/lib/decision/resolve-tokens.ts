@@ -18,12 +18,14 @@
  *   [[const:$1,500]]            → "$1,500"
  *
  * Resolution FAILS LOUD: an unknown token, a missing pick/kit, or a required
- * field that is 0/missing throws at build time. A delisted kit that loses its
- * price becomes a build error instead of a silently-dropped podium row.
+ * field that is 0/missing throws at build time. A kit that is gone from the data
+ * (or never had a price) becomes a build error instead of a silently-dropped
+ * podium row. A SOLD-OUT kit still resolves: its tokens render the last observed
+ * price, and the podium labels the pick as sold out.
  */
 
 import type { Kit } from "@/lib/demo-data";
-import { getKitBySlug } from "@/lib/get-kits";
+import { getKitBySlugIncludingSoldOut } from "@/lib/get-kits";
 import { getBuyTiming } from "@/lib/decision/evidence";
 
 export interface GuideTokenContext {
@@ -161,7 +163,7 @@ export function resolveTokens(text: string, ctx: GuideTokenContext): string {
       if (dot < 0) return fail(ctx, `${ref}: malformed kit token (expected kit:slug.field)`);
       const kitSlug = body.slice("kit:".length, dot);
       const field = body.slice(dot + 1);
-      const kit = getKitBySlug(kitSlug);
+      const kit = getKitBySlugIncludingSoldOut(kitSlug);
       if (!kit) return fail(ctx, `${ref}: unknown kit "${kitSlug}" (or no price)`);
       return resolveKitField(ctx, kit, field, ref);
     }

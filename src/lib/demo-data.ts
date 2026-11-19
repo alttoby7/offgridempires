@@ -50,6 +50,14 @@ export interface Kit {
   retailer: string;
   retailerSlug?: string;
   sourceUrl?: string;
+  /**
+   * False when every tracked offer is out of stock: listedPrice / retailer /
+   * sourceUrl then describe the LAST OBSERVED offer, not something buyable.
+   * Absent (older exports, demo data) means in stock.
+   */
+  inStock?: boolean;
+  /** Sold-out kits only: when the last observed offer was last seen in stock. */
+  lastInStockAt?: string;
   completeness: number; // 0-100%
   items: KitItem[];
   priceHistory?: PriceHistoryPoint[];

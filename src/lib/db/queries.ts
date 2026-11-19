@@ -137,14 +137,17 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
         kcp.total_known_cents,
         kcp.price_cents,
         kcp.observed_at,
+        (kcp.in_stock IS TRUE) AS in_stock,
         r.name AS retailer_name,
         r.slug AS retailer_slug,
         ko.source_url
       FROM kit_current_prices kcp
       JOIN retailers r ON r.id = kcp.retailer_id
       JOIN kit_offers ko ON ko.id = kcp.offer_id
-      WHERE kcp.in_stock IS TRUE
-      ORDER BY kcp.kit_id, kcp.total_known_cents ASC NULLS LAST, kcp.observed_at DESC
+      -- In-stock offers win. A kit whose offers are ALL out of stock falls back to
+      -- its last observed offer (flagged in_stock = false) instead of losing its
+      -- price, retailer and URL entirely.
+      ORDER BY kcp.kit_id, (kcp.in_stock IS TRUE) DESC, kcp.total_known_cents ASC NULLS LAST, kcp.observed_at DESC
     )
     SELECT
       k.id,
@@ -166,6 +169,12 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       co.total_known_cents AS list_price_cents,
       co.price_cents,
       co.observed_at AS price_observed_at,
+      COALESCE(co.in_stock, FALSE) AS in_stock,
+      (
+        SELECT MAX(kpe.observed_at)
+        FROM kit_price_events kpe
+        WHERE kpe.offer_id = co.offer_id AND kpe.in_stock IS TRUE
+      ) AS last_in_stock_at,
       co.retailer_name,
       co.retailer_slug,
       co.source_url,
@@ -348,6 +357,11 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       retailer: (row.retailer_name as string) ?? "Unknown",
       retailerSlug: (row.retailer_slug as string) ?? undefined,
       sourceUrl: row.source_url as string | undefined,
+      inStock: row.in_stock === true,
+      lastInStockAt:
+        row.in_stock !== true && row.last_in_stock_at
+          ? new Date(row.last_in_stock_at as string).toISOString()
+          : undefined,
       completeness: Number(row.completeness_score ?? 0),
       items: kitItems,
       offers: offers.length > 1 ? offers : undefined,

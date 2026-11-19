@@ -16,7 +16,7 @@ export function DecisionGuideJsonLd({
   picks,
 }: {
   meta: DecisionGuideMeta;
-  picks: { kit: Kit }[];
+  picks: { kit: Kit; soldOut?: boolean }[];
 }) {
   const pageUrl = `${SITE_URL}/guides/${meta.slug}`;
 
@@ -79,11 +79,12 @@ export function DecisionGuideJsonLd({
         "@type": "ListItem",
         position: i + 1,
         name: `${p.kit.brand} ${p.kit.name}`,
-        url: `${SITE_URL}/kits/${p.kit.slug}`,
+        // A sold-out kit has no kit page while it is sold out — never link a 404.
+        ...(p.soldOut ? {} : { url: `${SITE_URL}/kits/${p.kit.slug}` }),
       })),
     });
 
-    for (const { kit } of picks) {
+    for (const { kit, soldOut } of picks) {
       const offerPrices = (kit.offers ?? []).map((o) => o.price).filter((p) => p > 0);
       const allPrices = offerPrices.length > 0 ? offerPrices : [kit.listedPrice];
       graph.push({
@@ -92,7 +93,7 @@ export function DecisionGuideJsonLd({
         name: `${kit.brand} ${kit.name}`,
         brand: { "@type": "Brand", name: kit.brand },
         ...(kit.imageUrl ? { image: kit.imageUrl } : {}),
-        url: `${SITE_URL}/kits/${kit.slug}`,
+        ...(soldOut ? {} : { url: `${SITE_URL}/kits/${kit.slug}` }),
         category: "Solar Kit",
         offers: {
           "@type": "AggregateOffer",
@@ -100,7 +101,9 @@ export function DecisionGuideJsonLd({
           lowPrice: Math.min(...allPrices),
           highPrice: Math.max(...allPrices),
           offerCount: offerPrices.length > 0 ? offerPrices.length : 1,
-          availability: "https://schema.org/InStock",
+          availability: soldOut
+            ? "https://schema.org/OutOfStock"
+            : "https://schema.org/InStock",
         },
         additionalProperty: [
           { "@type": "PropertyValue", name: "Real Build Cost", value: `$${kit.trueCost.toLocaleString()}` },

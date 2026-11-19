@@ -21,6 +21,7 @@ const SITE_URL = "https://offgridempire.com";
 
 interface KitLite {
   listedPrice?: number;
+  inStock?: boolean;
 }
 
 function pricedKitCount(): number {
@@ -28,7 +29,9 @@ function pricedKitCount(): number {
     const kits: KitLite[] = JSON.parse(
       fs.readFileSync(path.join(__dirname, "../src/lib/data/kits.json"), "utf-8")
     );
-    return kits.filter((k) => typeof k.listedPrice === "number" && k.listedPrice! > 0).length;
+    return kits.filter(
+      (k) => typeof k.listedPrice === "number" && k.listedPrice! > 0 && k.inStock !== false
+    ).length;
   } catch {
     return 0;
   }

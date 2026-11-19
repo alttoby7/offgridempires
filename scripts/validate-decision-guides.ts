@@ -5,8 +5,9 @@
  * Two jobs, both run before `next build`:
  *   1. VALIDATE — resolve every guide via getResolvedDecisionGuide(). This
  *      exercises strict podium resolution + fail-loud token resolution, so a
- *      missing kit, a delisted price, a typo'd token, or an unknown field is a
- *      hard error. Also asserts no `{…}` / `[[const:…]]` markers survive.
+ *      missing kit, a kit that never had a price, a typo'd token, or an unknown
+ *      field is a hard error. (A SOLD-OUT kit is not an error: it resolves with
+ *      its last observed price and the page labels it sold out.) Also asserts no `{…}` / `[[const:…]]` markers survive.
  *   2. LINT — scan the RAW prose for "naked" money literals ($… or …/Wh) that
  *      are neither a {token} nor a [[const:…]] escape. A naked $-literal is how
  *      prose silently drifts from the price cron. (Watts are static specs and

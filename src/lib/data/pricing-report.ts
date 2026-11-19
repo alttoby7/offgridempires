@@ -19,6 +19,7 @@ interface RawKit {
   displayName?: string;
   brand: string;
   listedPrice?: number;
+  inStock?: boolean;
   missingCost?: number;
   trueCost?: number;
   costPerWh?: string;
@@ -73,7 +74,8 @@ export function getPricingReportStats(): PricingReportStats {
 
   const p = path.join(process.cwd(), "src/lib/data/kits.json");
   const kits: RawKit[] = JSON.parse(fs.readFileSync(p, "utf-8")).filter(
-    (k: RawKit) => typeof k.listedPrice === "number" && k.listedPrice! > 0
+    (k: RawKit) =>
+      typeof k.listedPrice === "number" && k.listedPrice! > 0 && k.inStock !== false
   );
   const updated = fs.statSync(p).mtime.toISOString().slice(0, 10);
 

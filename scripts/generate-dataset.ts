@@ -29,6 +29,7 @@ interface RawKit {
   displayName?: string;
   brand: string;
   listedPrice?: number;
+  inStock?: boolean;
   missingCost?: number;
   trueCost?: number;
   completeness?: number;
@@ -76,7 +77,8 @@ function parseMoney(raw?: string): number | null {
 
 function buildRows(kits: RawKit[]): DatasetRow[] {
   return kits
-    .filter((k) => typeof k.listedPrice === "number" && k.listedPrice > 0)
+    // Sold-out kits (inStock === false) carry a last-observed price, not a live one.
+    .filter((k) => typeof k.listedPrice === "number" && k.listedPrice > 0 && k.inStock !== false)
     .map((k) => {
       const hist = Array.isArray(k.priceHistory) ? k.priceHistory : [];
       const prices = hist

@@ -29,7 +29,10 @@ function loadKits(): { slug: string; brand: string; lastObserved: string }[] {
     // noindex'd, so they must not appear in the sitemap.
     const primarySlugs = new Set(getPrimaryKitSlugs());
     return data
-      .filter((k: { slug: string; listedPrice?: number }) => k.listedPrice && k.listedPrice > 0)
+      .filter(
+        (k: { slug: string; listedPrice?: number; inStock?: boolean }) =>
+          k.listedPrice && k.listedPrice > 0 && k.inStock !== false
+      )
       .filter((k: { slug: string }) => primarySlugs.has(k.slug))
       .map((k: { slug: string; brand: string; priceObservedAt?: string; priceHistory?: { date: string }[] }) => {
         // Use the most recent real observation date — fall back to priceObservedAt or today

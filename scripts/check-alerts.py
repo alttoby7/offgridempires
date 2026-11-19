@@ -37,7 +37,8 @@ def load_kits() -> dict[str, dict]:
             "price": k.get("listedPrice", 0),
         }
         for k in kits
-        if k.get("listedPrice")
+        # Sold-out kits keep a last-observed price (inStock false): never alert on them.
+        if k.get("listedPrice") and k.get("inStock") is not False
     }
 
 

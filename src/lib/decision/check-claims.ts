@@ -9,7 +9,23 @@
  * (the failure mode the naked-literal lint is blind to).
  *
  * Ties are allowed: the pick must BE an extreme, not strictly beat every peer.
+ *
+ * Sold-out picks: PRICE claims (listedPrice / trueCost / missingCost / costPerWh
+ * / costPerW) compare what a reader can buy today, so they are evaluated over
+ * the IN-STOCK picks in scope only — a sold-out pick's last-seen price neither
+ * breaks nor wins a "cheapest" claim, and a price claim ABOUT a sold-out pick is
+ * skipped (the podium shows it as sold out, last seen $X). SPEC claims
+ * (storageWh / inverterWatts / completeness) do not depend on stock and are
+ * evaluated over every pick in scope, as before.
  */
+
+const PRICE_METRICS = new Set<GuideClaim["metric"]>([
+  "listedPrice",
+  "trueCost",
+  "missingCost",
+  "costPerWh",
+  "costPerW",
+]);
 
 import type { Kit } from "@/lib/demo-data";
 import type { DecisionGuideMeta, GuideClaim } from "./types";
@@ -67,13 +83,18 @@ export function checkClaims(meta: DecisionGuideMeta, picks: ResolvedPick[]): voi
       );
     }
 
-    // Pull the metric for every pick in scope.
-    const scope = scopeIds.map((id) => {
-      const idx = pickIndex(meta.slug, id, picks.length);
-      const kit = picks[idx].kit;
-      const value = metricValue(kit, claim.metric);
-      return { id, idx, slug: kit.slug, value };
-    });
+    const priceClaim = PRICE_METRICS.has(claim.metric);
+    if (priceClaim && picks[targetIdx].soldOut) continue;
+
+    // Pull the metric for every pick in scope (in-stock picks only for price claims).
+    const scope = scopeIds
+      .map((id) => {
+        const idx = pickIndex(meta.slug, id, picks.length);
+        const kit = picks[idx].kit;
+        const value = metricValue(kit, claim.metric);
+        return { id, idx, slug: kit.slug, value, soldOut: picks[idx].soldOut };
+      })
+      .filter((s) => !(priceClaim && s.soldOut));
 
     const naQ = scope.find((s) => s.value === null);
     if (naQ) {
@@ -83,7 +104,7 @@ export function checkClaims(meta: DecisionGuideMeta, picks: ResolvedPick[]): voi
       );
     }
 
-    const target = scope[scopeIds.indexOf(claim.pick)] ?? scope[scope.findIndex((s) => s.idx === targetIdx)];
+    const target = scope[scope.findIndex((s) => s.idx === targetIdx)];
     const targetVal = target.value as number;
 
     // For "lowest", no peer may be strictly LESS; for "highest", none strictly GREATER.

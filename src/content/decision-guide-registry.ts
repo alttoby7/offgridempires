@@ -330,7 +330,7 @@ Walk the wiring in [solar installation & DIY](/learn/solar-installation-diy), an
         kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
         label: "Best value all-in-one",
         rationale:
-          "A big-inverter all-in-one at its 6-month low: 3,072Wh of LiFePO4, a 3,600W inverter with plenty of room to stack a microwave or pump on top of the fridge, and 2,400W of panels — at {p4.costPerWh}. Currently {p4.listedPrice}, the bottom of its {p4.low6mo}–{p4.high6mo} range over the last six months (at the floor of that range), so the price signal says buy now. The integrated unit ships near-complete (completeness 86, missing-parts cost {p4.missingCost}).",
+          "A big-inverter all-in-one: 3,072Wh of LiFePO4, a 3,600W inverter with plenty of room to stack a microwave or pump on top of the fridge, and 2,400W of panels — at {p4.costPerWh}. Last listed at {p4.listedPrice}; its in-stock price has ranged {p4.low6mo}–{p4.high6mo} over six months, so check the buy-or-wait table below before you order. The integrated unit ships near-complete (completeness 86, missing-parts cost {p4.missingCost}).",
       },
       {
         kitSlug: "anker-4kw-anker-solix-c2000-gen-2-main-unit-only",
@@ -756,7 +756,7 @@ See exactly [how real build cost is calculated](/how-real-build-cost-is-calculat
         kitSlug: "jackery-2000plus-4085wh-2x200w",
         label: "Best for runtime",
         rationale:
-          "The value buy for long fridge runtime in a complete, panel-included unit. At 4,085Wh and {p2.costPerWh} it carries the most raw storage of the three complete picks, and at {p2.costPerW} it's the cheapest per solar watt among them. Its 3,000W pure-sine inverter clears the surge gate. It's also sitting at its 6-month-low price right now — a strong buy-now signal if you want proven runtime in a unit that ships ready to recharge. (The unit-only #5 packs more watt-hours per dollar, but arrives without panels.)",
+          "The value buy for long fridge runtime in a complete, panel-included unit. At 4,085Wh and {p2.costPerWh} it carries the most raw storage of the three complete picks, and it works out to {p2.costPerW} of included solar against {p3.costPerW} for the #3 pick. Its 3,000W pure-sine inverter clears the surge gate. It's also sitting at its 6-month-low price right now — a strong buy-now signal if you want proven runtime in a unit that ships ready to recharge. (The unit-only #5 packs more watt-hours per dollar, but arrives without panels.)",
       },
       {
         kitSlug: "ecoflow-delta-pro-400w",
@@ -850,9 +850,10 @@ None of that is a price-hiding trick — it's the difference between "rides out 
       { pick: "p2", metric: "storageWh", direction: "highest", among: ["p1", "p2", "p3"], note: "#2 most storage of the three complete picks" },
       { pick: "p3", metric: "inverterWatts", direction: "highest", among: ["p1", "p2", "p3"], note: "#3 largest inverter of the complete picks" },
       // costPerW = true cost / included SOLAR watts. p2 and p3 both ship 400W of panels, so this
-      // is just their sticker order, and they swap on routine price refreshes. Keep this guard
-      // and the corresponding rationale sentence on the same pick when that order changes.
-      { pick: "p2", metric: "costPerW", direction: "lowest", among: ["p1", "p2", "p3"], note: "#2 cheapest per solar watt of the complete picks" },
+      // is just their sticker order, and they swap on routine price refreshes (it flipped on
+      // 2026-10-06, 10-08 and 10-15, blocking deploys each time). The #2 rationale therefore
+      // quotes both live figures instead of calling either one "cheapest", so there is no
+      // superlative left to guard here.
       { pick: "p4", metric: "listedPrice", direction: "lowest", among: ["p3", "p4"], note: "#4 cheapest 3,600W entry" },
       { pick: "p5", metric: "costPerWh", direction: "lowest", note: "#5 lowest $/Wh here / most capacity per dollar" },
     ],
