@@ -3,6 +3,12 @@ name: Deploy to Cloudflare Workers
 on:
   push:
     branches: [main]
+  # Manual redeploy of any commit (e.g. the last good build when main is red).
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Commit SHA or ref to build and deploy (default main)
+        required: false
 
 concurrency:
   group: deploy
@@ -18,6 +24,8 @@ jobs:
       NEXT_TURBOPACK_DISABLED: "1"
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.sha }}
 
       - uses: actions/setup-node@v4
         with:
