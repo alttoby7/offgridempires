@@ -230,7 +230,7 @@ The fix, verbatim from the engine: **use a low-frequency (transformer-based) inv
       },
       {
         heading: "The 5 kits that win",
-        body: `All five picks are **LiFePO4 and pure-sine** integrated systems that clear the surge bar with margin — the #1 at **7,500W continuous**, the rest at **6,000W**, every one of them well past a 3,500W inrush. The podium ranks by surge headroom, then cost-per-watt-hour; the single buy link on this page sits on the #1 pick. Each kit name links to its full audit.
+        body: `All five picks are **LiFePO4 and pure-sine** integrated systems that clear the surge bar with margin — the #1 at **7,500W continuous**, the rest at **6,000W**, every one of them well past a 3,500W inrush. The podium ranks by surge headroom, then cost-per-watt-hour; the single buy link on this page sits on the highest-ranked pick that is in stock. Each kit name links to its full audit.
 
 Be opinionated about voltage: if you have a **240V deep submersible**, **skip the single Anker F3800 (#3)** — it's 120V unless you hub it — and buy the **split-phase EG4 WallMount (#2)** or the **dual-hub Anker (#4)**. For a 120V jet/shallow pump or grid-down backup, the F3800 is the cheapest unit that clears the inrush. Compare any of these [head-to-head](/compare), or browse more 240V-capable [whole-home systems](/whole-home).`,
       },
@@ -589,7 +589,7 @@ Budget roughly **[[const:$250–$600]]** of integration parts on top of a hardwi
       "We ranked 26 shed solar kits under [[const:$1,500]] by real build cost, not sticker price. The cheapest complete setup, hidden-cost receipts, and buy-now-vs-wait.",
     intent: "transactional / budget-led — which solar kit to buy for a shed or workshop under $1,500",
     answer:
-      "For most sheds, the cheapest complete setup that survives shop-tool surges is the Anker SOLIX C1000 bundle at {p1.listedPrice} — a 2,000W pure-sine inverter, 1,024Wh of LiFePO4, and 600W of panels, with {p1.missingCost} in hidden parts. We ranked 26 shed-rated kits under [[const:$1,500]] ([[const:$269–$1,499]] band) by real build cost, not sticker price, because many \"kits\" quote a number that excludes mounting and monitoring. A {p4.listedPrice} panel kit can become a {p4.trueCost} working system once you add the parts it left out.",
+      "For most sheds, the cheapest complete setup that survives shop-tool surges is the Anker SOLIX C1000 bundle, last listed at {p1.listedPrice} — a 2,000W pure-sine inverter, 1,024Wh of LiFePO4, and 600W of panels, with {p1.missingCost} in hidden parts. The shortlist below shows which picks are in stock right now. We ranked 26 shed-rated kits under [[const:$1,500]] ([[const:$269–$1,499]] band) by real build cost, not sticker price, because many \"kits\" quote a number that excludes mounting and monitoring. A {p4.listedPrice} panel kit can become a {p4.trueCost} working system once you add the parts it left out.",
     loadIds: ["led-light", "work-light", "drill-charger", "laptop", "mini-fridge", "air-compressor"],
     assumptions: {
       sunHoursPerDay: 4.5,
@@ -608,7 +608,7 @@ Budget roughly **[[const:$250–$600]]** of integration parts on top of a hardwi
         kitSlug: "anker-600w-anker-solix-c1000-gen-2-main-unit-only",
         label: "Best value",
         rationale:
-          "The default shed pick. Its 2,000W pure-sine inverter clears real shop tools, the 1,024Wh LiFePO4 battery runs lights, a laptop, and intermittent power tools through a work day, and the 600W of solar input refills it. At {p1.listedPrice} with {p1.missingCost} in hidden parts it's the cheapest complete, surge-ready setup in the cohort — {p1.costPerWh}, plug-and-play, nothing left to buy. If you want lights, electronics, and occasional tools in a shed, start here.",
+          "The default shed pick. Its 2,000W pure-sine inverter clears real shop tools, the 1,024Wh LiFePO4 battery runs lights, a laptop, and intermittent power tools through a work day, and the 600W of solar input refills it. At {p1.listedPrice} with {p1.missingCost} in hidden parts it's the cheapest complete, surge-ready setup in the cohort — {p1.costPerWh}, plug-and-play, nothing left to buy. If you want lights, electronics, and occasional tools in a shed, start here, stock permitting — when it's marked sold out, the buy link moves to the next pick that's in stock.",
         cta: true,
       },
       {
@@ -662,7 +662,7 @@ A shop fridge is a milder version of the same lesson: pure-sine only, and size f
       },
       {
         heading: "The shortlist: five kits that clear the bar",
-        body: `Every pick below is **LiFePO4 and pure-sine**, shed-rated, and under [[const:$1,500]]. The podium runs from the cheapest complete setup up to the biggest battery; the single buy link on the page sits on the #1 value pick.
+        body: `Every pick below is **LiFePO4 and pure-sine**, shed-rated, and under [[const:$1,500]]. The podium runs from the cheapest complete setup up to the biggest battery; the single buy link on the page sits on the highest-ranked pick that is in stock.
 
 - **#1 Anker SOLIX C1000 — {p1.listedPrice}.** Cheapest complete, surge-ready floor. 2,000W inverter, 1,024Wh, {p1.missingCost} hidden.
 - **#2 Bluetti AC180P — {p2.listedPrice}.** {p2.costPerWh}, 1,440Wh — the storage step-up for a shop fridge.
@@ -892,7 +892,7 @@ None of that is a price-hiding trick — it's the difference between "rides out 
         kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
         label: "Best runtime per dollar",
         rationale:
-          "The cleanest value on the board. {p1.storageWh} of LiFePO4 at {p1.costPerWh}, which sits at the bottom of the price-per-watt-hour range here, runs a humidified CPAP about six nights on a full charge, or past a week with the humidifier off. It has a 12V DC output so you can skip the inverter entirely (see below), expands past 12kWh if your needs grow, and carries a 5-year warranty. For most people this is the one to buy.",
+          "The cleanest value on the board. {p1.storageWh} of LiFePO4 at {p1.costPerWh}, which sits at the bottom of the price-per-watt-hour range here, runs a humidified CPAP about six nights on a full charge, or past a week with the humidifier off. It has a 12V DC output so you can skip the inverter entirely (see below), expands past 12kWh if your needs grow, and carries a 5-year warranty. For most people this is the one to buy, stock permitting — when it's marked sold out, the buy link moves to the next pick that's in stock.",
         cta: true,
       },
       {
@@ -941,7 +941,7 @@ The fix, verbatim from the engine: **power it from 12V DC where possible, turn o
       },
       {
         heading: "The 5 that win, ranked by runtime per dollar",
-        body: `All five are **LiFePO4 and pure sine** — non-negotiable for the sensitive electronics in a CPAP — and every one is rated for emergency use in our data. The podium ranks by **nights of runtime against price**: the {p1.costPerWh} value pick leads, the {p2.storageWh} Jackery carries the most nights, and the {p3.listedPrice} EcoFlow is the cheapest way in. The single buy link sits on the #1 value pick. Each kit name links to its full audit with the real build cost and 6-month price history.
+        body: `All five are **LiFePO4 and pure sine** — non-negotiable for the sensitive electronics in a CPAP — and every one is rated for emergency use in our data. The podium ranks by **nights of runtime against price**: the {p1.costPerWh} value pick leads, the {p2.storageWh} Jackery carries the most nights, and the {p3.listedPrice} EcoFlow is the cheapest way in. The single buy link sits on the highest-ranked pick that is in stock. Each kit name links to its full audit with the real build cost and 6-month price history.
 
 Be honest about how many nights you actually need: a weekend camper is over-served by a week of autonomy, and a homebound medical user shouldn't skimp on it. Compare any of these [head-to-head](/compare), or browse the full [portable power](/portable-power) pool.`,
       },
@@ -1429,7 +1429,7 @@ Re-check your exact solar and runtime in the [calculator](/calculator), and see 
         kitSlug: "anker-2400w-anker-solix-f3000-main-unit-only",
         label: "Best value that already runs a window AC",
         rationale:
-          "A {p1.inverterWatts} inverter clears a 5,000–10,000 BTU window unit's startup surge without a soft-start, and {p1.storageWh} at {p1.costPerWh} — the lowest cost-per-watt-hour here — runs one for several hours. It has a 12V DC output and expands past 12kWh for longer runtime. If you're buying fresh rather than upgrading, start here.",
+          "A {p1.inverterWatts} inverter clears a 5,000–10,000 BTU window unit's startup surge without a soft-start, and {p1.storageWh} at {p1.costPerWh} — the lowest cost-per-watt-hour here — runs one for several hours. It has a 12V DC output and expands past 12kWh for longer runtime. If you're buying fresh rather than upgrading, start here, stock permitting — when it's marked sold out, the buy link moves to the next pick that's in stock.",
         cta: true,
       },
       {
@@ -1495,7 +1495,7 @@ That verdict maps straight to the three add-ons in the table above: **soft-start
       },
       {
         heading: "Or just buy one that already runs it: 3 kits that clear the surge",
-        body: `If you'd rather not retrofit, three LiFePO4 kits clear a window AC out of the box. The podium ranks by **value against runtime**: the {p1.costPerWh} Anker leads, the {p2.storageWh} EcoFlow carries the most for a bigger unit, and the {p3.listedPrice} EcoFlow is the cheapest that runs a small one. The single buy link sits on the #1 pick. Each links to its full audit with real build cost and 6-month price history.
+        body: `If you'd rather not retrofit, three LiFePO4 kits clear a window AC out of the box. The podium ranks by **value against runtime**: the {p1.costPerWh} Anker leads, the {p2.storageWh} EcoFlow carries the most for a bigger unit, and the {p3.listedPrice} EcoFlow is the cheapest that runs a small one. The single buy link sits on the highest-ranked pick that is in stock. Each links to its full audit with real build cost and 6-month price history.
 
 Even on these, a **soft-start still helps** — it lets a smaller unit run a bigger AC and reduces wear. Compare any [head-to-head](/compare) or browse the [portable power](/portable-power) pool.`,
       },
