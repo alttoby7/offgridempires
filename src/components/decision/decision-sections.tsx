@@ -33,11 +33,11 @@ function bestBuy(kit: Kit): { url: string; retailer: string; price: number } | n
   return null;
 }
 
-/** "Sold out at <retailer> · last seen $X (date)" — the honest label for a sold-out pick. */
+/** "Unavailable at <retailer> · last seen $X (date)" — covers sold out at source AND a price not observed within the freshness window. */
 function soldOutLabel(kit: Kit): string {
   const where = kit.retailer && kit.retailer !== "Unknown" ? ` at ${kit.retailer}` : "";
   const when = kit.priceObservedAt ? ` (${kit.priceObservedAt.slice(0, 10)})` : "";
-  return `Sold out${where} · last seen $${kit.listedPrice.toLocaleString()}${when}`;
+  return `Unavailable${where} · last seen $${kit.listedPrice.toLocaleString()}${when}`;
 }
 
 function SoldOutBadge({ kit }: { kit: Kit }) {
@@ -244,7 +244,7 @@ export function ReceiptSection({
                       ${p.kit.listedPrice.toLocaleString()}
                       {p.soldOut && (
                         <span className="block text-[10px] uppercase tracking-wide text-[var(--warning)]">
-                          sold out · last seen
+                          unavailable · last seen
                         </span>
                       )}
                     </td>
@@ -310,7 +310,7 @@ export function BuyTimingTable({ picks }: { picks: ResolvedPick[] }) {
             {rows.map(({ pick, timing }) => {
               // A sold-out pick has no buy/wait signal — it can't be bought at any price.
               const style = pick.soldOut
-                ? { label: "Sold out", color: "var(--warning)" }
+                ? { label: "Unavailable", color: "var(--warning)" }
                 : BUY_SIGNAL_STYLE[timing.signal];
               return (
                 <tr key={pick.kit.slug} className="border-b border-[var(--border)] last:border-b-0">

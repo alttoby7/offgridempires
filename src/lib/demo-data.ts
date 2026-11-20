@@ -46,7 +46,8 @@ export interface Kit {
   useCaseRatings: Record<string, "excellent" | "good" | "fair" | "poor">;
   included: Record<string, boolean>;
   priceChange?: number;
-  priceObservedAt: string;
+  /** ISO timestamp of the offer shown; absent for never-priced kits. */
+  priceObservedAt?: string;
   retailer: string;
   retailerSlug?: string;
   sourceUrl?: string;
@@ -71,7 +72,7 @@ export interface KitOffer {
   price: number;
   sourceUrl?: string;
   inStock: boolean;
-  observedAt: string;
+  observedAt?: string;
 }
 
 export interface KitItem {

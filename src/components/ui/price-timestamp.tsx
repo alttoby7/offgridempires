@@ -1,9 +1,10 @@
 interface PriceTimestampProps {
-  observedAt: string; // ISO string
+  observedAt?: string; // ISO string; absent for never-priced kits
   className?: string;
 }
 
 export function PriceTimestamp({ observedAt, className = "" }: PriceTimestampProps) {
+  if (!observedAt) return null;
   const date = new Date(observedAt);
   const now = new Date();
   const hoursAgo = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60));

@@ -9,6 +9,14 @@ import { eq, sql, desc, asc } from "drizzle-orm";
 import * as s from "./schema";
 import type { Kit, KitItem, PriceHistoryPoint } from "../demo-data";
 
+/**
+ * How recent an observation must be for an offer to count as "in stock".
+ * The cron runs every 6 h, so a healthy offer is never older than ~6 h; 48 h
+ * tolerates a bad day without demoting the whole catalogue. Amazon prices are
+ * held to 24 h (Associates terms call for daily refresh; unverified wording).
+ */
+const FRESH_INTERVAL = sql`(CASE WHEN r.slug = 'amazon' THEN interval '24 hours' ELSE interval '48 hours' END)`;
+
 // Role code → human-friendly label mapping
 const ROLE_LABELS: Record<string, string> = {
   panel_array: "Solar Panels",
@@ -137,17 +145,19 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
         kcp.total_known_cents,
         kcp.price_cents,
         kcp.observed_at,
-        (kcp.in_stock IS TRUE) AS in_stock,
+        (kcp.in_stock IS TRUE AND kcp.observed_at > now() - ${FRESH_INTERVAL}) AS in_stock,
         r.name AS retailer_name,
         r.slug AS retailer_slug,
         ko.source_url
       FROM kit_current_prices kcp
       JOIN retailers r ON r.id = kcp.retailer_id
       JOIN kit_offers ko ON ko.id = kcp.offer_id
-      -- In-stock offers win. A kit whose offers are ALL out of stock falls back to
-      -- its last observed offer (flagged in_stock = false) instead of losing its
-      -- price, retailer and URL entirely.
-      ORDER BY kcp.kit_id, (kcp.in_stock IS TRUE) DESC, kcp.total_known_cents ASC NULLS LAST, kcp.observed_at DESC
+      -- Fresh in-stock offers win. An offer counts as in stock only if it was
+      -- observed within FRESH_INTERVAL (2026-11-19: offers whose registry entry
+      -- was rejected or whose handle went dead kept in_stock = true for months).
+      -- A kit with no fresh in-stock offer falls back to its last observed offer
+      -- (flagged in_stock = false) instead of losing its price, retailer and URL.
+      ORDER BY kcp.kit_id, (kcp.in_stock IS TRUE AND kcp.observed_at > now() - ${FRESH_INTERVAL}) DESC, kcp.total_known_cents ASC NULLS LAST, kcp.observed_at DESC
     )
     SELECT
       k.id,
@@ -316,6 +326,7 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       JOIN retailers r ON r.id = kcp.retailer_id
       JOIN kit_offers ko ON ko.id = kcp.offer_id
       WHERE kcp.kit_id = ${kitId} AND kcp.in_stock IS TRUE
+        AND kcp.observed_at > now() - ${FRESH_INTERVAL}
       ORDER BY kcp.total_known_cents ASC
     `);
     const offers = allOffersResult.rows.map((o) => ({
@@ -351,9 +362,10 @@ export async function getKitsForListing(useCaseSlug = "rv-weekend"): Promise<Kit
       ).filter(([, r]) => r === "excellent" || r === "good").map(([uc]) => uc),
       useCaseRatings: computeUseCaseRatings({ storageWh, panelWatts, inverterWatts: Number(row.inverter_continuous_w ?? 0), completeness: Number(row.completeness_score ?? 0), chemistry: (row.chemistry as string) ?? "Unknown" }),
       included,
+      // Never-priced kits get no timestamp (an export-time "now" made them look fresh).
       priceObservedAt: row.price_observed_at
         ? new Date(row.price_observed_at as string).toISOString()
-        : new Date().toISOString(),
+        : undefined,
       retailer: (row.retailer_name as string) ?? "Unknown",
       retailerSlug: (row.retailer_slug as string) ?? undefined,
       sourceUrl: row.source_url as string | undefined,

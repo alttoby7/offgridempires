@@ -228,12 +228,13 @@ function drawReceiptToCanvas(
   ctx.fillStyle = "#666";
   ctx.font = "10px monospace";
   ctx.fillText("offgridempire.com", PAD, footerY + footerH / 2);
-  const priceDate = new Date(kit.priceObservedAt);
-  const dateStr = priceDate.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
+  const dateStr = kit.priceObservedAt
+    ? new Date(kit.priceObservedAt).toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      })
+    : "n/a";
   ctx.textAlign = "right";
   ctx.fillText(`Price checked ${dateStr}`, W - PAD, footerY + footerH / 2);
   ctx.textAlign = "left";
@@ -256,7 +257,9 @@ export function GapReceipt({ kit, hasVariantsWithPanels }: GapReceiptProps) {
     kit.listedPrice > 0
       ? (kit.trueCost / kit.listedPrice).toFixed(1)
       : null;
-  const priceDate = new Date(kit.priceObservedAt);
+  const priceDateStr = kit.priceObservedAt
+    ? new Date(kit.priceObservedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
+    : "n/a";
 
   const flashState = useCallback(
     (state: "copied" | "downloaded" | "shared") => {
@@ -366,7 +369,7 @@ export function GapReceipt({ kit, hasVariantsWithPanels }: GapReceiptProps) {
         </p>
         <div className="mt-3 ml-8 flex items-center gap-3">
           <span className="text-xs text-[var(--text-muted)]">
-            Verified {priceDate.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+            Verified {priceDateStr}
           </span>
           <a href="/methodology" className="inline-flex items-center gap-1 text-xs text-[var(--accent)] hover:text-[var(--accent-hover)]">
             Methodology
@@ -587,7 +590,7 @@ export function GapReceipt({ kit, hasVariantsWithPanels }: GapReceiptProps) {
             offgridempire.com
           </span>
           <span className="text-xs text-[var(--text-muted)]">
-            Price checked {priceDate.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+            Price checked {priceDateStr}
           </span>
         </div>
         <a
