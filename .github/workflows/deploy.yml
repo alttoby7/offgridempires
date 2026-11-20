@@ -53,7 +53,16 @@ jobs:
         run: |
           VERSION=$(npx opennextjs-cloudflare upload 2>&1 | grep 'Worker Version ID:' | awk '{print $NF}')
           echo "Deploying version: $VERSION"
-          npx wrangler versions deploy "${VERSION}@100%" --name offgridempire --yes
+          # The upload can take a few seconds to become visible to the versions
+          # API (2026-11-19: "version could not be found" 2s after upload). Retry.
+          for attempt in 1 2 3 4 5; do
+            if npx wrangler versions deploy "${VERSION}@100%" --name offgridempire --yes; then
+              break
+            fi
+            if [ "$attempt" = "5" ]; then echo "::error::versions deploy failed after 5 attempts"; exit 1; fi
+            echo "versions deploy attempt $attempt failed; retrying in 15s"
+            sleep 15
+          done
 
       # Post-deploy smoke test. On 2026-06-22 a deploy left every prerendered
       # dynamic page serving 404 and rotted silently for 10 days (health score → 9,
