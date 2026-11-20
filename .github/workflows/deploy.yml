@@ -53,10 +53,12 @@ jobs:
         run: |
           VERSION=$(npx opennextjs-cloudflare upload 2>&1 | grep 'Worker Version ID:' | awk '{print $NF}')
           echo "Deploying version: $VERSION"
-          # The upload can take a few seconds to become visible to the versions
-          # API (2026-11-19: "version could not be found" 2s after upload). Retry.
+          # 2026-11-19: CLOUDFLARE_API_TOKEN can upload but cannot read Worker
+          # versions ("version could not be found" / "No access to the specified
+          # resource"), so the deploy call uses the Workers token. Retry covers
+          # transient API errors.
           for attempt in 1 2 3 4 5; do
-            if npx wrangler versions deploy "${VERSION}@100%" --name offgridempire --yes; then
+            if CLOUDFLARE_API_TOKEN="${{ secrets.CLOUDFLARE_WORKERS_API_TOKEN }}" npx wrangler versions deploy "${VERSION}@100%" --name offgridempire --yes; then
               break
             fi
             if [ "$attempt" = "5" ]; then echo "::error::versions deploy failed after 5 attempts"; exit 1; fi
