@@ -16,7 +16,8 @@
       "kit_asin": "B0FT25XJFP",
       "match_confidence": "high",
       "match_notes": "100W 12V Solar Panel Kit with Wanderer 30A PWM. Exact product match.",
-      "status": "approved"
+      "status": "rejected",
+      "rejected_note": "Rejected 2026-11-19: handle returned 404/302 on every pipeline run since at least 2026-06; no exact replacement product found in the store's products.json. Re-discover before re-approving."
     },
     {
       "shopify_handle": "200-watt-12-volt-solar-starter-kit",
@@ -86,7 +87,8 @@
       "kit_asin": "B00BSZUHRC",
       "match_confidence": "medium",
       "match_notes": "400W Starter Kit with 30A PWM controller. Amazon kit uses Wanderer PWM; Shopify uses Adventurer PWM (ADV30 in SKU). Both are 30A PWM but different controller models. N-Type panels vs original mono. Likely successor product.",
-      "status": "approved"
+      "status": "rejected",
+      "rejected_note": "Rejected 2026-11-19: successor product with a different controller model and panel type (match_confidence medium) mapped to the original kit; bundle mismatch."
     },
     {
       "shopify_handle": "renogy-400w-12v-general-off-grid-solar-kit",
@@ -100,7 +102,8 @@
       "kit_asin": "B06X1FV5N2",
       "match_confidence": "medium",
       "match_notes": "400W Kit with Rover 40A MPPT (R40 in SKU). Amazon kit used 4x100W mono panels; Shopify variant uses 2x200W N-Type. Same wattage and controller class. Likely successor product.",
-      "status": "approved"
+      "status": "rejected",
+      "rejected_note": "Rejected 2026-11-19: successor product with a different controller model and panel type (match_confidence medium) mapped to the original kit; bundle mismatch."
     },
     {
       "shopify_handle": "renogy-600w-12v-general-off-grid-solar-kit",

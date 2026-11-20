@@ -53,7 +53,8 @@
       "kit_slug": "jackery-2000plus-4085wh-2x200w",
       "kit_asin": "B0D5YZG7D6",
       "match_confidence": "high",
-      "status": "approved"
+      "status": "rejected",
+      "rejected_note": "Rejected 2026-11-19: handle returned 404/302 on every pipeline run since at least 2026-06; no exact replacement product found in the store's products.json. Re-discover before re-approving."
     },
     {
       "shopify_handle": "jackery-explorer-1500-ultra-portable-power-station",
@@ -66,8 +67,9 @@
       "kit_slug": "jackery-1500-4x100w",
       "kit_asin": "B08Z3FRXW4",
       "match_confidence": "medium",
-      "status": "approved",
-      "note": "Station only - no exact 4x100W panel bundle on Jackery.com"
+      "status": "rejected",
+      "note": "Station only - no exact 4x100W panel bundle on Jackery.com",
+      "rejected_note": "Rejected 2026-11-19: station-only listing mapped to a 4x100W panel kit (bundle mismatch; see note). A fresh price for a different bundle is still a wrong price."
     }
   ]
 }

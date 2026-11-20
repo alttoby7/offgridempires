@@ -14,7 +14,8 @@
       "kit_slug": "bluetti-ac300-b300k-pv350",
       "kit_asin": "B0CFQ9NNQJ",
       "match_confidence": "high",
-      "status": "approved"
+      "status": "rejected",
+      "rejected_note": "Rejected 2026-11-19: handle returned 404/302 on every pipeline run since at least 2026-06; no exact replacement product found in the store's products.json. Re-discover before re-approving."
     }
   ]
 }
