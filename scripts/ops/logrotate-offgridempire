@@ -2,6 +2,7 @@
 # The cron jobs append with >> to root-owned logs; the ingestion log reached
 # 70 MB unrotated by 2026-11-19.
 /var/log/offgridempire-*.log {
+    su root root
     daily
     rotate 14
     compress
