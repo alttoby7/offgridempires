@@ -12,7 +12,9 @@ on:
 
 concurrency:
   group: deploy
-  cancel-in-progress: true
+  # Queue, don't cancel: a 6-hourly price push landing mid-build used to cancel
+  # the code deploy in front of it (2026-11-20, run 44642496953).
+  cancel-in-progress: false
 
 jobs:
   deploy:
