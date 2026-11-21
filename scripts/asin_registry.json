@@ -47,7 +47,9 @@
       "slug": "renogy-200w-premium-mppt-40a",
       "title": "Renogy 200W 12V Monocrystalline Solar Kit with 40A MPPT Rover Controller + Z Brackets",
       "brand": "Renogy",
-      "retailer": "Amazon"
+      "retailer": "Amazon",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B015DEY2TM",
@@ -131,7 +133,9 @@
       "slug": "eco-worthy-400w-complete-1600wh",
       "title": "ECO-WORTHY 1.6KWH 400W 12V Complete Kit with MPPT + 100Ah LiFePO4 + 1100W Inverter",
       "brand": "Eco-Worthy",
-      "retailer": "Amazon"
+      "retailer": "Amazon",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0GH7XTJWS",
@@ -278,7 +282,9 @@
       "slug": "rich-solar-100w-starter-kit",
       "title": "Rich Solar 100W 12V Starter Kit with 20A MPPT Controller",
       "brand": "Rich Solar",
-      "retailer": "Amazon"
+      "retailer": "Amazon",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B018BFK59G",
@@ -299,7 +305,9 @@
       "slug": "hqst-600w-kit-mppt",
       "title": "HQST 600W Solar Panel Kit with 6x100W 9BB + 40A MPPT",
       "brand": "HQST",
-      "retailer": "Amazon"
+      "retailer": "Amazon",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B08GX19KT9",
@@ -433,14 +441,18 @@
       "slug": "eco-worthy-eco-worthy-home-power-station-backup-power-20480w",
       "title": "ECO-WORTHY Home Power Station Backup Power,20480Wh LiFePO4 Battery Support Communication,Bluetooth and WiFi,AC 5000W Inverter,Battery Monitor,for Home Backup,Emergency,Solar System Components",
       "brand": "ECO-WORTHY",
-      "category": "inverter"
+      "category": "inverter",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0G4C1QB9K",
       "slug": "eco-worthy-eco-worthy-energy-storage-system-powermega-48v-31",
       "title": "ECO-WORTHY Energy Storage System, Powermega 48V 314Ah(V2) LiFePO4 Battery with 5kW Inverter, Active Balancing BMS, Built-in Bluetooth and WiFi, Communication-Ready for Home Backup, Emergency Use",
       "brand": "ECO-WORTHY",
-      "category": "inverter"
+      "category": "inverter",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0FL7CF58H",
@@ -469,7 +481,9 @@
       "slug": "sungoldpower-3kw-solar-kit",
       "title": "SunGoldPower 3KW Complete Solar Kit",
       "brand": "SunGoldPower",
-      "retailer": "Amazon"
+      "retailer": "Amazon",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0FM81QDCM",
@@ -583,7 +597,9 @@
       "slug": "bougerv-200w-ntype-bifacial",
       "title": "BougeRV 12V N-Type 16BB 200W Bifacial Solar Panel",
       "brand": "BougeRV",
-      "category": "solar_panel"
+      "category": "solar_panel",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0851RPM1Q",
@@ -597,7 +613,9 @@
       "slug": "hqst-100w-mono-panel",
       "title": "HQST 100W 12V Monocrystalline Solar Panel",
       "brand": "HQST",
-      "category": "solar_panel"
+      "category": "solar_panel",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B08R5JWL74",
@@ -688,7 +706,9 @@
       "slug": "renogy-200ah-12v-lifepo4",
       "title": "Renogy 12V 200Ah LiFePO4 Deep Cycle Battery with Bluetooth",
       "brand": "Renogy",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0CX1B177X",
@@ -709,42 +729,54 @@
       "slug": "renogy-100ah-smart-self-heating",
       "title": "Renogy 12V 100Ah Smart LiFePO4 Pro with Self-Heating + Bluetooth",
       "brand": "Renogy",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0C9ZFFDHP",
       "slug": "renogy-200ah-core-series",
       "title": "Renogy 12V 200Ah LiFePO4 Core Series 5000+ Cycles 200A BMS",
       "brand": "Renogy",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0GFCDRHVX",
       "slug": "renogy-rego-200ah-bluetooth",
       "title": "Renogy REGO 12V 200Ah LiFePO4 with Bluetooth + 200A BMS",
       "brand": "Renogy",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0GD6GVFPV",
       "slug": "renogy-rego-200ah-pro-self-heating",
       "title": "Renogy REGO 12V 200Ah LiFePO4 PRO with Bluetooth + Self-Heating IP67",
       "brand": "Renogy",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0DF2D394H",
       "slug": "renogy-300ah-self-heating-core",
       "title": "Renogy 12V 300Ah Self-Heating LiFePO4 200A BMS Core Series",
       "brand": "Renogy",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0C8MKQY9K",
       "slug": "renogy-rego-400ah-self-heating",
       "title": "Renogy REGO 12V 400Ah LiFePO4 Self-Heating 4.8kWh BMS + Bluetooth",
       "brand": "Renogy",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B075RGX1WR",
@@ -765,42 +797,54 @@
       "slug": "bougerv-100ah-lifepo4",
       "title": "BougeRV 12V 100Ah Group 24 LiFePO4 Battery with Low-Temp Protection",
       "brand": "BougeRV",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B06XX197GJ",
       "slug": "battleborn-100ah-lifepo4",
       "title": "Battle Born 100Ah 12V LiFePO4 Deep Cycle Battery",
       "brand": "Battle Born",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B09RNGG6CS",
       "slug": "battleborn-50ah-lifepo4",
       "title": "Battle Born 50Ah 12V LiFePO4 Battery",
       "brand": "Battle Born",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B092RKVC1D",
       "slug": "battleborn-100ah-heated-lifepo4",
       "title": "Battle Born 100Ah 12V Heated LiFePO4 Battery",
       "brand": "Battle Born",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B087BP1Z63",
       "slug": "sok-100ah-lifepo4",
       "title": "SOK 100Ah 12V LiFePO4 Battery",
       "brand": "SOK",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B087BJYGV4",
       "slug": "sok-200ah-lifepo4",
       "title": "SOK 200Ah 12V LiFePO4 Battery with BMS Low-Temp Disconnect",
       "brand": "SOK",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0C76JF6BM",
@@ -814,7 +858,9 @@
       "slug": "eg4-lifepower4-24v-200ah",
       "title": "EG4 LiFePower4 25.6V 200Ah Server Rack Battery",
       "brand": "EG4",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0B9XB57XM",
@@ -989,7 +1035,9 @@
       "slug": "jackery-explorer-1000plus",
       "title": "Jackery Explorer 1000 Plus 1264Wh LiFePO4 2000W Expandable to 5kWh",
       "brand": "Jackery",
-      "category": "portable_power_station"
+      "category": "portable_power_station",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B09GK7SXHM",
@@ -1136,7 +1184,9 @@
       "slug": "bougerv-40a-mppt",
       "title": "BougeRV 40A MPPT Solar Charge Controller 12/24/36/48V App Control",
       "brand": "BougeRV",
-      "category": "charge_controller"
+      "category": "charge_controller",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0BYSDCFXN",
@@ -1220,7 +1270,9 @@
       "slug": "bestek-1000w-pure-sine",
       "title": "BESTEK 1000W Pure Sine Wave Inverter 12V Dual USB LCD",
       "brand": "BESTEK",
-      "category": "inverter"
+      "category": "inverter",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0C4P8PC6W",
@@ -1234,7 +1286,9 @@
       "slug": "eco-worthy-280ah-lifepo4",
       "title": "ECO-WORTHY 280Ah 12V LiFePO4 Battery 6000+ Cycles 3584Wh BMS",
       "brand": "Eco-Worthy",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B08YDFK19Y",
@@ -1290,7 +1344,9 @@
       "slug": "victron-lifepo4-25v-200ah",
       "title": "Victron Energy LiFePO4 25.6V 200Ah Smart Lithium Battery",
       "brand": "Victron Energy",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B08SVXMK3V",
@@ -1332,7 +1388,9 @@
       "slug": "windynation-vertamax-1500w-inverter",
       "title": "WindyNation VertaMax 1500W 12V Pure Sine Wave Inverter 3000W Surge",
       "brand": "WindyNation",
-      "category": "inverter"
+      "category": "inverter",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B07D1LRKY5",
@@ -1385,7 +1443,9 @@
       "title": "280W Portable Solar Panel for Power Station, 25.8% High Efficiency HPBC Solar Cell, QC3.0, Type-C 60W, MC4 Output, IP65 Waterproof, Ultra-Light Solar Panel for Outdoor Camping, RV, Off Grid",
       "brand": "TWELSEAVAN",
       "category": "solar_panel",
-      "estimated_price": 269.99
+      "estimated_price": 269.99,
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0D6B5X2N9",
@@ -1493,7 +1553,9 @@
       "slug": "renogy-renogy-3000w-12v-pure-sine-wave-inverter-3000-watt-so",
       "title": "Renogy 3000W 12V Pure Sine Wave Inverter 3000 Watt Solar Power Battery Converter 12VDC to 120Vac ETL Listed",
       "brand": "Renogy",
-      "category": "inverter"
+      "category": "inverter",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0DRVCL5K3",
@@ -1558,7 +1620,9 @@
       "slug": "powmr-powmr-10000w-hybrid-solar-inverter-48v-dc-to-110v-ac-2",
       "title": "PowMr 10000W Hybrid Solar Inverter 48V DC to 110V AC~240V AC, Single &Split &Three Phase Pure Sine Wave Inverter with 100A MPPT Controller, 2Pack, Support Parallel, for 48V LiFePO4/Li/GEL/AGM Battery",
       "brand": "PowMr",
-      "category": "inverter"
+      "category": "inverter",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0F2S2Z2BC",
@@ -1659,7 +1723,9 @@
       "slug": "powmr-powmr-10000w-hybrid-solar-inverter-48v-dc-to-110v-ac-2",
       "title": "PowMr 10000W Hybrid Solar Inverter 48V DC to 110V AC~240V AC, Single &Split &Three Phase Pure Sine Wave Inverter with 100A MPPT Controller, Support Parallel, for 48V LiFePO4/Li/GEL/AGM Battery(2Pack)",
       "brand": "PowMr",
-      "category": "inverter"
+      "category": "inverter",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0DRWWBYTD",
@@ -1715,7 +1781,9 @@
       "slug": "litime-12v-100ah-mini-lifepo4",
       "title": "LiTime 12V 100Ah Mini LiFePO4 Battery",
       "brand": "LiTime",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B09BQVVTHH",
@@ -1729,7 +1797,9 @@
       "slug": "power-queen-12v-100ah-premium",
       "title": "Power Queen 12V 100Ah LiFePO4 Battery Premium",
       "brand": "Power Queen",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0BY8WVM2X",
@@ -1743,7 +1813,9 @@
       "slug": "power-queen-12v-300ah-lifepo4",
       "title": "Power Queen 12V 300Ah LiFePO4 Battery",
       "brand": "Power Queen",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B094NN5KWY",
@@ -1771,7 +1843,9 @@
       "slug": "redodo-12v-100ah-mini-lifepo4",
       "title": "Redodo 12V 100Ah Mini LiFePO4 Battery",
       "brand": "Redodo",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0FN7MSY4L",
@@ -1897,7 +1971,9 @@
       "slug": "pecron-e2000lfp",
       "title": "Pecron E2000LFP Portable Power Station",
       "brand": "Pecron",
-      "category": "portable_power_station"
+      "category": "portable_power_station",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0F6YCRKTJ",
@@ -1918,21 +1994,27 @@
       "slug": "oupes-mega-5",
       "title": "Oupes Mega 5 Portable Power Station",
       "brand": "Oupes",
-      "category": "portable_power_station"
+      "category": "portable_power_station",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0DS61C5JS",
       "slug": "oupes-1500w",
       "title": "Oupes 1500W Portable Power Station",
       "brand": "Oupes",
-      "category": "portable_power_station"
+      "category": "portable_power_station",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B082HB7CFV",
       "slug": "sungoldpower-48v-100ah-lifepo4",
       "title": "SunGoldPower 48V 100Ah LiFePO4 Battery",
       "brand": "SunGoldPower",
-      "category": "battery"
+      "category": "battery",
+      "status": "retired",
+      "retired_note": "Retired 2026-11-21: Amazon Creators API returned no item for this ASIN on every pipeline run for 30+ days (most since 2026-05..08; see astra-plan-review.md D). Remove status to re-try."
     },
     {
       "asin": "B0CJ2XQPLY",

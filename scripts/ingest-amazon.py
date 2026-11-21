@@ -456,12 +456,16 @@ def main():
         for entry in registry["kits"]:
             if args.asin and entry["asin"] != args.asin:
                 continue
+            if entry.get("status") == "retired":
+                continue
             all_asins.append(entry["asin"])
             asin_to_entry[entry["asin"]] = {"type": "kit", **entry}
 
     if not args.kits_only:
         for entry in registry["products"]:
             if args.asin and entry["asin"] != args.asin:
+                continue
+            if entry.get("status") == "retired":
                 continue
             all_asins.append(entry["asin"])
             asin_to_entry[entry["asin"]] = {"type": "product", **entry}
